@@ -175,6 +175,10 @@ import CategoryGrid from '../components/CategoryGrid.astro';
         </div>
       </div>
     </div>
+    <div class="features-cta">
+      <a href="/graph" class="feature-btn">🔗 知識圖譜 — 探索文章之間的連結</a>
+      <a href="https://github.com/frank890417/taiwan-md/tree/main/knowledge" target="_blank" rel="noopener noreferrer" class="feature-btn secondary">📂 瀏覽 SSOT 原始資料 ↗</a>
+    </div>
   </section>
 
   <section class="language-statement">
@@ -662,7 +666,47 @@ import CategoryGrid from '../components/CategoryGrid.astro';
     line-height: 1.6;
     margin: 0;
   }
-  
+
+  .features-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .feature-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: #2d5016;
+    color: white;
+    border: 2px solid #2d5016;
+  }
+
+  .feature-btn:hover {
+    background: #1a3a0a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 80, 22, 0.3);
+  }
+
+  .feature-btn.secondary {
+    background: transparent;
+    color: #2d5016;
+    border: 2px solid #2d5016;
+  }
+
+  .feature-btn.secondary:hover {
+    background: #2d5016;
+    color: white;
+  }
+
   /* ===== CATEGORIES SECTION ===== */
   .categories {
     margin: 6rem 0;
