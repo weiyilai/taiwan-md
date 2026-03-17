@@ -493,120 +493,203 @@ const processedContent = marked.parse(resolvedContent);
     color: #6b7280;
   }
 
-  /* Content Styling */
+  /* Content Styling — 報導者風格排版 */
   .content {
     font-size: 1.125rem;
-    line-height: 1.8;
-    color: #374151;
-    max-width: 740px;
+    line-height: 2;
+    color: #333;
+    max-width: 720px;
     margin: 0 auto;
+    letter-spacing: 0.02em;
   }
 
+  /* 標題層級系統 — 清晰的視覺層次 */
   .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
     font-family: "Noto Serif TC", "Source Han Serif TC", serif;
-    color: #1f2937;
-    margin: 3.5rem 0 1.2rem 0;
-    line-height: 1.3;
+    color: #1a1a1a;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
   }
 
   .content h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
+    margin: 4rem 0 1.5rem 0;
   }
 
   .content h2 {
-    font-size: 1.875rem;
-    font-weight: 600;
-    border-bottom: 3px solid var(--categoryColor);
-    padding-bottom: 0.5rem;
+    font-size: 1.625rem;
+    font-weight: 700;
+    margin: 4rem 0 1.5rem 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--categoryColor);
   }
 
   .content h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 3rem 0 1.2rem 0;
+    color: #2d2d2d;
+    padding-left: 0.75rem;
+    border-left: 4px solid var(--categoryColor);
   }
 
+  .content h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1rem 0;
+    color: #444;
+  }
+
+  /* 段落 — 大呼吸感 */
   .content p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
+    line-height: 2.1;
+    text-align: justify;
+    word-break: break-word;
   }
 
+  /* HR — 報導者風格大間距分隔 */
+  .content hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 3.5rem auto;
+    max-width: 120px;
+  }
+
+  /* Blockquote — 沈靜引言 */
   .content blockquote {
-    border-left: 6px solid var(--categoryColor);
+    border-left: 4px solid var(--categoryColor);
     background: linear-gradient(to right, var(--categoryColorLight), transparent);
     padding: 1.5rem 2rem;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
     font-style: italic;
-    color: #4b5563;
+    color: #555;
     border-radius: 0 8px 8px 0;
+    font-size: 1.05rem;
+    line-height: 2;
   }
 
-  .content ul, .content ol {
-    margin: 1.5rem 0;
-    padding-left: 2rem;
-  }
-
-  .content li {
+  .content blockquote p {
     margin-bottom: 0.75rem;
   }
 
+  .content blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* 列表 — 寬鬆行距 */
+  .content ul, .content ol {
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .content li {
+    margin-bottom: 1rem;
+    line-height: 1.9;
+    padding-left: 0.25rem;
+  }
+
+  .content li::marker {
+    color: var(--categoryColor);
+  }
+
+  /* 連結 */
   .content a {
     color: var(--categoryColor);
     text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
     font-weight: 500;
+    transition: all 0.2s;
   }
 
   .content a:hover {
-    text-decoration: none;
+    text-decoration-color: transparent;
+    background: var(--categoryColorLight);
+    border-radius: 2px;
   }
 
   .content strong {
     font-weight: 700;
-    color: #1f2937;
+    color: #1a1a1a;
   }
 
   .content em {
     font-style: italic;
   }
 
+  /* 圖片 */
   .content img {
     max-width: 100%;
-    max-height: 400px;
+    max-height: 450px;
     object-fit: cover;
-    border-radius: 12px;
-    margin: 2rem auto;
+    border-radius: 8px;
+    margin: 2.5rem auto;
     display: block;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   }
 
+  /* 圖片說明文字 */
   .content p > em:only-child {
     display: block;
     text-align: center;
     font-size: 0.85rem;
-    color: #6b7280;
-    margin-top: -1rem;
-    margin-bottom: 1.5rem;
+    color: #888;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
   }
 
+  /* 表格 */
   .content table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1.5rem 0;
+    margin: 2.5rem 0;
     font-size: 0.95rem;
+    line-height: 1.7;
   }
   .content th, .content td {
-    padding: 0.75rem 1rem;
+    padding: 0.875rem 1rem;
     border: 1px solid #e5e7eb;
     text-align: left;
   }
   .content th {
     background: #f9fafb;
-    font-weight: 600;
+    font-weight: 700;
+    color: #1a1a1a;
   }
 
-  .content p {
-    margin-bottom: 1.5rem;
-    line-height: 2;
-    text-align: justify;
+  /* Code inline */
+  .content code {
+    background: #f5f5f5;
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: #c7254e;
+  }
+
+  /* Pre code block */
+  .content pre {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 2rem 0;
+    border: 1px solid #e9ecef;
+    line-height: 1.6;
+  }
+
+  .content pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+
+  /* 多元觀點 callout */
+  .content blockquote:has(strong:first-child) {
+    border-left-color: #6b7fb5;
+    background: linear-gradient(to right, #eef1f7, transparent);
   }
 
   /* Sources */
@@ -716,16 +799,18 @@ const processedContent = marked.parse(resolvedContent);
 
   /* Related Articles */
   .related-articles {
-    margin: 3rem 0;
-    padding: 2rem 0;
-    border-top: 1px solid #e5e7eb;
+    margin: 4rem 0 3rem;
+    padding: 3rem 0 2rem;
+    border-top: 1px solid #e0e0e0;
   }
 
   .related-title {
-    font-size: 1.25rem;
+    font-family: "Noto Serif TC", "Source Han Serif TC", serif;
+    font-size: 1.375rem;
     font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.04em;
   }
 
   .related-grid {
