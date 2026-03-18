@@ -112,6 +112,25 @@ try {
   }
 } catch {}
 
+// 隨機探索：建立所有文章清單（排除當前文章）
+let allArticles: Array<{title: string; slug: string; category: string}> = [];
+try {
+  for (const [catSlug, folderName] of Object.entries(categoryMapping)) {
+    if (catSlug === category) continue;
+    try {
+      const catPath = resolve(process.cwd(), 'knowledge', folderName);
+      const catFiles = await readdir(catPath);
+      for (const file of catFiles.filter(f => f.endsWith('.md') && !f.startsWith('_'))) {
+        const articleSlug = basename(file, '.md');
+        const { data: fm } = matter(await readFile(join(catPath, file), 'utf-8'));
+        allArticles.push({ title: fm.title || articleSlug, slug: articleSlug, category: catSlug });
+      }
+    } catch {}
+  }
+} catch (err) {
+  console.log('Error building allArticles:', err.message);
+}
+
 function resolveWikilinks(markdownContent: string) {
   if (!markdownContent) return markdownContent;
   return markdownContent.replace(/\[\[([^\]|]+?)(?:\|([^\]]+?))?\]\]/g, (_, target, display) => {
@@ -134,13 +153,15 @@ renderer.link = ({ href, title, text }) => {
 const processedContent = marked.parse(resolvedContent, { renderer });
 ---
 
-<Layout 
+<Layout
   title={title}
   description={description}
   type="article"
   datePublished={frontmatter.date || new Date().toISOString()}
   dateModified={frontmatter.modified || frontmatter.date || new Date().toISOString()}
   content={content}
+  tags={frontmatter.tags}
+  category={categoryInfo.name}
 >
   <!-- Reading Progress Bar -->
   <div class="reading-progress" id="reading-progress"></div>
@@ -268,6 +289,15 @@ const processedContent = marked.parse(resolvedContent, { renderer });
                 </a>
               ))}
             </div>
+          </div>
+        )}
+
+        <!-- 隨機探索另一篇 -->
+        {allArticles.length > 0 && (
+          <div class="random-explore">
+            <button class="random-btn" onclick="goRandomArticle()" type="button">
+              🎲 隨機探索另一篇
+            </button>
           </div>
         )}
 
@@ -449,6 +479,14 @@ const processedContent = marked.parse(resolvedContent, { renderer });
   window.addEventListener('scroll', updateReadingProgress);
   window.addEventListener('resize', updateReadingProgress);
   updateReadingProgress();
+</script>
+
+<script define:vars={{ allArticles }}>
+  function goRandomArticle() {
+    if (!allArticles || allArticles.length === 0) return;
+    const pick = allArticles[Math.floor(Math.random() * allArticles.length)];
+    window.location.href = '/' + pick.category + '/' + pick.slug;
+  }
 </script>
 
 <style define:vars={{ categoryColor: categoryInfo.color, categoryColorLight: categoryInfo.colorLight }}>
@@ -1045,6 +1083,33 @@ const processedContent = marked.parse(resolvedContent, { renderer });
 
   .related-card:hover .related-card-arrow {
     transform: translateX(3px);
+  }
+
+  /* Random Explore */
+  .random-explore {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .random-btn {
+    background: transparent;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 0.75rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #475569;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+  }
+
+  .random-btn:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+    color: #1e293b;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   }
 
   /* More Articles */

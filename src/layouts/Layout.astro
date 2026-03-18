@@ -13,9 +13,11 @@ interface Props {
   datePublished?: string;
   dateModified?: string;
   content?: string;
+  tags?: string[];
+  category?: string;
 }
 
-const { title, description = '讓全世界完整認識台灣', lang = 'zh-TW', image, type, datePublished, dateModified, content } = Astro.props;
+const { title, description = '讓全世界完整認識台灣', lang = 'zh-TW', image, type, datePublished, dateModified, content, tags, category } = Astro.props;
 
 // Build search index at build time
 const categoryMapping: Record<string, string> = {
@@ -121,7 +123,7 @@ if (currentPath.startsWith('/en')) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&display=swap" rel="stylesheet" />
     <title>{title} | Taiwan.md</title>
-    <SEO title={title} description={description} lang={lang} image={image} type={type} datePublished={datePublished} dateModified={dateModified} content={content} />
+    <SEO title={title} description={description} lang={lang} image={image} type={type} datePublished={datePublished} dateModified={dateModified} content={content} tags={tags} category={category} />
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-JGC5W00N7T"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
