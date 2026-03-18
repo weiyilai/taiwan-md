@@ -36,6 +36,22 @@ try {
     articleCounts[cat.id] = 0;
   });
 }
+
+// Prepare article list for random discovery
+const allArticles = allEnArticles
+  .filter(article => !article.id.includes('/_') && !article.id.endsWith('/_Hub.md'))
+  .map(article => {
+    const slug = article.id.split('/').slice(1).join('/').replace(/\.md$/, '');
+    const category = article.id.split('/')[0];
+    const categoryData = categories.find(c => c.id === category);
+    return {
+      title: article.data.title,
+      url: `/en/${category}/${slug}`,
+      category: categoryData ? categoryData.name : category
+    };
+  });
+
+const randomArticlesData = JSON.stringify(allArticles);
 ---
 
 <Layout title="Taiwan.md — Open Knowledge Base of Taiwan" 
@@ -347,6 +363,28 @@ try {
     </div>
 
     <CategoryGrid lang="en" />
+  </section>
+
+  <!-- Newsletter Subscribe Section -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>📬 Subscribe to Taiwan.md Weekly</h2>
+      <p>Curated Taiwan knowledge, delivered weekly.</p>
+      
+      <form id="newsletter-form" class="newsletter-form">
+        <div class="form-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="your@email.com" required>
+          <button type="submit" id="newsletter-submit" class="newsletter-btn">Subscribe</button>
+        </div>
+      </form>
+      
+      <div id="newsletter-success" class="newsletter-success" style="display: none;">
+        <span class="success-icon">🎉</span>
+        <span>Thanks for subscribing!</span>
+      </div>
+      
+      <p class="newsletter-note">Join 0 readers · No tracking, unsubscribe anytime</p>
+    </div>
   </section>
 
   <section class="contribute">
@@ -792,6 +830,142 @@ try {
     margin-right: auto;
   }
   
+  /* ===== NEWSLETTER SECTION ===== */
+  .newsletter {
+    background: #2d5016;
+    padding: 4rem 2rem;
+    margin: 6rem -1rem 0;
+    text-align: center;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 700;
+    font-family: "Noto Serif TC", "Source Han Serif TC", "PMingLiU", serif;
+  }
+  
+  .newsletter p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  
+  .newsletter-form {
+    margin-bottom: 1rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter input[type="email"] {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 200px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .newsletter input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .newsletter input[type="email"]:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .newsletter-btn {
+    padding: 0.875rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    color: #2d5016;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-family: "Noto Serif TC", "Source Han Serif TC", "PMingLiU", serif;
+  }
+  
+  .newsletter-btn:hover {
+    background: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .newsletter-btn:disabled {
+    background: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .newsletter-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .success-icon {
+    font-size: 1.5rem;
+  }
+  
+  .newsletter-note {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 768px) {
+    .newsletter {
+      padding: 3rem 1rem;
+    }
+    
+    .form-row {
+      flex-direction: column;
+      max-width: 300px;
+    }
+    
+    .newsletter input[type="email"] {
+      min-width: unset;
+    }
+    
+    .newsletter h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
   /* ===== CONTRIBUTE SECTION upgrade ===== */
   .contribute {
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
@@ -1184,6 +1358,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
   counters.forEach(counter => {
     observer.observe(counter);
+  });
+
+  // Newsletter form submission
+  document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('newsletter-email').value;
+    const submitBtn = document.getElementById('newsletter-submit');
+    const successMsg = document.getElementById('newsletter-success');
+    const form = document.getElementById('newsletter-form');
+    
+    // Disable button and show loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Subscribing...';
+    
+    try {
+      // Use placeholder action for now (same as contribute form)
+      const data = {
+        timestamp: new Date().toISOString(),
+        type: 'newsletter',
+        email: email,
+        source: 'taiwan-md-homepage-en'
+      };
+      
+      // For now, just simulate success after a short delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Show success message
+      form.style.display = 'none';
+      successMsg.style.display = 'flex';
+      
+      // TODO: Replace with actual API endpoint when available
+      console.log('Newsletter signup:', data);
+      
+    } catch (error) {
+      console.error('Newsletter signup error:', error);
+      alert('Subscription failed, please try again later.');
+      
+      // Reset button
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Subscribe';
+    }
   });
 });
 </script>

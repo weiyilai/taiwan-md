@@ -301,6 +301,91 @@ const processedContent = marked.parse(resolvedContent);
             ))}
           </div>
         </div>
+
+        <!-- Article Footer Actions -->
+        <div class="article-footer-actions">
+          <hr class="section-divider" />
+          
+          <!-- 推薦下一篇 (Retention Loop) -->
+          {relatedArticles.length > 0 && (
+            <div class="recommended-reading">
+              <h3 class="footer-section-title">You might also like</h3>
+              <div class="recommended-grid">
+                {relatedArticles.slice(0, 2).map(article => (
+                  <a href={`/en/${article.category}/${article.slug}`} class="recommended-card">
+                    <h4 class="recommended-title">{article.title}</h4>
+                    <div class="recommended-category" style={`background: ${categoryInfo.colorLight}; color: ${categoryInfo.color};`}>
+                      <span class="category-icon">{categoryInfo.icon}</span>
+                      <span>{categoryInfo.name}</span>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <hr class="section-divider" />
+
+          <!-- Edit on GitHub (Contribution Funnel) -->
+          <div class="contribute-section">
+            <h3 class="footer-section-title">Help improve this content</h3>
+            <div class="contribute-actions">
+              <a 
+                href={`https://github.com/frank890417/taiwan-md/edit/main/knowledge/en/${categoryMapping[category as string]}/${slug}.md`}
+                target="_blank" 
+                class="contribute-btn edit-btn"
+                rel="noopener"
+              >
+                <span class="contribute-icon">📝</span>
+                <span>Edit this page on GitHub</span>
+              </a>
+              <a 
+                href={`https://github.com/frank890417/taiwan-md/issues/new?title=${encodeURIComponent(`Feedback: ${title}`)}`}
+                target="_blank" 
+                class="contribute-btn issue-btn"
+                rel="noopener"
+              >
+                <span class="contribute-icon">💬</span>
+                <span>Report an issue</span>
+              </a>
+            </div>
+          </div>
+
+          <hr class="section-divider" />
+
+          <!-- 社交分享 (Sharing Loop) -->
+          <div class="social-sharing">
+            <h3 class="footer-section-title">Share with others</h3>
+            <div class="sharing-buttons">
+              <a 
+                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(`https://taiwan.md/en/${category}/${slug}`)}`}
+                target="_blank" 
+                class="share-button twitter-btn"
+                rel="noopener"
+              >
+                <span class="share-icon">𝕏</span>
+                <span>Share on X</span>
+              </a>
+              <a 
+                href={`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(`https://taiwan.md/en/${category}/${slug}`)}`}
+                target="_blank" 
+                class="share-button line-btn"
+                rel="noopener"
+              >
+                <span class="share-icon">💚</span>
+                <span>Share on LINE</span>
+              </a>
+              <button 
+                class="share-button copy-btn"
+                onclick="copyToClipboard()"
+                type="button"
+              >
+                <span class="share-icon">📋</span>
+                <span>Copy link</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </article>
 
       <!-- Navigation -->
@@ -336,6 +421,39 @@ const processedContent = marked.parse(resolvedContent);
     if (progressBar) {
       progressBar.style.width = progress + '%';
     }
+  }
+  
+  // Copy to clipboard function
+  function copyToClipboard() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+      const btn = document.querySelector('.copy-btn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<span class="share-icon">✅</span><span>Copied</span>';
+      btn.style.background = '#10b981';
+      btn.style.color = 'white';
+      
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.background = '';
+        btn.style.color = '';
+      }, 2000);
+    }).catch(() => {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = url;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      
+      const btn = document.querySelector('.copy-btn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<span class="share-icon">✅</span><span>Copied</span>';
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 2000);
+    });
   }
   
   window.addEventListener('scroll', updateReadingProgress);
@@ -837,6 +955,175 @@ const processedContent = marked.parse(resolvedContent);
     line-height: 1.4;
   }
 
+  /* Article Footer Actions */
+  .article-footer-actions {
+    margin: 4rem 0 2rem 0;
+    border-top: 2px solid #f1f5f9;
+    padding-top: 3rem;
+  }
+
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 3rem auto;
+    max-width: 120px;
+  }
+
+  .footer-section-title {
+    font-family: "Noto Serif TC", "Source Han Serif TC", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2d5016;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  /* 推薦下一篇 */
+  .recommended-reading {
+    margin: 3rem 0;
+  }
+
+  .recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .recommended-card {
+    background: #fafafa;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: block;
+  }
+
+  .recommended-card:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 80, 22, 0.15);
+    border-color: #2d5016;
+  }
+
+  .recommended-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    margin-top: 0;
+  }
+
+  .recommended-category {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: fit-content;
+  }
+
+  /* 貢獻區塊 */
+  .contribute-section {
+    margin: 3rem 0;
+    text-align: center;
+  }
+
+  .contribute-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contribute-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: #f8f9fa;
+    border: 1.5px solid #2d5016;
+    border-radius: 8px;
+    color: #2d5016;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+  }
+
+  .contribute-btn:hover {
+    background: #2d5016;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(45, 80, 22, 0.2);
+  }
+
+  .contribute-icon {
+    font-size: 1.1rem;
+  }
+
+  /* 社交分享 */
+  .social-sharing {
+    margin: 3rem 0;
+    text-align: center;
+  }
+
+  .sharing-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .share-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 8px;
+    background: white;
+    color: #374151;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .share-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .twitter-btn:hover {
+    background: #000000;
+    border-color: #000000;
+    color: white;
+  }
+
+  .line-btn:hover {
+    background: #06c755;
+    border-color: #06c755;
+    color: white;
+  }
+
+  .copy-btn:hover {
+    background: #6b7280;
+    border-color: #6b7280;
+    color: white;
+  }
+
+  .share-icon {
+    font-size: 1.1rem;
+  }
+
   /* Navigation */
   .article-navigation {
     display: flex;
@@ -915,6 +1202,27 @@ const processedContent = marked.parse(resolvedContent);
     .article-navigation {
       flex-direction: column;
       align-items: center;
+    }
+
+    .recommended-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .contribute-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sharing-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contribute-btn,
+    .share-button {
+      width: 100%;
+      max-width: 280px;
+      justify-content: center;
     }
   }
 </style>

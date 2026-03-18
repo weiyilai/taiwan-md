@@ -64,6 +64,21 @@ for (const [tag, ids] of Object.entries(tagMap)) {
 }
 
 const graphData = JSON.stringify({ nodes: graphNodes, edges: graphEdges });
+
+// Prepare article list for random discovery
+const allArticles = allZhArticles
+  .filter(article => !article.id.includes('/_') && !article.id.endsWith('/_Hub.md'))
+  .map(article => {
+    const slug = article.id.split('/').slice(1).join('/').replace(/\.md$/, '');
+    const category = article.id.split('/')[0];
+    return {
+      title: article.data.title,
+      url: `/${category}/${encodeURIComponent(slug)}`,
+      category: categoryNames[category] || category
+    };
+  });
+
+const randomArticlesData = JSON.stringify(allArticles);
 ---
 
 <Layout title="台灣知識庫" description="開源、AI-friendly 的台灣完整知識庫，讓全世界認識真正的台灣">
@@ -203,6 +218,18 @@ const graphData = JSON.stringify({ nodes: graphNodes, edges: graphEdges });
         </p>
         <a href="/about" class="cover-link">閱讀完整引言集 →</a>
       </div>
+    </div>
+  </section>
+
+  <!-- 隨機發現台灣 -->
+  <section class="random-discovery">
+    <div class="random-discovery-content">
+      <button id="random-discovery-btn" class="random-btn">
+        <span class="random-icon">🎲</span>
+        <span class="random-text">隨機發現台灣</span>
+        <span class="random-subtitle">探索意想不到的故事</span>
+      </button>
+      <p class="random-description">不知道該看什麼？讓我們帶你發現台灣的隱藏寶藏！</p>
     </div>
   </section>
 
@@ -448,6 +475,28 @@ const graphData = JSON.stringify({ nodes: graphNodes, edges: graphEdges });
     </div>
   </section>
 
+  <!-- Newsletter 訂閱區塊 -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>📬 訂閱 Taiwan.md 週報</h2>
+      <p>每週精選台灣知識，直送信箱。</p>
+      
+      <form id="newsletter-form" class="newsletter-form">
+        <div class="form-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="your@email.com" required>
+          <button type="submit" id="newsletter-submit" class="newsletter-btn">訂閱</button>
+        </div>
+      </form>
+      
+      <div id="newsletter-success" class="newsletter-success" style="display: none;">
+        <span class="success-icon">🎉</span>
+        <span>感謝訂閱！</span>
+      </div>
+      
+      <p class="newsletter-note">Join 0 readers · 不追蹤、可隨時取消</p>
+    </div>
+  </section>
+
   <section class="contribute">
     <div class="contribute-content">
       <h2>加入我們</h2>
@@ -462,8 +511,25 @@ const graphData = JSON.stringify({ nodes: graphNodes, edges: graphEdges });
   </section>
 
 <script is:inline src="https://d3js.org/d3.v7.min.js"></script>
-<script is:inline define:vars={{ graphData }}>
+<script is:inline define:vars={{ graphData, randomArticlesData }}>
   document.addEventListener('DOMContentLoaded', function() {
+    // Random discovery functionality
+    const randomBtn = document.getElementById('random-discovery-btn');
+    const articles = JSON.parse(randomArticlesData);
+    
+    if (randomBtn && articles.length > 0) {
+      randomBtn.addEventListener('click', function() {
+        const randomIndex = Math.floor(Math.random() * articles.length);
+        const randomArticle = articles[randomIndex];
+        
+        // Add click animation
+        randomBtn.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          randomBtn.style.transform = 'scale(1)';
+          window.location.href = randomArticle.url;
+        }, 150);
+      });
+    }
     const container = document.getElementById('home-graph');
     if (!container) return;
 
@@ -569,6 +635,48 @@ const graphData = JSON.stringify({ nodes: graphNodes, edges: graphEdges });
       node.attr('cx', d => d.x).attr('cy', d => d.y);
       label.attr('x', d => d.x).attr('y', d => d.y);
     });
+  });
+
+  // Newsletter form submission
+  document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('newsletter-email').value;
+    const submitBtn = document.getElementById('newsletter-submit');
+    const successMsg = document.getElementById('newsletter-success');
+    const form = document.getElementById('newsletter-form');
+    
+    // Disable button and show loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = '訂閱中...';
+    
+    try {
+      // Use placeholder action for now (same as contribute form)
+      const data = {
+        timestamp: new Date().toISOString(),
+        type: 'newsletter',
+        email: email,
+        source: 'taiwan-md-homepage'
+      };
+      
+      // For now, just simulate success after a short delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Show success message
+      form.style.display = 'none';
+      successMsg.style.display = 'flex';
+      
+      // TODO: Replace with actual API endpoint when available
+      console.log('Newsletter signup:', data);
+      
+    } catch (error) {
+      console.error('Newsletter signup error:', error);
+      alert('訂閱失敗，請稍後再試。');
+      
+      // Reset button
+      submitBtn.disabled = false;
+      submitBtn.textContent = '訂閱';
+    }
   });
 </script>
 </Layout>
@@ -1000,6 +1108,115 @@ const graphData = JSON.stringify({ nodes: graphNodes, edges: graphEdges });
     background: linear-gradient(135deg, #16a34a, #15803d);
   }
 
+  /* ===== 隨機發現台灣 ===== */
+  .random-discovery {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #fed7aa 100%);
+    border-radius: 24px;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .random-discovery::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f59e0b' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M15 0L20 10L30 15L20 20L15 30L10 20L0 15L10 10Z'/%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.6;
+  }
+  
+  .random-discovery-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .random-btn {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 1.5rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+    margin-bottom: 1.5rem;
+    min-width: 280px;
+    font-family: "Noto Serif TC", "Source Han Serif TC", "PMingLiU", serif;
+  }
+  
+  .random-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+  }
+  
+  .random-btn:hover::before {
+    left: 100%;
+  }
+  
+  .random-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.4);
+    background: linear-gradient(135deg, #d97706, #b45309);
+  }
+  
+  .random-btn:active {
+    transform: scale(0.95) translateY(-4px);
+  }
+  
+  .random-icon {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    animation: dice-roll 2s ease-in-out infinite;
+  }
+  
+  @keyframes dice-roll {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    25% { transform: rotate(5deg) scale(1.05); }
+    50% { transform: rotate(-5deg) scale(1.1); }
+    75% { transform: rotate(3deg) scale(1.05); }
+  }
+  
+  .random-text {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+  }
+  
+  .random-subtitle {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 500;
+    line-height: 1;
+  }
+  
+  .random-description {
+    color: #92400e;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
   /* ===== FEATURES SECTION 升級 ===== */
   .features {
     margin: 6rem 0;
@@ -1260,6 +1477,142 @@ const graphData = JSON.stringify({ nodes: graphNodes, edges: graphEdges });
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  /* ===== NEWSLETTER SECTION ===== */
+  .newsletter {
+    background: #2d5016;
+    padding: 4rem 2rem;
+    margin: 6rem -1rem 0;
+    text-align: center;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 700;
+    font-family: "Noto Serif TC", "Source Han Serif TC", "PMingLiU", serif;
+  }
+  
+  .newsletter p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  
+  .newsletter-form {
+    margin-bottom: 1rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter input[type="email"] {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 200px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .newsletter input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .newsletter input[type="email"]:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .newsletter-btn {
+    padding: 0.875rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    color: #2d5016;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-family: "Noto Serif TC", "Source Han Serif TC", "PMingLiU", serif;
+  }
+  
+  .newsletter-btn:hover {
+    background: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .newsletter-btn:disabled {
+    background: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .newsletter-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .success-icon {
+    font-size: 1.5rem;
+  }
+  
+  .newsletter-note {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 768px) {
+    .newsletter {
+      padding: 3rem 1rem;
+    }
+    
+    .form-row {
+      flex-direction: column;
+      max-width: 300px;
+    }
+    
+    .newsletter input[type="email"] {
+      min-width: unset;
+    }
+    
+    .newsletter h2 {
+      font-size: 1.6rem;
+    }
   }
   
   /* ===== CONTRIBUTE SECTION 升級 ===== */
