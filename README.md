@@ -188,6 +188,11 @@ Thanks to these wonderful people ([emoji key](https://allcontributors.org/docs/e
     <td align="center"><a href="https://github.com/f312213213"><img src="https://avatars.githubusercontent.com/u/71749524?v=4" width="80px;" alt="f312213213"/><br /><sub><b>f312213213</b></sub></a><br />💻 🌍</td>
     <td align="center"><a href="https://github.com/siansiansu"><img src="https://avatars.githubusercontent.com/u/33390878?v=4" width="80px;" alt="siansiansu"/><br /><sub><b>siansiansu</b></sub></a><br />🖋</td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/YenTingWu"><img src="https://avatars.githubusercontent.com/u/57777349?v=4" width="80px;" alt="YenTingWu"/><br /><sub><b>YenTingWu</b></sub></a><br />💻 🔧</td>
+    <td align="center"><a href="https://github.com/r000tmnt"><img src="https://avatars.githubusercontent.com/u/62630285?v=4" width="80px;" alt="r000tmnt"/><br /><sub><b>ParkCorner</b></sub></a><br />🖋</td>
+    <td align="center"><a href="https://github.com/weilinlai719"><img src="https://avatars.githubusercontent.com/u/173038591?v=4" width="80px;" alt="weilinlai719"/><br /><sub><b>weilin lai</b></sub></a><br />💻 🐛</td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
