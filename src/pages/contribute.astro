@@ -36,6 +36,96 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
+    <section class="roles-section">
+      <div class="roles-inner">
+        <h2>你的專長，就是台灣需要的力量</h2>
+        <p class="roles-desc">不管你的背景是什麼，都能為這個知識庫帶來獨特的價值</p>
+        <div class="roles-grid">
+
+          <div class="role-card">
+            <div class="role-icon">✍️</div>
+            <h3>寫作者 / 編輯</h3>
+            <p>你的文字能力是知識庫的核心。撰寫新文章、改善現有內容的可讀性、校對錯字與語句。</p>
+            <div class="role-actions">
+              <span>→ 挑一篇你熟悉的主題，寫出有溫度的文章</span>
+              <span>→ 幫現有文章潤稿、補充細節</span>
+            </div>
+          </div>
+
+          <div class="role-card">
+            <div class="role-icon">🔬</div>
+            <h3>研究者 / 學者</h3>
+            <p>你的專業知識是品質的保證。事實查核、補充學術觀點、指出常見迷思。</p>
+            <div class="role-actions">
+              <span>→ 審核文章中的事實與引用來源</span>
+              <span>→ 補充你研究領域的深度內容</span>
+            </div>
+          </div>
+
+          <div class="role-card">
+            <div class="role-icon">🎨</div>
+            <h3>設計師</h3>
+            <p>好的資訊需要好的呈現。資訊圖表、SVG 插圖、UI/UX 改善都是巨大的貢獻。</p>
+            <div class="role-actions">
+              <span>→ 為文章製作資訊圖表或示意圖</span>
+              <span>→ 到 <a href="/assets">SVG 素材庫</a> 貢獻台灣主題的開源圖示</span>
+            </div>
+          </div>
+
+          <div class="role-card">
+            <div class="role-icon">💻</div>
+            <h3>工程師</h3>
+            <p>網站本身也需要進化。效能優化、新功能、i18n、無障礙、SEO 都歡迎。</p>
+            <div class="role-actions">
+              <span>→ 看看 <a href="https://github.com/frank890417/taiwan-md/issues" target="_blank">GitHub Issues</a> 有沒有你能解的</span>
+              <span>→ 改善搜尋、圖譜、多語系等功能</span>
+            </div>
+          </div>
+
+          <div class="role-card">
+            <div class="role-icon">🌍</div>
+            <h3>翻譯者</h3>
+            <p>讓世界讀懂台灣。中翻英、中翻日、或任何語言，每一篇翻譯都在拓展台灣的能見度。</p>
+            <div class="role-actions">
+              <span>→ 從 <code>knowledge/</code> 挑一篇翻譯到 <code>knowledge/en/</code></span>
+              <span>→ 日文版正在籌備中，歡迎加入</span>
+            </div>
+          </div>
+
+          <div class="role-card">
+            <div class="role-icon">📸</div>
+            <h3>攝影師 / 創作者</h3>
+            <p>一張好照片勝過千言萬語。CC 授權的台灣照片、田野錄音、影像素材都非常需要。</p>
+            <div class="role-actions">
+              <span>→ 拍下你眼中的台灣，以 CC 授權貢獻</span>
+              <span>→ 錄製台灣的聲音，加入<a href="https://github.com/frank890417/taiwan-md/tree/main/assets/sounds" target="_blank">聲景計畫</a></span>
+            </div>
+          </div>
+
+          <div class="role-card">
+            <div class="role-icon">🏛️</div>
+            <h3>文史工作者 / 在地達人</h3>
+            <p>你的在地知識是 AI 永遠生不出來的。口述歷史、地方故事、文化脈絡，這些是最珍貴的內容。</p>
+            <div class="role-actions">
+              <span>→ 寫下你家鄉的故事，教科書不會教的那種</span>
+              <span>→ 指正文章中的在地錯誤</span>
+            </div>
+          </div>
+
+          <div class="role-card">
+            <div class="role-icon">📢</div>
+            <h3>任何關心台灣的人</h3>
+            <p>就算以上都不是你，你的分享本身就是貢獻。轉發給朋友、在社群提到、給我們回饋。</p>
+            <div class="role-actions">
+              <span>→ 分享 taiwan.md 給想認識台灣的朋友</span>
+              <span>→ 看到錯誤？開 Issue 告訴我們</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- 新增的寫作指南區塊 -->
     <section class="writing-guides">
       <div class="guides-inner">
@@ -450,6 +540,78 @@ import Layout from '../layouts/Layout.astro';
   }
   .how-card a { color: #4A7C59; }
   @media (max-width: 768px) { .how-grid { grid-template-columns: 1fr; } }
+
+  /* 角色貢獻區塊 */
+  .roles-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #E8F5E8, rgba(247, 243, 233, 0.5));
+  }
+  .roles-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .roles-inner h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #2D5016;
+    font-weight: 700;
+  }
+  .roles-desc {
+    text-align: center;
+    color: #4A5D23;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+  }
+  .roles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+  @media (max-width: 1024px) { .roles-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) { .roles-grid { grid-template-columns: 1fr; } }
+  .role-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #A7C4A0;
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+  }
+  .role-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(45, 80, 22, 0.12);
+    border-color: #4A7C59;
+  }
+  .role-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .role-card h3 {
+    font-size: 1.05rem;
+    color: #2D5016;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  .role-card p {
+    font-size: 0.88rem;
+    color: #4A5D23;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+  .role-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .role-actions span {
+    font-size: 0.8rem;
+    color: #6B8E23;
+    line-height: 1.5;
+  }
+  .role-actions a {
+    color: #4A7C59;
+    font-weight: 600;
+  }
 
   /* 新增的寫作指南區塊 */
   .writing-guides {
