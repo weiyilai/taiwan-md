@@ -366,6 +366,20 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
+    <!-- Section: Press -->
+    <section class="press-section">
+      <div class="press-inner">
+        <h2>📰 媒體報導</h2>
+        <div class="press-grid">
+          <a href="https://www.cna.com.tw/news/ait/202603195002.aspx" target="_blank" rel="noopener noreferrer" class="press-card">
+            <div class="press-source">中央社 CNA</div>
+            <h3 class="press-title">從台積電到早餐店阿姨　Taiwan.md知識庫AI時代下說台灣故事</h3>
+            <p class="press-date">2026-03-19</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Section: Sponsors -->
     <section class="sponsors-section">
       <div class="sponsors-inner">
@@ -1255,6 +1269,61 @@ import Layout from '../layouts/Layout.astro';
   .contributors-img img { max-width: 100%; border-radius: 8px; }
   .contributors-cta { margin-top: 1rem; font-size: 0.9rem; color: #64748b; }
   .contributors-cta a { color: #3b82f6; font-weight: 500; }
+
+  /* ===== Press ===== */
+  .press-section {
+    padding: 4rem 2rem;
+    background: rgba(247, 243, 233, 0.3);
+  }
+  .press-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .press-inner h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #2D5016;
+    font-weight: 700;
+  }
+  .press-grid {
+    display: grid;
+    gap: 1rem;
+  }
+  .press-card {
+    display: block;
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #A7C4A0;
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+  }
+  .press-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(45, 80, 22, 0.12);
+    border-color: #4A7C59;
+  }
+  .press-source {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #4A7C59;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+  .press-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #2D5016;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  .press-date {
+    font-size: 0.85rem;
+    color: #6B8E23;
+  }
 
   /* ===== Sponsors ===== */
   .sponsors-section {
