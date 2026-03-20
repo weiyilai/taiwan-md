@@ -1,9 +1,3 @@
-
-people/唐鳳.md
-people/吳明益.md
-nature/生態多樣性.md
-lifestyle/溫泉文化.md
-lifestyle/宗教與民間信仰.md
 history/台灣選舉與政黨政治.md
 geography/城市特色與區域文化.md
 geography/台灣都市發展與城鄉差距.md
