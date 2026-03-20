@@ -1,11 +1,10 @@
-// 分類配置，包含色彩、圖標、描述等
-export const categoryConfig = {
+import { useTranslations } from '../i18n/utils';
+
+export const getCategoryConfigs = (t: ReturnType<typeof useTranslations>) => ({
   history: {
-    name: '歷史',
-    name_en: 'History',
-    description: '從史前時代到現代，台灣歷史的完整脈絡',
-    description_en:
-      "A complete narrative of Taiwan's history from prehistoric times to the modern era",
+    name: t('categoryConfig.history'),
+    description: t('categoryConfig.history.description'),
+
     icon: '📜',
     color: '#92400e',
     colorLight: '#f59e0b20',
@@ -14,11 +13,8 @@ export const categoryConfig = {
       'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Presidential_Office_Building_%28Taiwan%29.jpg/640px-Presidential_Office_Building_%28Taiwan%29.jpg',
   },
   geography: {
-    name: '地理',
-    name_en: 'Geography',
-    description: '台灣的自然環境、地形特色與區域發展',
-    description_en:
-      "Taiwan's natural environment, terrain features, and regional development",
+    name: t('categoryConfig.geography'),
+    description: t('categoryConfig.geography.description'),
     icon: '🗺️',
     color: '#065f46',
     colorLight: '#059f4620',
@@ -27,11 +23,9 @@ export const categoryConfig = {
       'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Taroko_national_park.jpg/640px-Taroko_national_park.jpg',
   },
   culture: {
-    name: '文化',
-    name_en: 'Culture',
-    description: '多元族群文化的融合與在地特色',
-    description_en:
-      'The fusion of diverse ethnic cultures and local characteristics',
+    name: t('categoryConfig.culture'),
+    description: t('categoryConfig.culture.description'),
+
     icon: '🎭',
     color: '#7c3aed',
     colorLight: '#7c3aed20',
@@ -40,11 +34,8 @@ export const categoryConfig = {
       'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Lukang_Tianhou_Temple.JPG/640px-Lukang_Tianhou_Temple.JPG',
   },
   food: {
-    name: '美食',
-    name_en: 'Food',
-    description: '從夜市小吃到精緻料理的美食文化',
-    description_en:
-      'Culinary culture from night market street food to fine dining',
+    name: t('categoryConfig.food'),
+    description: t('categoryConfig.food.description'),
     icon: '🍜',
     color: '#ea580c',
     colorLight: '#ea580c20',
@@ -53,11 +44,8 @@ export const categoryConfig = {
       'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Taipei_Shilin_Night_Market.jpg/640px-Taipei_Shilin_Night_Market.jpg',
   },
   art: {
-    name: '藝術',
-    name_en: 'Art',
-    description: '傳統工藝到當代藝術的創作能量',
-    description_en:
-      'Creative energy from traditional crafts to contemporary art',
+    name: t('categoryConfig.art'),
+    description: t('categoryConfig.art.description'),
     icon: '🎨',
     color: '#be185d',
     colorLight: '#be185d20',
@@ -66,10 +54,8 @@ export const categoryConfig = {
       'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Taipei_Fine_Arts_Museum_2019.jpg/640px-Taipei_Fine_Arts_Museum_2019.jpg',
   },
   music: {
-    name: '音樂',
-    name_en: 'Music',
-    description: '從原住民音樂到流行音樂的聲音風景',
-    description_en: 'A sonic landscape from indigenous music to pop music',
+    name: t('categoryConfig.music'),
+    description: t('categoryConfig.music.description'),
     icon: '🎵',
     color: '#0891b2',
     colorLight: '#0891b220',
@@ -78,11 +64,8 @@ export const categoryConfig = {
       'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/National_Concert_Hall%2C_Taipei_2015.jpg/640px-National_Concert_Hall%2C_Taipei_2015.jpg',
   },
   technology: {
-    name: '科技',
-    name_en: 'Technology',
-    description: '科技島的創新發展與數位轉型',
-    description_en:
-      'Innovation and digital transformation on the technology island',
+    name: t('categoryConfig.technology'),
+    description: t('categoryConfig.technology.description'),
     icon: '💻',
     color: '#1d4ed8',
     colorLight: '#1d4ed820',
@@ -91,10 +74,8 @@ export const categoryConfig = {
       'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/TSMC_Fab12.jpg/640px-TSMC_Fab12.jpg',
   },
   nature: {
-    name: '自然',
-    name_en: 'Nature',
-    description: '豐富的生態環境與環保議題',
-    description_en: 'Rich ecosystems and environmental conservation topics',
+    name: t('categoryConfig.nature'),
+    description: t('categoryConfig.nature.description'),
     icon: '🌿',
     color: '#15803d',
     colorLight: '#15803d20',
@@ -103,9 +84,8 @@ export const categoryConfig = {
       'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Yushan_main_peak%2BBlue_arrow.jpg/640px-Yushan_main_peak%2BBlue_arrow.jpg',
   },
   people: {
-    name: '人物',
-    name_en: 'People',
-    description: '影響台灣發展的重要人物與故事',
+    name: t('categoryConfig.people'),
+    description: t('categoryConfig.people.description'),
     description_en: "Key figures and stories that shaped Taiwan's development",
     icon: '👥',
     color: '#b45309',
@@ -115,11 +95,8 @@ export const categoryConfig = {
       'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ang_Lee_-_66%C3%A8me_Festival_de_Venise_%28Mostra%29.jpg/400px-Ang_Lee_-_66%C3%A8me_Festival_de_Venise_%28Mostra%29.jpg',
   },
   society: {
-    name: '社會',
-    name_en: 'Society',
-    description: '社會變遷與當代議題的深度探討',
-    description_en:
-      'In-depth exploration of social change and contemporary issues',
+    name: t('categoryConfig.society'),
+    description: t('categoryConfig.society.description'),
     icon: '🏛️',
     color: '#475569',
     colorLight: '#47556920',
@@ -128,11 +105,8 @@ export const categoryConfig = {
       'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Legislative_Yuan%2C_the_Republic_of_China.JPG/640px-Legislative_Yuan%2C_the_Republic_of_China.JPG',
   },
   economy: {
-    name: '經濟',
-    name_en: 'Economy',
-    description: '經濟奇蹟的成因與轉型挑戰',
-    description_en:
-      'The drivers behind the economic miracle and transformation challenges',
+    name: t('categoryConfig.economy'),
+    description: t('categoryConfig.economy.description'),
     icon: '📊',
     color: '#c2410c',
     colorLight: '#c2410c20',
@@ -141,10 +115,8 @@ export const categoryConfig = {
       'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Taipei_101_from_afar.jpg/400px-Taipei_101_from_afar.jpg',
   },
   lifestyle: {
-    name: '生活',
-    name_en: 'Lifestyle',
-    description: '台灣人的生活方式與價值觀',
-    description_en: 'The lifestyle and values of the Taiwanese people',
+    name: t('categoryConfig.lifestyle'),
+    description: t('categoryConfig.lifestyle.description'),
     icon: '🏠',
     color: '#4d7c0f',
     colorLight: '#4d7c0f20',
@@ -152,12 +124,9 @@ export const categoryConfig = {
     cover:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/7-Eleven_in_Taipei.jpg/640px-7-Eleven_in_Taipei.jpg',
   },
-};
+});
 
-export type CategoryKey = keyof typeof categoryConfig;
+const __plainCategoryConfig = getCategoryConfigs((key) => key as any);
 
-export function getCategoryConfig(
-  category: string,
-): (typeof categoryConfig)[CategoryKey] | null {
-  return categoryConfig[category as CategoryKey] || null;
-}
+export const categoryList = Object.keys(__plainCategoryConfig) as CategoryKey[];
+export type CategoryKey = keyof typeof __plainCategoryConfig;
