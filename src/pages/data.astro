@@ -271,66 +271,58 @@ const dataCategories = [
         </div>
       </div>
 
-      <!-- 企業版圖：左圖右分析 Layout -->
-      <div class="companies-container">
-        <!-- 左側：泡泡圖區域 (65%) -->
-        <div class="bubble-section">
-          <!-- 泡泡圖控制項 -->
-          <div class="bubble-controls">
-            <div class="size-toggle">
-              <label>泡泡大小：</label>
-              <button class="toggle-btn active" data-mode="marketCap">市值</button>
-              <button class="toggle-btn" data-mode="revenue">營收</button>
-              <button class="toggle-btn" data-mode="employees">員工數</button>
-            </div>
-            <div class="sector-filters">
-              <button class="sector-btn active" data-sector="all">全部</button>
-              {sectors.slice(0, 8).map(s => (
-                <button
-                  class="sector-btn"
-                  data-sector={s}
-                  style={`--sector-color: ${sectorColors[s] || '#888'}`}
-                >
-                  <span class="sector-dot" style={`background: ${sectorColors[s] || '#888'}`}></span>
-                  {s}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <!-- 泡泡圖容器 -->
-          <div id="bubble-chart"></div>
+      <!-- 企業泡泡圖控制項 -->
+      <div class="bubble-controls">
+        <div class="size-toggle">
+          <label>泡泡大小：</label>
+          <button class="toggle-btn active" data-mode="marketCap">市值</button>
+          <button class="toggle-btn" data-mode="revenue">營收</button>
+          <button class="toggle-btn" data-mode="employees">員工數</button>
         </div>
+        <div class="sector-filters">
+          <button class="sector-btn active" data-sector="all">全部</button>
+          {sectors.slice(0, 8).map(s => (
+            <button
+              class="sector-btn"
+              data-sector={s}
+              style={`--sector-color: ${sectorColors[s] || '#888'}`}
+            >
+              <span class="sector-dot" style={`background: ${sectorColors[s] || '#888'}`}></span>
+              {s}
+            </button>
+          ))}
+        </div>
+      </div>
 
-        <!-- 右側：洞察分析區域 (35%) -->
-        <div class="insights-section">
-          <!-- 關鍵洞察 -->
-          <div class="insight-grid">
-            <div class="insight-card">
-              <div class="insight-number">39%</div>
-              <div class="insight-label">台積電佔台股總市值</div>
-              <div class="insight-detail">一家公司 ≈ 其餘千家上市公司的 2/3</div>
-            </div>
-            <div class="insight-card">
-              <div class="insight-number">72%</div>
-              <div class="insight-label">前 50 大佔台股總市值</div>
-              <div class="insight-detail">台灣股市高度集中於大型企業</div>
-            </div>
-            <div class="insight-card">
-              <div class="insight-number">12 家</div>
-              <div class="insight-label">半導體企業入榜</div>
-              <div class="insight-detail">印證「矽盾」—— 半導體是台灣國防</div>
-            </div>
-            <div class="insight-card">
-              <div class="insight-number">9 家</div>
-              <div class="insight-label">金融業入榜前 50</div>
-              <div class="insight-detail">金控整併後的穩定力量</div>
-            </div>
+      <!-- 泡泡圖容器 -->
+      <div id="bubble-chart"></div>
+
+      <!-- 關鍵洞察 -->
+      <div class="insights">
+        <div class="insight-grid">
+          <div class="insight-card">
+            <div class="insight-number">39%</div>
+            <div class="insight-label">台積電佔台股總市值</div>
+            <div class="insight-detail">一家公司 ≈ 其餘千家上市公司的 2/3</div>
           </div>
-          
-          <div class="explore-more">
-            <a href="/economy" class="explore-link">查看完整排名 →</a>
+          <div class="insight-card">
+            <div class="insight-number">72%</div>
+            <div class="insight-label">前 50 大佔台股總市值</div>
+            <div class="insight-detail">台灣股市高度集中於大型企業</div>
           </div>
+          <div class="insight-card">
+            <div class="insight-number">12 家</div>
+            <div class="insight-label">半導體企業入榜</div>
+            <div class="insight-detail">印證「矽盾」—— 半導體是台灣國防</div>
+          </div>
+          <div class="insight-card">
+            <div class="insight-number">9 家</div>
+            <div class="insight-label">金融業入榜前 50</div>
+            <div class="insight-detail">金控整併後的穩定力量</div>
+          </div>
+        </div>
+        <div class="explore-more">
+          <a href="/economy" class="explore-link">查看完整排名 →</a>
         </div>
       </div>
     </section>
@@ -343,27 +335,117 @@ const dataCategories = [
 
       <div class="story-intro">
         <h2 class="section-title">🗺️ 台灣的形狀</h2>
+        <div class="story-text">
+          <p>AI 畫的台灣都是錯的。這是正確版本。</p>
+          <p>
+            大多數 AI 圖像生成模型的訓練資料中，缺乏結構化的台灣地理資料。
+            結果就是形狀扭曲、比例失真、甚至跟其他島嶼搞混。
+            Taiwan.md 提供正確、開源、可自由使用的台灣 SVG 輪廓圖，
+            讓每個需要「台灣長什麼樣子」的場景都有標準答案。
+          </p>
+        </div>
       </div>
 
-      <!-- 台灣輪廓：左文右圖 Layout -->
-      <div class="taiwan-container">
-        <!-- 左側：文字說明 (40%) -->
-        <div class="taiwan-text-section">
-          <div class="story-text">
-            <p>AI 畫的台灣都是錯的。這是正確版本。</p>
-            <p>
-              大多數 AI 圖像生成模型的訓練資料中，缺乏結構化的台灣地理資料。
-              結果就是形狀扭曲、比例失真、甚至跟其他島嶼搞混。
-              Taiwan.md 提供正確、開源、可自由使用的台灣 SVG 輪廓圖，
-              讓每個需要「台灣長什麼樣子」的場景都有標準答案。
-            </p>
+      <!-- SVG 卡片 -->
+      <div class="svg-grid">
+        <div class="svg-card">
+          <div class="svg-preview">
+            <img src="/assets/svg/taiwan-icon-wiki.svg" alt="Taiwan Icon" />
           </div>
+          <div class="svg-info">
+            <h3>taiwan-icon.svg</h3>
+            <p class="svg-desc">台灣輪廓 Icon — 適合 icon、logo、小尺寸</p>
+            <p class="svg-meta">Wikimedia Commons · CC</p>
+            <div class="svg-actions">
+              <a
+                href="/assets/svg/taiwan-icon-wiki.svg"
+                download
+                class="btn btn-primary">下載 SVG</a
+              >
+              <button
+                class="btn btn-outline"
+                onclick="copySVG('taiwan-icon-wiki.svg', this)"
+                >複製代碼</button
+              >
+            </div>
+          </div>
+        </div>
 
-          <!-- 使用方式 -->
-          <div class="usage-example">
-            <h3>📝 使用方式</h3>
-            <div class="code-block">
-              <pre><code>&lt;!-- 直接嵌入 --&gt;
+        <div class="svg-card">
+          <div class="svg-preview">
+            <img src="/assets/svg/taiwan-simplemaps.svg" alt="Taiwan SimpleMaps" />
+          </div>
+          <div class="svg-info">
+            <h3>taiwan-simplemaps.svg</h3>
+            <p class="svg-desc">SimpleMaps 版 — 乾淨向量，適合網頁嵌入</p>
+            <p class="svg-meta">SimpleMaps · 5 KB</p>
+            <div class="svg-actions">
+              <a
+                href="/assets/svg/taiwan-simplemaps.svg"
+                download
+                class="btn btn-primary">下載 SVG</a
+              >
+              <button
+                class="btn btn-outline"
+                onclick="copySVG('taiwan-simplemaps.svg', this)"
+                >複製代碼</button
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="svg-card">
+          <div class="svg-preview">
+            <img src="/assets/svg/taiwan-location-map.svg" alt="Taiwan Location Map" />
+          </div>
+          <div class="svg-info">
+            <h3>taiwan-location-map.svg</h3>
+            <p class="svg-desc">地理定位圖 — 含經緯度、城市標記</p>
+            <p class="svg-meta">Wikimedia Commons · CC</p>
+            <div class="svg-actions">
+              <a
+                href="/assets/svg/taiwan-location-map.svg"
+                download
+                class="btn btn-primary">下載 SVG</a
+              >
+              <button
+                class="btn btn-outline"
+                onclick="copySVG('taiwan-location-map.svg', this)"
+                >複製代碼</button
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="svg-card">
+          <div class="svg-preview">
+            <img src="/assets/svg/taiwan-political-division.svg" alt="Taiwan Political Division" />
+          </div>
+          <div class="svg-info">
+            <h3>taiwan-political-division.svg</h3>
+            <p class="svg-desc">行政區劃圖 — 縣市分區、完整邊界</p>
+            <p class="svg-meta">Wikimedia Commons · CC</p>
+            <div class="svg-actions">
+              <a
+                href="/assets/svg/taiwan-political-division.svg"
+                download
+                class="btn btn-primary">下載 SVG</a
+              >
+              <button
+                class="btn btn-outline"
+                onclick="copySVG('taiwan-political-division.svg', this)"
+                >複製代碼</button
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 使用方式 -->
+      <div class="usage-example">
+        <h3>📝 使用方式</h3>
+        <div class="code-block">
+          <pre><code>&lt;!-- 直接嵌入 --&gt;
 &lt;img src="https://taiwan.md/assets/svg/taiwan-icon-wiki.svg" alt="Taiwan" width="200"&gt;
 
 &lt;!-- 作為 CSS 背景 --&gt;
@@ -371,110 +453,11 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
 
 &lt;!-- 在 Markdown 中引用 --&gt;
 ![Taiwan](https://taiwan.md/assets/svg/taiwan-icon-wiki.svg)</code></pre>
-            </div>
-            <p class="license-note">
-              所有 SVG 檔案以 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> 授權釋出。
-              歡迎自由使用、修改、商用，只需標注來源。
-            </p>
-          </div>
         </div>
-
-        <!-- 右側：SVG 卡片 (60%) -->
-        <div class="taiwan-svg-section">
-          <div class="svg-grid">
-            <div class="svg-card">
-              <div class="svg-preview">
-                <img src="/assets/svg/taiwan-icon-wiki.svg" alt="Taiwan Icon" />
-              </div>
-              <div class="svg-info">
-                <h3>taiwan-icon.svg</h3>
-                <p class="svg-desc">台灣輪廓 Icon — 適合 icon、logo、小尺寸</p>
-                <p class="svg-meta">Wikimedia Commons · CC</p>
-                <div class="svg-actions">
-                  <a
-                    href="/assets/svg/taiwan-icon-wiki.svg"
-                    download
-                    class="btn btn-primary">下載 SVG</a
-                  >
-                  <button
-                    class="btn btn-outline"
-                    onclick="copySVG('taiwan-icon-wiki.svg', this)"
-                    >複製代碼</button
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="svg-card">
-              <div class="svg-preview">
-                <img src="/assets/svg/taiwan-simplemaps.svg" alt="Taiwan SimpleMaps" />
-              </div>
-              <div class="svg-info">
-                <h3>taiwan-simplemaps.svg</h3>
-                <p class="svg-desc">SimpleMaps 版 — 乾淨向量，適合網頁嵌入</p>
-                <p class="svg-meta">SimpleMaps · 5 KB</p>
-                <div class="svg-actions">
-                  <a
-                    href="/assets/svg/taiwan-simplemaps.svg"
-                    download
-                    class="btn btn-primary">下載 SVG</a
-                  >
-                  <button
-                    class="btn btn-outline"
-                    onclick="copySVG('taiwan-simplemaps.svg', this)"
-                    >複製代碼</button
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="svg-card">
-              <div class="svg-preview">
-                <img src="/assets/svg/taiwan-location-map.svg" alt="Taiwan Location Map" />
-              </div>
-              <div class="svg-info">
-                <h3>taiwan-location-map.svg</h3>
-                <p class="svg-desc">地理定位圖 — 含經緯度、城市標記</p>
-                <p class="svg-meta">Wikimedia Commons · CC</p>
-                <div class="svg-actions">
-                  <a
-                    href="/assets/svg/taiwan-location-map.svg"
-                    download
-                    class="btn btn-primary">下載 SVG</a
-                  >
-                  <button
-                    class="btn btn-outline"
-                    onclick="copySVG('taiwan-location-map.svg', this)"
-                    >複製代碼</button
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="svg-card">
-              <div class="svg-preview">
-                <img src="/assets/svg/taiwan-political-division.svg" alt="Taiwan Political Division" />
-              </div>
-              <div class="svg-info">
-                <h3>taiwan-political-division.svg</h3>
-                <p class="svg-desc">行政區劃圖 — 縣市分區、完整邊界</p>
-                <p class="svg-meta">Wikimedia Commons · CC</p>
-                <div class="svg-actions">
-                  <a
-                    href="/assets/svg/taiwan-political-division.svg"
-                    download
-                    class="btn btn-primary">下載 SVG</a
-                  >
-                  <button
-                    class="btn btn-outline"
-                    onclick="copySVG('taiwan-political-division.svg', this)"
-                    >複製代碼</button
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p class="license-note">
+          所有 SVG 檔案以 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> 授權釋出。
+          歡迎自由使用、修改、商用，只需標注來源。
+        </p>
       </div>
     </section>
 
@@ -499,7 +482,7 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
         </div>
       </div>
 
-      <!-- 開放資料分類：多欄 Grid -->
+      <!-- 開放資料分類 -->
       <div class="data-categories">
         {
           dataCategories.map((cat) => (
@@ -608,7 +591,6 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
 
     function initBubbleChart(data, colors) {
       const container = document.getElementById('bubble-chart');
-      // 調整寬度 - 現在是 65% 寬
       const width = container.clientWidth;
       const height = Math.max(500, window.innerHeight * 0.5);
 
@@ -812,15 +794,16 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       color: #e2e8f0;
     }
 
-    /* Hero 區塊 - 放寬到 full-width */
+    /* Hero 區塊 */
     .hero {
       text-align: center;
       padding: 4rem 2rem 3rem;
-      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
     }
 
     .hero-title {
-      font-size: clamp(3rem, 6vw, 5rem);
+      font-size: clamp(2.5rem, 6vw, 4rem);
       font-weight: 900;
       background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
       background-clip: text;
@@ -830,17 +813,17 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
     }
 
     .hero-subtitle {
-      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
       color: #94a3b8;
       margin-bottom: 1.5rem;
       font-weight: 600;
     }
 
     .hero-desc {
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 1.7;
       color: #cbd5e1;
-      max-width: 700px;
+      max-width: 600px;
       margin: 0 auto;
     }
 
@@ -858,7 +841,7 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       border-radius: 2px;
     }
 
-    /* 通用區塊樣式 - max-width 從 1200px → 1400px */
+    /* 通用區塊樣式 */
     .story-intro {
       max-width: 1400px;
       margin: 0 auto;
@@ -902,28 +885,10 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       padding: 2rem 0 4rem;
     }
 
-    /* 企業版圖：左圖右分析 Layout */
-    .companies-container {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      display: flex;
-      gap: 2rem;
-      align-items: flex-start;
-    }
-
-    .bubble-section {
-      flex: 0 0 65%;
-      min-height: 600px;
-    }
-
-    .insights-section {
-      flex: 0 0 35%;
-      padding-left: 1rem;
-    }
-
     .bubble-controls {
-      margin-bottom: 2rem;
+      max-width: 1400px;
+      margin: 0 auto 2rem;
+      padding: 0 2rem;
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -995,7 +960,9 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
     #bubble-chart {
       position: relative;
       width: 100%;
-      height: 500px;
+      max-width: 1400px;
+      margin: 0 auto;
+      min-height: 500px;
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 16px;
       overflow: hidden;
@@ -1016,11 +983,17 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
+    .insights {
+      max-width: 1400px;
+      margin: 2rem auto 0;
+      padding: 0 2rem;
+    }
+
     .insight-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     .insight-card {
@@ -1059,14 +1032,13 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       color: #60a5fa;
       text-decoration: none;
       font-weight: 600;
-      padding: 0.75rem 1.5rem;
+      padding: 0.5rem 1rem;
       border-radius: 8px;
       transition: all 0.2s;
-      background: rgba(96, 165, 250, 0.1);
     }
 
     .explore-link:hover {
-      background: rgba(96, 165, 250, 0.2);
+      background: rgba(96, 165, 250, 0.1);
       color: #93c5fd;
     }
 
@@ -1075,28 +1047,13 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       padding: 2rem 0 4rem;
     }
 
-    /* 台灣輪廓：左文右圖 Layout */
-    .taiwan-container {
+    .svg-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
       max-width: 1400px;
       margin: 0 auto;
       padding: 0 2rem;
-      display: flex;
-      gap: 3rem;
-      align-items: flex-start;
-    }
-
-    .taiwan-text-section {
-      flex: 0 0 40%;
-    }
-
-    .taiwan-svg-section {
-      flex: 0 0 60%;
-    }
-
-    .svg-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
     }
 
     .svg-card {
@@ -1116,52 +1073,51 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1.5rem;
+      padding: 2rem;
       background: rgba(255, 255, 255, 0.95);
-      height: 120px;
+      height: 140px;
     }
 
     .svg-preview img {
-      max-height: 80px;
-      max-width: 60px;
+      max-height: 100px;
+      max-width: 80px;
       filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
     }
 
     .svg-info {
-      padding: 1rem;
+      padding: 1.5rem;
     }
 
     .svg-info h3 {
       font-family: 'Courier New', monospace;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: #e2e8f0;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.5rem;
     }
 
     .svg-desc {
       color: #cbd5e1;
-      margin-bottom: 0.2rem;
-      font-size: 0.8rem;
-      line-height: 1.4;
+      margin-bottom: 0.25rem;
+      font-size: 0.9rem;
     }
 
     .svg-meta {
       color: #94a3b8;
-      font-size: 0.75rem;
-      margin-bottom: 0.8rem;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
     }
 
     .svg-actions {
       display: flex;
-      gap: 0.4rem;
+      gap: 0.5rem;
       flex-wrap: wrap;
     }
 
     .btn {
       display: inline-block;
-      padding: 0.3rem 0.8rem;
-      border-radius: 6px;
-      font-size: 0.75rem;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
       text-decoration: none;
       cursor: pointer;
       border: none;
@@ -1190,7 +1146,9 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
     }
 
     .usage-example {
-      margin-top: 2rem;
+      max-width: 1400px;
+      margin: 3rem auto 0;
+      padding: 0 2rem;
     }
 
     .usage-example h3 {
@@ -1234,21 +1192,20 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       padding: 2rem 0 4rem;
     }
 
-    /* 開放資料：多欄 Grid Layout */
     .data-categories {
       max-width: 1400px;
       margin: 0 auto;
       padding: 0 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
     }
 
     .data-category-card {
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 16px;
-      padding: 1.8rem;
+      padding: 2rem;
       transition: border-color 0.2s ease;
     }
 
@@ -1264,20 +1221,20 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
     }
 
     .category-icon {
-      font-size: 1.8rem;
+      font-size: 2rem;
       line-height: 1;
       flex-shrink: 0;
     }
 
     .category-title {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 700;
       color: #f1f5f9;
       margin-bottom: 0.25rem;
     }
 
     .category-desc {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: #94a3b8;
       line-height: 1.5;
     }
@@ -1288,13 +1245,13 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       margin: 0;
       display: flex;
       flex-direction: column;
-      gap: 0.6rem;
+      gap: 0.75rem;
     }
 
     .item {
-      padding: 0.5rem 0;
+      padding: 0.6rem 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     .item:last-child {
@@ -1306,7 +1263,7 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       color: #7dd3fc !important;
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       border-bottom: 1px solid transparent;
       transition: all 0.2s ease;
     }
@@ -1318,7 +1275,7 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
 
     .item-desc {
       color: #cbd5e1;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
     }
 
     /* 知識圖譜區塊 */
@@ -1328,7 +1285,7 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
 
     .graph-cta {
       text-align: center;
-      max-width: 1400px;
+      max-width: 600px;
       margin: 0 auto;
       padding: 0 2rem;
     }
@@ -1447,48 +1404,6 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
     }
 
     /* 響應式設計 */
-    @media (max-width: 1024px) {
-      /* 左右 layout 回歸單欄堆疊 */
-      .companies-container {
-        flex-direction: column;
-        gap: 3rem;
-      }
-
-      .bubble-section {
-        flex: none;
-      }
-
-      .insights-section {
-        flex: none;
-        padding-left: 0;
-      }
-
-      .insight-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      }
-
-      .taiwan-container {
-        flex-direction: column;
-        gap: 3rem;
-      }
-
-      .taiwan-text-section {
-        flex: none;
-      }
-
-      .taiwan-svg-section {
-        flex: none;
-      }
-
-      .svg-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      }
-
-      .data-categories {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      }
-    }
-
     @media (max-width: 768px) {
       .hero {
         padding: 2.5rem 1rem 2rem;
@@ -1506,20 +1421,16 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
         font-size: 1.6rem;
       }
 
-      .companies-container {
-        padding: 0 1rem;
-      }
-
-      .taiwan-container {
+      .bubble-controls {
         padding: 0 1rem;
       }
 
       .svg-grid {
         grid-template-columns: 1fr;
+        padding: 0 1rem;
       }
 
       .data-categories {
-        grid-template-columns: 1fr;
         padding: 0 1rem;
       }
 
@@ -1536,7 +1447,7 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       }
 
       .category-title {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
 
       .insight-grid {
@@ -1571,7 +1482,7 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       }
 
       .svg-preview {
-        height: 100px;
+        height: 120px;
       }
 
       .insight-grid {
@@ -1579,21 +1490,12 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
       }
 
       .btn {
-        font-size: 0.7rem;
-        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
       }
 
       #bubble-chart {
-        height: 400px;
-      }
-
-      .data-categories {
-        padding: 0 0.5rem;
-      }
-
-      .data-category-card {
-        padding: 1rem;
-        margin: 0 -0.5rem;
+        min-height: 400px;
       }
     }
   </style>
