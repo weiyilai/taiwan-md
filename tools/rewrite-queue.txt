@@ -1,6 +1,3 @@
-technology/數位身分證與數位政府.md
-technology/半導體產業.md
-people/麟洋配.md
 people/聶永真.md
 people/楊勇緯.md
 people/李遠哲.md
@@ -192,4 +189,3 @@ art/台灣當代文學發展.md
 art/原住民文學.md
 art/_Art Hub.md
 about/緣起故事.md
-
