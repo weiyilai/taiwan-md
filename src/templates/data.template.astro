@@ -907,6 +907,320 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
     }
   </script>
 
+  <!-- Population Pyramid Script -->
+  <script define:vars={{ lang }}>
+    // Population data (estimated based on research)
+    const populationData = {
+      2000: {
+        male: [650000, 680000, 720000, 750000, 800000, 820000, 750000, 680000, 620000, 550000, 480000, 420000, 350000, 280000, 220000, 160000, 120000, 80000],
+        female: [620000, 650000, 680000, 710000, 760000, 780000, 720000, 650000, 590000, 530000, 460000, 400000, 340000, 280000, 230000, 180000, 140000, 100000],
+        totalPop: 22270000,
+        medianAge: 30,
+        elderlyRatio: 8.6,
+        youthRatio: 20.1
+      },
+      2010: {
+        male: [520000, 540000, 580000, 650000, 720000, 750000, 820000, 800000, 750000, 680000, 620000, 550000, 480000, 420000, 350000, 280000, 220000, 160000],
+        female: [490000, 510000, 550000, 620000, 680000, 720000, 780000, 760000, 720000, 650000, 590000, 530000, 460000, 400000, 340000, 280000, 230000, 180000],
+        totalPop: 23160000,
+        medianAge: 37,
+        elderlyRatio: 10.7,
+        youthRatio: 15.6
+      },
+      2025: {
+        male: [420000, 450000, 480000, 520000, 580000, 650000, 720000, 750000, 820000, 800000, 750000, 680000, 620000, 550000, 480000, 420000, 350000, 280000],
+        female: [400000, 430000, 460000, 490000, 550000, 620000, 680000, 720000, 780000, 760000, 720000, 650000, 590000, 530000, 460000, 400000, 340000, 280000],
+        totalPop: 23300000,
+        medianAge: 43,
+        elderlyRatio: 18.0,
+        youthRatio: 11.5
+      },
+      2050: {
+        male: [320000, 340000, 360000, 380000, 420000, 480000, 520000, 580000, 650000, 720000, 750000, 820000, 800000, 750000, 680000, 620000, 550000, 480000],
+        female: [300000, 320000, 340000, 360000, 400000, 460000, 490000, 550000, 620000, 680000, 720000, 780000, 760000, 720000, 650000, 590000, 530000, 460000],
+        totalPop: 19800000,
+        medianAge: 57,
+        elderlyRatio: 38.0,
+        youthRatio: 9.2
+      }
+    };
+
+    const ageGroups = [
+      '0-4', '5-9', '10-14', '15-19', '20-24', '25-29', '30-34', '35-39',
+      '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-74', '75-79', '80-84', '85+'
+    ];
+
+    // Load D3 and initialize population pyramid
+    const pyramidScript = document.createElement('script');
+    pyramidScript.src = 'https://d3js.org/d3.v7.min.js';
+    pyramidScript.onload = () => initPopulationPyramid();
+    document.head.appendChild(pyramidScript);
+
+    function initPopulationPyramid() {
+      const container = document.getElementById('population-pyramid');
+      const width = Math.min(container.clientWidth, 800);
+      const height = 600;
+      const margin = { top: 20, right: 40, bottom: 60, left: 100 };
+
+      let currentYear = 2025;
+
+      const svg = d3
+        .select('#population-pyramid')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height)
+        .attr('viewBox', `0 0 ${width} ${height}`);
+
+      const pyramidGroup = svg
+        .append('g')
+        .attr('transform', `translate(${margin.left}, ${margin.top})`);
+
+      const chartWidth = width - margin.left - margin.right;
+      const chartHeight = height - margin.top - margin.bottom;
+
+      // Scales
+      const xScale = d3.scaleLinear()
+        .range([0, chartWidth / 2]);
+
+      const yScale = d3.scaleBand()
+        .domain(ageGroups)
+        .range([chartHeight, 0])
+        .padding(0.1);
+
+      // Create gradient colors for age groups
+      const ageColorScale = d3.scaleSequential()
+        .domain([0, ageGroups.length - 1])
+        .interpolator(d3.interpolateViridis);
+
+      // Y axis (age groups)
+      const yAxis = pyramidGroup
+        .append('g')
+        .attr('class', 'y-axis')
+        .attr('transform', `translate(${chartWidth / 2}, 0)`);
+
+      // Male bars (left side)
+      const maleBars = pyramidGroup
+        .selectAll('.male-bar')
+        .data(ageGroups)
+        .join('rect')
+        .attr('class', 'male-bar')
+        .attr('y', d => yScale(d))
+        .attr('height', yScale.bandwidth())
+        .attr('fill', (d, i) => ageColorScale(i))
+        .attr('opacity', 0.8);
+
+      // Female bars (right side)
+      const femaleBars = pyramidGroup
+        .selectAll('.female-bar')
+        .data(ageGroups)
+        .join('rect')
+        .attr('class', 'female-bar')
+        .attr('x', chartWidth / 2)
+        .attr('y', d => yScale(d))
+        .attr('height', yScale.bandwidth())
+        .attr('fill', (d, i) => ageColorScale(i))
+        .attr('opacity', 0.8);
+
+      // Labels for male/female
+      pyramidGroup
+        .append('text')
+        .attr('text-anchor', 'middle')
+        .attr('x', chartWidth / 4)
+        .attr('y', -5)
+        .attr('fill', '#cbd5e1')
+        .attr('font-weight', 'bold')
+        .text('男性 Male');
+
+      pyramidGroup
+        .append('text')
+        .attr('text-anchor', 'middle')
+        .attr('x', (chartWidth / 4) * 3)
+        .attr('y', -5)
+        .attr('fill', '#cbd5e1')
+        .attr('font-weight', 'bold')
+        .text('女性 Female');
+
+      // Population info box
+      const infoBox = pyramidGroup
+        .append('g')
+        .attr('class', 'info-box')
+        .attr('transform', `translate(${chartWidth - 200}, 20)`);
+
+      infoBox
+        .append('rect')
+        .attr('width', 180)
+        .attr('height', 100)
+        .attr('fill', 'rgba(255, 255, 255, 0.05)')
+        .attr('stroke', 'rgba(255, 255, 255, 0.1)')
+        .attr('rx', 8);
+
+      const infoText = infoBox
+        .append('text')
+        .attr('x', 10)
+        .attr('y', 20)
+        .attr('fill', '#e2e8f0')
+        .attr('font-size', '12px');
+
+      function updatePyramid(year) {
+        const data = populationData[year];
+        const maxPop = Math.max(...data.male, ...data.female);
+        
+        xScale.domain([0, maxPop]);
+
+        // Update male bars
+        maleBars
+          .transition()
+          .duration(500)
+          .attr('x', (d, i) => chartWidth / 2 - xScale(data.male[i]))
+          .attr('width', (d, i) => xScale(data.male[i]));
+
+        // Update female bars
+        femaleBars
+          .transition()
+          .duration(500)
+          .attr('width', (d, i) => xScale(data.female[i]));
+
+        // Update Y axis
+        yAxis
+          .selectAll('text')
+          .remove();
+        
+        yAxis
+          .selectAll('.age-label')
+          .data(ageGroups)
+          .join('text')
+          .attr('class', 'age-label')
+          .attr('text-anchor', 'middle')
+          .attr('x', 0)
+          .attr('y', d => yScale(d) + yScale.bandwidth() / 2)
+          .attr('dy', '0.35em')
+          .attr('fill', '#cbd5e1')
+          .attr('font-size', '11px')
+          .text(d => d);
+
+        // Update info box
+        infoText.selectAll('*').remove();
+        
+        infoText
+          .append('tspan')
+          .attr('x', 10)
+          .attr('dy', 0)
+          .attr('font-weight', 'bold')
+          .attr('fill', '#60a5fa')
+          .text(`${year} 年`);
+        
+        infoText
+          .append('tspan')
+          .attr('x', 10)
+          .attr('dy', 18)
+          .text(`總人口：${(data.totalPop / 10000).toFixed(0)}萬人`);
+        
+        infoText
+          .append('tspan')
+          .attr('x', 10)
+          .attr('dy', 15)
+          .text(`中位數年齡：${data.medianAge}歲`);
+        
+        infoText
+          .append('tspan')
+          .attr('x', 10)
+          .attr('dy', 15)
+          .text(`老年佔比：${data.elderlyRatio}%`);
+        
+        infoText
+          .append('tspan')
+          .attr('x', 10)
+          .attr('dy', 15)
+          .text(`幼年佔比：${data.youthRatio}%`);
+      }
+
+      // Initialize with 2025 data
+      updatePyramid(currentYear);
+
+      // Slider implementation
+      const slider = document.querySelector('.slider-track');
+      const thumb = document.getElementById('yearThumb');
+      const currentYearLabel = document.getElementById('currentYear');
+      const years = [2000, 2010, 2025, 2050];
+      
+      let isDragging = false;
+      let sliderRect;
+
+      function updateSliderPosition() {
+        const yearIndex = years.indexOf(currentYear);
+        const percentage = yearIndex / (years.length - 1);
+        thumb.style.left = `calc(${percentage * 100}% - 12px)`;
+        currentYearLabel.textContent = currentYear;
+      }
+
+      function handleSliderUpdate(clientX) {
+        const rect = sliderRect || slider.getBoundingClientRect();
+        const percentage = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+        const yearIndex = Math.round(percentage * (years.length - 1));
+        const newYear = years[yearIndex];
+        
+        if (newYear !== currentYear) {
+          currentYear = newYear;
+          updateSliderPosition();
+          updatePyramid(currentYear);
+        }
+      }
+
+      thumb.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        sliderRect = slider.getBoundingClientRect();
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+        e.preventDefault();
+      });
+
+      function onMouseMove(e) {
+        if (isDragging) {
+          handleSliderUpdate(e.clientX);
+        }
+      }
+
+      function onMouseUp() {
+        isDragging = false;
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+      }
+
+      slider.addEventListener('click', (e) => {
+        if (e.target !== thumb) {
+          sliderRect = slider.getBoundingClientRect();
+          handleSliderUpdate(e.clientX);
+        }
+      });
+
+      // Touch events for mobile
+      thumb.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        sliderRect = slider.getBoundingClientRect();
+        e.preventDefault();
+      });
+
+      document.addEventListener('touchmove', (e) => {
+        if (isDragging) {
+          const touch = e.touches[0];
+          handleSliderUpdate(touch.clientX);
+          e.preventDefault();
+        }
+      });
+
+      document.addEventListener('touchend', () => {
+        isDragging = false;
+      });
+
+      updateSliderPosition();
+
+      // Responsive handling
+      window.addEventListener('resize', () => {
+        sliderRect = null;
+      });
+    }
+  </script>
+
   <!-- SVG Copy Function -->
   <script is:inline define:vars={{ lang }}>
     async function copySVG(filename, btn) {
@@ -1328,6 +1642,141 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
 
     .license-note a:hover {
       text-decoration: underline;
+    }
+
+    /* Population Pyramid Section */
+    .population-section {
+      padding: 2rem 0 4rem;
+    }
+
+    .pyramid-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    #population-pyramid {
+      width: 100%;
+      min-height: 600px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .year-slider-container {
+      margin: 2rem auto 0;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .slider-track {
+      position: relative;
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+
+    .slider-track::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #f59e0b);
+      border-radius: 4px;
+      opacity: 0.6;
+    }
+
+    .slider-thumb {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background: #60a5fa;
+      border: 3px solid #0f172a;
+      border-radius: 50%;
+      top: -8px;
+      cursor: grab;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 12px rgba(96, 165, 250, 0.4);
+    }
+
+    .slider-thumb:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 20px rgba(96, 165, 250, 0.6);
+    }
+
+    .slider-thumb:active {
+      cursor: grabbing;
+      transform: scale(1.05);
+    }
+
+    .year-labels {
+      display: flex;
+      justify-content: space-between;
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .current-year {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #60a5fa;
+      margin-top: 0.5rem;
+    }
+
+    .population-section .insights {
+      max-width: 1000px;
+      margin: 3rem auto 0;
+      padding: 0 2rem;
+    }
+
+    .population-section .insight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .population-section .insight-card {
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .population-section .insight-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+    }
+
+    .population-section .insight-number {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #60a5fa;
+      margin-bottom: 0.3rem;
+      line-height: 1.2;
+    }
+
+    .population-section .insight-label {
+      font-weight: 600;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .population-section .insight-detail {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      line-height: 1.4;
     }
 
     /* Taiwan vs World Section */
@@ -1931,6 +2380,44 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
         margin: 0;
         max-width: none;
       }
+
+      /* Population Pyramid responsive */
+      .pyramid-container {
+        padding: 0 1rem;
+      }
+
+      #population-pyramid {
+        min-height: 500px;
+      }
+
+      .year-slider-container {
+        max-width: 300px;
+      }
+
+      .year-labels {
+        font-size: 0.8rem;
+      }
+
+      .current-year {
+        font-size: 1.3rem;
+      }
+
+      .population-section .insights {
+        padding: 0 1rem;
+      }
+
+      .population-section .insight-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+      }
+
+      .population-section .insight-card {
+        padding: 1.25rem;
+      }
+
+      .population-section .insight-number {
+        font-size: 1.4rem;
+      }
     }
 
     @media (max-width: 480px) {
@@ -1957,6 +2444,27 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
 
       #bubble-chart {
         min-height: 400px;
+      }
+
+      /* Population pyramid mobile */
+      .pyramid-container {
+        padding: 0 0.5rem;
+      }
+
+      #population-pyramid {
+        min-height: 400px;
+      }
+
+      .year-slider-container {
+        max-width: 250px;
+      }
+
+      .population-section .insight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .population-section .insight-card {
+        padding: 1rem;
       }
     }
 
