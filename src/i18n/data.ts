@@ -154,7 +154,7 @@ export const dataUI = {
     'data.hero.title':
       '📊 Data Taiwan — Understanding an Island Through Numbers',
     'data.hero.subtitle':
-      'From enterprise powerhouses to open data platforms — explore Taiwan through curated data storytelling',
+      'Interactive visualizations and open data to understand the real face of an island',
     'data.hero.description':
       "A curated space for Taiwan's data story. From enterprise landscape to open data, from accurate Taiwan outlines to digital democracy experiments — we use interactive visualization and open resources to let the numbers tell Taiwan's story.",
 
@@ -192,6 +192,81 @@ export const dataUI = {
       'Post-consolidation, financial sector provides stability',
     'data.enterprise.exploreLink': 'View full ranking →',
 
+    // Taiwan vs World Section
+    'data.taiwanVsWorld.title': '🌏 Taiwan\'s Position in the World',
+    'data.taiwanVsWorld.story.p1': 'Taiwan is a small island with huge global impact. With 0.32% of the world\'s land area and 0.31% of global population, Taiwan produces 4% of global GDP and controls over 90% of advanced semiconductor manufacturing.',
+    'data.taiwanVsWorld.story.p2': 'From democracy rankings to convenience store density, from birth rates to healthcare coverage — here are 8 key metrics that reveal Taiwan\'s unique position on the world stage.',
+
+    'data.taiwanVsWorld.area.number': '36,197 km²',
+    'data.taiwanVsWorld.area.label': 'Size ≈ Belgium',
+    'data.taiwanVsWorld.area.context': 'But 2.35x Belgium\'s population (23.5M vs 11.7M)',
+
+    'data.taiwanVsWorld.gdp.number': '$75K',
+    'data.taiwanVsWorld.gdp.label': 'GDP per capita (PPP)',
+    'data.taiwanVsWorld.gdp.context': 'Global top 15, vs $38K nominal (huge purchasing power)',
+
+    'data.taiwanVsWorld.semiconductor.number': '90%+',
+    'data.taiwanVsWorld.semiconductor.label': 'Advanced chips global share',
+    'data.taiwanVsWorld.semiconductor.context': 'TSMC monopolizes <7nm processes, heart of global devices',
+
+    'data.taiwanVsWorld.democracy.number': '#12',
+    'data.taiwanVsWorld.democracy.label': 'Democracy Index ranking',
+    'data.taiwanVsWorld.democracy.context': 'Asia #1, global top 10 "Full Democracy" (EIU 2024)',
+
+    'data.taiwanVsWorld.birthRate.number': '0.87',
+    'data.taiwanVsWorld.birthRate.label': 'Birth rate (2024)',
+    'data.taiwanVsWorld.birthRate.context': 'Among world\'s lowest, aging society challenge',
+
+    'data.taiwanVsWorld.convenience.number': '1/2,000',
+    'data.taiwanVsWorld.convenience.label': 'Convenience store density',
+    'data.taiwanVsWorld.convenience.context': '12,368 stores (7-11+FamilyMart+Hi-Life+OK), world\'s highest',
+
+    'data.taiwanVsWorld.hsr.number': '345km',
+    'data.taiwanVsWorld.hsr.label': 'High-speed rail coverage',
+    'data.taiwanVsWorld.hsr.context': '12 stations, 180K daily passengers, 96% on-time rate',
+
+    'data.taiwanVsWorld.healthcare.number': '99.9%',
+    'data.taiwanVsWorld.healthcare.label': 'National health insurance coverage',
+    'data.taiwanVsWorld.healthcare.context': 'Universal healthcare, global benchmark',
+
+    // Digital Democracy Timeline Section
+    'data.digitalDemocracy.title': '📡 Digital Democracy Timeline — 30 Years of Digital Governance Evolution',
+    'data.digitalDemocracy.story.p1': 'From government digitization to digital democracy: Taiwan\'s journey from e-government to open government to digital resilience.',
+    'data.digitalDemocracy.story.p2': 'Hover over each milestone to learn more about Taiwan\'s unique digital democracy experiments.',
+
+    'data.timeline.1997.title': 'Electronic Government Program',
+    'data.timeline.1997.desc': 'Government services digitization begins',
+
+    'data.timeline.2003.title': 'Free Software Promotion',
+    'data.timeline.2003.desc': 'Open source software adoption in government',
+
+    'data.timeline.2012.title': 'g0v Zero Government Founded',
+    'data.timeline.2012.desc': '2 years before Sunflower Movement, civic tech seeds planted',
+
+    'data.timeline.2013.title': 'data.gov.tw Launched',
+    'data.timeline.2013.desc': 'Taiwan enters open data era',
+
+    'data.timeline.2014.title': 'Sunflower Movement',
+    'data.timeline.2014.desc': 'Civic tech explosion, digital democracy awakening',
+
+    'data.timeline.2015.title': 'Global Open Data #1',
+    'data.timeline.2015.desc': 'World champion for 3 consecutive years (2015-2017)',
+
+    'data.timeline.2016.title': 'Audrey Tang Digital Minister',
+    'data.timeline.2016.desc': 'g0v hacker becomes government minister',
+
+    'data.timeline.2020.title': 'Mask Map Success',
+    'data.timeline.2020.desc': '72-hour development, nationwide usage during COVID-19',
+
+    'data.timeline.2022.title': 'Ministry of Digital Affairs',
+    'data.timeline.2022.desc': 'Digital governance elevated to cabinet level (moda)',
+
+    'data.timeline.2023.title': 'TAIDE AI Corpus',
+    'data.timeline.2023.desc': 'Taiwan\'s sovereign AI language model',
+
+    'data.timeline.2024.title': 'Plurality Export',
+    'data.timeline.2024.desc': 'Digital democracy models exported globally',
+
     // Taiwan Shape Section
     'data.taiwanShape.title':
       "🗺️ The Shape of Taiwan — AI Can't Draw Taiwan Correctly. Here's the Real Version.",
@@ -223,7 +298,7 @@ export const dataUI = {
     'data.svg.usage.licenseNote':
       'License: All SVG files under CC BY-SA 4.0. Free to use, modify, and use commercially — just give attribution.',
 
-    // Open Data Section
+    // Open Data Section (legacy, now part of digital democracy)
     'data.openData.title':
       '📡 Open Data & Digital Democracy — 30 Years of Digitization, g0v, and the Audrey Tang Effect',
     'data.openData.story.p1':
@@ -410,7 +485,7 @@ export const dataUI = {
 
     // Hero
     'data.hero.title': '📊 數據台灣',
-    'data.hero.subtitle': '用數字認識一座島嶼',
+    'data.hero.subtitle': '用互動視覺化和開放資料，認識一座島嶼的真實面貌',
     'data.hero.description':
       '這裡是台灣數據的策展空間。從企業版圖到開放資料，從正確的台灣輪廓到數位民主實驗——我們用互動視覺化和開放資源，讓數字說出台灣的故事。',
 
@@ -440,6 +515,81 @@ export const dataUI = {
     'data.enterprise.insights.card4.detail': '金控整併後的穩定力量',
     'data.enterprise.exploreLink': '查看完整排名 →',
 
+    // Taiwan vs World Section
+    'data.taiwanVsWorld.title': '🌏 台灣在世界的位置',
+    'data.taiwanVsWorld.story.p1': '台灣是一座小島，卻有著巨大的全球影響力。以全球 0.32% 的土地面積和 0.31% 的人口，創造了 4% 的全球 GDP，掌控超過 90% 的先進半導體製造。',
+    'data.taiwanVsWorld.story.p2': '從民主排名到便利商店密度，從出生率到健保覆蓋率——這 8 個關鍵指標揭示了台灣在世界舞台上的獨特位置。',
+
+    'data.taiwanVsWorld.area.number': '36,197 km²',
+    'data.taiwanVsWorld.area.label': '面積 ≈ 比利時大小',
+    'data.taiwanVsWorld.area.context': '但人口是比利時的 2.35 倍（2,350萬 vs 1,170萬）',
+
+    'data.taiwanVsWorld.gdp.number': '$75K',
+    'data.taiwanVsWorld.gdp.label': '人均 GDP (PPP)',
+    'data.taiwanVsWorld.gdp.context': '全球前 15 名，vs 名目 $38K（購買力巨大差距）',
+
+    'data.taiwanVsWorld.semiconductor.number': '90%+',
+    'data.taiwanVsWorld.semiconductor.label': '先進晶片全球市佔',
+    'data.taiwanVsWorld.semiconductor.context': '台積電獨佔 <7nm 製程，全球數位裝置的心臟',
+
+    'data.taiwanVsWorld.democracy.number': '第12名',
+    'data.taiwanVsWorld.democracy.label': '民主指數排名',
+    'data.taiwanVsWorld.democracy.context': '亞洲第一、全球前 10「完全民主」(EIU 2024)',
+
+    'data.taiwanVsWorld.birthRate.number': '0.87',
+    'data.taiwanVsWorld.birthRate.label': '出生率（2024）',
+    'data.taiwanVsWorld.birthRate.context': '全球最低之一，高齡化社會挑戰',
+
+    'data.taiwanVsWorld.convenience.number': '1/2,000人',
+    'data.taiwanVsWorld.convenience.label': '便利商店密度',
+    'data.taiwanVsWorld.convenience.context': '12,368 間（7-11+全家+萊爾富+OK），全球最高',
+
+    'data.taiwanVsWorld.hsr.number': '345公里',
+    'data.taiwanVsWorld.hsr.label': '高鐵覆蓋範圍',
+    'data.taiwanVsWorld.hsr.context': '12 個車站，日運量 18 萬人次，準點率 96%',
+
+    'data.taiwanVsWorld.healthcare.number': '99.9%',
+    'data.taiwanVsWorld.healthcare.label': '全民健保覆蓋率',
+    'data.taiwanVsWorld.healthcare.context': '全民健康保險，全球標竿',
+
+    // Digital Democracy Timeline Section
+    'data.digitalDemocracy.title': '📡 數位民主時間軸 — 30 年數位治理進化史',
+    'data.digitalDemocracy.story.p1': '從政府數位化到數位民主：台灣從電子化政府到開放政府到數位韌性的進化旅程。',
+    'data.digitalDemocracy.story.p2': '滑鼠移到各個里程碑，深入了解台灣獨特的數位民主實驗。',
+
+    'data.timeline.1997.title': '電子化政府計畫啟動',
+    'data.timeline.1997.desc': '政府服務數位化起步',
+
+    'data.timeline.2003.title': '自由軟體推動計畫',
+    'data.timeline.2003.desc': '政府部門採用開源軟體',
+
+    'data.timeline.2012.title': 'g0v 零時政府創立',
+    'data.timeline.2012.desc': '太陽花運動前 2 年，公民科技種子播下',
+
+    'data.timeline.2013.title': 'data.gov.tw 上線',
+    'data.timeline.2013.desc': '台灣進入開放資料時代',
+
+    'data.timeline.2014.title': '太陽花運動',
+    'data.timeline.2014.desc': '公民科技大爆發，數位民主覺醒',
+
+    'data.timeline.2015.title': '全球開放資料第一名',
+    'data.timeline.2015.desc': '連續三年世界冠軍（2015-2017）',
+
+    'data.timeline.2016.title': '唐鳳就任數位政委',
+    'data.timeline.2016.desc': 'g0v 黑客成為政府部會首長',
+
+    'data.timeline.2020.title': '口罩地圖成功',
+    'data.timeline.2020.desc': '72 小時開發，COVID-19 期間全民使用',
+
+    'data.timeline.2022.title': '數位發展部成立',
+    'data.timeline.2022.desc': '數位治理提升至部會層級（moda）',
+
+    'data.timeline.2023.title': 'TAIDE 台灣 AI 語料庫',
+    'data.timeline.2023.desc': '台灣主權 AI 語言模型',
+
+    'data.timeline.2024.title': 'Plurality 數位民主輸出',
+    'data.timeline.2024.desc': '數位民主模式輸出全球',
+
     // Taiwan Shape Section
     'data.taiwanShape.title': '🗺️ 台灣的形狀',
     'data.taiwanComparison.title': 'AI 畫的台灣 vs 真正的台灣',
@@ -466,7 +616,7 @@ export const dataUI = {
     'data.svg.usage.licenseNote':
       '所有 SVG 檔案以 CC BY-SA 4.0 授權釋出。 歡迎自由使用、修改、商用，只需標注來源。',
 
-    // Open Data Section
+    // Open Data Section (legacy, now part of digital democracy)
     'data.openData.title': '📡 開放資料與數位民主',
     'data.openData.story.p1': '從電子化到開放化：台灣數位治理的三十年進化',
     'data.openData.story.p2':
