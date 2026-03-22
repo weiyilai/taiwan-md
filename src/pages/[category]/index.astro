@@ -299,6 +299,34 @@ const otherCategories = categories
         )
       }
 
+      <!-- Food Visualization (only for food category) -->
+      {
+        category === 'food' && (
+          <section class="food-viz">
+            <div class="food-viz-inner">
+              <h2>🍜 探索台灣美食宇宙</h2>
+              <p class="food-viz-subtitle">點擊扇區或節點，深入了解每一道台灣味</p>
+              
+              <div class="viz-tabs">
+                <button class="viz-tab active" data-viz="sunburst">🎯 風味輪</button>
+                <button class="viz-tab" data-viz="network">🕸️ 關係圖</button>
+              </div>
+              
+              <div class="viz-container" id="sunburstViz">
+                <!-- D3 sunburst 在這裡渲染 -->
+              </div>
+              <div class="viz-container" id="networkViz" style="display:none;">
+                <!-- D3 force graph 在這裡渲染 -->
+              </div>
+              
+              <div class="viz-legend" id="vizLegend">
+                <!-- 圖例：6 大類顏色 -->
+              </div>
+            </div>
+          </section>
+        )
+      }
+
       <!-- Articles Section -->
       <h2 class="articles-heading">📖 延伸閱讀</h2>
       {
