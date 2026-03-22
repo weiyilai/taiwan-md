@@ -76,7 +76,7 @@ lastHumanReview: false
 
 ## 関連テーマ
 
-- [[History/清朝統治時代]]
-- [[History/戒厳令時代]]
+- [[History/清治時期]]
+- [[History/戒嚴時期]]
 - [[Society/民主制度]]
-- [[Technology/オープンソースコミュニティとg0v]]
+- [[Technology/開源社群與g0v]]
