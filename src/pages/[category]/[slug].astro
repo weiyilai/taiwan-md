@@ -209,7 +209,7 @@ try {
   }
 } catch {}
 
-// 隨機探索：建立所有文章清單（排除當前文章）
+// Cross-category article index for wikilink resolution (build-time)
 let allArticles: Array<{ title: string; slug: string; category: string }> = [];
 try {
   for (const [catSlug, folderName] of Object.entries(categoryMapping)) {
@@ -235,6 +235,8 @@ try {
 } catch (err) {
   console.log('Error building allArticles:', err.message);
 }
+
+// 隨機探索按鈕改用 runtime fetch /api/articles.json（見底部 script）
 
 function resolveWikilinks(markdownContent: string) {
   if (!markdownContent) return markdownContent;
@@ -550,19 +552,15 @@ const processedContent = marked.parse(resolvedContent, { renderer });
         }
 
         <!-- 隨機探索另一篇 -->
-        {
-          allArticles.length > 0 && (
-            <div class="random-explore">
-              <button
-                class="random-btn"
-                onclick="goRandomArticle()"
-                type="button"
-              >
-                🎲 隨機探索另一篇
-              </button>
-            </div>
-          )
-        }
+        <div class="random-explore">
+          <button
+            class="random-btn"
+            id="random-explore-btn"
+            type="button"
+          >
+            🎲 隨機探索另一篇
+          </button>
+        </div>
 
         <!-- More Articles -->
         <div class="more-articles">
@@ -773,12 +771,41 @@ const processedContent = marked.parse(resolvedContent, { renderer });
   updateReadingProgress();
 </script>
 
-<script define:vars={{ allArticles }}>
-  function goRandomArticle() {
-    if (!allArticles || allArticles.length === 0) return;
-    const pick = allArticles[Math.floor(Math.random() * allArticles.length)];
-    window.location.href = '/' + pick.category + '/' + pick.slug;
-  }
+<script>
+  // 隨機探索：runtime fetch，與首頁 RandomDiscovery 共用 /api/articles.json
+  document.addEventListener('DOMContentLoaded', async function () {
+    const btn = document.getElementById('random-explore-btn');
+    if (!btn) return;
+    let articles = [];
+    try {
+      const res = await fetch('/api/articles.json');
+      if (res.ok) {
+        const raw = await res.json();
+        const currentPath = window.location.pathname.replace(/\/$/, '');
+        articles = raw
+          .filter(function (a) {
+            const url = a.url.replace('https://taiwan.md', '').replace(/\/$/, '');
+            return a.category !== 'en' && !url.includes('/en/') && url !== currentPath;
+          })
+          .map(function (a) {
+            return {
+              title: a.title,
+              url: a.url.replace('https://taiwan.md', '').replace(/^\/([^\/]+)/, function (m, p) {
+                return '/' + p.toLowerCase();
+              }),
+            };
+          });
+      }
+    } catch (e) {}
+    btn.addEventListener('click', function () {
+      if (articles.length === 0) {
+        window.location.href = '/';
+        return;
+      }
+      const pick = articles[Math.floor(Math.random() * articles.length)];
+      window.location.href = pick.url;
+    });
+  });
 </script>
 
 <script>

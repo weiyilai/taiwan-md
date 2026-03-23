@@ -1,12 +1,12 @@
 {
-  "totalArticles": 888,
+  "totalArticles": 898,
   "totalCategories": 27,
   "estimatedContributors": 60,
-  "totalTags": 2292,
+  "totalTags": 2343,
   "categories": [
     {
       "name": "en",
-      "count": 457
+      "count": 465
     },
     {
       "name": "History",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Culture",
-      "count": 29
+      "count": 30
     },
     {
       "name": "Society",
@@ -70,7 +70,7 @@
     },
     {
       "name": "About",
-      "count": 5
+      "count": 6
     },
     {
       "name": "台灣海岸地形與海洋地景.md",
@@ -148,7 +148,7 @@
     },
     {
       "name": "Taiwan",
-      "count": 12
+      "count": 13
     },
     {
       "name": "歷史",
@@ -196,8 +196,8 @@
     }
   ],
   "languageDistribution": {
-    "zh-TW": 888,
+    "zh-TW": 898,
     "en": 0
   },
-  "lastUpdated": "2026-03-23T04:49:00.821Z"
+  "lastUpdated": "2026-03-23T13:23:05.647Z"
 }

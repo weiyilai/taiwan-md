@@ -1262,37 +1262,38 @@
     "path": "Food/台灣早餐文化.md"
   },
   {
-    "title": "台灣米其林與精緻餐飲",
-    "description": "2018年，米其林指南的紅色封面首次印上「TAIPEI」字樣，標誌著台灣餐飲業正式進入國際評價體系。從街邊小攤到星級餐廳，從庶民美食到精緻料理，台灣餐飲文化在國際舞台上展現出既傳統又創新的迷人風貌。",
+    "title": "台灣米其林：星光下的代價與重新定義",
+    "description": "2018 年米其林登陸台灣，表面上是國際認證的榮耀，實際上重新劃分了餐飲業的生存規則——「幾乎夠格」的餐廳，反而成了最大受害者。",
     "category": "Food",
     "tags": [
       "米其林",
       "精緻餐飲",
       "星級餐廳",
       "台灣美食",
-      "國際化"
+      "餐飲產業"
     ],
     "url": "https://taiwan.md/Food/%E5%8F%B0%E7%81%A3%E7%B1%B3%E5%85%B6%E6%9E%97%E8%88%87%E7%B2%BE%E7%B7%BB%E9%A4%90%E9%A3%B2",
-    "readingTime": 20,
+    "readingTime": 26,
     "featured": true,
-    "date": "2026-03-20",
+    "date": "2026-03-23",
     "path": "Food/台灣米其林與精緻餐飲.md"
   },
   {
     "title": "台灣米食文化",
-    "description": "粽子、米粉、碗粿、麻糬等以稻米為核心的飲食傳統，承載著農業社會的記憶與節慶文化的意涵",
+    "description": "從年吃 85 公斤到 42 公斤：一個稻米島國的飲食革命與文化堅持",
     "category": "Food",
     "tags": [
       "米食",
       "稻米",
       "傳統文化",
       "節慶食品",
-      "農業"
+      "農業",
+      "飲食變遷"
     ],
     "url": "https://taiwan.md/Food/%E5%8F%B0%E7%81%A3%E7%B1%B3%E9%A3%9F%E6%96%87%E5%8C%96",
-    "readingTime": 9,
+    "readingTime": 14,
     "featured": false,
-    "date": "2026-03-20",
+    "date": "2026-03-23",
     "path": "Food/台灣米食文化.md"
   },
   {
@@ -1494,6 +1495,24 @@
     "featured": false,
     "date": null,
     "path": "About/台灣官方網站資源.md"
+  },
+  {
+    "title": "台灣官方網站資源：從25個網站到數位政府強國的30年奇蹟",
+    "description": "1996年，台灣為了參加網際網路世界博覽會，25個政府機關建置了第一批官方網站。30年後的今天，這座島嶼成為全球數位政府的典範——從網路報稅到單一入口網站，從開放資料到AI語料庫，探索台灣如何用官方網站寫下數位轉型的傳奇。",
+    "category": "About",
+    "tags": [
+      "政府網站",
+      "數位政府",
+      "電子化政府",
+      "開放資料",
+      "數位轉型",
+      "官方資源"
+    ],
+    "url": "https://taiwan.md/About/%E5%8F%B0%E7%81%A3%E5%AE%98%E6%96%B9%E7%B6%B2%E7%AB%99%E8%B3%87%E6%BA%90%E9%87%8D%E5%AF%AB",
+    "readingTime": 21,
+    "featured": true,
+    "date": "2026-03-23",
+    "path": "About/台灣官方網站資源重寫.md"
   },
   {
     "title": "台灣板塊運動與地震活動",
@@ -2194,19 +2213,19 @@
   },
   {
     "title": "台灣國家風景區系統",
-    "description": "從東北角到墾丁，台灣13處國家風景區展現豐富的自然與人文景觀",
+    "description": "一個「國家級」標籤下的觀光優先實驗：13處風景區如何在保育與開發間走鋼索",
     "category": "Geography",
     "tags": [
       "國家風景區",
-      "觀光資源",
-      "自然景觀",
-      "文化保存",
-      "生態旅遊"
+      "觀光政策",
+      "環境保育",
+      "永續旅遊",
+      "國土規劃"
     ],
     "url": "https://taiwan.md/Geography/%E5%8F%B0%E7%81%A3%E5%9C%8B%E5%AE%B6%E9%A2%A8%E6%99%AF%E5%8D%80%E7%B3%BB%E7%B5%B1",
-    "readingTime": 24,
+    "readingTime": 14,
     "featured": true,
-    "date": "2026-03-19",
+    "date": "2026-03-23",
     "path": "Geography/台灣國家風景區系統.md"
   },
   {
@@ -2698,19 +2717,20 @@
   },
   {
     "title": "台灣溫泉地景",
-    "description": "北投、知本、礁溪，溫泉文化與地質科學的美麗交會",
+    "description": "從『女巫湯』到全球前15溫泉王國，板塊碰撞如何煮出這座島的療癒密碼",
     "category": "Geography",
     "tags": [
       "溫泉",
       "地質",
       "火山",
       "溫泉文化",
-      "觀光"
+      "觀光",
+      "板塊運動"
     ],
     "url": "https://taiwan.md/Geography/%E5%8F%B0%E7%81%A3%E6%BA%AB%E6%B3%89%E5%9C%B0%E6%99%AF",
-    "readingTime": 17,
+    "readingTime": 20,
     "featured": false,
-    "date": "2026-03-20",
+    "date": "2026-03-23",
     "path": "Geography/台灣溫泉地景.md"
   },
   {
@@ -2930,18 +2950,23 @@
     "path": "Technology/台灣電動車產業鏈發展.md"
   },
   {
-    "title": "台灣電影",
-    "description": "",
+    "title": "台灣電影：小島如何改變世界電影語言",
+    "description": "年產不到20部電影的台灣，如何培育出三位世界級導演，創造了比好萊塢更深遠的藝術影響？",
     "category": "Art",
     "tags": [
       "電影",
       "新浪潮",
-      "藝術"
+      "藝術",
+      "侯孝賢",
+      "楊德昌",
+      "蔡明亮",
+      "李安",
+      "國際影展"
     ],
     "url": "https://taiwan.md/Art/%E5%8F%B0%E7%81%A3%E9%9B%BB%E5%BD%B1",
-    "readingTime": 12,
+    "readingTime": 20,
     "featured": true,
-    "date": "2026-03-18",
+    "date": "2026-03-23",
     "path": "Art/台灣電影.md"
   },
   {
@@ -3179,7 +3204,7 @@
   },
   {
     "title": "台灣辦桌文化",
-    "description": "從農村慶典到都市宴會，總鋪師的拿手絕活與社區黏著劑的辦桌精神",
+    "description": "一個無法量化的產業，如何成為台灣最具韌性的文化載體？從康熙年間到疫情寒冬的辦桌傳奇",
     "category": "Food",
     "tags": [
       "辦桌",
@@ -3187,12 +3212,14 @@
       "流水席",
       "台式宴席",
       "社區文化",
-      "傳統技藝"
+      "傳統技藝",
+      "內門",
+      "人情味"
     ],
     "url": "https://taiwan.md/Food/%E5%8F%B0%E7%81%A3%E8%BE%A6%E6%A1%8C%E6%96%87%E5%8C%96",
-    "readingTime": 13,
+    "readingTime": 21,
     "featured": false,
-    "date": "2026-03-18",
+    "date": "2026-03-23",
     "path": "Food/台灣辦桌文化.md"
   },
   {
@@ -4903,23 +4930,6 @@
     "path": "People/翁啟惠.md"
   },
   {
-    "title": "茶文化",
-    "description": "台灣從傳統茶藝到現代手搖飲的茶文化演進，展現島嶼獨特的茶葉品種與飲茶文化",
-    "category": "Food",
-    "tags": [
-      "Food",
-      "茶文化",
-      "烏龍茶",
-      "高山茶",
-      "手搖飲"
-    ],
-    "url": "https://taiwan.md/Food/%E8%8C%B6%E6%96%87%E5%8C%96",
-    "readingTime": 9,
-    "featured": true,
-    "date": "2026-03-17",
-    "path": "Food/茶文化.md"
-  },
-  {
     "title": "追垃圾車的島：台灣從垃圾危機到回收奇蹟",
     "description": "一個1990年代有400座快滿的掩埋場、被國際媒體稱為「垃圾島」的地方，用貝多芬的音樂讓2,300萬人每天追垃圾車，30年後資源回收率超越多數歐洲國家",
     "category": "Lifestyle",
@@ -5514,6 +5524,23 @@
     "path": "People/曾雅妮.md"
   },
   {
+    "title": "無名小站：從學生宿舍到台灣網路記憶的守護者",
+    "description": "一個被「撿破爛」起家的學生專案，如何成為影響整整一代台灣人的社群平台？",
+    "category": "Culture",
+    "tags": [
+      "網路歷史",
+      "社群媒體",
+      "BBS",
+      "部落格",
+      "Yahoo併購"
+    ],
+    "url": "https://taiwan.md/Culture/%E7%84%A1%E5%90%8D%E5%B0%8F%E7%AB%99",
+    "readingTime": 12,
+    "featured": false,
+    "date": "2026-03-23",
+    "path": "Culture/無名小站.md"
+  },
+  {
     "title": "童子賢",
     "description": "和碩聯合科技董事長，科技與人文的跨界思想家，誠品書店重要支持者",
     "category": "People",
@@ -5635,6 +5662,24 @@
     "featured": true,
     "date": "2026-03-19",
     "path": "Culture/黃金時代的餘韻：台灣茶文化的流變與工藝.md"
+  },
+  {
+    "title": "黃金時代的餘韻：台灣茶文化的流變與工藝",
+    "description": "一個被國際茶業列強排除在限產協定之外的小島，卻因此創造了茶業黃金時代，最後用一杯加了「小點心」的奶茶征服全世界",
+    "category": "Food",
+    "tags": [
+      "Food",
+      "茶文化",
+      "烏龍茶",
+      "高山茶",
+      "手搖飲",
+      "珍珠奶茶"
+    ],
+    "url": "https://taiwan.md/Food/%E8%8C%B6%E6%96%87%E5%8C%96",
+    "readingTime": 12,
+    "featured": true,
+    "date": "2026-03-23",
+    "path": "Food/茶文化.md"
   },
   {
     "title": "黃金旋律的傳承：台灣流行音樂的歷史與文化地位",
@@ -5781,7 +5826,14 @@
     "title": "楊右任：從街頭塗鴉中輟生到非洲舊鞋救命的台灣青年英雄",
     "description": "楊右任是台灣社會創業家與人道救援工作者，舊鞋救命國際基督關懷協會創辦人。以一張海報號召20萬人捐鞋援助東非肯亞兒童免受沙蚤侵害，獲2017年十大傑出青年。他從澳洲街頭混混轉變為宣教士，將物資援助升級為永續社區計畫，讓台灣青年看到『小行動、大改變』的可能。",
     "category": "People",
-    "tags": [],
+    "tags": [
+      "台灣社會企業",
+      "人道救援",
+      "舊鞋救命",
+      "十大傑出青年",
+      "非洲援助",
+      "基督教事工"
+    ],
     "url": "https://taiwan.md/People/%E6%A5%8A%E5%8F%B3%E4%BB%BB",
     "readingTime": 8,
     "featured": false,
@@ -5916,7 +5968,7 @@
   },
   {
     "title": "經濟奇蹟",
-    "description": "台灣從農業社會轉型為高科技產業重鎮的經濟發展歷程，被譽為「台灣經濟奇蹟」",
+    "description": "1952年，台灣人均GDP只有196美元，比海地還窮。40年後，台灣成為「亞洲四小龍」之首，人均GDP超過1萬美元。但這個「奇蹟」的代價是什麼？當我們讚美台灣錢淹腳目的年代時，很少人談起那些在加工出口區裡每天工作12小時的女工，和那些把一生積蓄押在小工廠裡的老闆們。",
     "category": "Economy",
     "tags": [
       "Economy",
@@ -5926,9 +5978,9 @@
       "半導體"
     ],
     "url": "https://taiwan.md/Economy/%E7%B6%93%E6%BF%9F%E5%A5%87%E8%B9%9F",
-    "readingTime": 7,
+    "readingTime": 22,
     "featured": false,
-    "date": "2026-03-17",
+    "date": "2026-03-23",
     "path": "Economy/經濟奇蹟.md"
   },
   {
@@ -7827,6 +7879,24 @@
     "featured": false,
     "date": "2026-03-20",
     "path": "en/Economy/esun-financial-holding-digital-banking-pioneer.md"
+  },
+  {
+    "title": "Echoes of the Golden Age：Taiwan Tea Culture Evolution and Craftsmanship",
+    "description": "An island excluded from the international tea production agreement became the unlikely creator of a tea golden age, ultimately conquering the world with a drink containing \"little snacks\"",
+    "category": "en",
+    "tags": [
+      "Food",
+      "Tea Culture",
+      "Oolong Tea",
+      "High Mountain Tea",
+      "Bubble Tea",
+      "Boba"
+    ],
+    "url": "https://taiwan.md/en/Food/tea-culture",
+    "readingTime": 37,
+    "featured": true,
+    "date": "2026-03-23",
+    "path": "en/Food/tea-culture.md"
   },
   {
     "title": "Economic Miracle",
@@ -10467,6 +10537,26 @@
     "path": "en/Economy/taiwan-cement-taipower-green-transformation.md"
   },
   {
+    "title": "Taiwan Cinema: How a Small Island Changed Global Film Language",
+    "description": "How did Taiwan, producing fewer than 20 films annually, nurture world-class directors who created more profound artistic impact than major studios?",
+    "category": "en",
+    "tags": [
+      "cinema",
+      "new wave",
+      "art",
+      "Hou Hsiao-hsien",
+      "Edward Yang",
+      "Tsai Ming-liang",
+      "Ang Lee",
+      "international film festivals"
+    ],
+    "url": "https://taiwan.md/en/Art/%E5%8F%B0%E7%81%A3%E9%9B%BB%E5%BD%B1",
+    "readingTime": 57,
+    "featured": true,
+    "date": "2026-03-23",
+    "path": "en/Art/台灣電影.md"
+  },
+  {
     "title": "Taiwan Coastal Landforms and Marine Landscapes",
     "description": "The Yehliu Queen\\'s Head is thinning at 0.2cm per year and will eventually collapse—this is both the fate and beauty of Taiwan\\'s coastal landforms",
     "category": "en",
@@ -11005,6 +11095,24 @@
     "path": "en/Geography/taiwan-hot-springs-landscape.md"
   },
   {
+    "title": "Taiwan Hot Springs Landscape",
+    "description": "From 'Witch's Soup' to Global Top-15 Hot Spring Kingdom: How Plate Tectonics Brewed This Island's Healing Code",
+    "category": "en",
+    "tags": [
+      "hot springs",
+      "geology",
+      "volcano",
+      "hot spring culture",
+      "tourism",
+      "plate tectonics"
+    ],
+    "url": "https://taiwan.md/en/Geography/%E5%8F%B0%E7%81%A3%E6%BA%AB%E6%B3%89%E5%9C%B0%E6%99%AF",
+    "readingTime": 64,
+    "featured": false,
+    "date": "2026-03-23",
+    "path": "en/Geography/台灣溫泉地景.md"
+  },
+  {
     "title": "Taiwan Incense-Making Culture and Heritage Villages",
     "description": "From the century-old incense stick craft in Chiayi's Yunxiao Community to Taiwan's island-wide incense industry—an ancient trade about devotion, craftsmanship, and perseverance",
     "category": "en",
@@ -11185,6 +11293,23 @@
     "path": "en/History/taiwan-military-dependents-villages-history.md"
   },
   {
+    "title": "Taiwan National Scenic Areas System",
+    "description": "A tourism-first experiment under the \"National\" label: How 13 scenic areas walk the tightrope between conservation and development",
+    "category": "en",
+    "tags": [
+      "National Scenic Areas",
+      "Tourism Policy",
+      "Environmental Conservation",
+      "Sustainable Tourism",
+      "Land Planning"
+    ],
+    "url": "https://taiwan.md/en/Geography/%E5%8F%B0%E7%81%A3%E5%9C%8B%E5%AE%B6%E9%A2%A8%E6%99%AF%E5%8D%80%E7%B3%BB%E7%B5%B1",
+    "readingTime": 45,
+    "featured": true,
+    "date": "2026-03-23",
+    "path": "en/Geography/台灣國家風景區系統.md"
+  },
+  {
     "title": "Taiwan New Media Art",
     "description": "Exploring the intersection of digital technology and artistic expression on the \"Island of Tech.\"",
     "category": "en",
@@ -11257,6 +11382,24 @@
     "path": "en/About/taiwan-official-website-resources.md"
   },
   {
+    "title": "Taiwan Official Websites: From 25 Sites to Digital Government Excellence",
+    "description": "In 1996, Taiwan built 25 government websites for the Internet World Expo. Three decades later, this island nation has become a global digital government benchmark. From online tax filing to open data platforms, discover how Taiwan wrote its digital transformation legend through official websites.",
+    "category": "en",
+    "tags": [
+      "government websites",
+      "digital government",
+      "e-government",
+      "open data",
+      "digital transformation",
+      "Taiwan"
+    ],
+    "url": "https://taiwan.md/en/About/Taiwan%20Official%20Websites",
+    "readingTime": 61,
+    "featured": true,
+    "date": "2026-03-23",
+    "path": "en/About/Taiwan Official Websites.md"
+  },
+  {
     "title": "Taiwan People Knowledge Base Project — 200 People Initiative",
     "description": "Taiwan.md people page expansion roadmap, aiming to cover 200 important figures representing Taiwan",
     "category": "en",
@@ -11299,6 +11442,26 @@
     "featured": true,
     "date": "2026-03-18",
     "path": "en/Culture/taiwan-religion-and-temple-culture.md"
+  },
+  {
+    "title": "Taiwan Roadside Banquet Culture",
+    "description": "How an industry that defies quantification became Taiwan's most resilient cultural vessel—from Kangxi era to pandemic winter",
+    "category": "en",
+    "tags": [
+      "roadside banquet",
+      "pān-toh",
+      "master chef",
+      "Taiwanese feast",
+      "community culture",
+      "traditional skills",
+      "Neimen",
+      "human connection"
+    ],
+    "url": "https://taiwan.md/en/Food/%E5%8F%B0%E7%81%A3%E8%BE%A6%E6%A1%8C%E6%96%87%E5%8C%96",
+    "readingTime": 68,
+    "featured": false,
+    "date": "2026-03-23",
+    "path": "en/Food/台灣辦桌文化.md"
   },
   {
     "title": "Taiwan Rock: From Underground Rebellion to Mainstream",
@@ -12053,6 +12216,23 @@
     "path": "en/Society/taiwan-marriage-equality-lgbtq-rights.md"
   },
   {
+    "title": "Taiwan's Michelin Guide: The Price of Stars and Redefinition",
+    "description": "Since Michelin arrived in Taiwan in 2018, it has brought international recognition—but also reshaped dining industry survival rules. The biggest victims? Restaurants that are \"almost good enough.\"",
+    "category": "en",
+    "tags": [
+      "Michelin Guide",
+      "Fine Dining",
+      "Starred Restaurants",
+      "Taiwan Cuisine",
+      "Restaurant Industry"
+    ],
+    "url": "https://taiwan.md/en/Food/%E5%8F%B0%E7%81%A3%E7%B1%B3%E5%85%B6%E6%9E%97%E8%88%87%E7%B2%BE%E7%B7%BB%E9%A4%90%E9%A3%B2",
+    "readingTime": 76,
+    "featured": true,
+    "date": "2026-03-23",
+    "path": "en/Food/台灣米其林與精緻餐飲.md"
+  },
+  {
     "title": "Taiwan's Military Dependents Villages",
     "description": "From Burma's Lost Army to bamboo fence kingdoms: how 1.2 million refugees redefined 'home'",
     "category": "en",
@@ -12207,6 +12387,24 @@
     "featured": false,
     "date": "2026-03-20",
     "path": "en/Food/taiwan-rice-cuisine-culture.md"
+  },
+  {
+    "title": "Taiwan's Rice Food Culture",
+    "description": "From 85kg to 42kg annually: A rice island nation's dietary revolution and cultural persistence",
+    "category": "en",
+    "tags": [
+      "rice food",
+      "rice",
+      "traditional culture",
+      "festival food",
+      "agriculture",
+      "dietary changes"
+    ],
+    "url": "https://taiwan.md/en/Food/%E5%8F%B0%E7%81%A3%E7%B1%B3%E9%A3%9F%E6%96%87%E5%8C%96",
+    "readingTime": 46,
+    "featured": false,
+    "date": "2026-03-23",
+    "path": "en/Food/台灣米食文化.md"
   },
   {
     "title": "Taiwan’s River Systems and Hydrology: Short, Fast, and Seasonally Extreme",
@@ -13063,23 +13261,6 @@
     "path": "es/Food/bubble-tea.md"
   },
   {
-    "title": "Tea Culture",
-    "description": "Taiwan's tea culture evolution from traditional tea ceremonies to modern bubble tea drinks, showcasing the island's unique tea varieties and drinking culture",
-    "category": "en",
-    "tags": [
-      "Food",
-      "Tea Culture",
-      "Oolong Tea",
-      "High Mountain Tea",
-      "Bubble Tea"
-    ],
-    "url": "https://taiwan.md/en/Food/tea-culture",
-    "readingTime": 34,
-    "featured": false,
-    "date": "2026-03-17",
-    "path": "en/Food/tea-culture.md"
-  },
-  {
     "title": "Tectonic Plates and Seismic Activity",
     "description": "Exploring Taiwan's unique geological characteristics at the junction of the Eurasian and Philippine Sea plates, and why it's known as a 'Living Island'",
     "category": "en",
@@ -13748,6 +13929,23 @@
     "path": "en/Economy/wistron-global-manufacturing-transformation-pioneer.md"
   },
   {
+    "title": "Wretch.cc: From Dorm Room \"Scavenging\" to Taiwan Digital Memory Keeper",
+    "description": "How a student project built with \"scavenged\" equipment became the social platform that defined an entire generation of Taiwanese internet users",
+    "category": "en",
+    "tags": [
+      "Internet History",
+      "Social Media",
+      "BBS",
+      "Blogging",
+      "Yahoo Acquisition"
+    ],
+    "url": "https://taiwan.md/en/Culture/wretch",
+    "readingTime": 34,
+    "featured": false,
+    "date": "2026-03-23",
+    "path": "en/Culture/wretch.md"
+  },
+  {
     "title": "Wu Bai (伍佰)",
     "description": "Taiwan’s rock national treasure and the architect of Taiwanese‑language rock—how Wu Bai turned street energy into a lasting cultural voice",
     "category": "en",
@@ -14066,21 +14264,21 @@
     "path": "en/Society/zoo-and-exhibition-animal-ethics.md"
   },
   {
-    "title": "タピオカミルクティー",
-    "description": "台湾の夜市の小さな屋台から世界的な飲料帝国へ——タピオカミルクティーの起源論争と文化征服の道のり",
+    "title": "タピオカミルクティー（珍珠奶茶）",
+    "description": "台湾の夜市の小さな屋台から世界の飲み物帝国へ、タピオカミルクティーの発祥論争と文化征服の道のり",
     "category": "ja",
     "tags": [
       "グルメ",
       "タピオカミルクティー",
-      "ハンドシェイクドリンク",
+      "手作りドリンク",
       "グローバル化",
       "ソフトパワー",
       "文化外交"
     ],
     "url": "https://taiwan.md/ja/Food/bubble-tea",
-    "readingTime": 23,
-    "featured": false,
-    "date": "2026-03-22",
+    "readingTime": 21,
+    "featured": true,
+    "date": "2026-03-17",
     "path": "ja/Food/bubble-tea.md"
   }
 ]
