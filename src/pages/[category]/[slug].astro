@@ -103,6 +103,7 @@ export async function getStaticPaths() {
       );
 
       for (const file of zhMarkdownFiles) {
+       try {
         const filePath = join(zhFolderPath, file);
         const fileContent = await readFile(filePath, 'utf-8');
         const { data: frontmatter, content } = matter(fileContent);
@@ -124,6 +125,9 @@ export async function getStaticPaths() {
             lastModified: gitInfo.lastModified,
           },
         });
+       } catch (fileErr) {
+        console.warn(`⚠️ Skipping ${file} in ${folderName}: ${fileErr instanceof Error ? fileErr.message : fileErr}`);
+       }
       }
     } catch {}
   }
