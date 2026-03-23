@@ -1421,7 +1421,7 @@
   },
   {
     "title": "台灣夜市小吃圖鑑",
-    "description": "臭豆腐、大腸包小腸、雞排、地瓜球等夜市經典美食，展現台灣庶民飲食文化的創意與活力",
+    "description": "當天色暗下，摩托車引擎聲消失在巷弄裡時，另一座城市開始甦醒——這是臭豆腐、蚵仔煎與人情味交織的療癒宇宙",
     "category": "Food",
     "tags": [
       "夜市",
@@ -1431,9 +1431,9 @@
       "台灣味"
     ],
     "url": "https://taiwan.md/Food/%E5%8F%B0%E7%81%A3%E5%A4%9C%E5%B8%82%E5%B0%8F%E5%90%83%E5%9C%96%E9%91%91",
-    "readingTime": 11,
+    "readingTime": 29,
     "featured": false,
-    "date": "2026-03-20",
+    "date": "2026-03-23",
     "path": "Food/台灣夜市小吃圖鑑.md"
   },
   {
@@ -11529,6 +11529,23 @@
     "featured": true,
     "date": "2026-03-18",
     "path": "en/Culture/taiwan-night-market-culture-and-street-food.md"
+  },
+  {
+    "title": "Taiwan Night Market Food Guide",
+    "description": "When the sun sets and motorcycle engines fade into alleys, another city awakens—a healing universe where stinky tofu, oyster omelets, and human warmth converge",
+    "category": "en",
+    "tags": [
+      "night market",
+      "street food",
+      "taiwanese cuisine",
+      "food culture",
+      "local delicacy"
+    ],
+    "url": "https://taiwan.md/en/Food/taiwan-night-market-food-guide",
+    "readingTime": 88,
+    "featured": false,
+    "date": "2026-03-23",
+    "path": "en/Food/taiwan-night-market-food-guide.md"
   },
   {
     "title": "Taiwan Night Market Street Food Guide",
