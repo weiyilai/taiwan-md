@@ -135,6 +135,9 @@ export const aboutUI = {
     'about.press.ltn': '自由時報',
     'about.press.ltn.title':
       'Reclaiming Taiwan\'s Narrative in the AI Era! New Media Artist Che-Yu Wu Launches "taiwan.md" Experiment',
+    'about.press.ftnn': 'FTNN',
+    'about.press.ftnn.title':
+      'Open-Sourcing Taiwan! New Media Artist Launches taiwan.md to Help the World Understand Taiwan',
 
     // Section 3: Team
     'about.team.title': 'Founder & Team',
@@ -375,6 +378,9 @@ export const aboutUI = {
     'about.press.ltn': '自由時報',
     'about.press.ltn.title':
       '在AI時代搶回「台灣主體」敘事權！新媒體藝術家吳哲宇發起「taiwan.md」實驗',
+    'about.press.ftnn': 'FTNN新聞網',
+    'about.press.ftnn.title':
+      '把台灣開源！新媒體藝術家推taiwan.md　讓世界讀懂台灣',
 
     // Section 3: Team
     'about.team.title': '創辦人與協作團隊',
