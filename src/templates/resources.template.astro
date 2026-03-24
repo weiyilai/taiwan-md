@@ -1432,29 +1432,38 @@ const mindmapData = JSON.stringify({
           >
             {t('resources.projects.food.title')}
           </h3>
-          <a
-            href="https://hsieh-george.github.io/taipei-burger-map/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-card"
-          >
-            <div class="project-name">
-              {t('resources.projects.food.burger.name')}
+          <div class="project-card">
+            <div class="card-header">
+              <h3 class="project-name">
+                <a
+                  href="https://hsieh-george.github.io/taipei-burger-map/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('resources.projects.food.burger.name')}
+                </a>
+              </h3>
+            </div>
+            <div class="project-tech">
+              {t('resources.projects.food.burger.tech')}
             </div>
             <div class="project-desc">
               {t('resources.projects.food.burger.desc')}
             </div>
-            <div class="project-meta">
-              <span class="project-tech"
-                >{t('resources.projects.food.burger.tech')}</span
-              ><a
+            <div class="card-footer">
+              <a
                 href="https://github.com/hsieh-george/taipei-burger-map"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="project-gh">{t('resources.projects.github.link')}</a
+                class="project-action project-action-secondary"
+                aria-label={lang === 'en'
+                  ? 'View GitHub repository'
+                  : '查看 GitHub 專案'}
               >
+                {t('resources.projects.github.link')}
+              </a>
             </div>
-          </a>
+          </div>
         </div>
 
         <div class="project-category">
@@ -1464,24 +1473,25 @@ const mindmapData = JSON.stringify({
           >
             {t('resources.projects.nightmarket.title')}
           </h3>
-          <a
-            href="https://github.com/hsiu0305/NightMarketSwift"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-card"
-          >
-            <div class="project-name">
-              {t('resources.projects.nightmarket.app.name')}
+          <div class="project-card">
+            <div class="card-header">
+              <h3 class="project-name">
+                <a
+                  href="https://github.com/hsiu0305/NightMarketSwift"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('resources.projects.nightmarket.app.name')}
+                </a>
+              </h3>
+            </div>
+            <div class="project-tech">
+              {t('resources.projects.nightmarket.app.tech')}
             </div>
             <div class="project-desc">
               {t('resources.projects.nightmarket.app.desc')}
             </div>
-            <div class="project-meta">
-              <span class="project-tech"
-                >{t('resources.projects.nightmarket.app.tech')}</span
-              >
-            </div>
-          </a>
+          </div>
         </div>
 
         <div class="project-category">
@@ -1492,75 +1502,102 @@ const mindmapData = JSON.stringify({
             {t('resources.projects.civictech.title')}
           </h3>
           <div class="project-list">
-            <a
-              href="https://g0v.tw/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-card"
-            >
-              <div class="project-name">
-                {t('resources.projects.civictech.g0v.name')}
+            <div class="project-card">
+              <div class="card-header">
+                <h3 class="project-name">
+                  <a
+                    href="https://g0v.tw/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t('resources.projects.civictech.g0v.name')}
+                  </a>
+                </h3>
+              </div>
+              <div class="project-tech">
+                {t('resources.projects.civictech.g0v.tech')}
               </div>
               <div class="project-desc">
                 {t('resources.projects.civictech.g0v.desc')}
               </div>
-              <div class="project-meta">
-                <span class="project-tech"
-                  >{t('resources.projects.civictech.g0v.tech')}</span
-                ><a
+              <div class="card-footer">
+                <a
                   href="https://github.com/g0v"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="project-gh">{t('resources.projects.github.link')}</a
+                  class="project-action project-action-secondary"
+                  aria-label={lang === 'en'
+                    ? 'View GitHub repository'
+                    : '查看 GitHub 專案'}
                 >
+                  {t('resources.projects.github.link')}
+                </a>
               </div>
-            </a>
-            <a
-              href="https://cofacts.tw/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-card"
-            >
-              <div class="project-name">
-                {t('resources.projects.civictech.cofacts.name')}
+            </div>
+            <div class="project-card">
+              <div class="card-header">
+                <h3 class="project-name">
+                  <a
+                    href="https://cofacts.tw/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t('resources.projects.civictech.cofacts.name')}
+                  </a>
+                </h3>
+              </div>
+              <div class="project-tech">
+                {t('resources.projects.civictech.cofacts.tech')}
               </div>
               <div class="project-desc">
                 {t('resources.projects.civictech.cofacts.desc')}
               </div>
-              <div class="project-meta">
-                <span class="project-tech"
-                  >{t('resources.projects.civictech.cofacts.tech')}</span
-                ><a
+              <div class="card-footer">
+                <a
                   href="https://github.com/cofacts"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="project-gh">{t('resources.projects.github.link')}</a
+                  class="project-action project-action-secondary"
+                  aria-label={lang === 'en'
+                    ? 'View GitHub repository'
+                    : '查看 GitHub 專案'}
                 >
+                  {t('resources.projects.github.link')}
+                </a>
               </div>
-            </a>
-            <a
-              href="https://disfactory.tw/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-card"
-            >
-              <div class="project-name">
-                {t('resources.projects.civictech.disfactory.name')}
+            </div>
+            <div class="project-card">
+              <div class="card-header">
+                <h3 class="project-name">
+                  <a
+                    href="https://disfactory.tw/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t('resources.projects.civictech.disfactory.name')}
+                  </a>
+                </h3>
+              </div>
+              <div class="project-tech">
+                {t('resources.projects.civictech.disfactory.tech')}
               </div>
               <div class="project-desc">
                 {t('resources.projects.civictech.disfactory.desc')}
               </div>
-              <div class="project-meta">
-                <span class="project-tech"
-                  >{t('resources.projects.civictech.disfactory.tech')}</span
-                ><a
+              <div class="card-footer">
+                <a
                   href="https://github.com/Disfactory"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="project-gh">{t('resources.projects.github.link')}</a
+                  class="project-action project-action-secondary"
+                  aria-label={lang === 'en'
+                    ? 'View GitHub repository'
+                    : '查看 GitHub 專案'}
                 >
+                  {t('resources.projects.github.link')}
+                </a>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1879,16 +1916,15 @@ const mindmapData = JSON.stringify({
   }
 
   .project-card {
-    display: block;
     background: white;
     border-radius: 12px;
     padding: 1.25rem;
     box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.08);
     border: 1px solid #e5e7eb;
     transition: all 0.2s;
-    text-decoration: none;
-    color: inherit;
-    margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
   }
 
   .project-card:hover {
@@ -1897,42 +1933,92 @@ const mindmapData = JSON.stringify({
     border-color: #c4b5fd;
   }
 
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.9rem;
+  }
+
   .project-name {
     font-size: 1.05rem;
     font-weight: 700;
     color: #1e293b;
-    margin-bottom: 0.4rem;
+    margin: 0;
+    line-height: 1.35;
+  }
+
+  .project-name a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #cbd5e1;
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .project-name a:hover {
+    color: #3b82f6;
+    border-color: #94a3b8;
   }
 
   .project-desc {
     font-size: 0.9rem;
     color: #64748b;
     line-height: 1.5;
-    margin-bottom: 0.6rem;
+    margin: 0;
+    flex: 1;
   }
 
-  .project-meta {
+  .card-footer {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 0.75rem;
-    font-size: 0.8rem;
+    margin-top: auto;
+  }
+
+  .card-footer-end {
+    justify-content: flex-end;
   }
 
   .project-tech {
-    background: #f3f4f6;
-    color: #6b7280;
-    padding: 0.2rem 0.6rem;
-    border-radius: 6px;
+    width: fit-content;
+    background: #fdf2f8;
+    color: #e11d48;
+    padding: 0.45rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.2;
+    flex-shrink: 0;
   }
 
-  .project-gh {
-    color: #7c3aed !important;
+  .project-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.4rem;
+    height: 2.4rem;
+    padding: 0 0.9rem;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      background-color 0.2s ease,
+      color 0.2s ease;
   }
 
-  .project-gh:hover {
-    text-decoration: underline;
+  .project-action-secondary {
+    background: #f8fafc;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+  }
+
+  .project-action-secondary:hover {
+    background: #f1f5f9;
   }
 
   .projects-cta {

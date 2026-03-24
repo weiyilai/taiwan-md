@@ -114,7 +114,7 @@ export const resourcesUI = {
     // CTA & Links
     'resources.projects.cta.html':
       'Know a great project? <a href="https://github.com/frank890417/taiwan-md/issues" target="_blank" rel="noopener noreferrer">Submit a recommendation on GitHub</a>!',
-    'resources.projects.github.link': 'GitHub ↗',
+    'resources.projects.github.link': 'GitHub',
     'resources.backToHome': '← Back to Home',
 
     // Mindmap
@@ -221,7 +221,7 @@ export const resourcesUI = {
     // CTA & Links
     'resources.projects.cta.html':
       '有推薦的專案嗎？歡迎透過 <a href="https://github.com/frank890417/taiwan-md/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a> 提交推薦！',
-    'resources.projects.github.link': 'GitHub ↗',
+    'resources.projects.github.link': 'GitHub',
     'resources.backToHome': '← 返回首頁',
 
     // Mindmap
