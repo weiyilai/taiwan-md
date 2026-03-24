@@ -235,4 +235,28 @@ export const feedbacks = [
     name: 'Lai Kuo-Ying',
     text: '字體好漂亮😍內容好豐富，畫面好美麗',
   },
+  {
+    name: 'Lingfang Cheng',
+    text: '遇到外國人要認識台灣，現在有機會了。其實台灣人也可以重新認識台灣。',
+  },
+  {
+    name: '林文源',
+    text: '非常有才的AI時代國家知識庫，對抗AI時代假訊息傳播洗記憶，以免腦袋長草的好方法',
+  },
+  {
+    name: 'Coco Tai',
+    text: '有資訊、有故事、有聲景，很棒的計劃！',
+  },
+  {
+    name: 'Paul Yang',
+    text: '數位策展人做的 AI 台灣紀錄介紹網站，期待這東西的成長',
+  },
+  {
+    name: 'Shelley Liao',
+    text: "It's all about Taiwan. Enjoy 🙏",
+  },
+  {
+    name: '黃宇睿',
+    text: 'This is my home town Taiwan',
+  },
 ];
