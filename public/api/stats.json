@@ -1,8 +1,8 @@
 {
-  "totalArticles": 938,
-  "totalCategories": 27,
-  "estimatedContributors": 63,
-  "totalTags": 2521,
+  "totalArticles": 928,
+  "totalCategories": 17,
+  "estimatedContributors": 62,
+  "totalTags": 2512,
   "categories": [
     {
       "name": "en",
@@ -45,16 +45,8 @@
       "count": 30
     },
     {
-      "name": "麟洋配.md",
-      "count": 1
-    },
-    {
       "name": "Technology",
       "count": 22
-    },
-    {
-      "name": "半導體產業.md",
-      "count": 1
     },
     {
       "name": "Nature",
@@ -73,38 +65,6 @@
       "count": 6
     },
     {
-      "name": "台灣海岸地形與海洋地景.md",
-      "count": 1
-    },
-    {
-      "name": "台灣茶道與生活美學.md",
-      "count": 1
-    },
-    {
-      "name": "台灣都市發展與城鄉差距.md",
-      "count": 1
-    },
-    {
-      "name": "台灣選舉與政黨政治.md",
-      "count": 1
-    },
-    {
-      "name": "台灣醫療與全民健保.md",
-      "count": 1
-    },
-    {
-      "name": "民主化.md",
-      "count": 1
-    },
-    {
-      "name": "城市特色與區域文化.md",
-      "count": 1
-    },
-    {
-      "name": "數位身分證與數位政府.md",
-      "count": 1
-    },
-    {
       "name": "es",
       "count": 34
     },
@@ -120,7 +80,7 @@
     },
     {
       "name": "人物",
-      "count": 49
+      "count": 48
     },
     {
       "name": "企業",
@@ -132,7 +92,7 @@
     },
     {
       "name": "台灣",
-      "count": 18
+      "count": 17
     },
     {
       "name": "literature",
@@ -140,7 +100,7 @@
     },
     {
       "name": "半導體",
-      "count": 15
+      "count": 14
     },
     {
       "name": "culture",
@@ -156,7 +116,7 @@
     },
     {
       "name": "歷史",
-      "count": 12
+      "count": 11
     },
     {
       "name": "金曲獎",
@@ -191,13 +151,13 @@
       "count": 11
     },
     {
-      "name": "民主化",
+      "name": "文化",
       "count": 10
     }
   ],
   "languageDistribution": {
-    "zh-TW": 938,
+    "zh-TW": 928,
     "en": 0
   },
-  "lastUpdated": "2026-03-24T09:21:18.508Z"
+  "lastUpdated": "2026-03-24T09:28:05.014Z"
 }

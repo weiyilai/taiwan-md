@@ -301,29 +301,8 @@
   },
   {
     "title": "王齊麟與李洋（麟洋配）",
-    "description": "台灣羽球男雙組合，2021 東京奧運金牌，台灣羽球史上首面奧運金牌",
-    "category": "People",
-    "tags": [
-      "人物",
-      "王齊麟",
-      "李洋",
-      "麟洋配",
-      "羽球",
-      "奧運",
-      "金牌",
-      "運動員",
-      "台灣"
-    ],
-    "url": "https://taiwan.md/People/%E9%BA%9F%E6%B4%8B%E9%85%8D",
-    "readingTime": 11,
-    "featured": false,
-    "date": "2026-03-19",
-    "path": "People/麟洋配.md"
-  },
-  {
-    "title": "王齊麟與李洋（麟洋配）",
     "description": "從國中同學到奧運金牌：「麟洋配」34分鐘內直落二擊敗中國，寫下台灣羽球史上第一面奧運金牌",
-    "category": "麟洋配.md",
+    "category": "People",
     "tags": [
       "運動員",
       "王齊麟",
@@ -334,32 +313,16 @@
       "巴黎奧運",
       "金牌"
     ],
-    "url": "https://taiwan.md/%E9%BA%9F%E6%B4%8B%E9%85%8D",
+    "url": "https://taiwan.md/People/%E9%BA%9F%E6%B4%8B%E9%85%8D",
     "readingTime": 14,
     "featured": true,
     "date": "2026-03-19",
-    "path": "麟洋配.md"
-  },
-  {
-    "title": "半導體產業",
-    "description": "1996年，中芯國際創辦人張汝京說：「台積電10年內一定被我們超越。」28年過去了，台積電全球市占率從28%成長到54%，中芯國際還在14奈米掙扎。一座颱風頻繁的島嶼，如何讓全世界65%的先進晶片都必須依賴它？",
-    "category": "Technology",
-    "tags": [
-      "科技",
-      "半導體",
-      "TSMC",
-      "產業"
-    ],
-    "url": "https://taiwan.md/Technology/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%94%A2%E6%A5%AD",
-    "readingTime": 19,
-    "featured": false,
-    "date": "2026-03-23",
-    "path": "Technology/半導體產業.md"
+    "path": "People/麟洋配.md"
   },
   {
     "title": "半導體產業",
     "description": "從張忠謀的歷史賭注到2奈米時代：台積電如何讓台灣成為全球科技命脈",
-    "category": "半導體產業.md",
+    "category": "Technology",
     "tags": [
       "半導體",
       "TSMC",
@@ -368,11 +331,11 @@
       "科技島",
       "矽盾"
     ],
-    "url": "https://taiwan.md/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%94%A2%E6%A5%AD",
+    "url": "https://taiwan.md/Technology/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%94%A2%E6%A5%AD",
     "readingTime": 19,
     "featured": true,
     "date": "2026-03-17",
-    "path": "半導體產業.md"
+    "path": "Technology/半導體產業.md"
   },
   {
     "title": "台泥：台灣第一上市公司的綠色轉型傳奇",
@@ -2054,23 +2017,6 @@
     "path": "Geography/台灣海岸地形與海洋地景.md"
   },
   {
-    "title": "台灣海岸地形與海洋地景",
-    "description": "野柳女王頭的脖子正以每年0.2公分的速度變細，總有一天會斷裂——這正是台灣海岸地形的宿命與美麗",
-    "category": "台灣海岸地形與海洋地景.md",
-    "tags": [
-      "海岸地形",
-      "地質",
-      "清水斷崖",
-      "野柳",
-      "板塊構造"
-    ],
-    "url": "https://taiwan.md/%E5%8F%B0%E7%81%A3%E6%B5%B7%E5%B2%B8%E5%9C%B0%E5%BD%A2%E8%88%87%E6%B5%B7%E6%B4%8B%E5%9C%B0%E6%99%AF",
-    "readingTime": 10,
-    "featured": true,
-    "date": "2026-03-19",
-    "path": "台灣海岸地形與海洋地景.md"
-  },
-  {
     "title": "台灣海洋生態",
     "description": "達悟族用禁忌守護的海域，如今在高溫與水下噪音中白化：當數千年生態智慧遇上現代海洋危機",
     "category": "Nature",
@@ -2230,23 +2176,6 @@
     "featured": true,
     "date": "2026-03-18",
     "path": "Culture/台灣茶道與生活美學.md"
-  },
-  {
-    "title": "台灣茶道與生活美學",
-    "description": "1981年紫藤廬開幕那晚，黨外人士與文人雅集品茗，這裡不只是茶館，更是反對運動的秘密基地",
-    "category": "台灣茶道與生活美學.md",
-    "tags": [
-      "茶文化",
-      "茶道",
-      "生活美學",
-      "紫藤廬",
-      "茶藝館"
-    ],
-    "url": "https://taiwan.md/%E5%8F%B0%E7%81%A3%E8%8C%B6%E9%81%93%E8%88%87%E7%94%9F%E6%B4%BB%E7%BE%8E%E5%AD%B8",
-    "readingTime": 13,
-    "featured": true,
-    "date": "2026-03-18",
-    "path": "台灣茶道與生活美學.md"
   },
   {
     "title": "台灣高山生態系與冰河孑遺",
@@ -2483,25 +2412,8 @@
   },
   {
     "title": "台灣都市發展與城鄉差距",
-    "description": "六都格局下的台灣城鄉發展不均，從農業台灣到都市台灣的空間轉型",
-    "category": "Geography",
-    "tags": [
-      "都市發展",
-      "城鄉差距",
-      "六都",
-      "都市更新",
-      "區域發展"
-    ],
-    "url": "https://taiwan.md/Geography/%E5%8F%B0%E7%81%A3%E9%83%BD%E5%B8%82%E7%99%BC%E5%B1%95%E8%88%87%E5%9F%8E%E9%84%89%E5%B7%AE%E8%B7%9D",
-    "readingTime": 19,
-    "featured": false,
-    "date": "2026-03-20",
-    "path": "Geography/台灣都市發展與城鄉差距.md"
-  },
-  {
-    "title": "台灣都市發展與城鄉差距",
     "description": "70年從農業島變都市島，六都集中7成人口的光與影：繁榮台中vs凋零雲林的殘酷對比",
-    "category": "台灣都市發展與城鄉差距.md",
+    "category": "Geography",
     "tags": [
       "都市發展",
       "城鄉差距",
@@ -2509,11 +2421,11 @@
       "人口流動",
       "區域發展"
     ],
-    "url": "https://taiwan.md/%E5%8F%B0%E7%81%A3%E9%83%BD%E5%B8%82%E7%99%BC%E5%B1%95%E8%88%87%E5%9F%8E%E9%84%89%E5%B7%AE%E8%B7%9D",
+    "url": "https://taiwan.md/Geography/%E5%8F%B0%E7%81%A3%E9%83%BD%E5%B8%82%E7%99%BC%E5%B1%95%E8%88%87%E5%9F%8E%E9%84%89%E5%B7%AE%E8%B7%9D",
     "readingTime": 20,
     "featured": false,
     "date": "2026-03-21",
-    "path": "台灣都市發展與城鄉差距.md"
+    "path": "Geography/台灣都市發展與城鄉差距.md"
   },
   {
     "title": "台灣鳥類窗殺議題：隱形的都市殺手",
@@ -3339,23 +3251,6 @@
     "path": "History/台灣選舉與政黨政治.md"
   },
   {
-    "title": "台灣選舉與政黨政治",
-    "description": "從1950年地方議員到2000年政黨輪替，看台灣如何用選票寫下民主轉型的奇蹟",
-    "category": "台灣選舉與政黨政治.md",
-    "tags": [
-      "選舉",
-      "民主化",
-      "政黨政治",
-      "美麗島事件",
-      "政黨輪替"
-    ],
-    "url": "https://taiwan.md/%E5%8F%B0%E7%81%A3%E9%81%B8%E8%88%89%E8%88%87%E6%94%BF%E9%BB%A8%E6%94%BF%E6%B2%BB",
-    "readingTime": 14,
-    "featured": false,
-    "date": "2026-03-21",
-    "path": "台灣選舉與政黨政治.md"
-  },
-  {
     "title": "台灣環境正義與鄰避爭議",
     "description": "探討台灣環境負擔分配不均現象，從焚化爐、核廢料到石化業的鄰避衝突，分析環境不平等問題與社會公義議題",
     "category": "Society",
@@ -3430,23 +3325,6 @@
     "featured": false,
     "date": "2026-03-18",
     "path": "Lifestyle/台灣醫療與全民健保.md"
-  },
-  {
-    "title": "台灣醫療與全民健保",
-    "description": "1995年3月1日開辦當天，健保就讓原本看不起病的400萬人有了醫療保障——但29年後，這個奇蹟正面臨財務懸崖",
-    "category": "台灣醫療與全民健保.md",
-    "tags": [
-      "全民健保",
-      "醫療制度",
-      "健保卡",
-      "醫療",
-      "社會保險"
-    ],
-    "url": "https://taiwan.md/%E5%8F%B0%E7%81%A3%E9%86%AB%E7%99%82%E8%88%87%E5%85%A8%E6%B0%91%E5%81%A5%E4%BF%9D",
-    "readingTime": 16,
-    "featured": false,
-    "date": "2026-03-18",
-    "path": "台灣醫療與全民健保.md"
   },
   {
     "title": "台灣醬料與調味",
@@ -3659,21 +3537,6 @@
     "featured": true,
     "date": "2026-03-23",
     "path": "History/民主化.md"
-  },
-  {
-    "title": "民主化",
-    "description": "1979年12月10日高雄街頭的警民衝突，最終催生了台灣的民主轉型——但代價是多少人的青春與自由？",
-    "category": "民主化.md",
-    "tags": [
-      "歷史",
-      "民主化",
-      "政治"
-    ],
-    "url": "https://taiwan.md/%E6%B0%91%E4%B8%BB%E5%8C%96",
-    "readingTime": 14,
-    "featured": true,
-    "date": "2026-03-17",
-    "path": "民主化.md"
   },
   {
     "title": "民主制度",
@@ -4666,23 +4529,6 @@
     "featured": true,
     "date": "2026-03-18",
     "path": "Geography/城市特色與區域文化.md"
-  },
-  {
-    "title": "城市特色與區域文化",
-    "description": "從新北404萬人到台南185萬人，看六都如何在產業轉型中塑造各自的城市性格",
-    "category": "城市特色與區域文化.md",
-    "tags": [
-      "城市",
-      "區域文化",
-      "六都",
-      "產業轉型",
-      "人口遷移"
-    ],
-    "url": "https://taiwan.md/%E5%9F%8E%E5%B8%82%E7%89%B9%E8%89%B2%E8%88%87%E5%8D%80%E5%9F%9F%E6%96%87%E5%8C%96",
-    "readingTime": 15,
-    "featured": false,
-    "date": "2026-03-21",
-    "path": "城市特色與區域文化.md"
   },
   {
     "title": "客家文化與語言",
@@ -6486,17 +6332,6 @@
     "featured": true,
     "date": "2026-03-18",
     "path": "Technology/數位身分證與數位政府.md"
-  },
-  {
-    "title": "數位身分證與數位政府",
-    "description": "從New eID的5.26億求償風暴到數位發展部成立：台灣數位政府20年的信任重建之路",
-    "category": "數位身分證與數位政府.md",
-    "tags": [],
-    "url": "https://taiwan.md/%E6%95%B8%E4%BD%8D%E8%BA%AB%E5%88%86%E8%AD%89%E8%88%87%E6%95%B8%E4%BD%8D%E6%94%BF%E5%BA%9C",
-    "readingTime": 21,
-    "featured": true,
-    "date": "2026-03-18",
-    "path": "數位身分證與數位政府.md"
   },
   {
     "title": "緣起故事 — Taiwan.md 的誕生",
