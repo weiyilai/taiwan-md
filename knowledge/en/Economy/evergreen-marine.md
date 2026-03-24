@@ -1,162 +1,111 @@
 ---
-title: "Evergreen Marine Corporation"
-description: "From one second-hand ship to a global shipping empire: Chang Yung-fa's blue ocean legend"
-date: 2026-03-20
-tags: [Economy, Corporations, Shipping Industry, Logistics, International Trade]
+title: "Evergreen Marine"
+description: "A 15-year-old secondhand freighter, a carpenter's son, and the shipping empire that once blocked global trade for six days"
+date: 2026-03-24
+tags: [Economy, Business, Shipping, Logistics, International Trade]
 author: Taiwan.md
-readingTime: 8
+readingTime: 9
 featured: false
-lastVerified: 2026-03-20
+lastVerified: 2026-03-24
 lastHumanReview: false
 ---
 
 > **30-Second Overview**
-> 
-> Founded in 1968 by shipping magnate Chang Yung-fa with just one second-hand vessel, Evergreen Marine has grown into one of the world's top 10 container shipping companies. Operating over 220 modern vessels across 120 countries with annual revenue exceeding NT$720 billion (US$22 billion), Evergreen has become an indispensable link in global supply chains—from the Ever Given Suez Canal incident to record freight rates during the pandemic.
+>
+> In 1968, Chang Yung-fa — a carpenter's son from a fishing town in northeastern Taiwan — bought a 15-year-old secondhand freighter and founded Evergreen Marine. Seventeen years later, it was the world's largest container shipping company. In 2021, its vessel Ever Given ran aground in the Suez Canal, blocking global trade for six days at an estimated cost of $10 billion per week. That same year, pandemic-era freight rates pushed Evergreen's net income to NT$239 billion ($7.8 billion). Today it ranks seventh globally with fleet capacity of 1.92 million TEU and roughly $13 billion in annual revenue. The founder's death in 2016 triggered an eight-year inheritance war that is still reshaping the company.
 
-## Why It Matters
+## The Carpenter's Son
 
-When you order a product from Europe online or ship Taiwan-made electronics worldwide, chances are it travels aboard one of Evergreen's distinctive green-hulled vessels. As Taiwan's largest shipping company, Evergreen Marine is far more than a commercial success story—it's a vital bridge connecting this island nation to the world and a crucial node in the global trade network.
+Chang Yung-fa was born in 1927 in Su'ao, a harbor town on Taiwan's northeastern coast. His father was a ship carpenter who spent most of his life at sea. In 1945, when Chang was eighteen, his father died aboard a vessel, leaving a widow with seven children.
 
-Evergreen's significance extends beyond corporate achievement. It embodies Taiwan's strategic position in the globalized economy: despite lacking natural resources, Taiwan leverages its geographic advantages, entrepreneurial spirit, and maritime resilience to play a pivotal role on the international stage.
+Rather than flee the ocean that took his father, Chang walked deeper into it. He started as a cabin boy at a Japanese shipping firm, studied on his own, and worked his way up to captain. European and American cargo owners came to know him by reputation: "Y.F. Chang — once he decides something, that's how it is. He doesn't change." (Quoted in *CommonWealth Magazine*, "From a Carpenter's Son to the World's Container Shipping King")
 
-Since Taiwan's economic takeoff in the 1960s, Evergreen has both witnessed and participated in the island's transformation from an export-oriented economy to a global logistics hub. It carries "Made in Taiwan" products to the world while demonstrating Taiwan's critical position in global supply chains.
+Two partnerships failed. On September 1, 1968, at age 41, Chang bought a 15-year-old general cargo vessel from Japan and registered Evergreen Marine Corporation. The company's address said Taipei. Its real office was the dock.
 
-## Company Overview
+> 📝 **Curator's Note:** Evergreen didn't start from success. It started from a son choosing to go back to the sea that killed his father.
 
-Evergreen Marine Corporation was established on September 1, 1968, by the late shipping magnate Chang Yung-fa. Headquartered in Taipei's Zhongshan District, it serves as the core enterprise of the Evergreen Group and ranks among the world's largest shipping companies.
+## The Containerization Gamble
 
-Specializing in container transportation, Evergreen provides scheduled liner services connecting major ports across Asia, Europe, the Americas, Africa, and Oceania. The company's fleet is instantly recognizable worldwide: green hulls adorned with white "EVERGREEN" lettering that have become one of the most distinctive brand images in global shipping.
+In the 1970s, global shipping was undergoing a revolution: containerization. Loose cargo went into standardized steel boxes. Dockhands were replaced by cranes. Ships grew larger. Most Asian carriers were still watching from the sidelines. Chang had already moved.
 
-Beyond maritime operations, the Evergreen Group encompasses air transport (EVA Air), port management, and logistics services, creating an integrated sea-land-air transportation system. Evergreen Marine continues to uphold founder Chang Yung-fa's business philosophy of "diligence, frugality, and pursuit of perfection," committed to providing customers with safe, punctual, and premium shipping services.
+He spent two years and one million U.S. dollars on market research, securing financing from Japan's Marubeni Corporation (reported in *CommonWealth Magazine*). In 1975, Evergreen launched Taiwan's first fully containerized regular service between East Asia and the U.S. East Coast.
 
-## Key Facts: By the Numbers
+The next decade was a blitz. In 1984, Chang commissioned 24 G-type container ships and opened an unprecedented round-the-world eastbound and westbound service — crossing the Atlantic, a lane no Asian carrier had entered.
 
-**Operational Scale (2023-2024)**
-- Annual Revenue: Approximately NT$720 billion (US$22 billion) (Source: Evergreen Marine Financial Reports, 2023)
-- Fleet Size: Over 220 modern container vessels
-- Total Deadweight Tonnage: Approximately 15 million DWT
-- Global Workforce: About 8,000 employees (including shore and sea staff)
+**In 1985, just seventeen years after its founding, Evergreen Marine became the world's largest container shipping company.**
 
-**Global Standing**
-- World Ranking: 7th largest container shipping company by total deadweight tonnage
-- Market Share: Approximately 6% of global container shipping market
-- Route Coverage: 120 countries, 240 ports worldwide
-- Weekly Services: Over 100 fixed route services
+> **Key Figures**
+>
+> | Metric | Data |
+> |--------|------|
+> | Founding capital | One 15-year-old secondhand ship (1968) |
+> | Reached world #1 | 1985, 17 years after founding |
+> | Current global rank | 7th by TEU capacity (2025) |
+> | Fleet capacity | 1.92 million TEU (early 2025) |
+> | Annual revenue | ~$13 billion (TTM, March 2026) |
+> | Orderbook | ~850,000 TEU, 44% of existing fleet |
 
-**Fleet Modernization**
-- Average Vessel Age: About 12 years, below industry average
-- Largest Vessel: Ever Alot (24,004 TEU), one of the world's largest container ships
-- Environmental Fleet: Over 40% of vessels comply with latest environmental standards
-- New Orders: Approximately 30 large container ships planned for the next five years
+## Six Days That Blocked the World
 
-**Financial Performance**
-- Market Capitalization: Approximately NT$250 billion (US$7.8 billion) (Source: Taiwan Stock Exchange, 2024)
-- Return on Equity: Maintained between 15-25% in recent years
-- Cash Dividends: NT$30 per share distributed in 2023, a record high
+On March 23, 2021, the Ever Given — a 400-meter-long vessel carrying 20,124 TEU under the Evergreen banner — ran aground in the Suez Canal. The ship wedged itself across the channel like a clot in an artery.
 
-## Development Journey: From One Ship to Shipping Empire
+Six days. 422 vessels stranded. Roughly 12% of global maritime trade passes through that canal. Allianz estimated economic losses of up to $10 billion per week. The Suez Canal Authority lost around $100 million. A University of Gothenburg study later calculated that Maersk alone lost nearly $89 million from the disruption.
 
-### Challenging Startup Years (1968-1980)
-In 1968, Chang Yung-fa purchased a second-hand cargo vessel "Golden Star" from Japan for NT$5 million, officially founding Evergreen Marine. At the time, Taiwan's shipping industry was dominated by foreign companies, making survival difficult for local operators.
+The incident forced the world to confront something most consumers never think about: nearly everything you order online probably traveled on a ship. And that ship might well have a green hull with EVERGREEN painted on its side.
 
-During the startup period, Evergreen focused on Taiwan-Japan routes, gradually building its reputation through quality service and flexible operations. Chang Yung-fa personally sailed on ships and visited clients, earning cargo owners' trust through sincerity and hard work. In 1972, the company purchased its first brand-new cargo ship "Ever Green," marking a successful transformation from agency operations to ship ownership.
+> 📝 **Curator's Note:** Ever Given is the ship's name; Evergreen is the company's. The world's memes mixed them up — but what the incident really exposed wasn't a naming confusion. It was how fragile modern supply chains are. One ship can halt global commerce.
 
-### International Expansion (1980-2000)
-Beginning in the 1980s, Evergreen aggressively expanded into international markets. The company launched trans-Pacific services to the US West Coast in 1984, extended to the East Coast in 1985, and opened European routes in 1987, gradually building a global route network.
+## Pandemic Windfall
 
-During this period, Evergreen adopted a "big ship strategy," pioneering the use of large container vessels to improve operational efficiency and reduce unit costs. The company also actively invested in port facilities and logistics centers, building comprehensive supply chain capabilities.
+The year of the Ever Given incident, another force was remaking the industry. COVID-19 scrambled global supply chains — port congestion, container shortages, freight rates at unprecedented levels.
 
-### Global Integration Era (2000-2010)
-Entering the new millennium, Evergreen faced consolidation waves in the global shipping industry. The company continued expanding its fleet while strengthening strategic alliances with other shipping lines to enhance competitiveness.
+Evergreen's 2021 net income hit NT$239 billion (roughly $7.8 billion), with earnings per share of NT$45.57. The following year was even bigger: net income of NT$334.2 billion, a cash dividend of NT$70 per share, and a yield above 45%. A cyclical shipping stock suddenly became the darling of Taiwan's retail investors, who nicknamed it the "King of the Seas."
 
-In 2002, Evergreen joined the CKYH Alliance (with COSCO, "K" Line, and Hanjin Shipping), providing more frequent services on major routes. During this period, the company also began emphasizing environmental issues, investing in more energy-efficient and eco-friendly vessels.
+But shipping people know: tides always turn. From 2023, freight rates collapsed. Evergreen's share price dropped more than 50% from its peak. Retail investors who chased the top learned the oldest lesson in maritime economics — shipping profits don't move in straight lines. They move in waves.
 
-### Digital Transformation Era (2010-Present)
-Facing digitalization trends and changing customer demands, Evergreen launched comprehensive digital transformation initiatives. From vessel intelligence and port automation to digital customer services, the company invested heavily in upgrades.
+## The Founder Dies, the Empire Fractures
 
-In recent years, amid rising global trade protectionism and supply chain reorganization, Evergreen has focused increasingly on route optimization and service innovation. Particularly during the COVID-19 pandemic, the company responded to surging freight demand and achieved record-breaking revenues.
+On January 20, 2016, Chang Yung-fa died at 88. He left a will directing his entire estate to Chang Kuo-wei, his only son from his second marriage.
 
-## Global Impact: Blue Arteries Connecting the World
+The first family contested it. Chang Kuo-cheng, the third son from the first marriage, filed suit to invalidate the will. The litigation lasted eight years. During that period, Chang Kuo-hua — the eldest son who controlled the group's Panamanian holding company, Evergreen International S.A. (EIS) — allegedly sold approximately NT$30 billion in assets. The Kuo-wei camp accused him of hollowing out the inheritance while the courts were tied up.
 
-### The Suez Canal Incident
-In March 2021, Evergreen's Ever Given grounded in the Suez Canal, blocking the waterway for six days and stranding hundreds of vessels. This incident highlighted the shipping industry's critical role in global supply chains and brought worldwide attention to Evergreen's influence.
+In 2022, Kuo-wei allied with his second brother Kuo-ming and seized control of Evergreen International, ousting Kuo-hua's management team. But Kuo-wei subsequently resigned from subsidiary UNI Air's chairmanship.
 
-While the incident caused short-term disruption, it also demonstrated Evergreen's irreplaceable position in global trade. The company's crisis management capabilities and responsible attitude during the incident earned recognition from the international maritime community.
+In August 2024, Taiwan's Supreme Court dismissed the appeal and confirmed the will's validity. Kuo-wei inherited over NT$10 billion. But how much remains in EIS after eight years of asset sales is still unknown.
 
-### Asian Trade Hub
-Evergreen's route network centers on Asia while connecting major economies in Europe and the Americas, making it a vital driver of Asian trade. This role becomes increasingly important amid regional integration trends like the Belt and Road Initiative and the Regional Comprehensive Economic Partnership (RCEP).
+> 📝 **Curator's Note:** The empire Chang Yung-fa built over forty years was pulled apart over eight. This isn't unique to Taiwan — but in an economy where family-controlled groups account for over 60% of GDP, every succession battle doubles as a public seminar on corporate governance.
 
-### Green Shipping Pioneer
-Evergreen actively responds to the International Maritime Organization's (IMO) carbon reduction targets, investing in next-generation eco-friendly vessels. The company's environmental strategy not only aligns with international trends but also sets a benchmark for global green shipping.
+## The Next Bet: Green Fuel
 
-## Innovation Capabilities: Digital Revolution in Traditional Shipping
+Evergreen currently ranks seventh globally, with fleet capacity of about 1.92 million TEU. But the number that matters is the orderbook: roughly 850,000 TEU in newbuilds, equal to 44% of the existing fleet.
 
-### Smart Vessel Technology
-Evergreen invests in smart vessel systems that use IoT, big data analytics, and other technologies to monitor ship conditions in real-time, optimize navigation routes, and predict maintenance needs. These innovations not only improve operational efficiency but also significantly enhance vessel safety.
+These aren't just bigger ships. In 2023 and 2024, Evergreen placed intensive orders for methanol dual-fuel and LNG dual-fuel container vessels, investing billions of dollars. The International Maritime Organization requires net-zero emissions by 2050. Evergreen's strategy is dual-track — methanol and LNG — rather than betting everything on a single fuel.
 
-### Digital Customer Services
-The company has developed comprehensive digital service platforms, allowing customers to book cargo space, track containers, and check schedules through websites and mobile apps. Electronic document processing and online payment functions have greatly simplified international trade procedures.
+It echoes the pattern Chang Yung-fa set decades ago with containerization: not the first mover, but once committed, all-in.
 
-### Port Automation
-At major bases like Kaohsiung Port and Taipei Port, Evergreen invests in automated terminal facilities. Unmanned quay cranes, automated guided vehicles (AGVs), and other equipment not only increase operational efficiency but also reduce labor costs and operational risks.
+## An Island's Lifeline at Sea
 
-### Supply Chain Visibility
-Through blockchain and AI technologies, Evergreen provides end-to-end supply chain visibility services. Customers can track cargo status and estimated arrival times in real-time, significantly improving supply chain management efficiency.
+Taiwan depends on maritime shipping for 99% of its foreign trade. The island has no oil, no iron ore, barely enough fresh water. But it has a semiconductor industry the world depends on, the seventh-largest container fleet on Earth, and generations of seafaring people — from dockworkers to captains to founders.
 
-## Social Responsibility: Mission as Ocean Guardian
+Chang Yung-fa wrote in his memoir *Iron Will, Gentle Heart*: "You can't be afraid of battle when you're building an empire — once the ship sails, the cargo must be delivered."
 
-### Marine Environmental Protection
-As ocean users, Evergreen understands the importance of marine conservation. The company has established strict environmental policies, comprehensively implementing environmental responsibilities from reducing wastewater discharge and preventing oil pollution to protecting marine life.
-
-### Seafarer Welfare
-Shipping is a high-risk industry, and Evergreen places special emphasis on seafarer safety and welfare. The company provides comprehensive training programs, safety equipment, and medical insurance to ensure every seafarer returns home safely.
-
-### Social Philanthropy
-Through the Chang Yung-Fa Foundation, the Evergreen Group has long invested in education, culture, and environmental protection. From scholarship establishment to maritime education promotion, the company upholds the philosophy of "taking from society, giving back to society."
-
-### Talent Development
-Evergreen collaborates with maritime schools to provide internship opportunities and career paths, cultivating excellent maritime talent for Taiwan. The company also operates training centers to continuously enhance employee professional skills.
-
-## Challenges Ahead
-
-### Global Economic Uncertainty
-International trade faces volatility from geopolitical factors, pandemics, and inflation, causing dramatic fluctuations in freight demand. Maintaining stable profitability in uncertain environments presents major challenges for Evergreen.
-
-### Stricter Environmental Regulations
-The IMO continues tightening environmental regulations, requiring vessels to reduce carbon emissions and use clean fuels. These regulatory changes demand substantial investment, pressuring operational costs.
-
-### Digital Competition
-Emerging digital logistics platforms are changing traditional shipping business models. Maintaining competitive advantages during digital transformation is a challenge Evergreen must address.
-
-### Labor Shortages
-The global shipping industry faces seafarer shortages, particularly experienced senior crew members. Attracting and retaining excellent talent is a common industry challenge.
-
-## Future Outlook
-
-### Green Transformation Strategy
-Evergreen plans to reduce carbon emissions by 30% compared to 2020 levels by 2030, achieving net-zero emissions by 2050. The company will invest in alternative fuel vessels, including methanol-fueled ships and hydrogen fuel cell vessels.
-
-### Digital Ecosystem Development
-Centered on shipping services, Evergreen aims to build a comprehensive digital ecosystem encompassing ports, logistics, and finance. Through platform-based operations, it will provide customers with one-stop supply chain solutions.
-
-### Emerging Market Expansion
-Beyond deepening existing routes, Evergreen actively explores emerging markets in Africa and South America. Economic development in these regions will create new freight demand.
-
-### Automation Investment
-Continued investment in port automation and vessel intelligence technologies will improve operational efficiency while reducing labor dependence. The goal is building "unmanned" modern ports.
-
-Evergreen Marine's story exemplifies how Taiwanese enterprises grow from local to international prominence. In this challenging shipping industry, this green fleet will continue bearing the heavy responsibility of global trade, connecting the world while steering Taiwan's entrepreneurial spirit toward even bluer oceans.
+He delivered. The question is who steers now. In 2024, the Supreme Court stamped its verdict on the inheritance case. But in shipyards across Asia, Evergreen's next-generation methanol-powered vessels are taking shape. When they launch, the hulls will still be green. EVERGREEN will still be painted on the side. Who stands on the bridge — that's a different story.
 
 ---
 
 ## References
 
-- Evergreen Marine Official Website (www.evergreen-marine.com)
-- Evergreen Marine Annual Reports and Financial Statements (2020-2023)
-- Taiwan Stock Exchange Market Observation Post System
-- Alphaliner Global Vessel Database
-- "History of Taiwan's Maritime Development," published by Maritime Society of Republic of China
-- "Biography of Chang Yung-fa," published by Commonwealth Publishing
-- Lloyd's List maritime professional journal reports
-- Economic Daily News and Commercial Times reports (2020-2024)
+- [Evergreen Marine Official — About Evergreen](https://csr.evergreen-marine.com/csr/tw/jsp/CSR_AboutEvergreen.jsp) (primary)
+- [CommonWealth Magazine — From a Carpenter's Son to the World's Container Shipping King](https://www.cw.com.tw/article/5040212)
+- [CommonWealth Magazine — Chang Yung-fa: A Leader's Strategy](https://www.cw.com.tw/article/5074057)
+- [Wikipedia — 2021 Suez Canal obstruction](https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction)
+- [Allianz / GrECo — A World Loss Event: Ever Given](https://greco.services/a-world-loss-event-and-its-far-reaching-consequences-ever-given/)
+- [University of Gothenburg — The Cost of the Suez Canal Blockage](https://www.gu.se/en/news/the-cost-of-the-suez-canal-blockage) (academic)
+- [United Daily News — Evergreen 2021 net income NT$239 billion](https://udn.com/news/story/7252/6166835)
+- [United Daily News — Evergreen NT$70 dividend (FY2022)](https://udn.com/news/story/7252/7031546)
+- [StockFeel — Evergreen Succession Battle Explainer](https://www.stockfeel.com.tw/%E9%95%B7%E6%A6%AE-%E7%B6%93%E7%87%9F%E6%AC%8A-%E5%BC%B5%E5%9C%8B%E8%8F%AF-%E5%BC%B5%E5%9C%8B%E7%85%92/)
+- [Alcott Global — Ranking the Global Shipping Giants 2024-2025](https://alcottglobal.com/infographic/ranking-the-global-shipping-giants-capacity-2024-2025)
+- [Offshore Energy — Evergreen orders 6 methanol dual-fuel boxships](https://www.offshore-energy.biz/evergreen-orders-6-methanol-dual-fuel-boxships/) (primary)
+- [CompaniesMarketCap — Evergreen Marine Revenue](https://companiesmarketcap.com/evergreen-marine/revenue/)
+- [Liberty Times — Chang Yung-fa: From deckhand to world's #1 shipping king](https://ec.ltn.com.tw/article/breakingnews/1578710)
+- [Chang Yung-Fa Foundation — Iron Will, Gentle Heart Exhibition](https://www.cyff.org.tw/exhibition/exh-02.html) (primary)
