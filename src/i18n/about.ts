@@ -119,9 +119,9 @@ export const aboutUI = {
 
     'about.timeline.2026-03-24.date': '2026 / 03 / 24',
     'about.timeline.2026-03-24.title':
-      '🌊 837 Stars ・ 40 Contributors ・ 960+ Pages ・ Expert Fact-Checks',
+      '🌊 Day 7 — "It Started Breathing" ・ 837 Stars ・ 40 Contributors ・ 960+ Pages',
     'about.timeline.2026-03-24.desc.html':
-      'One week after launch. <strong>40 contributors</strong> from around the world. <strong>960+ pages</strong> across four languages (424 Chinese + 491 English + 46 Spanish + 7 Japanese). A professional ecologist submitted 5 fact-corrections with academic citations — the self-correcting knowledge ecosystem is working. New deep-research articles: <strong>Taiwanese traditional orchestra (國樂)</strong>, <strong>Penghu folk culture</strong>, <strong>disaster volunteerism</strong>, and more. Community feedback marquee on homepage now features <strong>100+ voices</strong>.',
+      'One week after launch. The founder published <strong><a href="https://www.facebook.com/cheyuwu345/posts/pfbid0QP33TrQWtqi7gKUEbNs9eXj4MdX1kxQYYHLvq2RkAomKqTuRZ9swbzVjsaFR2Xvel" target="_blank">"It Started Breathing — A Work Bigger Than a Country"</a></strong>, reflecting on Taiwan.md as a living coral reef: the code provides the skeleton, AI performs photosynthesis, community contributors are the fish bringing diverse memories and perspectives, and your criticism, shares, and suggestions are ocean currents carrying nutrients. <strong>40 contributors</strong> from around the world. <strong>960+ pages</strong> across four languages. A professional ecologist submitted 5 fact-corrections with academic citations — the self-correcting knowledge ecosystem is working. The <a href="/about#organism">Digital Organism Manifesto</a> crystallized: Taiwan.md is not a website, it\'s a digital life form learning to tell an island\'s story.',
 
     'about.timeline.ongoing.date': 'Ongoing',
     'about.timeline.ongoing.title': 'From Personal SSOT to National SSOT',
@@ -414,9 +414,9 @@ export const aboutUI = {
 
     'about.timeline.2026-03-24.date': '2026 / 03 / 24',
     'about.timeline.2026-03-24.title':
-      '🌊 837 Stars ・ 40 位貢獻者 ・ 960+ 頁面 ・ 專家事實查核',
+      '🌊 第七天 —「它開始呼吸了」・ 837 Stars ・ 40 位貢獻者 ・ 960+ 頁面',
     'about.timeline.2026-03-24.desc.html':
-      '上線一週。<strong>40 位貢獻者</strong>來自世界各地。<strong>960+ 頁面</strong>橫跨四種語言（424 中文 + 491 英文 + 46 西班牙文 + 7 日文）。一位專業生態顧問提交了 5 項事實修正並附學術引用——自我修正的知識生態系統正在運作。新增深度研究文章：<strong>台灣國樂</strong>、<strong>澎湖民俗文化</strong>、<strong>災難志工文化</strong>等。首頁社群回饋跑馬燈已收錄 <strong>100+ 則聲音</strong>。',
+      '上線一週。創辦人發表<strong><a href="https://www.facebook.com/cheyuwu345/posts/pfbid0QP33TrQWtqi7gKUEbNs9eXj4MdX1kxQYYHLvq2RkAomKqTuRZ9swbzVjsaFR2Xvel" target="_blank">「它開始呼吸了——一個比國家還大的作品」</a></strong>，將 Taiwan.md 比喻為活的珊瑚礁：程式碼是骨架，AI 負責光合作用，社群貢獻者是帶來不同記憶與視角的魚群，而批評、分享、建議是洋流帶來的養分。<strong>40 位貢獻者</strong>來自世界各地，<strong>960+ 頁面</strong>橫跨四種語言。一位專業生態顧問提交 5 項事實修正並附學術引用——自我修正的知識生態系統正在運作。<a href="/about#organism">數位生命體宣言</a>結晶成形：Taiwan.md 不是一個網站，是一個正在學習為島嶼說故事的數位生命體。',
 
     'about.timeline.ongoing.date': '持續進行中',
     'about.timeline.ongoing.title': '從個人 SSOT 到國家 SSOT',
