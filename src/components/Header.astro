@@ -460,8 +460,14 @@ const categoryList = [
       });
     });
 
+    // If banner is visible on homepage, offset the fixed header below it
     const isHero = header.hasAttribute('data-hero');
     if (isHero) {
+      const banner = document.getElementById('lang-banner');
+      if (banner && banner.offsetHeight > 0) {
+        header.style.top = banner.offsetHeight + 'px';
+      }
+
       const update = () =>
         header.classList.toggle('scrolled', window.scrollY > 40);
       window.addEventListener('scroll', update, { passive: true });
