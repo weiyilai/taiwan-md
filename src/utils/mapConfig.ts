@@ -246,7 +246,7 @@ type MarkerCategory =
 
 type MarkerRegion = 'north' | 'central' | 'south' | 'east' | 'islands';
 
-type City =
+type County =
   | 'taipei'
   | 'newTaipei'
   | 'keelung'
@@ -276,7 +276,7 @@ interface MapMarker {
   region: MarkerRegion;
   link: string;
   desc: string;
-  city: City;
+  county: County;
 }
 
 function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
@@ -291,7 +291,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/about/%E5%89%B5%E8%BE%A6%E4%BA%BA%20%E2%80%94%20%E5%90%B3%E5%93%B2%E5%AE%87%20Che-Yu%20Wu',
       desc: t('map.markers.founderCheYuWu.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanIndigenousContemporaryArt',
@@ -303,7 +303,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/art/%E5%8F%B0%E7%81%A3%E5%8E%9F%E4%BD%8F%E6%B0%91%E7%95%B6%E4%BB%A3%E8%97%9D%E8%A1%93',
       desc: t('map.markers.taiwanIndigenousContemporaryArt.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanExperimentalNewMediaArt',
@@ -315,7 +315,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/art/%E5%8F%B0%E7%81%A3%E5%AF%A6%E9%A9%97%E8%88%87%E6%96%B0%E5%AA%92%E9%AB%94%E8%97%9D%E8%A1%93',
       desc: t('map.markers.taiwanExperimentalNewMediaArt.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanArchitecture',
@@ -327,7 +327,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/art/%E5%8F%B0%E7%81%A3%E5%BB%BA%E7%AF%89',
       desc: t('map.markers.taiwanArchitecture.desc'),
-      city: 'taichung',
+      county: 'taichung',
     },
     {
       id: 'taiwanNewMediaArt',
@@ -339,7 +339,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/art/%E5%8F%B0%E7%81%A3%E6%96%B0%E5%AA%92%E9%AB%94%E8%97%9D%E8%A1%93',
       desc: t('map.markers.taiwanNewMediaArt.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanWatercolorCenturyEvolution',
@@ -351,7 +351,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/art/%E5%8F%B0%E7%81%A3%E6%B0%B4%E5%BD%A9%E7%95%AB%E7%9A%84%E7%99%BE%E5%B9%B4%E6%B5%81%E8%AE%8A',
       desc: t('map.markers.taiwanWatercolorCenturyEvolution.desc'),
-      city: 'hsinchu',
+      county: 'hsinchu',
     },
     {
       id: 'taiwanModernPoetry',
@@ -363,7 +363,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/art/%E5%8F%B0%E7%81%A3%E7%8F%BE%E4%BB%A3%E8%A9%A9',
       desc: t('map.markers.taiwanModernPoetry.desc'),
-      city: 'changhua',
+      county: 'changhua',
     },
     {
       id: 'taiwanContemporarySculpture',
@@ -375,7 +375,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/art/%E5%8F%B0%E7%81%A3%E7%95%B6%E4%BB%A3%E9%9B%95%E5%A1%91%E7%99%BC%E5%B1%95',
       desc: t('map.markers.taiwanContemporarySculpture.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanCuratorsArtCulture',
@@ -387,7 +387,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/art/%E5%8F%B0%E7%81%A3%E7%AD%96%E5%B1%95%E4%BA%BA%E8%88%87%E8%97%9D%E8%A1%93%E6%96%87%E5%8C%96%E5%BB%BA%E6%A7%8B',
       desc: t('map.markers.taiwanCuratorsArtCulture.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'newMediaArt',
@@ -399,7 +399,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/art/%E6%96%B0%E5%AA%92%E9%AB%94%E8%97%9D%E8%A1%93',
       desc: t('map.markers.newMediaArt.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'contemporaryTaiwanLiterature',
@@ -411,7 +411,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/art/%E7%95%B6%E4%BB%A3%E5%8F%B0%E7%81%A3%E6%96%87%E5%AD%B8',
       desc: t('map.markers.contemporaryTaiwanLiterature.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanContemporaryArt',
@@ -423,7 +423,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/art/%E5%8F%B0%E7%81%A3%E7%95%B6%E4%BB%A3%E8%97%9D%E8%A1%93',
       desc: t('map.markers.taiwanContemporaryArt.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'kinmenGuesthouseMuseum',
@@ -435,7 +435,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/art/當代藝術',
       desc: t('map.markers.kinmenGuesthouseMuseum.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'renjianMagazine',
@@ -447,7 +447,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/culture/%E4%BA%BA%E9%96%93%E9%9B%9C%E8%AA%8C',
       desc: t('map.markers.renjianMagazine.desc'),
-      city: 'taoyuan',
+      county: 'taoyuan',
     },
     {
       id: 'taiwanIndigenousCulture',
@@ -459,7 +459,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/culture/原住民族文化',
       desc: t('map.markers.taiwanIndigenousCulture.desc'),
-      city: 'hualien',
+      county: 'hualien',
     },
     {
       id: 'taiwan16IndigenousTribes',
@@ -471,7 +471,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/culture/原住民族文化',
       desc: t('map.markers.taiwan16IndigenousTribes.desc'),
-      city: 'pingtung',
+      county: 'pingtung',
     },
     {
       id: 'taiwanNightMarketCulture',
@@ -483,7 +483,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/culture/%E5%8F%B0%E7%81%A3%E5%A4%9C%E5%B8%82%E6%96%87%E5%8C%96%E8%88%87%E5%B0%8F%E5%90%83%E9%A2%A8%E6%83%85',
       desc: t('map.markers.taiwanNightMarketCulture.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanSensibilityKoreanPerspective',
@@ -495,7 +495,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/culture/%E5%8F%B0%E7%81%A3%E6%84%9F%E6%80%A7%EF%BC%9A%E9%9F%93%E5%9C%8B%E4%BA%BA%E7%9C%BC%E4%B8%AD%E7%9A%84%E5%8F%B0%E5%BC%8F%E7%BE%8E%E5%AD%B8',
       desc: t('map.markers.taiwanSensibilityKoreanPerspective.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanCulturalCreativeParks',
@@ -507,7 +507,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/culture/%E5%8F%B0%E7%81%A3%E6%96%87%E5%8C%96%E5%89%B5%E6%84%8F%E5%9C%92%E5%8D%80%E7%99%BC%E5%B1%95',
       desc: t('map.markers.taiwanCulturalCreativeParks.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'taiwanOldStreetCulture',
@@ -519,7 +519,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/culture/%E5%8F%B0%E7%81%A3%E8%80%81%E8%A1%97%E6%96%87%E5%8C%96%E8%88%87%E5%95%86%E6%A5%AD%E8%A1%97%E5%8D%80',
       desc: t('map.markers.taiwanOldStreetCulture.desc'),
-      city: 'newTaipei',
+      county: 'newTaipei',
     },
     {
       id: 'taiwanTeaCeremonyLifeAesthetics',
@@ -531,7 +531,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/culture/%E5%8F%B0%E7%81%A3%E8%8C%B6%E9%81%93%E8%88%87%E7%94%9F%E6%B4%BB%E7%BE%8E%E5%AD%B8',
       desc: t('map.markers.taiwanTeaCeremonyLifeAesthetics.desc'),
-      city: 'chiayi',
+      county: 'chiayi',
     },
     {
       id: 'taiwanStreetArtGraffiti',
@@ -543,7 +543,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/culture/%E5%8F%B0%E7%81%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E8%A1%93%E8%88%87%E5%A1%97%E9%B4%89%E6%96%87%E5%8C%96',
       desc: t('map.markers.taiwanStreetArtGraffiti.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanIncenseMakingCulture',
@@ -555,7 +555,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/culture/%E5%8F%B0%E7%81%A3%E8%A3%BD%E9%A6%99%E6%96%87%E5%8C%96%E8%88%87%E9%A6%99%E8%85%B3%E5%8E%9F%E9%84%89',
       desc: t('map.markers.taiwanIncenseMakingCulture.desc'),
-      city: 'changhua',
+      county: 'changhua',
     },
     {
       id: 'taiwanHomophoneTaboos',
@@ -567,7 +567,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/culture/%E5%8F%B0%E7%81%A3%E8%AB%A7%E9%9F%B3%E7%A6%81%E5%BF%8C%E6%96%87%E5%8C%96%EF%BC%9A%E7%82%BA%E4%BB%80%E9%BA%BC%E3%80%8C%E5%9B%9B%E3%80%8D%E8%AE%93%E6%95%B4%E5%80%8B%E7%A4%BE%E6%9C%83%E8%B7%B3%E9%81%8E%E6%A8%93%E5%B1%A4%EF%BC%9F',
       desc: t('map.markers.taiwanHomophoneTaboos.desc'),
-      city: 'taoyuan',
+      county: 'taoyuan',
     },
     {
       id: 'hakkaCultureLanguage',
@@ -579,7 +579,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/culture/族群（閩南客家原住民外省新住民）',
       desc: t('map.markers.hakkaCultureLanguage.desc'),
-      city: 'hsinchu',
+      county: 'hsinchu',
     },
     {
       id: 'ethnicGroupsTaiwan',
@@ -591,7 +591,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/culture/原住民族文化',
       desc: t('map.markers.ethnicGroupsTaiwan.desc'),
-      city: 'taoyuan',
+      county: 'taoyuan',
     },
     {
       id: 'chinaSteel',
@@ -603,7 +603,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/economy/%E4%B8%AD%E9%8B%BC%EF%BC%9A%E9%90%B5%E9%A0%AD%E9%83%A8%E9%95%B7%E8%88%87%E5%8D%81%E5%A4%A7%E5%BB%BA%E8%A8%AD%E7%9A%84%E9%8B%BC%E9%90%B5%E5%82%B3%E5%A5%87',
       desc: t('map.markers.chinaSteel.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'taiwanCement',
@@ -615,7 +615,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/economy/%E5%8F%B0%E6%B3%A5%EF%BC%9A%E5%8F%B0%E7%81%A3%E7%AC%AC%E4%B8%80%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E7%9A%84%E7%B6%A0%E8%89%B2%E8%BD%89%E5%9E%8B%E5%82%B3%E5%A5%87',
       desc: t('map.markers.taiwanCement.desc'),
-      city: 'tainan',
+      county: 'tainan',
     },
     {
       id: 'tsmc',
@@ -627,7 +627,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/economy/%E5%8F%B0%E7%81%A3%E4%BC%81%E6%A5%AD%EF%BC%9A%E5%8F%B0%E7%A9%8D%E9%9B%BB',
       desc: t('map.markers.tsmc.desc'),
-      city: 'hsinchu',
+      county: 'hsinchu',
     },
     {
       id: 'chimeiCorporation',
@@ -639,7 +639,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/art/當代藝術',
       desc: t('map.markers.chimeiCorporation.desc'),
-      city: 'tainan',
+      county: 'tainan',
     },
     {
       id: 'acer',
@@ -651,7 +651,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/economy/%E5%AE%8F%E7%A2%81%E9%9B%86%E5%9C%98%20(Acer)%20-%20PC%20%E7%94%A2%E6%A5%AD%E7%9A%84%E8%AE%8A%E9%9D%A9%E5%85%88%E9%A9%85',
       desc: t('map.markers.acer.desc'),
-      city: 'taoyuan',
+      county: 'taoyuan',
     },
     {
       id: 'giantBicycles',
@@ -663,7 +663,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/economy/%E5%8F%B0%E7%81%A3%E4%BC%81%E6%A5%AD%EF%BC%9A%E5%B7%A8%E5%A4%A7%E6%A9%9F%E6%A2%B0',
       desc: t('map.markers.giantBicycles.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'quantaComputer',
@@ -675,7 +675,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/economy/%E5%8F%B0%E7%81%A3%E4%BC%81%E6%A5%AD%EF%BC%9A%E5%BB%A3%E9%81%94%E9%9B%BB%E8%85%A6',
       desc: t('map.markers.quantaComputer.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'aseGroup',
@@ -687,7 +687,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/economy/%E5%8F%B0%E7%81%A3%E4%BC%81%E6%A5%AD%EF%BC%9A%E6%97%A5%E6%9C%88%E5%85%89%E5%8D%8A%E5%B0%8E%E9%AB%94',
       desc: t('map.markers.aseGroup.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'esunFinancialHolding',
@@ -699,7 +699,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/economy/%E5%8F%B0%E7%81%A3%E4%BC%81%E6%A5%AD%EF%BC%9A%E7%8E%89%E5%B1%B1%E9%87%91%E6%8E%A7',
       desc: t('map.markers.esunFinancialHolding.desc'),
-      city: 'nantou',
+      county: 'nantou',
     },
     {
       id: 'changChunPetrochemical',
@@ -711,7 +711,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/economy/%E5%8F%B0%E7%81%A3%E4%BC%81%E6%A5%AD%EF%BC%9A%E9%95%B7%E6%98%A5%E7%9F%B3%E5%8C%96',
       desc: t('map.markers.changChunPetrochemical.desc'),
-      city: 'tainan',
+      county: 'tainan',
     },
     {
       id: 'formosaPlasticsGroup',
@@ -723,7 +723,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/economy/%E5%8F%B0%E7%81%A3%E4%BC%81%E6%A5%AD%EF%BC%9A%E9%95%B7%E6%A6%AE%E6%B5%B7%E9%81%8B',
       desc: t('map.markers.formosaPlasticsGroup.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taipeiFubon',
@@ -735,7 +735,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/economy/%E5%A4%9C%E5%B8%82%E7%B6%93%E6%BF%9F%E5%AD%B8%EF%BC%9A%E4%B8%80%E5%A0%B4%E6%B2%92%E6%9C%89%E5%93%81%E7%89%8C%E7%9A%84%E5%95%86%E6%A5%AD%E5%A5%87%E8%B9%9F',
       desc: t('map.markers.taipeiFubon.desc'),
-      city: 'taichung',
+      county: 'taichung',
     },
     {
       id: 'taiwan7Eleven',
@@ -747,7 +747,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/food/%E5%8F%B0%E7%81%A3%E5%92%96%E5%95%A1%E7%94%A2%E6%A5%AD',
       desc: t('map.markers.taiwan7Eleven.desc'),
-      city: 'chiayi',
+      county: 'chiayi',
     },
     {
       id: 'taiwanHighSpeedRail',
@@ -759,7 +759,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/food/%E5%8F%B0%E7%81%A3%E5%9C%B0%E6%96%B9%E5%B0%8F%E5%90%83%E5%9C%B0%E5%9C%96',
       desc: t('map.markers.taiwanHighSpeedRail.desc'),
-      city: 'hsinchu',
+      county: 'hsinchu',
     },
     {
       id: 'taiwanSemiconductorIndustry',
@@ -771,7 +771,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/food/%E5%8F%B0%E7%81%A3%E6%89%8B%E8%B7%AF%E8%8F%9C%EF%BC%9A%E6%AD%A3%E5%9C%A8%E6%B6%88%E5%A4%B1%E7%9A%84%E5%91%B3%E8%A6%BA%E8%A8%98%E6%86%B6',
       desc: t('map.markers.taiwanSemiconductorIndustry.desc'),
-      city: 'chiayi',
+      county: 'chiayi',
     },
     {
       id: 'taiwanBankingSystem',
@@ -783,7 +783,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/food/%E5%8F%B0%E7%81%A3%E6%96%B0%E4%BD%8F%E6%B0%91%E7%BE%8E%E9%A3%9F%E8%9E%8D%E5%90%88',
       desc: t('map.markers.taiwanBankingSystem.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanSmes',
@@ -795,7 +795,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/food/%E5%8F%B0%E7%81%A3%E6%B0%B4%E6%9E%9C%E7%8E%8B%E5%9C%8B',
       desc: t('map.markers.taiwanSmes.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'youbikePublicBikeSystem',
@@ -807,7 +807,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/food/%E5%8F%B0%E7%81%A3%E6%B5%B7%E9%AE%AE%E6%96%87%E5%8C%96',
       desc: t('map.markers.youbikePublicBikeSystem.desc'),
-      city: 'keelung',
+      county: 'keelung',
     },
     {
       id: 'taiwanFoodBeverageIndustry',
@@ -819,7 +819,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/food/%E5%8F%B0%E7%81%A3%E7%B1%B3%E5%85%B6%E6%9E%97%E8%88%87%E7%B2%BE%E7%B7%BB%E9%A4%90%E9%A3%B2',
       desc: t('map.markers.taiwanFoodBeverageIndustry.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanAgriculturalReform',
@@ -831,7 +831,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/food/夜市文化',
       desc: t('map.markers.taiwanAgriculturalReform.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanTeaIndustry',
@@ -843,7 +843,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/food/%E5%AE%A2%E5%AE%B6%E9%A3%B2%E9%A3%9F%E6%96%87%E5%8C%96',
       desc: t('map.markers.taiwanTeaIndustry.desc'),
-      city: 'hsinchu',
+      county: 'hsinchu',
     },
     {
       id: 'taiwanFishingIndustry',
@@ -855,7 +855,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/food/%E7%89%9B%E8%82%89%E9%BA%B5',
       desc: t('map.markers.taiwanFishingIndustry.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanFruitIndustry',
@@ -867,7 +867,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/food/台灣茶文化',
       desc: t('map.markers.taiwanFruitIndustry.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanRiceVarieties',
@@ -879,7 +879,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/geography/%E5%9C%A8%E6%90%96%E6%99%83%E7%9A%84%E5%B3%B6%E5%B6%BC%E4%B8%8A%EF%BC%8C%E4%BB%96%E5%80%91%E8%93%8B%E4%BA%86%E4%B8%80%E5%BA%A7%E8%83%BD%E9%A3%9B%E7%9A%84%E5%A1%94',
       desc: t('map.markers.taiwanRiceVarieties.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'nightMarketCulture',
@@ -891,7 +891,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/geography/%E5%8F%B0%E7%81%A3%E4%BA%94%E5%A4%A7%E5%9C%B0%E5%BD%A2%E8%88%87%E5%9C%B0%E7%90%86%E7%B5%90%E6%A7%8B%EF%BC%9A%E5%BE%9E%E5%B1%B1%E8%84%88%E5%88%B0%E5%B9%B3%E5%8E%9F%E7%9A%84%E5%B3%B6%E5%B6%BC%E9%A2%A8%E8%B2%8C',
       desc: t('map.markers.nightMarketCulture.desc'),
-      city: 'nantou',
+      county: 'nantou',
     },
     {
       id: 'bubbleTeaGlobalPhenomenon',
@@ -903,7 +903,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/geography/%E5%8F%B0%E7%81%A3%E4%BA%A4%E9%80%9A%E9%81%8B%E8%BC%B8%E7%B6%B2%E7%B5%A1',
       desc: t('map.markers.bubbleTeaGlobalPhenomenon.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanBeefNoodle',
@@ -915,7 +915,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/geography/%E5%8F%B0%E7%81%A3%E5%9C%8B%E5%AE%B6%E9%A2%A8%E6%99%AF%E5%8D%80%E7%B3%BB%E7%B5%B1',
       desc: t('map.markers.taiwanBeefNoodle.desc'),
-      city: 'chiayi',
+      county: 'chiayi',
     },
     {
       id: 'taiwanHotPotCulture',
@@ -927,7 +927,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/geography/%E5%8F%B0%E7%81%A3%E5%B3%B6%E5%B6%BC%E5%9C%B0%E7%90%86%E7%89%B9%E8%89%B2%E8%88%87%E5%BD%A2%E6%88%90',
       desc: t('map.markers.taiwanHotPotCulture.desc'),
-      city: 'chiayi',
+      county: 'chiayi',
     },
     {
       id: 'taiwanFineDining',
@@ -939,7 +939,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/geography/%E5%8F%B0%E7%81%A3%E6%9D%BF%E5%A1%8A%E9%81%8B%E5%8B%95%E8%88%87%E5%9C%B0%E9%9C%87%E6%B4%BB%E5%8B%95',
       desc: t('map.markers.taiwanFineDining.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanStreetFood',
@@ -951,7 +951,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/geography/%E5%8F%B0%E7%81%A3%E6%B0%B4%E5%BA%AB%E8%88%87%E6%B0%B4%E8%B3%87%E6%BA%90%E7%AE%A1%E7%90%86',
       desc: t('map.markers.taiwanStreetFood.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanVegetarianCulture',
@@ -963,7 +963,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/geography/%E5%8F%B0%E7%81%A3%E6%B2%B3%E5%B7%9D%E7%B3%BB%E7%B5%B1%E8%88%87%E6%B0%B4%E6%96%87%E7%89%B9%E8%89%B2%EF%BC%9A%E7%9F%AD%E6%80%A5%E6%B5%81%E8%88%87%E5%AD%A3%E7%AF%80%E8%AE%8A%E9%81%B7%E7%9A%84%E6%B0%B4%E6%96%87%E5%9C%B0%E7%90%86',
       desc: t('map.markers.taiwanVegetarianCulture.desc'),
-      city: 'newTaipei',
+      county: 'newTaipei',
     },
     {
       id: 'taiwanCoffeeCulture',
@@ -975,7 +975,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/geography/%E5%8F%B0%E7%81%A3%E6%B5%B7%E5%B2%B8%E5%9C%B0%E5%BD%A2%E8%88%87%E6%B5%B7%E6%B4%8B%E5%9C%B0%E6%99%AF',
       desc: t('map.markers.taiwanCoffeeCulture.desc'),
-      city: 'newTaipei',
+      county: 'newTaipei',
     },
     {
       id: 'taiwanSnackCulture',
@@ -987,7 +987,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/geography/%E5%8F%B0%E7%81%A3%E6%BA%AB%E6%B3%89%E5%9C%B0%E6%99%AF',
       desc: t('map.markers.taiwanSnackCulture.desc'),
-      city: 'taitung',
+      county: 'taitung',
     },
     {
       id: 'taiwanSeafoodCulture',
@@ -999,7 +999,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/geography/%E5%8F%B0%E7%81%A3%E7%94%9F%E6%85%8B%E5%A4%9A%E6%A8%A3%E6%80%A7%E7%86%B1%E9%BB%9E',
       desc: t('map.markers.taiwanSeafoodCulture.desc'),
-      city: 'nantou',
+      county: 'nantou',
     },
     {
       id: 'taiwanPineappleCake',
@@ -1011,7 +1011,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/geography/%E5%8F%B0%E7%81%A3%E8%BE%B2%E6%A5%AD%E5%9C%B0%E6%99%AF%E8%88%87%E7%94%A2%E6%A5%AD%E5%88%86%E5%B8%83',
       desc: t('map.markers.taiwanPineappleCake.desc'),
-      city: 'changhua',
+      county: 'changhua',
     },
     {
       id: 'taiwanPorkRibSoup',
@@ -1023,7 +1023,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/geography/%E5%8F%B0%E7%81%A3%E9%83%BD%E5%B8%82%E7%99%BC%E5%B1%95%E8%88%87%E5%9F%8E%E9%84%89%E5%B7%AE%E8%B7%9D',
       desc: t('map.markers.taiwanPorkRibSoup.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanOysterOmelette',
@@ -1035,7 +1035,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/geography/%E5%9C%B0%E5%BD%A2%E8%88%87%E5%9C%B0%E8%B3%AA',
       desc: t('map.markers.taiwanOysterOmelette.desc'),
-      city: 'nantou',
+      county: 'nantou',
     },
     {
       id: 'taiwanBreakfastCulture',
@@ -1047,7 +1047,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/geography/%E5%9F%8E%E5%B8%82%E7%89%B9%E8%89%B2%E8%88%87%E5%8D%80%E5%9F%9F%E6%96%87%E5%8C%96',
       desc: t('map.markers.taiwanBreakfastCulture.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanConvenienceStoreFood',
@@ -1059,7 +1059,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'islands',
       link: '/geography/%E9%9B%A2%E5%B3%B6%E8%88%87%E6%B5%B7%E6%B4%8B%E6%96%87%E5%8C%96%EF%BC%9A%E5%BE%9E%E7%9F%B3%E6%BB%AC%E5%AF%86%E5%BA%A6%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80%E5%88%B0%E9%A3%9B%E9%AD%9A%E5%AD%A3%E7%94%9F%E6%85%8B%E6%B3%95%E5%BE%8B',
       desc: t('map.markers.taiwanConvenienceStoreFood.desc'),
-      city: 'penghu',
+      county: 'penghu',
     },
     {
       id: 'dutchSpanishColonialPeriod',
@@ -1071,7 +1071,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/history/%E4%BA%8C%E4%BA%8C%E5%85%AB%E4%BA%8B%E4%BB%B6%E8%88%87%E7%99%BD%E8%89%B2%E6%81%90%E6%80%96%EF%BC%9A%E5%8F%B0%E7%81%A3%E5%A8%81%E6%AC%8A%E7%B5%B1%E6%B2%BB%E4%B8%8B%E7%9A%84%E5%89%B5%E5%82%B7%E8%88%87%E8%A8%98%E6%86%B6',
       desc: t('map.markers.dutchSpanishColonialPeriod.desc'),
-      city: 'taitung',
+      county: 'taitung',
     },
     {
       id: 'zhengDynastyPeriod',
@@ -1083,7 +1083,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'islands',
       link: '/history/%E5%8F%B0%E6%B5%B7%E5%8D%B1%E6%A9%9F%E8%88%87%E5%85%A9%E5%B2%B8%E9%97%9C%E4%BF%82%E7%99%BC%E5%B1%95',
       desc: t('map.markers.zhengDynastyPeriod.desc'),
-      city: 'kinmen',
+      county: 'kinmen',
     },
     {
       id: 'qingDynastyTaiwanHistory',
@@ -1095,7 +1095,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/history/%E5%8F%B0%E7%81%A3%E6%B5%B7%E6%B4%8B%E8%B2%BF%E6%98%93%E5%8F%B2',
       desc: t('map.markers.qingDynastyTaiwanHistory.desc'),
-      city: 'tainan',
+      county: 'tainan',
     },
     {
       id: 'japaneseColonialRule',
@@ -1107,7 +1107,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/history/%E5%8F%B0%E7%81%A3%E7%9C%B7%E6%9D%91%E6%AD%B7%E5%8F%B2',
       desc: t('map.markers.japaneseColonialRule.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'februaryTwentyEightIncident',
@@ -1119,7 +1119,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/history/%E5%8F%B0%E7%81%A3%E9%90%B5%E9%81%93%E5%8F%B2',
       desc: t('map.markers.februaryTwentyEightIncident.desc'),
-      city: 'chiayi',
+      county: 'chiayi',
     },
     {
       id: 'martialLawPeriod',
@@ -1131,7 +1131,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/history/%E5%9C%8B%E6%B0%91%E6%94%BF%E5%BA%9C%E9%81%B7%E5%8F%B0%E8%88%87%E6%88%B0%E5%BE%8C%E9%87%8D%E5%BB%BA',
       desc: t('map.markers.martialLawPeriod.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'democratization',
@@ -1143,7 +1143,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/history/%E6%97%A5%E6%B2%BB%E6%99%82%E6%9C%9F',
       desc: t('map.markers.democratization.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'taiwanIndependenceMovement',
@@ -1155,7 +1155,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/history/%E6%B8%85%E6%B2%BB%E6%99%82%E6%9C%9F',
       desc: t('map.markers.taiwanIndependenceMovement.desc'),
-      city: 'newTaipei',
+      county: 'newTaipei',
     },
     {
       id: 'taiwanChinaRelations',
@@ -1167,7 +1167,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/history/%E8%8D%B7%E8%A5%BF%E6%98%8E%E9%84%AD%E6%99%82%E6%9C%9F',
       desc: t('map.markers.taiwanChinaRelations.desc'),
-      city: 'newTaipei',
+      county: 'newTaipei',
     },
     {
       id: 'taiwanUsRelations',
@@ -1179,7 +1179,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E4%BE%BF%E5%88%A9%E5%95%86%E5%BA%97%E6%96%87%E5%8C%96',
       desc: t('map.markers.taiwanUsRelations.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanInternationalStatus',
@@ -1191,7 +1191,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E5%8F%B0%E7%81%A3%E4%BA%A4%E9%80%9A%E7%B3%BB%E7%B5%B1',
       desc: t('map.markers.taiwanInternationalStatus.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanHistoricalFigures',
@@ -1203,7 +1203,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E5%8F%B0%E7%81%A3%E4%BE%BF%E5%88%A9%E5%95%86%E5%BA%97%E6%96%87%E5%8C%96',
       desc: t('map.markers.taiwanHistoricalFigures.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanPoliticalFigures',
@@ -1215,7 +1215,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E5%8F%B0%E7%81%A3%E5%85%AC%E5%9C%92%E8%88%87%E6%97%A5%E5%B8%B8%E4%BC%91%E9%96%92',
       desc: t('map.markers.taiwanPoliticalFigures.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'kuomintangHistory',
@@ -1227,7 +1227,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/lifestyle/%E5%8F%B0%E7%81%A3%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96',
       desc: t('map.markers.kuomintangHistory.desc'),
-      city: 'chiayi',
+      county: 'chiayi',
     },
     {
       id: 'democraticProgressivePartyHistory',
@@ -1239,7 +1239,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E8%BF%BD%E5%9E%83%E5%9C%BE%E8%BB%8A%E7%9A%84%E5%B3%B6%EF%BC%9A%E5%8F%B0%E7%81%A3%E5%BE%9E%E5%9E%83%E5%9C%BE%E5%8D%B1%E6%A9%9F%E5%88%B0%E5%9B%9E%E6%94%B6%E5%A5%87%E8%B9%9F',
       desc: t('map.markers.democraticProgressivePartyHistory.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taipeiHistory',
@@ -1251,7 +1251,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E5%8F%B0%E7%81%A3%E6%8D%B7%E9%81%8B%E7%99%BC%E5%B1%95%E5%8F%B2%EF%BC%9A%E4%B8%80%E9%83%A8%E7%94%A8%E8%A1%80%E8%88%87%E9%8C%A2%E5%AF%AB%E6%88%90%E7%9A%84%E5%9F%8E%E5%B8%82%E9%80%B2%E5%8C%96%E8%AB%96',
       desc: t('map.markers.taipeiHistory.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanPrehistoricCulture',
@@ -1263,7 +1263,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E5%8F%B0%E7%81%A3%E6%95%99%E8%82%B2%E5%88%B6%E5%BA%A6%EF%BC%9A%E5%BE%9E%E8%81%AF%E8%80%83%E5%9C%B0%E7%8D%84%E5%88%B0%E5%A4%9A%E5%85%83%E8%BF%B7%E5%AE%AE%E7%9A%84%E5%B3%B6%E5%B6%BC%E5%AF%A6%E9%A9%97',
       desc: t('map.markers.taiwanPrehistoricCulture.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanIndigenousHistory',
@@ -1275,7 +1275,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E5%8F%B0%E7%81%A3%E6%A9%9F%E8%BB%8A%E6%96%87%E5%8C%96',
       desc: t('map.markers.taiwanIndigenousHistory.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanMilitaryHistory',
@@ -1287,7 +1287,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E5%8F%B0%E7%81%A3%E9%A8%8E%E6%A8%93%E6%96%87%E5%8C%96%E8%88%87%E8%A1%97%E6%99%AF',
       desc: t('map.markers.taiwanMilitaryHistory.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanWomenHistory',
@@ -1299,7 +1299,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E5%A4%9C%E7%94%9F%E6%B4%BB%E8%88%87KTV%E6%96%87%E5%8C%96',
       desc: t('map.markers.taiwanWomenHistory.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanEducationHistory',
@@ -1311,7 +1311,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E5%AE%97%E6%95%99%E8%88%87%E6%B0%91%E9%96%93%E4%BF%A1%E4%BB%B0%EF%BC%9A%E5%BE%9E%E6%81%90%E6%87%BC%E7%AE%A1%E7%90%86%E5%88%B0%E4%BF%A1%E4%BB%B0%E5%B8%9D%E5%9C%8B',
       desc: t('map.markers.taiwanEducationHistory.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanReligiousHistory',
@@ -1323,7 +1323,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/lifestyle/溫泉文化',
       desc: t('map.markers.taiwanReligiousHistory.desc'),
-      city: 'taitung',
+      county: 'taitung',
     },
     {
       id: 'taiwanMediaHistory',
@@ -1335,7 +1335,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/music/流行音樂與金曲獎',
       desc: t('map.markers.taiwanMediaHistory.desc'),
-      city: 'pingtung',
+      county: 'pingtung',
     },
     {
       id: 'badmintonChampions',
@@ -1347,7 +1347,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/music/流行音樂與金曲獎',
       desc: t('map.markers.badmintonChampions.desc'),
-      city: 'nantou',
+      county: 'nantou',
     },
     {
       id: 'baseballCulture',
@@ -1359,7 +1359,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/music/%E5%8F%B0%E7%81%A3%E6%B0%91%E6%AD%8C%E9%81%8B%E5%8B%95',
       desc: t('map.markers.baseballCulture.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanBasketball',
@@ -1371,7 +1371,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/music/流行音樂與金曲獎',
       desc: t('map.markers.taiwanBasketball.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'marathonRunning',
@@ -1383,7 +1383,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/music/流行音樂與金曲獎',
       desc: t('map.markers.marathonRunning.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanEsports',
@@ -1395,7 +1395,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/music/流行音樂與金曲獎',
       desc: t('map.markers.taiwanEsports.desc'),
-      city: 'pingtung',
+      county: 'pingtung',
     },
     {
       id: 'taiwanOlympics',
@@ -1407,7 +1407,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/music/流行音樂與金曲獎',
       desc: t('map.markers.taiwanOlympics.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'taipeiCycle',
@@ -1419,7 +1419,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/nature/%E5%8F%B0%E7%81%A3%E5%8E%9F%E4%BD%8F%E6%B0%91%E7%94%9F%E6%85%8B%E6%99%BA%E6%85%A7%E8%88%87%E7%92%B0%E5%A2%83%E4%BF%9D%E8%82%B2',
       desc: t('map.markers.taipeiCycle.desc'),
-      city: 'hualien',
+      county: 'hualien',
     },
     {
       id: 'taiwanBetelNutCulture',
@@ -1431,7 +1431,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/nature/%E5%8F%B0%E7%81%A3%E5%B1%B1%E5%B2%B3%E8%88%87%E7%99%BB%E5%B1%B1%E6%96%87%E5%8C%96',
       desc: t('map.markers.taiwanBetelNutCulture.desc'),
-      city: 'nantou',
+      county: 'nantou',
     },
     {
       id: 'taiwanElections',
@@ -1443,7 +1443,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/nature/%E5%8F%B0%E7%81%A3%E6%A3%AE%E6%9E%97%E7%94%9F%E6%85%8B%E7%B3%BB',
       desc: t('map.markers.taiwanElections.desc'),
-      city: 'nantou',
+      county: 'nantou',
     },
     {
       id: 'taiwanLgbtCulture',
@@ -1455,7 +1455,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/nature/%E5%8F%B0%E7%81%A3%E6%B0%A3%E5%80%99%E8%AE%8A%E9%81%B7%E8%88%87%E6%B7%A8%E9%9B%B6%E8%BD%89%E5%9E%8B',
       desc: t('map.markers.taiwanLgbtCulture.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'taiwanMotorcycleCulture',
@@ -1467,7 +1467,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/nature/%E5%8F%B0%E7%81%A3%E6%B5%B7%E6%B4%8B%E4%BF%9D%E8%82%B2%EF%BC%9A%E7%82%BA%E4%BB%80%E9%BA%BC%E8%8A%B130%E5%B9%B4%E5%BB%BA%E6%88%90%E7%9A%84%E9%AB%94%E7%B3%BB%EF%BC%8C%E6%95%91%E4%B8%8D%E4%BA%86%E4%B8%80%E5%A0%B4%E7%8F%8A%E7%91%9A%E7%99%BD%E5%8C%96%EF%BC%9F',
       desc: t('map.markers.taiwanMotorcycleCulture.desc'),
-      city: 'pingtung',
+      county: 'pingtung',
     },
     {
       id: 'taipeiMrt',
@@ -1479,7 +1479,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/nature/%E5%8F%B0%E7%81%A3%E6%B5%B7%E6%B4%8B%E6%B1%A1%E6%9F%93%E6%B2%BB%E7%90%86%E8%88%87%E4%BF%9D%E8%82%B2%E6%8C%91%E6%88%B0',
       desc: t('map.markers.taipeiMrt.desc'),
-      city: 'pingtung',
+      county: 'pingtung',
     },
     {
       id: 'kaohsiungMrt',
@@ -1491,7 +1491,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/nature/%E5%8F%B0%E7%81%A3%E6%B5%B7%E6%B4%8B%E7%94%9F%E6%85%8B',
       desc: t('map.markers.kaohsiungMrt.desc'),
-      city: 'taitung',
+      county: 'taitung',
     },
     {
       id: 'taichungMrt',
@@ -1503,7 +1503,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/nature/%E5%8F%B0%E7%81%A3%E6%B5%B7%E6%B4%8B%E7%94%9F%E6%85%8B%E8%88%87%E7%8F%8A%E7%91%9A%E7%A4%81%E4%BF%9D%E8%82%B2',
       desc: t('map.markers.taichungMrt.desc'),
-      city: 'pingtung',
+      county: 'pingtung',
     },
     {
       id: 'taiwanTrainSystem',
@@ -1515,7 +1515,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/nature/%E5%8F%B0%E7%81%A3%E6%BA%AB%E6%B3%89%E8%88%87%E5%9C%B0%E7%86%B1',
       desc: t('map.markers.taiwanTrainSystem.desc'),
-      city: 'taitung',
+      county: 'taitung',
     },
     {
       id: 'taiwanBusSystem',
@@ -1527,7 +1527,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/nature/%E5%8F%B0%E7%81%A3%E7%9F%B3%E8%99%8E%E4%BF%9D%E8%82%B2',
       desc: t('map.markers.taiwanBusSystem.desc'),
-      city: 'miaoli',
+      county: 'miaoli',
     },
     {
       id: 'taiwanInnovationEcosystem',
@@ -1539,7 +1539,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/nature/%E5%8F%B0%E7%81%A3%E7%A9%BF%E5%B1%B1%E7%94%B2',
       desc: t('map.markers.taiwanInnovationEcosystem.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanMedicalSystem',
@@ -1551,7 +1551,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/nature/%E5%8F%B0%E7%81%A3%E9%AB%98%E5%B1%B1%E7%94%9F%E6%85%8B%E7%B3%BB%E8%88%87%E5%86%B0%E6%B2%B3%E5%AD%91%E9%81%BA',
       desc: t('map.markers.taiwanMedicalSystem.desc'),
-      city: 'nantou',
+      county: 'nantou',
     },
     {
       id: 'taiwanEducationSystem',
@@ -1563,7 +1563,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/nature/%E5%8F%B0%E7%81%A3%E9%BB%91%E7%86%8A',
       desc: t('map.markers.taiwanEducationSystem.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanMusicIndustry',
@@ -1575,7 +1575,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/nature/國家公園',
       desc: t('map.markers.taiwanMusicIndustry.desc'),
-      city: 'hualien',
+      county: 'hualien',
     },
     {
       id: 'mandarinPopMusic',
@@ -1587,7 +1587,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/nature/國家公園',
       desc: t('map.markers.mandarinPopMusic.desc'),
-      city: 'nantou',
+      county: 'nantou',
     },
     {
       id: 'taiwaneseIndieMusic',
@@ -1599,7 +1599,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/nature/%E7%89%B9%E6%9C%89%E7%A8%AE',
       desc: t('map.markers.taiwaneseIndieMusic.desc'),
-      city: 'nantou',
+      county: 'nantou',
     },
     {
       id: 'taiwanRapHipHop',
@@ -1611,7 +1611,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/nature/%E7%94%9F%E6%85%8B%E5%A4%9A%E6%A8%A3%E6%80%A7',
       desc: t('map.markers.taiwanRapHipHop.desc'),
-      city: 'nantou',
+      county: 'nantou',
     },
     {
       id: 'taiwanElectronicMusic',
@@ -1623,7 +1623,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/nature/%E8%87%BA%E7%81%A3%E7%9A%84%E9%AF%A8%E8%B1%9A',
       desc: t('map.markers.taiwanElectronicMusic.desc'),
-      city: 'hualien',
+      county: 'hualien',
     },
     {
       id: 'taiwanTraditionalMusic',
@@ -1635,7 +1635,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E4%BA%94%E6%9C%88%E5%A4%A9',
       desc: t('map.markers.taiwanTraditionalMusic.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanFilmIndustry',
@@ -1647,7 +1647,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/people/%E4%BC%8D%E4%BD%B0',
       desc: t('map.markers.taiwanFilmIndustry.desc'),
-      city: 'chiayi',
+      county: 'chiayi',
     },
     {
       id: 'newTaiwanCinema',
@@ -1659,7 +1659,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/people/%E5%90%B3%E5%AF%B6%E6%98%A5',
       desc: t('map.markers.newTaiwanCinema.desc'),
-      city: 'pingtung',
+      county: 'pingtung',
     },
     {
       id: 'taiwanDocumentary',
@@ -1671,7 +1671,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E5%91%82%E7%A7%80%E8%93%AE',
       desc: t('map.markers.taiwanDocumentary.desc'),
-      city: 'taoyuan',
+      county: 'taoyuan',
     },
     {
       id: 'taiwanAnimationIndustry',
@@ -1683,7 +1683,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E5%B9%BE%E7%B1%B3',
       desc: t('map.markers.taiwanAnimationIndustry.desc'),
-      city: 'yilan',
+      county: 'yilan',
     },
     {
       id: 'taiwanTelevisionIndustry',
@@ -1695,7 +1695,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/people/%E6%88%B4%E8%B3%87%E7%A9%8E',
       desc: t('map.markers.taiwanTelevisionIndustry.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'taiwanOttPlatforms',
@@ -1707,7 +1707,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/people/%E6%9D%8E%E6%98%82',
       desc: t('map.markers.taiwanOttPlatforms.desc'),
-      city: 'changhua',
+      county: 'changhua',
     },
     {
       id: 'taiwanPodcastIndustry',
@@ -1719,7 +1719,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E6%9D%8E%E6%99%BA%E5%87%B1',
       desc: t('map.markers.taiwanPodcastIndustry.desc'),
-      city: 'yilan',
+      county: 'yilan',
     },
     {
       id: 'taiwanPublishing',
@@ -1731,7 +1731,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E6%9D%8E%E9%81%A0%E5%93%B2',
       desc: t('map.markers.taiwanPublishing.desc'),
-      city: 'hsinchu',
+      county: 'hsinchu',
     },
     {
       id: 'taiwanBookstoreCulture',
@@ -1743,7 +1743,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E6%9D%9C%E8%81%B0%E6%98%8E',
       desc: t('map.markers.taiwanBookstoreCulture.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanComicMangaIndustry',
@@ -1755,7 +1755,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E6%9E%97%E6%9B%B8%E8%B1%AA',
       desc: t('map.markers.taiwanComicMangaIndustry.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanGameIndustry',
@@ -1767,7 +1767,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E6%9E%97%E7%BE%A9%E5%82%91',
       desc: t('map.markers.taiwanGameIndustry.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'nationalPalaceMuseum',
@@ -1779,7 +1779,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E6%9E%97%E7%BE%A9%E9%9B%84',
       desc: t('map.markers.nationalPalaceMuseum.desc'),
-      city: 'yilan',
+      county: 'yilan',
     },
     {
       id: 'nationalParks',
@@ -1791,7 +1791,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E6%A5%8A%E5%BE%B7%E6%98%8C',
       desc: t('map.markers.nationalParks.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanGeography',
@@ -1803,7 +1803,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E7%99%BD%E5%85%88%E5%8B%87',
       desc: t('map.markers.taiwanGeography.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanClimate',
@@ -1815,7 +1815,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/people/%E7%9B%A7%E5%BB%A3%E4%BB%B2',
       desc: t('map.markers.taiwanClimate.desc'),
-      city: 'tainan',
+      county: 'tainan',
     },
     {
       id: 'taiwanEcosystem',
@@ -1827,7 +1827,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/people/%E8%8E%8A%E6%99%BA%E6%B7%B5',
       desc: t('map.markers.taiwanEcosystem.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'taiwanEndangeredSpecies',
@@ -1839,7 +1839,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E8%94%A1%E6%98%8E%E4%BA%AE',
       desc: t('map.markers.taiwanEndangeredSpecies.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanMarineEcology',
@@ -1851,7 +1851,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/people/%E8%A8%B1%E6%96%87%E9%BE%8D',
       desc: t('map.markers.taiwanMarineEcology.desc'),
-      city: 'tainan',
+      county: 'tainan',
     },
     {
       id: 'taiwanBirdwatching',
@@ -1863,7 +1863,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E8%A8%B1%E8%8A%B3%E5%AE%9C',
       desc: t('map.markers.taiwanBirdwatching.desc'),
-      city: 'yilan',
+      county: 'yilan',
     },
     {
       id: 'taiwanHotSprings',
@@ -1875,7 +1875,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/people/%E8%B3%B4%E6%B8%85%E5%BE%B7%EF%BC%9A%E5%BE%9E%E7%A4%A6%E5%B7%A5%E5%AE%B6%E5%BA%AD%E5%88%B0%E7%B8%BD%E7%B5%B1%E5%BA%9C%E7%9A%84%E5%85%AC%E5%85%B1%E8%A1%9B%E7%94%9F%E9%86%AB%E5%B8%AB',
       desc: t('map.markers.taiwanHotSprings.desc'),
-      city: 'tainan',
+      county: 'tainan',
     },
     {
       id: 'taiwanIslands',
@@ -1887,7 +1887,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/people/%E9%83%AD%E5%A9%9E%E6%B7%B3',
       desc: t('map.markers.taiwanIslands.desc'),
-      city: 'taitung',
+      county: 'taitung',
     },
     {
       id: 'taiwanMountains',
@@ -1899,7 +1899,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E9%84%A7%E9%9B%A8%E8%B3%A2',
       desc: t('map.markers.taiwanMountains.desc'),
-      city: 'taoyuan',
+      county: 'taoyuan',
     },
     {
       id: 'taiwanRivers',
@@ -1911,7 +1911,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/people/%E9%8D%BE%E7%90%86%E5%92%8C',
       desc: t('map.markers.taiwanRivers.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'taiwanCoastline',
@@ -1923,7 +1923,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/people/%E9%99%B3%E6%A8%B9%E8%8F%8A',
       desc: t('map.markers.taiwanCoastline.desc'),
-      city: 'taitung',
+      county: 'taitung',
     },
     {
       id: 'taiwanForests',
@@ -1935,7 +1935,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E9%99%B3%E6%B0%B4%E6%89%81',
       desc: t('map.markers.taiwanForests.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanNaturalDisasters',
@@ -1947,7 +1947,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E9%A6%AC%E8%8B%B1%E4%B9%9D',
       desc: t('map.markers.taiwanNaturalDisasters.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanEarthquakes',
@@ -1959,7 +1959,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/people/%E9%BB%83%E6%98%A5%E6%98%8E',
       desc: t('map.markers.taiwanEarthquakes.desc'),
-      city: 'yilan',
+      county: 'yilan',
     },
     {
       id: 'taiwanTyphoons',
@@ -1971,7 +1971,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/people/%E9%BB%83%E9%9C%87%E5%8D%97%EF%BC%9A%E8%97%8F%E6%9B%B8%E7%95%8C%E7%AB%B9%E9%87%8E%E5%85%A7%E8%B1%90%E8%88%87%E5%8F%B0%E7%81%A3%E6%96%87%E5%8F%B2%E7%9A%84%E6%B4%BB%E6%B0%B4%E6%BA%90%E9%A0%AD',
       desc: t('map.markers.taiwanTyphoons.desc'),
-      city: 'chiayi',
+      county: 'chiayi',
     },
     {
       id: 'sunflowerMovement',
@@ -1983,7 +1983,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/society/%E5%8B%95%E7%89%A9%E5%9C%92%E8%88%87%E5%B1%95%E6%BC%94%E5%8B%95%E7%89%A9%E5%80%AB%E7%90%86',
       desc: t('map.markers.sunflowerMovement.desc'),
-      city: 'hsinchu',
+      county: 'hsinchu',
     },
     {
       id: 'taiwanSocialMovements',
@@ -1995,7 +1995,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/society/%E5%8F%B0%E7%81%A3%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%97%8F%E5%9C%9F%E5%9C%B0%E6%AD%A3%E7%BE%A9%E8%88%87%E5%82%B3%E7%B5%B1%E9%A0%98%E5%9F%9F',
       desc: t('map.markers.taiwanSocialMovements.desc'),
-      city: 'hualien',
+      county: 'hualien',
     },
     {
       id: 'taiwanMarriageEquality',
@@ -2007,7 +2007,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/society/%E5%8F%B0%E7%81%A3%E5%90%8C%E5%A9%9A%E8%88%87%E6%80%A7%E5%88%A5%E5%B9%B3%E6%AC%8A',
       desc: t('map.markers.taiwanMarriageEquality.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanEnvironmentalJustice',
@@ -2019,7 +2019,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'east',
       link: '/society/%E5%8F%B0%E7%81%A3%E7%92%B0%E5%A2%83%E6%AD%A3%E7%BE%A9%E8%88%87%E9%84%B0%E9%81%BF%E7%88%AD%E8%AD%B0',
       desc: t('map.markers.taiwanEnvironmentalJustice.desc'),
-      city: 'taitung',
+      county: 'taitung',
     },
     {
       id: 'taiwanCommunityRiCulture',
@@ -2031,7 +2031,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/society/%E5%8F%B0%E7%81%A3%E7%A4%BE%E5%8D%80%E8%88%87%E9%87%8C%E6%96%87%E5%8C%96',
       desc: t('map.markers.taiwanCommunityRiCulture.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanLongTermCare',
@@ -2043,7 +2043,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/society/%E5%8F%B0%E7%81%A3%E9%95%B7%E6%9C%9F%E7%85%A7%E9%A1%A7%E5%88%B6%E5%BA%A6%E7%99%BC%E5%B1%95',
       desc: t('map.markers.taiwanLongTermCare.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanLaborMovement',
@@ -2055,7 +2055,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'central',
       link: '/society/%E7%92%B0%E4%BF%9D%E8%88%87%E6%B0%B8%E7%BA%8C%E7%99%BC%E5%B1%95',
       desc: t('map.markers.taiwanLaborMovement.desc'),
-      city: 'changhua',
+      county: 'changhua',
     },
     {
       id: 'taiwanHousingIssues',
@@ -2067,7 +2067,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/society/%E7%A4%BE%E6%9C%83%E4%BD%8F%E5%AE%85%E8%88%87%E5%B1%85%E4%BD%8F%E6%AD%A3%E7%BE%A9',
       desc: t('map.markers.taiwanHousingIssues.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanHealthcareSystem',
@@ -2079,7 +2079,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/technology/%E7%A7%91%E6%8A%80%E5%9C%92%E5%8D%80%E7%99%BC%E5%B1%95',
       desc: t('map.markers.taiwanHealthcareSystem.desc'),
-      city: 'hsinchu',
+      county: 'hsinchu',
     },
     {
       id: 'taiwanImmigration',
@@ -2091,7 +2091,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/technology/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%94%A2%E6%A5%AD',
       desc: t('map.markers.taiwanImmigration.desc'),
-      city: 'hsinchu',
+      county: 'hsinchu',
     },
     {
       id: 'taiwanReligiousDiversity',
@@ -2103,7 +2103,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/geography/%E5%8F%B0%E7%81%A3%E6%B5%B7%E5%B2%B8%E5%9C%B0%E5%BD%A2%E8%88%87%E6%B5%B7%E6%B4%8B%E5%9C%B0%E6%99%AF',
       desc: t('map.markers.taiwanReligiousDiversity.desc'),
-      city: 'newTaipei',
+      county: 'newTaipei',
     },
     {
       id: 'taiwanBuddhismTaoism',
@@ -2115,7 +2115,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/food/台灣茶文化',
       desc: t('map.markers.taiwanBuddhismTaoism.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanFolkReligion',
@@ -2127,7 +2127,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/society/%E5%8F%B0%E7%81%A3%E9%81%B8%E8%88%89%E8%88%87%E6%94%BF%E9%BB%A8%E6%94%BF%E6%B2%BB',
       desc: t('map.markers.taiwanFolkReligion.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanChristianity',
@@ -2139,7 +2139,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E5%8F%B0%E7%81%A3%E9%83%BD%E5%B8%82%E7%99%BC%E5%B1%95%E8%88%87%E5%9F%8E%E9%84%89%E5%B7%AE%E8%B7%9D',
       desc: t('map.markers.taiwanChristianity.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'taiwanIslamJudaism',
@@ -2151,7 +2151,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E5%9F%8E%E5%B8%82%E7%89%B9%E8%89%B2%E8%88%87%E5%8D%80%E5%9F%9F%E6%96%87%E5%8C%96',
       desc: t('map.markers.taiwanIslamJudaism.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
     {
       id: 'kaohsiungIncident',
@@ -2163,7 +2163,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'south',
       link: '/society/%E6%B0%91%E4%B8%BB%E5%8C%96',
       desc: t('map.markers.kaohsiungIncident.desc'),
-      city: 'kaohsiung',
+      county: 'kaohsiung',
     },
     {
       id: 'wangLeeOlympicGold',
@@ -2175,7 +2175,7 @@ function getMapMarkers(t: ReturnType<typeof useTranslations>): MapMarker[] {
       region: 'north',
       link: '/lifestyle/%E7%8E%8B%E9%BD%8A%E9%BA%9F%E8%88%87%E6%9D%8E%E6%B4%8B%EF%BC%88%E9%BA%9F%E6%B4%8B%E9%85%8D%EF%BC%89',
       desc: t('map.markers.wangLeeOlympicGold.desc'),
-      city: 'taipei',
+      county: 'taipei',
     },
   ];
 }
@@ -2185,5 +2185,5 @@ export {
   getMapMarkers,
   type MarkerCategory,
   type MarkerRegion,
-  type City,
+  type County,
 };
