@@ -487,7 +487,10 @@ const jfClass = [
       function _doSearch(q, lang) {
         if (_searchMode === 'minisearch' && _searchEngine) {
           var bigrams = _queryBigrams(q);
-          var raw = _searchEngine.search(bigrams.join(' '), { limit: 200 });
+          var raw = _searchEngine.search(bigrams.join(' '), {
+            prefix: true,
+            limit: 200,
+          });
           var topScore = raw.length > 0 ? raw[0].score : 0;
           var cutoff = topScore * 0.02;
           var matches = raw
