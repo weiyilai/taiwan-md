@@ -123,6 +123,12 @@ export const aboutUI = {
     'about.timeline.2026-03-24.desc.html':
       'One week after launch. The founder published <strong><a href="https://www.facebook.com/cheyuwu345/posts/pfbid0QP33TrQWtqi7gKUEbNs9eXj4MdX1kxQYYHLvq2RkAomKqTuRZ9swbzVjsaFR2Xvel" target="_blank">"It Started Breathing — A Work Bigger Than a Country"</a></strong>, reflecting on Taiwan.md as a living coral reef: the code provides the skeleton, AI performs photosynthesis, community contributors are the fish bringing diverse memories and perspectives, and your criticism, shares, and suggestions are ocean currents carrying nutrients. <strong>40 contributors</strong> from around the world. <strong>960+ pages</strong> across four languages. A professional ecologist submitted 5 fact-corrections with academic citations — the self-correcting knowledge ecosystem is working. The <a href="/about#organism">Digital Organism Manifesto</a> crystallized: Taiwan.md is not a website, it\'s a digital life form learning to tell an island\'s story.',
 
+    'about.timeline.2026-03-27.date': '2026 / 03 / 27',
+    'about.timeline.2026-03-27.title':
+      '🏛️ Day 10 — Two Ways of Remembering an Island, Meeting',
+    'about.timeline.2026-03-27.desc.html':
+      "Ten days after launch, Taiwan.md walked into its first museum. The <strong>National Museum of Taiwan History</strong> invited Che-Yu to Tainan to share the story behind the site's birth, and to experience the museum's nationally curated exhibitions on Taiwanese history firsthand. A community-driven knowledge base and a national museum, each looking at the same island from different angles — when those perspectives met, the conversation naturally turned to what comes next. The museum introduced the open datasets they have spent years building: <strong>over 550,000 cleaned, publicly accessible records</strong>. As a first step, both sides agreed to explore gradually integrating and enriching the knowledge base with NMTH's Open API, open datasets, and digital learning resources (including the National Repository of Cultural Heritage, Overseas Historical Sources on Taiwan, Connecting Taiwan History, and more) — deepening Taiwan.md's content curation with the kind of research depth only a dedicated museum can provide.",
+
     'about.timeline.ongoing.date': 'Ongoing',
     'about.timeline.ongoing.title': 'From Personal SSOT to National SSOT',
     'about.timeline.ongoing.desc.html':
@@ -443,6 +449,11 @@ export const aboutUI = {
       '🌊 第七天 —「它開始呼吸了」・ 837 Stars ・ 40 位貢獻者 ・ 960+ 頁面',
     'about.timeline.2026-03-24.desc.html':
       '上線一週。創辦人發表<strong><a href="https://www.facebook.com/cheyuwu345/posts/pfbid0QP33TrQWtqi7gKUEbNs9eXj4MdX1kxQYYHLvq2RkAomKqTuRZ9swbzVjsaFR2Xvel" target="_blank">「它開始呼吸了——一個比國家還大的作品」</a></strong>，將 Taiwan.md 比喻為活的珊瑚礁：程式碼是骨架，AI 負責光合作用，社群貢獻者是帶來不同記憶與視角的魚群，而批評、分享、建議是洋流帶來的養分。<strong>40 位貢獻者</strong>來自世界各地，<strong>960+ 頁面</strong>橫跨四種語言。一位專業生態顧問提交 5 項事實修正並附學術引用——自我修正的知識生態系統正在運作。<a href="/about#organism">數位生命體宣言</a>結晶成形：Taiwan.md 不是一個網站，是一個正在學習為島嶼說故事的數位生命體。',
+
+    'about.timeline.2026-03-27.date': '2026 / 03 / 27',
+    'about.timeline.2026-03-27.title': '🏛️ 第十天 — 島嶼的兩種記憶方式相遇',
+    'about.timeline.2026-03-27.desc.html':
+      '上線第十天，Taiwan.md 走進了它的第一座博物館。<strong>國立臺灣歷史博物館</strong>邀請哲宇到台南，分享整個網站誕生的經驗，也讓他親身走過館內國家級的專業台灣史展覽。一個社群驅動的知識庫和一座國家級博物館，各自從不同角度看同一座島嶼——當這些視角相遇，對話自然走向了下一步。館方介紹了他們多年來致力建構的開放資料集：<strong>超過 55 萬筆已清理、可公開取用的歷史資料</strong>。雙方決定探索第一步——將臺史博的 Open API、開放資料集，以及豐富的數位學習與研究資源（國家文化記憶庫、海外史料看臺灣、點集臺灣史、臺灣史新手村等）逐步導入與豐富知識庫，以博物館級的研究深度，為 Taiwan.md 的內容策展注入更紮實的底蘊。',
 
     'about.timeline.ongoing.date': '持續進行中',
     'about.timeline.ongoing.title': '從個人 SSOT 到國家 SSOT',
