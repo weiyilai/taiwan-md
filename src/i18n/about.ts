@@ -293,6 +293,10 @@ export const aboutUI = {
     'about.sponsors.tier.curation.perks':
       'Logo on About page・"Curated by" credit on articles・README acknowledgment・Co-branded content series',
     'about.sponsors.tier.curation.placeholder': 'Be the First Curation Partner',
+    'about.sponsors.nmth.story.title':
+      '🏛️ A Museum That Opens Its Archives to the Community',
+    'about.sponsors.nmth.story.desc':
+      "The National Museum of Taiwan History has spent years cleaning and opening over 550,000 historical records. When they learned that a community-built knowledge base was trying to tell the same island's story, they offered their Open API, open datasets, and a wealth of digital research resources — from the National Repository of Cultural Heritage to Overseas Historical Sources on Taiwan — as the foundation for deeper, more authoritative content curation. Two ways of remembering an island, now learning to work together.",
     'about.sponsors.tier.professional.name': '🔧 Professional Partner',
     'about.sponsors.tier.professional.desc':
       "Directly enhancing Taiwan.md's quality and experience through professional capabilities or services",
@@ -610,6 +614,9 @@ export const aboutUI = {
     'about.sponsors.tier.curation.perks':
       'About 頁 Logo・文章「策展單位」署名・README 致謝・聯名內容系列',
     'about.sponsors.tier.curation.placeholder': '成為第一位策展夥伴',
+    'about.sponsors.nmth.story.title': '🏛️ 一座願意把典藏打開的博物館',
+    'about.sponsors.nmth.story.desc':
+      '國立臺灣歷史博物館花了數年時間清理並開放超過 55 萬筆台灣歷史資料。當他們得知一個社群驅動的知識庫也在嘗試為同一座島嶼說故事，便主動介紹了 Open API、開放資料集，以及從國家文化記憶庫到海外史料看臺灣等豐富的數位研究資源，作為內容策展深化的基底。島嶼的兩種記憶方式，正在學習一起工作。',
     'about.sponsors.tier.professional.name': '🔧 專業夥伴 Professional Partner',
     'about.sponsors.tier.professional.desc':
       '以專業能力或產品服務，直接提升 Taiwan.md 的品質與體驗',
