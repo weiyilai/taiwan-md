@@ -1,5 +1,5 @@
 ---
-title: 'Guan Sheng Di Jun: How a Defeated General Became Taiwan's God of Everything'
+title: "Guan Sheng Di Jun: How a Defeated General Became Taiwan's God of Everything"
 description: 'Three Kingdoms warrior Guan Yu died a prisoner, his head taken by an enemy. Seventeen centuries later, he commands the most-visited temple in Taiwan — one that banned incense. How a Chinese general became a uniquely Taiwanese deity.'
 category: Culture
 tags: [關聖帝君, 恩主公, 行天宮, 民間信仰, 廟宇文化]
@@ -28,7 +28,7 @@ But state recognition alone did not embed Guan Yu into Taiwanese life. That was 
 
 Folklore scholar Ruan Changrui described it plainly: early settlers called Taiwan "Buried Grievances Island" — a place where migrants drowned crossing the Taiwan Strait, died of malaria in the lowlands, and fought with the Indigenous peoples over territory. Guan Yu had been designated "Demon-Subduing Emperor" by both the Ming and Qing dynasties, making him the obvious protector for people who needed something to subdue a great many demons. Ships crossing the strait carried his image on the bow. Villages that survived their first year built him a temple.
 
-There was also the matter of community formation. Migrants from Zhangzhou and Quanzhou in Fujian Province fought each other over land; Hakka settlers clashed with Hokkien ones. To cement alliances, men reenacted the 桃園三結義 (Táoyuán Sānjié Yì) — the Oath of the Peach Garden — a famous scene from the 14th-century historical novel *Romance of the Three Kingdoms* in which the warrior-brothers Liu Bei, Guan Yu, and Zhang Fei swear loyalty unto death. Men would go to a Guan Di temple, burn incense, and pledge brotherhood. Many old Taiwanese families still keep the written oath documents from these ceremonies.
+There was also the matter of community formation. Migrants from Zhangzhou and Quanzhou in Fujian Province fought each other over land; Hakka settlers clashed with Hokkien ones. To cement alliances, men reenacted the 桃園三結義 (Táoyuán Sānjié Yì) — the Oath of the Peach Garden — a famous scene from the 14th-century historical novel _Romance of the Three Kingdoms_ in which the warrior-brothers Liu Bei, Guan Yu, and Zhang Fei swear loyalty unto death. Men would go to a Guan Di temple, burn incense, and pledge brotherhood. Many old Taiwanese families still keep the written oath documents from these ceremonies.
 
 📝 Curator's note: Mazu got you across the strait safely. Guan Yu got you through the first few years alive. Early Taiwanese migrants took out insurance with both.
 
@@ -36,9 +36,9 @@ There was also the matter of community formation. Migrants from Zhangzhou and Qu
 
 Guan Yu's portfolio in Taiwan expanded — to a degree that borders on the absurd.
 
-During the Tang dynasty, he entered the official pantheon as the **God of War**, the counterpart to Confucius' civil saint. But Guan Yu was often depicted stroking his legendary beard while reading the *Spring and Autumn Annals* — a canonical Confucian text. That image was too compelling for scholars to ignore. Confucianism claimed him as the "Civil Balance Holy Emperor," and he became a **patron of education and literature**. During exam season in Taiwan, Confucius temples are often quiet. Guan Di temples are packed with students dragged there by their parents. The old saying has it: "A scholar from Shandong wrote the Spring and Autumn Annals; a warrior from Shanxi reads them." Guan Yu poached Confucius's customers.
+During the Tang dynasty, he entered the official pantheon as the **God of War**, the counterpart to Confucius' civil saint. But Guan Yu was often depicted stroking his legendary beard while reading the _Spring and Autumn Annals_ — a canonical Confucian text. That image was too compelling for scholars to ignore. Confucianism claimed him as the "Civil Balance Holy Emperor," and he became a **patron of education and literature**. During exam season in Taiwan, Confucius temples are often quiet. Guan Di temples are packed with students dragged there by their parents. The old saying has it: "A scholar from Shandong wrote the Spring and Autumn Annals; a warrior from Shanxi reads them." Guan Yu poached Confucius's customers.
 
-Then there's the unlikely path to becoming the **God of Commerce**. According to *Romance of the Three Kingdoms*, while Guan Yu was held captive by the warlord Cao Cao, he meticulously recorded every gift he received — gold, silk, provisions — using a four-column bookkeeping system of originals, receipts, disbursements, and balances. When he finally left, he returned Cao Cao's ledger without a single entry missing. Traditional merchants credited him with inventing their accounting methods. A general famous for his moral integrity became, through this one anecdote, the spiritual guardian of people whose profession runs on profit.
+Then there's the unlikely path to becoming the **God of Commerce**. According to _Romance of the Three Kingdoms_, while Guan Yu was held captive by the warlord Cao Cao, he meticulously recorded every gift he received — gold, silk, provisions — using a four-column bookkeeping system of originals, receipts, disbursements, and balances. When he finally left, he returned Cao Cao's ledger without a single entry missing. Traditional merchants credited him with inventing their accounting methods. A general famous for his moral integrity became, through this one anecdote, the spiritual guardian of people whose profession runs on profit.
 
 Then comes the most contradictory chapter: **the police and the gangs both pray to him.**
 
