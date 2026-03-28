@@ -58,6 +58,12 @@ const translatePath = useTranslatedPath(lang);
         >
         <a href={translatePath('/about')}>{t('footer.about')}</a>
         <a href={translatePath('/graph')}>{t('footer.graph')}</a>
+        <a href={translatePath('/data')}
+          >{lang === 'en' ? 'Data' : '數據台灣'}</a
+        >
+        <a href={translatePath('/dashboard')}
+          >{lang === 'en' ? 'Dashboard' : '監測面板'}</a
+        >
         <a
           href="https://github.com/frank890417/taiwan-md/blob/main/CONTRIBUTING.md"
           target="_blank">{t('footer.contribute')}</a
