@@ -348,24 +348,49 @@ async function main() {
       const revision = getGitRevisionCount(raw.filePath);
       const commitHash = getGitCommitHash(raw.filePath);
 
+      const wordCount = countWords(body);
+      const lastHumanReview =
+        frontmatter.lastHumanReview === true ||
+        frontmatter.lastHumanReview === 'true';
+      const featured =
+        frontmatter.featured === true || frontmatter.featured === 'true';
+      const tagCount = tags.length;
+      const lastVerified = frontmatter.lastVerified || null;
+
+      // Health score (0-100)
+      let verifiedRecency = 365; // default: old
+      if (lastVerified) {
+        const verifiedDate = new Date(lastVerified);
+        verifiedRecency = Math.floor(
+          (now - verifiedDate) / (1000 * 60 * 60 * 24),
+        );
+      }
+      const healthScore = Math.round(
+        Math.min(wordCount / 3000, 1) * 25 +
+          (lastHumanReview ? 25 : 0) +
+          Math.min((revision || 0) / 5, 1) * 15 +
+          (verifiedRecency <= 30 ? 15 : verifiedRecency <= 90 ? 10 : 5) +
+          Math.min((tagCount || 0) / 5, 1) * 10 +
+          (featured ? 10 : 0),
+      );
+
       articles.push({
         title: frontmatter.title || fileName,
         slug,
         category: raw.category,
+        subcategory: frontmatter.subcategory || null,
         date: frontmatter.date || null,
-        lastVerified: frontmatter.lastVerified || null,
-        lastHumanReview:
-          frontmatter.lastHumanReview === true ||
-          frontmatter.lastHumanReview === 'true',
-        featured:
-          frontmatter.featured === true || frontmatter.featured === 'true',
-        wordCount: countWords(body),
-        tagCount: tags.length,
+        lastVerified,
+        lastHumanReview,
+        featured,
+        wordCount,
+        tagCount,
         tags,
         translations,
         revision,
         commitHash,
         description: frontmatter.description || '',
+        healthScore,
       });
     } catch (err) {
       console.error(`Error processing ${raw.filePath}: ${err.message}`);

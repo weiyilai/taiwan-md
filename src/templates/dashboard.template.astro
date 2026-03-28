@@ -178,6 +178,18 @@ const isEn = lang === 'en';
       </div>
     </section>
 
+    <!-- Health Distribution -->
+    <section class="section" id="health-distribution">
+      <h2 class="section-title">
+        {isEn ? '📊 Health Distribution' : '📊 健康分布'}
+      </h2>
+      <p class="section-subtitle">
+        {isEn ? 'How healthy are our articles?' : '文章的健康分數分布'}
+      </p>
+      <div class="health-chart" id="health-chart"></div>
+      <p class="health-summary" id="health-summary"></p>
+    </section>
+
     <!-- Organism Anatomy -->
     <section class="section" id="organism">
       <h2 class="section-title">{t('dashboard.organism.title')}</h2>
@@ -249,6 +261,15 @@ const isEn = lang === 'en';
       <div class="growth-chart" id="growth-chart"></div>
     </section>
 
+    <!-- Next Steps -->
+    <section class="section" id="next-steps">
+      <h2 class="section-title">{isEn ? '🎯 Next Steps' : '🎯 下一步'}</h2>
+      <p class="section-subtitle">
+        {isEn ? 'Highest-impact contributions right now' : '現在最有價值的貢獻'}
+      </p>
+      <div class="nextsteps-grid" id="nextsteps-grid"></div>
+    </section>
+
     <!-- Footer timestamp -->
     <footer class="dashboard-footer" id="dashboard-footer"></footer>
   </main>
@@ -288,10 +309,12 @@ const isEn = lang === 'en';
     allArticles = articles;
     renderVitals(vitals);
     renderRegistry(articles);
+    renderHealthDistribution(articles);
     renderOrganism(organism);
     renderTranslations(translations, vitals);
     renderImmune(articles, vitals);
     renderGrowth(articles);
+    renderNextSteps(articles, translations);
     renderFooter(vitals);
   });
 
@@ -935,6 +958,262 @@ const isEn = lang === 'en';
         tooltip.style.display = 'none';
       });
     });
+  }
+
+  // ── Health Distribution Histogram ──
+  function renderHealthDistribution(articles) {
+    const container = document.getElementById('health-chart');
+    const summaryEl = document.getElementById('health-summary');
+
+    // Bucket articles into score ranges
+    const ranges = [
+      { label: '0-20', min: 0, max: 20, color: '#ef4444' },
+      { label: '20-40', min: 20, max: 40, color: '#f97316' },
+      { label: '40-60', min: 40, max: 60, color: '#eab308' },
+      { label: '60-80', min: 60, max: 80, color: '#86efac' },
+      { label: '80-100', min: 80, max: 101, color: '#22c55e' },
+    ];
+
+    const buckets = ranges.map((r) => ({
+      ...r,
+      count: articles.filter(
+        (a) => (a.healthScore || 0) >= r.min && (a.healthScore || 0) < r.max,
+      ).length,
+    }));
+
+    const maxCount = Math.max(...buckets.map((b) => b.count), 1);
+
+    // SVG dimensions
+    const w = 600,
+      h = 260;
+    const padL = 50,
+      padR = 20,
+      padT = 30,
+      padB = 40;
+    const plotW = w - padL - padR;
+    const plotH = h - padT - padB;
+    const barW = plotW / buckets.length;
+    const barGap = 12;
+
+    // Y axis ticks
+    const yTickCount = 4;
+    const yStep = Math.ceil(maxCount / yTickCount / 5) * 5 || 1;
+    const yMax = yStep * yTickCount;
+    function yPos(v) {
+      return padT + plotH - (v / yMax) * plotH;
+    }
+
+    let yLines = '';
+    for (let t = 0; t <= yTickCount; t++) {
+      const val = t * yStep;
+      const y = yPos(val);
+      yLines +=
+        '<line x1="' +
+        padL +
+        '" x2="' +
+        (w - padR) +
+        '" y1="' +
+        y.toFixed(1) +
+        '" y2="' +
+        y.toFixed(1) +
+        '" stroke="rgba(0,0,0,0.06)" />';
+      yLines +=
+        '<text x="' +
+        (padL - 8) +
+        '" y="' +
+        (y + 4).toFixed(1) +
+        '" text-anchor="end" class="health-svg-label">' +
+        val +
+        '</text>';
+    }
+
+    let bars = '';
+    buckets.forEach((b, i) => {
+      const x = padL + i * barW + barGap / 2;
+      const bw = barW - barGap;
+      const barH = b.count > 0 ? (b.count / yMax) * plotH : 0;
+      const y = padT + plotH - barH;
+      bars +=
+        '<rect x="' +
+        x.toFixed(1) +
+        '" y="' +
+        y.toFixed(1) +
+        '" width="' +
+        bw.toFixed(1) +
+        '" height="' +
+        barH.toFixed(1) +
+        '" rx="4" fill="' +
+        b.color +
+        '" opacity="0.85"><animate attributeName="height" from="0" to="' +
+        barH.toFixed(1) +
+        '" dur="0.6s" fill="freeze" /><animate attributeName="y" from="' +
+        (padT + plotH).toFixed(1) +
+        '" to="' +
+        y.toFixed(1) +
+        '" dur="0.6s" fill="freeze" /></rect>';
+      // Count label on top
+      if (b.count > 0) {
+        bars +=
+          '<text x="' +
+          (x + bw / 2).toFixed(1) +
+          '" y="' +
+          (y - 6).toFixed(1) +
+          '" text-anchor="middle" class="health-bar-count">' +
+          b.count +
+          '</text>';
+      }
+      // X label
+      bars +=
+        '<text x="' +
+        (x + bw / 2).toFixed(1) +
+        '" y="' +
+        (h - 8) +
+        '" text-anchor="middle" class="health-svg-label">' +
+        b.label +
+        '</text>';
+    });
+
+    container.innerHTML =
+      '<svg viewBox="0 0 ' +
+      w +
+      ' ' +
+      h +
+      '" width="100%" height="' +
+      h +
+      '" class="health-svg">' +
+      yLines +
+      bars +
+      '</svg>';
+
+    // Summary line
+    const needsAttention = articles.filter(
+      (a) => (a.healthScore || 0) < 40,
+    ).length;
+    if (needsAttention > 0) {
+      summaryEl.textContent = isEn
+        ? '\uD83D\uDD34 ' +
+          needsAttention +
+          ' articles need attention (score < 40)'
+        : '\uD83D\uDD34 ' + needsAttention + ' 篇文章需要關注（分數 < 40）';
+    } else {
+      summaryEl.textContent = isEn
+        ? '\uD83D\uDFE2 All articles are in good health!'
+        : '\uD83D\uDFE2 所有文章健康狀態良好！';
+    }
+  }
+
+  // ── Next Steps ──
+  function renderNextSteps(articles, translations) {
+    const grid = document.getElementById('nextsteps-grid');
+
+    // Card 1: Lowest health score article
+    const sorted = [...articles].sort(
+      (a, b) => (a.healthScore || 0) - (b.healthScore || 0),
+    );
+    const worst = sorted[0];
+    const worstUrl = worst
+      ? langPrefix + '/' + worst.category + '/' + worst.slug
+      : '#';
+
+    // Card 2: Language with most missing translations
+    const langs = ['en', 'es', 'ja'];
+    const langNames = { en: 'English', es: 'Español', ja: '日本語' };
+    let maxMissing = 0,
+      maxMissingLang = 'en';
+    langs.forEach((l) => {
+      const missing = articles.filter((a) => !a.translations[l]).length;
+      if (missing > maxMissing) {
+        maxMissing = missing;
+        maxMissingLang = l;
+      }
+    });
+
+    // Card 3: Oldest unreviewed article
+    const unreviewed = articles
+      .filter((a) => !a.lastHumanReview && a.date)
+      .sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+    const oldest = unreviewed[0];
+    const oldestUrl = oldest
+      ? langPrefix + '/' + oldest.category + '/' + oldest.slug
+      : '#';
+    let daysSince = 0;
+    if (oldest && oldest.date) {
+      daysSince = Math.floor(
+        (Date.now() - new Date(oldest.date)) / (1000 * 60 * 60 * 24),
+      );
+    }
+
+    const contributeUrl =
+      'https://github.com/frank890417/taiwan-md/blob/main/CONTRIBUTING.md';
+
+    grid.innerHTML =
+      '<div class="nextstep-card">' +
+      '<div class="nextstep-emoji">🔧</div>' +
+      '<div class="nextstep-action">' +
+      (isEn ? 'Improve' : '改善') +
+      '</div>' +
+      (worst
+        ? '<div class="nextstep-detail"><a href="' +
+          worstUrl +
+          '">' +
+          worst.title +
+          '</a></div>' +
+          '<div class="nextstep-meta">' +
+          (isEn ? 'Health score: ' : '健康分數：') +
+          '<strong>' +
+          (worst.healthScore || 0) +
+          '</strong></div>'
+        : '<div class="nextstep-detail">' +
+          (isEn ? 'All articles healthy!' : '所有文章都很健康！') +
+          '</div>') +
+      '<a href="' +
+      contributeUrl +
+      '" class="nextstep-link" target="_blank" rel="noopener">' +
+      (isEn ? 'Contribute →' : '貢獻 →') +
+      '</a>' +
+      '</div>' +
+      '<div class="nextstep-card">' +
+      '<div class="nextstep-emoji">🌐</div>' +
+      '<div class="nextstep-action">' +
+      (isEn ? 'Translate' : '翻譯') +
+      '</div>' +
+      '<div class="nextstep-detail">' +
+      (langNames[maxMissingLang] || maxMissingLang) +
+      '</div>' +
+      '<div class="nextstep-meta">' +
+      maxMissing +
+      (isEn ? ' articles missing' : ' 篇文章缺少翻譯') +
+      '</div>' +
+      '<a href="' +
+      contributeUrl +
+      '" class="nextstep-link" target="_blank" rel="noopener">' +
+      (isEn ? 'Contribute →' : '貢獻 →') +
+      '</a>' +
+      '</div>' +
+      '<div class="nextstep-card">' +
+      '<div class="nextstep-emoji">📝</div>' +
+      '<div class="nextstep-action">' +
+      (isEn ? 'Review' : '審閱') +
+      '</div>' +
+      (oldest
+        ? '<div class="nextstep-detail"><a href="' +
+          oldestUrl +
+          '">' +
+          oldest.title +
+          '</a></div>' +
+          '<div class="nextstep-meta">' +
+          daysSince +
+          (isEn ? ' days since creation' : ' 天前建立') +
+          '</div>'
+        : '<div class="nextstep-detail">' +
+          (isEn ? 'All articles reviewed!' : '所有文章已審閱！') +
+          '</div>') +
+      '<a href="' +
+      contributeUrl +
+      '" class="nextstep-link" target="_blank" rel="noopener">' +
+      (isEn ? 'Contribute →' : '貢獻 →') +
+      '</a>' +
+      '</div>';
   }
 
   // ── Footer ──
@@ -1627,6 +1906,92 @@ const isEn = lang === 'en';
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
+  /* ── Health Distribution ── */
+  .health-chart {
+    overflow-x: auto;
+  }
+  .health-svg {
+    display: block;
+  }
+  .health-svg-label {
+    font-size: 11px;
+    fill: rgba(0, 0, 0, 0.4);
+    font-family: inherit;
+  }
+  .health-bar-count {
+    font-size: 12px;
+    font-weight: 700;
+    fill: #1e293b;
+    font-family: inherit;
+  }
+  .health-summary {
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    font-weight: 500;
+  }
+
+  /* ── Next Steps ── */
+  .nextsteps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .nextstep-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
+  .nextstep-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+  .nextstep-emoji {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .nextstep-action {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+  }
+  .nextstep-detail {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+  .nextstep-detail a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .nextstep-detail a:hover {
+    text-decoration: underline;
+  }
+  .nextstep-meta {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin-bottom: 0.8rem;
+  }
+  .nextstep-link {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 8px;
+    color: #8b5cf6;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .nextstep-link:hover {
+    background: rgba(139, 92, 246, 0.06);
+    border-color: #8b5cf6;
+  }
+
   /* ── Organ Heart Pulse ── */
   .organ-card-heart {
     animation: organPulse 2s ease-in-out infinite;
@@ -1678,6 +2043,9 @@ const isEn = lang === 'en';
     }
     .organ-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .nextsteps-grid {
+      grid-template-columns: 1fr;
     }
     .defense-line {
       flex-wrap: wrap;
