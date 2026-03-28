@@ -169,7 +169,7 @@ public/
 ├── images/wiki/     ← Cached Wikimedia Commons images (MD5 hashed)
 └── ...
 docs/
-├── d3-visualization-plan.md  ← D3.js upgrade roadmap
+├── DASHBOARD-PIPELINE.md     ← Dashboard update pipeline
 ├── research-e-estonia-analysis.md  ← International benchmark study
 └── ...
 ```
@@ -328,7 +328,7 @@ When someone says "your content is biased," the answer isn't to swing to the opp
 - [ ] 📰 Newsletter subscription
 - [ ] 🤝 g0v collaboration
 
-See [D3 Visualization Plan](docs/d3-visualization-plan.md) for the full roadmap.
+See [ROADMAP.md](./ROADMAP.md) for the full roadmap.
 
 ---
 
