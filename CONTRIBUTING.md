@@ -224,15 +224,56 @@ git checkout -b feature/add-taiwanese-opera-article
 
 #### 選擇主題
 
-1. 檢查 [Issues](https://github.com/your-username/taiwan-md/issues) 中的內容請求
-2. 查看 [專案看板](https://github.com/your-username/taiwan-md/projects) 的規劃
+1. 檢查 [Issues](https://github.com/frank890417/taiwan-md/issues) 中的內容請求
+2. 查看 [專案看板](https://github.com/frank890417/taiwan-md/projects) 的規劃
 3. 提出新主題建議（開 Issue 討論）
 
-#### 撰寫內容
+#### ⚠️ SSOT 架構（最重要的概念）
 
-1. 確定文章分類和檔名
-2. 按照範本撰寫內容
-3. 本地測試預覽效果
+Taiwan.md 採用 **Knowledge SSOT（Single Source of Truth）** 架構：
+
+```
+knowledge/           ← 🇹🇼 中文 SSOT（在這裡寫文章）
+knowledge/en/        ← 🇺🇸 英文翻譯
+knowledge/ja/        ← 🇯🇵 日文翻譯
+knowledge/es/        ← 🇪🇸 西班牙文翻譯
+src/content/         ← ⚙️ 投影層（自動產生，不要手動改）
+```
+
+**鐵律：永遠只改 `knowledge/` 目錄。`src/content/` 是投影層，會被 `scripts/sync.sh` 覆蓋。**
+
+#### 新增文章流程
+
+1. 在 `knowledge/{Category}/` 建立新的 `.md` 檔案（中文 SSOT）
+2. 按照 [EDITORIAL.md](./EDITORIAL.md) 標準撰寫內容
+3. 執行 `bash scripts/sync.sh`（同步到 `src/content/`）
+4. 執行 `npm run build` 驗證（確認 frontmatter 正確）
+5. 執行 `bash tools/detect-ai-hollow.sh` 品質檢測（分數 ≤ 3）
+6. 提交 PR
+
+```bash
+# 完整流程
+echo "寫好文章後..."
+bash scripts/sync.sh          # knowledge/ → src/content/
+npm run build                  # 驗證 build
+bash tools/detect-ai-hollow.sh # 品質檢測
+git add -A && git commit -m "content: 新增 XXX 文章"
+```
+
+#### 參與新主題
+
+想為 Taiwan.md 新增一個全新主題？
+
+1. **確認分類**：文章屬於哪個 Category（History/Culture/People/Food 等）
+2. **建立檔案**：`knowledge/{Category}/{主題名}.md`
+3. **深度研究**：遵循 [EDITORIAL.md](./EDITORIAL.md) 的研究流程（Step 0-4）
+4. **撰寫文章**：SSOT 是中文版，英文版之後透過翻譯流程產生
+5. **Sync + Build**：確保同步和建置都通過
+6. **提交 PR**：附上研究來源和品質檢測結果
+
+> 💡 **提示**：如果不確定主題是否適合，先開 Issue 討論！
+
+#### 本地開發
 
 ```bash
 # 啟動開發伺服器
