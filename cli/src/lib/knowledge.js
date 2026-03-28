@@ -117,7 +117,7 @@ function collectArticleFiles(dir, rootDir, results) {
 
 /**
  * Parse simple YAML frontmatter from markdown content.
- * Mirrors the parsing approach used in scripts/generate-api.js.
+ * Mirrors the parsing approach used in scripts/core/generate-api.js.
  */
 function parseFrontmatter(content) {
   const fmRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
