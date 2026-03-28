@@ -16,7 +16,6 @@ readingTime: 12
 featured: true
 lastVerified: 2026-03-19
 ---
-
 # An Island's Transformation: Taiwan's Industrial Upgrading and Economic Trajectory
 
 ## 30-second overview

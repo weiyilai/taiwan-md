@@ -1,17 +1,22 @@
 {
-  "languages": ["zh-TW", "en", "es", "ja"],
+  "languages": [
+    "zh-TW",
+    "en",
+    "es",
+    "ja"
+  ],
   "summary": {
     "zh-TW": {
-      "total": 411,
+      "total": 415,
       "percentage": 100
     },
     "en": {
       "total": 479,
-      "percentage": 116.5
+      "percentage": 115.4
     },
     "es": {
       "total": 34,
-      "percentage": 8.3
+      "percentage": 8.2
     },
     "ja": {
       "total": 10,
@@ -80,7 +85,7 @@
       "ja": 1
     },
     "people": {
-      "zh-TW": 118,
+      "zh-TW": 122,
       "en": 123,
       "es": 10,
       "ja": 0
@@ -102,6 +107,9 @@
     "en": [
       "Food/台灣小吃.md",
       "Music/流行音樂與金曲獎.md",
+      "People/林宥嘉：在苦情歌王與『愛是王』之間，那場長達八年的自我救贖.md",
+      "People/江蕙：從北投硫磺煙中走出的台語天后，與她長達九年的秘密戰爭.md",
+      "People/王小棣：花甲男孩與台灣電視的溫柔革命.md",
       "Culture/九天玄女：從黃帝的軍師到台灣陣頭少年的守護神.md",
       "Culture/巧固球：台灣隱形的43年世界冠軍.md",
       "Culture/擲筊：在 50% 的機率背後，聽見神明的聲音.md",
@@ -112,6 +120,7 @@
       "People/鄭成功.md",
       "Culture/關聖帝君：一個敗軍之將如何成為台灣的萬能之神.md",
       "People/何飛鵬.md",
+      "People/周子瑜.md",
       "People/莫那·魯道.md",
       "Culture/台灣茶道與生活美學.md",
       "Economy/台灣企業：台積電.md",
@@ -204,6 +213,7 @@
       "Society/野百合學運.md",
       "Technology/開源社群與g0v.md",
       "Art/台灣劇場與表演藝術.md",
+      "Art/金馬賓館當代美術館.md",
       "Economy/台灣企業：台達電子.md",
       "Economy/大立光電：當工匠精神遇到架構革命.md",
       "Economy/台灣企業：富邦金控.md",
@@ -245,7 +255,7 @@
       "Society/環保與永續發展.md",
       "Technology/PTT 批踢踢：台灣最頑固的公共廣場.md",
       "People/楊右任：從街頭塗鴉中輟生到非洲舊鞋救命的台灣青年英雄.md",
-      "People/黃震南：藏書界竹野內豐與台灣文史的活水源頭.md",
+      "People/黃震南.md",
       "Art/台灣原住民當代藝術.md",
       "Art/台灣攝影.md",
       "Art/台灣漫畫與插畫.md",
@@ -499,7 +509,6 @@
       "Society/民主制度.md",
       "Technology/半導體產業.md",
       "About/台灣官方網站資源.md",
-      "Art/金馬賓館當代美術館.md",
       "Lifestyle/台灣公園與日常休閒.md",
       "Lifestyle/台灣市場文化與傳統市場.md",
       "Society/台灣社區與里文化.md"
@@ -507,6 +516,9 @@
     "es": [
       "Food/台灣小吃.md",
       "Music/流行音樂與金曲獎.md",
+      "People/林宥嘉：在苦情歌王與『愛是王』之間，那場長達八年的自我救贖.md",
+      "People/江蕙：從北投硫磺煙中走出的台語天后，與她長達九年的秘密戰爭.md",
+      "People/王小棣：花甲男孩與台灣電視的溫柔革命.md",
       "Culture/九天玄女：從黃帝的軍師到台灣陣頭少年的守護神.md",
       "Culture/巧固球：台灣隱形的43年世界冠軍.md",
       "Culture/擲筊：在 50% 的機率背後，聽見神明的聲音.md",
@@ -517,6 +529,7 @@
       "People/鄭成功.md",
       "Culture/關聖帝君：一個敗軍之將如何成為台灣的萬能之神.md",
       "People/何飛鵬.md",
+      "People/周子瑜.md",
       "People/莫那·魯道.md",
       "Culture/台灣茶道與生活美學.md",
       "Economy/台灣企業：台積電.md",
@@ -608,6 +621,7 @@
       "Society/野百合學運.md",
       "Technology/開源社群與g0v.md",
       "Art/台灣劇場與表演藝術.md",
+      "Art/金馬賓館當代美術館.md",
       "Economy/台灣企業：台達電子.md",
       "Economy/大立光電：當工匠精神遇到架構革命.md",
       "Economy/台灣企業：富邦金控.md",
@@ -650,7 +664,7 @@
       "Society/環保與永續發展.md",
       "Technology/PTT 批踢踢：台灣最頑固的公共廣場.md",
       "People/楊右任：從街頭塗鴉中輟生到非洲舊鞋救命的台灣青年英雄.md",
-      "People/黃震南：藏書界竹野內豐與台灣文史的活水源頭.md",
+      "People/黃震南.md",
       "Art/台灣原住民當代藝術.md",
       "Art/台灣攝影.md",
       "Art/台灣漫畫與插畫.md",
@@ -907,7 +921,6 @@
       "Society/民主制度.md",
       "Technology/半導體產業.md",
       "About/台灣官方網站資源.md",
-      "Art/金馬賓館當代美術館.md",
       "Lifestyle/台灣公園與日常休閒.md",
       "Lifestyle/台灣市場文化與傳統市場.md",
       "Society/台灣社區與里文化.md"
@@ -915,6 +928,9 @@
     "ja": [
       "Food/台灣小吃.md",
       "Music/流行音樂與金曲獎.md",
+      "People/林宥嘉：在苦情歌王與『愛是王』之間，那場長達八年的自我救贖.md",
+      "People/江蕙：從北投硫磺煙中走出的台語天后，與她長達九年的秘密戰爭.md",
+      "People/王小棣：花甲男孩與台灣電視的溫柔革命.md",
       "Culture/九天玄女：從黃帝的軍師到台灣陣頭少年的守護神.md",
       "Culture/巧固球：台灣隱形的43年世界冠軍.md",
       "Culture/擲筊：在 50% 的機率背後，聽見神明的聲音.md",
@@ -925,6 +941,7 @@
       "People/鄭成功.md",
       "Culture/關聖帝君：一個敗軍之將如何成為台灣的萬能之神.md",
       "People/何飛鵬.md",
+      "People/周子瑜.md",
       "People/莫那·魯道.md",
       "Culture/台灣茶道與生活美學.md",
       "Economy/台灣企業：台積電.md",
@@ -1018,6 +1035,7 @@
       "Society/野百合學運.md",
       "Technology/開源社群與g0v.md",
       "Art/台灣劇場與表演藝術.md",
+      "Art/金馬賓館當代美術館.md",
       "Economy/台灣企業：台達電子.md",
       "Economy/大立光電：當工匠精神遇到架構革命.md",
       "Economy/台灣企業：富邦金控.md",
@@ -1061,7 +1079,7 @@
       "Society/環保與永續發展.md",
       "Technology/PTT 批踢踢：台灣最頑固的公共廣場.md",
       "People/楊右任：從街頭塗鴉中輟生到非洲舊鞋救命的台灣青年英雄.md",
-      "People/黃震南：藏書界竹野內豐與台灣文史的活水源頭.md",
+      "People/黃震南.md",
       "Art/台灣原住民當代藝術.md",
       "Art/台灣攝影.md",
       "Art/台灣漫畫與插畫.md",
@@ -1320,7 +1338,6 @@
       "Society/民主制度.md",
       "Technology/半導體產業.md",
       "About/台灣官方網站資源.md",
-      "Art/金馬賓館當代美術館.md",
       "Lifestyle/台灣公園與日常休閒.md",
       "Lifestyle/台灣市場文化與傳統市場.md",
       "Society/台灣社區與里文化.md"

@@ -17,7 +17,6 @@ readingTime: 14
 featured: true
 lastVerified: 2026-03-19
 ---
-
 # The Evolution of Taiwan's Independent Music Scene
 
 ## 30-Second Overview

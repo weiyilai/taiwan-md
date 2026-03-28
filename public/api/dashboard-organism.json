@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-27T17:22:28.383Z",
+  "lastUpdated": "2026-03-28T07:06:25.325Z",
   "organs": [
     {
       "id": "heart",
@@ -10,9 +10,9 @@
       "score": 90,
       "trend": "up",
       "metrics": {
-        "articlesLast7Days": 199,
-        "articlesLast30Days": 406,
-        "totalArticles": 411
+        "articlesLast7Days": 152,
+        "articlesLast30Days": 411,
+        "totalArticles": 415
       }
     },
     {
@@ -24,9 +24,9 @@
       "score": 13,
       "trend": "stable",
       "metrics": {
-        "humanReviewedCount": 53,
-        "totalArticles": 411,
-        "humanReviewedPercent": 12.9
+        "humanReviewedCount": 54,
+        "totalArticles": 415,
+        "humanReviewedPercent": 13
       }
     },
     {
@@ -72,7 +72,7 @@
       "score": 85,
       "trend": "up",
       "metrics": {
-        "recentContributors": 46
+        "recentContributors": 48
       }
     },
     {
@@ -98,12 +98,12 @@
       "trend": "up",
       "metrics": {
         "languageCoverage": {
-          "zh-TW": 411,
+          "zh-TW": 415,
           "en": 479,
           "es": 34,
           "ja": 10
         },
-        "translationPct": 117
+        "translationPct": 115
       }
     }
   ]
