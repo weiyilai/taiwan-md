@@ -269,6 +269,24 @@ const isEn = lang === 'en';
       <div class="growth-chart" id="growth-chart"></div>
     </section>
 
+    <!-- Content Analysis -->
+    <section class="section" id="content-analysis">
+      <h2 class="section-title">
+        {isEn ? '📊 Content Analysis' : '📊 內容成長分析'}
+      </h2>
+      <p class="section-subtitle">
+        {
+          isEn
+            ? 'Article distribution across categories'
+            : '各分類文章分布與成長軌跡'
+        }
+      </p>
+      <div class="content-analysis-grid">
+        <div class="ca-chart" id="ca-category-chart"></div>
+        <div class="ca-stats" id="ca-stats"></div>
+      </div>
+    </section>
+
     <!-- Next Steps -->
     <section class="section" id="next-steps">
       <h2 class="section-title">{isEn ? '🎯 Next Steps' : '🎯 下一步'}</h2>
@@ -323,6 +341,7 @@ const isEn = lang === 'en';
     renderTranslations(translations, vitals);
     renderImmune(articles, vitals);
     renderGrowth(articles);
+    renderContentAnalysis(articles);
     renderNextSteps(articles, translations);
     renderFooter(vitals);
   });
@@ -666,6 +685,49 @@ const isEn = lang === 'en';
   }
 
   function renderOrganism(data) {
+    const organFileMap = {
+      heart: {
+        file: 'knowledge/',
+        label: 'knowledge/',
+        desc: isEn ? 'Content directory' : '內容目錄',
+      },
+      immune: {
+        file: 'EDITORIAL.md',
+        label: 'EDITORIAL.md',
+        desc: isEn ? 'Quality guidelines' : '品質規範',
+      },
+      dna: {
+        file: 'EDITORIAL.md',
+        label: 'EDITORIAL.md',
+        desc: isEn ? 'Editorial DNA' : '編輯基因',
+      },
+      skeleton: {
+        file: 'astro.config.mjs',
+        label: 'astro.config.mjs',
+        desc: isEn ? 'Framework config' : '框架配置',
+      },
+      breath: {
+        file: '.github/workflows/',
+        label: '.github/workflows/',
+        desc: isEn ? 'CI/CD pipelines' : 'CI/CD 管線',
+      },
+      reproduce: {
+        file: 'CONTRIBUTING.md',
+        label: 'CONTRIBUTING.md',
+        desc: isEn ? 'Contributor guide' : '貢獻指南',
+      },
+      senses: {
+        file: '.github/ISSUE_TEMPLATE/',
+        label: '.github/ISSUE_TEMPLATE/',
+        desc: isEn ? 'Issue templates' : 'Issue 模板',
+      },
+      translation: {
+        file: 'src/content/',
+        label: 'src/content/',
+        desc: isEn ? 'Translation files' : '翻譯檔案',
+      },
+    };
+
     const grid = document.getElementById('organ-grid');
     grid.innerHTML = data.organs
       .map((o) => {
@@ -685,6 +747,11 @@ const isEn = lang === 'en';
               ? 'background:rgba(74,222,128,0.04);'
               : '';
         const topBorder = 'border-top:3px solid ' + barColor + ';';
+        const organKey = (o.id || o.name || '').toLowerCase();
+        const fileInfo = organFileMap[organKey] || null;
+        const fileFooter = fileInfo
+          ? `<div class="organ-file"><a href="https://github.com/frank890417/taiwan-md/tree/main/${fileInfo.file}" target="_blank" rel="noopener" class="organ-file-link">📁 ${fileInfo.label}</a></div>`
+          : '';
         return `<div class="organ-card${heartClass}" style="${topBorder}${scoreTint}">
           <div class="organ-header">
             <span class="organ-emoji">${o.emoji}</span>
@@ -696,6 +763,7 @@ const isEn = lang === 'en';
             <span class="organ-trend ${trendClass}">${trendIcon}</span>
           </div>
           <div class="organ-bar"><div class="organ-bar-fill" style="width:${o.score}%;background:${barColor}"></div></div>
+          ${fileFooter}
         </div>`;
       })
       .join('');
@@ -1070,6 +1138,93 @@ const isEn = lang === 'en';
         tooltip.style.display = 'none';
       });
     });
+  }
+
+  // ── Content Analysis ──
+  function renderContentAnalysis(articles) {
+    const chartEl = document.getElementById('ca-category-chart');
+    const statsEl = document.getElementById('ca-stats');
+    if (!chartEl || !statsEl) return;
+
+    // Count by category
+    const catCounts = {};
+    articles.forEach((a) => {
+      const cat = a.category || 'other';
+      catCounts[cat] = (catCounts[cat] || 0) + 1;
+    });
+
+    const sorted = Object.entries(catCounts)
+      .filter(([cat]) => cat !== 'root' && cat !== 'resources')
+      .sort((a, b) => b[1] - a[1]);
+
+    const maxCount = sorted[0]?.[1] || 1;
+    const colors = [
+      '#8b5cf6',
+      '#6366f1',
+      '#3b82f6',
+      '#06b6d4',
+      '#10b981',
+      '#84cc16',
+      '#f59e0b',
+      '#f97316',
+      '#ef4444',
+      '#ec4899',
+      '#a855f7',
+      '#14b8a6',
+      '#eab308',
+    ];
+
+    chartEl.innerHTML = sorted
+      .map(([cat, count], i) => {
+        const pct = ((count / maxCount) * 100).toFixed(1);
+        const color = colors[i % colors.length];
+        const label = categoryLabels[cat.toLowerCase()] || cat;
+        return `<div class="ca-bar-row">
+        <span class="ca-bar-label">${label}</span>
+        <div class="ca-bar-track">
+          <div class="ca-bar-fill" style="width:0%;background:${color}" data-width="${pct}%">
+            <span class="ca-bar-count">${count}</span>
+          </div>
+        </div>
+      </div>`;
+      })
+      .join('');
+
+    // Animate bars
+    requestAnimationFrame(() => {
+      chartEl.querySelectorAll('.ca-bar-fill').forEach((el, i) => {
+        setTimeout(() => {
+          el.style.width = el.dataset.width;
+        }, i * 60);
+      });
+    });
+
+    // Stats panel
+    const totalCats = sorted.length;
+    const totalArts = sorted.reduce((s, [, c]) => s + c, 0);
+    const avgPerCat = Math.round(totalArts / totalCats);
+    const largest = sorted[0];
+    const largestLabel = largest
+      ? categoryLabels[largest[0].toLowerCase()] || largest[0]
+      : '—';
+
+    statsEl.innerHTML = `
+      <div class="ca-stat-card">
+        <div class="ca-stat-number">${totalArts}</div>
+        <div class="ca-stat-label">${isEn ? 'Total Articles' : '總文章數'}</div>
+      </div>
+      <div class="ca-stat-card">
+        <div class="ca-stat-number">${totalCats}</div>
+        <div class="ca-stat-label">${isEn ? 'Categories' : '分類數'}</div>
+      </div>
+      <div class="ca-stat-card">
+        <div class="ca-stat-number">${avgPerCat}</div>
+        <div class="ca-stat-label">${isEn ? 'Avg per Category' : '平均每類'}</div>
+      </div>
+      <div class="ca-stat-card">
+        <div class="ca-stat-number">${largestLabel}</div>
+        <div class="ca-stat-label">${largest ? (isEn ? 'Largest: ' + largest[1] : '最大分類: ' + largest[1] + ' 篇') : '—'}</div>
+      </div>`;
   }
 
   // ── Health Distribution Histogram ──
@@ -1731,10 +1886,15 @@ const isEn = lang === 'en';
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 12px;
     padding: 1.2rem;
-    transition: transform 0.2s;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    min-height: 180px;
   }
   .organ-card:hover {
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   .organ-header {
     display: flex;
@@ -1761,7 +1921,7 @@ const isEn = lang === 'en';
     margin-bottom: 0.5rem;
   }
   .organ-score {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 800;
     line-height: 1;
   }
@@ -2100,6 +2260,103 @@ const isEn = lang === 'en';
     border-color: #8b5cf6;
   }
 
+  /* ── Organ File Links ── */
+  .organ-file {
+    margin-top: 0.8rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+  }
+  .organ-file-link {
+    font-size: 0.75rem;
+    color: #64748b;
+    text-decoration: none;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  .organ-file-link:hover {
+    color: #8b5cf6;
+    background: rgba(139, 92, 246, 0.08);
+  }
+
+  /* ── Content Analysis ── */
+  .content-analysis-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+  .ca-chart {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .ca-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ca-stat-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 1.2rem;
+    text-align: center;
+  }
+  .ca-stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #8b5cf6;
+  }
+  .ca-stat-label {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin-top: 0.2rem;
+  }
+  .ca-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .ca-bar-label {
+    width: 60px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .ca-bar-track {
+    flex: 1;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .ca-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.8s ease;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+  }
+  .ca-bar-count {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
   /* ── Organ Heart Pulse ── */
   .organ-card-heart {
     animation: organPulse 2s ease-in-out infinite;
@@ -2177,6 +2434,9 @@ const isEn = lang === 'en';
 
   /* ── Responsive ── */
   @media (max-width: 768px) {
+    .content-analysis-grid {
+      grid-template-columns: 1fr;
+    }
     .dashboard {
       padding: 1rem;
     }

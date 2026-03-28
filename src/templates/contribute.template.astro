@@ -161,9 +161,14 @@ const t = useTranslations(lang);
             {t('contribute.organism.closing3')}
           </p>
         </div>
-        <a href="/about/#organism" class="organism-more"
-          >{t('contribute.organism.readmore')}</a
-        >
+        <div class="organism-links">
+          <a href="/about/#organism" class="organism-more"
+            >{t('contribute.organism.readmore')}</a
+          >
+          <a href="/dashboard/" class="organism-dashboard-link">
+            🔬 {lang === 'en' ? 'Real-Time Dashboard' : '即時監測面板'} →
+          </a>
+        </div>
       </div>
     </section>
 
@@ -1630,10 +1635,15 @@ const t = useTranslations(lang);
     color: #80b8b8;
     margin-top: 1rem;
   }
-  .organism-more {
-    display: block;
-    text-align: center;
+  .organism-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  .organism-more {
     color: #5fd4d4;
     text-decoration: none;
     font-size: 0.95rem;
@@ -1642,6 +1652,34 @@ const t = useTranslations(lang);
   .organism-more:hover {
     opacity: 0.8;
     text-decoration: underline;
+  }
+  .organism-dashboard-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1.2rem;
+    background: linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 0.15),
+      rgba(95, 212, 212, 0.15)
+    );
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 8px;
+    color: #e0f0f0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  .organism-dashboard-link:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 0.25),
+      rgba(95, 212, 212, 0.25)
+    );
+    border-color: rgba(139, 92, 246, 0.5);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(139, 92, 246, 0.2);
   }
 
   /* Token Donation Section */

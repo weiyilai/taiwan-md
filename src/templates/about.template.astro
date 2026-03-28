@@ -414,6 +414,24 @@ const t = useTranslations(lang);
           <p>{t('about.organism.ending.p2')}</p>
           <p class="quote-future">{t('about.organism.ending.p3')}</p>
         </blockquote>
+
+        <!-- 監測面板 CTA -->
+        <div class="organism-dashboard-cta">
+          <a href="/dashboard/" class="dashboard-btn">
+            <span class="dashboard-btn-icon">🔬</span>
+            <span class="dashboard-btn-text">
+              {lang === 'en' ? 'Open Real-Time Dashboard' : '開啟即時監測面板'}
+            </span>
+            <span class="dashboard-btn-arrow">→</span>
+          </a>
+          <p class="dashboard-btn-desc">
+            {
+              lang === 'en'
+                ? 'Monitor vital signs, health scores, translation coverage, and growth timeline in real-time.'
+                : '即時監測生命徵象、健康分數、翻譯覆蓋率與成長時間軸。'
+            }
+          </p>
+        </div>
       </div>
     </section>
 
@@ -1704,6 +1722,59 @@ const t = useTranslations(lang);
     font-size: 0.95rem !important;
     color: #80b8b8 !important;
     margin-top: 0.8rem !important;
+  }
+  .organism-dashboard-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(95, 212, 212, 0.15);
+  }
+  .dashboard-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 2rem;
+    background: linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 0.15),
+      rgba(95, 212, 212, 0.15)
+    );
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 12px;
+    color: #e0f0f0;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+  }
+  .dashboard-btn:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 0.25),
+      rgba(95, 212, 212, 0.25)
+    );
+    border-color: rgba(139, 92, 246, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(139, 92, 246, 0.2);
+  }
+  .dashboard-btn-icon {
+    font-size: 1.3rem;
+  }
+  .dashboard-btn-arrow {
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+  }
+  .dashboard-btn:hover .dashboard-btn-arrow {
+    transform: translateX(4px);
+  }
+  .dashboard-btn-desc {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    color: #80b8b8;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media (max-width: 768px) {
     .trait-row {
