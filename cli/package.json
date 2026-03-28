@@ -1,0 +1,36 @@
+{
+  "name": "taiwanmd",
+  "version": "0.1.0",
+  "description": "CLI for Taiwan.md — search, read, and explore 900+ curated articles about Taiwan from your terminal.",
+  "type": "module",
+  "bin": {
+    "taiwanmd": "./src/index.js"
+  },
+  "keywords": [
+    "taiwan",
+    "knowledge-base",
+    "cli",
+    "markdown",
+    "ai-native",
+    "open-source",
+    "rag"
+  ],
+  "author": "CheYu Wu <cheyu.wu@monoame.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frank890417/taiwan-md.git"
+  },
+  "homepage": "https://taiwan.md",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "marked": "^15.0.0",
+    "marked-terminal": "^7.3.0",
+    "minisearch": "^7.2.0"
+  }
+}
