@@ -385,8 +385,9 @@ Thanks to these wonderful people ([emoji key](https://allcontributors.org/docs/e
   <tr>
     <td align="center"><a href="https://github.com/AgendaLu"><img src="https://avatars.githubusercontent.com/u/43836432?v=4" width="100px;" alt=""/><br /><sub><b>YiChengLu</b></sub></a><br />🖋️</td>
     <td align="center"><a href="https://github.com/iigmir"><img src="https://avatars.githubusercontent.com/u/11061770?v=4" width="100px;" alt=""/><br /><sub><b>iigmir</b></sub></a><br />💻</td>
-    <td align="center"><a href="https://github.com/joe32140"><img src="https://avatars.githubusercontent.com/joe32140" width="100px;" alt=""/><br /><sub><b>Chao-Chun Hsu</b></sub></a><br />💻</td>
-    <td align="center"><a href="https://github.com/tboydar"><img src="https://avatars.githubusercontent.com/tboydar" width="100px;" alt=""/><br /><sub><b>Dar</b></sub></a><br />🖋️ 🌍</td>
+    <td align="center"><a href="https://github.com/brianhu-tw"><img src="https://avatars.githubusercontent.com/u/9028425?v=4" width="100px;" alt=""/><br /><sub><b>Brian Hu</b></sub></a><br />🌍</td>
+    <td align="center"><a href="https://github.com/joe32140"><img src="https://avatars.githubusercontent.com/u/6942982?v=4" width="100px;" alt=""/><br /><sub><b>Chao-Chun (Joe) Hsu</b></sub></a><br />🐛</td>
+    <td align="center"><a href="https://github.com/tboydar"><img src="https://avatars.githubusercontent.com/u/169805?v=4" width="100px;" alt=""/><br /><sub><b>Dar</b></sub></a><br />🌍 🖋️</td>
   </tr>
 </table>
 <!-- ALL-CONTRIBUTORS-LIST:END -->
