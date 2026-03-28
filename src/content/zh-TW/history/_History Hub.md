@@ -56,7 +56,6 @@ _圖片來源：[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Taiw
 ## 延伸閱讀
 
 ### 跨時代專題
-
 完整的台灣歷史敘事需要理解不同時代如何影響當代台灣。每個歷史階段都留下無法抹滅的文化基因，構成今日台灣複雜而豐富的文明底蘊。
 
 ---

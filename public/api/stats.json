@@ -1,8 +1,8 @@
 {
-  "totalArticles": 942,
+  "totalArticles": 946,
   "totalCategories": 17,
-  "estimatedContributors": 63,
-  "totalTags": 2516,
+  "estimatedContributors": 64,
+  "totalTags": 2435,
   "categories": [
     {
       "name": "en",
@@ -26,7 +26,7 @@
     },
     {
       "name": "People",
-      "count": 118
+      "count": 122
     },
     {
       "name": "Lifestyle",
@@ -111,16 +111,12 @@
       "count": 13
     },
     {
-      "name": "Taiwan",
+      "name": "金曲獎",
       "count": 12
     },
     {
-      "name": "歷史",
-      "count": 11
-    },
-    {
-      "name": "金曲獎",
-      "count": 11
+      "name": "Taiwan",
+      "count": 12
     },
     {
       "name": "ODM",
@@ -151,13 +147,17 @@
       "count": 10
     },
     {
-      "name": "文學",
+      "name": "歷史",
+      "count": 10
+    },
+    {
+      "name": "TSMC",
       "count": 10
     }
   ],
   "languageDistribution": {
-    "zh-TW": 942,
+    "zh-TW": 946,
     "en": 0
   },
-  "lastUpdated": "2026-03-27T17:22:27.954Z"
+  "lastUpdated": "2026-03-28T07:06:24.642Z"
 }

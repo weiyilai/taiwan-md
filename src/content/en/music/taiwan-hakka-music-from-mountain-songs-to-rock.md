@@ -18,7 +18,6 @@ featured: true
 category: 'Music'
 lastVerified: 2026-03-19
 ---
-
 # Taiwan's Hakka Music: From Mountain Songs to Modern Rock
 
 ## 30-Second Overview
