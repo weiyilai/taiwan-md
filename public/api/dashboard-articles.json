@@ -134,6 +134,33 @@
     "description": "將軍之子變叛逆少年，叛逆少年變台灣電視劇教母——王小棣用四十年證明，拍電視可以是一種社會運動"
   },
   {
+    "title": "台灣志工文化與公益參與：一個島嶼的日常善意",
+    "slug": "台灣志工文化與公益參與",
+    "category": "society",
+    "date": "2026-03-28",
+    "lastVerified": "2026-03-28",
+    "lastHumanReview": true,
+    "featured": false,
+    "wordCount": 2336,
+    "tagCount": 6,
+    "tags": [
+      "志工服務",
+      "公益團體",
+      "慈濟",
+      "NPO",
+      "社區營造",
+      "故事媽媽"
+    ],
+    "translations": {
+      "en": false,
+      "es": false,
+      "ja": false
+    },
+    "revision": 6,
+    "commitHash": "42643155",
+    "description": "30 個家庭主婦每天存五��錢，60 年後變成橫跨 128 國的慈善帝國——台灣的志工文化不是口號，是寫在日常裡的集體DNA"
+  },
+  {
     "title": "九天玄女：從黃帝的軍師到台灣陣頭少年的守護神",
     "slug": "九天玄女信仰",
     "category": "culture",
@@ -8192,32 +8219,6 @@
     "revision": 6,
     "commitHash": "980d37b5",
     "description": "《野火集》作者，華語世界最具影響力的散文家與前台灣文化部長"
-  },
-  {
-    "title": "台灣志工文化與公益參與",
-    "slug": "台灣志工文化與公益參與",
-    "category": "society",
-    "date": "2026-03-19",
-    "lastVerified": "2026-03-19",
-    "lastHumanReview": false,
-    "featured": false,
-    "wordCount": 2456,
-    "tagCount": 5,
-    "tags": [
-      "志工服務",
-      "公益團體",
-      "慈善文化",
-      "社會參與",
-      "社區營造"
-    ],
-    "translations": {
-      "en": false,
-      "es": false,
-      "ja": false
-    },
-    "revision": 6,
-    "commitHash": "42643155",
-    "description": "從慈濟功德會到災害救援，台灣社會深厚的志工傳統與公益參與精神"
   },
   {
     "title": "台灣邦交國與國際外交",
