@@ -14,49 +14,77 @@ const isEn = lang === 'en';
   <main class="dashboard">
     <!-- Hero -->
     <section class="hero">
+      <svg
+        class="hero-ekg"
+        viewBox="0 0 600 60"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path
+          class="ekg-line"
+          d="M0,30 L120,30 L140,30 L155,8 L165,52 L175,20 L185,38 L195,30 L280,30 L300,30 L315,8 L325,52 L335,20 L345,38 L355,30 L440,30 L460,30 L475,8 L485,52 L495,20 L505,38 L515,30 L600,30"
+          fill="none"
+          stroke="rgba(139,92,246,0.25)"
+          stroke-width="2"></path>
+      </svg>
       <h1 class="hero-title">
         <span class="hero-emoji">🔬</span>
         {t('dashboard.hero.title')}
       </h1>
       <p class="hero-subtitle">{t('dashboard.hero.subtitle')}</p>
       <p class="hero-desc">{t('dashboard.hero.description')}</p>
+      <div class="hero-stats" id="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-value" id="hero-stat-articles">—</span>
+          <span class="hero-stat-label">{isEn ? 'Articles' : '文章'}</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value" id="hero-stat-languages">—</span>
+          <span class="hero-stat-label">{isEn ? 'Languages' : '語言'}</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value" id="hero-stat-contributors">—</span>
+          <span class="hero-stat-label">{isEn ? 'Contributors' : '貢獻者'}</span
+          >
+        </div>
+      </div>
     </section>
 
     <!-- Vital Signs -->
     <section class="section" id="vitals">
       <h2 class="section-title">{t('dashboard.vitals.title')}</h2>
       <div class="vitals-grid" id="vitals-grid">
-        <div class="vital-card">
+        <div class="vital-card" data-vital="heartbeat">
           <div class="vital-emoji">💓</div>
           <div class="vital-value" id="vital-heartbeat">—</div>
           <div class="vital-label">{t('dashboard.vitals.heartbeat')}</div>
           <div class="vital-desc">{t('dashboard.vitals.heartbeat.desc')}</div>
         </div>
-        <div class="vital-card">
+        <div class="vital-card" data-vital="cells">
           <div class="vital-emoji">🧫</div>
           <div class="vital-value" id="vital-cells">—</div>
           <div class="vital-label">{t('dashboard.vitals.cells')}</div>
           <div class="vital-desc">{t('dashboard.vitals.cells.desc')}</div>
         </div>
-        <div class="vital-card">
+        <div class="vital-card" data-vital="immunity">
           <div class="vital-emoji">🛡️</div>
           <div class="vital-value" id="vital-immunity">—</div>
           <div class="vital-label">{t('dashboard.vitals.immunity')}</div>
           <div class="vital-desc">{t('dashboard.vitals.immunity.desc')}</div>
         </div>
-        <div class="vital-card">
+        <div class="vital-card" data-vital="dna">
           <div class="vital-emoji">🧬</div>
           <div class="vital-value" id="vital-dna">—</div>
           <div class="vital-label">{t('dashboard.vitals.dna')}</div>
           <div class="vital-desc">{t('dashboard.vitals.dna.desc')}</div>
         </div>
-        <div class="vital-card">
+        <div class="vital-card" data-vital="revision">
           <div class="vital-emoji">📐</div>
           <div class="vital-value" id="vital-revision">—</div>
           <div class="vital-label">{t('dashboard.vitals.revision')}</div>
           <div class="vital-desc">{t('dashboard.vitals.revision.desc')}</div>
         </div>
-        <div class="vital-card">
+        <div class="vital-card" data-vital="featured">
           <div class="vital-emoji">⭐</div>
           <div class="vital-value" id="vital-featured">—</div>
           <div class="vital-label">{t('dashboard.vitals.featured')}</div>
@@ -261,17 +289,116 @@ const isEn = lang === 'en';
     renderFooter(vitals);
   });
 
+  // ── Number Roll-up Animation ──
+  function animateValue(el, start, end, duration, suffix) {
+    suffix = suffix || '';
+    const startTime = performance.now();
+    const isFloat = String(end).includes('.');
+    function update(now) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // ease-out quad
+      const eased = 1 - (1 - progress) * (1 - progress);
+      const current = start + (end - start) * eased;
+      el.textContent =
+        (isFloat ? current.toFixed(1) : Math.round(current)) + suffix;
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
+
   // ── Vital Signs ──
   function renderVitals(v) {
-    setText('vital-heartbeat', v.articlesLast7Days);
-    setText('vital-cells', v.totalArticles);
-    setText('vital-immunity', v.humanReviewedPercent + '%');
-    setText(
-      'vital-dna',
-      `${Object.keys(v.languageCoverage).length} ${isEn ? 'langs' : '語言'}`,
+    // Hero stats
+    const langCount = Object.keys(v.languageCoverage).length;
+    setText('hero-stat-articles', v.totalArticles);
+    setText('hero-stat-languages', langCount);
+    setText('hero-stat-contributors', v.contributors || '—');
+
+    // Animate hero stats
+    animateValue(
+      document.getElementById('hero-stat-articles'),
+      0,
+      v.totalArticles,
+      1200,
     );
-    setText('vital-revision', '×' + v.avgRevision);
-    setText('vital-featured', v.featuredPercent + '%');
+    setTimeout(
+      () =>
+        animateValue(
+          document.getElementById('hero-stat-languages'),
+          0,
+          langCount,
+          800,
+        ),
+      200,
+    );
+    setTimeout(() => {
+      if (typeof v.contributors === 'number') {
+        animateValue(
+          document.getElementById('hero-stat-contributors'),
+          0,
+          v.contributors,
+          800,
+        );
+      }
+    }, 400);
+
+    // Vital cards with staggered animation
+    const vitalData = [
+      { id: 'vital-heartbeat', value: v.articlesLast7Days, suffix: '' },
+      { id: 'vital-cells', value: v.totalArticles, suffix: '' },
+      {
+        id: 'vital-immunity',
+        value: parseFloat(v.humanReviewedPercent),
+        suffix: '%',
+      },
+      {
+        id: 'vital-dna',
+        value: null,
+        text: `${langCount} ${isEn ? 'langs' : '語言'}`,
+      },
+      {
+        id: 'vital-revision',
+        value: parseFloat(v.avgRevision),
+        suffix: '',
+        prefix: '×',
+      },
+      {
+        id: 'vital-featured',
+        value: parseFloat(v.featuredPercent),
+        suffix: '%',
+      },
+    ];
+
+    vitalData.forEach((d, i) => {
+      const el = document.getElementById(d.id);
+      if (!el) return;
+      if (d.value === null) {
+        // non-numeric, just set text
+        setTimeout(() => {
+          el.textContent = d.text;
+        }, i * 100);
+      } else {
+        setTimeout(() => {
+          const prefix = d.prefix || '';
+          const suffix = d.suffix || '';
+          const isFloat = String(d.value).includes('.');
+          const startTime = performance.now();
+          function update(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / 800, 1);
+            const eased = 1 - (1 - progress) * (1 - progress);
+            const current = d.value * eased;
+            el.textContent =
+              prefix +
+              (isFloat ? current.toFixed(1) : Math.round(current)) +
+              suffix;
+            if (progress < 1) requestAnimationFrame(update);
+          }
+          requestAnimationFrame(update);
+        }, i * 100);
+      }
+    });
   }
 
   // ── Article Registry ──
@@ -398,29 +525,87 @@ const isEn = lang === 'en';
   }
 
   // ── Organism Anatomy ──
+  const organColorMap = {
+    '❤️': '#ef4444',
+    '🫀': '#ef4444',
+    心臟: '#ef4444',
+    Heart: '#ef4444',
+    '🧠': '#8b5cf6',
+    大腦: '#8b5cf6',
+    Brain: '#8b5cf6',
+    '🫁': '#3b82f6',
+    肺: '#3b82f6',
+    Lungs: '#3b82f6',
+    '🦴': '#f59e0b',
+    骨骼: '#f59e0b',
+    Skeleton: '#f59e0b',
+    '🩸': '#f87171',
+    血液: '#f87171',
+    Blood: '#f87171',
+    '👁️': '#06b6d4',
+    眼睛: '#06b6d4',
+    Eyes: '#06b6d4',
+    '🦷': '#e2e8f0',
+    牙齒: '#e2e8f0',
+    Teeth: '#e2e8f0',
+    '💪': '#ec4899',
+    肌肉: '#ec4899',
+    Muscles: '#ec4899',
+    '🧬': '#a855f7',
+    DNA: '#a855f7',
+    '🛡️': '#4ade80',
+    免疫: '#4ade80',
+    Immunity: '#4ade80',
+  };
+  function getOrganColor(o) {
+    return (
+      organColorMap[o.emoji] ||
+      organColorMap[o.name] ||
+      organColorMap[o.nameZh] ||
+      null
+    );
+  }
+
   function renderOrganism(data) {
     const grid = document.getElementById('organ-grid');
     grid.innerHTML = data.organs
       .map((o) => {
-        const color =
+        const defaultColor =
           o.score >= 70 ? '#4ade80' : o.score >= 40 ? '#facc15' : '#f87171';
+        const barColor = getOrganColor(o) || defaultColor;
         const trendIcon =
           o.trend === 'up' ? '↑' : o.trend === 'down' ? '↓' : '→';
         const trendClass = o.trend;
-        return `<div class="organ-card">
+        const isHeart =
+          o.emoji === '❤️' || o.emoji === '🫀' || o.name === 'Heart';
+        const heartClass = isHeart ? ' organ-card-heart' : '';
+        const scoreTint =
+          o.score < 30
+            ? 'background:rgba(248,113,113,0.04);'
+            : o.score >= 70
+              ? 'background:rgba(74,222,128,0.04);'
+              : '';
+        return `<div class="organ-card${heartClass}" style="${scoreTint}">
           <div class="organ-header">
             <span class="organ-emoji">${o.emoji}</span>
             <span class="organ-name">${isEn ? o.name : o.nameZh}</span>
           </div>
           <div class="organ-metaphor">${o.metaphor}</div>
           <div class="organ-score-row">
-            <div class="organ-score" style="color:${color}">${o.score}</div>
+            <div class="organ-score" data-score="${o.score}" style="color:${barColor}">${o.score}</div>
             <span class="organ-trend ${trendClass}">${trendIcon}</span>
           </div>
-          <div class="organ-bar"><div class="organ-bar-fill" style="width:${o.score}%;background:${color}"></div></div>
+          <div class="organ-bar"><div class="organ-bar-fill" style="width:${o.score}%;background:${barColor}"></div></div>
         </div>`;
       })
       .join('');
+
+    // Animate organ scores
+    document.querySelectorAll('.organ-score[data-score]').forEach((el, i) => {
+      const target = parseInt(el.dataset.score, 10);
+      el.textContent = '0';
+      setTimeout(() => animateValue(el, 0, target, 700), i * 100);
+    });
   }
 
   // ── Translation Coverage ──
@@ -623,27 +808,92 @@ const isEn = lang === 'en';
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1.5rem 4rem;
+    color: #1e293b;
+    background: #fafbfc;
   }
 
   .hero {
     text-align: center;
-    padding: 3rem 0 2rem;
+    padding: 3rem 2rem 2rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 60%, #1a1a2e 100%);
+    color: #fff;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-ekg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    transform: translateY(-50%);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .ekg-line {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: ekgDraw 3s ease-in-out infinite;
+  }
+  @keyframes ekgDraw {
+    0% {
+      stroke-dashoffset: 800;
+      opacity: 0.3;
+    }
+    50% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: -800;
+      opacity: 0.3;
+    }
   }
   .hero-title {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    position: relative;
   }
   .hero-emoji {
     font-size: 1.8rem;
   }
   .hero-subtitle {
     font-size: 1.1rem;
-    opacity: 0.7;
+    opacity: 0.8;
     margin-bottom: 0.3rem;
+    position: relative;
   }
   .hero-desc {
-    opacity: 0.5;
+    opacity: 0.8;
     font-size: 0.9rem;
+    position: relative;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1.5rem;
+    position: relative;
+  }
+  .hero-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-stat-value {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+  }
+  .hero-stat-label {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-top: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   .section {
@@ -668,7 +918,7 @@ const isEn = lang === 'en';
   /* ── Vital Signs ── */
   .vitals-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
   .vital-card {
@@ -678,19 +928,42 @@ const isEn = lang === 'en';
     border-radius: 12px;
     padding: 1.2rem;
     text-align: center;
-    transition: transform 0.2s;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+    border-left: 4px solid transparent;
+  }
+  .vital-card[data-vital='heartbeat'] {
+    border-left-color: #f87171;
+  }
+  .vital-card[data-vital='cells'] {
+    border-left-color: #3b82f6;
+  }
+  .vital-card[data-vital='immunity'] {
+    border-left-color: #4ade80;
+  }
+  .vital-card[data-vital='dna'] {
+    border-left-color: #8b5cf6;
+  }
+  .vital-card[data-vital='revision'] {
+    border-left-color: #f59e0b;
+  }
+  .vital-card[data-vital='featured'] {
+    border-left-color: #ec4899;
   }
   .vital-card:hover {
-    transform: translateY(-2px);
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   }
   .vital-emoji {
     font-size: 1.6rem;
     margin-bottom: 0.4rem;
   }
   .vital-value {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.2;
+    font-variant-numeric: tabular-nums;
   }
   .vital-label {
     font-size: 0.85rem;
@@ -722,8 +995,8 @@ const isEn = lang === 'en';
   }
   .registry-search:focus {
     outline: none;
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
   }
   .registry-filters {
     display: flex;
@@ -1112,6 +1385,20 @@ const isEn = lang === 'en';
     text-orientation: mixed;
   }
 
+  /* ── Organ Heart Pulse ── */
+  .organ-card-heart {
+    animation: organPulse 2s ease-in-out infinite;
+  }
+  @keyframes organPulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+  }
+
   /* ── Footer ── */
   .dashboard-footer {
     text-align: center;
@@ -1127,6 +1414,12 @@ const isEn = lang === 'en';
     }
     .hero-title {
       font-size: 1.5rem;
+    }
+    .hero-stats {
+      gap: 1.5rem;
+    }
+    .hero-stat-value {
+      font-size: 2rem;
     }
     .vitals-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -1159,7 +1452,14 @@ const isEn = lang === 'en';
       gap: 0.6rem;
     }
     .vital-value {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
+    }
+    .hero-stats {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .hero-stat-value {
+      font-size: 1.8rem;
     }
     .organ-grid {
       grid-template-columns: 1fr;
