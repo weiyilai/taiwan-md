@@ -171,7 +171,7 @@ const rulesJSON = JSON.stringify(rules);
             <div class="panel-label">轉換結果</div>
             <div id="output-text" class="editor-output" aria-live="polite">
               <span class="output-placeholder"
-                >轉換結果會顯示在這裡，<mark class="sample-mark">替換的詞</mark> 會被高亮標記。</span
+                >轉換結果會顯示在這裡，<mark class="sample-mark">替換的詞</mark> 會被醒目標示。</span
               >
             </div>
           </div>
@@ -474,7 +474,7 @@ const rulesJSON = JSON.stringify(rules);
       const input = inputEl.value;
       if (!input.trim()) {
         outputEl.innerHTML =
-          '<span class="output-placeholder">轉換結果會顯示在這裡，<mark class="sample-mark">替換的詞</mark> 會被高亮標記。</span>';
+          '<span class="output-placeholder">轉換結果會顯示在這裡，<mark class="sample-mark">替換的詞</mark> 會被醒目標示。</span>';
         analysisEl.hidden = true;
         btnCopy.disabled = true;
         lastHtml = '';
