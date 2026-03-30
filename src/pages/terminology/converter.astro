@@ -118,6 +118,11 @@ const rulesJSON = JSON.stringify(rules);
           <button id="btn-copy" class="btn btn-secondary" disabled
             >📋 複製結果</button
           >
+          <span class="action-sep"></span>
+          <span class="example-label">試試看：</span>
+          <button class="btn btn-example" data-example="tech">💻 科技文</button>
+          <button class="btn btn-example" data-example="life">🍜 生活文</button>
+          <button class="btn btn-example" data-example="news">📰 新聞稿</button>
         </div>
 
         <!-- Analysis report -->
@@ -167,6 +172,13 @@ const rulesJSON = JSON.stringify(rules);
     const suggestList = document.getElementById('suggest-list');
     const indexBefore = document.getElementById('index-before');
     const indexAfter = document.getElementById('index-after');
+
+    // ── Example texts ─────────────────────────────────────────────────────────
+    const EXAMPLES = {
+      tech: `最近在学习编程，发现这个软件的视频教程非常实用。用户可以通过下载客户端来使用云存储功能，支持多种操作系统。程序员们在论坛上分享了很多关于人工智能和机器学习的干货内容，信息量很大。如果遇到网络问题，可以尝试刷新缓存或者重启路由器。`,
+      life: `周末去了一家超级棒的网红餐厅打卡，点了好几个硬菜，味道很赞。服务员态度也很好，上菜速度很快。吃完饭叫了个出租车回家，在路上用手机刷了会儿短视频，看到一个博主分享了减肥健身的攻略，质量很高。回到小区后去便利店买了酸奶和方便面当宵夜。`,
+      news: `据新华社报道，该项目总投资达到数十亿元人民币，将在未来三年内建设完成。相关部门表示，这一举措将有效提升城市基础设施水平，惠及数百万群众。多位专家在接受采访时指出，该政策的出台对于促进经济高质量发展具有重要意义。与此同时，有关方面正在积极推进相关配套措施的落实。`,
+    };
 
     // ── Core convert function ───────────────────────────────────────────────
     function convertText(input) {
@@ -331,6 +343,17 @@ const rulesJSON = JSON.stringify(rules);
     // ── Event listeners ─────────────────────────────────────────────────────
     inputEl.addEventListener('input', run);
     btnConvert.addEventListener('click', run);
+
+    // Example buttons
+    document.querySelectorAll('.btn-example').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const key = btn.dataset.example;
+        if (EXAMPLES[key]) {
+          inputEl.value = EXAMPLES[key];
+          run();
+        }
+      });
+    });
 
     btnClear.addEventListener('click', () => {
       inputEl.value = '';
@@ -580,6 +603,41 @@ const rulesJSON = JSON.stringify(rules);
   .btn:disabled {
     opacity: 0.4;
     cursor: not-allowed;
+  }
+  .btn-example {
+    background: white;
+    color: #555;
+    border-color: #ddd;
+    font-size: 0.82rem;
+    padding: 0.4rem 0.9rem;
+    font-weight: 600;
+  }
+  .btn-example:hover {
+    background: #f0f7ff;
+    border-color: #3498db;
+    color: #1a1a2e;
+  }
+  .action-sep {
+    width: 1px;
+    height: 24px;
+    background: #ddd;
+    align-self: center;
+    margin: 0 0.25rem;
+  }
+  .example-label {
+    font-size: 0.82rem;
+    color: #888;
+    align-self: center;
+    white-space: nowrap;
+  }
+  @media (max-width: 680px) {
+    .action-sep {
+      display: none;
+    }
+    .example-label {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
   }
 
   /* ── Analysis box ──────────────────────────────────────────────── */
