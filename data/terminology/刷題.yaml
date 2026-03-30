@@ -1,0 +1,11 @@
+id: grind-practice
+taiwan: 寫考古題 / 做練習題
+china: 刷題
+type: A
+category: education
+origin: 中國「刷題」指大量反覆做題目練習，台灣沒有對應的單一詞彙。
+taiwan_path: 台灣說「寫考古題」（歷屆試題）、「做練習題」、「練習」、「複習」，沒有「刷題」這個說法。「刷」在台灣是刷卡、刷牙的刷。
+china_path: 中國「刷題」是學生和程式設計師的日常用語，「刷 LeetCode」「刷高考真題」都很常見。「刷」有反覆、大量的含意。
+fork_cause: 中國獨立發展的網路/學生俚語，台灣未採用。
+notes: |
+  「刷題」在中國程式設計師圈子尤其常見（刷 LeetCode），台灣工程師會說「寫 LeetCode」或「練 LeetCode」。台灣人聽到「刷題」會知道意思但不會自己這樣說。

@@ -1,0 +1,11 @@
+id: gpa-credits
+taiwan: 成績 / GPA
+china: 績點
+type: A
+category: education
+origin: 台灣說「成績」「GPA」，中國說「績點」「學分績點」。
+taiwan_path: 台灣大學生說「GPA 多少」「成績怎麼樣」「學期成績」，直接用英文縮寫 GPA 或中文「成績」。
+china_path: 中國說「績點」，如「績點 3.8」「績點排名」，是大學系統的標準用語。
+fork_cause: 台灣直接採用英文 GPA，中國翻譯為「績點」。
+notes: |
+  台灣人聽到「績點」需要轉一下才知道是 GPA。「學分績點」更是純中國用法。

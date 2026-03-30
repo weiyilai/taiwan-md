@@ -1,0 +1,11 @@
+id: tutorial
+taiwan: 教學
+china: 教程
+type: A
+category: education
+origin: 台灣說「教學」（影片/文章），中國說「教程」。
+taiwan_path: 台灣說「教學影片」「Python 教學」「線上教學」，「教程」在台灣幾乎不使用。
+china_path: 中國說「教程」「視頻教程」「入門教程」，是標準的教學資源稱呼。
+fork_cause: 兩岸對 tutorial 的翻譯偏好不同。台灣用動詞化的「教學」，中國用名詞化的「教程」。
+notes: |
+  台灣人看到「視頻教程」會覺得很中國，因為同時踩了兩個詞（視頻+教程）。台灣會說「教學影片」。
