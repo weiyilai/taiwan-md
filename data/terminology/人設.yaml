@@ -1,15 +1,15 @@
-id: "ren-she"
+id: 'ren-she'
 category: media
 subcategory: 媒體
 fork_type: E
 
 display:
-  taiwan: "人設（借用中）/ 形象 / 人物設定"
-  china: "人設"
-  hongkong: "人設 / 角色設定"
-  southeast_asia: "人設"
+  taiwan: '形象 / 人物設定 / 人設'
+  china: '人設'
+  hongkong: '人設 / 角色設定'
+  southeast_asia: '人設'
 
-english: "public image / character setting / persona"
+english: 'public image / character setting / persona'
 
 etymology:
   origin: >
@@ -31,7 +31,7 @@ etymology:
     「人設」在中國娛樂報導、社群媒體中已是絕對主流，
     「維持人設」「人設崩塌」「打造人設」為固定搭配。
     已被新華字典（2022年版）收錄為新詞。
-  fork_point: "~2015（從ACG向主流滲透）/ ~2020（進入台灣主流語境）"
+  fork_point: '~2015（從ACG向主流滲透）/ ~2020（進入台灣主流語境）'
   fork_cause: >
     中國互聯網文化的外溢效應。台灣年輕世代接收中國娛樂內容，
     自然帶入「人設」用語。但台灣語言使用並不對等，
@@ -46,7 +46,7 @@ usage:
     - 正式分析/評論文章 → 建議用「形象」「人物設定」「公眾形象」
     - 描述ACG語境 → 「人設」是最精確的詞，建議保留
 
-status: "shifting"
+status: 'shifting'
 
 notes: >
   「人設」是E類（正在分歧中）的典型案例：
@@ -56,9 +56,9 @@ notes: >
   分析性文章建議用「形象」以保持書面語一致性。
 
 sources:
-  - "新華字典第12版（2022）— 人設收錄"
-  - "中研院現代漢語語料庫 — 人設使用頻率分析"
-  - "聯合報系新聞資料庫 — 人設使用統計"
+  - '新華字典第12版（2022）— 人設收錄'
+  - '中研院現代漢語語料庫 — 人設使用頻率分析'
+  - '聯合報系新聞資料庫 — 人設使用統計'
 
-added: "2026-03-29"
-updated: "2026-03-29"
+added: '2026-03-29'
+updated: '2026-03-29'
