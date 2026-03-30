@@ -374,53 +374,55 @@ const rulesJSON = JSON.stringify(rules);
     }
 
     // ── Highlight source (original) text — mark matched china terms ─────────
-    // Build a reverse lookup: traditional source → simplified source
-    const tradToSimp = {};
-    for (const rule of RULES) {
-      if (rule.id.endsWith('_simp')) continue;
-      const simpRule = RULES.find(r => r.id === rule.id + '_simp');
-      if (simpRule) {
-        tradToSimp[rule.source] = simpRule.source;
-      }
-    }
-
+    // Strategy: find match positions in the OpenCC-converted text,
+    // then apply highlights at the same character positions in the original text.
+    // Chinese simplified→traditional is 1:1 character mapping, so positions align.
     function highlightSource(input, matches) {
       if (!input.trim() || matches.length === 0) return '';
 
-      // Work on the ORIGINAL input (no OpenCC) so positions match the textarea
-      let text = input;
+      // Step 1: Get the OpenCC-converted text (same as convertText does)
+      let converted = input;
+      if (openccConverter) {
+        converted = openccConverter(input);
+      }
 
-      const placeholders = [];
-      let markerIdx = 0;
+      // Step 2: Find all match positions in the converted text
+      // (same order as convertText: longest first, no overlaps)
+      const regions = []; // { start, end } in character positions
+      let working = converted;
+      const used = new Array(converted.length).fill(false);
+
       for (const m of matches) {
-        // Try simplified form first (matches original input), fall back to traditional
-        const simpSource = tradToSimp[m.source] || m.source;
-        // Try both: simplified first, then traditional (in case input is already traditional)
-        let matched = false;
-        for (const src of [simpSource, m.source]) {
-          if (text.includes(src)) {
-            const escaped = src.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            const marker = `\x00S${markerIdx}\x00`;
-            text = text.replace(new RegExp(escaped, 'g'), marker);
-            placeholders.push({ marker, source: src });
-            markerIdx++;
-            matched = true;
-            break;
+        let idx = 0;
+        while ((idx = working.indexOf(m.source, idx)) !== -1) {
+          // Check no overlap with already-marked regions
+          let overlap = false;
+          for (let i = idx; i < idx + m.source.length; i++) {
+            if (used[i]) { overlap = true; break; }
           }
+          if (!overlap) {
+            regions.push({ start: idx, end: idx + m.source.length });
+            for (let i = idx; i < idx + m.source.length; i++) used[i] = true;
+          }
+          idx += m.source.length;
         }
       }
 
-      // Escape HTML
-      let html = text
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/\n/g, '<br>');
+      // Step 3: Sort regions by position
+      regions.sort((a, b) => a.start - b.start);
 
-      // Replace markers with highlighted source words
-      for (const { marker, source } of placeholders) {
-        html = html.split(marker).join(`<mark class="source-word">${escHtml(source)}</mark>`);
+      // Step 4: Build HTML from the ORIGINAL input using region positions
+      let html = '';
+      let pos = 0;
+      for (const r of regions) {
+        // Text before this match (from original)
+        html += escHtml(input.substring(pos, r.start));
+        // The matched portion (from original, same positions)
+        html += `<mark class="source-word">${escHtml(input.substring(r.start, r.end))}</mark>`;
+        pos = r.end;
       }
+      html += escHtml(input.substring(pos));
+      html = html.replace(/\n/g, '<br>');
 
       return html;
     }
