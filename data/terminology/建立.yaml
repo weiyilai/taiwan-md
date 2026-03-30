@@ -1,0 +1,21 @@
+id: 建立
+category: daily
+fork_type: B
+
+display:
+  taiwan: 建立
+  china: 創建
+
+etymology:
+  origin: ""
+  taiwan_path: 台灣用法
+  china_path: 中國用法
+  fork_point: ""
+
+notes: ""
+
+sources:
+  - "ThunderKO C2T / 《大陸用語檢索手冊》1997"
+
+added: "2026-03-30"
+updated: "2026-03-30"

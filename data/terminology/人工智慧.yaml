@@ -1,33 +1,31 @@
-id: artificial-intelligence
+id: ren-gong-zhi-hui
 category: tech
 fork_type: B
 
 display:
   taiwan: 人工智慧
-  china: 人工智能
+  china: 人工智能（簡）/ 人工智慧
 
-english: artificial intelligence (AI)
+english: artificial intelligence / AI
 
 etymology:
-  origin: 台灣譯「artificial intelligence」為「人工智慧」；中國譯為「人工智能」
-  taiwan_path: 台灣官方、學術、媒體均使用「人工智慧」，縮稱「AI」，政府有「AI行動計畫」
-  china_path: 中國使用「人工智能」，「智能」在科技語境為主流選擇，政府有「新一代人工智能發展規劃」
+  origin: 台灣以「人工智慧」（人造的智慧）描述AI，中國以「人工智能」（人造的智能），「智慧 vs 智能」是兩岸科技術語最典型的差異之一。
+  taiwan_path: 台灣「人工智慧」政策以「AI Taiwan」為旗號，台積電、台達電等科技業大量投入AI硬體，「台灣AI」是台灣近年科技競爭力的重要標誌。
+  china_path: 中國「人工智能」政策以「新一代人工智能發展規劃（2017）」為核心，百度、阿里、騰訊等企業大量投入AI研發，「AI強國」是中國國家戰略目標。
   fork_point: "~1980s"
-  fork_cause: 「智慧」（wisdom，台灣偏好）vs「智能」（intelligence，中國偏好）的系統性翻譯差異
+  fork_cause: 「智慧 vs 智能」是兩岸科技術語最典型的差異，延伸到「智慧城市 vs 智能城市」「智慧手機 vs 智能手機」等系列詞。
 
 usage:
   taiwan_formal: true
-  taiwan_casual: false
-  exceptions: "口語多直接說「AI」，「人工智慧」較書面"
+  taiwan_casual: true
+  exceptions: ""
 
 status: stable
 notes: |
-  「人工智慧」vs「人工智能」是兩岸科技用語最顯著差異之一，凸顯「智慧」/「智能」的系統性翻譯分歧。
-  此差異延伸至「智慧城市/智能城市」「智慧製造/智能製造」「智慧醫療/智能醫療」等大量詞彙。
+  「人工智慧 vs 人工智能」是兩岸科技詞彙差異最具代表性的案例，也是判斷科技文章語源的快速指標，此差異延伸到所有「智慧/智能」相關詞彙。
 
 sources:
-  - "行政院：台灣AI行動計畫"
-  - "教育部國語辭典：人工智慧"
+  - "科技部（台灣）AI政策白皮書"
 
 added: "2026-03-30"
 updated: "2026-03-30"

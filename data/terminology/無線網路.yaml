@@ -1,33 +1,31 @@
-id: wireless-network
+id: wu-xian-wang-lu
 category: tech
 fork_type: B
 
 display:
   taiwan: 無線網路
-  china: 無線網絡 / WiFi
+  china: 无线网络（簡）/ Wi-Fi
 
 english: wireless network / Wi-Fi
 
 etymology:
-  origin: 台灣稱「無線網路」，中國稱「無線網絡」，差別在「路」vs「絡」的用字
-  taiwan_path: 台灣使用「網路」（路徑之意），「無線網路」為官方正式用詞，口語常說「WiFi」
-  china_path: 中國使用「網絡」（網狀系統之意），「無線網絡」或直接說「WiFi」「WLAN」
-  fork_point: "~1999"
-  fork_cause: 台灣選「路」字，中國選「絡」字，是兩岸翻譯internet/network的系統性差異
+  origin: 台灣「無線網路」泛指Wi-Fi及無線通訊網路，中國「无线网络」（簡體）同義，兩者均與「Wi-Fi」（英語）並用。
+  taiwan_path: 台灣「無線網路」普及率極高，「有沒有WiFi」是台灣人到新地方的第一問，台灣政府推動「iTaiwan」免費無線網路涵蓋公共場所，「無線網路」是台灣數位生活的基礎設施。
+  china_path: 中國「无线网络」同樣普及，但政策環境不同（防火牆、VPN需求），使中國無線網路的使用體驗與台灣有所不同。
+  fork_point: "~2000s"
+  fork_cause: 繁簡字差異，兩岸無線網路普及率均高，但政策環境不同。
 
 usage:
   taiwan_formal: true
-  taiwan_casual: false
-  exceptions: "口語多說「WiFi」，「無線網路」較書面"
+  taiwan_casual: true
+  exceptions: ""
 
 status: stable
 notes: |
-  「網路」（台灣）vs「網絡」（中國）是最具代表性的兩岸科技翻譯差異，涵蓋所有「network」相關詞彙。
-  口語中兩岸均說「WiFi」，差異消弭，但正式文件仍有「網路」/「網絡」之別。
+  台灣公共場所免費Wi-Fi覆蓋率在亞洲名列前段，「找WiFi」是台灣旅遊文化的重要實踐，也反映了台灣數位基礎建設的成熟度。
 
 sources:
-  - "NCC：無線網路頻率分配"
-  - "教育部國語辭典：無線網路"
+  - "國家通訊傳播委員會（NCC）無線寬頻統計"
 
 added: "2026-03-30"
 updated: "2026-03-30"

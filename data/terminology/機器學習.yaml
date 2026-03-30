@@ -1,33 +1,31 @@
-id: machine-learning
+id: ji-qi-xue-xi
 category: tech
-fork_type: F
+fork_type: B
 
 display:
   taiwan: 機器學習
-  china: 機器學習
+  china: 机器学习（簡）/ 機器學習
 
-english: machine learning (ML)
+english: machine learning
 
 etymology:
-  origin: 「機器學習」為machine learning的漢譯，兩岸均使用相同詞彙
-  taiwan_path: 台灣學術界、業界均使用「機器學習」，為AI領域核心術語
-  china_path: 中國同樣使用「機器學習」，是AI/ML領域的標準術語
+  origin: 台灣「機器學習」為machine learning的直譯，中國「机器学习」（簡體）同義，屬繁簡字差異，技術術語本身相同。
+  taiwan_path: 台灣「機器學習」在學術界和業界廣泛使用，台大、交大、成大等頂尖大學均有相關課程，台灣AI人才培育將機器學習列為核心技能。
+  china_path: 中國「机器学习」同樣是核心AI課程，清華、北大等頂尖大學投入大量資源，並與產業深度結合。
   fork_point: "~2000s"
-  fork_cause: 技術術語兩岸採用相同翻譯，無分歧
+  fork_cause: 繁簡字差異，技術術語完全相同，兩岸AI學術交流使用相同術語體系。
 
 usage:
   taiwan_formal: true
   taiwan_casual: true
-  exceptions: "口語常縮稱「ML」"
+  exceptions: ""
 
 status: stable
 notes: |
-  「機器學習」是兩岸罕見的完全一致科技術語，無翻譯差異。
-  與「人工智慧/人工智能」不同，「機器學習」兩岸使用完全相同的中文翻譯。
+  「機器學習」是台灣AI教育的核心術語，台灣在此領域有深厚的學術基礎，李宏毅教授的機器學習課程是全球中文AI教育的標誌性資源。
 
 sources:
-  - "科技部：機器學習研究計畫"
-  - "教育部國語辭典：機器學習"
+  - "台灣人工智慧學校及李宏毅教授機器學習課程"
 
 added: "2026-03-30"
 updated: "2026-03-30"

@@ -1,33 +1,31 @@
 id: tu-di-gong
 category: culture
-fork_type: F
+fork_type: D
 
 display:
   taiwan: 土地公
-  china: 土地公 / 土地神 / 福德正神
+  china: 土地爺 / 土地公
 
-english: Tu Di Gong (Earth God / God of the Land)
+english: Tu Di Gong (Earth God)
 
 etymology:
-  origin: 漢族傳統民間信仰，守護土地與財富的神明，兩岸共有的信仰
-  taiwan_path: 台灣土地公廟（福德祠）密度極高，每個社區幾乎都有土地公廟，農曆二月二日為土地公生日
-  china_path: 中國同樣有土地公信仰，但在文化大革命後傳統廟宇被大量破壞，現正逐步恢復
-  fork_point: "~明清"
-  fork_cause: 詞彙相同，但台灣土地公信仰保存更完整，且融合了台灣本土特色
+  origin: 「土地公」是台灣最普遍的地方守護神，台語稱「土地公」，中國大陸閩南語地區也使用，但「土地爺」在北方更常見。
+  taiwan_path: 台灣幾乎每個社區都有土地公廟（福德祠），「拜土地公」「土地公生日」是台灣民間生活的日常宗教活動，土地公也守護田地和財富，是台灣農業文化和商業文化的守護神。
+  china_path: 中國大陸同樣有土地公（土地神）信仰，南方閩粵地區稱「土地公」，北方稱「土地爺」，各地形象和祭祀習俗略有不同。
+  fork_point: "~1895前"
+  fork_cause: 台語底層詞彙，土地公信仰在台灣的普及程度極高，是台灣密度最高的宗教場所。
 
 usage:
-  taiwan_formal: false
+  taiwan_formal: true
   taiwan_casual: true
-  exceptions: "正式稱「福德正神」，口語說「土地公」"
+  exceptions: ""
 
 status: stable
 notes: |
-  台灣土地公廟密度為全球最高，台灣人說「土地公保庇」是日常祈福語。
-  土地公形象通常是白鬍老公公，手持拐杖，在台灣文化中象徵親切的在地守護神。
+  台灣土地公廟的密度是全台廟宇中最高的，「每個社區都有土地公廟」是台灣基層社區信仰文化的寫照，也是台灣人與土地關係的宗教象徵。
 
 sources:
-  - "文化部：台灣民間信仰——土地公"
-  - "教育部國語辭典：土地公"
+  - "文化部民間信仰土地公信仰普查資料"
 
 added: "2026-03-30"
 updated: "2026-03-30"

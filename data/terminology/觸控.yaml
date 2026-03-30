@@ -1,19 +1,19 @@
-id: touch-control
+id: chu-kong
 category: tech
 fork_type: B
 
 display:
   taiwan: 觸控
-  china: 觸摸 / 觸控
+  china: 觸摸屏 / 觸控
 
-english: touch (as in touchscreen)
+english: touch (screen) / touchscreen
 
 etymology:
-  origin: 台灣偏用「觸控」（控制）；中國偏用「觸摸」（觸碰感覺），均為touch的漢譯
-  taiwan_path: 台灣「觸控螢幕」「觸控板」「觸控筆」為標準用法，強調控制功能
-  china_path: 中國「觸摸屏」「觸摸板」更常見，強調觸摸動作本身
+  origin: 台灣以「觸控」（觸碰控制）描述touchscreen技術，中國以「觸摸屏」為主要用語，「觸控 vs 觸摸」是兩岸科技詞彙的典型差異。
+  taiwan_path: 台灣觸控技術在宸鴻光電（TPK）等廠商推動下曾是全球最大觸控面板供應地，「觸控螢幕」「觸控板」是台灣科技日常語彙。
+  china_path: 中國「觸摸屏」是主流用語，「電容屏」「多點觸控」等技術術語與台灣類似但選字不同。
   fork_point: "~2007"
-  fork_cause: 翻譯策略不同：台灣強調「控制」面向，中國強調「觸摸」動作
+  fork_cause: 台灣「觸控」強調控制互動功能，中國「觸摸屏」強調螢幕物理特性。
 
 usage:
   taiwan_formal: true
@@ -22,12 +22,10 @@ usage:
 
 status: stable
 notes: |
-  「觸控」vs「觸摸」是台灣和中國科技翻譯的系統性差異之一。
-  台灣「觸控螢幕」（touchscreen）、中國「觸摸屏」，指相同設備但用字不同。
+  台灣觸控面板產業曾是全球供應鏈重要節點，宸鴻光電等台廠為iPhone供應觸控玻璃，是台灣科技業在智慧型手機時代的關鍵角色。
 
 sources:
-  - "NCC：觸控裝置技術規範"
-  - "教育部國語辭典：觸控"
+  - "工業技術研究院（ITRI）觸控產業報告"
 
 added: "2026-03-30"
 updated: "2026-03-30"

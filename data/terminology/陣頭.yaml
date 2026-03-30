@@ -1,19 +1,19 @@
 id: zhen-tou
 category: culture
-fork_type: A
+fork_type: D
 
 display:
   taiwan: 陣頭
-  china: （無對應概念）
+  china: （無直接對應）
 
-english: Zhentou (Taiwanese folk religion procession troupe)
+english: Zhentou (Taiwanese ceremonial procession performance)
 
 etymology:
-  origin: 台灣民間宗教遊行中的表演陣容，源自閩南移民帶來的廟會文化，在台灣發展成獨特形式
-  taiwan_path: 陣頭包含八家將、官將首、龍陣、獅陣、宋江陣等多種類型，是廟會遊行的核心
-  china_path: 中國閩南地區有類似的民俗表演，但台灣「陣頭」已發展出台灣本土特色，為台灣特有詞彙
-  fork_point: "~清代"
-  fork_cause: 閩南移民文化在台灣300年演化後，形成有別於原鄉的台灣本土陣頭文化
+  origin: 「陣頭」是台灣民間信仰遶境活動中的表演隊伍，涵蓋八家將、宋江陣、舞龍舞獅、電音三太子等多種形式，是台語詞彙直接命名的民俗文化。
+  taiwan_path: 台灣陣頭文化在宗教遶境中不可或缺，各式陣頭代表不同的神明護衛和文化意涵。近年「電音陣頭」融合電子音樂，使傳統文化與現代流行文化結合，引發廣泛討論。
+  china_path: 中國閩南、廣東有類似的民俗表演形式，但「陣頭」一詞是台灣特有用語，中國類似活動稱「舞獅」「遊神」等，無統稱「陣頭」。
+  fork_point: "~1895前"
+  fork_cause: 台語底層詞彙，是台灣民間信仰文化的核心概念，無直接對應的中國大陸用語。
 
 usage:
   taiwan_formal: true
@@ -22,12 +22,10 @@ usage:
 
 status: stable
 notes: |
-  陣頭是台灣廟會文化的靈魂，每年各地廟會中不可缺少。
-  2012年電影《陣頭》讓此文化受到廣泛關注，促進年輕世代對陣頭文化的認識與傳承。
+  台灣陣頭文化在當代流行文化中獲得新生命，「電音三太子」成為台灣觀光的文化符號，也出現在國際表演舞台上，是台灣傳統文化現代化轉型的代表案例。
 
 sources:
-  - "文化部：台灣民俗文化資產——陣頭"
-  - "教育部台灣閩南語常用詞辭典：陣頭"
+  - "文化部傳統表演藝術普查資料及陣頭文化研究"
 
 added: "2026-03-30"
 updated: "2026-03-30"

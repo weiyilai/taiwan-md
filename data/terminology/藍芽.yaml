@@ -1,19 +1,19 @@
-id: bluetooth
+id: lan-ya
 category: tech
 fork_type: B
 
 display:
   taiwan: 藍芽
-  china: 藍牙
+  china: 蓝牙（簡）/ 藍牙
 
 english: Bluetooth
 
 etymology:
-  origin: Bluetooth源自丹麥維京王Harald Bluetooth，台灣譯「藍芽」，中國譯「藍牙」
-  taiwan_path: 台灣官方和業界使用「藍芽」，「藍芽耳機」「藍芽喇叭」為常見組合詞
-  china_path: 中國使用「藍牙」，「牙」字源於對「tooth」的漢譯
-  fork_point: "~1998"
-  fork_cause: 「tooth」的翻譯：台灣取「芽」（形似植物新芽，隱喻新生技術），中國取「牙」（直譯牙齒）
+  origin: 「藍芽」（台灣正式譯名）vs「藍牙」（中國譯名），同為Bluetooth的中文譯名，選字不同（芽 vs 牙），台灣「藍芽」已被教育部列為正式譯名。
+  taiwan_path: 台灣「藍芽」廣泛用於藍芽耳機、藍芽喇叭等，是台灣科技消費品的日常詞彙，「藍芽連線」「開藍芽」是台灣人的日常操作語言。
+  china_path: 中國「藍牙」是標準用語，「藍牙耳机」「藍牙音箱」是常見搭配，「牙 vs 芽」的差異是辨識台灣中國語源的快速方法。
+  fork_point: "~2000s"
+  fork_cause: 「藍芽 vs 藍牙」是最容易辨識台灣/中國語源的科技詞彙之一。
 
 usage:
   taiwan_formal: true
@@ -22,12 +22,10 @@ usage:
 
 status: stable
 notes: |
-  「藍芽」（台灣）vs「藍牙」（中國）是兩岸科技翻譯差異中最廣為人知的例子之一。
-  「tooth」→「芽」vs「牙」，體現了兩岸翻譯哲學的不同路徑。
+  「藍芽 vs 藍牙」是最廣為人知的兩岸科技詞彙差異案例，幾乎所有語言學習者都以此為例說明兩岸中文的用字分歧。
 
 sources:
-  - "NCC：藍芽技術規範"
-  - "教育部國語辭典：藍芽"
+  - "教育部《重編國語辭典修訂本》藍芽譯名"
 
 added: "2026-03-30"
 updated: "2026-03-30"

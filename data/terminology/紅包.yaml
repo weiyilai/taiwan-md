@@ -1,33 +1,31 @@
-id: red-envelope
+id: hong-bao
 category: culture
 fork_type: F
 
 display:
   taiwan: 紅包
-  china: 紅包 / 利是（廣東）
+  china: 红包（簡）/ 紅包
 
-english: red envelope (monetary gift)
+english: red envelope / hongbao
 
 etymology:
-  origin: 「紅包」指裝有現金的紅色封袋，是華人文化贈禮傳統，兩岸均使用
-  taiwan_path: 台灣紅包文化盛行，婚禮、生日、春節均有包紅包習俗，金額有不成文慣例
-  china_path: 中國同樣使用「紅包」，微信紅包數位化後使實體/數位並行，農曆年前「搶紅包」成全民活動
-  fork_point: "~明清"
-  fork_cause: 詞彙相同，但數位化（微信紅包）使中國紅包文化發展出新的形式
+  origin: 漢語固有詞，兩岸用詞完全相同（繁簡字差異），但「紅包」在台灣的文化語境與中國「微信紅包」的數位化使用有顯著不同。
+  taiwan_path: 台灣「紅包」是婚禮、生日、過年的傳統賀禮，「包多少紅包」是台灣社交場合的重要禮儀計算，「行情」（合適的金額）是台灣特有的社交貨幣概念。
+  china_path: 中國「紅包」除傳統實體紅包外，「微信紅包」（2014年推出）掀起數位紅包革命，春節「搶紅包」成為中國重要的數位文化現象，台灣無同等規模的數位紅包文化。
+  fork_point: "~1895前"
+  fork_cause: 同詞不同數位化程度，中國微信紅包文化是台灣沒有的現象。
 
 usage:
-  taiwan_formal: false
+  taiwan_formal: true
   taiwan_casual: true
-  exceptions: "正式場合稱「禮金」，口語說「紅包」"
+  exceptions: ""
 
 status: stable
 notes: |
-  兩岸均使用「紅包」，差異在數位化程度。台灣「Line Points」等數位紅包發展中，但實體紅包仍主流。
-  中國微信紅包已成除夕夜重要儀式，2015年春晚後普及率爆炸性成長。
+  台灣「紅包行情」是重要的社交禮儀課題，「包多少才夠」的社會焦慮是台灣婚禮文化的縮影，也反映了台灣高度重視人際關係維護的社會文化。
 
 sources:
-  - "教育部國語辭典：紅包"
-  - "文化部：台灣春節民俗——壓歲錢與紅包"
+  - "中央研究院民俗學研究及台灣傳統節慶文化調查"
 
 added: "2026-03-30"
 updated: "2026-03-30"

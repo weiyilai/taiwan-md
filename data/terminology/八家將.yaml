@@ -1,19 +1,19 @@
 id: ba-jia-jiang
 category: culture
-fork_type: A
+fork_type: D
 
 display:
   taiwan: 八家將
-  china: （無對應概念）
+  china: （無直接對應）
 
-english: Eight Generals (Taiwanese folk religion ritual dance troupe)
+english: Eight Generals / Ba Jia Jiang
 
 etymology:
-  origin: 台灣民間宗教的陣頭文化，源自台南府城城隍廟，以八位神將為核心的儀式表演
-  taiwan_path: 八家將起源於台南，代表城隍爺的部將，成員身著特定服裝、臉譜，執行驅邪儀式
-  china_path: 中國大陸無對應的八家將文化，雖有類似的地方神明信仰，但無此特定儀式形式
-  fork_point: "~清代"
-  fork_cause: 台灣本土民間宗教文化在移民過程中獨立發展，形成台灣特有的陣頭形式
+  origin: 「八家將」是台灣閩南民間信仰中的神將文化，由八位神明組成的護衛陣容，為城隍爺的護法，名稱與儀式源自閩南文化並在台灣發展出獨特形態。
+  taiwan_path: 台灣「八家將」以高度儀式化的臉譜彩繪、服飾和舞步為特色，是台灣民間信仰遶境活動的重要組成，也是台灣最具視覺衝擊力的文化表演之一。
+  china_path: 中國閩南、廣東地區有類似的神將文化，但台灣的八家將已發展出獨特的在地形態，與中國原型有顯著差異。
+  fork_point: "~1895前"
+  fork_cause: 台語底層詞彙，閩南民間信仰在台灣的在地化發展，台灣版本已形成獨立的文化體系。
 
 usage:
   taiwan_formal: true
@@ -22,12 +22,10 @@ usage:
 
 status: stable
 notes: |
-  八家將是台灣最具代表性的民俗文化之一，也是陣頭文化的核心。
-  台灣青年參與八家將已成為在地文化認同的重要象徵，相關紀錄片（如《陣頭》電影）廣受關注。
+  台灣八家將文化在民俗學和文化研究中具有重要地位，其高度視覺化的表演形式也成為台灣當代藝術和流行文化的重要素材，是台灣本土文化認同的重要符號。
 
 sources:
-  - "文化部：台灣民俗文化資產——八家將"
-  - "台南市政府文化局：八家將文化保存"
+  - "文化部無形文化遺產八家將保存資料"
 
 added: "2026-03-30"
 updated: "2026-03-30"

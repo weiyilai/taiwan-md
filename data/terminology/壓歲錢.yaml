@@ -1,33 +1,31 @@
-id: lucky-money
+id: ya-sui-qian
 category: culture
 fork_type: F
 
 display:
   taiwan: 壓歲錢
-  china: 壓歲錢
+  china: 压岁钱（簡）/ 壓歲錢
 
-english: lucky money (New Year monetary gift to children)
+english: New Year money / lucky money for children
 
 etymology:
-  origin: 「壓歲錢」指長輩給晚輩的春節紅包，取「壓」（克制）歲（邪氣）之意，傳統漢族習俗
-  taiwan_path: 台灣春節長輩給小孩壓歲錢是重要傳統，金額視關係親疏而定，裝入紅包袋
-  china_path: 中國同樣有壓歲錢傳統，金額隨經濟發展水準逐年提高，微信紅包部分取代實體
-  fork_point: "~明清"
-  fork_cause: 詞彙和傳統完全相同，差異在金額水準和數位化程度
+  origin: 漢語固有詞，兩岸用詞完全相同（繁簡字差異），指長輩在農曆新年給晚輩的紅包。
+  taiwan_path: 台灣「壓歲錢」是農曆新年最重要的傳統之一，長輩給晚輩的紅包金額是衡量家族關係親疏的指標，「領壓歲錢」是台灣小孩最期待的過年習俗。
+  china_path: 中國「压岁钱」同樣是春節重要習俗，金額因地區、家族條件而異，近年微信紅包也成為數位壓歲錢的載體。
+  fork_point: "~1895前"
+  fork_cause: 繁簡字差異，習俗文化相近，但台灣無同等規模的數位壓歲錢文化。
 
 usage:
-  taiwan_formal: false
+  taiwan_formal: true
   taiwan_casual: true
   exceptions: ""
 
 status: stable
 notes: |
-  兩岸均使用「壓歲錢」，文化傳統完全相同。
-  台灣小孩收到壓歲錢後，父母常「代為保管」，成為台灣文化的小幽默。
+  台灣「壓歲錢」的金額討論是農曆春節家庭話題的固定項目，「收到多少壓歲錢」是台灣學生開學後的校園話題，反映了台灣紅包文化的社交意涵。
 
 sources:
-  - "教育部國語辭典：壓歲錢"
-  - "文化部：台灣春節民俗傳統"
+  - "教育部《重編國語辭典修訂本》：壓歲錢"
 
 added: "2026-03-30"
 updated: "2026-03-30"

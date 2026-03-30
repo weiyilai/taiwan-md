@@ -1,33 +1,31 @@
-id: new-year-countdown
+id: kua-nian
 category: culture
-fork_type: F
+fork_type: C
 
 display:
   taiwan: 跨年
-  china: 跨年 / 元旦晚會
+  china: 跨年 / 元旦倒計時
 
-english: New Year's Eve countdown celebration
+english: New Year's Eve countdown
 
 etymology:
-  origin: 「跨年」指跨越新舊年份交替時刻的慶祝活動，台灣使用頻率極高
-  taiwan_path: 台灣「跨年晚會」是重要文化事件，台北101跨年煙火是全球指標性慶典，各縣市均有跨年活動
-  china_path: 中國使用「跨年」，但農曆春節（過年）的重要性遠高於元旦跨年，「元旦晚會」較正式
+  origin: 「跨年」指跨越年份的活動，特指新曆12月31日至1月1日的跨年夜活動，是台灣在1990年代後發展出的現代節慶文化，以台北101跨年煙火最為著名。
+  taiwan_path: 台灣「跨年」已成為重要的現代節慶，台北101跨年煙火是台灣最具國際知名度的年度慶典，「跨年演唱會」是台灣娛樂產業的年度大事，「去哪裡跨年」是年末最熱的話題。
+  china_path: 中國「跨年」用語近年也普及，但各地慶祝形式不同，「元旦倒計時」「跨年晚會」是常見描述，整體規模和城市活動豐富度與台灣不同。
   fork_point: "~1990s"
-  fork_cause: 詞彙相同，但西洋元旦跨年在台灣的文化地位相對高於中國（中國更重視農曆年）
+  fork_cause: 台灣「跨年」文化是現代都市節慶的在地發明，台北101煙火使台灣跨年成為全球直播的國際事件。
 
 usage:
-  taiwan_formal: false
+  taiwan_formal: true
   taiwan_casual: true
-  exceptions: "正式稱「元旦跨年活動」，口語說「跨年」"
+  exceptions: ""
 
 status: stable
 notes: |
-  台灣「跨年」文化在1990年代隨演唱會興起而普及，台北101跨年煙火已是台灣對外的重要文化符號。
-  中國「跨年」也盛行，但農曆除夕夜的重要性仍遠超元旦跨年。
+  台北101跨年煙火是台灣最具國際能見度的年度慶典，每年吸引數十萬人到場，全球電視直播，是台灣城市品牌最重要的視覺符號之一。
 
 sources:
-  - "台北市政府：台北101跨年活動"
-  - "教育部國語辭典：跨年"
+  - "台北市政府跨年活動統計及台北101跨年煙火官方資料"
 
 added: "2026-03-30"
 updated: "2026-03-30"
