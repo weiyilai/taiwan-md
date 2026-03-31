@@ -1,7 +1,7 @@
 {
-  "totalArticles": 959,
-  "totalCategories": 18,
-  "estimatedContributors": 30,
+  "totalArticles": 961,
+  "totalCategories": 19,
+  "estimatedContributors": 65,
   "totalTags": 2464,
   "categories": [
     {
@@ -65,6 +65,10 @@
       "count": 6
     },
     {
+      "name": "zh-TW",
+      "count": 2
+    },
+    {
       "name": "Language",
       "count": 1
     },
@@ -104,7 +108,7 @@
     },
     {
       "name": "半導體",
-      "count": 14
+      "count": 15
     },
     {
       "name": "culture",
@@ -131,6 +135,10 @@
       "count": 11
     },
     {
+      "name": "音樂",
+      "count": 11
+    },
+    {
       "name": "體育",
       "count": 11
     },
@@ -153,20 +161,11 @@
     {
       "name": "製造業",
       "count": 10
-    },
-    {
-      "name": "音樂",
-      "count": 10
     }
   ],
   "languageDistribution": {
-    "zh-TW": 959,
+    "zh-TW": 961,
     "en": 0
   },
-  "lastUpdated": "2026-03-30T14:04:56.732Z",
-  "stars": 897,
-  "forks": 122,
-  "zhPages": 471,
-  "enPages": 488,
-  "totalPages": 959
+  "lastUpdated": "2026-03-31T01:45:38.093Z"
 }

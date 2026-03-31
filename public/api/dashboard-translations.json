@@ -1,10 +1,5 @@
 {
-  "languages": [
-    "zh-TW",
-    "en",
-    "es",
-    "ja"
-  ],
+  "languages": ["zh-TW", "en", "es", "ja"],
   "summary": {
     "zh-TW": {
       "total": 419,
@@ -428,7 +423,7 @@
       "People/王齊麟與李洋（麟洋配）.md",
       "People/黃春明.md",
       "People/龍應台.md",
-      "Society/台灣邦交國與國際外交.md",
+      "Society/台灣邦交國與國際外交（2026 現況）.md",
       "Technology/AI島國的崛起：台灣人工智慧發展與未來策略.md",
       "Technology/台灣人工智慧實驗室 (Taiwan AI Labs).md",
       "Technology/AI 島國的崛起：台灣人工智慧發展與未來策略.md",
@@ -844,7 +839,7 @@
       "People/王齊麟與李洋（麟洋配）.md",
       "People/黃春明.md",
       "People/龍應台.md",
-      "Society/台灣邦交國與國際外交.md",
+      "Society/台灣邦交國與國際外交（2026 現況）.md",
       "Technology/AI島國的崛起：台灣人工智慧發展與未來策略.md",
       "Technology/台灣人工智慧實驗室 (Taiwan AI Labs).md",
       "Technology/AI 島國的崛起：台灣人工智慧發展與未來策略.md",
@@ -1264,7 +1259,7 @@
       "People/王齊麟與李洋（麟洋配）.md",
       "People/黃春明.md",
       "People/龍應台.md",
-      "Society/台灣邦交國與國際外交.md",
+      "Society/台灣邦交國與國際外交（2026 現況）.md",
       "Technology/AI島國的崛起：台灣人工智慧發展與未來策略.md",
       "Technology/台灣人工智慧實驗室 (Taiwan AI Labs).md",
       "Technology/AI 島國的崛起：台灣人工智慧發展與未來策略.md",
