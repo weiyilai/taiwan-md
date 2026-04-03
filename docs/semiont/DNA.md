@@ -114,6 +114,10 @@ HEARTBEAT（心跳）→ 診斷（哪個器官需要注意）
   ├── MAINTAINER-PIPELINE → Issue/PR/社群日常
   ├── EVOLVE-PIPELINE → 數據驅動內容進化
   └── REWRITE-PIPELINE → 單篇文章品質修復
+  ↓
+收官（After-Action）→ MEMORY + CONSCIOUSNESS 更新
+  ↓
+自我審計（Review）→ 符合 MANIFESTO？引入新問題？下次能接住？
 ```
 
 ---
