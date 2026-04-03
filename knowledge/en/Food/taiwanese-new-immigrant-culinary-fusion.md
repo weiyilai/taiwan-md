@@ -70,8 +70,8 @@ Vietnamese cuisine is one of Taiwan's most widespread new immigrant cuisines. It
 - Adjust dipping sauce to milder sweet-sour taste
 
 **Representative Establishments**:
-- [[A-Ho Vietnamese Pho]] (Taipei): Opened by Vietnamese new immigrant A-Ho, insists on using imported Vietnamese spices
-- [[Mei-Feng Vietnamese Restaurant]] (Zhongli): Combines Vietnamese and Taiwanese flavors, beloved by locals
+- [A-Ho Vietnamese Pho](/food/a-ho-vietnamese-pho) (Taipei): Opened by Vietnamese new immigrant A-Ho, insists on using imported Vietnamese spices
+- [Mei-Feng Vietnamese Restaurant](/food/mei-feng-vietnamese-restaurant) (Zhongli): Combines Vietnamese and Taiwanese flavors, beloved by locals
 
 ### Thai Cuisine: Aromatic and Spicy Tropical Flavors
 
@@ -96,8 +96,8 @@ Thai cuisine, famous for its spicy-aromatic qualities, has gradually adapted to 
 - Side dishes include Taiwanese pickles and braised eggs
 
 **Representative Establishments**:
-- [[Thai Taste House]] (Taipei): Opened by Thai new immigrants with authentic flavors
-- [[Zhongzhen Market]] (Taoyuan): Gathers multiple Thai-Myanmar food stalls
+- [Thai Taste House](/food/thai-taste-house) (Taipei): Opened by Thai new immigrants with authentic flavors
+- [Zhongzhen Market](/food/zhongzhen-market) (Taoyuan): Gathers multiple Thai-Myanmar food stalls
 
 ### Indonesian Cuisine: Spice-Rich Archipelago Flavors
 
@@ -116,8 +116,8 @@ Indonesian cuisine's characteristics include rich spices and complex flavor laye
 - Pairs with Taiwan white rice rather than traditional coconut rice
 
 **Representative Establishments**:
-- [[Bali Theme Restaurant]]: Although Taiwanese-operated, employs Indonesian chefs with quite authentic cuisine
-- [[Indonesia Street]] (Taipei Main Station underground): Gathers multiple Indonesian restaurants
+- [Bali Theme Restaurant](/food/bali-theme-restaurant): Although Taiwanese-operated, employs Indonesian chefs with quite authentic cuisine
+- [Indonesia Street](/food/indonesia-street) (Taipei Main Station underground): Gathers multiple Indonesian restaurants
 
 ### Filipino Cuisine: Sweet-Sour Appetizing Island Nation Flavors
 
@@ -130,7 +130,7 @@ Filipino cuisine development in Taiwan is relatively niche but maintains unique 
 - Pairs with Taiwan white rice
 
 **Representative Establishments**:
-- [[Filipino Hut]] (Taipei): Family-style restaurant opened by Filipino new immigrants
+- [Filipino Hut](/food/filipino-hut) (Taipei): Family-style restaurant opened by Filipino new immigrants
 
 ## Localization Innovation of New Immigrant Cuisine
 
@@ -340,10 +340,10 @@ In this globalized era, the story of Taiwan's new immigrant cuisine provides suc
 
 ## Further Reading
 
-- [[Taiwan Immigration Cultural History]] — Cultural changes from early immigrants to modern new immigrants
-- [[Southeast Asian Cuisine in Taiwan]] — Localization development processes of various national cuisines
-- [[Multicultural Cuisine]] — Cultural fusion phenomena in the globalized era
-- [[New Immigrant Second-Generation Cultural Identity]] — Identity exploration of cross-cultural generations
+- [Taiwan Immigration Cultural History](/food/taiwan-immigration-cultural-history) — Cultural changes from early immigrants to modern new immigrants
+- [Southeast Asian Cuisine in Taiwan](/food/southeast-asian-cuisine-in-taiwan) — Localization development processes of various national cuisines
+- [Multicultural Cuisine](/food/multicultural-cuisine) — Cultural fusion phenomena in the globalized era
+- [New Immigrant Second-Generation Cultural Identity](/food/new-immigrant-second-generation-cultural-identity) — Identity exploration of cross-cultural generations
 
 ## References
 

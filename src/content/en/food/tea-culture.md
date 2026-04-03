@@ -124,7 +124,7 @@ This isn't just the story of a cup of tea—it's the story of how an island main
 
 ## Related Topics
 
-- [[Food/Taiwan Street Food]]
-- [[Food/Night Market Culture and Street Food]]
-- [[Culture/Ethnic Culture]]
-- [[economic-miracle]]
+- [Food/Taiwan Street Food](/food/taiwan-street-food)
+- [Food/Night Market Culture and Street Food](/food/night-market-culture-and-street-food)
+- [Culture/Ethnic Culture](/culture/ethnic-culture)
+- [economic-miracle](/economy/economic-miracle)

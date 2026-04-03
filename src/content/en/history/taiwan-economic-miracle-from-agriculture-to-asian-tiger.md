@@ -558,10 +558,10 @@ Gradual transition from authoritarianism to democracy, different from Singapore 
 
 ### Related Articles
 
-- [[Taiwan's Land Reform and Rural Development]]
-- [[Taiwan's High-Tech Industry Development]]
-- [[Hsinchu Science Park Success Model]]
-- [[Resilience and Innovation of Taiwan's SMEs]]
+- [Taiwan's Land Reform and Rural Development](/history/taiwans-land-reform-and-rural-development)
+- [Taiwan's High-Tech Industry Development](/history/taiwans-high-tech-industry-development)
+- [Hsinchu Science Park Success Model](/history/hsinchu-science-park-success-model)
+- [Resilience and Innovation of Taiwan's SMEs](/history/resilience-and-innovation-of-taiwans-smes)
 
 ### References
 

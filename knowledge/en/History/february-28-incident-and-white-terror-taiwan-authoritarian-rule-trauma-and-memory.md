@@ -584,10 +584,10 @@ These laws granted military authorities extensive powers to:
 
 ### Related Articles
 
-- [[Taiwan's Martial Law Period and Democratization]]
-- [[Stories of Taiwan's Political Victims]]
-- [[Taiwan's Promotion of Transitional Justice]]
-- [[Development of Taiwan's Human Rights Movement]]
+- [Taiwan's Martial Law Period and Democratization](/history/taiwans-martial-law-period-and-democratization)
+- [Stories of Taiwan's Political Victims](/history/stories-of-taiwans-political-victims)
+- [Taiwan's Promotion of Transitional Justice](/history/taiwans-promotion-of-transitional-justice)
+- [Development of Taiwan's Human Rights Movement](/history/development-of-taiwans-human-rights-movement)
 
 ### Important Historical Materials
 

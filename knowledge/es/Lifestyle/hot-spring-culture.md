@@ -125,7 +125,7 @@ Las aguas termales urbanas representan productos de vida moderna. Los hoteles y 
 
 ## Temas Relacionados
 
-- [[Sistema de Transporte de Taiwán]]: Redes de transporte y desarrollo turístico en pueblos de aguas termales
-- [[Religión y Creencias Populares]]: Cultura de santuarios y creencias populares en áreas de aguas termales
-- [[Cultura del Café de Taiwán]]: Cultura de ocio de cafeterías en áreas de aguas termales
-- [[nightlife-and-ktv-culture]]: Actividades de entretenimiento nocturno en complejos de aguas termales
+- [Sistema de Transporte de Taiwán](/lifestyle/sistema-de-transporte-de-taiwán): Redes de transporte y desarrollo turístico en pueblos de aguas termales
+- [Religión y Creencias Populares](/lifestyle/religión-y-creencias-populares): Cultura de santuarios y creencias populares en áreas de aguas termales
+- [Cultura del Café de Taiwán](/lifestyle/cultura-del-café-de-taiwán): Cultura de ocio de cafeterías en áreas de aguas termales
+- [nightlife-and-ktv-culture](/lifestyle/nightlife-and-ktv-culture): Actividades de entretenimiento nocturno en complejos de aguas termales

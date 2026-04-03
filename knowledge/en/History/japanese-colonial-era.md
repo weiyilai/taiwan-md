@@ -74,7 +74,7 @@ The modernization projects of the Japanese colonial period became an important f
 
 ## Related Topics
 
-- [[qing-dynasty-rule]]
-- [[History/Martial Law Period]]
-- [[democratic-system]]
-- [[open-source-and-g0v]]
+- [qing-dynasty-rule](/history/qing-dynasty-rule)
+- [History/Martial Law Period](/history/martial-law-period)
+- [democratic-system](/society/democratic-system)
+- [open-source-and-g0v](/technology/open-source-and-g0v)

@@ -117,8 +117,8 @@ That attitude still does not feel outdated.
 ## Further Reading
 
 - [Shen Sheng-Po (Chinese Wikipedia)](https://zh.wikipedia.org/zh-tw/%E6%B2%88%E8%81%96%E5%8D%9A)
-- [Shen Sheng-Po | Taiwan Contemporary Art Archive (TCAA)](https://tcaaarchive.org/Artist/Detail/1334)
-- [Shen Sheng-Po | Art Emperor](https://artemperor.tw/knowledge/2372)
+- [ Taiwan Contemporary Art Archive (TCAA)](/people/shen-sheng-po-)
+- [ Art Emperor](/people/shen-sheng-po-)
 - [OpenLab.Taipei](https://openlabtaipei.org/)
 - [Processing Advanced Course (Insomnia Lecture Series)](https://insomnia608.pixnet.net/blog/posts/7096944218)
 - [Play+Processing Forum](http://shengpo.github.io/playp5/)
@@ -130,7 +130,7 @@ That attitude still does not feel outdated.
 
 ## Related Topics
 
-- [[Wu Che-Yu]]: another Taiwanese path from code into art
-- [[audrey-tang]]: how technical thinking enters the public sphere
-- [[Taiwan’s Digital Art Development]]: the broader context of installation, algorithms, and new media in Taiwan
-- [[open-source-and-g0v]]: how open culture reshaped Taiwan’s technical and creative ecosystems
+- [Wu Che-Yu](/people/wu-che-yu): another Taiwanese path from code into art
+- [audrey-tang](/people/audrey-tang): how technical thinking enters the public sphere
+- [Taiwan’s Digital Art Development](/people/taiwans-digital-art-development): the broader context of installation, algorithms, and new media in Taiwan
+- [open-source-and-g0v](/technology/open-source-and-g0v): how open culture reshaped Taiwan’s technical and creative ecosystems

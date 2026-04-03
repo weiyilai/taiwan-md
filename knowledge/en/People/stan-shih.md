@@ -95,8 +95,8 @@ In an era where success is deified, Shih offers an alternative thinking model: t
 
 ## References
 
-- [Why Stan Shih Says the 26-Year-Old Smiling Curve Theory Needs Change: The Key is Hidden Shared Value | BusinessNext](https://www.bnext.com.tw/article/51988/acer-lora-super-taira)
-- [Building Acer into a Multinational Corporation: Why Founder Stan Shih Says He's the Biggest Loser | BusinessWeekly](https://www.businessweekly.com.tw/management/blog/3009647)
-- [Stan Shih Dons Battle Gear Again to Rebuild TI-Acer | CommonWealth Magazine](https://www.gvm.com.tw/article/5586)
-- [Acer Hit Three Heavy Blows, He Reversed Course Three Times! Stan Shih: Repeated defeats and battles is good, but don't fight unwinnable wars | Manager Today](https://www.managertoday.com.tw/articles/view/67666)
+- [ BusinessNext](/people/why-stan-shih-says-the-26-year-old-smiling-curve-theory-needs-change-the-key-is-hidden-shared-value-)
+- [ BusinessWeekly](/people/building-acer-into-a-multinational-corporation-why-founder-stan-shih-says-hes-the-biggest-loser-)
+- [ CommonWealth Magazine](/people/stan-shih-dons-battle-gear-again-to-rebuild-ti-acer-)
+- [ Manager Today](/people/acer-hit-three-heavy-blows-he-reversed-course-three-times-stan-shih-repeated-defeats-and-battles-is-good-but-dont-fight-unwinnable-wars-)
 - [Smiling Curve: Distribution of Added Value and Strategic Management](https://hedefkoc.com/en/smiling-curve-distribution-of-added-value-and-strategic-management/)

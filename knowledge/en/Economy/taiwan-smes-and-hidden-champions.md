@@ -234,7 +234,7 @@ As AI and digital technology reshape global manufacturing, these hidden champion
 
 ## Further Reading
 
-- [[night-market-economics]]
-- [[startup-ecosystem]]
-- [[taiwan-foreign-trade-and-global-supply-chain]]
-- [[Taiwan Manufacturing Transformation]]
+- [night-market-economics](/economy/night-market-economics)
+- [startup-ecosystem](/economy/startup-ecosystem)
+- [taiwan-foreign-trade-and-global-supply-chain](/economy/taiwan-foreign-trade-and-global-supply-chain)
+- [Taiwan Manufacturing Transformation](/economy/taiwan-manufacturing-transformation)
