@@ -353,21 +353,34 @@ const isEn = lang === 'en';
     fetch('/api/dashboard-analytics.json')
       .then((r) => r.json())
       .catch(() => null),
-  ]).then(([articles, vitals, organism, translations, analytics]) => {
-    allArticles = articles;
-    renderVitals(vitals);
-    renderActivityFeed(articles);
-    renderRegistry(articles);
-    renderHealthDistribution(articles);
-    renderOrganism(organism);
-    renderTranslations(translations, vitals);
-    renderImmune(articles, vitals);
-    renderGrowth(articles);
-    renderContentAnalysis(articles);
-    if (analytics) renderAnalytics(analytics);
-    renderNextSteps(articles, translations);
-    renderFooter(vitals);
-  });
+  ])
+    .then(([articles, vitals, organism, translations, analytics]) => {
+      allArticles = articles;
+      const steps = [
+        () => renderVitals(vitals),
+        () => renderActivityFeed(articles),
+        () => renderRegistry(articles),
+        () => renderHealthDistribution(articles),
+        () => renderOrganism(organism),
+        () => renderTranslations(translations, vitals),
+        () => renderImmune(articles, vitals),
+        () => renderGrowth(articles),
+        () => renderContentAnalysis(articles),
+        () => {
+          if (analytics) renderAnalytics(analytics);
+        },
+        () => renderNextSteps(articles, translations),
+        () => renderFooter(vitals),
+      ];
+      steps.forEach((fn, i) => {
+        try {
+          fn();
+        } catch (e) {
+          console.error(`Dashboard render step ${i} failed:`, e);
+        }
+      });
+    })
+    .catch((e) => console.error('Dashboard fetch failed:', e));
 
   // ── Number Roll-up Animation ──
   function animateValue(el, start, end, duration, suffix) {
