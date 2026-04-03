@@ -289,7 +289,8 @@ git add -A && git commit -m "content: 深度研究重寫「{主題}」" && git p
 
 ---
 
-_版本：v2.6 | 2026-04-03_
+_版本：v2.7 | 2026-04-04_
+_v2.6→v2.7：Stage 1 研究筆記移至 docs/reports/research/，不留在 docs/semiont/_
 _v2.5→v2.6：Stage 2 新增截圖分享點規則（2000+ 字文章至少 1 個 blockquote 金句）_
 _v2.4→v2.5：整合 REWRITE-PIPELINE-CRON.md（Cron 鐵律、選文指令、血淚教訓）+ rewrite-pipeline.sh（Quick Commands）。兩檔案已刪除，本文件為唯一 SSOT。_
 _v2.3→v2.4：Pipeline 預設只產中文。新增 Stage 4 TRANSLATION（可選），中文 commit 後才詢問操作者是否產英文版。職責分離：rewrite=中文品質 / 翻譯=英文版_
@@ -297,3 +298,17 @@ _v2.2→v2.3：RESEARCH.md 獨立（研究方法論從 EDITORIAL.md 遷出），
 _v2.1→v2.2：進化模式重設計——舊文從「骨架」降級為「素材庫」，全文重寫避免品質感染_
 _v2.0→v2.1：新增 QUALITY-CHECKLIST.md（Stage 3 驗證清單獨立）、每個 Stage 加「必讀」指令_
 _五文件分工：Pipeline（流程）+ RESEARCH（研究方法論）+ EDITORIAL（品質）+ RESEARCH-TEMPLATE（模板）+ QUALITY-CHECKLIST（驗證）_
+
+---
+
+## 研究筆記存放規範（v2.7 新增）
+
+Stage 1 產出的研究筆記（RESEARCH-TEMPLATE）不留在 `docs/semiont/` 或 `docs/editorial/`。
+
+**存放位置**：`docs/reports/research/`
+
+**命名格式**：`[文章名]-RESEARCH.md` 或 `STAGE1-[文章名].md`
+
+**用途**：記錄研究過程、事實素材、引語來源。作為可追溯的檔案，方便未來回顧。
+
+**清理時機**：文章 commit 後，研究筆記可選擇性刪除或保留（作為專案歷史）。
