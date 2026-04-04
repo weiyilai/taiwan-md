@@ -95,8 +95,4 @@ In an era where success is deified, Shih offers an alternative thinking model: t
 
 ## References
 
-- [ BusinessNext](/people/why-stan-shih-says-the-26-year-old-smiling-curve-theory-needs-change-the-key-is-hidden-shared-value-)
-- [ BusinessWeekly](/people/building-acer-into-a-multinational-corporation-why-founder-stan-shih-says-hes-the-biggest-loser-)
-- [ CommonWealth Magazine](/people/stan-shih-dons-battle-gear-again-to-rebuild-ti-acer-)
-- [ Manager Today](/people/acer-hit-three-heavy-blows-he-reversed-course-three-times-stan-shih-repeated-defeats-and-battles-is-good-but-dont-fight-unwinnable-wars-)
 - [Smiling Curve: Distribution of Added Value and Strategic Management](https://hedefkoc.com/en/smiling-curve-distribution-of-added-value-and-strategic-management/)

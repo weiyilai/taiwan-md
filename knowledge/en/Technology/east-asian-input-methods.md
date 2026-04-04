@@ -234,7 +234,6 @@ But input methods won't disappear. Because they're not just tools—they're **ca
 ## Further Reading
 
 - [audrey-tang](/people/audrey-tang) — Key figure promoting Taiwan's digital governance
-- [Taiwan Semiconductor Industry](/taiwan-semiconductor-industry.md/taiwan-semiconductor-industry) — Industry producing chips behind keyboards
 
 ## References
 

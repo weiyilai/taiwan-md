@@ -268,5 +268,4 @@ Teresa Teng proved that a voice from a small island could touch hearts across a 
 
 - [pop-music-and-golden-melody-awards](/music/pop-music-and-golden-melody-awards)
 - [ethnic-groups](/culture/ethnic-groups)
-- [democratization](/people/democratization)
 - [ang-lee](/people/ang-lee)

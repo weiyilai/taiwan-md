@@ -149,11 +149,6 @@ La democratización de Taiwán es aclamada como una "Revolución Silenciosa", ca
 
 ## Temas Relacionados
 
-- [Sociedad](/history/society-hub): Cómo la democratización cambió la sociedad taiwanesa
-- [Martial Law Period](/history/martial-law-period): Gobierno autoritario antes de la democratización
-- [Wild Lily Student Movement](/history/wild-lily-student-movement): Movimiento estudiantil que promueve la democratización
-- [Kaohsiung Incident](/history/kaohsiung-incident): Importante punto de inflexión para el movimiento democrático
-- [Sunflower Student Movement](/history/sunflower-student-movement): Movimiento cívico durante el período de profundización democrática
 
 ---
 

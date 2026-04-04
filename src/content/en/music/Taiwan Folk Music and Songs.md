@@ -97,9 +97,4 @@ Taiwan's folk music and songs have never been just music—they are this island'
 
 ## References
 
-- [ The News Lens](/music/the-joyful-drinking-song-international-copyright-lawsuit-why-did-taiwan-indigenous-kuo-ying-nans-voice-appear-in-atlanta-olympics-promotional-songs-)
-- [ UDN Opinion](/music/taiwans-sound-history-bunun-prayer-for-millet-harvest-song-and-eight-part-harmony-discourse-controversy-part-2-)
 - [Chunchu - Taiwan Popular Music Wiki](http://www.tpmw.org.tw/index.php/純純)
-- [ Nippon.com](/music/april-rainleading-eras-father-of-taiwanese-songs-deng-yu-xian-)
-- [ Shih Hsin University](/music/new-wave-of-taiwanese-songs-musical-styles-reflecting-era-background-)
-- [ Fount Media](/music/olympic-promotional-song-copyright-controversy-inadvertently-promoted-global-recognition-of-taiwan-amis-kuo-ying-nan-and-malan-chanting-groups-heavenly-voices-)

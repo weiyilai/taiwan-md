@@ -225,9 +225,6 @@ La cultura del mercado nocturno es uno de los símbolos culturales más distinti
 
 - [taiwanese-street-food](/food/taiwanese-street-food): Introducción detallada a la cocina del mercado nocturno
 - [tea-culture](/food/tea-culture): Té de burbujas y otra cultura de bebidas
-- [Estilo de Vida](/food/centro-de-estilo-de-vida): Rol de los mercados nocturnos en la vida cotidiana taiwanesa
-- [Economía](/food/centro-de-economía): Contribución de los mercados nocturnos a la economía de Taiwán
-- [Sociedad](/food/centro-de-sociedad): Funciones sociales y significado de los mercados nocturnos
 
 ---
 

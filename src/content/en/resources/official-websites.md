@@ -489,10 +489,6 @@ These official websites serve as primary sources for research on Taiwan's politi
 
 ## Related Topics
 
-- [Technology](/resources/_technology-hub): Technical foundations of digital government and open data
-- [Society](/resources/_society-hub): How government websites reflect social governance models
-- [Culture](/resources/_culture-hub): Taiwan cultural policy as shown through cultural institution websites
-- [History](/resources/_history-hub): Historical context of government institution evolution
 
 ---
 

@@ -76,5 +76,3 @@ From an Amis girl in Taitung to Olympic gold medalist, from the despair of sever
 
 - [tai-tzu-ying](/people/tai-tzu-ying): Another standout athlete from Taiwan's Tokyo Olympics delegation
 - [yang-yung-wei-judo-olympic-silver](/people/yang-yung-wei-judo-olympic-silver): Taiwan's first Olympic judo medalist in Tokyo
-- [Lee Chih-kai](/people/lee-chih-kai): Tokyo Olympics silver medalist in gymnastics pommel horse
-- [Wang Chi-lin and Lee Yang (Lee Yang Wang)](/people/wang-chi-lin-and-lee-yang-lee-yang-wang): Tokyo Olympics badminton men's doubles gold medal pair

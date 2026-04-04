@@ -269,10 +269,7 @@ It proves one thing: a society can learn from mistakes, can build better institu
 
 ## Further Reading
 
-- [Taiwan Transportation System Development](/lifestyle/taiwan-transportation-system-development) — Complete transportation landscape from railways to highways
 - [taiwan-scooter-culture](/lifestyle/taiwan-scooter-culture) — How MRT's biggest competitor shaped urban life
-- [Taiwan Urban Development and Regional Disparities](/lifestyle/taiwan-urban-development-and-regional-disparities) — How MRT reshaped real estate and population distribution
-- [Taiwan Public Infrastructure Culture](/lifestyle/taiwan-public-infrastructure-culture) — Safety reflections from Kaohsiung gas explosion to railway accidents
 
 ## References
 

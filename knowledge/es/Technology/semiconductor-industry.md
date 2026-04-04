@@ -209,10 +209,6 @@ La ventaja tecnológica de TSMC crea un "Escudo de Silicio":
 ## Temas relacionados
 
 - [open-source-and-g0v](/technology/open-source-and-g0v): La cultura de innovación tecnológica de Taiwán
-- [Digital Democracy](/technology/digital-democracy): Cómo la tecnología cambia la participación democrática
-- [Economy](/technology/economy-hub): Contribución de la industria de semiconductores a la economía de Taiwán
-- [Society](/technology/society-hub): Impacto del desarrollo tecnológico en la sociedad
-- [Geography](/technology/geography-hub): Distribución geográfica de los parques científicos
 
 ---
 

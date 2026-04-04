@@ -202,5 +202,4 @@ Su compromiso continuo con la innovación tecnológica asegura que su influencia
 
 - [contemporary-art](/art/contemporary-art)
 - [ethnic-groups](/culture/ethnic-groups)
-- [democratization](/people/democratization)
 - [teresa-teng](/people/teresa-teng) _(próximamente)_

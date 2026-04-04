@@ -185,11 +185,8 @@ This is a living map, a migration history still being written, a cultural geneti
 
 ## Further Reading
 
-- [taiwan-night-market-culture](/food/taiwan-night-market-culture) — Taiwan Street Food Theater and Social Life Microcosm
-- [Taiwan Street Food](/food/taiwan-street-food) — Rich Street Food Varieties and Folk Wisdom
 - [Taiwan Indigenous Food Culture](/food/taiwan-indigenous-food-culture) — Traditional Cuisines of Various Indigenous Groups
 - [hakka-food-culture](/food/hakka-food-culture) — Unique Culinary Traditions of Hakka Groups
-- [Taiwan Military Dependents Village Cuisine](/food/taiwan-military-dependents-village-cuisine) — Homesickness Map and Cultural Adaptation of Mainlander Migrants
 
 ## References
 

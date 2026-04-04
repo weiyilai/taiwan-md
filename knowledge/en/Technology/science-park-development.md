@@ -176,5 +176,4 @@ As emerging fields like AI, quantum computing, and space technology rise, Taiwan
 _Further Reading:_
 
 - [Semiconductor Industry](/technology/semiconductor-industry)
-- [AI and Artificial Intelligence Industry](/technology/ai-and-artificial-intelligence-industry)
 - [Economic Miracle](/economy/economic-miracle)

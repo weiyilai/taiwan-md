@@ -73,8 +73,6 @@ Li Mei-shu proved through his life that artists need not maintain distance from 
 
 ## References
 
-- [ ARTouch.com](/people/li-mei-shu-and-sanxia-zushih-temple-)
-- [ Newtalk](/people/sanxia-zushih-temple-li-mei-shu-invited-artists-for-meticulous-reconstruction-)
 - [Li Mei-shu - Wikipedia](https://zh.wikipedia.org/zh-tw/%E6%9D%8E%E6%A2%85%E6%A8%B9)
 - [Li Mei-shu Memorial Gallery](https://limeishu.org.tw/)
 - [Sanxia Zushih Temple - Taiwan Religious Culture Map](https://taiwangods.moi.gov.tw/html/landscape/1_0011.aspx?i=17)

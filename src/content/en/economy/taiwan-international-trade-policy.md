@@ -444,10 +444,6 @@ Aligning with global net-zero carbon goals:
 
 ### Related Articles
 
-- [Taiwan's Role in Global Supply Chains](/economy/taiwans-role-in-global-supply-chains)
-- [Taiwan-ASEAN Economic Relations](/economy/taiwan-asean-economic-relations)
-- [Taiwan-US Economic Cooperation Development](/economy/taiwan-us-economic-cooperation-development)
-- [Evolution of Cross-Strait Economic Relations](/economy/evolution-of-cross-strait-economic-relations)
 
 ### References
 

@@ -498,10 +498,6 @@ description: '台灣的官方網站不僅提供政府服務與政策資訊，更
 ---
 
 ## 相關主題
-- [科技](/resources/_technology-hub)：數位政府與開放資料的技術基礎
-- [社會](/resources/_society-hub)：政府網站如何反映社會治理模式
-- [文化](/resources/_culture-hub)：文化機構網站展現的台灣文化政策
-- [歷史](/resources/_history-hub)：政府機構演變的歷史脈絡
 
 ---
 

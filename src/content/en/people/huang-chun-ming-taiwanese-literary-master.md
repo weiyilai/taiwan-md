@@ -92,7 +92,6 @@ The success of film adaptations of his works, particularly those by New Taiwan C
 - [pai-hsien-yung-literary-master](/people/pai-hsien-yung-literary-master): Contemporary Taiwanese literary master known for urban themes
 - [zhong-lihe-nativeland-eternal-seeker](/people/zhong-lihe-nativeland-eternal-seeker): Pioneer of Taiwanese nativist literature
 - [hou-hsiao-hsien](/people/hou-hsiao-hsien): Director who adapted Huang Chun-ming's works into acclaimed films
-- [Taiwan New Cinema Movement](/people/taiwan-new-cinema-movement): Cinematic movement that embraced nativist themes
 
 ## References
 

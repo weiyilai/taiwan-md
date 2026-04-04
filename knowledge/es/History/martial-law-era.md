@@ -179,11 +179,8 @@ La experiencia de la ley marcial se convirtió en una referencia importante para
 
 ## Temas Relacionados
 
-- [White Terror Period](/history/white-terror-period): Persecución política durante la ley marcial
-- [Kaohsiung Incident](/history/kaohsiung-incident): Importante evento del movimiento democrático
 - [democratization](/history/democratization): El proceso de transición de la ley marcial a la democracia
 - [february-28-incident-and-white-terror-taiwan-authoritarian-rule-trauma-and-memory](/history/february-28-incident-and-white-terror-taiwan-authoritarian-rule-trauma-and-memory): Conflicto político temprano
-- [Transitional Justice](/history/transitional-justice): Esfuerzos para abordar el legado autoritario
 
 ---
 

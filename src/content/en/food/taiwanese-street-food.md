@@ -98,5 +98,3 @@ When the world sees Taiwanese street food, it sees not just cuisine but how an i
 
 - [night-market-culture](/food/night-market-culture)
 - [tea-culture](/food/tea-culture)
-- [Culture/Multicultural Integration](/culture/multicultural-integration)
-- [Economy/Cultural Soft Power](/economy/cultural-soft-power)

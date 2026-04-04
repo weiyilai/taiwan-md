@@ -140,11 +140,6 @@ When you next soak in hot springs, feel not just geothermal warmth but also the 
 
 ## Further Reading
 
-- [Taiwan Geology and Natural Disasters](/lifestyle/taiwan-geology-and-natural-disasters)：Understanding Taiwan's rich geological background for hot springs
-- [Japanese Colonial Period Taiwan](/lifestyle/japanese-colonial-period-taiwan)：How Japanese rule influenced Taiwan's hot spring cultural development
-- [Taiwan Tourism Industry](/lifestyle/taiwan-tourism-industry)：Hot spring tourism's important position in Taiwan's travel industry
-- [Taiwan Indigenous Cultural Preservation](/lifestyle/taiwan-indigenous-cultural-preservation)：Cultural issues in indigenous area hot spring development
-- [Sustainable Development](/lifestyle/sustainable-development)：Strategies for hot spring resource protection and sustainable utilization
 
 ## References
 

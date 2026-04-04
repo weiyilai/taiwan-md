@@ -77,5 +77,3 @@ lastHumanReview: false
 ## 関連テーマ
 - [清治時期](/history/清治時期)
 - [戒嚴時期](/history/戒嚴時期)
-- [民主制度](/history/民主制度)
-- [開源社群與g0v](/history/開源社群與g0v)

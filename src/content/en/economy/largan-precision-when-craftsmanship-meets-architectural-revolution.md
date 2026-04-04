@@ -160,10 +160,6 @@ In an era where change matters more than optimization, the hardest thing isn't d
 
 ## Further Reading
 
-- [Taiwan Manufacturing Transformation](/economy/taiwan-manufacturing-transformation): Development trajectory from OEM to brand
-- [Precision Machinery Industry](/economy/precision-machinery-industry): Industrial clusters in Taichung Precision Machinery Park  
-- [Apple Supply Chain](/economy/apple-supply-chain): Taiwanese companies' roles and challenges in Apple ecosystem
-- [Optical Industry Development History](/economy/optical-industry-development-history): Taiwan optical industry evolution from Asia Optical to Genius Electronic Optical
 
 ## References
 

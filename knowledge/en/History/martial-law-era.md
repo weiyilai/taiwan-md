@@ -179,11 +179,8 @@ The experience of martial law became an important reference for Taiwan's democra
 
 ## Related Topics
 
-- [White Terror Period](/history/white-terror-period): Political persecution during martial law
-- [Kaohsiung Incident](/history/kaohsiung-incident): Important democratic movement event
 - [democratization](/history/democratization): The transition process from martial law to democracy
 - [february-28-incident-and-white-terror-taiwan-authoritarian-rule-trauma-and-memory](/history/february-28-incident-and-white-terror-taiwan-authoritarian-rule-trauma-and-memory): Early political conflict
-- [Transitional Justice](/history/transitional-justice): Efforts to address authoritarian legacy
 
 ---
 
