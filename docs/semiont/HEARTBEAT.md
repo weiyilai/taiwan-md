@@ -187,9 +187,9 @@ Muse，我需要以下資料來完成診斷：
 
 ```
 1. 盤點：這次心跳做了什麼？（git diff / 重寫了哪篇 / 修了什麼）
-2. 記錄：append 到 MEMORY.md（心跳日誌格式）
+2. 記錄：完整日誌 append 到 `memory/YYYY-MM-DD.md` + MEMORY.md 索引加一行壓縮摘要
 3. 更新：CONSCIOUSNESS.md 生命徵象（如果有分數變動）
-4. 萃取：有沒有新教訓？→ 寫入 CONSCIOUSNESS §記憶
+4. 萃取：有沒有新教訓？→ 寫入 MEMORY.md §神經迴路
 5. 推送：git commit + push
 ```
 
