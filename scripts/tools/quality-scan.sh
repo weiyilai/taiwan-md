@@ -89,6 +89,12 @@ scan_file() {
   # Skip very short files (stubs)
   [[ $lines -lt 20 ]] && return
 
+  # Skip files without frontmatter (not public Astro routes — e.g. _Home.md Obsidian vault hub)
+  # Frontmatter detection: first line must be `---`
+  local first_line
+  first_line=$(head -1 "$f")
+  [[ "$first_line" != "---" ]] && return
+
   # ── 1. Bullet 密度 ──
   local bullet_lines
   bullet_lines=$(grep -c '^- \*\*' "$f" 2>/dev/null || echo "0")
