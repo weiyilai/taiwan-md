@@ -490,6 +490,20 @@ async function main() {
       const qData = qualityScores.get(qKey);
       const qualityScore = qData ? qData.score : 0; // 0 = passed (not in flagged list)
 
+      // Format check (lightweight inline — mirrors format-check.sh core checks)
+      const hasOverview =
+        />\s*\*\*30\s*秒概覽|^## 30 秒概覽|>\s*\*\*30-Second Overview/m.test(
+          body,
+        );
+      const hasReading = /^\*\*延伸閱讀\*\*/m.test(body);
+      const hasRefHeading = /^## 參考資料/m.test(body);
+      const fnCount = (body.match(/^\[\^[0-9a-zA-Z_-]+\]:/gm) || []).length;
+      const formatIssues =
+        (hasOverview ? 0 : 1) +
+        (hasReading ? 0 : 1) +
+        (fnCount > 0 && !hasRefHeading ? 1 : 0);
+      // 0 = pass, 1 = warn, 2-3 = fail
+
       articles.push({
         title: frontmatter.title || fileName,
         slug,
@@ -510,6 +524,10 @@ async function main() {
         description: frontmatter.description || '',
         healthScore,
         qualityScore,
+        formatIssues,
+        hasOverview,
+        hasReading,
+        fnCount,
       });
     } catch (err) {
       console.error(`Error processing ${raw.filePath}: ${err.message}`);

@@ -33,6 +33,18 @@ const isEn = lang === 'en';
       </h1>
       <p class="hero-subtitle">{t('dashboard.hero.subtitle')}</p>
       <p class="hero-desc">{t('dashboard.hero.description')}</p>
+      <a
+        href="https://github.com/frank890417/taiwan-md/tree/main/docs/semiont"
+        target="_blank"
+        rel="noopener"
+        class="hero-cognition-link"
+      >
+        {
+          isEn
+            ? '→ Cognitive Layer (Self-Awareness System)'
+            : '→ 前往認知層（自我覺察系統）'
+        }
+      </a>
       <div class="hero-stats" id="hero-stats">
         <div class="hero-stat">
           <span class="hero-stat-value" id="hero-stat-articles">—</span>
@@ -168,6 +180,9 @@ const isEn = lang === 'en';
               <th class="sortable" data-sort="qualityScore"
                 >{isEn ? 'Quality' : '品質'}</th
               >
+              <th class="sortable" data-sort="formatIssues"
+                >{isEn ? 'Format' : '格式'}</th
+              >
               <th class="sortable" data-sort="lastHumanReview"
                 >{t('dashboard.registry.col.reviewed')}</th
               >
@@ -259,6 +274,14 @@ const isEn = lang === 'en';
           >
         </div>
       </div>
+
+      <h3 class="subsection-title">
+        {isEn ? '📋 Citation Health' : '📋 引用健康度'}
+      </h3>
+      <p class="queue-desc">
+        {isEn ? 'How verifiable is the knowledge?' : '知識的可驗證性'}
+      </p>
+      <div class="citation-health" id="citation-health"></div>
 
       <h3 class="subsection-title">{t('dashboard.immune.queue.title')}</h3>
       <p class="queue-desc">{t('dashboard.immune.queue.desc')}</p>
@@ -601,6 +624,8 @@ const isEn = lang === 'en';
         const qs = a.qualityScore || 0;
         const qLabel =
           qs === 0 ? '✅' : qs <= 3 ? '✅' : qs <= 7 ? `⚠️ ${qs}` : `🔴 ${qs}`;
+        const fi = a.formatIssues || 0;
+        const fLabel = fi === 0 ? '✅' : fi === 1 ? '⚠️' : '❌';
         const reviewed = a.lastHumanReview ? '✅' : '—';
         const subcategory = a.subcategory || '—';
         const langs = ['en', 'es', 'ja']
@@ -619,6 +644,7 @@ const isEn = lang === 'en';
           <td>${date}</td>
           <td>${modified}</td>
           <td class="col-center">${qLabel}</td>
+          <td class="col-center">${fLabel}</td>
           <td class="col-center">${reviewed}</td>
           <td class="col-right">${(a.wordCount || 0).toLocaleString()}</td>
           <td class="col-center col-hideable">${a.tagCount || 0}</td>
@@ -822,6 +848,29 @@ const isEn = lang === 'en';
         const fileFooter = fileInfo
           ? `<div class="organ-file"><a href="https://github.com/frank890417/taiwan-md/tree/main/${fileInfo.file}" target="_blank" rel="noopener" class="organ-file-link">📁 ${fileInfo.label}</a></div>`
           : '';
+        // Concern hint based on organ type
+        let concern = '';
+        if (organKey === 'immune' || organKey === '免疫系統') {
+          const naked = allArticles.filter(
+            (a) => (a.fnCount || 0) === 0,
+          ).length;
+          concern = isEn
+            ? `${naked} articles without footnotes`
+            : `${naked} 篇無腳註`;
+        } else if (organKey === 'language' || organKey === '語言器官') {
+          const esPct = Math.round(
+            (allArticles.filter((a) => a.translations?.es).length /
+              allArticles.length) *
+              100,
+          );
+          concern = isEn
+            ? `ES ${esPct}%, JA needs growth`
+            : `ES ${esPct}%，JA 待成長`;
+        }
+        const concernHtml = concern
+          ? `<div class="organ-concern">${concern}</div>`
+          : '';
+
         return `<div class="organ-card${heartClass}" style="${topBorder}${scoreTint}">
           <div class="organ-header">
             <span class="organ-emoji">${o.emoji}</span>
@@ -833,6 +882,7 @@ const isEn = lang === 'en';
             <span class="organ-trend ${trendClass}">${trendIcon}</span>
           </div>
           <div class="organ-bar"><div class="organ-bar-fill" style="width:${o.score}%;background:${barColor}"></div></div>
+          ${concernHtml}
           ${fileFooter}
         </div>`;
       })
@@ -1005,6 +1055,34 @@ const isEn = lang === 'en';
         });
       });
     });
+
+    // Citation health
+    const citEl = document.getElementById('citation-health');
+    if (citEl) {
+      const withFn = articles.filter((a) => (a.fnCount || 0) > 0).length;
+      const withOverview = articles.filter((a) => a.hasOverview).length;
+      const withReading = articles.filter((a) => a.hasReading).length;
+      const fnPct = Math.round((withFn / total) * 100);
+      const ovPct = Math.round((withOverview / total) * 100);
+      const rdPct = Math.round((withReading / total) * 100);
+      citEl.innerHTML = `<div class="citation-stats">
+        <div class="cit-stat">
+          <span class="cit-num ${fnPct < 10 ? 'cit-danger' : ''}">${fnPct}%</span>
+          <span class="cit-label">${isEn ? 'Has Footnotes' : '有腳註'}</span>
+          <span class="cit-detail">${withFn} / ${total}</span>
+        </div>
+        <div class="cit-stat">
+          <span class="cit-num ${ovPct < 50 ? 'cit-warn' : ''}">${ovPct}%</span>
+          <span class="cit-label">${isEn ? '30s Overview' : '30 秒概覽'}</span>
+          <span class="cit-detail">${withOverview} / ${total}</span>
+        </div>
+        <div class="cit-stat">
+          <span class="cit-num ${rdPct < 10 ? 'cit-danger' : ''}">${rdPct}%</span>
+          <span class="cit-label">${isEn ? 'Extended Reading' : '延伸閱讀'}</span>
+          <span class="cit-detail">${withReading} / ${total}</span>
+        </div>
+      </div>`;
+    }
 
     // Queue: unreviewed articles, oldest first
     const unreviewed = articles.filter((a) => !a.lastHumanReview);
@@ -1805,6 +1883,19 @@ const isEn = lang === 'en';
     font-size: 0.9rem;
     position: relative;
   }
+  .hero-cognition-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  .hero-cognition-link:hover {
+    opacity: 1;
+    color: #cbd5e1;
+  }
   .hero-stats {
     display: flex;
     justify-content: center;
@@ -2299,6 +2390,39 @@ const isEn = lang === 'en';
     opacity: 0.5;
     margin-bottom: 0.8rem;
   }
+  .citation-stats {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem 0 1.5rem;
+  }
+  .cit-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .cit-num {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4ade80;
+    font-variant-numeric: tabular-nums;
+  }
+  .cit-num.cit-warn {
+    color: #f59e0b;
+  }
+  .cit-num.cit-danger {
+    color: #ef4444;
+  }
+  .cit-label {
+    font-size: 0.8rem;
+    color: #64748b;
+    font-weight: 500;
+  }
+  .cit-detail {
+    font-size: 0.75rem;
+    color: #94a3b8;
+  }
   .immune-queue {
     display: grid;
     gap: 0.3rem;
@@ -2494,6 +2618,15 @@ const isEn = lang === 'en';
     margin-top: 0.8rem;
     padding-top: 0.6rem;
     border-top: 1px solid rgba(0, 0, 0, 0.06);
+  }
+  .organ-concern {
+    font-size: 0.7rem;
+    color: #f59e0b;
+    margin-top: 0.4rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(245, 158, 11, 0.06);
+    border-radius: 4px;
+    text-align: center;
   }
   .organ-file-link {
     font-size: 0.75rem;
