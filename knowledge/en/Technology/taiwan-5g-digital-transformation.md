@@ -1,6 +1,6 @@
 ---
-title: "Taiwan's 5G Revolution: How a Chip Powerhouse Is Building Asia's Smartest Island"
-description: "Taiwan launched 5G in 2020 with NT$136.5B in spectrum fees. With TSMC chips inside most 5G base stations worldwide, the island is turning semiconductor dominance into a digital transformation testbed — smart factories, autonomous ports, and AI-powered healthcare."
+title: '5G in Taiwan: From TSMC Chips to Smart Factories and Digital Healthcare'
+description: "Taiwan's 5G rollout launched in 2020 with NT$136.5 billion in spectrum fees. With TSMC chips powering most 5G base stations worldwide, Taiwan is building smart ports, AI hospitals, and connected factories. A look at the island's digital transformation strategy and where it's heading."
 date: 2026-03-18
 tags:
   [

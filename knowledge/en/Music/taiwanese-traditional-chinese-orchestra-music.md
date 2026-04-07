@@ -1,6 +1,6 @@
 ---
-title: 'Taiwanese Guoyue: The Island Sound That Grew from Chinese Instruments'
-description: "The erhu and pipa that crossed the Taiwan Strait in 1949 now play Bunun polyphony and Hakka mountain songs. How Taiwan's traditional Chinese orchestra music evolved into a species distinct from the mainland."
+title: "Taiwan's Traditional Chinese Orchestra Music: How Erhu and Pipa Found a New Voice"
+description: 'From the Taipei Chinese Orchestra to indigenous polyphony — how Taiwan transformed mainland Chinese instruments into a distinct musical tradition. History, key ensembles, and the Hakka-indigenous fusion reshaping traditional Chinese orchestra today.'
 date: 2026-04-04
 category: 'Music'
 tags:

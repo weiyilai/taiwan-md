@@ -1,6 +1,6 @@
 ---
-title: 'Jolin Tsai (蔡依林): Queen of C-Pop and Asia's Most Spectacular Stage Performer'
-description: 'A dance instructor told her she had no talent. 25 years later, she performs aerial rings 10 meters above the stage with no understudy. Jolin Tsai's career is the story of how discipline defeated genius in pop music.'
+title: 'Jolin Tsai (蔡依林): Taiwanese Pop Queen — Career, Age, and Rise to Stardom'
+description: "Born 1980 in Taipei, Jolin Tsai debuted at 19 and became Asia's most spectacular live performer. From a dance instructor saying she had no talent to aerial rings 10 meters above the stage — her 25-year career proves discipline defeats genius. Full biography and discography."
 date: 2026-03-24
 tags:
   [People, Singer, Entertainment, LGBTQ+ Rights, Mandopop, Golden Melody Awards]
