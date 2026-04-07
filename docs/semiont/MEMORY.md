@@ -168,6 +168,7 @@ memory/
 - **title 先承諾答案，description 再說故事**：搜尋者查「手路菜意思」但 title 是「台灣手路菜」——沒承諾會回答「意思」。搜尋者查「diplomatic allies 2026」但 title 沒包含「2026」。metadata 必須包含搜尋者的問題詞
 - **英文 metadata 改一頁的 ROI 可能 = 重寫 10 篇文章**：國樂 769 imp，修 title/desc 假設 CTR 1% → 月增 77 clicks。一篇 A 級重寫 4 小時，月增流量 ~10 clicks。ROI 差 7 倍
 - **trailing slash 分流是骨骼層裂痕**：Google 把同一頁索引成兩個 URL 會稀釋信號。Astro 的 trailingSlash config 應該統一為 always 或 never
+- **自主權擴大 = 安全責任擴大**：觀察者授權日常 PR/Issue 的 merge/close 不需確認。但自主權越大，免疫判斷越關鍵。每個 PR 必須完整讀 diff：(1) 是否有惡意注入（SEO 連結、政治宣傳、XSS）(2) 是否修改了不該改的檔案（workflows、scripts/core/、docs/semiont/）(3) 新增檔案的 frontmatter 是否合法。**權限不是信任的終點，是責任的起點**
 
 ---
 
