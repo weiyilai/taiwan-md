@@ -13,7 +13,7 @@ interface RelativeTimeLabels {
 interface Props {
   commits: Commit[];
   lang: Lang;
-  variant?: 'timeline' | 'compact';
+  variant?: 'timeline' | 'cards' | 'compact';
   locale?: string;
   dayUpdatesLabel?: string;
   emptyTitle?: string;
@@ -149,21 +149,55 @@ function formatDate(dateStr: string) {
         </div>
       )
     ) : commits.length ? (
-      <div class="commit-log-items">
-        {commits.map((commit) => (
-          <a
-            href={`https://github.com/frank890417/taiwan-md/commit/${commit.hash}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="commit-log-item commit-log-item--compact"
-            title={commit.message}
-          >
-            <span class="commit-log-icon">{commitIcon(commit.message)}</span>
-            <span class="commit-log-message">{commit.message}</span>
-            <span class="commit-log-time">{timeAgo(commit.date, lang)}</span>
-          </a>
-        ))}
-      </div>
+      variant === 'cards' ? (
+        <div class="commit-log-items commit-log-items--cards">
+          {commits.map((commit) => (
+            <article class="commit-log-item commit-log-item--timeline">
+              <span class="commit-log-icon">{commitIcon(commit.message)}</span>
+              <div class="commit-log-content">
+                <p class="commit-log-message">{commit.message}</p>
+                <div class="commit-log-meta">
+                  {commit.author && (
+                    <span class="commit-log-author">
+                      {commit.author}
+                    </span>
+                  )}
+                  <span class="commit-log-time" data-date={commit.date}>
+                    {new Date(commit.date).toLocaleTimeString(locale, {
+                      hour: '2-digit',
+                      minute: '2-digit',
+                    })}
+                  </span>
+                  <a
+                    href={`https://github.com/frank890417/taiwan-md/commit/${commit.hash}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="commit-log-hash"
+                  >
+                    {commit.hash.slice(0, 7)}
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <div class="commit-log-items">
+          {commits.map((commit) => (
+            <a
+              href={`https://github.com/frank890417/taiwan-md/commit/${commit.hash}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="commit-log-item commit-log-item--compact"
+              title={commit.message}
+            >
+              <span class="commit-log-icon">{commitIcon(commit.message)}</span>
+              <span class="commit-log-message">{commit.message}</span>
+              <span class="commit-log-time">{timeAgo(commit.date, lang)}</span>
+            </a>
+          ))}
+        </div>
+      )
     ) : null
   }
 </div>
@@ -339,6 +373,12 @@ function formatDate(dateStr: string) {
     border-color: #bfdbfe;
     background: #f0f9ff;
     transform: translateX(4px);
+  }
+
+  .commit-log-items--cards .commit-log-item--timeline:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    transform: translateY(-1px);
   }
 
   .commit-log-icon {

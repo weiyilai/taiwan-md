@@ -25,7 +25,7 @@ const translatePath = useTranslatedPath(lang);
           <h2>{t('home.updates.heading')}</h2>
           <p class="updates-subtitle">{t('home.updates.subtitle')}</p>
         </div>
-        <CommitLog commits={commits} lang={lang} variant="compact" />
+        <CommitLog commits={commits} lang={lang} variant="cards" />
         <div class="updates-footer">
           <a href={translatePath('/changelog')} class="updates-more-btn">
             {t('home.updates.viewAll')}
@@ -38,7 +38,7 @@ const translatePath = useTranslatedPath(lang);
 
 <style>
   .recent-updates {
-    max-width: 800px;
+    max-width: 980px;
     margin: 4rem auto;
     padding: 0 2rem;
   }
@@ -82,10 +82,10 @@ const translatePath = useTranslatedPath(lang);
     color: #64748b;
     font-weight: 500;
   }
-  :global(.recent-updates .commit-log--compact) {
+  :global(.recent-updates .commit-log) {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    max-width: 860px;
     margin: 0 auto;
   }
   .updates-footer {
