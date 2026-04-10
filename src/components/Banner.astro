@@ -6,12 +6,25 @@ const currentPath = Astro.url.pathname;
 const { enLink } = await getLangSwitchPath(currentPath);
 ---
 
-<div id="lang-banner" class="lang-banner" style="display:none;">
-  <span
-    >🌐 English version available → <a href={enLink}>Switch to English</a></span
-  >
+<!--
+  Phase 4 leaf migration #1: Banner.astro
+  ─────────────────────────────────────────
+  - Converted to Tailwind atomic utilities in HTML
+  - Removed scoped <style> block entirely
+  - Teal brand colors (#007864, #4fd1b0, #7ee8ca) are component-local
+    one-offs, kept as arbitrary values: bg-[#007864] / text-[#4fd1b0]
+  - Later phase may promote these to tokens if the color system picks
+    up a "lang-banner teal" brand identity
+-->
+<div
+  id="lang-banner"
+  class="relative z-50 hidden items-center justify-center gap-4 bg-[#007864] px-4 py-[0.6rem] text-center text-[0.85rem] leading-snug text-white [&_a]:font-semibold [&_a]:text-[#4fd1b0] [&_a]:underline [&_a:hover]:text-[#7ee8ca]"
+>
+  <span>
+    🌐 English version available → <a href={enLink}>Switch to English</a>
+  </span>
   <button
-    class="lang-banner-close"
+    class="cursor-pointer border-none bg-transparent px-[0.3rem] text-base text-white/70 hover:text-white"
     onclick="document.getElementById('lang-banner').style.display='none';localStorage.setItem('lang-banner-dismissed','1');var h=document.getElementById('main-header');if(h)h.style.top='0px';"
     aria-label="Close">✕</button
   >
@@ -26,38 +39,3 @@ const { enLink } = await getLangSwitchPath(currentPath);
     if (b) b.style.display = 'flex';
   })();
 </script>
-<style>
-  .lang-banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0.6rem 1rem;
-    background: #007864;
-    color: white !important;
-    font-size: 0.85rem;
-    text-align: center;
-    line-height: 1.4;
-    position: relative;
-    z-index: 50;
-  }
-  .lang-banner a {
-    color: #4fd1b0;
-    font-weight: 600;
-    text-decoration: underline;
-  }
-  .lang-banner a:hover {
-    color: #7ee8ca;
-  }
-  .lang-banner-close {
-    background: none;
-    border: none;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 0 0.3rem;
-  }
-  .lang-banner-close:hover {
-    color: white;
-  }
-</style>
