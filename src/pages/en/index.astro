@@ -238,13 +238,28 @@ const readingPathFooterItems = [
 
   <LanguageStatement />
 
-  <!-- ===== EXHIBITION HALLS ===== -->
-  <section class="exhibition" id="categories">
-    <div class="exhibition-header">
-      <h2 class="section-title">{t('home.categories.heading')}</h2>
+  <!-- ===== EXHIBITION HALLS =====
+       Partial Tailwind migration (Phase 6): wrappers (section,
+       header, halls container, divider) moved to Tailwind. The
+       repeated hall/pick card classes (.hall-divider, .hall-label,
+       .hall-body, .hall-picks, .pick-card, .pick-head, .pick-title,
+       .pick-fn, .pick-desc, .topic-pill) stay in scoped <style>
+       because they repeat across 8 exhibition halls × 2 languages,
+       and inlining them would turn the markup into noise. This is
+       the same "scoped CSS is a tool" principle applied to Header.
+  -->
+  <section class="my-24" id="categories">
+    <div class="mb-8 text-center">
+      <h2
+        class="text-center font-['jf-lanyangming','Noto_Serif_TC','Source_Han_Serif_TC',serif] text-[2rem] font-light text-[#1f2937]"
+      >
+        {t('home.categories.heading')}
+      </h2>
     </div>
 
-    <div class="exhibition-halls">
+    <div
+      class="exhibition-halls mx-auto max-w-[800px] px-8 max-[768px]:px-6 max-[480px]:px-4"
+    >
       {/* ── Hall I: What this island looks like ── */}
       <div class="exhibition-hall">
         <div class="hall-divider">
@@ -664,10 +679,21 @@ const readingPathFooterItems = [
       </div>
     </div>
 
-    <div class="section-divider">
-      <div class="divider-line"></div>
-      <span class="divider-text">{t('home.categories.divider')}</span>
-      <div class="divider-line"></div>
+    <div
+      class="mx-auto my-12 flex max-w-[800px] items-center px-8 max-[480px]:px-4"
+    >
+      <div
+        class="h-px flex-1 bg-[linear-gradient(90deg,transparent,#d1d5db,transparent)]"
+      >
+      </div>
+      <span
+        class="whitespace-nowrap px-6 font-[var(--font-title,'Noto_Serif_TC',serif)] text-[1.3rem] font-bold tracking-[0.05em] text-[#1a3c34]"
+        >{t('home.categories.divider')}</span
+      >
+      <div
+        class="h-px flex-1 bg-[linear-gradient(90deg,transparent,#d1d5db,transparent)]"
+      >
+      </div>
     </div>
 
     <CategoryGrid lang="en" />
@@ -680,29 +706,18 @@ const readingPathFooterItems = [
   <ContributeSection />
 </Layout>
 
+<!--
+  Phase 6 partial migration — en/index.astro
+  ──────────────────────────────────────────
+  Wrappers (section margin, header, exhibition-halls padding,
+  section-title, section-divider, divider-line, divider-text) moved
+  to inline Tailwind utilities. The 9 card-pattern classes below
+  stay as scoped CSS because they repeat across 8 exhibition halls
+  and inlining them would drown the markup in class strings. Same
+  principle used for Header in Phase 5.
+-->
 <style>
-  .section-title {
-    font-family:
-      'jf-lanyangming', 'Noto Serif TC', 'Source Han Serif TC', serif;
-    font-size: 2rem;
-    font-weight: 300;
-    color: #1f2937;
-    text-align: center;
-  }
-
-  /* ===== EXHIBITION HALLS ===== */
-  .exhibition {
-    margin: 6rem 0;
-  }
-  .exhibition-header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  .exhibition-halls {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
+  /* ── Exhibition hall card pattern (repeats × 8) ──────────────── */
   .hall-divider {
     display: flex;
     align-items: center;
@@ -819,47 +834,15 @@ const readingPathFooterItems = [
     color: #4b5563;
     line-height: 1.5;
   }
-  .section-divider {
-    display: flex;
-    align-items: center;
-    margin: 3rem auto 2rem;
-    max-width: 800px;
-    padding: 0 2rem;
-  }
-  .divider-line {
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #d1d5db, transparent);
-  }
-  .divider-text {
-    padding: 0 1.5rem;
-    font-family: var(--font-title, 'Noto Serif TC', serif);
-    color: #1a3c34;
-    font-size: 1.3rem;
-    font-weight: 700;
-    white-space: nowrap;
-    letter-spacing: 0.05em;
-  }
 
-  @media (max-width: 768px) {
-    .exhibition-halls {
-      padding: 0 1.5rem;
-    }
-    .hall-label {
-      font-size: 0.95rem;
-      padding: 0 1rem;
-    }
-  }
   @media (max-width: 480px) {
-    .exhibition-halls {
-      padding: 0 1rem;
-    }
     .hall-body p {
       font-size: 1rem;
     }
     .hall-label {
       font-size: 0.85rem;
       letter-spacing: 0.06em;
+      padding: 0 1rem;
     }
     .hall-divider {
       margin: 3rem 0 2rem;
@@ -867,7 +850,10 @@ const readingPathFooterItems = [
     .pick-card {
       width: 100%;
     }
-    .section-divider {
+  }
+  @media (max-width: 768px) {
+    .hall-label {
+      font-size: 0.95rem;
       padding: 0 1rem;
     }
   }
