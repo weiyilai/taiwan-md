@@ -293,23 +293,54 @@ for (const [cat, folder] of Object.entries(categoryMapping)) {
 const graphData = JSON.stringify({ nodes, edges });
 ---
 
+<!--
+  Phase 6 page migration #6: graph.astro (zh-TW)
+  ──────────────────────────────────────────────
+  - Scoped <style> removed entirely (~100 lines CSS deleted)
+  - `.graph-page` class kept as a hook — it's referenced from
+    `src/styles/global.css` @layer base rule
+    `body.page-default main.graph-page { padding-top: 0 }`
+  - `#graph-search`, `#graph-container`, `#tooltip` are all
+    referenced by the d3 script (JS toggles tooltip.style.display,
+    so the initial `hidden` is enough — JS wins with inline style)
+  - The ::placeholder pseudo becomes a Tailwind `placeholder:*` variant
+-->
 <Layout title="🕸️ 知識圖譜 — Taiwan.md">
-  <main class="graph-page">
-    <div class="graph-header">
-      <h1>🕸️ 知識圖譜 Knowledge Graph</h1>
-      <p>Taiwan.md 的所有知識節點與連結</p>
-      <div class="search-box">
+  <main class="graph-page flex h-screen flex-col">
+    <div
+      class="flex flex-wrap items-center gap-4 bg-[#1a1a2e] px-[var(--space-page-x)] py-4 text-white max-[768px]:items-start max-[768px]:px-4 max-[768px]:py-[0.9rem]"
+    >
+      <h1
+        class="m-0 font-[var(--font-editorial)] text-[clamp(1.25rem,2.4vw,1.8rem)] font-extrabold [letter-spacing:var(--title-letter-spacing)] [line-height:var(--title-line-height)] max-[768px]:text-[1.12rem] max-[768px]:leading-[1.3]"
+      >
+        🕸️ 知識圖譜 Knowledge Graph
+      </h1>
+      <p
+        class="m-0 max-w-[34rem] text-[0.98rem] leading-[1.6] text-white/[0.82] opacity-[0.78] max-[768px]:order-3 max-[768px]:w-full max-[768px]:text-[0.9rem]"
+      >
+        Taiwan.md 的所有知識節點與連結
+      </p>
+      <div
+        class="ml-auto flex items-center gap-2 max-[768px]:order-4 max-[768px]:ml-0 max-[768px]:w-full max-[768px]:flex-wrap"
+      >
         <input
           id="graph-search"
           type="search"
           placeholder="搜尋節點或文章"
           aria-label="搜尋知識圖譜節點"
+          class="w-[200px] rounded-md border border-white/30 bg-white/10 px-[0.8rem] py-[0.4rem] text-[0.9rem] text-white outline-none transition-[border-color,background] duration-200 placeholder:text-white/50 focus:border-[#3b82f6] focus:bg-white/15 max-[768px]:w-full"
         />
-        <span id="search-count" class="search-count"></span>
+        <span
+          id="search-count"
+          class="whitespace-nowrap text-[0.8rem] text-white/70"></span>
       </div>
     </div>
-    <div id="graph-container"></div>
-    <div id="tooltip" class="tooltip"></div>
+    <div id="graph-container" class="flex-1 overflow-hidden bg-[#fafafa]"></div>
+    <div
+      id="tooltip"
+      class="pointer-events-none absolute z-[100] hidden rounded-md bg-[rgba(26,26,46,0.9)] px-[0.8rem] py-[0.4rem] text-[0.85rem] text-white"
+    >
+    </div>
   </main>
 </Layout>
 
@@ -549,107 +580,3 @@ const graphData = JSON.stringify({ nodes, edges });
     });
   }
 </script>
-
-<style>
-  .graph-page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .graph-header {
-    padding: 1rem var(--space-page-x);
-    background: #1a1a2e;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .graph-header h1 {
-    font-size: clamp(1.25rem, 2.4vw, 1.8rem);
-    margin: 0;
-    font-family: var(--font-editorial);
-    line-height: var(--title-line-height);
-    letter-spacing: var(--title-letter-spacing);
-    font-weight: 800;
-  }
-  .graph-header p {
-    opacity: 0.78;
-    margin: 0;
-    font-size: 0.98rem;
-    line-height: 1.6;
-    max-width: 34rem;
-    color: rgba(255, 255, 255, 0.82);
-  }
-  .search-box {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  #graph-search {
-    padding: 0.4rem 0.8rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 0.9rem;
-    width: 200px;
-    outline: none;
-    transition:
-      border-color 0.2s,
-      background 0.2s;
-  }
-  #graph-search::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  #graph-search:focus {
-    border-color: #3b82f6;
-    background: rgba(255, 255, 255, 0.15);
-  }
-  .search-count {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.8rem;
-    white-space: nowrap;
-  }
-  #graph-container {
-    flex: 1;
-    background: #fafafa;
-    overflow: hidden;
-  }
-  .tooltip {
-    display: none;
-    position: absolute;
-    background: rgba(26, 26, 46, 0.9);
-    color: white;
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    pointer-events: none;
-    z-index: 100;
-  }
-  @media (max-width: 768px) {
-    .graph-header {
-      align-items: flex-start;
-      padding: 0.9rem 1rem;
-    }
-    .graph-header h1 {
-      font-size: 1.12rem;
-      line-height: 1.3;
-    }
-    .graph-header p {
-      width: 100%;
-      font-size: 0.9rem;
-      order: 3;
-    }
-    .search-box {
-      width: 100%;
-      order: 4;
-      margin-left: 0;
-      flex-wrap: wrap;
-    }
-    #graph-search {
-      width: 100%;
-    }
-  }
-</style>

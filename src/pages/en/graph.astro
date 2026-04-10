@@ -308,28 +308,46 @@ for (const [cat, folder] of Object.entries(categoryMapping)) {
 const graphData = JSON.stringify({ nodes, edges });
 ---
 
+<!--
+  Phase 6 page migration #7: en/graph.astro
+  ─────────────────────────────────────────
+  Mirrors graph.astro (zh-TW) except: simpler header layout (no
+  max-[768px]: wrap), an extra ← Home link, no .graph-header p
+  max-width. Same `.graph-page` hook kept for global.css base rule.
+-->
 <Layout
   title="🕸️ Knowledge Graph — Taiwan.md"
   description="All knowledge nodes and connections on Taiwan.md"
   lang="en"
 >
-  <main class="graph-page">
-    <div class="graph-header">
-      <h1>🕸️ Knowledge Graph</h1>
-      <p>All knowledge nodes and connections on Taiwan.md</p>
-      <div class="search-box">
+  <main class="graph-page flex h-screen flex-col">
+    <div class="flex items-center gap-8 bg-[#1a1a2e] px-8 py-4 text-white">
+      <h1 class="m-0 whitespace-nowrap text-[1.3rem]">🕸️ Knowledge Graph</h1>
+      <p class="m-0 text-[0.9rem] opacity-70">
+        All knowledge nodes and connections on Taiwan.md
+      </p>
+      <div class="ml-auto flex items-center gap-2">
         <input
           id="graph-search"
           type="text"
           placeholder="🔍 Search nodes..."
           autocomplete="off"
+          class="w-[200px] rounded-md border border-white/30 bg-white/10 px-[0.8rem] py-[0.4rem] text-[0.9rem] text-white outline-none transition-colors duration-200 placeholder:text-white/50 focus:border-[#3b82f6] focus:bg-white/15"
         />
-        <span id="search-count" class="search-count"></span>
+        <span
+          id="search-count"
+          class="whitespace-nowrap text-[0.8rem] text-white/70"></span>
       </div>
-      <a href="/en" class="back">&larr; Home</a>
+      <a href="/en" class="text-[0.9rem] text-[#3b82f6] no-underline"
+        >&larr; Home</a
+      >
     </div>
-    <div id="graph-container"></div>
-    <div id="tooltip" class="tooltip"></div>
+    <div id="graph-container" class="flex-1 overflow-hidden bg-[#fafafa]"></div>
+    <div
+      id="tooltip"
+      class="pointer-events-none absolute z-[100] hidden rounded-md bg-[rgba(26,26,46,0.9)] px-[0.8rem] py-[0.4rem] text-[0.85rem] text-white"
+    >
+    </div>
   </main>
 </Layout>
 
@@ -500,79 +518,3 @@ const graphData = JSON.stringify({ nodes, edges });
     });
   }
 </script>
-
-<style>
-  .graph-page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .graph-header {
-    padding: 1rem 2rem;
-    background: #1a1a2e;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  .graph-header h1 {
-    font-size: 1.3rem;
-    margin: 0;
-    white-space: nowrap;
-  }
-  .graph-header p {
-    opacity: 0.7;
-    margin: 0;
-    font-size: 0.9rem;
-  }
-  .search-box {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  #graph-search {
-    padding: 0.4rem 0.8rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 0.9rem;
-    width: 200px;
-    outline: none;
-    transition: border-color 0.2s;
-  }
-  #graph-search::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  #graph-search:focus {
-    border-color: #3b82f6;
-    background: rgba(255, 255, 255, 0.15);
-  }
-  .search-count {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.8rem;
-    white-space: nowrap;
-  }
-  .back {
-    color: #3b82f6;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-  #graph-container {
-    flex: 1;
-    background: #fafafa;
-    overflow: hidden;
-  }
-  .tooltip {
-    display: none;
-    position: absolute;
-    background: rgba(26, 26, 46, 0.9);
-    color: white;
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    pointer-events: none;
-    z-index: 100;
-  }
-</style>
