@@ -41,22 +41,56 @@ function extractHeadings(html: string): Heading[] {
 const headings = extractHeadings(content);
 ---
 
-{
+<!--
+  Phase 4 leaf migration #5: TableOfContents.astro
+  ────────────────────────────────────────────────
+  - Scoped <style> block removed entirely
+  - All classes → Tailwind atomic utilities
+  - .toc-link.active still controlled via the JS below (keeps the
+    existing active-class toggling logic unchanged), but the active
+    styles are now inside [&.active]: arbitrary variant so they land
+    when classList.add('active') is applied
+  - Preserves scrollbar-color via arbitrary custom-property syntax
+  - H3 text has nested font-size adjustment via [:where(...)] selector
+
+  Note: .toc-link .active is applied by the IntersectionObserver at
+  runtime. Tailwind's group-has-variant isn't ideal here because the
+  active state is on the link itself. Using [&.active]: to match the
+  link when it carries the class.
+-->{
   headings.length > 1 && (
-    <nav class="toc" aria-label="文章目錄" id="toc">
-      <p class="toc-heading">目錄</p>
-      <ol class="toc-list">
+    <nav
+      class="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto py-6 [scrollbar-color:rgba(26,60,52,0.15)_transparent] [scrollbar-width:thin]"
+      aria-label="文章目錄"
+      id="toc"
+    >
+      <p class="mb-5 px-1 font-['Inter',system-ui,sans-serif] text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#9aa89e]">
+        目錄
+      </p>
+      <ol class="m-0 flex list-none flex-col gap-[0.1rem] p-0">
         {headings.map((h, i) => (
-          <li class={`toc-item toc-item--h${h.level}`}>
-            <a href={`#${h.id}`} class="toc-link" data-toc-id={h.id}>
-              <span class="toc-num">
+          <li class={h.level === 3 ? 'pl-2' : ''}>
+            <a
+              href={`#${h.id}`}
+              class="toc-link flex items-baseline gap-[0.6rem] rounded-md border-l-2 border-transparent px-[0.6rem] py-[0.42rem] no-underline transition-[background-color,color] duration-150 hover:bg-[rgba(26,60,52,0.05)] hover:text-[#1a3c34] [&.active]:border-l-[#006d77] [&.active]:bg-[rgba(0,109,119,0.06)] [&.active]:text-[#006d77]"
+              data-toc-id={h.id}
+            >
+              <span class="w-[1.6rem] flex-shrink-0 font-['Inter',system-ui,sans-serif] text-[0.65rem] [font-variant-numeric:tabular-nums] text-[#b8c4be]">
                 {h.level === 2
                   ? String(
                       headings.filter((x, j) => x.level === 2 && j <= i).length,
                     ).padStart(2, '0')
                   : ''}
               </span>
-              <span class="toc-text">{h.text}</span>
+              <span
+                class={`font-['Noto_Serif_TC',serif] leading-[1.45] [.toc-link:hover_&]:text-inherit [.toc-link.active_&]:text-inherit ${
+                  h.level === 2
+                    ? 'text-[0.82rem] font-medium text-[#3a4f44]'
+                    : 'text-[0.78rem] text-[#7a8b7e]'
+                }`}
+              >
+                {h.text}
+              </span>
             </a>
           </li>
         ))}
@@ -64,95 +98,6 @@ const headings = extractHeadings(content);
     </nav>
   )
 }
-
-<style>
-  .toc {
-    position: sticky;
-    top: 6rem;
-    max-height: calc(100vh - 8rem);
-    overflow-y: auto;
-    padding: 1.5rem 0;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(26, 60, 52, 0.15) transparent;
-  }
-
-  .toc-heading {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 0.68rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #9aa89e;
-    margin-bottom: 1.25rem;
-    padding: 0 0.25rem;
-  }
-
-  .toc-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-  }
-
-  .toc-item {
-  }
-
-  .toc-link {
-    display: flex;
-    align-items: baseline;
-    gap: 0.6rem;
-    padding: 0.42rem 0.6rem;
-    border-radius: 6px;
-    text-decoration: none;
-    transition:
-      background 0.15s,
-      color 0.15s;
-    border-left: 2px solid transparent;
-  }
-  .toc-link:hover {
-    background: rgba(26, 60, 52, 0.05);
-    color: #1a3c34;
-  }
-  .toc-link.active {
-    border-left-color: #006d77;
-    background: rgba(0, 109, 119, 0.06);
-    color: #006d77;
-  }
-
-  .toc-num {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 0.65rem;
-    color: #b8c4be;
-    flex-shrink: 0;
-    width: 1.6rem;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .toc-text {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 0.82rem;
-    color: #5a6b5e;
-    line-height: 1.45;
-    .toc-link:hover &,
-    .toc-link.active & {
-      color: inherit;
-    }
-  }
-
-  .toc-item--h2 .toc-text {
-    font-weight: 500;
-    color: #3a4f44;
-  }
-  .toc-item--h3 {
-    padding-left: 0.5rem;
-  }
-  .toc-item--h3 .toc-text {
-    font-size: 0.78rem;
-    color: #7a8b7e;
-  }
-</style>
 
 <script>
   (function () {
