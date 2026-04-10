@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import tailwindcss from '@tailwindcss/vite';
 import rehypeExternalLinks from 'rehype-external-links';
 import remarkWikilinks from './plugins/remark-wikilinks.mjs';
 
@@ -46,5 +47,8 @@ export default defineConfig({
         { target: '_blank', rel: ['noopener', 'noreferrer'] },
       ],
     ],
+  },
+  vite: {
+    plugins: [tailwindcss()],
   },
 });

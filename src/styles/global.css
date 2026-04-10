@@ -1,0 +1,26 @@
+/**
+ * global.css — site-wide stylesheet entry point
+ *
+ * Phase 1 scope (2026-04-10): this file only imports tokens.css to
+ * establish the SSOT. Tailwind is installed and wired into Vite via
+ * astro.config.mjs, but it is NOT imported here yet.
+ *
+ * Why not import Tailwind now?
+ *   `@import 'tailwindcss' source(none)` disables content scanning
+ *   but DOES NOT disable the preflight base layer. Preflight resets
+ *   `*, ::before, ::after { margin:0; padding:0; border:0 solid; ... }`
+ *   which silently overrides existing site CSS and produces a ~5-12%
+ *   visual diff across every page. Phase 1's DOD is "zero visual
+ *   change", so we hold off until Phase 2 where we'll use the layered
+ *   import trick to opt out of preflight:
+ *
+ *     @import 'tailwindcss/theme.css' layer(theme);
+ *     @import 'tailwindcss/utilities.css' layer(utilities);
+ *     // (skipping 'tailwindcss/preflight.css')
+ *
+ * ⚠️ New design tokens → tokens.css (the SSOT).
+ * ⚠️ New component classes → wait for Phase 2 @layer components.
+ * ⚠️ Do not add free-form CSS here — this file is intentionally minimal.
+ */
+
+@import './tokens.css';
