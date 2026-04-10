@@ -49,10 +49,10 @@ if [[ ! -d "$CONFIG_DIR/credentials" ]]; then
 fi
 
 # 1. Cloudflare (pure stdlib, fast)
-echo -e "${BLU}[1/3]${RST} Cloudflare crawler stats..."
+echo -e "${BLU}[1/3]${RST} Cloudflare analytics (Free tier)..."
 if python3 scripts/tools/fetch-cloudflare.py --days "$DAYS" > /tmp/cf-summary.json 2>/tmp/cf-err; then
   echo -e "   ${GRN}✅ success${RST}"
-  cat /tmp/cf-summary.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(f'   {d[\"total_requests\"]:,} total / {d[\"bot_requests\"]:,} bot')" 2>/dev/null || true
+  cat /tmp/cf-summary.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(f'   {d[\"total_requests\"]:,} req / {d[\"unique_visitors\"]:,} uniques / {d[\"threats\"]} threats')" 2>/dev/null || true
 else
   echo -e "   ${YEL}⚠️  skipped${RST}"
   head -3 /tmp/cf-err

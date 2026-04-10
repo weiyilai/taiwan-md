@@ -63,14 +63,21 @@ def fail(msg, code=1):
 
 
 def reexec_in_venv():
-    """If a venv exists at ~/.config/taiwan-md/venv, re-exec this script with its python."""
+    """If a venv exists at ~/.config/taiwan-md/venv, re-exec this script with its python.
+
+    Note: venv python is typically a symlink to the system python, so we can't compare
+    executable paths (.resolve() would collapse both sides). Instead use sys.prefix vs
+    sys.base_prefix — Python's built-in venv detection.
+    """
     venv_python = VENV_DIR / "bin" / "python3"
     if not venv_python.exists():
         return  # no venv, proceed with system python
-    current = Path(sys.executable).resolve()
-    target = venv_python.resolve()
-    if current == target:
-        return  # already in venv
+
+    # Already in a venv AND that venv is the one we want?
+    in_venv = sys.prefix != sys.base_prefix
+    if in_venv and Path(sys.prefix).resolve() == VENV_DIR.resolve():
+        return  # already in the right venv
+
     # Re-exec
     os.execv(str(venv_python), [str(venv_python), *sys.argv])
 

@@ -60,12 +60,12 @@ def fail(msg, code=1):
 
 
 def reexec_in_venv():
+    """Re-exec into the venv if available. See fetch-ga4.py for rationale."""
     venv_python = VENV_DIR / "bin" / "python3"
     if not venv_python.exists():
         return
-    current = Path(sys.executable).resolve()
-    target = venv_python.resolve()
-    if current == target:
+    in_venv = sys.prefix != sys.base_prefix
+    if in_venv and Path(sys.prefix).resolve() == VENV_DIR.resolve():
         return
     os.execv(str(venv_python), [str(venv_python), *sys.argv])
 
