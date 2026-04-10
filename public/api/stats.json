@@ -1,8 +1,8 @@
 {
-  "totalArticles": 972,
+  "totalArticles": 982,
   "totalCategories": 20,
-  "estimatedContributors": 65,
-  "totalTags": 2455,
+  "estimatedContributors": 66,
+  "totalTags": 2477,
   "categories": [
     {
       "name": "en",
@@ -14,11 +14,11 @@
     },
     {
       "name": "ja",
-      "count": 62
+      "count": 69
     },
     {
       "name": "History",
-      "count": 27
+      "count": 28
     },
     {
       "name": "Society",
@@ -82,7 +82,7 @@
     },
     {
       "name": "ko",
-      "count": 26
+      "count": 28
     }
   ],
   "topTags": [
@@ -119,7 +119,15 @@
       "count": 13
     },
     {
+      "name": "Technology",
+      "count": 13
+    },
+    {
       "name": "金曲獎",
+      "count": 12
+    },
+    {
+      "name": "AI",
       "count": 12
     },
     {
@@ -128,10 +136,6 @@
     },
     {
       "name": "教育",
-      "count": 12
-    },
-    {
-      "name": "Technology",
       "count": 12
     },
     {
@@ -161,15 +165,11 @@
     {
       "name": "台灣文化",
       "count": 10
-    },
-    {
-      "name": "ODM",
-      "count": 10
     }
   ],
   "languageDistribution": {
-    "zh-TW": 972,
+    "zh-TW": 982,
     "en": 0
   },
-  "lastUpdated": "2026-04-09T16:14:31.264Z"
+  "lastUpdated": "2026-04-10T02:34:57.497Z"
 }

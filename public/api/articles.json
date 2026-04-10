@@ -183,6 +183,25 @@
     "path": "Lifestyle/小綠人.md"
   },
   {
+    "title": "中正紀念堂",
+    "description": "它是台北市中心最巨大的政治圖騰，也是最民主的練舞場。從威權的聖殿到轉型正義的暴風眼，這座建築紀錄了台灣靈魂最劇烈的震盪。",
+    "category": "History",
+    "tags": [
+      "轉型正義",
+      "台北地標",
+      "楊卓成",
+      "野百合學運",
+      "威權地景",
+      "觀光",
+      "信義計畫區"
+    ],
+    "url": "https://taiwan.md/History/%E4%B8%AD%E6%AD%A3%E7%B4%80%E5%BF%B5%E5%A0%82",
+    "readingTime": 12,
+    "featured": false,
+    "date": "2026-04-10",
+    "path": "History/中正紀念堂.md"
+  },
+  {
     "title": "中鋼：鐵頭部長與十大建設的鋼鐵傳奇",
     "description": "從趙耀東歐美談判智取技術，到高雄小港升起的第一縷白煙，中鋼用50年打造台灣重工業脊樑，是十大建設最成功的明珠",
     "category": "Economy",
@@ -496,6 +515,23 @@
     "featured": false,
     "date": "2026-03-18",
     "path": "History/台海危機與兩岸關係發展.md"
+  },
+  {
+    "title": "台湾人工知能実験室（Taiwan AI Labs）",
+    "description": "「PTTの父」杜奕瑾が創立した非営利AI研究機関。スマート医療・スマートシティ・フェイクニュース対策に取り組み、科技向善とオープンソース精神を推進する。",
+    "category": "ja",
+    "tags": [
+      "人工知能",
+      "スマート医療",
+      "杜奕瑾",
+      "科技イノベーション",
+      "情報戦対策"
+    ],
+    "url": "https://taiwan.md/ja/Technology/taiwan-ai-labs",
+    "readingTime": 8,
+    "featured": false,
+    "date": "2026-03-19",
+    "path": "ja/Technology/taiwan-ai-labs.md"
   },
   {
     "title": "台湾交通システム：一つの島がどうやって自分を90分に圧縮したのか",
@@ -959,6 +995,24 @@
     "featured": false,
     "date": "2026-03-20",
     "path": "ja/History/elections-and-party-politics.md"
+  },
+  {
+    "title": "台湾のAI日常——人工知能が街角に溶け込んだとき",
+    "description": "台湾人は毎日十数回AIとやり取りしている。しかしほとんどの人はAIと話しているとは気づいていない。",
+    "category": "ja",
+    "tags": [
+      "AI",
+      "人工知能",
+      "LINE",
+      "スマート医療",
+      "スマート農業",
+      "日常テクノロジー"
+    ],
+    "url": "https://taiwan.md/ja/Technology/ai-in-daily-life",
+    "readingTime": 22,
+    "featured": false,
+    "date": "2026-03-29",
+    "path": "ja/Technology/ai-in-daily-life.md"
   },
   {
     "title": "台湾のコンビニ文化",
@@ -8500,6 +8554,41 @@
     "path": "Technology/AI人工智慧產業.md"
   },
   {
+    "title": "AI島国の台湾：ハードウェア帝国の上に「AIの魂」を育てる",
+    "description": "世界のAI訓練用チップの9割が台湾産。しかしこの島のAIの野心は代工場に留まらない——PTT創設者が作ったAI実験室から、政府が推す繁体字中国語LLM「TAIDE」まで、台湾は独自のAIアイデンティティを模索している。",
+    "category": "ja",
+    "tags": [
+      "人工知能",
+      "AI",
+      "半導体",
+      "科技政策",
+      "デジタル転換"
+    ],
+    "url": "https://taiwan.md/ja/Technology/ai-strategy",
+    "readingTime": 22,
+    "featured": false,
+    "date": "2026-03-19",
+    "path": "ja/Technology/ai-strategy.md"
+  },
+  {
+    "title": "AI島国の台頭：台湾人工知能の発展と未来戦略",
+    "description": "AlphaGoの衝撃から生成AI時代まで、台湾が「小国大戦略」でAI分野の独自ポジションを切り開いた歩み",
+    "category": "ja",
+    "tags": [
+      "人工知能",
+      "AI政策",
+      "半導体",
+      "科技政策",
+      "デジタル転換",
+      "イノベーション"
+    ],
+    "url": "https://taiwan.md/ja/Technology/ai-development",
+    "readingTime": 18,
+    "featured": false,
+    "date": "2026-03-19",
+    "path": "ja/Technology/ai-development.md"
+  },
+  {
     "title": "AI島國的崛起：台灣人工智慧發展與未來策略",
     "description": "從AlphaGo震撼到生成式AI浪潮，台灣如何以「小國大戰略」在人工智慧領域找到獨特定位",
     "category": "Technology",
@@ -8516,6 +8605,22 @@
     "featured": true,
     "date": "2026-03-19",
     "path": "Technology/AI發展.md"
+  },
+  {
+    "title": "AI産業：NVIDIAチップ製造から台湾独自のAIエコシステムへ",
+    "description": "TSMC（台積電）がNVIDIAのAIチップを製造することで、台湾はグローバルAIハードウェアサプライチェーンの要所に立っている。2023年の生成AI爆発後、台湾は「代わりにチップを作る」立場から「AIをどう使うか」を本格的に考え始めた。",
+    "category": "ja",
+    "tags": [
+      "AI",
+      "人工知能",
+      "科技産業",
+      "Technology"
+    ],
+    "url": "https://taiwan.md/ja/Technology/ai-industry",
+    "readingTime": 16,
+    "featured": false,
+    "date": "2026-03-20",
+    "path": "ja/Technology/ai-industry.md"
   },
   {
     "title": "ALIEN Art Centre (Jinma Guest House)",
@@ -11236,6 +11341,17 @@
     "featured": true,
     "date": "2026-03-21",
     "path": "en/Technology/ptt-bulletin-board-system.md"
+  },
+  {
+    "title": "PTT批踢踢：台湾で最も頑固な公共広場",
+    "description": "1995年に学生寮で生まれたBBSが、30年後もなおテキストだけの画面で動き続けながら、台湾のネット言語、政治討論、そして集合的記憶を深く形づくってきた",
+    "category": "ja",
+    "tags": [],
+    "url": "https://taiwan.md/ja/Technology/ptt",
+    "readingTime": 19,
+    "featured": false,
+    "date": "2026-03-21",
+    "path": "ja/Technology/ptt.md"
   },
   {
     "title": "Qing Dynasty Rule",
@@ -14000,6 +14116,24 @@
     "path": "en/Technology/threads-in-taiwan.md"
   },
   {
+    "title": "Threadsと台湾：Twitterの代替から「脆（ツイ）」文化の主戦場へ",
+    "description": "世界のThreadsユーザーが熱を冷ましていく中、台湾だけが全く逆の軌跡を描いた——350万ユーザー、世界第2位の市場、使用時間世界トップ。Z世代の本音、政治家の「下凡」、ミームの狂宴がここに集まり、台湾のSNS生態を塗り替えた。",
+    "category": "ja",
+    "tags": [
+      "SNS",
+      "デジタル文化",
+      "Threads",
+      "Z世代",
+      "政治コミュニケーション",
+      "ネットフォーラム"
+    ],
+    "url": "https://taiwan.md/ja/Technology/threads-in-taiwan",
+    "readingTime": 15,
+    "featured": false,
+    "date": "2026-03-24",
+    "path": "ja/Technology/threads-in-taiwan.md"
+  },
+  {
     "title": "Topography and Geology",
     "description": "A 6-million-year-old island hiding 200-million-year-old memories — the miracle of the world's youngest orogenic belt meeting the most violent plate collision",
     "category": "en",
@@ -14735,6 +14869,17 @@
     "path": "ko/Art/taiwan-new-media-art.md"
   },
   {
+    "title": "대만 수요음 문화: 버블티에서 글로벌 라이프스타일까지",
+    "description": "한 잔의 차가 어떻게 산업이 되고, 사회적 의식이 되었으며, 대만을 대표하는 문화 수출품으로 자리 잡았는지",
+    "category": "ko",
+    "tags": [],
+    "url": "https://taiwan.md/ko/Food/hand-shaken-drink-culture",
+    "readingTime": 14,
+    "featured": false,
+    "date": "2026-03-19",
+    "path": "ko/Food/hand-shaken-drink-culture.md"
+  },
+  {
     "title": "대만 시우루차이(手路菜): 의미, 유래, 그리고 반줘(辦桌) 문화의 자신작 요리",
     "description": "시우루차이(手路菜, 대만어 tshiú-lōo-tshài)는 \"자신 있는 요리\"를 뜻한다. 가오슝 네이먼의 백악질 토양에서는 농작물이 자라지 않았지만, 대만에서 총푸스(總鋪師) 밀도가 가장 높은 마을이 탄생했다. 전성기에는 한 업체가 연간 25,000상을 차렸고, 성수기 월매출은 1,200만 대만달러에 달했다. 차이웨이탕(菜尾湯) 한 솥을 끓이는 데 4시간에서 8시간이 걸리며, 잘 끓였는지 못 끓였는지는 다음 날 온 마을이 알았다.",
     "category": "ko",
@@ -14901,6 +15046,24 @@
     "featured": true,
     "date": "2026-03-19",
     "path": "ko/People/jeremy-lin.md"
+  },
+  {
+    "title": "우육면",
+    "description": "외성인의 향수에서 대만의 국민 음식으로: 우육면의 역사, 지역별 풍미, 그리고 세계화 여정",
+    "category": "ko",
+    "tags": [
+      "음식",
+      "우육면",
+      "외성인 음식문화",
+      "문화 융합",
+      "타이베이 우육면 축제",
+      "미슐랭"
+    ],
+    "url": "https://taiwan.md/ko/Food/beef-noodle-soup",
+    "readingTime": 12,
+    "featured": false,
+    "date": "2026-03-17",
+    "path": "ko/Food/beef-noodle-soup.md"
   },
   {
     "title": "쩐주나이차(珍珠奶茶)",

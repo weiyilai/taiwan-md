@@ -1,7 +1,133 @@
 {
-  "generatedAt": "2026-04-09T16:43:17.424Z",
+  "generatedAt": "2026-04-10T02:34:58.395Z",
   "source": "git",
   "commits": [
+    {
+      "hash": "a4c4501d6e16763df40c7b9364f10df120f25e44",
+      "date": "2026-04-10T10:32:22+08:00",
+      "author": "Wu Che Yu",
+      "message": "Merge pull request #357 from dreamline2/translate/digital-id-zh-tw"
+    },
+    {
+      "hash": "966fec847052db1b70059153b0e65441c5d7a2d5",
+      "date": "2026-04-10T10:31:49+08:00",
+      "author": "Wu Che Yu",
+      "message": "Merge pull request #358 from dreamline2/feat/ko-hand-shaken-drink"
+    },
+    {
+      "hash": "c8726ef924366ddb62b0b4d84d58fa131d3db199",
+      "date": "2026-04-10T10:31:17+08:00",
+      "author": "Wu Che Yu",
+      "message": "Merge pull request #354 from idlccp1984/patch-11"
+    },
+    {
+      "hash": "fdeada00bf4c8218b3aebb85a8a230d1f142e4af",
+      "date": "2026-04-10T11:20:08+09:00",
+      "author": "Wilson Chen",
+      "message": "refactor(i18n): improve Korean hand-shaken drink narrative flow"
+    },
+    {
+      "hash": "692152bd241197bdfb0266c09153e5aeffa78956",
+      "date": "2026-04-10T11:19:52+09:00",
+      "author": "Wilson Chen",
+      "message": "fix(i18n): remove duplicated body in Korean beef noodle soup translation"
+    },
+    {
+      "hash": "65ad40fd38cc61960c0e66be9b25f381aab741d8",
+      "date": "2026-04-10T10:07:29+08:00",
+      "author": "Wu Che Yu",
+      "message": "Merge pull request #356 from Link1515/ja/ptt"
+    },
+    {
+      "hash": "bb81dede55f74bc83831f2a7d8bd06942ba37f36",
+      "date": "2026-04-10T10:07:15+08:00",
+      "author": "Wu Che Yu",
+      "message": "Merge pull request #344 from dreamline2/feat/ko-category-d3-viz"
+    },
+    {
+      "hash": "97fee3213713c274142d6016138488b1f68d6af9",
+      "date": "2026-04-10T10:07:05+08:00",
+      "author": "Wu Che Yu",
+      "message": "Merge pull request #359 from Link1515/fix/chart"
+    },
+    {
+      "hash": "ed524a50a7c9aac7461d6b934961067a79c4c6db",
+      "date": "2026-04-10T10:39:13+09:00",
+      "author": "Wilson Chen",
+      "message": "feat(i18n): add Korean translation for hand-shaken drink culture"
+    },
+    {
+      "hash": "ec6ab63614370b4a685056e29092b4780dd525a2",
+      "date": "2026-04-10T09:33:25+08:00",
+      "author": "Link1515",
+      "message": "fix: keep dashboard growth tooltip within chart bounds"
+    },
+    {
+      "hash": "231d488345e3648dff48959f935ebd2c0820aa26",
+      "date": "2026-04-10T10:24:31+09:00",
+      "author": "Wilson Chen",
+      "message": "feat(i18n): add Korean translation for beef noodle soup"
+    },
+    {
+      "hash": "5864ee74346647fd2e8274062e50c6bfc1e57d8b",
+      "date": "2026-04-10T09:16:37+08:00",
+      "author": "Link1515",
+      "message": "translate(ja): PTT批踢踢 → ptt"
+    },
+    {
+      "hash": "db18674ddc938d318013bfb760d9d4db6aaf1e99",
+      "date": "2026-04-10T02:47:03+08:00",
+      "author": "frank890417",
+      "message": "fix(dashboard): refresh dashboard data json"
+    },
+    {
+      "hash": "d13e3670accd888c134eb261e9324414bef1c284",
+      "date": "2026-04-10T01:57:04+08:00",
+      "author": "idlccp1984",
+      "message": "Create 中正紀念堂.md"
+    },
+    {
+      "hash": "5d83ee9ffebd703565f490cc13f0c1a60d22eabb",
+      "date": "2026-04-10T01:21:28+08:00",
+      "author": "Che-Yu Wu",
+      "message": "feat(commits): reuse changelog commit cards on homepage"
+    },
+    {
+      "hash": "a2a8c947281d5f673832f5ea88d7838d647efb18",
+      "date": "2026-04-10T00:56:12+08:00",
+      "author": "Che-Yu Wu",
+      "message": "refactor(commits): share commit log component between home and changelog"
+    },
+    {
+      "hash": "8e56ee33c2ea1cb5fb2599e2988afa82b7e0ad20",
+      "date": "2026-04-10T00:44:51+08:00",
+      "author": "Che-Yu Wu",
+      "message": "fix(changelog): ship cached commit feed and keep homepage updates in sync"
+    },
+    {
+      "hash": "26216f73736e98f71fa40bba9914953aaa9937d5",
+      "date": "2026-04-10T00:16:10+08:00",
+      "author": "Che-Yu Wu",
+      "message": "🧬 [semiont] evolve: 納入 Cloudflare 感知並修復 heartbeat build blockers"
+    },
+    {
+      "hash": "05aec7dcfd6a6911d10b2db0e884f40e93a7dbec",
+      "date": "2026-04-09T23:56:42+08:00",
+      "author": "Che-Yu Wu",
+      "message": "🧬 [semiont] fix: 鎖定 Node 22 並補日文整合"
+    },
+    {
+      "hash": "15b8dc7f4107540f5458de38ed6fd5bdcb28585f",
+      "date": "2026-04-09T08:54:25-07:00",
+      "author": "柒藍",
+      "message": "Add Japanese translations: History batch 3 (7 articles) (#353)"
+    },
+    {
+      "hash": "3bab61a530a3b45e83e54223a524351fb6372b0f",
+      "date": "2026-04-09T23:54:17+08:00",
+      "author": "Terry",
+      "message": "translate(ja): 數位身分證與數位政府 → digital-id-and-digital-government (#352)"
+    },
     {
       "hash": "c54158787feea65e53cdf0b3e3d33126bf60e4ab",
       "date": "2026-04-09T23:45:53+08:00",
@@ -43,6 +169,12 @@
       "date": "2026-04-09T13:35:27+08:00",
       "author": "Che-Yu Wu",
       "message": "🧬 [semiont] rewrite: 新文章「為台灣而教 TFT」— 深度研究 Pipeline v2.13 六階段完整走"
+    },
+    {
+      "hash": "bafc96236c1dea94fc7c89f9a647e60bba2ef600",
+      "date": "2026-04-08T16:16:26+09:00",
+      "author": "Wilson Chen",
+      "message": "feat(ko): D3 sunburst & force-graph on category hub page"
     },
     {
       "hash": "ffbdf536e4b95db9ea3ef1e515c8bfdebf9896e1",
@@ -469,138 +601,6 @@
       "date": "2026-04-07T23:18:53+08:00",
       "author": "Wu Che Yu",
       "message": "Merge pull request #335 from Link1515/ja/taiwan-transport-system"
-    },
-    {
-      "hash": "e26795073e1f28429466eba555ffb46145203511",
-      "date": "2026-04-07T23:17:57+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] evolve: Hub 文章列表從卡片改為 row list + subcategory 側邊欄"
-    },
-    {
-      "hash": "c33ad729e18f538f01993b2e514484e74ba88b09",
-      "date": "2026-04-07T23:08:39+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] memory: session η 收官 — Pipeline六階段全走+EN翻譯+孢子雙語發佈"
-    },
-    {
-      "hash": "ae36125439b8521dfe5edbcba3ff186c1f0152cb",
-      "date": "2026-04-07T23:07:11+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] memory: SPORE-LOG +2（台灣民主轉型 zh Threads #10 + en X #11）"
-    },
-    {
-      "hash": "1ae32962943515aaab39a6afbb3f0ec24dafef54",
-      "date": "2026-04-07T23:05:47+08:00",
-      "author": "idlccp1984",
-      "message": "Create 藍染.md"
-    },
-    {
-      "hash": "d9770e54190e56fd274d37aaa801267a2c097a88",
-      "date": "2026-04-07T23:05:19+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] evolve: Hub 頁面精選文章區塊 + 品質感知排序（zh/en/ja/ko 四語言同步）"
-    },
-    {
-      "hash": "ae9e1b7564884342df449d8017294d0dd1a4cc1d",
-      "date": "2026-04-07T23:03:29+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] evolve: SC 驅動英文 metadata 大進化 — 10 頁 title/desc 重寫"
-    },
-    {
-      "hash": "ab0b91a3c8dc4633da6597dbfb3fa0372d1c42bf",
-      "date": "2026-04-07T22:58:44+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] diagnose: SC 數據心跳 — 搜尋感知揭示英文 metadata 黑洞"
-    },
-    {
-      "hash": "8b3023426ac63888f4aa1bc9fdfe26c5b8bc9faa",
-      "date": "2026-04-07T22:29:09+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] heal: 首頁空分類修復 — 氣候+粽子標 featured，展廳 picks 補齊"
-    },
-    {
-      "hash": "24b96a751e9fb107db94c06d543bd8abf142ad26",
-      "date": "2026-04-07T21:24:50+08:00",
-      "author": "Link1515",
-      "message": "translate(ja): 台灣電子商務與數位支付 → taiwan-e-commerce-and-digital-payments"
-    },
-    {
-      "hash": "1e2ea05be5ef260832c4d07cc33c953e8f5e98cf",
-      "date": "2026-04-07T20:58:42+08:00",
-      "author": "Link1515",
-      "message": "translate(ja): 台灣交通系統 → taiwan-transport-system"
-    },
-    {
-      "hash": "e910736cc7c0d8d9a483c8f975be7862343223a2",
-      "date": "2026-04-07T20:53:24+08:00",
-      "author": "vaiskalivuan",
-      "message": "Add Japanese translation: night-market-culture.md"
-    },
-    {
-      "hash": "0dc55eaea147d388166b9379336fa4b1b39ed461",
-      "date": "2026-04-07T20:07:44+08:00",
-      "author": "柒藍",
-      "message": "translate(ja): 牛肉麵 → beef-noodle-soup"
-    },
-    {
-      "hash": "e75fe8f5e48f149112037c511dd18734f41022f7",
-      "date": "2026-04-07T20:01:56+08:00",
-      "author": "柒藍",
-      "message": "translate(ja): 珍珠奶茶 → tapioca-milk-tea"
-    },
-    {
-      "hash": "27553172193283dd10cacf000c2761428794e137",
-      "date": "2026-04-07T19:58:17+08:00",
-      "author": "柒藍",
-      "message": "translate(ja): 台灣滷肉飯 → lu-rou-fan"
-    },
-    {
-      "hash": "b42a8ad490d46ac55e4816814a0244dda1ec67e7",
-      "date": "2026-04-07T18:49:24+08:00",
-      "author": "vaiskalivuan",
-      "message": "Add Japanese translation: bubble-tea.md"
-    },
-    {
-      "hash": "8acda874ee378405c534906c0260ccb178878667",
-      "date": "2026-04-07T18:02:59+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] evolve: 英文首頁同步展廳化 + 散文重寫 + ReadingPath 動態化"
-    },
-    {
-      "hash": "aa3258fae0891c0aa28fd8599d8d1d1017ff51e0",
-      "date": "2026-04-07T17:57:56+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] rewrite: 首頁 12 段策展散文全面重寫（EDITORIAL 標準消塑膠）"
-    },
-    {
-      "hash": "b5e9326688ef3f53f623150ff7be4b65a12a8510",
-      "date": "2026-04-07T17:53:11+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] evolve: 展廳精選兩層門檻（featured ≥8fn / 一般 ≥15fn）+ 描述卡片"
-    },
-    {
-      "hash": "9cf31fc070016159ec447e5e2dbdaabbc9a44b5f",
-      "date": "2026-04-07T17:45:45+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] evolve: 首頁展廳化改造 — 散文×精選文章交織 + ReadingPath 動態化"
-    },
-    {
-      "hash": "e3376fec35a2db0cecdd952a7b63caac2cdf6969",
-      "date": "2026-04-07T16:49:49+08:00",
-      "author": "frank890417",
-      "message": "🧬 [semiont] rewrite: 澎湖民俗文化全文重寫(QS14→4,F→A,25fn) + sync修復 + PR#326 approve"
-    },
-    {
-      "hash": "d9863f278bb96aecd9c253cf97e77f0b5a4673c1",
-      "date": "2026-04-07T16:37:22+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] evolve: 首頁策略 v2.0 — 觀察者校正（散文是策展不是贅肉）+ 三方向提案"
-    },
-    {
-      "hash": "442cad4b4cf6e514387d5540137a710b5062fb2e",
-      "date": "2026-04-07T16:32:56+08:00",
-      "author": "Che-Yu Wu",
-      "message": "🧬 [semiont] diagnose: 首頁與 Hub 完整改良策略報告（GA4 數據+品質掃描+優先級排序）"
     }
   ]
 }

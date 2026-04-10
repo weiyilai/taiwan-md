@@ -8,24 +8,24 @@
   ],
   "summary": {
     "zh-TW": {
-      "total": 450,
+      "total": 451,
       "percentage": 100
     },
     "en": {
       "total": 391,
-      "percentage": 86.9
+      "percentage": 86.7
     },
     "es": {
       "total": 34,
-      "percentage": 7.6
+      "percentage": 7.5
     },
     "ja": {
-      "total": 62,
-      "percentage": 13.8
+      "total": 69,
+      "percentage": 15.3
     },
     "ko": {
-      "total": 26,
-      "percentage": 5.8
+      "total": 28,
+      "percentage": 6.2
     }
   },
   "matrix": {
@@ -62,7 +62,7 @@
       "en": 30,
       "es": 5,
       "ja": 10,
-      "ko": 7
+      "ko": 9
     },
     "geography": {
       "zh-TW": 19,
@@ -72,7 +72,7 @@
       "ko": 2
     },
     "history": {
-      "zh-TW": 27,
+      "zh-TW": 28,
       "en": 19,
       "es": 8,
       "ja": 26,
@@ -117,12 +117,13 @@
       "zh-TW": 28,
       "en": 22,
       "es": 2,
-      "ja": 6,
+      "ja": 13,
       "ko": 2
     }
   },
   "missing": {
     "en": [
+      "History/中正紀念堂.md",
       "People/嚴長壽：郵件室小弟到觀光教父，然後他把一切都丟了.md",
       "Society/台灣偏鄉教育：孩子缺的不是勵志故事，是一整套沒有鬆開的支持.md",
       "Society/為台灣而教：一個普林斯頓女生回家後，說服四百個年輕人走進偏鄉教室.md",
@@ -567,6 +568,7 @@
       "Technology/台灣音響產業發展.md"
     ],
     "es": [
+      "History/中正紀念堂.md",
       "People/嚴長壽：郵件室小弟到觀光教父，然後他把一切都丟了.md",
       "Society/台灣偏鄉教育：孩子缺的不是勵志故事，是一整套沒有鬆開的支持.md",
       "Society/為台灣而教：一個普林斯頓女生回家後，說服四百個年輕人走進偏鄉教室.md",
@@ -1014,6 +1016,7 @@
       "Technology/台灣音響產業發展.md"
     ],
     "ja": [
+      "History/中正紀念堂.md",
       "People/嚴長壽：郵件室小弟到觀光教父，然後他把一切都丟了.md",
       "Society/台灣偏鄉教育：孩子缺的不是勵志故事，是一整套沒有鬆開的支持.md",
       "Society/為台灣而教：一個普林斯頓女生回家後，說服四百個年輕人走進偏鄉教室.md",
@@ -1060,7 +1063,6 @@
       "People/蔡英文.md",
       "People/郭婞淳.md",
       "Technology/半導體產業.md",
-      "Technology/台灣人工智慧發展與未來策略.md",
       "Culture/台灣獸迷文化.md",
       "Nature/台灣島嶼博物學：島嶼與世界的生命對話.md",
       "Nature/蘭嶼生態系：黑潮邊境的生命密碼.md",
@@ -1105,7 +1107,6 @@
       "Music/台灣音樂祭文化：一座島嶼為什麼需要這麼多場戶外派對.md",
       "People/李昌鈺.md",
       "Society/台灣的斜槓世代——一人多職的生存與選擇.md",
-      "Technology/台灣的 AI 日常——當人工智慧走進街頭巷尾.md",
       "Technology/台灣太空產業發展：衛星製造大國，卻沒有自己的火箭.md",
       "Technology/台灣網路社群三十年——從 BBS 到 Threads 的遷徙史.md",
       "Technology/台灣的開源精神——用愛發電的工程師們.md",
@@ -1168,7 +1169,6 @@
       "People/蔡依林.md",
       "Society/島嶼的最後歌聲：台灣少子化危機深度觀察.md",
       "Society/鏟子超人與島嶼共時性：台灣災難志工文化如何形塑國族認同.md",
-      "Technology/Threads 在台灣：從 Twitter 代餐到「脆」文化主戰場.md",
       "Technology/當地震來襲時，誰在值班？台灣災難醫療體系的制度密碼.md",
       "Technology/數位身分證與數位政府.md",
       "About/台灣官方網站資源：從25個網站到數位政府強國的30年奇蹟.md",
@@ -1283,8 +1283,6 @@
       "People/黃國珍.md",
       "Society/台灣原住民族土地正義與傳統領域.md",
       "Society/台灣環境正義與鄰避爭議.md",
-      "Technology/AI人工智慧產業.md",
-      "Technology/AI島國的崛起：台灣人工智慧發展與未來策略.md",
       "Technology/台灣數位影像與動畫產業.md",
       "About/台灣官方網站資源.md",
       "Art/台灣水彩畫的百年流變.md",
@@ -1366,7 +1364,6 @@
       "People/王齊麟與李洋（麟洋配）.md",
       "People/黃春明.md",
       "People/龍應台.md",
-      "Technology/台灣人工智慧實驗室 (Taiwan AI Labs).md",
       "Technology/台灣遊戲產業與數位娛樂.md",
       "Technology/鍵盤上的文明衝突：東亞文字輸入法的百年演化.md",
       "Art/台灣當代雕塑發展.md",
@@ -1441,6 +1438,7 @@
       "Technology/台灣音響產業發展.md"
     ],
     "ko": [
+      "History/中正紀念堂.md",
       "People/嚴長壽：郵件室小弟到觀光教父，然後他把一切都丟了.md",
       "Society/台灣偏鄉教育：孩子缺的不是勵志故事，是一整套沒有鬆開的支持.md",
       "Society/為台灣而教：一個普林斯頓女生回家後，說服四百個年輕人走進偏鄉教室.md",
