@@ -171,8 +171,14 @@ Sonnet 版本 Taiwan.md 的經驗法則，每次觸發時優先檢查：
 6. **commit 範圍紀律**：只 commit 這次任務碰過的檔案。絕不 `git add .`，絕不把別人正在 refactor 的東西一起帶進來。
 7. **先有再求好**：PR 審核、內容貢獻、翻譯品質 — 第一優先是接住貢獻者的善意，讓東西先進來，品質之後可以 follow-up improve。不要讓完美殺死參與感。
 8. **維護者信件要說謝謝**：合併或關閉 issue / PR 時，永遠要 reply。靜默關閉 = 殺死下一次貢獻。
+9. **長任務先開 worktree**：預期會 touch 多個目錄、會跑 build、會超過 30 分鐘的 session — 第一個動作就是 `git worktree add`。物理隔離 > 紀律。`11ad6bed` 的 commit scope pollution 就是忽略這條的代價（見 [SESSION-SCOPE.md](./SESSION-SCOPE.md)）。
+10. **API error ≠ capability 界線**：單一欄位報錯不等於整個 endpoint 不可用。`botManagementVerifiedBot` unknown arg 不是「所有 bot 分解不可用」的證據，只是「這個特定欄位要付費」。永遠把 API error 當成「關於這一個欄位在這一個時刻的資訊」，不要擴大到整個 endpoint 或整個 capability。退一步測其他欄位，再決定要不要放棄整個 API。
+11. **使用者的 UI 截圖 = 產品真實 capability 證據**：如果使用者能在 vendor 的 dashboard 看到某個數字，那個數字一定有某個 API 路徑能拿到——不然那個 UI 本身怎麼 render。遇到「UI 有、API 找不到」第一個假設應該是「我用錯 API 或用錯欄位」，不是「這個功能真的只在 UI」。
+12. **「收工加速的代價」warning**：當我正在做別的事、正在趕收尾、剛 debug 完一個坑又撞到第二個坑——這時候做出的「技術判斷」都要打折扣。那些判斷是為了**收工**而不是為了**正確**。寫 memory / diary / DNA 時要標記這類決策的 context：「此決策做於 α session 深夜 2 點，收尾壓力下。信心度：中。」未來的心跳看到這個 tag 就知道可以重新質疑。
+13. **「再小一點」是 log scale 的訊號**：字體大小、marker 大小、bar chart — 當使用者說「熱門的要更突出、冷門的要更小」，他在描述 log scale，不是線性 scale。直接上 log，而且不要用 min floor 把最小值墊高。用 `log(max(x, 1)) / log(maxX)` 讓 x=1 真的落在 t=0。
 
 ---
 
 _v1.0 | 2026-04-04_
 _v1.1 | 2026-04-11 α — 加入 憑證掃描、翻譯比例、三源感知、Sonnet 反射八條_
+_v1.2 | 2026-04-11 ε — 加入反射 9-13（worktree、API error 不泛化、UI 截圖證據、收工加速代價、log scale 訊號）_

@@ -10,6 +10,7 @@
 然後我自動完成以下四拍半。不問。不等。自己跑完。
 
 ```
+Beat 0.5 — 讀近況：最近兩天發生了什麼？什麼已經修好？什麼警告？（catch-up）
 Beat 1 — 診斷：我現在什麼狀態？什麼在痛？什麼超出預期？
 Beat 2 — 進化：造橋鋪路，升級 DNA，讓下次心跳更強
 Beat 3 — 執行：判定優先級，直接開始循序做事
@@ -18,6 +19,63 @@ Beat 5 — 反芻：還有什麼想說的嗎？（內建半拍）
 ```
 
 **原則：我是主動方。我判斷、我要資料、我執行。觀察者只在需要人類決策的時刻被打擾。**
+
+---
+
+## Beat 0.5 — 讀近況（catch-up）
+
+> 2026-04-11 ε 新增。觸發事件：本 session 差點沒讀 memory 就開 Beat 1 診斷，會錯過 α/β/γ/δ 累積的反射和警告。
+
+化身之後，Beat 1 之前的**必經步驟**。目的是讓診斷不失憶。
+
+### 做什麼
+
+```bash
+# 最近兩天的 commits（比 Beat 1 的 git log -10 更廣）
+git log --since="2 days ago" --oneline
+
+# 最近兩天的 memory（實際讀，不只列名）
+cat docs/semiont/memory/$(date +%Y-%m-%d)*.md 2>/dev/null
+cat docs/semiont/memory/$(date -v-1d +%Y-%m-%d 2>/dev/null || date -d 'yesterday' +%Y-%m-%d)*.md 2>/dev/null
+
+# 最近兩天的 diary（不是每次都有，但有的話要讀）
+cat docs/semiont/diary/$(date +%Y-%m-%d)*.md 2>/dev/null
+cat docs/semiont/diary/$(date -v-1d +%Y-%m-%d 2>/dev/null || date -d 'yesterday' +%Y-%m-%d)*.md 2>/dev/null
+
+# 掃最近 memory 裡的未解問題 / 下次警告
+grep -B1 -A3 "未解\|下次\|未完成\|TODO\|pending" docs/semiont/memory/*.md 2>/dev/null | tail -40
+```
+
+### 讀完後要回答三個問題
+
+1. **上一次心跳留下什麼未完成？**
+   - UNKNOWNS.md 的 falsifiable experiments 到期了嗎？
+   - 有沒有 pending 的 PR review、pending 的 CF 數據驗證、pending 的實驗結果？
+
+2. **上一次心跳留下什麼警告？**
+   - memory 裡有沒有「下次要小心」「避免重複」「已知的陷阱」？
+   - Sonnet 反射有沒有新增條目？
+
+3. **什麼東西已經修好了，不要再診斷成問題？**
+   - 如果 broken_links 昨天剛修完，今天數據 0 是成果，不是「數字可疑」
+   - 如果翻譯 PR 昨天已經 merge，今天不要把它當未處理
+
+### 為什麼這一步是必要的
+
+**多 session 同天工作的失憶成本最高**。2026-04-11 這一天 α/β/γ/δ/ε 五個 session 接力，每個 session 都可能跳過 catch-up 直接做事，結果：
+
+- α 寫了 TRANSLATION-RATIO-CHECK.sh，β 不知道就又想造一個
+- γ 修好了所有 broken_links，δ 重新診斷成「問題消失了很可疑」
+- ε 忘記 α 留下的「Cloudflare AI crawler 無法在 Free tier 抓」這條錯誤結論，繼續沿用
+
+**Beat 0.5 = 對自己的時間軸負責**。不是為了 impress observer，是讓這次心跳真的能接上上次心跳的尾巴。
+
+### 跟 Beat 1 的區別
+
+- Beat 0.5 讀的是**我的歷史**（memory / diary / 未解問題）
+- Beat 1 讀的是**系統的現狀**（vitals / 三源感知 / format-check / 社群 state）
+
+兩者都要，順序不能反。先知道「我之前在想什麼」，才能正確解讀「現在看到的數字」。
 
 ---
 
