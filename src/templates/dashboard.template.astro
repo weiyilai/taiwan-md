@@ -385,8 +385,10 @@ const isEn = lang === 'en';
         <div class="analytics-sources" id="analytics-insights"></div>
       </div>
       <div class="analytics-detail-grid">
-        <div class="analytics-pages" id="analytics-pages"></div>
-        <div class="analytics-pages" id="analytics-search"></div>
+        <div class="analytics-pages analytics-full" id="analytics-pages"></div>
+        <div class="analytics-pages analytics-full" id="analytics-articles-7d">
+        </div>
+        <div class="analytics-pages analytics-full" id="analytics-search"></div>
         <div class="analytics-pages" id="analytics-crawlers"></div>
         <div class="analytics-countries" id="analytics-countries"></div>
       </div>
@@ -1601,13 +1603,16 @@ const isEn = lang === 'en';
     const totalsEl = document.getElementById('analytics-totals');
     const insightsEl = document.getElementById('analytics-insights');
     const pagesEl = document.getElementById('analytics-pages');
+    const articles7dEl = document.getElementById('analytics-articles-7d');
     const searchEl = document.getElementById('analytics-search');
     const crawlersEl = document.getElementById('analytics-crawlers');
     const countriesEl = document.getElementById('analytics-countries');
     if (!totalsEl) return;
 
     const ga = data.ga || {};
-    const search = data.searchConsole24h || {};
+    const gaDays = ga.days || 28;
+    const search = data.searchConsole7d || data.searchConsole24h || {};
+    const searchPeriodDays = data.searchConsole7d ? 7 : 1;
     const cloudflare = data.cloudflare24h || {};
     const t = ga.totals || data.totals || {};
     const fmtNum = (n) => (typeof n === 'number' ? n.toLocaleString() : n);
@@ -1617,6 +1622,7 @@ const isEn = lang === 'en';
       typeof n === 'number' && Number.isFinite(n) ? n.toFixed(2) : n;
     const gaHighlights = ga.highlights || [];
     const topPages = ga.topPages || data.topPages || [];
+    const topArticles7d = ga.topArticles7d || [];
     const topQueries = search.topQueries || [];
     const opportunities = search.opportunities || [];
     const crawlers = cloudflare.aiCrawlers?.crawlers || [];
@@ -1722,63 +1728,93 @@ const isEn = lang === 'en';
         '</div>';
     }
 
-    // GA top pages
-    if (pagesEl && topPages.length) {
-      pagesEl.innerHTML =
-        `<h3 class="subsection-title">${isEn ? '🏆 GA Top Pages' : '🏆 GA 熱門頁面'}</h3>` +
-        '<div class="ga-pages-list">' +
-        topPages
-          .slice(0, 8)
+    // Helper: render a GA page/article list (clickable rows → new tab, 2-col layout)
+    const renderGaList = (rows, titleText) => {
+      return (
+        `<h3 class="subsection-title">${titleText}</h3>` +
+        '<div class="ga-pages-list ga-pages-list-2col">' +
+        rows
+          .slice(0, 20)
           .map((p, i) => {
-            const name = p.title
+            const rawTitle = p.title
               ? p.title.replace(/\s+\|\s+Taiwan\.md$/, '')
-              : p.path === '/'
+              : '';
+            const fallbackName =
+              p.path === '/' || p.path === ''
                 ? isEn
                   ? 'Home'
                   : '首頁'
-                : decodeURIComponent(p.path.replace(/^\/|\/$/g, ''));
-            return `<div class="ga-page-row">
+                : decodeURIComponent((p.path || '').replace(/^\/|\/$/g, ''));
+            const name = rawTitle || fallbackName;
+            const href = p.path || '/';
+            return `<a class="ga-page-row ga-page-row-link" href="${href}" target="_blank" rel="noopener noreferrer">
             <span class="ga-page-rank">${i + 1}</span>
             <span class="ga-page-name">${name}</span>
             <span class="ga-page-pv">${fmtNum(p.views || p.pageViews)} ${isEn ? 'views' : '瀏覽'}</span>
-          </div>`;
+          </a>`;
           })
           .join('') +
-        '</div>';
+        '</div>'
+      );
+    };
+
+    // GA top pages — top 20 pages (28d window, deduped by normalized path)
+    if (pagesEl && topPages.length) {
+      const pagesTitle = isEn
+        ? `🏆 GA Top Pages (last ${gaDays}d)`
+        : `🏆 GA 熱門頁面（近 ${gaDays} 天）`;
+      pagesEl.innerHTML = renderGaList(topPages, pagesTitle);
     }
 
-    // Search Console 24h
+    // GA top articles — last 7 days, excludes hubs/meta pages via regex filter
+    if (articles7dEl && topArticles7d.length) {
+      const articlesTitle = isEn
+        ? '📰 GA Top Articles (last 7d)'
+        : '📰 GA 熱門文章（近 7 天）';
+      articles7dEl.innerHTML = renderGaList(topArticles7d, articlesTitle);
+    }
+
+    // Search Console — 7-day data (falls back to 24h if 7d not present)
     if (searchEl && topQueries.length) {
+      const scLabel = isEn
+        ? `🔎 Search Console (${searchPeriodDays}d)`
+        : `🔎 Search Console（近 ${searchPeriodDays} 天）`;
       searchEl.innerHTML =
-        `<h3 class="subsection-title">${isEn ? '🔎 Search Console (24h)' : '🔎 Search Console（24h）'}</h3>` +
+        `<h3 class="subsection-title">${scLabel}</h3>` +
         `<div class="ga-subtle">${
           isEn
             ? `${fmtNum(search.totals?.impressions)} impressions · ${fmtNum(search.totals?.clicks)} clicks · ${fmtPct(search.totals?.ctr)} CTR`
             : `${fmtNum(search.totals?.impressions)} 曝光 · ${fmtNum(search.totals?.clicks)} 點擊 · ${fmtPct(search.totals?.ctr)} CTR`
         }</div>` +
-        '<div class="ga-mini-list">' +
+        '<div class="sc-queries-grid">' +
         topQueries
-          .slice(0, 5)
+          .slice(0, 20)
           .map(
-            (q) => `<div class="ga-mini-row">
-              <span class="ga-mini-label">${q.query}</span>
-              <span class="ga-mini-meta">${fmtNum(q.clicks)}c / ${fmtNum(q.impressions)}i / #${fmtRank(q.position)}</span>
+            (q, i) => `<div class="sc-query-row">
+              <span class="sc-query-rank">${i + 1}</span>
+              <span class="sc-query-label">${q.query}</span>
+              <span class="sc-query-clicks">${fmtNum(q.clicks)} ${isEn ? 'clicks' : '點擊'}</span>
+              <span class="sc-query-impr">${fmtNum(q.impressions)} ${isEn ? 'impr' : '曝光'}</span>
+              <span class="sc-query-ctr">${fmtPct(q.ctr)}</span>
+              <span class="sc-query-pos">#${fmtRank(q.position)}</span>
             </div>`,
           )
           .join('') +
         '</div>' +
-        `<h4 class="ga-block-title">${isEn ? 'Best Next Fixes' : '優先補洞'}</h4>` +
-        '<div class="ga-mini-list">' +
-        opportunities
-          .slice(0, 4)
-          .map(
-            (q) => `<div class="ga-mini-row">
-              <span class="ga-mini-label">${q.query}</span>
-              <span class="ga-mini-meta">${fmtNum(q.impressions)}i / #${fmtRank(q.position)}</span>
-            </div>`,
-          )
-          .join('') +
-        '</div>';
+        (opportunities.length
+          ? `<h4 class="ga-block-title">${isEn ? 'Best Next Fixes' : '優先補洞'}</h4>` +
+            '<div class="ga-mini-list">' +
+            opportunities
+              .slice(0, 5)
+              .map(
+                (q) => `<div class="ga-mini-row">
+                  <span class="ga-mini-label">${q.query}</span>
+                  <span class="ga-mini-meta">${fmtNum(q.impressions)}i / #${fmtRank(q.position)}</span>
+                </div>`,
+              )
+              .join('') +
+            '</div>'
+          : '');
     }
 
     // Cloudflare AI crawler watch
@@ -3056,8 +3092,25 @@ const isEn = lang === 'en';
   }
   .analytics-detail-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
+  }
+  .analytics-full {
+    grid-column: 1 / -1;
+  }
+  .ga-pages-list-2col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 0;
+  }
+  @media (max-width: 720px) {
+    .analytics-detail-grid {
+      grid-template-columns: 1fr;
+    }
+    .ga-pages-list-2col {
+      grid-template-columns: 1fr;
+    }
   }
   .analytics-pages,
   .analytics-countries,
@@ -3124,6 +3177,20 @@ const isEn = lang === 'en';
     gap: 0.5rem;
     padding: 0.35rem 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  }
+  a.ga-page-row-link {
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.15s ease;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    border-radius: 6px;
+  }
+  a.ga-page-row-link:hover {
+    background: rgba(139, 92, 246, 0.08);
+  }
+  a.ga-page-row-link:hover .ga-page-name {
+    color: #8b5cf6;
   }
   .ga-page-rank {
     width: 22px;
@@ -3221,6 +3288,62 @@ const isEn = lang === 'en';
     font-size: 0.82rem;
     color: #334155;
   }
+  /* Search Console 7d — richer per-query row */
+  .sc-queries-grid {
+    margin-top: 0.7rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+  @media (min-width: 960px) {
+    .sc-queries-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 1.5rem;
+    }
+  }
+  .sc-query-row {
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr) auto auto auto auto;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    font-size: 0.78rem;
+  }
+  .sc-query-rank {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: rgba(99, 102, 241, 0.1);
+    color: #6366f1;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+  .sc-query-label {
+    color: #0f172a;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+  }
+  .sc-query-clicks {
+    color: #0f172a;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+  }
+  .sc-query-impr,
+  .sc-query-ctr,
+  .sc-query-pos {
+    color: #64748b;
+    font-variant-numeric: tabular-nums;
+  }
+  .sc-query-pos {
+    color: #94a3b8;
+  }
   @media (max-width: 768px) {
     .analytics-totals {
       grid-template-columns: repeat(3, 1fr);
@@ -3228,6 +3351,15 @@ const isEn = lang === 'en';
     .ga-mini-row {
       flex-direction: column;
       gap: 0.2rem;
+    }
+    .sc-query-row {
+      grid-template-columns: 22px minmax(0, 1fr) auto;
+      row-gap: 0.15rem;
+    }
+    .sc-query-impr,
+    .sc-query-ctr,
+    .sc-query-pos {
+      display: none;
     }
   }
 </style>
