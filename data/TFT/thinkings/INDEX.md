@@ -1,0 +1,238 @@
+# TFT 觀點索引
+
+- 讓專業在現場紮根：國際浸潤式師培的趨勢與台灣公私協力的制度轉型
+  - Source: https://www.teach4taiwan.org/%e8%ae%93%e5%b0%88%e6%a5%ad%e5%9c%a8%e7%8f%be%e5%a0%b4%e7%b4%ae%e6%a0%b9%ef%bc%9a%e5%9c%8b%e9%9a%9b%e6%b5%b8%e6%bd%a4%e5%bc%8f%e5%b8%ab%e5%9f%b9%e7%9a%84%e8%b6%a8%e5%8b%a2%e8%88%87%e5%8f%b0%e7%81%a3/
+  - File: `66516.md`
+  - Published: 2026-03-23T11:19:59
+- 多元背景學生的教育經驗與需求
+  - Source: https://www.teach4taiwan.org/%e5%a4%9a%e5%85%83%e8%83%8c%e6%99%af%e5%ad%b8%e7%94%9f%e7%9a%84%e6%95%99%e8%82%b2%e7%b6%93%e9%a9%97%e8%88%87%e9%9c%80%e6%b1%82/
+  - File: `65522.md`
+  - Published: 2026-01-15T21:26:08
+- 用「台灣味」走入國際—TFT以教育與國際交朋友
+  - Source: https://www.teach4taiwan.org/tft%e4%bb%a5%e6%95%99%e8%82%b2%e8%88%87%e5%9c%8b%e9%9a%9b%e4%ba%a4%e6%9c%8b%e5%8f%8b/
+  - File: `46446.md`
+  - Published: 2024-01-05T12:24:04
+- 串連教育這張網，是回應挑戰的溫柔解方—TFT 的生態系經營
+  - Source: https://www.teach4taiwan.org/tft%e7%9a%84%e7%94%9f%e6%85%8b%e7%b3%bb%e7%b6%93%e7%87%9f/
+  - File: `46444.md`
+  - Published: 2024-01-05T12:23:39
+- 來自信任的託付，讓我們走得更穩、更遠—從財務談 TFT 的責信
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e8%b2%a1%e5%8b%99%e8%ab%87tft%e7%9a%84%e8%b2%ac%e4%bf%a1/
+  - File: `46442.md`
+  - Published: 2024-01-05T12:23:05
+- 以創新點亮願景—TFT 的創新與研發
+  - Source: https://www.teach4taiwan.org/tft%e7%9a%84%e5%89%b5%e6%96%b0%e8%88%87%e7%a0%94%e7%99%bc/
+  - File: `46440.md`
+  - Published: 2024-01-05T12:22:03
+- 以實證為基礎的行動，以終為始地衡量每一步—TFT的成效評估
+  - Source: https://www.teach4taiwan.org/tft%e7%9a%84%e6%88%90%e6%95%88%e8%a9%95%e4%bc%b0/
+  - File: `46438.md`
+  - Published: 2024-01-05T12:20:18
+- 堅實的基礎建設、穩定的系統營運—打造屬於TFT的組織永續
+  - Source: https://www.teach4taiwan.org/tft%e7%9a%84%e7%b5%84%e7%b9%94%e6%b0%b8%e7%ba%8c/
+  - File: `46436.md`
+  - Published: 2024-01-05T12:18:26
+- TFT 的下一個十年
+  - Source: https://www.teach4taiwan.org/tft%e7%9a%84%e4%b8%8b%e4%b8%80%e5%80%8b%e5%8d%81%e5%b9%b4/
+  - File: `46434.md`
+  - Published: 2024-01-05T12:16:42
+- 考試即學習？教師檢定制度的實踐
+  - Source: https://www.teach4taiwan.org/%e8%80%83%e8%a9%a6%e5%8d%b3%e5%ad%b8%e7%bf%92%ef%bc%9f%e6%95%99%e5%b8%ab%e6%aa%a2%e5%ae%9a%e5%88%b6%e5%ba%a6%e7%9a%84%e5%af%a6%e8%b8%90/
+  - File: `31047.md`
+  - Published: 2021-06-29T15:28:45
+- 一個教師的誕生—師資職前培育政策實踐
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e5%80%8b%e6%95%99%e5%b8%ab%e7%9a%84%e8%aa%95%e7%94%9f-%e5%b8%ab%e8%b3%87%e8%81%b7%e5%89%8d%e5%9f%b9%e8%82%b2%e6%94%bf%e7%ad%96%e5%af%a6%e8%b8%90/
+  - File: `31044.md`
+  - Published: 2021-06-29T15:28:07
+- 身為一個學校領導人—學校治理相關政策與實踐
+  - Source: https://www.teach4taiwan.org/%e8%ba%ab%e7%82%ba%e4%b8%80%e5%80%8b%e5%ad%b8%e6%a0%a1%e9%a0%98%e5%b0%8e%e4%ba%ba-%e5%ad%b8%e6%a0%a1%e6%b2%bb%e7%90%86%e7%9b%b8%e9%97%9c%e6%94%bf%e7%ad%96%e8%88%87%e5%af%a6%e8%b8%90/
+  - File: `31037.md`
+  - Published: 2021-06-25T09:28:56
+- 誰來當舵手？學校領導人甄選及任用政策的實踐
+  - Source: https://www.teach4taiwan.org/%e8%aa%b0%e4%be%86%e7%95%b6%e8%88%b5%e6%89%8b%ef%bc%9f%e5%ad%b8%e6%a0%a1%e9%a0%98%e5%b0%8e%e4%ba%ba%e7%94%84%e9%81%b8%e5%8f%8a%e4%bb%bb%e7%94%a8%e6%94%bf%e7%ad%96%e7%9a%84%e5%af%a6%e8%b8%90/
+  - File: `31030.md`
+  - Published: 2021-06-25T09:24:12
+- 「能被傳播的是價值不是手段」—教師專業發展的反思
+  - Source: https://www.teach4taiwan.org/%e3%80%8c%e8%83%bd%e8%a2%ab%e5%82%b3%e6%92%ad%e7%9a%84%e6%98%af%e5%83%b9%e5%80%bc%e4%b8%8d%e6%98%af%e6%89%8b%e6%ae%b5%e3%80%8d-%e6%95%99%e5%b8%ab%e5%b0%88%e6%a5%ad%e7%99%bc%e5%b1%95%e7%9a%84/
+  - File: `30104.md`
+  - Published: 2021-03-16T17:46:54
+- 來自現場的聲音—教師專業發展的實踐經驗
+  - Source: https://www.teach4taiwan.org/%e4%be%86%e8%87%aa%e7%8f%be%e5%a0%b4%e7%9a%84%e8%81%b2%e9%9f%b3-%e6%95%99%e5%b8%ab%e5%b0%88%e6%a5%ad%e7%99%bc%e5%b1%95%e7%9a%84%e5%af%a6%e8%b8%90%e7%b6%93%e9%a9%97/
+  - File: `30100.md`
+  - Published: 2021-03-16T17:44:40
+- 教育問題是社會問題的縮影，社會結構與政策對優質教育實踐有深遠的影響
+  - Source: https://www.teach4taiwan.org/%e6%95%99%e8%82%b2%e5%95%8f%e9%a1%8c%e6%98%af%e7%a4%be%e6%9c%83%e5%95%8f%e9%a1%8c%e7%9a%84%e7%b8%ae%e5%bd%b1%ef%bc%8c%e7%a4%be%e6%9c%83%e7%b5%90%e6%a7%8b%e8%88%87%e6%94%bf%e7%ad%96%e5%b0%8d%e5%84%aa/
+  - File: `29990.md`
+  - Published: 2021-03-08T13:42:49
+- 2020年度回顧：疫情與教育不平等
+  - Source: https://www.teach4taiwan.org/2020%e5%b9%b4%e5%ba%a6%e5%9b%9e%e9%a1%a7%ef%bc%9a%e7%96%ab%e6%83%85%e8%88%87%e6%95%99%e8%82%b2/
+  - File: `29001.md`
+  - Published: 2020-12-04T12:23:59
+- 後疫情時代的平權教育，大家怎麼做？
+  - Source: https://www.teach4taiwan.org/%e5%be%8c%e7%96%ab%e6%83%85%e6%99%82%e4%bb%a3%e7%9a%84%e5%b9%b3%e6%ac%8a%e6%95%99%e8%82%b2%ef%bc%8c%e5%a4%a7%e5%ae%b6%e6%80%8e%e9%ba%bc%e5%81%9a%ef%bc%9f/
+  - File: `29009.md`
+  - Published: 2020-12-04T12:23:52
+- 邁向非營利組織 2.0
+  - Source: https://www.teach4taiwan.org/%e9%82%81%e5%90%91%e9%9d%9e%e7%87%9f%e5%88%a9%e7%b5%84%e7%b9%94-2-0/
+  - File: `27019.md`
+  - Published: 2020-10-22T16:15:56
+- 趁土壤柔軟時，種下關注教育不平等的種子
+  - Source: https://www.teach4taiwan.org/%e8%b6%81%e5%9c%9f%e5%a3%a4%e6%9f%94%e8%bb%9f%e6%99%82%ef%bc%8c%e7%a8%ae%e4%b8%8b%e9%97%9c%e6%b3%a8%e6%95%99%e8%82%b2%e4%b8%8d%e5%b9%b3%e7%ad%89%e7%9a%84%e7%a8%ae%e5%ad%90/
+  - File: `27009.md`
+  - Published: 2020-10-22T15:32:08
+- 不斷「自我革新」的TFT培育系統：不只解決偏鄉教師荒，要培養出能回應未來的人才
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e6%96%b7%e3%80%8c%e8%87%aa%e6%88%91%e9%9d%a9%e6%96%b0%e3%80%8d%e7%9a%84tft%e5%9f%b9%e8%82%b2%e7%b3%bb%e7%b5%b1%ef%bc%9a%e4%b8%8d%e5%8f%aa%e8%a7%a3%e6%b1%ba%e5%81%8f%e9%84%89%e6%95%99/
+  - File: `25696.md`
+  - Published: 2020-10-20T20:22:23
+- 「願有一天………」—優質教育的面向
+  - Source: https://www.teach4taiwan.org/%e9%a1%98%e6%9c%89%e4%b8%80%e5%a4%a9-%e5%84%aa%e8%b3%aa%e6%95%99%e8%82%b2%e7%9a%84%e9%9d%a2%e5%90%91/
+  - File: `25282.md`
+  - Published: 2020-10-20T16:35:40
+- 有幾分證據說幾分話，善用以證據為基礎的教育政策是實踐優質教育之本
+  - Source: https://www.teach4taiwan.org/%e6%9c%89%e5%b9%be%e5%88%86%e8%ad%89%e6%93%9a%e8%aa%aa%e5%b9%be%e5%88%86%e8%a9%b1%ef%bc%8c%e5%96%84%e7%94%a8%e6%95%99%e8%82%b2%e6%94%bf%e7%ad%96%e6%98%af%e5%af%a6%e8%b8%90%e5%84%aa%e8%b3%aa%e6%95%99/
+  - File: `25384.md`
+  - Published: 2020-10-20T16:35:34
+- 打開天窗說亮話—台灣教育資料開放狀況
+  - Source: https://www.teach4taiwan.org/%e6%89%93%e9%96%8b%e5%a4%a9%e7%aa%97%e8%aa%aa%e4%ba%ae%e8%a9%b1-%e5%8f%b0%e7%81%a3%e6%95%99%e8%82%b2%e8%b3%87%e6%96%99%e9%96%8b%e6%94%be%e7%8b%80%e6%b3%81/
+  - File: `25387.md`
+  - Published: 2020-10-20T16:35:21
+- 你想找的教育數據都在這—台灣教育相關資料及使用狀況彙整
+  - Source: https://www.teach4taiwan.org/%e4%bd%a0%e6%83%b3%e6%89%be%e7%9a%84%e6%95%99%e8%82%b2%e6%95%b8%e6%93%9a%e9%83%bd%e5%9c%a8%e9%80%99-%e5%8f%b0%e7%81%a3%e6%95%99%e8%82%b2%e7%9b%b8%e9%97%9c%e8%b3%87%e6%96%99%e5%8f%8a%e4%bd%bf/
+  - File: `25391.md`
+  - Published: 2020-10-20T16:34:17
+- 走在「用證據說真話」的路上，大家怎麼做？
+  - Source: https://www.teach4taiwan.org/%e8%b5%b0%e5%9c%a8%e3%80%8c%e7%94%a8%e8%ad%89%e6%93%9a%e8%aa%aa%e7%9c%9f%e8%a9%b1%e3%80%8d%e7%9a%84%e8%b7%af%e4%b8%8a%ef%bc%8c%e5%a4%a7%e5%ae%b6%e6%80%8e%e9%ba%bc%e5%81%9a%ef%bc%9f/
+  - File: `25398.md`
+  - Published: 2020-10-20T16:34:09
+- 用不公平面對不公平，個體差異衍伸之多元需求是平權教育不可或缺的關注
+  - Source: https://www.teach4taiwan.org/%e7%94%a8%e4%b8%8d%e5%85%ac%e5%b9%b3%e9%9d%a2%e5%b0%8d%e4%b8%8d%e5%85%ac%e5%b9%b3%ef%bc%8c%e5%80%8b%e9%ab%94%e5%b7%ae%e7%95%b0%e8%a1%8d%e4%bc%b8%e4%b9%8b%e5%a4%9a%e5%85%83%e9%9c%80%e6%b1%82%e6%98%af/
+  - File: `25787.md`
+  - Published: 2020-10-20T16:33:00
+- 不同性別者的教育經驗與需求
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e5%90%8c%e6%80%a7%e5%88%a5%e8%80%85%e7%9a%84%e6%95%99%e8%82%b2%e7%b6%93%e9%a9%97/
+  - File: `25791.md`
+  - Published: 2020-10-20T16:32:52
+- 原住民族的教育經驗與需求
+  - Source: https://www.teach4taiwan.org/%e5%8e%9f%e4%bd%8f%e6%b0%91%e6%97%8f%e7%9a%84%e6%95%99%e8%82%b2%e7%b6%93%e9%a9%97/
+  - File: `25794.md`
+  - Published: 2020-10-20T16:32:46
+- 新住民子女的教育經驗與需求
+  - Source: https://www.teach4taiwan.org/%e6%96%b0%e4%bd%8f%e6%b0%91%e5%ad%90%e5%a5%b3%e7%9a%84%e6%95%99%e8%82%b2%e7%b6%93%e9%a9%97/
+  - File: `25797.md`
+  - Published: 2020-10-20T16:32:41
+- 身心障礙者的教育經驗與需求
+  - Source: https://www.teach4taiwan.org/%e8%ba%ab%e5%bf%83%e9%9a%9c%e7%a4%99%e8%80%85%e7%9a%84%e6%95%99%e8%82%b2%e7%b6%93%e9%a9%97/
+  - File: `25800.md`
+  - Published: 2020-10-20T16:32:36
+- 經濟弱勢學生的教育經驗與需求
+  - Source: https://www.teach4taiwan.org/%e7%b6%93%e6%bf%9f%e5%bc%b1%e5%8b%a2%e5%ad%b8%e7%94%9f%e7%9a%84%e6%95%99%e8%82%b2%e7%b6%93%e9%a9%97/
+  - File: `25803.md`
+  - Published: 2020-10-20T16:32:29
+- 學力弱勢學生的教育經驗與需求
+  - Source: https://www.teach4taiwan.org/%e5%ad%b8%e5%8a%9b%e5%bc%b1%e5%8b%a2%e5%ad%b8%e7%94%9f%e7%9a%84%e6%95%99%e8%82%b2%e7%b6%93%e9%a9%97/
+  - File: `25806.md`
+  - Published: 2020-10-20T16:32:22
+- 盤根錯節的挑戰需要系統性的回應—多元需求的交織性
+  - Source: https://www.teach4taiwan.org/%e7%9b%a4%e6%a0%b9%e9%8c%af%e7%af%80%e7%9a%84%e6%8c%91%e6%88%b0%e9%9c%80%e8%a6%81%e7%b3%bb%e7%b5%b1%e6%80%a7%e7%9a%84%e5%9b%9e%e6%87%89-%e5%a4%9a%e5%85%83%e9%9c%80%e6%b1%82%e7%9a%84%e4%ba%a4/
+  - File: `25809.md`
+  - Published: 2020-10-20T16:32:09
+- 面對無窮無境的多元需求，大家如何回應？
+  - Source: https://www.teach4taiwan.org/%e9%9d%a2%e5%b0%8d%e7%84%a1%e7%aa%ae%e7%84%a1%e5%a2%83%e7%9a%84%e5%a4%9a%e5%85%83%e9%9c%80%e6%b1%82%ef%bc%8c%e5%a4%a7%e5%ae%b6%e5%a6%82%e4%bd%95%e5%9b%9e%e6%87%89%ef%bc%9f/
+  - File: `25401.md`
+  - Published: 2020-10-20T16:32:03
+- 養育一個孩子需舉全村之力，生活環境各角色是實踐優質教育的重要夥伴
+  - Source: https://www.teach4taiwan.org/%e9%a4%8a%e8%82%b2%e4%b8%80%e5%80%8b%e5%ad%a9%e5%ad%90%e9%9c%80%e8%88%89%e5%85%a8%e6%9d%91%e4%b9%8b%e5%8a%9b%ef%bc%8c%e7%94%9f%e6%b4%bb%e7%92%b0%e5%a2%83%e5%90%84%e8%a7%92%e8%89%b2%e6%98%af%e5%af%a6/
+  - File: `25368.md`
+  - Published: 2020-10-20T16:14:02
+- 不可或缺的教育合夥人—家庭和教育系統的協力關係
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e5%8f%af%e6%88%96%e7%bc%ba%e7%9a%84%e6%95%99%e8%82%b2%e5%90%88%e5%a4%a5%e4%ba%ba-%e5%ae%b6%e5%ba%ad%e5%92%8c%e6%95%99%e8%82%b2%e7%b3%bb%e7%b5%b1%e7%9a%84%e5%8d%94%e5%8a%9b%e9%97%9c/
+  - File: `25372.md`
+  - Published: 2020-10-20T16:13:53
+- 匯集村落的力量—社區和學校教育如何合作？
+  - Source: https://www.teach4taiwan.org/%e5%8c%af%e9%9b%86%e6%9d%91%e8%90%bd%e7%9a%84%e5%8a%9b%e9%87%8f-%e7%a4%be%e5%8d%80%e5%92%8c%e5%ad%b8%e6%a0%a1%e7%9a%84%e6%95%99%e8%82%b2%e5%8d%94%e5%8a%9b%e9%97%9c%e4%bf%82/
+  - File: `25375.md`
+  - Published: 2020-10-20T16:13:46
+- 未雨綢繆—緊急危難中的教育，台灣怎麼做？
+  - Source: https://www.teach4taiwan.org/%e6%9c%aa%e9%9b%a8%e7%b6%a2%e7%b9%86-%e7%b7%8a%e6%80%a5%e5%8d%b1%e9%9b%a3%e4%b8%ad%e7%9a%84%e6%95%99%e8%82%b2/
+  - File: `25380.md`
+  - Published: 2020-10-20T16:13:39
+- 學校即社會，學校是孩子實踐自我的重要場域
+  - Source: https://www.teach4taiwan.org/%e5%ad%b8%e6%a0%a1%e5%8d%b3%e7%a4%be%e6%9c%83%ef%bc%8c%e5%ad%b8%e6%a0%a1%e6%98%af%e5%ad%a9%e5%ad%90%e5%af%a6%e8%b8%90%e8%87%aa%e6%88%91%e7%9a%84%e9%87%8d%e8%a6%81%e5%a0%b4%e5%9f%9f/
+  - File: `25316.md`
+  - Published: 2020-10-20T16:12:43
+- 不患寡患不均—學校的教育資源分配現況
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e6%82%a3%e5%af%a1%e6%82%a3%e4%b8%8d%e5%9d%87-%e5%ad%b8%e6%a0%a1%e7%9a%84%e6%95%99%e8%82%b2%e8%b3%87%e6%ba%90%e5%88%86%e9%85%8d%e7%8f%be%e6%b3%81/
+  - File: `25355.md`
+  - Published: 2020-10-20T16:12:26
+- 日新月異的教育—學校在教育脈絡變遷下的適應性
+  - Source: https://www.teach4taiwan.org/%e6%97%a5%e6%96%b0%e6%9c%88%e7%95%b0%e7%9a%84%e6%95%99%e8%82%b2-%e5%ad%b8%e6%a0%a1%e5%9c%a8%e6%95%99%e8%82%b2%e8%84%88%e7%b5%a1%e8%ae%8a%e9%81%b7%e4%b8%8b%e9%81%a9%e6%87%89%e6%80%a7/
+  - File: `25362.md`
+  - Published: 2020-10-20T16:12:10
+- 有人才有教育，教師是最重要的教育資源
+  - Source: https://www.teach4taiwan.org/%e6%9c%89%e4%ba%ba%e6%89%8d%e6%9c%89%e6%95%99%e8%82%b2%ef%bc%8c%e6%95%99%e5%b8%ab%e6%98%af%e6%9c%80%e9%87%8d%e8%a6%81%e7%9a%84%e6%95%99%e8%82%b2%e8%b3%87%e6%ba%90/
+  - File: `25131.md`
+  - Published: 2020-10-20T16:11:13
+- 教師也是終身學習者—教師專業發展現況
+  - Source: https://www.teach4taiwan.org/%e6%95%99%e5%b8%ab%e4%b9%9f%e6%98%af%e7%b5%82%e8%ba%ab%e5%ad%b8%e7%bf%92%e8%80%85-%e5%8f%b0%e7%81%a3%e7%9a%84%e6%95%99%e5%b8%ab%e5%b0%88%e6%a5%ad%e7%99%bc%e5%b1%95%e7%8f%be%e6%b3%81/
+  - File: `25236.md`
+  - Published: 2020-10-20T16:03:49
+- 從經營班級到領導組織 培養有素養的教育者與學習者
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e7%b6%93%e7%87%9f%e7%8f%ad%e7%b4%9a%e5%88%b0%e9%a0%98%e5%b0%8e%e7%b5%84%e7%b9%94-%e5%9f%b9%e9%a4%8a%e6%9c%89%e7%b4%a0%e9%a4%8a%e7%9a%84%e6%95%99%e8%82%b2%e8%80%85%e8%88%87%e5%ad%b8%e7%bf%92/
+  - File: `25157.md`
+  - Published: 2020-10-13T10:57:52
+- 用領導力重新定義教育的意義——前DDI美商宏智國際顧問總經理林妍希：「領導力就是領導自己跟他人完成目標的正向影響力。」
+  - Source: https://www.teach4taiwan.org/%e7%94%a8%e9%a0%98%e5%b0%8e%e5%8a%9b%e9%87%8d%e6%96%b0%e5%ae%9a%e7%be%a9%e6%95%99%e8%82%b2%e7%9a%84%e6%84%8f%e7%be%a9/
+  - File: `25159.md`
+  - Published: 2020-10-12T16:42:17
+- 搭出一座名為影響力的橋——校友組談孵化器課程與校友發展
+  - Source: https://www.teach4taiwan.org/%e6%90%ad%e5%87%ba%e4%b8%80%e5%ba%a7%e5%90%8d%e7%82%ba%e5%bd%b1%e9%9f%bf%e5%8a%9b%e7%9a%84%e6%a9%8b-%e6%a0%a1%e5%8f%8b%e7%b5%84%e8%ab%87%e5%ad%b5%e5%8c%96%e5%99%a8%e8%aa%b2%e7%a8%8b/
+  - File: `23012.md`
+  - Published: 2020-03-17T17:00:15
+- 「天氣即時預報」創辦人黃昱維談理想實踐──學歷與專長不該限制興趣的追尋，而是實踐理想的後盾
+  - Source: https://www.teach4taiwan.org/%e5%a4%a9%e6%b0%a3%e5%8d%b3%e6%99%82%e9%a0%90%e5%a0%b1%e5%89%b5%e8%be%a6%e4%ba%ba%e9%bb%83%e6%98%b1%e7%b6%ad%e8%ab%87%e7%90%86%e6%83%b3%e5%af%a6%e8%b8%90/
+  - File: `21766.md`
+  - Published: 2019-12-31T17:33:05
+- 舊鞋救命創辦人楊右任談理想實踐──不要急著一步到位，重要的是走好腳下的每一小步
+  - Source: https://www.teach4taiwan.org/%e8%88%8a%e9%9e%8b%e6%95%91%e5%91%bd%e5%89%b5%e8%be%a6%e4%ba%ba%e6%a5%8a%e5%8f%b3%e4%bb%bb%e8%ab%87%e7%90%86%e6%83%b3%e5%af%a6%e8%b8%90/
+  - File: `21752.md`
+  - Published: 2019-12-31T15:25:14
+- 「2019教育永續發展論壇」劉安婷演講——有人才有教育，教育需要創造改變的人才
+  - Source: https://www.teach4taiwan.org/2019%e6%95%99%e8%82%b2%e6%b0%b8%e7%ba%8c%e7%99%bc%e5%b1%95%e8%ab%96%e5%a3%87%e5%8a%89%e5%ae%89%e5%a9%b7%e6%bc%94%e8%ac%9b/
+  - File: `21162.md`
+  - Published: 2019-11-23T22:14:38
+- 2016年成大畢業典禮劉安婷致詞：你拿幸運做什麼？
+  - Source: https://www.teach4taiwan.org/2016%e5%b9%b4%e6%88%90%e5%a4%a7%e7%95%a2%e6%a5%ad%e5%85%b8%e7%a6%ae%e5%8a%89%e5%ae%89%e5%a9%b7%e8%87%b4%e8%a9%9e%e4%bd%a0%e6%8b%bf%e5%b9%b8%e9%81%8b%e5%81%9a%e4%bb%80%e9%ba%bc/
+  - File: `21086.md`
+  - Published: 2019-11-17T18:50:29
+- TFT五週年特展：教育部長潘文忠與劉安婷創辦人對談——人才，是教育最珍貴的資源
+  - Source: https://www.teach4taiwan.org/tft%e4%ba%94%e9%80%b1%e5%b9%b4%e7%89%b9%e5%b1%95%e6%95%99%e8%82%b2%e9%83%a8%e9%95%b7%e6%bd%98%e6%96%87%e5%bf%a0%e8%88%87%e5%8a%89%e5%ae%89%e5%a9%b7%e5%89%b5%e8%be%a6%e4%ba%ba/
+  - File: `18717.md`
+  - Published: 2019-09-19T13:58:49
+- 2019年啟程儀式 嚴長壽總裁致詞——思辨、生活、人性，是未來教育最重要的能力
+  - Source: https://www.teach4taiwan.org/2019%e5%b9%b4%e5%95%9f%e7%a8%8b%e5%84%80%e5%bc%8f-%e5%9a%b4%e9%95%b7%e5%a3%bd%e7%b8%bd%e8%a3%81%e8%87%b4%e8%a9%9e/
+  - File: `17218.md`
+  - Published: 2019-08-06T17:58:25
+-  劉安婷國北教畢典致詞全文：「患難生忍耐，忍耐生老練，老練生盼望。」
+  - Source: https://www.teach4taiwan.org/%e5%8a%89%e5%ae%89%e5%a9%b7%e5%9c%8b%e5%8c%97%e6%95%99%e7%95%a2%e5%85%b8%e8%87%b4%e8%a9%9e%e5%85%a8%e6%96%87/
+  - File: `16745.md`
+  - Published: 2019-06-17T21:00:01
+- 人工智慧使我們生活更便利，但教育不平等解決了嗎？
+  - Source: https://www.teach4taiwan.org/%e4%ba%ba%e5%b7%a5%e6%99%ba%e6%85%a7%e4%bd%bf%e6%88%91%e5%80%91%e7%94%9f%e6%b4%bb%e6%9b%b4%e4%be%bf%e5%88%a9%e4%bd%86%e6%95%99%e8%82%b2%e4%b8%8d%e5%b9%b3%e7%ad%89%e8%a7%a3%e6%b1%ba/
+  - File: `12264.md`
+  - Published: 2018-11-20T18:00:44
+- 別成為「思想的巨人，行動的侏儒」——攜手改善教育不平等
+  - Source: https://www.teach4taiwan.org/%e5%88%a5%e6%88%90%e7%82%ba%e6%80%9d%e6%83%b3%e7%9a%84%e5%b7%a8%e4%ba%ba%e8%a1%8c%e5%8b%95%e7%9a%84%e4%be%8f%e5%84%92/
+  - File: `12269.md`
+  - Published: 2018-11-20T18:00:20
+- 劉安婷：即使我們擁有不同專業背景，但教育乃是眾人之事
+  - Source: https://www.teach4taiwan.org/%e5%8a%89%e5%ae%89%e5%a9%b7%ef%bc%9a%e5%8d%b3%e4%bd%bf%e6%88%91%e5%80%91%e6%93%81%e6%9c%89%e4%b8%8d%e5%90%8c%e5%b0%88%e6%a5%ad%e8%83%8c%e6%99%af%ef%bc%8c%e4%bd%86%e6%95%99%e8%82%b2%e4%b9%83%e6%98%af/
+  - File: `12148.md`
+  - Published: 2018-11-09T18:00:22
+- Teach For All：一場全球性的新世代青年運動
+  - Source: https://www.teach4taiwan.org/teach-for-all%ef%bc%9a%e4%b8%80%e5%a0%b4%e5%85%a8%e7%90%83%e6%80%a7%e7%9a%84%e6%96%b0%e4%b8%96%e4%bb%a3%e9%9d%92%e5%b9%b4%e9%81%8b%e5%8b%95/
+  - File: `10023.md`
+  - Published: 2018-03-21T17:27:05
+- 奧美集團董事長白崇亮：在人的一生當中，最重要的是你初踏入社會所做的事情
+  - Source: https://www.teach4taiwan.org/%e5%a5%a7%e7%be%8e%e9%9b%86%e5%9c%98%e8%91%a3%e4%ba%8b%e9%95%b7%e7%99%bd%e5%b4%87%e4%ba%ae%ef%bc%9a%e5%9c%a8%e4%ba%ba%e7%9a%84%e4%b8%80%e7%94%9f%e7%95%b6%e4%b8%ad%ef%bc%8c%e6%9c%80%e9%87%8d%e8%a6%81/
+  - File: `4559.md`
+  - Published: 2016-07-02T18:00:47

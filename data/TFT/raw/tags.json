@@ -1,0 +1,2123 @@
+[
+  {
+    "id": 538,
+    "link": "https://www.teach4taiwan.org/tag/school/",
+    "name": "學校",
+    "slug": "school",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>學校 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/school/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"學校 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:description\" content=\"TFT觀點-學校\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/school/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/school/\",\"url\":\"https://www.teach4taiwan.org/tag/school/\",\"name\":\"學校 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/school/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/school/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"學校\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "學校 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/school/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "學校 彙整 | TFT 為台灣而教",
+      "og_description": "TFT觀點-學校",
+      "og_url": "https://www.teach4taiwan.org/tag/school/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/school/",
+            "url": "https://www.teach4taiwan.org/tag/school/",
+            "name": "學校 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/school/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/school/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "學校"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/538",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=538"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 553,
+    "link": "https://www.teach4taiwan.org/tag/student/",
+    "name": "學生",
+    "slug": "student",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>學生 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/student/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"學生 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:description\" content=\"TFT觀點-學生\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/student/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/student/\",\"url\":\"https://www.teach4taiwan.org/tag/student/\",\"name\":\"學生 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/student/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/student/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"學生\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "學生 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/student/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "學生 彙整 | TFT 為台灣而教",
+      "og_description": "TFT觀點-學生",
+      "og_url": "https://www.teach4taiwan.org/tag/student/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/student/",
+            "url": "https://www.teach4taiwan.org/tag/student/",
+            "name": "學生 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/student/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/student/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "學生"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/553",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=553"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 602,
+    "link": "https://www.teach4taiwan.org/tag/%e7%b5%84%e7%b9%94/",
+    "name": "組織",
+    "slug": "%e7%b5%84%e7%b9%94",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>組織 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/組織/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"組織 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/組織/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/%e7%b5%84%e7%b9%94/\",\"url\":\"https://www.teach4taiwan.org/tag/%e7%b5%84%e7%b9%94/\",\"name\":\"組織 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/%e7%b5%84%e7%b9%94/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/%e7%b5%84%e7%b9%94/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"組織\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "組織 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/組織/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "組織 彙整 | TFT 為台灣而教",
+      "og_url": "https://www.teach4taiwan.org/tag/組織/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/%e7%b5%84%e7%b9%94/",
+            "url": "https://www.teach4taiwan.org/tag/%e7%b5%84%e7%b9%94/",
+            "name": "組織 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/%e7%b5%84%e7%b9%94/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/%e7%b5%84%e7%b9%94/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "組織"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/602",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=602"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 554,
+    "link": "https://www.teach4taiwan.org/tag/society/",
+    "name": "社會",
+    "slug": "society",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>社會 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/society/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"社會 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:description\" content=\"TFT觀點-社會\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/society/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/society/\",\"url\":\"https://www.teach4taiwan.org/tag/society/\",\"name\":\"社會 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/society/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/society/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"社會\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "社會 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/society/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "社會 彙整 | TFT 為台灣而教",
+      "og_description": "TFT觀點-社會",
+      "og_url": "https://www.teach4taiwan.org/tag/society/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/society/",
+            "url": "https://www.teach4taiwan.org/tag/society/",
+            "name": "社會 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/society/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/society/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "社會"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/554",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=554"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 540,
+    "link": "https://www.teach4taiwan.org/tag/evidence/",
+    "name": "證據",
+    "slug": "evidence",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>證據 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/evidence/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"證據 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:description\" content=\"TFT觀點-evidence-based policymaking\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/evidence/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/evidence/\",\"url\":\"https://www.teach4taiwan.org/tag/evidence/\",\"name\":\"證據 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/evidence/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/evidence/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"證據\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "證據 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/evidence/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "證據 彙整 | TFT 為台灣而教",
+      "og_description": "TFT觀點-evidence-based policymaking",
+      "og_url": "https://www.teach4taiwan.org/tag/evidence/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/evidence/",
+            "url": "https://www.teach4taiwan.org/tag/evidence/",
+            "name": "證據 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/evidence/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/evidence/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "證據"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/540",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=540"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 541,
+    "link": "https://www.teach4taiwan.org/tag/intersectionality/",
+    "name": "交織性",
+    "slug": "intersectionality",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>交織性 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/intersectionality/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"交織性 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:description\" content=\"TFT觀點-intersectionality\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/intersectionality/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/intersectionality/\",\"url\":\"https://www.teach4taiwan.org/tag/intersectionality/\",\"name\":\"交織性 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/intersectionality/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/intersectionality/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"交織性\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "交織性 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/intersectionality/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "交織性 彙整 | TFT 為台灣而教",
+      "og_description": "TFT觀點-intersectionality",
+      "og_url": "https://www.teach4taiwan.org/tag/intersectionality/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/intersectionality/",
+            "url": "https://www.teach4taiwan.org/tag/intersectionality/",
+            "name": "交織性 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/intersectionality/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/intersectionality/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "交織性"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/541",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=541"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 539,
+    "link": "https://www.teach4taiwan.org/tag/community/",
+    "name": "社區",
+    "slug": "community",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>社區 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/community/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"社區 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:description\" content=\"TFT觀點-社區\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/community/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/community/\",\"url\":\"https://www.teach4taiwan.org/tag/community/\",\"name\":\"社區 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/community/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/community/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"社區\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "社區 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/community/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "社區 彙整 | TFT 為台灣而教",
+      "og_description": "TFT觀點-社區",
+      "og_url": "https://www.teach4taiwan.org/tag/community/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/community/",
+            "url": "https://www.teach4taiwan.org/tag/community/",
+            "name": "社區 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/community/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/community/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "社區"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/539",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=539"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 526,
+    "link": "https://www.teach4taiwan.org/tag/applicant/",
+    "name": "計畫成員與校友",
+    "slug": "applicant",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>計畫成員與校友 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/applicant/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"計畫成員與校友 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/applicant/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/applicant/\",\"url\":\"https://www.teach4taiwan.org/tag/applicant/\",\"name\":\"計畫成員與校友 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/applicant/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/applicant/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"計畫成員與校友\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "計畫成員與校友 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/applicant/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "計畫成員與校友 彙整 | TFT 為台灣而教",
+      "og_url": "https://www.teach4taiwan.org/tag/applicant/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/applicant/",
+            "url": "https://www.teach4taiwan.org/tag/applicant/",
+            "name": "計畫成員與校友 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/applicant/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/applicant/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "計畫成員與校友"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/526",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=526"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 547,
+    "link": "https://www.teach4taiwan.org/tag/operation/",
+    "name": "TFT 組織",
+    "slug": "operation",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>TFT 組織 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/operation/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"TFT 組織 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/operation/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/operation/\",\"url\":\"https://www.teach4taiwan.org/tag/operation/\",\"name\":\"TFT 組織 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/operation/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/operation/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"TFT 組織\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "TFT 組織 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/operation/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "TFT 組織 彙整 | TFT 為台灣而教",
+      "og_url": "https://www.teach4taiwan.org/tag/operation/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/operation/",
+            "url": "https://www.teach4taiwan.org/tag/operation/",
+            "name": "TFT 組織 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/operation/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/operation/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "TFT 組織"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/547",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=547"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 546,
+    "link": "https://www.teach4taiwan.org/tag/school-neighborhood/",
+    "name": "社區學校合作",
+    "slug": "school-neighborhood",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>社區學校合作 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/school-neighborhood/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"社區學校合作 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/school-neighborhood/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/school-neighborhood/\",\"url\":\"https://www.teach4taiwan.org/tag/school-neighborhood/\",\"name\":\"社區學校合作 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/school-neighborhood/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/school-neighborhood/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"社區學校合作\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "社區學校合作 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/school-neighborhood/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "社區學校合作 彙整 | TFT 為台灣而教",
+      "og_url": "https://www.teach4taiwan.org/tag/school-neighborhood/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/school-neighborhood/",
+            "url": "https://www.teach4taiwan.org/tag/school-neighborhood/",
+            "name": "社區學校合作 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/school-neighborhood/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/school-neighborhood/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "社區學校合作"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/546",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=546"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 527,
+    "link": "https://www.teach4taiwan.org/tag/fellow/",
+    "name": "TFT 計畫教育現場",
+    "slug": "fellow",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>TFT 計畫教育現場 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/fellow/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"TFT 計畫教育現場 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/fellow/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/fellow/\",\"url\":\"https://www.teach4taiwan.org/tag/fellow/\",\"name\":\"TFT 計畫教育現場 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/fellow/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/fellow/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"TFT 計畫教育現場\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "TFT 計畫教育現場 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/fellow/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "TFT 計畫教育現場 彙整 | TFT 為台灣而教",
+      "og_url": "https://www.teach4taiwan.org/tag/fellow/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/fellow/",
+            "url": "https://www.teach4taiwan.org/tag/fellow/",
+            "name": "TFT 計畫教育現場 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/fellow/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/fellow/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "TFT 計畫教育現場"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/527",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=527"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 595,
+    "link": "https://www.teach4taiwan.org/tag/parner/",
+    "name": "多元跨界倡議",
+    "slug": "parner",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>多元跨界倡議 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/parner/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"多元跨界倡議 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/parner/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/parner/\",\"url\":\"https://www.teach4taiwan.org/tag/parner/\",\"name\":\"多元跨界倡議 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/parner/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/parner/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"多元跨界倡議\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "多元跨界倡議 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/parner/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "多元跨界倡議 彙整 | TFT 為台灣而教",
+      "og_url": "https://www.teach4taiwan.org/tag/parner/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/parner/",
+            "url": "https://www.teach4taiwan.org/tag/parner/",
+            "name": "多元跨界倡議 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/parner/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/parner/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "多元跨界倡議"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/595",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=595"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 528,
+    "link": "https://www.teach4taiwan.org/tag/alumni/",
+    "name": "TFT 校友",
+    "slug": "alumni",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>TFT 校友 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/alumni/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"TFT 校友 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/alumni/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/alumni/\",\"url\":\"https://www.teach4taiwan.org/tag/alumni/\",\"name\":\"TFT 校友 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/alumni/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/alumni/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"TFT 校友\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "TFT 校友 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/alumni/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "TFT 校友 彙整 | TFT 為台灣而教",
+      "og_url": "https://www.teach4taiwan.org/tag/alumni/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/alumni/",
+            "url": "https://www.teach4taiwan.org/tag/alumni/",
+            "name": "TFT 校友 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/alumni/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/alumni/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "TFT 校友"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/528",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=528"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 596,
+    "link": "https://www.teach4taiwan.org/tag/camp/",
+    "name": "夏季明日學校",
+    "slug": "camp",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>夏季明日學校 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/camp/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"夏季明日學校 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/camp/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/camp/\",\"url\":\"https://www.teach4taiwan.org/tag/camp/\",\"name\":\"夏季明日學校 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/camp/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/camp/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"夏季明日學校\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "夏季明日學校 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/camp/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "夏季明日學校 彙整 | TFT 為台灣而教",
+      "og_url": "https://www.teach4taiwan.org/tag/camp/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/camp/",
+            "url": "https://www.teach4taiwan.org/tag/camp/",
+            "name": "夏季明日學校 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/camp/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/camp/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "夏季明日學校"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/596",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=596"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 571,
+    "link": "https://www.teach4taiwan.org/tag/volunteer/",
+    "name": "TFT 實習生志工",
+    "slug": "volunteer",
+    "taxonomy": "post_tag",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>TFT 實習生志工 彙整 | TFT 為台灣而教</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.teach4taiwan.org/tag/volunteer/\" />\n<meta property=\"og:locale\" content=\"zh_TW\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"TFT 實習生志工 彙整 | TFT 為台灣而教\" />\n<meta property=\"og:url\" content=\"https://www.teach4taiwan.org/tag/volunteer/\" />\n<meta property=\"og:site_name\" content=\"TFT 為台灣而教\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.teach4taiwan.org/tag/volunteer/\",\"url\":\"https://www.teach4taiwan.org/tag/volunteer/\",\"name\":\"TFT 實習生志工 彙整 | TFT 為台灣而教\",\"isPartOf\":{\"@id\":\"https://www.teach4taiwan.org/#website\"},\"breadcrumb\":{\"@id\":\"https://www.teach4taiwan.org/tag/volunteer/#breadcrumb\"},\"inLanguage\":\"zh-TW\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.teach4taiwan.org/tag/volunteer/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://www.teach4taiwan.org/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"TFT 實習生志工\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.teach4taiwan.org/#website\",\"url\":\"https://www.teach4taiwan.org/\",\"name\":\"TFT 為台灣而教\",\"description\":\"\",\"publisher\":{\"@id\":\"https://www.teach4taiwan.org/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.teach4taiwan.org/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"zh-TW\"},{\"@type\":\"Organization\",\"@id\":\"https://www.teach4taiwan.org/#organization\",\"name\":\"Teach For Taiwan\",\"url\":\"https://www.teach4taiwan.org/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"zh-TW\",\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\",\"url\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"contentUrl\":\"https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png\",\"width\":1892,\"height\":452,\"caption\":\"Teach For Taiwan\"},\"image\":{\"@id\":\"https://www.teach4taiwan.org/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/teach4taiwan/\",\"https://www.instagram.com/teach4taiwan/\",\"https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "TFT 實習生志工 彙整 | TFT 為台灣而教",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://www.teach4taiwan.org/tag/volunteer/",
+      "og_locale": "zh_TW",
+      "og_type": "article",
+      "og_title": "TFT 實習生志工 彙整 | TFT 為台灣而教",
+      "og_url": "https://www.teach4taiwan.org/tag/volunteer/",
+      "og_site_name": "TFT 為台灣而教",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.teach4taiwan.org/tag/volunteer/",
+            "url": "https://www.teach4taiwan.org/tag/volunteer/",
+            "name": "TFT 實習生志工 彙整 | TFT 為台灣而教",
+            "isPartOf": {
+              "@id": "https://www.teach4taiwan.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.teach4taiwan.org/tag/volunteer/#breadcrumb"
+            },
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.teach4taiwan.org/tag/volunteer/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://www.teach4taiwan.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "TFT 實習生志工"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.teach4taiwan.org/#website",
+            "url": "https://www.teach4taiwan.org/",
+            "name": "TFT 為台灣而教",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.teach4taiwan.org/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.teach4taiwan.org/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "zh-TW"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.teach4taiwan.org/#organization",
+            "name": "Teach For Taiwan",
+            "url": "https://www.teach4taiwan.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "zh-TW",
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/",
+              "url": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "contentUrl": "https://www.teach4taiwan.org/wp-content/uploads/2020/09/TFT-LOGO-無英文-彩.png",
+              "width": 1892,
+              "height": 452,
+              "caption": "Teach For Taiwan"
+            },
+            "image": {
+              "@id": "https://www.teach4taiwan.org/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/teach4taiwan/",
+              "https://www.instagram.com/teach4taiwan/",
+              "https://www.youtube.com/channel/UCfreYo1mnqLN4Iz66nno1oA"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags/571",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.teach4taiwan.org/wp-json/wp/v2/posts?tags=571"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

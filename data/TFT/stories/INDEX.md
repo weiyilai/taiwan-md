@@ -1,0 +1,1554 @@
+# TFT 故事棧索引
+
+- 【國際參訪之旅】從教室到世界，校友同行的教育旅程
+  - Source: https://www.teach4taiwan.org/%e3%80%90%e5%9c%8b%e9%9a%9b%e5%8f%83%e8%a8%aa%e4%b9%8b%e6%97%85%e3%80%91%e5%be%9e%e6%95%99%e5%ae%a4%e5%88%b0%e4%b8%96%e7%95%8c%ef%bc%8c%e6%a0%a1%e5%8f%8b%e5%90%8c%e8%a1%8c%e7%9a%84%e6%95%99%e8%82%b2/
+  - File: `64935.md`
+  - Published: 2025-12-19T13:32:14
+- 【國際參訪之旅】我在馬來西亞最重要的學習是&#8230;，哪些可以帶回教學現場
+  - Source: https://www.teach4taiwan.org/2025-tft-%e5%9c%8b%e9%9a%9b%e5%8f%83%e8%a8%aa%e4%b9%8b%e6%97%85-1/
+  - File: `64917.md`
+  - Published: 2025-12-19T13:12:21
+- 「當老師」能成為值得的選擇嗎？一起聊聊教育現場需要的關鍵支持
+  - Source: https://www.teach4taiwan.org/%e3%80%8c%e7%95%b6%e8%80%81%e5%b8%ab%e3%80%8d%e8%83%bd%e6%88%90%e7%82%ba%e5%80%bc%e5%be%97%e7%9a%84%e9%81%b8%e6%93%87%e5%97%8e%ef%bc%9f%e4%b8%80%e8%b5%b7%e8%81%8a%e8%81%8a%e6%95%99%e8%82%b2%e7%8f%be/
+  - File: `64192.md`
+  - Published: 2025-12-08T17:49:45
+- 帶動校園新文化——營造師生認同與教學創新的學校
+  - Source: https://www.teach4taiwan.org/%e5%b8%b6%e5%8b%95%e6%a0%a1%e5%9c%92%e6%96%b0%e6%96%87%e5%8c%96-%e7%87%9f%e9%80%a0%e5%b8%ab%e7%94%9f%e8%aa%8d%e5%90%8c%e8%88%87%e6%95%99%e5%ad%b8%e5%89%b5%e6%96%b0%e7%9a%84%e5%ad%b8-2/
+  - File: `63779.md`
+  - Published: 2025-10-31T15:17:30
+- 孩子的聲音，會用自己的方式響亮起來
+  - Source: https://www.teach4taiwan.org/%e5%ad%a9%e5%ad%90%e7%9a%84%e8%81%b2%e9%9f%b3%ef%bc%8c%e6%9c%83%e7%94%a8%e8%87%aa%e5%b7%b1%e7%9a%84%e6%96%b9%e5%bc%8f%e9%9f%bf%e4%ba%ae%e8%b5%b7%e4%be%86/
+  - File: `60674.md`
+  - Published: 2025-09-09T00:11:09
+- 不完美的自己，也是一種完整
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e5%ae%8c%e7%be%8e%e7%9a%84%e8%87%aa%e5%b7%b1%ef%bc%8c%e4%b9%9f%e6%98%af%e4%b8%80%e7%a8%ae%e5%ae%8c%e6%95%b4/
+  - File: `60669.md`
+  - Published: 2025-09-09T00:09:19
+- 先相信孩子，孩子就會相信我們
+  - Source: https://www.teach4taiwan.org/%e5%85%88%e7%9b%b8%e4%bf%a1%e5%ad%a9%e5%ad%90%ef%bc%8c%e5%ad%a9%e5%ad%90%e5%b0%b1%e6%9c%83%e7%9b%b8%e4%bf%a1%e6%88%91%e5%80%91/
+  - File: `60664.md`
+  - Published: 2025-09-09T00:04:42
+- 愛孩子前先愛自己
+  - Source: https://www.teach4taiwan.org/%e6%84%9b%e5%ad%a9%e5%ad%90%e5%89%8d%e5%85%88%e6%84%9b%e8%87%aa%e5%b7%b1/
+  - File: `60660.md`
+  - Published: 2025-09-09T00:01:43
+- 文化不被灌輸，是唱出來的——為我們的部落發「聲」
+  - Source: https://www.teach4taiwan.org/%e6%96%87%e5%8c%96%e4%b8%8d%e8%a2%ab%e7%81%8c%e8%bc%b8%ef%bc%8c%e6%98%af%e5%94%b1%e5%87%ba%e4%be%86%e7%9a%84-%e7%82%ba%e6%88%91%e5%80%91%e7%9a%84%e9%83%a8%e8%90%bd%e7%99%bc%e3%80%8c/
+  - File: `60656.md`
+  - Published: 2025-09-08T23:54:38
+- 盡力就是完美，用聽的〈走去丹路〉
+  - Source: https://www.teach4taiwan.org/%e7%9b%a1%e5%8a%9b%e5%b0%b1%e6%98%af%e5%ae%8c%e7%be%8e%ef%bc%8c%e7%94%a8%e8%81%bd%e7%9a%84%e3%80%88%e8%b5%b0%e5%8e%bb%e4%b8%b9%e8%b7%af%e3%80%89/
+  - File: `60652.md`
+  - Published: 2025-09-08T23:52:19
+- 孩子不是不想，只是需要有人陪伴他慢慢長出力量
+  - Source: https://www.teach4taiwan.org/%e5%ad%a9%e5%ad%90%e4%b8%8d%e6%98%af%e4%b8%8d%e6%83%b3%ef%bc%8c%e5%8f%aa%e6%98%af%e9%9c%80%e8%a6%81%e6%9c%89%e4%ba%ba%e9%99%aa%e4%bc%b4%e4%bb%96%e6%85%a2%e6%85%a2%e9%95%b7%e5%87%ba%e5%8a%9b%e9%87%8f/
+  - File: `60648.md`
+  - Published: 2025-09-08T23:48:14
+- 最高品質，從孩子勇敢發聲開始
+  - Source: https://www.teach4taiwan.org/%e6%9c%80%e9%ab%98%e5%93%81%e8%b3%aa%ef%bc%8c%e5%be%9e%e5%ad%a9%e5%ad%90%e5%8b%87%e6%95%a2%e7%99%bc%e8%81%b2%e9%96%8b%e5%a7%8b/
+  - File: `60636.md`
+  - Published: 2025-09-08T23:41:13
+- 踏實認真的生活就是最高品質
+  - Source: https://www.teach4taiwan.org/%e8%b8%8f%e5%af%a6%e8%aa%8d%e7%9c%9f%e7%9a%84%e7%94%9f%e6%b4%bb%e5%b0%b1%e6%98%af%e6%9c%80%e9%ab%98%e5%93%81%e8%b3%aa/
+  - File: `60630.md`
+  - Published: 2025-09-08T23:38:15
+- 給畢業班孩子們的一封信
+  - Source: https://www.teach4taiwan.org/%e7%b5%a6%e7%95%a2%e6%a5%ad%e7%8f%ad%e5%ad%a9%e5%ad%90%e5%80%91%e7%9a%84%e4%b8%80%e5%b0%81%e4%bf%a1/
+  - File: `60599.md`
+  - Published: 2025-09-08T23:06:42
+- 真希望學校可以有更多學生，這樣你就可以留下來了 
+  - Source: https://www.teach4taiwan.org/%e7%9c%9f%e5%b8%8c%e6%9c%9b%e5%ad%b8%e6%a0%a1%e5%8f%af%e4%bb%a5%e6%9c%89%e6%9b%b4%e5%a4%9a%e5%ad%b8%e7%94%9f%ef%bc%8c%e9%80%99%e6%a8%a3%e4%bd%a0%e5%b0%b1%e5%8f%af%e4%bb%a5%e7%95%99%e4%b8%8b%e4%be%86/
+  - File: `60594.md`
+  - Published: 2025-09-08T23:03:35
+- 看見「相信自己」的那道光芒
+  - Source: https://www.teach4taiwan.org/%e7%9c%8b%e8%a6%8b%e3%80%8c%e7%9b%b8%e4%bf%a1%e8%87%aa%e5%b7%b1%e3%80%8d%e7%9a%84%e9%82%a3%e9%81%93%e5%85%89%e8%8a%92/
+  - File: `60583.md`
+  - Published: 2025-09-08T22:53:41
+- 延續教育初衷的創業路——葉育汎的「泥好」精神
+  - Source: https://www.teach4taiwan.org/%e5%bb%b6%e7%ba%8c%e6%95%99%e8%82%b2%e5%88%9d%e8%a1%b7%e7%9a%84%e5%89%b5%e6%a5%ad%e8%b7%af-%e8%91%89%e8%82%b2%e6%b1%8e%e7%9a%84%e3%80%8c%e6%b3%a5%e5%a5%bd%e3%80%8d%e7%b2%be%e7%a5%9e-2/
+  - File: `60579.md`
+  - Published: 2025-09-08T22:50:46
+- 成長的路上，不需要一直正確 —— 那攤故意灑出的水
+  - Source: https://www.teach4taiwan.org/%e6%88%90%e9%95%b7%e7%9a%84%e8%b7%af%e4%b8%8a%ef%bc%8c%e4%b8%8d%e9%9c%80%e8%a6%81%e4%b8%80%e7%9b%b4%e6%ad%a3%e7%a2%ba-%e9%82%a3%e6%94%a4%e6%95%85%e6%84%8f%e7%81%91%e5%87%ba%e7%9a%84/
+  - File: `60559.md`
+  - Published: 2025-09-08T22:34:38
+- 當我無條件愛著孩子的同時，也給了自己被愛、不完美的允許
+  - Source: https://www.teach4taiwan.org/%e7%95%b6%e6%88%91%e7%84%a1%e6%a2%9d%e4%bb%b6%e6%84%9b%e8%91%97%e5%ad%a9%e5%ad%90%e7%9a%84%e5%90%8c%e6%99%82%ef%bc%8c%e4%b9%9f%e7%b5%a6%e4%ba%86%e8%87%aa%e5%b7%b1%e8%a2%ab%e6%84%9b%e3%80%81%e4%b8%8d/
+  - File: `60555.md`
+  - Published: 2025-09-08T22:16:54
+- 與其怕孩子學壞，不如跟他們一起探索
+  - Source: https://www.teach4taiwan.org/%e8%88%87%e5%85%b6%e6%80%95%e5%ad%a9%e5%ad%90%e5%ad%b8%e5%a3%9e%ef%bc%8c%e4%b8%8d%e5%a6%82%e8%b7%9f%e4%bb%96%e5%80%91%e4%b8%80%e8%b5%b7%e6%8e%a2%e7%b4%a2/
+  - File: `60540.md`
+  - Published: 2025-09-08T21:59:07
+- 成為一位老師，該是什麼模樣？
+  - Source: https://www.teach4taiwan.org/%e6%88%90%e7%82%ba%e4%b8%80%e4%bd%8d%e8%80%81%e5%b8%ab%ef%bc%8c%e8%a9%b2%e6%98%af%e4%bb%80%e9%ba%bc%e6%a8%a1%e6%a8%a3%ef%bc%9f/
+  - File: `60477.md`
+  - Published: 2025-09-08T15:39:52
+- 最高品質是，孩子能照著自己的步調成長
+  - Source: https://www.teach4taiwan.org/%e6%9c%80%e9%ab%98%e5%93%81%e8%b3%aa%e6%98%af%ef%bc%8c%e5%ad%a9%e5%ad%90%e8%83%bd%e7%85%a7%e8%91%97%e8%87%aa%e5%b7%b1%e7%9a%84%e6%ad%a5%e8%aa%bf%e6%88%90%e9%95%b7/
+  - File: `60250.md`
+  - Published: 2025-09-01T20:39:05
+- 給孩子脆弱的空間，陪他長出自己的超能力
+  - Source: https://www.teach4taiwan.org/%e7%b5%a6%e5%ad%a9%e5%ad%90%e8%84%86%e5%bc%b1%e7%9a%84%e7%a9%ba%e9%96%93%ef%bc%8c%e9%99%aa%e4%bb%96%e9%95%b7%e5%87%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e8%b6%85%e8%83%bd%e5%8a%9b/
+  - File: `60248.md`
+  - Published: 2025-09-01T20:38:41
+- 屬於孩子的最高品質
+  - Source: https://www.teach4taiwan.org/%e5%b1%ac%e6%96%bc%e5%ad%a9%e5%ad%90%e7%9a%84%e6%9c%80%e9%ab%98%e5%93%81%e8%b3%aa/
+  - File: `60246.md`
+  - Published: 2025-09-01T20:37:53
+- 教育不是推著往上走，而是拉著一起感受風 
+  - Source: https://www.teach4taiwan.org/%e6%95%99%e8%82%b2%e4%b8%8d%e6%98%af%e6%8e%a8%e8%91%97%e5%be%80%e4%b8%8a%e8%b5%b0%ef%bc%8c%e8%80%8c%e6%98%af%e6%8b%89%e8%91%97%e4%b8%80%e8%b5%b7%e6%84%9f%e5%8f%97%e9%a2%a8/
+  - File: `60244.md`
+  - Published: 2025-09-01T20:37:28
+- 打破舊有框架，走出自我道路
+  - Source: https://www.teach4taiwan.org/%e6%89%93%e7%a0%b4%e8%88%8a%e6%9c%89%e6%a1%86%e6%9e%b6%ef%bc%8c%e8%b5%b0%e5%87%ba%e8%87%aa%e6%88%91%e9%81%93%e8%b7%af/
+  - File: `60242.md`
+  - Published: 2025-09-01T20:37:01
+- 當孩子寫下過去的傷，正是他開始學會為自己發聲的時刻
+  - Source: https://www.teach4taiwan.org/%e7%95%b6%e5%ad%a9%e5%ad%90%e5%af%ab%e4%b8%8b%e9%81%8e%e5%8e%bb%e7%9a%84%e5%82%b7%ef%bc%8c%e6%ad%a3%e6%98%af%e4%bb%96%e9%96%8b%e5%a7%8b%e5%ad%b8%e6%9c%83%e7%82%ba%e8%87%aa%e5%b7%b1%e7%99%bc%e8%81%b2/
+  - File: `60240.md`
+  - Published: 2025-09-01T20:36:36
+- 被理解，是一種靜悄悄的療癒
+  - Source: https://www.teach4taiwan.org/%e8%a2%ab%e7%90%86%e8%a7%a3%ef%bc%8c%e6%98%af%e4%b8%80%e7%a8%ae%e9%9d%9c%e6%82%84%e6%82%84%e7%9a%84%e7%99%82%e7%99%92/
+  - File: `60238.md`
+  - Published: 2025-09-01T20:36:14
+- 我們是大湖的超級發言人
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e5%80%91%e6%98%af%e5%a4%a7%e6%b9%96%e7%9a%84%e8%b6%85%e7%b4%9a%e7%99%bc%e8%a8%80%e4%ba%ba/
+  - File: `60236.md`
+  - Published: 2025-09-01T20:35:46
+- 原來好好生氣，也是最高品質
+  - Source: https://www.teach4taiwan.org/%e5%8e%9f%e4%be%86%e5%a5%bd%e5%a5%bd%e7%94%9f%e6%b0%a3%ef%bc%8c%e4%b9%9f%e6%98%af%e6%9c%80%e9%ab%98%e5%93%81%e8%b3%aa/
+  - File: `60234.md`
+  - Published: 2025-09-01T20:35:12
+- 畫的室引領大眾，用藝術創作活出自在的自己
+  - Source: https://www.teach4taiwan.org/%e8%a8%88%e7%95%ab%e7%b5%90%e6%9d%9f%e4%b8%a6%e9%9d%9e%e5%8f%a5%e9%bb%9e%ef%bc%8ctft-%e6%94%af%e6%8c%81%e6%a0%a1%e5%8f%8b%e4%bb%a5%e5%89%b5%e6%a5%ad%e5%bb%b6%e7%ba%8c%e5%bd%b1%e9%9f%bf%e5%8a%9b/
+  - File: `60228.md`
+  - Published: 2025-09-01T20:32:33
+- 從在教育現場的計畫成員，到成為支持現場的後勤團隊
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e5%9c%a8%e6%95%99%e8%82%b2%e7%8f%be%e5%a0%b4%e7%9a%84%e8%a8%88%e7%95%ab%e6%88%90%e5%93%a1%ef%bc%8c%e5%88%b0%e6%88%90%e7%82%ba%e6%94%af%e6%8c%81%e7%8f%be%e5%a0%b4%e7%9a%84%e5%be%8c%e5%8b%a4/
+  - File: `60226.md`
+  - Published: 2025-09-01T20:31:47
+- 衝突也能學會團隊合作，孩子們成為彼此的光 
+  - Source: https://www.teach4taiwan.org/%e8%a1%9d%e7%aa%81%e4%b9%9f%e8%83%bd%e5%ad%b8%e6%9c%83%e5%9c%98%e9%9a%8a%e5%90%88%e4%bd%9c%ef%bc%8c%e5%ad%a9%e5%ad%90%e5%80%91%e6%88%90%e7%82%ba%e5%bd%bc%e6%ad%a4%e7%9a%84%e5%85%89/
+  - File: `60223.md`
+  - Published: 2025-09-01T20:30:58
+- 沿著每一次相信，走進教育的核心
+  - Source: https://www.teach4taiwan.org/%e6%b2%bf%e8%91%97%e6%af%8f%e4%b8%80%e6%ac%a1%e7%9b%b8%e4%bf%a1%ef%bc%8c%e8%b5%b0%e9%80%b2%e6%95%99%e8%82%b2%e7%9a%84%e6%a0%b8%e5%bf%83/
+  - File: `60219.md`
+  - Published: 2025-09-01T20:30:29
+- 好好陪伴家長，就是給孩子最好的支持 —— 家庭支持組織「家溫所在」
+  - Source: https://www.teach4taiwan.org/%e5%a5%bd%e5%a5%bd%e9%99%aa%e4%bc%b4%e5%ae%b6%e9%95%b7%ef%bc%8c%e5%b0%b1%e6%98%af%e7%b5%a6%e5%ad%a9%e5%ad%90%e6%9c%80%e5%a5%bd%e7%9a%84%e6%94%af%e6%8c%81-%e5%ae%b6%e5%ba%ad%e6%94%af/
+  - File: `60214.md`
+  - Published: 2025-09-01T20:28:02
+- 打造理想學校的支持系統
+  - Source: https://www.teach4taiwan.org/%e6%89%93%e9%80%a0%e7%90%86%e6%83%b3%e5%ad%b8%e6%a0%a1%e7%9a%84%e6%94%af%e6%8c%81%e7%b3%bb%e7%b5%b1/
+  - File: `60212.md`
+  - Published: 2025-09-01T20:27:02
+- 「謝謝、我愛你、老師、國語數學」
+  - Source: https://www.teach4taiwan.org/%e3%80%8c%e8%ac%9d%e8%ac%9d%e3%80%81%e6%88%91%e6%84%9b%e4%bd%a0%e3%80%81%e8%80%81%e5%b8%ab%e3%80%81%e5%9c%8b%e8%aa%9e%e6%95%b8%e5%ad%b8%e3%80%8d/
+  - File: `60210.md`
+  - Published: 2025-09-01T20:26:34
+- 從部落小學出發，教孩子與偏見對話
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e9%83%a8%e8%90%bd%e5%b0%8f%e5%ad%b8%e5%87%ba%e7%99%bc%ef%bc%8c%e6%95%99%e5%ad%a9%e5%ad%90%e8%88%87%e5%81%8f%e8%a6%8b%e5%b0%8d%e8%a9%b1/
+  - File: `60206.md`
+  - Published: 2025-09-01T20:26:10
+- 師培不失陪，看禮德旭怎麼帶師培生找回教育熱忱
+  - Source: https://www.teach4taiwan.org/%e5%b8%ab%e5%9f%b9%e4%b8%8d%e5%a4%b1%e9%99%aa%ef%bc%8c%e7%9c%8b%e7%a6%ae%e5%be%b7%e6%97%ad%e6%80%8e%e9%ba%bc%e5%b8%b6%e5%b8%ab%e5%9f%b9%e7%94%9f%e6%89%be%e5%9b%9e%e6%95%99%e8%82%b2%e7%86%b1%e5%bf%b1/
+  - File: `60203.md`
+  - Published: 2025-09-01T20:25:40
+- 心在球，不在輸贏。心在隊友，不在自己
+  - Source: https://www.teach4taiwan.org/%e5%bf%83%e5%9c%a8%e7%90%83%ef%bc%8c%e4%b8%8d%e5%9c%a8%e8%bc%b8%e8%b4%8f%e3%80%82%e5%bf%83%e5%9c%a8%e9%9a%8a%e5%8f%8b%ef%bc%8c%e4%b8%8d%e5%9c%a8%e8%87%aa%e5%b7%b1/
+  - File: `60201.md`
+  - Published: 2025-09-01T20:25:04
+- 從文化復振中看見作物復育與地方教育的不同想像
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e6%96%87%e5%8c%96%e5%be%a9%e6%8c%af%e4%b8%ad%e7%9c%8b%e8%a6%8b%e4%bd%9c%e7%89%a9%e5%be%a9%e8%82%b2%e8%88%87%e5%9c%b0%e6%96%b9%e6%95%99%e8%82%b2%e7%9a%84%e4%b8%8d%e5%90%8c%e6%83%b3%e5%83%8f/
+  - File: `60199.md`
+  - Published: 2025-09-01T20:24:31
+- 親師生一起談「性」？一場與眾不同的家長大會
+  - Source: https://www.teach4taiwan.org/%e8%a6%aa%e5%b8%ab%e7%94%9f%e4%b8%80%e8%b5%b7%e8%ab%87%e3%80%8c%e6%80%a7%e3%80%8d%ef%bc%9f%e4%b8%80%e5%a0%b4%e8%88%87%e7%9c%be%e4%b8%8d%e5%90%8c%e7%9a%84%e5%ae%b6%e9%95%b7%e5%a4%a7%e6%9c%83/
+  - File: `60197.md`
+  - Published: 2025-09-01T20:23:55
+- 成長的路上，別忘了初衷
+  - Source: https://www.teach4taiwan.org/%e6%88%90%e9%95%b7%e7%9a%84%e8%b7%af%e4%b8%8a%ef%bc%8c%e5%88%a5%e5%bf%98%e4%ba%86%e5%88%9d%e8%a1%b7/
+  - File: `60195.md`
+  - Published: 2025-09-01T20:23:26
+- 三個老師的合作接力賽 —— 一趟陪伴孩子從針鋒相對到換位思考的旅程
+  - Source: https://www.teach4taiwan.org/%e4%b8%89%e5%80%8b%e8%80%81%e5%b8%ab%e7%9a%84%e5%90%88%e4%bd%9c%e6%8e%a5%e5%8a%9b%e8%b3%bd-%e4%b8%80%e8%b6%9f%e9%99%aa%e4%bc%b4%e5%ad%a9%e5%ad%90%e5%be%9e%e9%87%9d%e9%8b%92%e7%9b%b8/
+  - File: `60193.md`
+  - Published: 2025-09-01T20:22:57
+- 從教學開始，走進孩子的文化
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e6%95%99%e5%ad%b8%e9%96%8b%e5%a7%8b%ef%bc%8c%e8%b5%b0%e9%80%b2%e5%ad%a9%e5%ad%90%e7%9a%84%e6%96%87%e5%8c%96/
+  - File: `60191.md`
+  - Published: 2025-09-01T20:20:52
+- 陪伴孩子成長的魅力
+  - Source: https://www.teach4taiwan.org/%e9%99%aa%e4%bc%b4%e5%ad%a9%e5%ad%90%e6%88%90%e9%95%b7%e7%9a%84%e9%ad%85%e5%8a%9b/
+  - File: `60189.md`
+  - Published: 2025-09-01T20:16:11
+- 老師，我想試試看
+  - Source: https://www.teach4taiwan.org/%e8%80%81%e5%b8%ab%ef%bc%8c%e6%88%91%e6%83%b3%e8%a9%a6%e8%a9%a6%e7%9c%8b/
+  - File: `60187.md`
+  - Published: 2025-09-01T20:15:25
+- 延續教育初衷的創業路——葉育汎的「泥好」精神
+  - Source: https://www.teach4taiwan.org/%e5%bb%b6%e7%ba%8c%e6%95%99%e8%82%b2%e5%88%9d%e8%a1%b7%e7%9a%84%e5%89%b5%e6%a5%ad%e8%b7%af-%e8%91%89%e8%82%b2%e6%b1%8e%e7%9a%84%e3%80%8c%e6%b3%a5%e5%a5%bd%e3%80%8d%e7%b2%be%e7%a5%9e/
+  - File: `60185.md`
+  - Published: 2025-09-01T20:15:01
+- 穿越陰雨與未知，我的藍色小島
+  - Source: https://www.teach4taiwan.org/%e7%a9%bf%e8%b6%8a%e9%99%b0%e9%9b%a8%e8%88%87%e6%9c%aa%e7%9f%a5%ef%bc%8c%e6%88%91%e7%9a%84%e8%97%8d%e8%89%b2%e5%b0%8f%e5%b3%b6/
+  - File: `60183.md`
+  - Published: 2025-09-01T20:14:28
+- 看見自己的努力，也尊重孩子最後的選擇
+  - Source: https://www.teach4taiwan.org/%e7%9c%8b%e8%a6%8b%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8a%aa%e5%8a%9b%ef%bc%8c%e4%b9%9f%e5%b0%8a%e9%87%8d%e5%ad%a9%e5%ad%90%e6%9c%80%e5%be%8c%e7%9a%84%e9%81%b8%e6%93%87/
+  - File: `60181.md`
+  - Published: 2025-09-01T20:14:00
+- 從教育現場的看見出發，用創業守護教育理想
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e6%95%99%e8%82%b2%e7%8f%be%e5%a0%b4%e7%9a%84%e7%9c%8b%e8%a6%8b%e5%87%ba%e7%99%bc%ef%bc%8c%e7%94%a8%e5%89%b5%e6%a5%ad%e5%ae%88%e8%ad%b7%e6%95%99%e8%82%b2%e7%90%86%e6%83%b3/
+  - File: `60179.md`
+  - Published: 2025-09-01T20:13:27
+- 衝突過後，帶來和平的靜悄悄
+  - Source: https://www.teach4taiwan.org/%e8%a1%9d%e7%aa%81%e9%81%8e%e5%be%8c%ef%bc%8c%e5%b8%b6%e4%be%86%e5%92%8c%e5%b9%b3%e7%9a%84%e9%9d%9c%e6%82%84%e6%82%84/
+  - File: `60177.md`
+  - Published: 2025-09-01T20:12:46
+- 我們期待孩子只是「靜悄悄」嗎？
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e5%80%91%e6%9c%9f%e5%be%85%e5%ad%a9%e5%ad%90%e5%8f%aa%e6%98%af%e3%80%8c%e9%9d%9c%e6%82%84%e6%82%84%e3%80%8d%e5%97%8e%ef%bc%9f/
+  - File: `60175.md`
+  - Published: 2025-09-01T20:09:26
+- 那一堂上完後，讓我哭了四十分鐘的課
+  - Source: https://www.teach4taiwan.org/%e9%82%a3%e4%b8%80%e5%a0%82%e4%b8%8a%e5%ae%8c%e5%be%8c%ef%bc%8c%e8%ae%93%e6%88%91%e5%93%ad%e4%ba%86%e5%9b%9b%e5%8d%81%e5%88%86%e9%90%98%e7%9a%84%e8%aa%b2/
+  - File: `60173.md`
+  - Published: 2025-09-01T20:08:49
+- 冰山之下，才是一個人真實的模樣
+  - Source: https://www.teach4taiwan.org/%e5%86%b0%e5%b1%b1%e4%b9%8b%e4%b8%8b%ef%bc%8c%e6%89%8d%e6%98%af%e4%b8%80%e5%80%8b%e4%ba%ba%e7%9c%9f%e5%af%a6%e7%9a%84%e6%a8%a1%e6%a8%a3/
+  - File: `60171.md`
+  - Published: 2025-09-01T20:07:21
+- 縫補他人之前，得先學會縫補自己
+  - Source: https://www.teach4taiwan.org/%e7%b8%ab%e8%a3%9c%e4%bb%96%e4%ba%ba%e4%b9%8b%e5%89%8d%ef%bc%8c%e5%be%97%e5%85%88%e5%ad%b8%e6%9c%83%e7%b8%ab%e8%a3%9c%e8%87%aa%e5%b7%b1/
+  - File: `60169.md`
+  - Published: 2025-09-01T20:06:31
+- 那些被攤在陽光下的事
+  - Source: https://www.teach4taiwan.org/%e9%82%a3%e4%ba%9b%e8%a2%ab%e6%94%a4%e5%9c%a8%e9%99%bd%e5%85%89%e4%b8%8b%e7%9a%84%e4%ba%8b/
+  - File: `60167.md`
+  - Published: 2025-09-01T20:05:56
+- 當老師變成筆友，脆弱也在那一刻被接住了
+  - Source: https://www.teach4taiwan.org/%e7%95%b6%e8%80%81%e5%b8%ab%e8%ae%8a%e6%88%90%e7%ad%86%e5%8f%8b%ef%bc%8c%e8%84%86%e5%bc%b1%e4%b9%9f%e5%9c%a8%e9%82%a3%e4%b8%80%e5%88%bb%e8%a2%ab%e6%8e%a5%e4%bd%8f%e4%ba%86/
+  - File: `60165.md`
+  - Published: 2025-09-01T20:05:30
+- 每一次真誠的對話，都是在對抗一個無聲的誤解
+  - Source: https://www.teach4taiwan.org/%e6%af%8f%e4%b8%80%e6%ac%a1%e7%9c%9f%e8%aa%a0%e7%9a%84%e5%b0%8d%e8%a9%b1%ef%bc%8c%e9%83%bd%e6%98%af%e5%9c%a8%e5%b0%8d%e6%8a%97%e4%b8%80%e5%80%8b%e7%84%a1%e8%81%b2%e7%9a%84%e8%aa%a4%e8%a7%a3/
+  - File: `60163.md`
+  - Published: 2025-09-01T20:04:55
+- 我想陪他們，把吵鬧翻譯成語言
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e6%83%b3%e9%99%aa%e4%bb%96%e5%80%91%ef%bc%8c%e6%8a%8a%e5%90%b5%e9%ac%a7%e7%bf%bb%e8%ad%af%e6%88%90%e8%aa%9e%e8%a8%80/
+  - File: `60161.md`
+  - Published: 2025-09-01T20:04:24
+- 最高品質不是驚天動地，而是亂流中仍選擇澆水的那份堅定
+  - Source: https://www.teach4taiwan.org/%e6%9c%80%e9%ab%98%e5%93%81%e8%b3%aa%e4%b8%8d%e6%98%af%e9%a9%9a%e5%a4%a9%e5%8b%95%e5%9c%b0%ef%bc%8c%e8%80%8c%e6%98%af%e4%ba%82%e6%b5%81%e4%b8%ad%e4%bb%8d%e9%81%b8%e6%93%87%e6%be%86%e6%b0%b4%e7%9a%84/
+  - File: `60159.md`
+  - Published: 2025-09-01T20:03:49
+- 破碎後也能繼續閃閃發亮
+  - Source: https://www.teach4taiwan.org/%e7%a0%b4%e7%a2%8e%e5%be%8c%e4%b9%9f%e8%83%bd%e7%b9%bc%e7%ba%8c%e9%96%83%e9%96%83%e7%99%bc%e4%ba%ae/
+  - File: `60157.md`
+  - Published: 2025-09-01T20:03:11
+- 「好」的樣子，是沒有標準答案
+  - Source: https://www.teach4taiwan.org/%e3%80%8c%e5%a5%bd%e3%80%8d%e7%9a%84%e6%a8%a3%e5%ad%90%ef%bc%8c%e6%98%af%e6%b2%92%e6%9c%89%e6%a8%99%e6%ba%96%e7%ad%94%e6%a1%88/
+  - File: `60155.md`
+  - Published: 2025-09-01T20:02:06
+- 放下對乖巧的標準想像，不斷離開位子的小歐
+  - Source: https://www.teach4taiwan.org/%e6%94%be%e4%b8%8b%e5%b0%8d%e4%b9%96%e5%b7%a7%e7%9a%84%e6%a8%99%e6%ba%96%e6%83%b3%e5%83%8f%ef%bc%8c%e4%b8%8d%e6%96%b7%e9%9b%a2%e9%96%8b%e4%bd%8d%e5%ad%90%e7%9a%84%e5%b0%8f%e6%ad%90/
+  - File: `60153.md`
+  - Published: 2025-09-01T20:01:36
+- 資源有限時，更能啟發創造與學習的無限可能
+  - Source: https://www.teach4taiwan.org/%e8%b3%87%e6%ba%90%e6%9c%89%e9%99%90%e6%99%82%ef%bc%8c%e6%9b%b4%e8%83%bd%e5%95%9f%e7%99%bc%e5%89%b5%e9%80%a0%e8%88%87%e5%ad%b8%e7%bf%92%e7%9a%84%e7%84%a1%e9%99%90%e5%8f%af%e8%83%bd/
+  - File: `60151.md`
+  - Published: 2025-09-01T20:00:43
+- 不只是教數學：我在教育現場練習理解與陪伴
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e5%8f%aa%e6%98%af%e6%95%99%e6%95%b8%e5%ad%b8%ef%bc%9a%e6%88%91%e5%9c%a8%e6%95%99%e8%82%b2%e7%8f%be%e5%a0%b4%e7%b7%b4%e7%bf%92%e7%90%86%e8%a7%a3%e8%88%87%e9%99%aa%e4%bc%b4/
+  - File: `60147.md`
+  - Published: 2025-09-01T19:58:56
+- 為什麼不該每件事都堅持做到最好？
+  - Source: https://www.teach4taiwan.org/%e7%82%ba%e4%bb%80%e9%ba%bc%e4%b8%8d%e8%a9%b2%e6%af%8f%e4%bb%b6%e4%ba%8b%e9%83%bd%e5%a0%85%e6%8c%81%e5%81%9a%e5%88%b0%e6%9c%80%e5%a5%bd%ef%bc%9f/
+  - File: `60145.md`
+  - Published: 2025-09-01T19:58:09
+- 不斷重來的第一天：「又」有轉學生了
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e6%96%b7%e9%87%8d%e4%be%86%e7%9a%84%e7%ac%ac%e4%b8%80%e5%a4%a9%ef%bc%9a%e3%80%8c%e5%8f%88%e3%80%8d%e6%9c%89%e8%bd%89%e5%ad%b8%e7%94%9f%e4%ba%86/
+  - File: `60143.md`
+  - Published: 2025-09-01T19:57:36
+- 我不給「標準」答案，只陪你找到自己想法
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e4%b8%8d%e7%b5%a6%e3%80%8c%e6%a8%99%e6%ba%96%e3%80%8d%e7%ad%94%e6%a1%88%ef%bc%8c%e5%8f%aa%e9%99%aa%e4%bd%a0%e6%89%be%e5%88%b0%e8%87%aa%e5%b7%b1%e6%83%b3%e6%b3%95/
+  - File: `60141.md`
+  - Published: 2025-09-01T19:56:48
+- 你以為他想當「+9」，是因為他想放棄嗎？
+  - Source: https://www.teach4taiwan.org/%e4%bd%a0%e4%bb%a5%e7%82%ba%e4%bb%96%e6%83%b3%e7%95%b6%e3%80%8c9%e3%80%8d%ef%bc%8c%e6%98%af%e5%9b%a0%e7%82%ba%e4%bb%96%e6%83%b3%e6%94%be%e6%a3%84%e5%97%8e%ef%bc%9f/
+  - File: `60138.md`
+  - Published: 2025-09-01T19:55:09
+- 教育不是把孩子推向更高的懸崖，而是為他們搭一座能安全回望自己的橋
+  - Source: https://www.teach4taiwan.org/%e6%95%99%e8%82%b2%e4%b8%8d%e6%98%af%e6%8a%8a%e5%ad%a9%e5%ad%90%e6%8e%a8%e5%90%91%e6%9b%b4%e9%ab%98%e7%9a%84%e6%87%b8%e5%b4%96%ef%bc%8c%e8%80%8c%e6%98%af%e7%82%ba%e4%bb%96%e5%80%91%e6%90%ad%e4%b8%80/
+  - File: `60136.md`
+  - Published: 2025-09-01T19:54:17
+- 從偏鄉到台北，離開是為了更深的回來——我在猶豫與熱愛間前行
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e5%81%8f%e9%84%89%e5%88%b0%e5%8f%b0%e5%8c%97%ef%bc%8c%e9%9b%a2%e9%96%8b%e6%98%af%e7%82%ba%e4%ba%86%e6%9b%b4%e6%b7%b1%e7%9a%84%e5%9b%9e%e4%be%86-%e6%88%91%e5%9c%a8%e7%8c%b6/
+  - File: `60133.md`
+  - Published: 2025-09-01T19:51:51
+- 當被看見與接納，孩子便有勇氣說出真話
+  - Source: https://www.teach4taiwan.org/%e7%95%b6%e8%a2%ab%e7%9c%8b%e8%a6%8b%e8%88%87%e6%8e%a5%e7%b4%8d%ef%bc%8c%e5%ad%a9%e5%ad%90%e4%be%bf%e6%9c%89%e5%8b%87%e6%b0%a3%e8%aa%aa%e5%87%ba%e7%9c%9f%e8%a9%b1/
+  - File: `60131.md`
+  - Published: 2025-09-01T19:50:13
+- 用一點喧囂，換一個更真實的孩子
+  - Source: https://www.teach4taiwan.org/%e7%94%a8%e4%b8%80%e9%bb%9e%e5%96%a7%e5%9b%82%ef%bc%8c%e6%8f%9b%e4%b8%80%e5%80%8b%e6%9b%b4%e7%9c%9f%e5%af%a6%e7%9a%84%e5%ad%a9%e5%ad%90/
+  - File: `60125.md`
+  - Published: 2025-09-01T19:47:41
+- 讓孩子在運動中看見自我價值：從拳擊到教育，建立陪伴系統 ft. 陳念琴、柯文明教練
+  - Source: https://www.teach4taiwan.org/%e8%ae%93%e5%ad%a9%e5%ad%90%e5%9c%a8%e9%81%8b%e5%8b%95%e4%b8%ad%e7%9c%8b%e8%a6%8b%e8%87%aa%e6%88%91%e5%83%b9%e5%80%bc%ef%bc%9a%e5%be%9e%e6%8b%b3%e6%93%8a%e5%88%b0%e6%95%99%e8%82%b2%ef%bc%8c%e5%bb%ba/
+  - File: `59571.md`
+  - Published: 2025-08-04T10:43:03
+- 在逆境中同行，陪更多孩子蛻變成更好的自己： 第二屆校友文國士創立「蛻變方成事」
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8%e9%80%86%e5%a2%83%e4%b8%ad%e5%90%8c%e8%a1%8c%ef%bc%8c%e9%99%aa%e6%9b%b4%e5%a4%9a%e5%ad%a9%e5%ad%90%e8%9b%bb%e8%ae%8a%e6%88%90%e6%9b%b4%e5%a5%bd%e7%9a%84%e8%87%aa%e5%b7%b1%ef%bc%9a-%e7%ac%ac/
+  - File: `58471.md`
+  - Published: 2025-07-21T16:56:51
+- 一堂新手老師上台前的共備課——屏東精進計畫「初任教師研習」
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e5%a0%82%e6%96%b0%e6%89%8b%e8%80%81%e5%b8%ab%e4%b8%8a%e5%8f%b0%e5%89%8d%e7%9a%84%e5%85%b1%e5%82%99%e8%aa%b2-%e5%b1%8f%e6%9d%b1%e7%b2%be%e9%80%b2%e8%a8%88%e7%95%ab%e3%80%8c/
+  - File: `58428.md`
+  - Published: 2025-07-21T16:48:47
+- Inside School 深度合作x 丹路國小：貼近學校需求，成為師生更有力的戰友
+  - Source: https://www.teach4taiwan.org/inside-school-%e6%b7%b1%e5%ba%a6%e5%90%88%e4%bd%9cx-%e4%b8%b9%e8%b7%af%e5%9c%8b%e5%b0%8f%ef%bc%9a%e8%b2%bc%e8%bf%91%e5%ad%b8%e6%a0%a1%e9%9c%80%e6%b1%82%ef%bc%8c%e6%88%90%e7%82%ba%e5%b8%ab%e7%94%9f/
+  - File: `58381.md`
+  - Published: 2025-07-21T16:25:18
+- 讓科學不再遙遠：一場從老師到孩子的半導體旅程｜TFT X 「應材苗懂計畫」
+  - Source: https://www.teach4taiwan.org/%e8%ae%93%e7%a7%91%e5%ad%b8%e4%b8%8d%e5%86%8d%e9%81%99%e9%81%a0%ef%bc%9a%e4%b8%80%e5%a0%b4%e5%be%9e%e8%80%81%e5%b8%ab%e5%88%b0%e5%ad%a9%e5%ad%90%e7%9a%84%e5%8d%8a%e5%b0%8e%e9%ab%94%e6%97%85%e7%a8%8b-t/
+  - File: `55040.md`
+  - Published: 2025-05-29T13:58:16
+- 當教育不再有距離：踏上一段成就理想與職涯之路
+  - Source: https://www.teach4taiwan.org/%e7%95%b6%e6%95%99%e8%82%b2%e4%b8%8d%e5%86%8d%e6%9c%89%e8%b7%9d%e9%9b%a2%ef%bc%9a%e8%b8%8f%e4%b8%8a%e4%b8%80%e6%ae%b5%e6%88%90%e5%b0%b1%e7%90%86%e6%83%b3%e8%88%87%e8%81%b7%e6%b6%af%e4%b9%8b%e8%b7%af/
+  - File: `54000.md`
+  - Published: 2025-02-26T13:16:42
+- 計畫結束八年後，和已經變成高中生的學生訪談記
+  - Source: https://www.teach4taiwan.org/%e8%a8%88%e7%95%ab%e7%b5%90%e6%9d%9f%e5%85%ab%e5%b9%b4%e5%be%8c%ef%bc%8c%e5%92%8c%e5%b7%b2%e7%b6%93%e8%ae%8a%e6%88%90%e9%ab%98%e4%b8%ad%e7%94%9f%e7%9a%84%e5%ad%b8%e7%94%9f%e8%a8%aa%e8%ab%87%e8%a8%98/
+  - File: `53444.md`
+  - Published: 2025-01-07T16:44:14
+- 我不想只是成為學生的監管者
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e4%b8%8d%e6%83%b3%e5%8f%aa%e6%98%af%e6%88%90%e7%82%ba%e5%ad%b8%e7%94%9f%e7%9a%84%e7%9b%a3%e7%ae%a1%e8%80%85/
+  - File: `51189.md`
+  - Published: 2024-11-28T00:20:59
+- 那些最難的課題，在課本上都學不到
+  - Source: https://www.teach4taiwan.org/%e9%82%a3%e4%ba%9b%e6%9c%80%e9%9b%a3%e7%9a%84%e8%aa%b2%e9%a1%8c%ef%bc%8c%e5%9c%a8%e8%aa%b2%e6%9c%ac%e4%b8%8a%e9%83%bd%e5%ad%b8%e4%b8%8d%e5%88%b0-2/
+  - File: `51253.md`
+  - Published: 2024-11-27T23:50:21
+- 一起成為孩子的全宇宙老師
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e8%b5%b7%e6%88%90%e7%82%ba%e5%ad%a9%e5%ad%90%e7%9a%84%e5%85%a8%e5%ae%87%e5%ae%99%e8%80%81%e5%b8%ab/
+  - File: `51395.md`
+  - Published: 2024-11-05T23:30:22
+- 齒輪上的教育風景，和家庭一起陪孩子轉動前行
+  - Source: https://www.teach4taiwan.org/%e9%bd%92%e8%bc%aa%e4%b8%8a%e7%9a%84%e6%95%99%e8%82%b2%e9%a2%a8%e6%99%af%ef%bc%8c%e5%92%8c%e5%ae%b6%e5%ba%ad%e4%b8%80%e8%b5%b7%e9%99%aa%e5%ad%a9%e5%ad%90%e8%bd%89%e5%8b%95%e5%89%8d%e8%a1%8c/
+  - File: `51389.md`
+  - Published: 2024-11-05T23:16:00
+- 我想幫學校每個老師都做海報！
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e6%83%b3%e5%b9%ab%e5%ad%b8%e6%a0%a1%e6%af%8f%e5%80%8b%e8%80%81%e5%b8%ab%e9%83%bd%e5%81%9a%e6%b5%b7%e5%a0%b1%ef%bc%81/
+  - File: `51385.md`
+  - Published: 2024-11-05T23:10:39
+- 在遠方教學路上，家人的支持是我最大的力量
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8%e9%81%a0%e6%96%b9%e6%95%99%e5%ad%b8%e8%b7%af%e4%b8%8a%ef%bc%8c%e5%ae%b6%e4%ba%ba%e7%9a%84%e6%94%af%e6%8c%81%e6%98%af%e6%88%91%e6%9c%80%e5%a4%a7%e7%9a%84%e5%8a%9b%e9%87%8f/
+  - File: `51378.md`
+  - Published: 2024-11-05T23:00:03
+- 和家長一起陪伴孩子成長，找到改變方程式！
+  - Source: https://www.teach4taiwan.org/%e5%92%8c%e5%ae%b6%e9%95%b7%e4%b8%80%e8%b5%b7%e9%99%aa%e4%bc%b4%e5%ad%a9%e5%ad%90%e6%88%90%e9%95%b7%ef%bc%8c%e6%89%be%e5%88%b0%e6%94%b9%e8%ae%8a%e6%96%b9%e7%a8%8b%e5%bc%8f%ef%bc%81/
+  - File: `51374.md`
+  - Published: 2024-11-05T22:55:04
+- 影響力發展部歐冠廷：TFT 給我的難題，培養我成為更專業的工作者
+  - Source: https://www.teach4taiwan.org/%e5%bd%b1%e9%9f%bf%e5%8a%9b%e7%99%bc%e5%b1%95%e9%83%a8%e6%ad%90%e5%86%a0%e5%bb%b7%ef%bc%9atft-%e7%b5%a6%e6%88%91%e7%9a%84%e9%9b%a3%e9%a1%8c%ef%bc%8c%e5%9f%b9%e9%a4%8a%e6%88%91%e6%88%90%e7%82%ba/
+  - File: `51371.md`
+  - Published: 2024-11-05T22:49:09
+- 「性」好有你，陪我探索
+  - Source: https://www.teach4taiwan.org/%e3%80%8c%e6%80%a7%e3%80%8d%e5%a5%bd%e6%9c%89%e4%bd%a0%ef%bc%8c%e9%99%aa%e6%88%91%e6%8e%a2%e7%b4%a2/
+  - File: `51350.md`
+  - Published: 2024-11-05T22:16:49
+- 一個更好的地方
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e5%80%8b%e6%9b%b4%e5%a5%bd%e7%9a%84%e5%9c%b0%e6%96%b9/
+  - File: `51345.md`
+  - Published: 2024-11-05T21:58:16
+- 人生考題：放手、被放手
+  - Source: https://www.teach4taiwan.org/%e4%ba%ba%e7%94%9f%e8%80%83%e9%a1%8c%ef%bc%9a%e6%94%be%e6%89%8b%e3%80%81%e8%a2%ab%e6%94%be%e6%89%8b/
+  - File: `51341.md`
+  - Published: 2024-11-05T21:48:08
+- 愛情學測——關於「愛」的教與學
+  - Source: https://www.teach4taiwan.org/%e6%84%9b%e6%83%85%e5%ad%b8%e6%b8%ac-%e9%97%9c%e6%96%bc%e3%80%8c%e6%84%9b%e3%80%8d%e7%9a%84%e6%95%99%e8%88%87%e5%ad%b8/
+  - File: `51336.md`
+  - Published: 2024-11-05T21:43:02
+- 陪伴孩子面對情緒，也療癒了我自己
+  - Source: https://www.teach4taiwan.org/%e9%99%aa%e4%bc%b4%e5%ad%a9%e5%ad%90%e9%9d%a2%e5%b0%8d%e6%83%85%e7%b7%92%ef%bc%8c%e4%b9%9f%e7%99%82%e7%99%92%e4%ba%86%e6%88%91%e8%87%aa%e5%b7%b1/
+  - File: `51332.md`
+  - Published: 2024-11-05T21:29:29
+- 成為一個能好好愛自己的大人
+  - Source: https://www.teach4taiwan.org/%e6%88%90%e7%82%ba%e4%b8%80%e5%80%8b%e8%83%bd%e5%a5%bd%e5%a5%bd%e6%84%9b%e8%87%aa%e5%b7%b1%e7%9a%84%e5%a4%a7%e4%ba%ba/
+  - File: `51326.md`
+  - Published: 2024-11-05T21:22:01
+- 走出教室，讓學習更有感
+  - Source: https://www.teach4taiwan.org/%e8%b5%b0%e5%87%ba%e6%95%99%e5%ae%a4%ef%bc%8c%e8%ae%93%e5%ad%b8%e7%bf%92%e6%9b%b4%e6%9c%89%e6%84%9f/
+  - File: `51322.md`
+  - Published: 2024-11-05T21:14:23
+- 「tima su ngadan?」你是誰？你的名字是什麼？
+  - Source: https://www.teach4taiwan.org/%e3%80%8ctima-su-ngadan%e3%80%8d%e4%bd%a0%e6%98%af%e8%aa%b0%ef%bc%9f%e4%bd%a0%e7%9a%84%e5%90%8d%e5%ad%97%e6%98%af%e4%bb%80%e9%ba%bc%ef%bc%9f/
+  - File: `51319.md`
+  - Published: 2024-11-05T21:09:56
+- 當多元成為多「援」，我們就能一起走得更遠
+  - Source: https://www.teach4taiwan.org/%e7%95%b6%e5%a4%9a%e5%85%83%e6%88%90%e7%82%ba%e5%a4%9a%e3%80%8c%e6%8f%b4%e3%80%8d%ef%bc%8c%e6%88%91%e5%80%91%e5%b0%b1%e8%83%bd%e4%b8%80%e8%b5%b7%e8%b5%b0%e5%be%97%e6%9b%b4%e9%81%a0/
+  - File: `51314.md`
+  - Published: 2024-11-05T21:03:42
+- 超越經驗的選擇，可以看見不同的風景
+  - Source: https://www.teach4taiwan.org/%e8%b6%85%e8%b6%8a%e7%b6%93%e9%a9%97%e7%9a%84%e9%81%b8%e6%93%87%ef%bc%8c%e5%8f%af%e4%bb%a5%e7%9c%8b%e8%a6%8b%e4%b8%8d%e5%90%8c%e7%9a%84%e9%a2%a8%e6%99%af/
+  - File: `51307.md`
+  - Published: 2024-11-05T20:52:19
+- We got the mail！
+  - Source: https://www.teach4taiwan.org/we-got-the-mail%ef%bc%81/
+  - File: `51295.md`
+  - Published: 2024-11-02T22:40:38
+- 從職業採訪中，看見孩子眼中放出的光
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e8%81%b7%e6%a5%ad%e6%8e%a1%e8%a8%aa%e4%b8%ad%ef%bc%8c%e7%9c%8b%e8%a6%8b%e5%ad%a9%e5%ad%90%e7%9c%bc%e4%b8%ad%e6%94%be%e5%87%ba%e7%9a%84%e5%85%89/
+  - File: `51289.md`
+  - Published: 2024-11-02T22:34:10
+- 雖然文化課不用考試，但它真的很重要！
+  - Source: https://www.teach4taiwan.org/%e9%9b%96%e7%84%b6%e6%96%87%e5%8c%96%e8%aa%b2%e4%b8%8d%e7%94%a8%e8%80%83%e8%a9%a6%ef%bc%8c%e4%bd%86%e5%ae%83%e7%9c%9f%e7%9a%84%e5%be%88%e9%87%8d%e8%a6%81%ef%bc%81/
+  - File: `51286.md`
+  - Published: 2024-11-02T22:30:16
+- 一趟推廣家鄉之旅，讓所有人看見了孩子的影響力
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e8%b6%9f%e6%8e%a8%e5%bb%a3%e5%ae%b6%e9%84%89%e4%b9%8b%e6%97%85%ef%bc%8c%e8%ae%93%e6%89%80%e6%9c%89%e4%ba%ba%e7%9c%8b%e8%a6%8b%e4%ba%86%e5%ad%a9%e5%ad%90%e7%9a%84%e5%bd%b1%e9%9f%bf%e5%8a%9b/
+  - File: `51283.md`
+  - Published: 2024-11-02T22:26:54
+- 分數教會我的事
+  - Source: https://www.teach4taiwan.org/%e5%88%86%e6%95%b8%e6%95%99%e6%9c%83%e6%88%91%e7%9a%84%e4%ba%8b/
+  - File: `51280.md`
+  - Published: 2024-11-02T22:22:13
+- 猴子團長獲得了「與眾不同」的一百分
+  - Source: https://www.teach4taiwan.org/%e7%8c%b4%e5%ad%90%e5%9c%98%e9%95%b7%e7%8d%b2%e5%be%97%e4%ba%86%e3%80%8c%e8%88%87%e7%9c%be%e4%b8%8d%e5%90%8c%e3%80%8d%e7%9a%84%e4%b8%80%e7%99%be%e5%88%86/
+  - File: `51276.md`
+  - Published: 2024-11-02T22:17:13
+- 一步一腳印，自信心的建立
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e6%ad%a5%e4%b8%80%e8%85%b3%e5%8d%b0%ef%bc%8c%e8%87%aa%e4%bf%a1%e5%bf%83%e7%9a%84%e5%bb%ba%e7%ab%8b/
+  - File: `51270.md`
+  - Published: 2024-11-02T22:06:59
+- 沒有 100 分的教育，但有 101 種教育的方法
+  - Source: https://www.teach4taiwan.org/%e6%b2%92%e6%9c%89-100-%e5%88%86%e7%9a%84%e6%95%99%e8%82%b2%ef%bc%8c%e4%bd%86%e6%9c%89-101-%e7%a8%ae%e6%95%99%e8%82%b2%e7%9a%84%e6%96%b9%e6%b3%95/
+  - File: `51267.md`
+  - Published: 2024-11-02T22:01:47
+- 我看見你的在乎
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e7%9c%8b%e8%a6%8b%e4%bd%a0%e7%9a%84%e5%9c%a8%e4%b9%8e/
+  - File: `51264.md`
+  - Published: 2024-11-02T21:58:01
+- 在準備考試的過程中，我還能帶給學生什麼？
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8%e6%ba%96%e5%82%99%e8%80%83%e8%a9%a6%e7%9a%84%e9%81%8e%e7%a8%8b%e4%b8%ad%ef%bc%8c%e6%88%91%e9%82%84%e8%83%bd%e5%b8%b6%e7%b5%a6%e5%ad%b8%e7%94%9f%e4%bb%80%e9%ba%bc%ef%bc%9f/
+  - File: `51259.md`
+  - Published: 2024-11-02T21:52:27
+- 一條名為「考試」，卻讓人迷失方向的跑道
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e6%a2%9d%e5%90%8d%e7%82%ba%e3%80%8c%e8%80%83%e8%a9%a6%e3%80%8d%ef%bc%8c%e5%8d%bb%e8%ae%93%e4%ba%ba%e8%bf%b7%e5%a4%b1%e6%96%b9%e5%90%91%e7%9a%84%e8%b7%91%e9%81%93/
+  - File: `51250.md`
+  - Published: 2024-11-02T21:36:17
+- 為什麼我努力了還是考不好？
+  - Source: https://www.teach4taiwan.org/%e7%82%ba%e4%bb%80%e9%ba%bc%e6%88%91%e5%8a%aa%e5%8a%9b%e4%ba%86%e9%82%84%e6%98%af%e8%80%83%e4%b8%8d%e5%a5%bd%ef%bc%9f/
+  - File: `51247.md`
+  - Published: 2024-11-02T21:29:46
+- 關於，我愛的孩子們
+  - Source: https://www.teach4taiwan.org/%e9%97%9c%e6%96%bc%ef%bc%8c%e6%88%91%e6%84%9b%e7%9a%84%e5%ad%a9%e5%ad%90%e5%80%91/
+  - File: `51244.md`
+  - Published: 2024-11-02T21:26:00
+- 長大也還是會犯錯——孩子帶我看見破碎再拼湊的美好
+  - Source: https://www.teach4taiwan.org/%e9%95%b7%e5%a4%a7%e4%b9%9f%e9%82%84%e6%98%af%e6%9c%83%e7%8a%af%e9%8c%af-%e5%ad%a9%e5%ad%90%e5%b8%b6%e6%88%91%e7%9c%8b%e8%a6%8b%e7%a0%b4%e7%a2%8e%e5%86%8d%e6%8b%bc%e6%b9%8a%e7%9a%84/
+  - File: `51239.md`
+  - Published: 2024-11-02T21:19:42
+- 從考試到教育，找到我們內心的真實答案
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e8%80%83%e8%a9%a6%e5%88%b0%e6%95%99%e8%82%b2%ef%bc%8c%e6%89%be%e5%88%b0%e6%88%91%e5%80%91%e5%85%a7%e5%bf%83%e7%9a%84%e7%9c%9f%e5%af%a6%e7%ad%94%e6%a1%88/
+  - File: `51236.md`
+  - Published: 2024-11-02T21:13:54
+- 當我們都哭了時，老師才發現自己也沒學過
+  - Source: https://www.teach4taiwan.org/%e7%95%b6%e6%88%91%e5%80%91%e9%83%bd%e5%93%ad%e4%ba%86%e6%99%82%ef%bc%8c%e8%80%81%e5%b8%ab%e6%89%8d%e7%99%bc%e7%8f%be%e8%87%aa%e5%b7%b1%e4%b9%9f%e6%b2%92%e5%ad%b8%e9%81%8e/
+  - File: `51233.md`
+  - Published: 2024-11-02T21:09:18
+- 在考卷分數之外，真正重要的事
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8%e8%80%83%e5%8d%b7%e5%88%86%e6%95%b8%e4%b9%8b%e5%a4%96%ef%bc%8c%e7%9c%9f%e6%ad%a3%e9%87%8d%e8%a6%81%e7%9a%84%e4%ba%8b/
+  - File: `51229.md`
+  - Published: 2024-11-02T03:13:29
+- 一封寫給Ｒ的信
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e5%b0%81%e5%af%ab%e7%b5%a6%ef%bd%92%e7%9a%84%e4%bf%a1/
+  - File: `51223.md`
+  - Published: 2024-11-02T03:07:27
+- 嘗試在教室中，成為理想的大人
+  - Source: https://www.teach4taiwan.org/%e5%98%97%e8%a9%a6%e5%9c%a8%e6%95%99%e5%ae%a4%e4%b8%ad%ef%bc%8c%e6%88%90%e7%82%ba%e7%90%86%e6%83%b3%e7%9a%84%e5%a4%a7%e4%ba%ba/
+  - File: `51220.md`
+  - Published: 2024-11-02T03:01:32
+- 我是一位好老師嗎？
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e6%98%af%e4%b8%80%e4%bd%8d%e5%a5%bd%e8%80%81%e5%b8%ab%e5%97%8e%ef%bc%9f/
+  - File: `51217.md`
+  - Published: 2024-11-02T02:57:56
+- 再剛硬的心，也有被愛的需要
+  - Source: https://www.teach4taiwan.org/%e5%86%8d%e5%89%9b%e7%a1%ac%e7%9a%84%e5%bf%83%ef%bc%8c%e4%b9%9f%e6%9c%89%e8%a2%ab%e6%84%9b%e7%9a%84%e9%9c%80%e8%a6%81/
+  - File: `51213.md`
+  - Published: 2024-11-02T02:53:36
+- 在失落的夏季中，拾回勇氣
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8%e5%a4%b1%e8%90%bd%e7%9a%84%e5%a4%8f%e5%ad%a3%e4%b8%ad%ef%bc%8c%e6%8b%be%e5%9b%9e%e5%8b%87%e6%b0%a3/
+  - File: `51210.md`
+  - Published: 2024-11-02T02:48:42
+- 人生中途日記簿──度過不可取代的每一天
+  - Source: https://www.teach4taiwan.org/%e4%ba%ba%e7%94%9f%e4%b8%ad%e9%80%94%e6%97%a5%e8%a8%98%e7%b0%bf%e2%94%80%e2%94%80%e5%ba%a6%e9%81%8e%e4%b8%8d%e5%8f%af%e5%8f%96%e4%bb%a3%e7%9a%84%e6%af%8f%e4%b8%80%e5%a4%a9/
+  - File: `51206.md`
+  - Published: 2024-11-02T02:43:46
+- 孩子需要被等待，大人亦然
+  - Source: https://www.teach4taiwan.org/%e5%ad%a9%e5%ad%90%e9%9c%80%e8%a6%81%e8%a2%ab%e7%ad%89%e5%be%85%ef%bc%8c%e5%a4%a7%e4%ba%ba%e4%ba%a6%e7%84%b6/
+  - File: `51202.md`
+  - Published: 2024-11-02T02:35:05
+- 照顧好自己，才能照顧好學生
+  - Source: https://www.teach4taiwan.org/%e7%85%a7%e9%a1%a7%e5%a5%bd%e8%87%aa%e5%b7%b1%ef%bc%8c%e6%89%8d%e8%83%bd%e7%85%a7%e9%a1%a7%e5%a5%bd%e5%ad%b8%e7%94%9f/
+  - File: `51197.md`
+  - Published: 2024-11-02T02:24:59
+- 選擇困難，到選擇「困難」
+  - Source: https://www.teach4taiwan.org/%e9%81%b8%e6%93%87%e5%9b%b0%e9%9b%a3%ef%bc%8c%e5%88%b0%e9%81%b8%e6%93%87%e3%80%8c%e5%9b%b0%e9%9b%a3%e3%80%8d/
+  - File: `51194.md`
+  - Published: 2024-11-02T02:11:22
+- 從師培訓練到偏鄉教育現場，我看見的難題
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e5%b8%ab%e5%9f%b9%e8%a8%93%e7%b7%b4%e5%88%b0%e5%81%8f%e9%84%89%e6%95%99%e8%82%b2%e7%8f%be%e5%a0%b4%ef%bc%8c%e6%88%91%e7%9c%8b%e8%a6%8b%e7%9a%84%e9%9b%a3%e9%a1%8c/
+  - File: `50994.md`
+  - Published: 2024-11-01T20:56:42
+- 看不見的人生難題，更難考
+  - Source: https://www.teach4taiwan.org/%e7%9c%8b%e4%b8%8d%e8%a6%8b%e7%9a%84%e4%ba%ba%e7%94%9f%e9%9b%a3%e9%a1%8c%ef%bc%8c%e6%9b%b4%e9%9b%a3%e8%80%83/
+  - File: `50988.md`
+  - Published: 2024-10-23T19:01:00
+- 失敗跟我很糟，並不是等式
+  - Source: https://www.teach4taiwan.org/%e5%a4%b1%e6%95%97%e8%b7%9f%e6%88%91%e5%be%88%e7%b3%9f%ef%bc%8c%e4%b8%a6%e4%b8%8d%e6%98%af%e7%ad%89%e5%bc%8f/
+  - File: `50985.md`
+  - Published: 2024-10-23T18:51:38
+- 面對家庭，是我與孩子的共同課題
+  - Source: https://www.teach4taiwan.org/%e9%9d%a2%e5%b0%8d%e5%ae%b6%e5%ba%ad%ef%bc%8c%e6%98%af%e6%88%91%e8%88%87%e5%ad%a9%e5%ad%90%e7%9a%84%e5%85%b1%e5%90%8c%e8%aa%b2%e9%a1%8c/
+  - File: `50975.md`
+  - Published: 2024-10-23T15:31:46
+- 從「生命陪伴生命」的故事中， 看見那些無名者⋯⋯
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e3%80%8c%e7%94%9f%e5%91%bd%e9%99%aa%e4%bc%b4%e7%94%9f%e5%91%bd%e3%80%8d%e7%9a%84%e6%95%85%e4%ba%8b%e4%b8%ad%ef%bc%8c-%e7%9c%8b%e8%a6%8b%e9%82%a3%e4%ba%9b%e7%84%a1%e5%90%8d%e8%80%85%e2%8b%af/
+  - File: `50873.md`
+  - Published: 2024-10-22T15:23:31
+- 從情境入手，帶孩子發想解決問題的行動—— TFT 夏季明日學校 x DFC《日日挑戰》
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e6%83%85%e5%a2%83%e5%85%a5%e6%89%8b%ef%bc%8c%e5%b8%b6%e5%ad%a9%e5%ad%90%e7%99%bc%e6%83%b3%e8%a7%a3%e6%b1%ba%e5%95%8f%e9%a1%8c%e7%9a%84%e8%a1%8c%e5%8b%95-tft-%e5%a4%8f/
+  - File: `50749.md`
+  - Published: 2024-10-17T11:34:17
+- TFT 領導力發展督導林建宏：「在這裡，我找到我在意的事情」
+  - Source: https://www.teach4taiwan.org/tft-%e9%a0%98%e5%b0%8e%e5%8a%9b%e7%99%bc%e5%b1%95%e7%9d%a3%e5%b0%8e%e6%9e%97%e5%bb%ba%e5%ae%8f%ef%bc%9a%e3%80%8c%e5%9c%a8%e9%80%99%e8%a3%a1%ef%bc%8c%e6%88%91%e6%89%be%e5%88%b0%e6%88%91%e5%9c%a8/
+  - File: `48216.md`
+  - Published: 2024-05-16T11:22:58
+- 因為被真心對待，所以心甘情願的選擇長大
+  - Source: https://www.teach4taiwan.org/%e5%9b%a0%e7%82%ba%e8%a2%ab%e7%9c%9f%e5%bf%83%e5%b0%8d%e5%be%85%ef%bc%8c%e6%89%80%e4%bb%a5%e5%bf%83%e7%94%98%e6%83%85%e9%a1%98%e7%9a%84%e9%81%b8%e6%93%87%e9%95%b7%e5%a4%a7/
+  - File: `48035.md`
+  - Published: 2024-03-21T13:23:09
+- 社創組織在找什麼樣的人才？讓職涯選擇貼近自己的核心價值
+  - Source: https://www.teach4taiwan.org/%e7%a4%be%e5%89%b5%e7%b5%84%e7%b9%94%e5%9c%a8%e6%89%be%e4%bb%80%e9%ba%bc%e6%a8%a3%e7%9a%84%e4%ba%ba%e6%89%8d%ef%bc%9f%e8%ae%93%e8%81%b7%e6%b6%af%e9%81%b8%e6%93%87%e8%b2%bc%e8%bf%91%e8%87%aa%e5%b7%b1/
+  - File: `47757.md`
+  - Published: 2024-02-20T17:30:00
+- 從大型企業集團轉戰社會新創 NGO —— 王麗淇彈性自主的 TFT 生涯
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e5%a4%a7%e5%9e%8b%e4%bc%81%e6%a5%ad%e9%9b%86%e5%9c%98%e8%bd%89%e6%88%b0%e7%a4%be%e6%9c%83%e6%96%b0%e5%89%b5-ngo/
+  - File: `47711.md`
+  - Published: 2024-02-07T20:01:15
+- 探尋意義的非營利組織職涯路 ── 唐祖藝：我一直想要做的，就是能幫助到人的工作
+  - Source: https://www.teach4taiwan.org/%e6%8e%a2%e5%b0%8b%e6%84%8f%e7%be%a9%e7%9a%84%e9%9d%9e%e7%87%9f%e5%88%a9%e7%b5%84%e7%b9%94%e8%81%b7%e6%b6%af%e8%b7%af/
+  - File: `47704.md`
+  - Published: 2024-02-07T19:58:48
+- 營隊讓我們從根出發，看見自己與孩子的新可能【2023 夏季明日學校 | 總記】
+  - Source: https://www.teach4taiwan.org/%e7%87%9f%e9%9a%8a%e8%ae%93%e6%88%91%e5%80%91%e5%be%9e%e6%a0%b9%e5%87%ba%e7%99%bc%e7%9c%8b%e8%a6%8b%e8%87%aa%e5%b7%b1%e8%88%87%e5%ad%a9%e5%ad%90%e7%9a%84%e6%96%b0%e5%8f%af%e8%83%bd/
+  - File: `47594.md`
+  - Published: 2024-02-06T13:29:58
+- 不只是個螺絲釘，在 TFT 工作我實際發揮的影響力
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e5%8f%aa%e6%98%af%e5%80%8b%e8%9e%ba%e7%b5%b2%e9%87%98%ef%bc%8c%e5%9c%a8-tft-%e5%b7%a5%e4%bd%9c%e6%88%91%e5%af%a6%e9%9a%9b%e7%99%bc%e6%8f%ae%e7%9a%84%e5%bd%b1%e9%9f%bf%e5%8a%9b/
+  - File: `47563.md`
+  - Published: 2024-02-01T13:47:13
+- 兼顧工作彈性與個人成長，TFT 打造人才願意投入的職場環境
+  - Source: https://www.teach4taiwan.org/%e5%85%bc%e9%a1%a7%e5%b7%a5%e4%bd%9c%e5%bd%88%e6%80%a7%e8%88%87%e5%80%8b%e4%ba%ba%e6%88%90%e9%95%b7tft/
+  - File: `47525.md`
+  - Published: 2024-01-30T12:44:07
+- 我該成為什麼樣的老師？
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e8%a9%b2%e6%88%90%e7%82%ba%e4%bb%80%e9%ba%bc%e6%a8%a3%e7%9a%84%e8%80%81%e5%b8%ab%ef%bc%9f/
+  - File: `46808.md`
+  - Published: 2024-01-15T11:33:03
+- 沒有孩子是炸彈，而都是等待萌芽的種子
+  - Source: https://www.teach4taiwan.org/%e6%b2%92%e6%9c%89%e5%ad%a9%e5%ad%90%e6%98%af%e7%82%b8%e5%bd%88%ef%bc%8c%e8%80%8c%e9%83%bd%e6%98%af%e7%ad%89%e5%be%85%e8%90%8c%e8%8a%bd%e7%9a%84%e7%a8%ae%e5%ad%90/
+  - File: `46739.md`
+  - Published: 2024-01-11T15:34:09
+- 因為孩子，我再長大一次
+  - Source: https://www.teach4taiwan.org/%e5%9b%a0%e7%82%ba%e5%ad%a9%e5%ad%90%ef%bc%8c%e6%88%91%e5%86%8d%e9%95%b7%e5%a4%a7%e4%b8%80%e6%ac%a1/
+  - File: `46736.md`
+  - Published: 2024-01-11T15:33:54
+- 孩子散發出的光，讓我喜歡了現在的自己
+  - Source: https://www.teach4taiwan.org/%e5%ad%a9%e5%ad%90%e6%95%a3%e7%99%bc%e5%87%ba%e7%9a%84%e5%85%89%ef%bc%8c%e8%ae%93%e6%88%91%e5%96%9c%e6%ad%a1%e4%ba%86%e7%8f%be%e5%9c%a8%e7%9a%84%e8%87%aa%e5%b7%b1/
+  - File: `46730.md`
+  - Published: 2024-01-11T15:31:18
+- 每個特質，都有值得發光的舞台
+  - Source: https://www.teach4taiwan.org/%e6%af%8f%e5%80%8b%e7%89%b9%e8%b3%aa%ef%bc%8c%e9%83%bd%e6%9c%89%e5%80%bc%e5%be%97%e7%99%bc%e5%85%89%e7%9a%84%e8%88%9e%e5%8f%b0/
+  - File: `46727.md`
+  - Published: 2024-01-11T15:28:10
+- 透過教育，我不只看見孩子，也看見了自己。
+  - Source: https://www.teach4taiwan.org/%e9%80%8f%e9%81%8e%e6%95%99%e8%82%b2%ef%bc%8c%e6%88%91%e4%b8%8d%e5%8f%aa%e7%9c%8b%e8%a6%8b%e5%ad%a9%e5%ad%90%ef%bc%8c%e4%b9%9f%e7%9c%8b%e8%a6%8b%e4%ba%86%e8%87%aa%e5%b7%b1%e3%80%82/
+  - File: `46724.md`
+  - Published: 2024-01-11T15:26:16
+- 你長大以後，想要做什麼？
+  - Source: https://www.teach4taiwan.org/%e4%bd%a0%e9%95%b7%e5%a4%a7%e4%bb%a5%e5%be%8c%ef%bc%8c%e6%83%b3%e8%a6%81%e5%81%9a%e4%bb%80%e9%ba%bc%ef%bc%9f/
+  - File: `46721.md`
+  - Published: 2024-01-11T15:25:55
+- 你願意更期待明年的自己嗎？
+  - Source: https://www.teach4taiwan.org/%e4%bd%a0%e9%a1%98%e6%84%8f%e6%9b%b4%e6%9c%9f%e5%be%85%e6%98%8e%e5%b9%b4%e7%9a%84%e8%87%aa%e5%b7%b1%e5%97%8e%ef%bc%9f/
+  - File: `46715.md`
+  - Published: 2024-01-11T15:22:32
+- 給每個長大的孩子與想忠於自我的大人
+  - Source: https://www.teach4taiwan.org/%e7%b5%a6%e6%af%8f%e5%80%8b%e9%95%b7%e5%a4%a7%e7%9a%84%e5%ad%a9%e5%ad%90%e8%88%87%e6%83%b3%e5%bf%a0%e6%96%bc%e8%87%aa%e6%88%91%e7%9a%84%e5%a4%a7%e4%ba%ba/
+  - File: `46712.md`
+  - Published: 2024-01-11T15:21:02
+- 這一課，我們談如何道別
+  - Source: https://www.teach4taiwan.org/%e9%80%99%e4%b8%80%e8%aa%b2%ef%bc%8c%e6%88%91%e5%80%91%e8%ab%87%e5%a6%82%e4%bd%95%e9%81%93%e5%88%a5/
+  - File: `46709.md`
+  - Published: 2024-01-11T15:20:38
+- 我仍相信你會在未來燦爛盛放
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e4%bb%8d%e7%9b%b8%e4%bf%a1%e4%bd%a0%e6%9c%83%e5%9c%a8%e6%9c%aa%e4%be%86%e7%87%a6%e7%88%9b%e7%9b%9b%e6%94%be/
+  - File: `46706.md`
+  - Published: 2024-01-11T15:18:11
+- 回到最初的起點，找到更好的自己
+  - Source: https://www.teach4taiwan.org/%e5%9b%9e%e5%88%b0%e6%9c%80%e5%88%9d%e7%9a%84%e8%b5%b7%e9%bb%9e%ef%bc%8c%e6%89%be%e5%88%b0%e6%9b%b4%e5%a5%bd%e7%9a%84%e8%87%aa%e5%b7%b1/
+  - File: `46701.md`
+  - Published: 2024-01-11T15:16:00
+- 有一種成長痛，是和好友漸行漸遠
+  - Source: https://www.teach4taiwan.org/%e6%9c%89%e4%b8%80%e7%a8%ae%e6%88%90%e9%95%b7%e7%97%9b%ef%bc%8c%e6%98%af%e5%92%8c%e5%a5%bd%e5%8f%8b%e6%bc%b8%e8%a1%8c%e6%bc%b8%e9%81%a0/
+  - File: `46698.md`
+  - Published: 2024-01-11T15:05:20
+- 孩子也是人，不是輸入指令後只會照著動的機器人。
+  - Source: https://www.teach4taiwan.org/%e5%ad%a9%e5%ad%90%e4%b9%9f%e6%98%af%e4%ba%ba%ef%bc%8c%e4%b8%8d%e6%98%af%e8%bc%b8%e5%85%a5%e6%8c%87%e4%bb%a4%e5%be%8c%e5%8f%aa%e6%9c%83%e7%85%a7%e8%91%97%e5%8b%95%e7%9a%84%e6%a9%9f%e5%99%a8%e4%ba%ba/
+  - File: `46695.md`
+  - Published: 2024-01-11T15:02:19
+- 每個決定和改變，都會帶來新的學習
+  - Source: https://www.teach4taiwan.org/%e6%af%8f%e5%80%8b%e6%b1%ba%e5%ae%9a%e5%92%8c%e6%94%b9%e8%ae%8a%ef%bc%8c%e9%83%bd%e6%9c%83%e5%b8%b6%e4%be%86%e6%96%b0%e7%9a%84%e5%ad%b8%e7%bf%92/
+  - File: `46692.md`
+  - Published: 2024-01-11T15:01:50
+- 菜鳥老師和菜鳥學生的成長故事
+  - Source: https://www.teach4taiwan.org/%e8%8f%9c%e9%b3%a5%e8%80%81%e5%b8%ab%e5%92%8c%e8%8f%9c%e9%b3%a5%e5%ad%b8%e7%94%9f%e7%9a%84%e6%88%90%e9%95%b7%e6%95%85%e4%ba%8b/
+  - File: `46688.md`
+  - Published: 2024-01-11T14:58:46
+- 相信，讓孩子發光
+  - Source: https://www.teach4taiwan.org/%e7%9b%b8%e4%bf%a1%ef%bc%8c%e8%ae%93%e5%ad%a9%e5%ad%90%e7%99%bc%e5%85%89/
+  - File: `46680.md`
+  - Published: 2024-01-11T14:54:32
+- 走過的路都是成長的痕跡
+  - Source: https://www.teach4taiwan.org/%e8%b5%b0%e9%81%8e%e7%9a%84%e8%b7%af%e9%83%bd%e6%98%af%e6%88%90%e9%95%b7%e7%9a%84%e7%97%95%e8%b7%a1/
+  - File: `46677.md`
+  - Published: 2024-01-11T14:52:34
+- 我與家長的日常對話
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e8%88%87%e5%ae%b6%e9%95%b7%e7%9a%84%e6%97%a5%e5%b8%b8%e5%b0%8d%e8%a9%b1/
+  - File: `46673.md`
+  - Published: 2024-01-11T14:48:50
+- 不用追逐光，我們已經擁有照耀彼此的能力
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e7%94%a8%e8%bf%bd%e9%80%90%e5%85%89%ef%bc%8c%e6%88%91%e5%80%91%e5%b7%b2%e7%b6%93%e6%93%81%e6%9c%89%e7%85%a7%e8%80%80%e5%bd%bc%e6%ad%a4%e7%9a%84%e8%83%bd%e5%8a%9b/
+  - File: `46667.md`
+  - Published: 2024-01-11T14:45:53
+- 老師，我們什麼時候可以和愛因斯坦人視訊交流？
+  - Source: https://www.teach4taiwan.org/%e8%80%81%e5%b8%ab%ef%bc%8c%e6%88%91%e5%80%91%e4%bb%80%e9%ba%bc%e6%99%82%e5%80%99%e5%8f%af%e4%bb%a5%e5%92%8c%e6%84%9b%e5%9b%a0%e6%96%af%e5%9d%a6%e4%ba%ba%e8%a6%96%e8%a8%8a%e4%ba%a4%e6%b5%81%ef%bc%9f/
+  - File: `46663.md`
+  - Published: 2024-01-11T14:43:49
+- 10 年過去，TFT 校友帶過的孩子也上大學了
+  - Source: https://www.teach4taiwan.org/10-%e5%b9%b4%e9%81%8e%e5%8e%bb%ef%bc%8ctft-%e6%a0%a1%e5%8f%8b%e5%b8%b6%e9%81%8e%e7%9a%84%e5%ad%a9%e5%ad%90%e4%b9%9f%e4%b8%8a%e5%a4%a7%e5%ad%b8%e4%ba%86/
+  - File: `46657.md`
+  - Published: 2024-01-11T14:39:35
+- 一趟走出稻田的畢業旅行
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e8%b6%9f%e8%b5%b0%e5%87%ba%e7%a8%bb%e7%94%b0%e7%9a%84%e7%95%a2%e6%a5%ad%e6%97%85%e8%a1%8c/
+  - File: `46652.md`
+  - Published: 2024-01-11T14:36:25
+- 每個認真生活的當下，都是最好的自己
+  - Source: https://www.teach4taiwan.org/%e6%af%8f%e5%80%8b%e8%aa%8d%e7%9c%9f%e7%94%9f%e6%b4%bb%e7%9a%84%e7%95%b6%e4%b8%8b%ef%bc%8c%e9%83%bd%e6%98%af%e6%9c%80%e5%a5%bd%e7%9a%84%e8%87%aa%e5%b7%b1/
+  - File: `46622.md`
+  - Published: 2024-01-11T00:00:04
+- 「那我來負責這個最困難的部分！」
+  - Source: https://www.teach4taiwan.org/%e3%80%8c%e9%82%a3%e6%88%91%e4%be%86%e8%b2%a0%e8%b2%ac%e9%80%99%e5%80%8b%e6%9c%80%e5%9b%b0%e9%9b%a3%e7%9a%84%e9%83%a8%e5%88%86%ef%bc%81%e3%80%8d/
+  - File: `46619.md`
+  - Published: 2024-01-10T23:58:09
+- 成為溫柔而堅定的大人與小孩
+  - Source: https://www.teach4taiwan.org/%e6%88%90%e7%82%ba%e6%ba%ab%e6%9f%94%e8%80%8c%e5%a0%85%e5%ae%9a%e7%9a%84%e5%a4%a7%e4%ba%ba%e8%88%87%e5%b0%8f%e5%ad%a9/
+  - File: `46616.md`
+  - Published: 2024-01-10T23:56:15
+- 重新定義的「成功」
+  - Source: https://www.teach4taiwan.org/%e9%87%8d%e6%96%b0%e5%ae%9a%e7%be%a9%e7%9a%84%e3%80%8c%e6%88%90%e5%8a%9f%e3%80%8d/
+  - File: `46612.md`
+  - Published: 2024-01-10T23:54:14
+- 雖然已經是大人了，還是可以繼續長大
+  - Source: https://www.teach4taiwan.org/%e9%9b%96%e7%84%b6%e5%b7%b2%e7%b6%93%e6%98%af%e5%a4%a7%e4%ba%ba%e4%ba%86%ef%bc%8c%e9%82%84%e6%98%af%e5%8f%af%e4%bb%a5%e7%b9%bc%e7%ba%8c%e9%95%b7%e5%a4%a7/
+  - File: `46609.md`
+  - Published: 2024-01-10T23:53:41
+- 每個人都可以在星空中找到屬於自己的那顆星星
+  - Source: https://www.teach4taiwan.org/%e6%af%8f%e5%80%8b%e4%ba%ba%e9%83%bd%e5%8f%af%e4%bb%a5%e5%9c%a8%e6%98%9f%e7%a9%ba%e4%b8%ad%e6%89%be%e5%88%b0%e5%b1%ac%e6%96%bc%e8%87%aa%e5%b7%b1%e7%9a%84%e9%82%a3%e9%a1%86%e6%98%9f%e6%98%9f/
+  - File: `46603.md`
+  - Published: 2024-01-10T23:49:18
+- 我有，也沒有打算當老師
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e6%9c%89%ef%bc%8c%e4%b9%9f%e6%b2%92%e6%9c%89%e6%89%93%e7%ae%97%e7%95%b6%e8%80%81%e5%b8%ab/
+  - File: `46599.md`
+  - Published: 2024-01-10T23:47:16
+- 原來掙扎著也是走了那麼遠
+  - Source: https://www.teach4taiwan.org/%e5%8e%9f%e4%be%86%e6%8e%99%e6%89%8e%e8%91%97%e4%b9%9f%e6%98%af%e8%b5%b0%e4%ba%86%e9%82%a3%e9%ba%bc%e9%81%a0/
+  - File: `46596.md`
+  - Published: 2024-01-10T23:45:47
+- 「咻——碰！」你猜這是沖天炮還是煙火
+  - Source: https://www.teach4taiwan.org/%e3%80%8c%e5%92%bb-%e7%a2%b0%ef%bc%81%e3%80%8d%e4%bd%a0%e7%8c%9c%e9%80%99%e6%98%af%e6%b2%96%e5%a4%a9%e7%82%ae%e9%82%84%e6%98%af%e7%85%99%e7%81%ab/
+  - File: `46593.md`
+  - Published: 2024-01-10T23:43:55
+- 長大，對我和孩子都是件不容易的事
+  - Source: https://www.teach4taiwan.org/%e9%95%b7%e5%a4%a7%ef%bc%8c%e5%b0%8d%e6%88%91%e5%92%8c%e5%ad%a9%e5%ad%90%e9%83%bd%e6%98%af%e4%bb%b6%e4%b8%8d%e5%ae%b9%e6%98%93%e7%9a%84%e4%ba%8b/
+  - File: `46589.md`
+  - Published: 2024-01-10T23:41:41
+- 孩子，我們一起解難題
+  - Source: https://www.teach4taiwan.org/%e5%ad%a9%e5%ad%90%ef%bc%8c%e6%88%91%e5%80%91%e4%b8%80%e8%b5%b7%e8%a7%a3%e9%9b%a3%e9%a1%8c/
+  - File: `46581.md`
+  - Published: 2024-01-10T23:36:26
+- 學會放手，是長大最難的一課
+  - Source: https://www.teach4taiwan.org/%e5%ad%b8%e6%9c%83%e6%94%be%e6%89%8b%ef%bc%8c%e6%98%af%e9%95%b7%e5%a4%a7%e6%9c%80%e9%9b%a3%e7%9a%84%e4%b8%80%e8%aa%b2/
+  - File: `46578.md`
+  - Published: 2024-01-10T23:34:28
+- 也許革命注定失敗，同志還需努力嗎？
+  - Source: https://www.teach4taiwan.org/%e4%b9%9f%e8%a8%b1%e9%9d%a9%e5%91%bd%e6%b3%a8%e5%ae%9a%e5%a4%b1%e6%95%97%ef%bc%8c%e5%90%8c%e5%bf%97%e9%82%84%e9%9c%80%e5%8a%aa%e5%8a%9b%e5%97%8e%ef%bc%9f/
+  - File: `46573.md`
+  - Published: 2024-01-10T23:30:44
+- 因為不完美，才有了讓我們聚集在一起的機會
+  - Source: https://www.teach4taiwan.org/%e5%9b%a0%e7%82%ba%e4%b8%8d%e5%ae%8c%e7%be%8e%ef%bc%8c%e6%89%8d%e6%9c%89%e4%ba%86%e8%ae%93%e6%88%91%e5%80%91%e8%81%9a%e9%9b%86%e5%9c%a8%e4%b8%80%e8%b5%b7%e7%9a%84%e6%a9%9f%e6%9c%83/
+  - File: `46568.md`
+  - Published: 2024-01-10T23:27:05
+- 畢業典禮那天，孩子寫了信：老師，您願意留下來嗎？
+  - Source: https://www.teach4taiwan.org/%e7%95%a2%e6%a5%ad%e5%85%b8%e7%a6%ae%e9%82%a3%e5%a4%a9%ef%bc%8c%e5%ad%a9%e5%ad%90%e5%af%ab%e4%ba%86%e4%bf%a1%ef%bc%9a%e8%80%81%e5%b8%ab%ef%bc%8c%e6%82%a8%e9%a1%98%e6%84%8f%e7%95%99%e4%b8%8b%e4%be%86/
+  - File: `46565.md`
+  - Published: 2024-01-10T23:25:08
+- 城鄉合作的戶外教學，讓我看見孩子的多元面貌
+  - Source: https://www.teach4taiwan.org/%e5%9f%8e%e9%84%89%e5%90%88%e4%bd%9c%e7%9a%84%e6%88%b6%e5%a4%96%e6%95%99%e5%ad%b8%ef%bc%8c%e8%ae%93%e6%88%91%e7%9c%8b%e8%a6%8b%e5%ad%a9%e5%ad%90%e7%9a%84%e5%a4%9a%e5%85%83%e9%9d%a2%e8%b2%8c/
+  - File: `46562.md`
+  - Published: 2024-01-10T23:08:12
+- 不是去改變學生，而是和他們一起變好
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e6%98%af%e5%8e%bb%e6%94%b9%e8%ae%8a%e5%ad%b8%e7%94%9f%ef%bc%8c%e8%80%8c%e6%98%af%e5%92%8c%e4%bb%96%e5%80%91%e4%b8%80%e8%b5%b7%e8%ae%8a%e5%a5%bd/
+  - File: `46558.md`
+  - Published: 2024-01-10T23:04:54
+- 缺點，只是優點的過度發揮
+  - Source: https://www.teach4taiwan.org/%e7%bc%ba%e9%bb%9e%ef%bc%8c%e5%8f%aa%e6%98%af%e5%84%aa%e9%bb%9e%e7%9a%84%e9%81%8e%e5%ba%a6%e7%99%bc%e6%8f%ae/
+  - File: `46551.md`
+  - Published: 2024-01-10T23:01:11
+- 與孩子共創的「地層下陷」議題課
+  - Source: https://www.teach4taiwan.org/%e8%88%87%e5%ad%a9%e5%ad%90%e5%85%b1%e5%89%b5%e7%9a%84%e3%80%8c%e5%9c%b0%e5%b1%a4%e4%b8%8b%e9%99%b7%e3%80%8d%e8%ad%b0%e9%a1%8c%e8%aa%b2/
+  - File: `46536.md`
+  - Published: 2024-01-10T22:50:46
+- 為何而做，比做了什麼還重要
+  - Source: https://www.teach4taiwan.org/%e7%82%ba%e4%bd%95%e8%80%8c%e5%81%9a%ef%bc%8c%e6%af%94%e5%81%9a%e4%ba%86%e4%bb%80%e9%ba%bc%e9%82%84%e9%87%8d%e8%a6%81/
+  - File: `46521.md`
+  - Published: 2024-01-10T15:08:39
+- 我的半熟大人故事
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e7%9a%84%e5%8d%8a%e7%86%9f%e5%a4%a7%e4%ba%ba%e6%95%85%e4%ba%8b/
+  - File: `46516.md`
+  - Published: 2024-01-10T15:03:33
+- 勇敢地發想夢想，踏實地步步向前
+  - Source: https://www.teach4taiwan.org/%e5%8b%87%e6%95%a2%e5%9c%b0%e7%99%bc%e6%83%b3%e5%a4%a2%e6%83%b3%ef%bc%8c%e8%b8%8f%e5%af%a6%e5%9c%b0%e6%ad%a5%e6%ad%a5%e5%90%91%e5%89%8d/
+  - File: `46510.md`
+  - Published: 2024-01-10T14:59:15
+- 當新住民媽媽成為孩子們的老師
+  - Source: https://www.teach4taiwan.org/%e7%95%b6%e6%96%b0%e4%bd%8f%e6%b0%91%e5%aa%bd%e5%aa%bd%e6%88%90%e7%82%ba%e5%ad%a9%e5%ad%90%e5%80%91%e7%9a%84%e8%80%81%e5%b8%ab/
+  - File: `46501.md`
+  - Published: 2024-01-09T13:01:47
+- 孩子啊，你是如此有能量，並且深深被相信著
+  - Source: https://www.teach4taiwan.org/%e5%ad%a9%e5%ad%90%e5%95%8a%ef%bc%8c%e4%bd%a0%e6%98%af%e5%a6%82%e6%ad%a4%e6%9c%89%e8%83%bd%e9%87%8f%ef%bc%8c%e4%b8%a6%e4%b8%94%e6%b7%b1%e6%b7%b1%e8%a2%ab%e7%9b%b8%e4%bf%a1%e8%91%97/
+  - File: `46496.md`
+  - Published: 2024-01-09T12:52:56
+- 道歉與真誠，讓我們的距離更加靠近
+  - Source: https://www.teach4taiwan.org/%e9%81%93%e6%ad%89%e8%88%87%e7%9c%9f%e8%aa%a0%ef%bc%8c%e8%ae%93%e6%88%91%e5%80%91%e7%9a%84%e8%b7%9d%e9%9b%a2%e6%9b%b4%e5%8a%a0%e9%9d%a0%e8%bf%91/
+  - File: `46491.md`
+  - Published: 2024-01-09T12:48:08
+- TFT 領域專長督導與計畫成員相遇，碰撞出燦爛的新火花
+  - Source: https://www.teach4taiwan.org/tft-%e9%a0%98%e5%9f%9f%e5%b0%88%e9%95%b7%e7%9d%a3%e5%b0%8e%e8%88%87%e8%a8%88%e7%95%ab%e6%88%90%e5%93%a1%e7%9b%b8%e9%81%87%ef%bc%8c%e7%a2%b0%e6%92%9e%e5%87%ba%e7%87%a6%e7%88%9b%e7%9a%84%e6%96%b0/
+  - File: `46487.md`
+  - Published: 2024-01-09T12:46:04
+- 在十年的賽道上，發起一場親師生與社區共生的教育長跑
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8%e5%8d%81%e5%b9%b4%e7%9a%84%e8%b3%bd%e9%81%93%e4%b8%8a%ef%bc%8c%e7%99%bc%e8%b5%b7%e4%b8%80%e5%a0%b4%e8%a6%aa%e5%b8%ab%e7%94%9f%e8%88%87%e7%a4%be%e5%8d%80%e5%85%b1%e7%94%9f%e7%9a%84%e6%95%99/
+  - File: `46482.md`
+  - Published: 2024-01-09T12:42:39
+- 《螢火蟲》—— 給學生 Anna 的詩
+  - Source: https://www.teach4taiwan.org/%e3%80%8a%e8%9e%a2%e7%81%ab%e8%9f%b2%e3%80%8b-%e7%b5%a6%e5%ad%b8%e7%94%9f-anna-%e7%9a%84%e8%a9%a9/
+  - File: `46476.md`
+  - Published: 2024-01-09T11:41:59
+- 不只是孩子的老師，更是部落的一份子
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e5%8f%aa%e6%98%af%e5%ad%a9%e5%ad%90%e7%9a%84%e8%80%81%e5%b8%ab%ef%bc%8c%e6%9b%b4%e6%98%af%e9%83%a8%e8%90%bd%e7%9a%84%e4%b8%80%e4%bb%bd%e5%ad%90/
+  - File: `46460.md`
+  - Published: 2024-01-07T23:15:31
+- 給小王子的長大情書
+  - Source: https://www.teach4taiwan.org/%e7%b5%a6%e5%b0%8f%e7%8e%8b%e5%ad%90%e7%9a%84%e9%95%b7%e5%a4%a7%e6%83%85%e6%9b%b8/
+  - File: `46458.md`
+  - Published: 2024-01-07T23:13:10
+- 從小一入學到小六畢業，都有 TFT 老師的接力陪伴
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e5%b0%8f%e4%b8%80%e5%85%a5%e5%ad%b8%e5%88%b0%e5%b0%8f%e5%85%ad%e7%95%a2%e6%a5%ad%ef%bc%8c%e9%83%bd%e6%9c%89-tft-%e8%80%81%e5%b8%ab%e7%9a%84%e6%8e%a5%e5%8a%9b%e9%99%aa%e4%bc%b4/
+  - File: `46453.md`
+  - Published: 2024-01-07T23:03:28
+- 從計畫成員到正式教師——為追尋一生的志業，用盡百分的努力 
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e8%a8%88%e7%95%ab%e6%88%90%e5%93%a1%e5%88%b0%e6%ad%a3%e5%bc%8f%e6%95%99%e5%b8%ab-%e7%82%ba%e8%bf%bd%e5%b0%8b%e4%b8%80%e7%94%9f%e7%9a%84%e5%bf%97%e6%a5%ad%ef%bc%8c%e7%94%a8/
+  - File: `46373.md`
+  - Published: 2023-12-22T18:23:14
+- TFT 與 Dell Technologies 合作，在數位學習時代中架起減緩數位不平等的橋樑
+  - Source: https://www.teach4taiwan.org/tft-%e8%88%87-dell-technologies-%e5%90%88%e4%bd%9c%ef%bc%8c%e5%9c%a8%e6%95%b8%e4%bd%8d%e5%ad%b8%e7%bf%92%e6%99%82%e4%bb%a3%e4%b8%ad%e6%9e%b6%e8%b5%b7%e6%b8%9b%e7%b7%a9%e6%95%b8%e4%bd%8d%e4%b8%8d/
+  - File: `46200.md`
+  - Published: 2023-12-11T11:16:52
+- 那些關於教育現場的不平等：從第一線教師視角，看見社會問題的深處
+  - Source: https://www.teach4taiwan.org/%e9%82%a3%e4%ba%9b%e9%97%9c%e6%96%bc%e6%95%99%e8%82%b2%e7%8f%be%e5%a0%b4%e7%9a%84%e4%b8%8d%e5%b9%b3%e7%ad%89%ef%bc%9a%e5%be%9e%e7%ac%ac%e4%b8%80%e7%b7%9a%e6%95%99%e5%b8%ab%e8%a6%96%e8%a7%92%ef%bc%8c/
+  - File: `46079.md`
+  - Published: 2023-11-22T17:39:48
+- 「讓孩子以家鄉為榮，對地方產生依戀」從屏東出發，看教育與地方創生共創的可能
+  - Source: https://www.teach4taiwan.org/%e3%80%8c%e8%ae%93%e5%ad%a9%e5%ad%90%e4%bb%a5%e5%ae%b6%e9%84%89%e7%82%ba%e6%a6%ae%ef%bc%8c%e5%b0%8d%e5%9c%b0%e6%96%b9%e7%94%a2%e7%94%9f%e4%be%9d%e6%88%80%e3%80%8d%e5%be%9e%e5%b1%8f%e6%9d%b1%e5%87%ba/
+  - File: `46072.md`
+  - Published: 2023-11-22T17:30:45
+- 如何留住教育人才？公私部門協力，以集體力量接住教師、也接住孩子，讓老師願意留在偏鄉
+  - Source: https://www.teach4taiwan.org/%e5%a6%82%e4%bd%95%e7%95%99%e4%bd%8f%e6%95%99%e8%82%b2%e4%ba%ba%e6%89%8d%ef%bc%9f%e5%85%ac%e7%a7%81%e9%83%a8%e9%96%80%e5%8d%94%e5%8a%9b%ef%bc%8c%e4%bb%a5%e9%9b%86%e9%ab%94%e5%8a%9b%e9%87%8f%e6%8e%a5/
+  - File: `46068.md`
+  - Published: 2023-11-22T17:21:15
+- TFT 計畫的兩年，讓我知道我有多想當一名老師：校友成為正式老師之路
+  - Source: https://www.teach4taiwan.org/tft-%e8%a8%88%e7%95%ab%e7%9a%84%e5%85%a9%e5%b9%b4%ef%bc%8c%e8%ae%93%e6%88%91%e7%9f%a5%e9%81%93%e6%88%91%e6%9c%89%e5%a4%9a%e6%83%b3%e7%95%b6%e4%b8%80%e5%90%8d%e8%80%81%e5%b8%ab%ef%bc%9a%e6%a0%a1/
+  - File: `44506.md`
+  - Published: 2023-09-27T13:20:32
+- 怎麼讓孩子愛上數學？ ━━ TFT 計畫成員「數學科增能」培訓課程側記
+  - Source: https://www.teach4taiwan.org/%e6%80%8e%e9%ba%bc%e8%ae%93%e5%ad%a9%e5%ad%90%e6%84%9b%e4%b8%8a%e6%95%b8%e5%ad%b8%ef%bc%9f-%e2%94%81%e2%94%81-tft-%e8%a8%88%e7%95%ab%e6%88%90%e5%93%a1%e3%80%8c%e6%95%b8%e5%ad%b8%e7%a7%91%e5%a2%9e/
+  - File: `41480.md`
+  - Published: 2023-04-13T18:22:19
+- 從戲劇舞台站上教室講台—文郁將戲劇結合教育，將同理與創意帶給更多人
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e6%88%b2%e5%8a%87%e8%88%9e%e5%8f%b0%e7%ab%99%e4%b8%8a%e6%95%99%e5%ae%a4%e8%ac%9b%e5%8f%b0-%e6%96%87%e9%83%81%e5%b0%87%e6%88%b2%e5%8a%87%e7%b5%90%e5%90%88%e6%95%99/
+  - File: `39980.md`
+  - Published: 2023-01-30T10:46:51
+- 化擔心為行動，社區的動物保護計畫
+  - Source: https://www.teach4taiwan.org/%e5%8c%96%e6%93%94%e5%bf%83%e7%82%ba%e8%a1%8c%e5%8b%95%ef%bc%8c%e7%a4%be%e5%8d%80%e7%9a%84%e5%8b%95%e7%89%a9%e4%bf%9d%e8%ad%b7%e8%a8%88%e7%95%ab/
+  - File: `39940.md`
+  - Published: 2023-01-17T18:45:45
+- 走出部落的排灣族文化之旅，帶孩子尋訪自己的根與土地
+  - Source: https://www.teach4taiwan.org/%e8%b5%b0%e5%87%ba%e9%83%a8%e8%90%bd%e7%9a%84%e6%8e%92%e7%81%a3%e6%97%8f%e6%96%87%e5%8c%96%e4%b9%8b%e6%97%85%ef%bc%8c%e5%b8%b6%e5%ad%a9%e5%ad%90%e5%b0%8b%e8%a8%aa%e8%87%aa%e5%b7%b1%e7%9a%84%e6%a0%b9/
+  - File: `39933.md`
+  - Published: 2023-01-17T18:40:46
+- 搶救圖書室大作戰，讓孩子愛上閱讀
+  - Source: https://www.teach4taiwan.org/%e6%90%b6%e6%95%91%e5%9c%96%e6%9b%b8%e5%ae%a4%e5%a4%a7%e4%bd%9c%e6%88%b0%ef%bc%8c%e8%ae%93%e5%ad%a9%e5%ad%90%e6%84%9b%e4%b8%8a%e9%96%b1%e8%ae%80/
+  - File: `39927.md`
+  - Published: 2023-01-17T18:37:08
+- 變身在地環境的守護者 —— 從七股養殖漁業看食魚教育
+  - Source: https://www.teach4taiwan.org/%e8%ae%8a%e8%ba%ab%e5%9c%a8%e5%9c%b0%e7%92%b0%e5%a2%83%e7%9a%84%e5%ae%88%e8%ad%b7%e8%80%85-%e5%be%9e%e4%b8%83%e8%82%a1%e9%a4%8a%e6%ae%96%e6%bc%81%e6%a5%ad%e7%9c%8b%e9%a3%9f%e9%ad%9a/
+  - File: `39921.md`
+  - Published: 2023-01-17T13:08:19
+- 將「可是」再製成「可以」的領導力 ft. Google 台灣人資長
+  - Source: https://www.teach4taiwan.org/%e5%b0%87%e3%80%8c%e5%8f%af%e6%98%af%e3%80%8d%e5%86%8d%e8%a3%bd%e6%88%90%e3%80%8c%e5%8f%af%e4%bb%a5%e3%80%8d%e7%9a%84%e9%a0%98%e5%b0%8e%e5%8a%9b-ft-google-%e5%8f%b0%e7%81%a3%e4%ba%ba%e8%b3%87/
+  - File: `39836.md`
+  - Published: 2023-01-09T13:12:39
+- 成就大於自己的那些事，創造他人也願意相信的「可能」ft. 敏迪選讀
+  - Source: https://www.teach4taiwan.org/%e6%88%90%e5%b0%b1%e5%a4%a7%e6%96%bc%e8%87%aa%e5%b7%b1%e7%9a%84%e9%82%a3%e4%ba%9b%e4%ba%8b%ef%bc%8c%e5%89%b5%e9%80%a0%e4%bb%96%e4%ba%ba%e4%b9%9f%e9%a1%98%e6%84%8f%e7%9b%b8%e4%bf%a1%e7%9a%84%e3%80%8c/
+  - File: `39654.md`
+  - Published: 2023-01-04T11:44:26
+- 【 2022 暑期營隊｜學校篇】一起放點什麼到心裡吧！
+  - Source: https://www.teach4taiwan.org/39472/
+  - File: `39472.md`
+  - Published: 2022-12-21T10:57:07
+- 成為計畫成員的第一堂課——定錨航向、裝備所需 ——第九屆 TFT 計畫 ”Orientation” 課程側記
+  - Source: https://www.teach4taiwan.org/tft-fellowship_training-orientation/
+  - File: `39341.md`
+  - Published: 2022-12-12T17:34:53
+- 親愛的孩子，我想把一半的快樂送給你
+  - Source: https://www.teach4taiwan.org/%e8%a6%aa%e6%84%9b%e7%9a%84%e5%ad%a9%e5%ad%90%ef%bc%8c%e6%88%91%e6%83%b3%e6%8a%8a%e4%b8%80%e5%8d%8a%e7%9a%84%e5%bf%ab%e6%a8%82%e9%80%81%e7%b5%a6%e4%bd%a0/
+  - File: `39154.md`
+  - Published: 2022-11-30T16:40:20
+- 書菡與孩子一起，學習成為更好的自己
+  - Source: https://www.teach4taiwan.org/%e5%92%8c%e5%ad%a9%e5%ad%90%e4%b8%80%e8%b5%b7%e6%88%90%e7%82%ba%e6%9b%b4%e5%a5%bd%e7%9a%84%e8%87%aa%e5%b7%b1/
+  - File: `39148.md`
+  - Published: 2022-11-30T16:30:15
+- 法律系畢業加入 TFT，倢恩在懷疑和期盼間成為自己
+  - Source: https://www.teach4taiwan.org/%e6%b3%95%e5%be%8b%e7%b3%bb%e7%95%a2%e6%a5%ad%e5%8a%a0%e5%85%a5-tft%ef%bc%8c%e5%80%a2%e6%81%a9%e5%9c%a8%e6%87%b7%e7%96%91%e5%92%8c%e6%9c%9f%e7%9b%bc%e9%96%93%e6%88%90%e7%82%ba%e8%87%aa%e5%b7%b1/
+  - File: `39142.md`
+  - Published: 2022-11-30T15:18:12
+- TFT 不只培育老師，更是培育回應教育不平等的人才——第八屆 TFT 計畫 第二年「長期影響力系列課程」側記
+  - Source: https://www.teach4taiwan.org/tft-%e9%95%b7%e6%9c%9f%e5%bd%b1%e9%9f%bf%e5%8a%9b%e5%9f%b9%e8%a8%93%e8%aa%b2%e7%a8%8b%e5%81%b4%e8%a8%98/
+  - File: `39120.md`
+  - Published: 2022-11-24T14:55:03
+- 【 TFT 實習心得 】在 TFT 實習讓我練習：面對挫折仍能再一次啟程
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8tft%e5%af%a6%e7%bf%92%e8%ae%93%e6%88%91%e7%b7%b4%e7%bf%92%e9%9d%a2%e5%b0%8d%e6%8c%ab%e6%8a%98%e4%bb%8d%e8%83%bd%e5%86%8d%e4%b8%80%e6%ac%a1%e5%95%9f%e7%a8%8b/
+  - File: `36955.md`
+  - Published: 2022-09-28T12:08:28
+- 【 TFT 實習心得 】我來到 TFT 實習，為了找到社會問題的解方
+  - Source: https://www.teach4taiwan.org/%e3%80%90-tft-%e5%af%a6%e7%bf%92%e5%bf%83%e5%be%97-%e3%80%91%e6%88%91%e4%be%86%e5%88%b0-tft-%e5%af%a6%e7%bf%92%ef%bc%8c%e7%82%ba%e4%ba%86%e6%89%be%e5%88%b0%e7%a4%be%e6%9c%83%e5%95%8f%e9%a1%8c%e7%9a%84/
+  - File: `36952.md`
+  - Published: 2022-09-28T11:58:26
+- 【 TFT 實習心得】我在 TFT 實習找到商管和社會結合的下一步
+  - Source: https://www.teach4taiwan.org/%e3%80%90-tft-%e5%af%a6%e7%bf%92%e5%bf%83%e5%be%97%e3%80%91%e5%a6%82%e6%9e%9c%e4%bd%a0%e6%89%80%e8%bf%bd%e6%b1%82%e7%9a%84%e4%bd%bf%e4%bd%a0%e6%84%9f%e5%88%b0%e7%84%a1%e5%8a%9b%ef%bc%8c%e4%b9%9f/
+  - File: `36943.md`
+  - Published: 2022-09-28T11:49:05
+- 畢業前的最後一堂課 —— 完成自己的畢業紀念冊
+  - Source: https://www.teach4taiwan.org/%e7%95%a2%e6%a5%ad%e5%89%8d%e7%9a%84%e6%9c%80%e5%be%8c%e4%b8%80%e5%a0%82%e8%aa%b2-%e5%ae%8c%e6%88%90%e8%87%aa%e5%b7%b1%e7%9a%84%e7%95%a2%e6%a5%ad%e7%b4%80%e5%bf%b5%e5%86%8a/
+  - File: `36261.md`
+  - Published: 2022-07-11T10:43:42
+- 「樹」業有專攻，從樹開始的領導力課程
+  - Source: https://www.teach4taiwan.org/%e3%80%8c%e6%a8%b9%e3%80%8d%e6%a5%ad%e6%9c%89%e5%b0%88%e6%94%bb%ef%bc%8c%e5%be%9e%e6%a8%b9%e9%96%8b%e5%a7%8b%e7%9a%84%e9%a0%98%e5%b0%8e%e5%8a%9b%e8%aa%b2%e7%a8%8b/
+  - File: `36256.md`
+  - Published: 2022-07-11T10:39:46
+- 從「水」開始的土地認識之旅
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e3%80%8c%e6%b0%b4%e3%80%8d%e9%96%8b%e5%a7%8b%e7%9a%84%e5%9c%9f%e5%9c%b0%e8%aa%8d%e8%ad%98%e4%b9%8b%e6%97%85/
+  - File: `36252.md`
+  - Published: 2022-07-11T10:37:06
+- 從帶動學習落差大的孩子，搭起與家長的信任橋樑
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e5%b8%b6%e5%8b%95%e5%ad%b8%e7%bf%92%e8%90%bd%e5%b7%ae%e5%a4%a7%e7%9a%84%e5%ad%a9%e5%ad%90%ef%bc%8c%e6%90%ad%e8%b5%b7%e8%88%87%e5%ae%b6%e9%95%b7%e7%9a%84%e4%bf%a1%e4%bb%bb%e6%a9%8b%e6%a8%91/
+  - File: `36248.md`
+  - Published: 2022-07-08T13:26:10
+- 部落文化踏查，帶領孩子們走上尋根之旅
+  - Source: https://www.teach4taiwan.org/%e9%83%a8%e8%90%bd%e6%96%87%e5%8c%96%e8%b8%8f%e6%9f%a5%ef%bc%8c%e5%b8%b6%e9%a0%98%e5%ad%a9%e5%ad%90%e5%80%91%e8%b5%b0%e4%b8%8a%e5%b0%8b%e6%a0%b9%e4%b9%8b%e6%97%85/
+  - File: `36227.md`
+  - Published: 2022-07-04T17:29:52
+- 一個田徑場上的意外插曲，帶出「以人為本」的相處哲學
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e5%80%8b%e7%94%b0%e5%be%91%e5%a0%b4%e4%b8%8a%e7%9a%84%e6%84%8f%e5%a4%96%e6%8f%92%e6%9b%b2%ef%bc%8c%e5%b8%b6%e5%87%ba%e3%80%8c%e4%bb%a5%e4%ba%ba%e7%82%ba%e6%9c%ac%e3%80%8d%e7%9a%84%e7%9b%b8/
+  - File: `36161.md`
+  - Published: 2022-06-27T10:50:18
+- 【夏日陪伴計畫｜校友篇】陪孩子與陪大學生是一樣的
+  - Source: https://www.teach4taiwan.org/%e3%80%90%e5%a4%8f%e6%97%a5%e9%99%aa%e4%bc%b4%e8%a8%88%e7%95%ab%ef%bd%9c%e6%a0%a1%e5%8f%8b%e7%af%87%e3%80%91%e9%99%aa%e5%ad%a9%e5%ad%90%e8%88%87%e9%99%aa%e5%a4%a7%e5%ad%b8%e7%94%9f%e6%98%af%e4%b8%80/
+  - File: `35952.md`
+  - Published: 2022-05-19T11:02:03
+- 【夏日陪伴計畫｜大學生篇】不只是陪伴與付出的五個星期
+  - Source: https://www.teach4taiwan.org/%e3%80%90%e5%a4%8f%e6%97%a5%e9%99%aa%e4%bc%b4%e8%a8%88%e7%95%ab%ef%bd%9c%e5%a4%a7%e5%ad%b8%e7%94%9f%e7%af%87%e3%80%91%e4%b8%8d%e5%8f%aa%e6%98%af%e9%99%aa%e4%bc%b4%e8%88%87%e4%bb%98%e5%87%ba%e7%9a%84/
+  - File: `35948.md`
+  - Published: 2022-05-19T10:58:31
+- 【夏日陪伴計畫｜執行團隊篇】從無到有的 100 天大挑戰
+  - Source: https://www.teach4taiwan.org/%e3%80%90%e5%a4%8f%e6%97%a5%e9%99%aa%e4%bc%b4%e8%a8%88%e7%95%ab%ef%bd%9c%e5%9f%b7%e8%a1%8c%e5%9c%98%e9%9a%8a%e7%af%87%e3%80%91%e5%be%9e%e7%84%a1%e5%88%b0%e6%9c%89%e7%9a%84-100-%e5%a4%a9%e5%a4%a7/
+  - File: `35945.md`
+  - Published: 2022-05-19T10:54:39
+- 2021 疫情中的夏日，我們一起陪伴那些孩子：TFT 版本的服務隊！
+  - Source: https://www.teach4taiwan.org/2021-%e7%96%ab%e6%83%85%e4%b8%ad%e7%9a%84%e5%a4%8f%e6%97%a5%ef%bc%8c%e6%88%91%e5%80%91%e4%b8%80%e8%b5%b7%e9%99%aa%e4%bc%b4%e9%82%a3%e4%ba%9b%e5%ad%a9%e5%ad%90%ef%bc%9atft-%e7%89%88%e6%9c%ac%e7%9a%84/
+  - File: `35942.md`
+  - Published: 2022-05-19T10:51:19
+- 投入「影響力職涯」，走出屬於自己的職涯路徑（活動紀實｜TFT x 綠藤生機）
+  - Source: https://www.teach4taiwan.org/%e6%8a%95%e5%85%a5%e3%80%8c%e5%bd%b1%e9%9f%bf%e5%8a%9b%e8%81%b7%e6%b6%af%e3%80%8d%ef%bc%8c%e8%b5%b0%e5%87%ba%e5%b1%ac%e6%96%bc%e8%87%aa%e5%b7%b1%e7%9a%84%e8%81%b7%e6%b6%af%e8%b7%af%e5%be%91%ef%bc%88/
+  - File: `35779.md`
+  - Published: 2022-04-19T18:13:00
+- 教育生態系的綜效開拓者－ TFT 策略合作專案經理
+  - Source: https://www.teach4taiwan.org/%e6%95%99%e8%82%b2%e7%94%9f%e6%85%8b%e7%b3%bb%e7%9a%84%e7%b6%9c%e6%95%88%e9%96%8b%e6%8b%93%e8%80%85%ef%bc%8d%ef%bc%8d-tft-%e7%ad%96%e7%95%a5%e5%90%88%e4%bd%9c%e5%b0%88%e6%a1%88%e7%b6%93%e7%90%86/
+  - File: `35700.md`
+  - Published: 2022-04-16T18:28:53
+- 麥肯錫 x Education CoLab合作，與屏南共創後疫情時代教育解方
+  - Source: https://www.teach4taiwan.org/%e9%ba%a5%e8%82%af%e9%8c%ab-x-education-colab%e5%90%88%e4%bd%9c%ef%bc%8c%e8%88%87%e5%b1%8f%e5%8d%97%e5%85%b1%e5%89%b5%e5%be%8c%e7%96%ab%e6%83%85%e6%99%82%e4%bb%a3%e6%95%99%e8%82%b2%e8%a7%a3%e6%96%b9/
+  - File: `35695.md`
+  - Published: 2022-04-16T18:24:44
+- 從非營利組織到企業的職涯接軌：在TFT的專業能力都可遷移
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e9%9d%9e%e7%87%9f%e5%88%a9%e7%b5%84%e7%b9%94%e5%88%b0%e4%bc%81%e6%a5%ad%e7%9a%84%e8%81%b7%e6%b6%af%e6%8e%a5%e8%bb%8c%ef%bc%9a%e5%9c%a8tft%e7%9a%84%e5%b0%88%e6%a5%ad%e8%83%bd%e5%8a%9b/
+  - File: `35652.md`
+  - Published: 2022-04-15T21:22:18
+- 回應社會問題，創業是唯一解嗎？（活動紀實 ft. 禮德旭、畫的室）
+  - Source: https://www.teach4taiwan.org/%e5%9b%9e%e6%87%89%e7%a4%be%e6%9c%83%e5%95%8f%e9%a1%8c%ef%bc%8c%e5%89%b5%e6%a5%ad%e6%98%af%e5%94%af%e4%b8%80%e8%a7%a3%e5%97%8e%ef%bc%9f%ef%bc%88%e6%b4%bb%e5%8b%95%e7%b4%80%e5%af%a6-ft-%e7%a6%ae/
+  - File: `35550.md`
+  - Published: 2022-03-31T12:46:28
+- 屏南教育創生基地 —— 集眾人之力，一起創造恆春半島的改變
+  - Source: https://www.teach4taiwan.org/%e5%b1%8f%e5%8d%97%e6%95%99%e8%82%b2%e5%89%b5%e7%94%9f%e5%9f%ba%e5%9c%b0-%e9%9b%86%e7%9c%be%e4%ba%ba%e4%b9%8b%e5%8a%9b%ef%bc%8c%e4%b8%80%e8%b5%b7%e5%89%b5%e9%80%a0%e6%81%86%e6%98%a5/
+  - File: `35084.md`
+  - Published: 2022-03-25T10:14:06
+- 在快速變動的世代，我們職涯路上都需要「可移轉技能」 ft. 麥肯錫
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8%e5%bf%ab%e9%80%9f%e8%ae%8a%e5%8b%95%e7%9a%84%e4%b8%96%e4%bb%a3%ef%bc%8c%e6%88%91%e5%80%91%e8%81%b7%e6%b6%af%e8%b7%af%e4%b8%8a%e9%83%bd%e9%9c%80%e8%a6%81%e3%80%8c%e5%8f%af%e7%a7%bb%e8%bd%89/
+  - File: `34891.md`
+  - Published: 2022-03-24T09:28:19
+- 敏捷組織：組織變革 — 敏捷「期末考」與「新嘗試」
+  - Source: https://www.teach4taiwan.org/%e6%95%8f%e6%8d%b7%e7%b5%84%e7%b9%94%ef%bc%9a%e7%b5%84%e7%b9%94%e8%ae%8a%e9%9d%a9-%e6%95%8f%e6%8d%b7%e3%80%8c%e6%9c%9f%e6%9c%ab%e8%80%83%e3%80%8d%e8%88%87%e3%80%8c%e6%96%b0%e5%98%97/
+  - File: `34838.md`
+  - Published: 2022-03-22T13:30:52
+- 踏入現場、推動改變，我們都成為社會參與的一份子（活動紀實 ft. 青民協）
+  - Source: https://www.teach4taiwan.org/%e8%b8%8f%e5%85%a5%e7%8f%be%e5%a0%b4%e3%80%81%e6%8e%a8%e5%8b%95%e6%94%b9%e8%ae%8a%ef%bc%8c%e6%88%91%e5%80%91%e9%83%bd%e6%88%90%e7%82%ba%e7%a4%be%e6%9c%83%e5%8f%83%e8%88%87%e7%9a%84%e4%b8%80%e4%bb%bd/
+  - File: `34695.md`
+  - Published: 2022-03-17T10:39:59
+- 不只是改造圖書館，也是改變孩子與社區的閱讀行動
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e5%8f%aa%e6%98%af%e6%94%b9%e9%80%a0%e5%9c%96%e6%9b%b8%e9%a4%a8%ef%bc%8c%e4%b9%9f%e6%98%af%e6%94%b9%e8%ae%8a%e5%ad%a9%e5%ad%90%e8%88%87%e7%a4%be%e5%8d%80%e7%9a%84%e9%96%b1%e8%ae%80%e8%a1%8c/
+  - File: `34555.md`
+  - Published: 2022-03-02T21:26:30
+- 用藝術創作找回內在自信，TFT 校友「畫的室」的創業歷程
+  - Source: https://www.teach4taiwan.org/%e7%94%a8%e8%97%9d%e8%a1%93%e5%89%b5%e4%bd%9c%e6%89%be%e5%9b%9e%e5%85%a7%e5%9c%a8%e8%87%aa%e4%bf%a1%ef%bc%8ctft-%e6%a0%a1%e5%8f%8b%e3%80%8c%e7%95%ab%e7%9a%84%e5%ae%a4%e3%80%8d%e7%9a%84%e5%89%b5/
+  - File: `34505.md`
+  - Published: 2022-02-21T13:40:09
+- 成為跨領域的職場人才，從勇敢行動開始（活動紀實 ft. 貝殼放大、綠藤生機）
+  - Source: https://www.teach4taiwan.org/%e6%88%90%e7%82%ba%e8%b7%a8%e9%a0%98%e5%9f%9f%e7%9a%84%e8%81%b7%e5%a0%b4%e4%ba%ba%e6%89%8d%ef%bc%8c%e5%be%9e%e5%8b%87%e6%95%a2%e8%a1%8c%e5%8b%95%e9%96%8b%e5%a7%8b%ef%bc%88%e6%b4%bb%e5%8b%95%e7%b4%80/
+  - File: `34501.md`
+  - Published: 2022-02-18T16:29:17
+- 如何堅持地選你所愛、愛你所選？鄭宜農 x 劉安婷奮不顧身的故事
+  - Source: https://www.teach4taiwan.org/%e5%a6%82%e4%bd%95%e5%a0%85%e6%8c%81%e5%9c%b0%e9%81%b8%e4%bd%a0%e6%89%80%e6%84%9b%e3%80%81%e6%84%9b%e4%bd%a0%e6%89%80%e9%81%b8%ef%bc%9f%e9%84%ad%e5%ae%9c%e8%be%b2-x-%e5%8a%89%e5%ae%89%e5%a9%b7/
+  - File: `34496.md`
+  - Published: 2022-02-17T19:46:51
+- 一名老師、一場機器人比賽，串起全村的力量成就孩子
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e5%90%8d%e8%80%81%e5%b8%ab%e3%80%81%e4%b8%80%e5%a0%b4%e6%a9%9f%e5%99%a8%e4%ba%ba%e6%af%94%e8%b3%bd%ef%bc%8c%e4%b8%b2%e8%b5%b7%e5%85%a8%e6%9d%91%e7%9a%84%e5%8a%9b%e9%87%8f%e6%88%90%e5%b0%b1/
+  - File: `34480.md`
+  - Published: 2022-02-09T18:08:13
+- 誰說偏遠地區不能有全國冠軍！TFT 校友亮瑾的機器人教育實踐
+  - Source: https://www.teach4taiwan.org/%e8%aa%b0%e8%aa%aa%e5%81%8f%e9%81%a0%e5%9c%b0%e5%8d%80%e4%b8%8d%e8%83%bd%e6%9c%89%e5%85%a8%e5%9c%8b%e5%86%a0%e8%bb%8d%ef%bc%81tft-%e6%a0%a1%e5%8f%8b%e4%ba%ae%e7%91%be%e7%9a%84%e6%a9%9f%e5%99%a8/
+  - File: `34383.md`
+  - Published: 2022-01-17T17:38:10
+- 創業是將所有點都串成線的過程 —— 從主題式課程設計到「禮德旭」的創立
+  - Source: https://www.teach4taiwan.org/%e5%89%b5%e6%a5%ad%e6%98%af%e5%b0%87%e6%89%80%e6%9c%89%e9%bb%9e%e9%83%bd%e4%b8%b2%e6%88%90%e7%b7%9a%e7%9a%84%e9%81%8e%e7%a8%8b-%e5%be%9e%e4%b8%bb%e9%a1%8c%e5%bc%8f%e8%aa%b2%e7%a8%8b/
+  - File: `34314.md`
+  - Published: 2022-01-13T16:12:54
+- 在信義鄉共寫布農小米回家的故事
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8%e4%bf%a1%e7%be%a9%e9%84%89%e5%85%b1%e5%af%ab%e5%b8%83%e8%be%b2%e5%b0%8f%e7%b1%b3%e5%9b%9e%e5%ae%b6%e7%9a%84%e6%95%85%e4%ba%8b/
+  - File: `34164.md`
+  - Published: 2021-11-29T11:25:15
+- 透過教育，讓世界看見台灣——<br>國際夥伴交流計畫 IEV
+  - Source: https://www.teach4taiwan.org/%e9%80%8f%e9%81%8e%e6%95%99%e8%82%b2%ef%bc%8c%e8%ae%93%e4%b8%96%e7%95%8c%e7%9c%8b%e8%a6%8b%e5%8f%b0%e7%81%a3-%e5%9c%8b%e9%9a%9b%e5%a4%a5%e4%bc%b4%e4%ba%a4%e6%b5%81%e8%a8%88%e7%95%ab-i/
+  - File: `33924.md`
+  - Published: 2021-10-24T15:59:30
+- 從 TFT 到非營利媒體《報導者》⸺ <br> 陳星穎：每一次職涯選擇，都真誠面對自己
+  - Source: https://www.teach4taiwan.org/%e5%be%9e-tft-%e5%88%b0%e9%9d%9e%e7%87%9f%e5%88%a9%e5%aa%92%e9%ab%94%e3%80%8a%e5%a0%b1%e5%b0%8e%e8%80%85%e3%80%8b%e2%b8%ba%e9%99%b3%e6%98%9f%e7%a9%8e%ef%bc%9a%e6%af%8f%e4%b8%80%e6%ac%a1%e8%81%b7/
+  - File: `33683.md`
+  - Published: 2021-10-18T10:19:58
+- 離開營利企業加入 TFT，行銷組長 Audrey：當你想做的事情與眾不同時，好的改變就要發生了
+  - Source: https://www.teach4taiwan.org/%e9%9b%a2%e9%96%8b%e7%87%9f%e5%88%a9%e4%bc%81%e6%a5%ad%e5%8a%a0%e5%85%a5-tft%ef%bc%8c%e8%a1%8c%e9%8a%b7%e7%b5%84%e9%95%b7-audrey%ef%bc%9a%e7%95%b6%e4%bd%a0%e6%83%b3%e5%81%9a%e7%9a%84%e4%ba%8b%e6%83%85/
+  - File: `32711.md`
+  - Published: 2021-10-08T10:18:40
+- 與企業截然不同的文化，人人皆為領導者
+  - Source: https://www.teach4taiwan.org/%e8%88%87%e4%bc%81%e6%a5%ad%e6%88%aa%e7%84%b6%e4%b8%8d%e5%90%8c%e7%9a%84%e6%96%87%e5%8c%96%ef%bc%8c%e4%ba%ba%e4%ba%ba%e7%9a%86%e7%82%ba%e9%a0%98%e5%b0%8e%e8%80%85/
+  - File: `32307.md`
+  - Published: 2021-10-04T20:49:50
+- 在TFT，職涯發展沒有唯一路徑、充滿各種可能
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8tft%ef%bc%8c%e8%81%b7%e6%b6%af%e7%99%bc%e5%b1%95%e6%b2%92%e6%9c%89%e5%94%af%e4%b8%80%e8%b7%af%e5%be%91%e3%80%81%e5%85%85%e6%bb%bf%e5%90%84%e7%a8%ae%e5%8f%af%e8%83%bd/
+  - File: `32298.md`
+  - Published: 2021-10-04T20:40:37
+- 屬於花蓮孩子們的畢業壯遊－越過山脈，看見海洋與都市匯集的地平線
+  - Source: https://www.teach4taiwan.org/%e5%b1%ac%e6%96%bc%e8%8a%b1%e8%93%ae%e5%ad%a9%e5%ad%90%e5%80%91%e7%9a%84%e7%95%a2%e6%a5%ad%e5%a3%af%e9%81%8a%ef%bc%8d%e8%b6%8a%e9%81%8e%e5%b1%b1%e8%84%88%ef%bc%8c%e7%9c%8b%e8%a6%8b%e6%b5%b7%e6%b4%8b/
+  - File: `31246.md`
+  - Published: 2021-09-06T10:32:30
+- 帶孩子穿越時空的走讀旅行－看見臺灣歷史與文化保存的的何去何從
+  - Source: https://www.teach4taiwan.org/%e5%b8%b6%e5%ad%a9%e5%ad%90%e7%a9%bf%e8%b6%8a%e6%99%82%e7%a9%ba%e7%9a%84%e8%b5%b0%e8%ae%80%e6%97%85%e8%a1%8c%ef%bc%8d%e7%9c%8b%e8%a6%8b%e8%87%ba%e7%81%a3%e6%ad%b7%e5%8f%b2%e8%88%87%e6%96%87%e5%8c%96/
+  - File: `31238.md`
+  - Published: 2021-09-06T10:32:18
+- 不只穿越時空，更跨越地理限制—與孩子一起規劃一趟文化走讀之旅吧
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e5%8f%aa%e7%a9%bf%e8%b6%8a%e6%99%82%e7%a9%ba%ef%bc%8c%e6%9b%b4%e8%b7%a8%e8%b6%8a%e5%9c%b0%e7%90%86%e9%99%90%e5%88%b6-%e5%ad%a9%e5%ad%90%e4%b8%80%e8%b5%b7%e8%a6%8f%e5%8a%83%e4%b8%80/
+  - File: `31233.md`
+  - Published: 2021-09-06T10:31:58
+- 從沒見過海的農村孩子轉變為海洋守護小尖兵—一場因好奇而展開的旅行
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e6%b2%92%e8%a6%8b%e9%81%8e%e6%b5%b7%e7%9a%84%e8%be%b2%e6%9d%91%e5%ad%a9%e5%ad%90%e8%bd%89%e8%ae%8a%e7%82%ba%e6%b5%b7%e6%b4%8b%e5%ae%88%e8%ad%b7%e5%b0%8f%e5%b0%96%e5%85%b5-%e4%b8%80/
+  - File: `31253.md`
+  - Published: 2021-09-06T10:31:16
+- 不要讓學校成為你的全世界，而是要讓整個世界都變成你的學校
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e8%a6%81%e8%ae%93%e5%ad%b8%e6%a0%a1%e6%88%90%e7%82%ba%e4%bd%a0%e7%9a%84%e5%85%a8%e4%b8%96%e7%95%8c%ef%bc%8c%e8%80%8c%e6%98%af%e8%a6%81%e8%ae%93%e6%95%b4%e5%80%8b%e4%b8%96%e7%95%8c%e9%83%bd/
+  - File: `31228.md`
+  - Published: 2021-09-06T10:30:41
+- 用Google簡報介紹家鄉，讓孩子以養育自己的土地為榮
+  - Source: https://www.teach4taiwan.org/%e7%94%a8%e5%ae%b6%e9%84%89%e5%9c%b0%e6%96%b9%e8%aa%8c%e8%a8%88%e7%95%ab%ef%bc%8c%e8%ae%93%e5%ad%a9%e5%ad%90%e4%bb%a5%e9%a4%8a%e8%82%b2%e8%87%aa%e5%b7%b1%e7%9a%84%e5%9c%9f%e5%9c%b0%e7%82%ba%e6%a6%ae/
+  - File: `31222.md`
+  - Published: 2021-09-06T10:30:19
+- 【你航程路上需要的「納拾候」】Teach For Taiwan 啟程儀式 校友致詞全文
+  - Source: https://www.teach4taiwan.org/%e3%80%90%e4%bd%a0%e8%88%aa%e7%a8%8b%e8%b7%af%e4%b8%8a%e9%9c%80%e8%a6%81%e7%9a%84%e3%80%8c%e7%b4%8d%e6%8b%be%e5%80%99%e3%80%8d%e3%80%91teach-for-taiwan-%e5%95%9f%e7%a8%8b%e5%84%80%e5%bc%8f%ef%bc%bf/
+  - File: `31274.md`
+  - Published: 2021-09-06T10:29:47
+- 在人口外流的狀況下，孩子能從這塊土地帶走什麼—對家鄉的認識由「日常」開始
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8%e4%ba%ba%e5%8f%a3%e5%a4%96%e6%b5%81%e7%9a%84%e7%8b%80%e6%b3%81%e4%b8%8b%ef%bc%8c%e5%ad%a9%e5%ad%90%e8%83%bd%e5%be%9e%e9%80%99%e5%a1%8a%e5%9c%9f%e5%9c%b0%e5%b8%b6%e8%b5%b0%e4%bb%80%e9%ba%bc/
+  - File: `31216.md`
+  - Published: 2021-08-11T13:44:33
+- 因為遠距教學，我看見孩子們的不一樣
+  - Source: https://www.teach4taiwan.org/%e5%9b%a0%e7%82%ba%e9%81%a0%e8%b7%9d%e6%95%99%e5%ad%b8%ef%bc%8c%e6%88%91%e7%9c%8b%e8%a6%8b%e5%ad%a9%e5%ad%90%e5%80%91%e7%9a%84%e4%b8%8d%e4%b8%80%e6%a8%a3/
+  - File: `31137.md`
+  - Published: 2021-07-12T20:47:59
+- 孩子教我的相信是我堅持下去的動力—憶㤈從孩子找回改變的勇氣
+  - Source: https://www.teach4taiwan.org/%e5%ad%a9%e5%ad%90%e6%95%99%e6%88%91%e7%9a%84%e7%9b%b8%e4%bf%a1%e6%98%af%e6%88%91%e5%a0%85%e6%8c%81%e4%b8%8b%e5%8e%bb%e7%9a%84%e5%8b%95%e5%8a%9b-%e6%86%b6%e3%a4%88%e5%be%9e%e5%ad%a9%e5%ad%90/
+  - File: `31127.md`
+  - Published: 2021-07-12T19:28:42
+- 金融業主管投入TFT計畫，活用企業經驗，擁抱偏遠小校的招生挑戰
+  - Source: https://www.teach4taiwan.org/%e9%87%91%e8%9e%8d%e6%a5%ad%e4%b8%bb%e7%ae%a1%e6%8a%95%e5%85%a5tft%e8%a8%88%e7%95%ab%ef%bc%8c%e6%b4%bb%e7%94%a8%e4%bc%81%e6%a5%ad%e7%b6%93%e9%a9%97%ef%bc%8c%e6%93%81%e6%8a%b1%e5%81%8f%e9%81%a0/
+  - File: `30481.md`
+  - Published: 2021-05-24T17:17:23
+- 全台停課不停學衝擊下，一封教務組長給校內夥伴的信
+  - Source: https://www.teach4taiwan.org/%e5%85%a8%e5%8f%b0%e5%81%9c%e8%aa%b2%e4%b8%8d%e5%81%9c%e5%ad%b8%e8%a1%9d%e6%93%8a%e4%b8%8b%ef%bc%8c%e4%b8%80%e5%b0%81%e6%95%99%e5%8b%99%e7%b5%84%e9%95%b7%e7%b5%a6%e6%a0%a1%e5%85%a7%e5%a4%a5%e4%bc%b4/
+  - File: `30813.md`
+  - Published: 2021-05-24T17:15:02
+- 教學現場的鏡子及串接教育系統的協力者—— TFT教學發展督導
+  - Source: https://www.teach4taiwan.org/%e6%95%99%e5%ad%b8%e7%8f%be%e5%a0%b4%e7%9a%84%e9%8f%a1%e5%ad%90%e5%8f%8a%e4%b8%b2%e6%8e%a5%e6%95%99%e8%82%b2%e7%b3%bb%e7%b5%b1%e7%9a%84%e5%8d%94%e5%8a%9b%e8%80%85-tft%e6%95%99/
+  - File: `30359.md`
+  - Published: 2021-04-13T21:19:04
+- 從管理學院到偏遠小學—國企系昱翰的實驗與實踐
+  - Source: https://www.teach4taiwan.org/%e8%a6%aa%e6%89%8b%e5%af%a6%e8%b8%90%e5%a4%a7%e5%9e%8b%e5%af%a6%e9%a9%97%ef%bc%9atft-%e8%a8%88%e7%95%ab%e5%a2%9e%e8%89%b2%e5%95%86%e7%ae%a1%e8%83%8c%e6%99%af/
+  - File: `30069.md`
+  - Published: 2021-03-14T23:10:24
+- 打破偏鄉學習疆界—薏慈透過遊戲設計，讓英文走入孩子的生活
+  - Source: https://www.teach4taiwan.org/%e6%89%93%e7%a0%b4%e5%ad%a9%e5%ad%90%e7%9a%84%e5%ad%b8%e7%bf%92%e7%96%86%e7%95%8c-%e8%ae%93%e8%8b%b1%e6%96%87%e8%b5%b0%e5%85%a5%e5%ad%a9%e5%ad%90%e7%9a%84%e7%94%9f%e6%b4%bb/
+  - File: `29759.md`
+  - Published: 2021-02-19T16:42:57
+- 建構共創空間 整合教育生態系綜效
+  - Source: https://www.teach4taiwan.org/%e5%bb%ba%e6%a7%8b%e5%85%b1%e5%89%b5%e7%a9%ba%e9%96%93-%e6%95%b4%e5%90%88%e6%95%99%e8%82%b2%e7%94%9f%e6%85%8b%e7%b3%bb%e7%b6%9c%e6%95%88/
+  - File: `29449.md`
+  - Published: 2020-12-21T15:15:15
+- 和孩子一起生活，把學習成就感還給孩子
+  - Source: https://www.teach4taiwan.org/%e5%92%8c%e5%ad%a9%e5%ad%90%e4%b8%80%e8%b5%b7%e7%94%9f%e6%b4%bb%ef%bc%8c%e6%8a%8a%e5%ad%b8%e7%bf%92%e6%88%90%e5%b0%b1%e6%84%9f%e9%82%84%e7%b5%a6%e5%ad%a9%e5%ad%90/
+  - File: `29437.md`
+  - Published: 2020-12-21T14:40:20
+- TFTＸ國泰金控跨界人才合作計畫—打破產業與人才的框架
+  - Source: https://www.teach4taiwan.org/tft%ef%bd%98%e5%9c%8b%e6%b3%b0%e9%87%91%e6%8e%a7%e8%b7%a8%e7%95%8c%e4%ba%ba%e6%89%8d%e5%90%88%e4%bd%9c%e8%a8%88%e7%95%ab-%e6%89%93%e7%a0%b4%e7%94%a2%e6%a5%ad%e8%88%87%e4%ba%ba/
+  - File: `29412.md`
+  - Published: 2020-12-21T12:52:07
+- 對孩子的情緒好奇，帶他走出情緒牢籠
+  - Source: https://www.teach4taiwan.org/%e5%b0%8d%e5%ad%a9%e5%ad%90%e7%9a%84%e6%83%85%e7%b7%92%e5%a5%bd%e5%a5%87%ef%bc%8c%e5%b8%b6%e4%bb%96%e8%b5%b0%e5%87%ba%e6%83%85%e7%b7%92%e7%89%a2%e7%b1%a0/
+  - File: `29406.md`
+  - Published: 2020-12-21T12:43:43
+- 走進部落，與孩子一起成為土地的學生
+  - Source: https://www.teach4taiwan.org/%e8%b5%b0%e9%80%b2%e9%83%a8%e8%90%bd%ef%bc%8c%e8%88%87%e5%ad%a9%e5%ad%90%e4%b8%80%e8%b5%b7%e6%88%90%e7%82%ba%e5%9c%9f%e5%9c%b0%e7%9a%84%e5%ad%b8%e7%94%9f/
+  - File: `29399.md`
+  - Published: 2020-12-21T12:30:07
+- 不說，不代表沒關係——被霸凌的孩子打破沉默
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e8%aa%aa%ef%bc%8c%e4%b8%8d%e4%bb%a3%e8%a1%a8%e6%b2%92%e9%97%9c%e4%bf%82-%e8%a2%ab%e9%9c%b8%e5%87%8c%e7%9a%84%e5%ad%a9%e5%ad%90%e6%89%93%e7%a0%b4%e6%b2%89%e9%bb%98/
+  - File: `28818.md`
+  - Published: 2020-11-21T11:52:37
+- 好老師就是好的領導者：建立信任、串連資源、解決問題，讓曾經「邊陲」的學校成為創新基地
+  - Source: https://www.teach4taiwan.org/%e5%a5%bd%e8%80%81%e5%b8%ab%e5%b0%b1%e6%98%af%e5%a5%bd%e7%9a%84%e9%a0%98%e5%b0%8e%e8%80%85%ef%bc%9a%e5%bb%ba%e7%ab%8b%e4%bf%a1%e4%bb%bb%e3%80%81%e4%b8%b2%e9%80%a3%e8%b3%87%e6%ba%90%e3%80%81%e8%a7%a3/
+  - File: `25699.md`
+  - Published: 2020-10-13T11:56:03
+- 教育版的社會創新—何合為老化社區帶來教育新氣象
+  - Source: https://www.teach4taiwan.org/%e6%88%90%e7%82%ba%e5%9c%a8%e5%9c%b0%e6%95%99%e5%b8%ab%e7%9a%84%e6%94%af%e6%8c%81-%e6%89%93%e9%80%a0%e5%af%8c%e9%87%8c%e7%ac%ac%e4%b8%80%e5%80%8b%e6%95%99%e5%b8%ab%e5%af%a6%e9%ab%94/
+  - File: `25142.md`
+  - Published: 2020-10-13T11:44:16
+- 國境之南的TFT網絡，教師是給孩子最珍貴的禮物
+  - Source: https://www.teach4taiwan.org/%e6%95%99%e5%b8%ab%e6%98%af%e7%b5%a6%e5%ad%a9%e5%ad%90%e6%9c%80%e7%8f%8d%e8%b2%b4%e7%9a%84%e7%a6%ae%e7%89%a9/
+  - File: `25151.md`
+  - Published: 2020-10-13T11:12:19
+- 全台灣教師最年輕的學校 如何從瀕臨廢校到供不應求
+  - Source: https://www.teach4taiwan.org/%e5%85%a8%e5%8f%b0%e7%81%a3%e6%95%99%e5%b8%ab%e6%9c%80%e5%b9%b4%e8%bc%95%e7%9a%84%e5%ad%b8%e6%a0%a1-%e5%a6%82%e4%bd%95%e5%be%9e%e7%80%95%e8%87%a8%e5%bb%a2%e6%a0%a1%e5%88%b0%e4%be%9b%e4%b8%8d%e6%87%89/
+  - File: `25148.md`
+  - Published: 2020-10-06T11:01:31
+- TFT兩年計畫後也能持續創造改變—透過社區營造概念，走進社區「見樹又見林」
+  - Source: https://www.teach4taiwan.org/%e8%b5%b0%e9%80%b2%e7%a4%be%e5%8d%80%e3%80%8c%e8%a6%8b%e6%a8%b9%e5%8f%88%e8%a6%8b%e6%9e%97%e3%80%8d-%e7%a4%be%e5%8d%80%e7%87%9f%e9%80%a0%e6%a0%a1%e5%8f%8b%e7%a4%be%e7%be%a4%e7%9a%84/
+  - File: `24979.md`
+  - Published: 2020-09-29T14:50:51
+- TFT教會我的領導力——即使是實習生，都能夠勇敢的「有問題的請舉手」
+  - Source: https://www.teach4taiwan.org/tftteachmeleadership/
+  - File: `24502.md`
+  - Published: 2020-09-15T12:32:59
+- 影響力發展部總監杜瀛：加入TFT，是為了成為一個比較喜歡的自己
+  - Source: https://www.teach4taiwan.org/%e5%8a%a0%e5%85%a5tft%e6%98%af%e7%82%ba%e4%ba%86%e6%88%90%e7%82%ba%e4%b8%80%e5%80%8b%e6%af%94%e8%bc%83%e5%96%9c%e6%ad%a1%e7%9a%84%e8%87%aa%e5%b7%b1/
+  - File: `23714.md`
+  - Published: 2020-06-12T03:30:59
+- 不只是一個非營利組織—談TFT的組織文化與制度
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e5%8f%aa%e6%98%af%e4%b8%80%e5%80%8b%e9%9d%9e%e7%87%9f%e5%88%a9%e7%b5%84%e7%b9%94-%e8%ab%87tft%e7%9a%84%e7%b5%84%e7%b9%94%e6%96%87%e5%8c%96%e8%88%87%e5%88%b6%e5%ba%a6/
+  - File: `20840.md`
+  - Published: 2020-05-08T16:11:43
+- 為什麼非營利組織需要談策略—TFT執行長王宇生談TFT組織策略與展望
+  - Source: https://www.teach4taiwan.org/%e7%82%ba%e4%bb%80%e9%ba%bc%e9%9d%9e%e7%87%9f%e5%88%a9%e7%b5%84%e7%b9%94%e9%9c%80%e8%a6%81%e8%ab%87%e7%ad%96%e7%95%a5-tft%e5%9f%b7%e8%a1%8c%e9%95%b7%e7%8e%8b%e5%ae%87%e7%94%9f%e8%ab%87tft/
+  - File: `23455.md`
+  - Published: 2020-05-08T14:40:18
+- 一份有影響力的轉職—毓琪活動企劃與藝術教育的結合
+  - Source: https://www.teach4taiwan.org/%e6%88%90%e7%82%ba%e4%b8%80%e4%bd%8d%e8%97%9d%e8%a1%93%e6%95%99%e8%82%b2%e5%b7%a5%e4%bd%9c%e8%80%85/
+  - File: `22929.md`
+  - Published: 2020-03-04T18:05:43
+- 從親人被霸凌經驗到現場的守護者—依欣把希望帶進偏鄉，圓孩子的夢
+  - Source: https://www.teach4taiwan.org/%e7%9b%ae%e7%9d%b9%e5%bc%9f%e5%a6%b9%e9%81%ad%e5%8f%97%e9%9c%b8%e5%87%8c%e7%9a%84%e7%b6%93%e9%a9%97%ef%bc%8c%e8%ae%93%e5%a5%b9%e6%b1%ba%e5%bf%83%e6%88%90%e7%82%ba%e6%8b%89%e5%ad%a9%e5%ad%90%e4%b8%80/
+  - File: `22915.md`
+  - Published: 2020-03-04T16:40:55
+- 期待同時為社會付出與自我成長，王薏慈決定放手申請TFT計畫
+  - Source: https://www.teach4taiwan.org/%e6%9c%9f%e5%be%85%e5%90%8c%e6%99%82%e7%82%ba%e7%a4%be%e6%9c%83%e4%bb%98%e5%87%ba%e8%88%87%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7%e7%8e%8b%e8%96%8f%e6%85%88%e8%80%81%e5%b8%ab/
+  - File: `22869.md`
+  - Published: 2020-02-27T13:50:33
+- 從三年上班族到走入教育現場—映婕在TFT計畫，延續參與服務性社團的感動
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e4%b8%89%e5%b9%b4%e4%b8%8a%e7%8f%ad%e6%97%8f%e5%88%b0%e8%b5%b0%e5%85%a5%e6%95%99%e8%82%b2%e7%8f%be%e5%a0%b4/
+  - File: `22777.md`
+  - Published: 2020-02-20T16:23:03
+- 影響力的第一步—財金系映璇找到能讓自己快速成長的地方
+  - Source: https://www.teach4taiwan.org/tft%e7%9a%84%e5%9f%b9%e8%a8%93%e8%88%87%e6%94%af%e6%8c%81%e7%b3%bb%e7%b5%b1%e8%83%bd%e8%ae%93%e6%88%91%e5%bf%ab%e9%80%9f%e6%88%90%e9%95%b7/
+  - File: `22663.md`
+  - Published: 2020-02-13T20:51:27
+- 從TFT執行團隊志工到成為TFT計畫成員――鄭栢元走進現場，從認識到體會教育不平等
+  - Source: https://www.teach4taiwan.org/%e5%be%9etft%e5%9f%b7%e8%a1%8c%e5%9c%98%e9%9a%8a%e5%bf%97%e5%b7%a5%e5%88%b0%e6%88%90%e7%82%batft%e8%80%81%e5%b8%ab-%e8%b5%b0%e9%80%b2%e7%8f%be%e5%a0%b4/
+  - File: `22182.md`
+  - Published: 2020-01-30T13:24:27
+- 發揮最直接的影響力—泯宸從科技公司、世界展望會到TFT計畫現場
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e4%b8%96%e7%95%8c%e5%b1%95%e6%9c%9b%e6%9c%83%e5%be%8c%e5%8b%a4%e5%88%b0%e5%89%8d%e7%b7%9atft%e6%95%99%e5%b8%ab/
+  - File: `21863.md`
+  - Published: 2020-01-15T17:25:22
+- 帶著三十年職場經驗走入教室――富邦金控經理張致遠的第二人生
+  - Source: https://www.teach4taiwan.org/%e5%b8%b6%e8%91%97%e4%b8%89%e5%8d%81%e5%b9%b4%e8%81%b7%e5%a0%b4%e7%b6%93%e9%a9%97%e8%b5%b0%e5%85%a5%e6%95%99%e5%ae%a4%e5%af%8c%e9%82%a6%e9%87%91%e6%8e%a7%e7%b6%93%e7%90%86%e5%bc%b5%e8%87%b4%e9%81%a0/
+  - File: `21827.md`
+  - Published: 2020-01-08T15:41:53
+- 成為孩子更長久的陪伴—關佳霖：投入TFT計畫，讓陪伴孩子的時光不只有一個服務隊的暑假
+  - Source: https://www.teach4taiwan.org/%e6%88%90%e7%82%ba%e5%ad%a9%e5%ad%90%e6%9b%b4%e9%95%b7%e4%b9%85%e7%9a%84%e9%99%aa%e4%bc%b4-%e9%97%9c%e4%bd%b3%e9%9c%96%e6%8a%95%e5%85%a5tft%e5%85%a9%e5%b9%b4/
+  - File: `21757.md`
+  - Published: 2020-01-07T15:07:48
+- 孩子們的攝影展——陪伴孩子用全新的視角認識家鄉
+  - Source: https://www.teach4taiwan.org/%e9%99%aa%e4%bc%b4%e5%ad%a9%e5%ad%90%e7%94%a8%e5%85%a8%e6%96%b0%e7%9a%84%e8%a6%96%e8%a7%92%e8%aa%8d%e8%ad%98%e5%ae%b6/
+  - File: `19393.md`
+  - Published: 2019-09-27T19:20:53
+- 結合混齡、自學和個別化的教學
+  - Source: https://www.teach4taiwan.org/%e7%b5%90%e5%90%88%e6%b7%b7%e9%bd%a1%e3%80%81%e8%87%aa%e5%ad%b8%e5%92%8c%e5%80%8b%e5%88%a5%e5%8c%96%e7%9a%84%e6%95%99%e5%ad%b8/
+  - File: `19390.md`
+  - Published: 2019-09-27T18:54:52
+- 團結老師的小齒輪，轉動學校的大齒輪——三個新手老師的鯰魚效應
+  - Source: https://www.teach4taiwan.org/%e5%9c%98%e7%b5%90tft%e8%80%81%e5%b8%ab%e7%9a%84%e5%b0%8f%e9%bd%92%e8%bc%aa%e8%bd%89%e5%8b%95%e5%ad%b8%e6%a0%a1%e7%9a%84%e5%a4%a7%e9%bd%92%e8%bc%aa/
+  - File: `19102.md`
+  - Published: 2019-09-23T11:01:26
+- 將課堂移到社區—蔡名封與孩子一起建立對家鄉的情感
+  - Source: https://www.teach4taiwan.org/%e7%95%b6%e8%aa%b2%e5%a0%82%e7%a7%bb%e5%88%b0%e7%a4%be%e5%8d%80-%e8%94%a1%e5%90%8d%e5%b0%81%e8%80%81%e5%b8%ab%e8%88%87%e5%ad%a9%e5%ad%90%e4%b8%80%e8%b5%b7%e5%bb%ba%e7%ab%8b/
+  - File: `18710.md`
+  - Published: 2019-09-19T12:37:26
+- TFT的夥伴，使我待了兩年都捨不得離開——校園大使、暑期實習生、年度志工是楊書菡在TFT的三種角色
+  - Source: https://www.teach4taiwan.org/tft%e7%9a%84%e5%a4%a5%e4%bc%b4%e4%bd%bf%e6%88%91%e5%be%85%e4%ba%86%e5%85%a9%e5%b9%b4%e9%83%bd%e6%8d%a8%e4%b8%8d%e5%be%97%e9%9b%a2%e9%96%8b/
+  - File: `17974.md`
+  - Published: 2019-08-29T12:40:41
+- 我從年度志工這趟旅程，裝進行李箱的四份禮物—文編志工韓庭光的個人反思
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e5%be%9e%e5%b9%b4%e5%ba%a6%e5%bf%97%e5%b7%a5%e9%80%99%e8%b6%9f%e6%97%85%e7%a8%8b%ef%bc%8c%e8%a3%9d%e9%80%b2%e8%a1%8c%e6%9d%8e%e7%ae%b1%e7%9a%84%e5%9b%9b%e4%bb%bd/
+  - File: `16760.md`
+  - Published: 2019-06-27T21:22:26
+- 聚是一團火，散是滿天星——第一屆校友五年的教育串連
+  - Source: https://www.teach4taiwan.org/%e6%a0%a1%e5%8f%8b%e5%b0%88%e8%a8%aa/
+  - File: `15970.md`
+  - Published: 2019-05-07T14:38:24
+- TFT計畫成員論害怕&#8211; 我們並非無所畏懼，但擁抱害怕就是身教
+  - Source: https://www.teach4taiwan.org/%e8%80%81%e5%b8%ab%e4%b8%a6%e9%9d%9e%e7%84%a1%e6%89%80%e7%95%8f%e6%87%bc%e4%bd%86%e6%93%81%e6%8a%b1%e5%ae%b3%e6%80%95%e6%9c%ac%e8%ba%ab/
+  - File: `15928.md`
+  - Published: 2019-05-06T17:43:40
+- 劉冠亮論害怕——專業舞者的完美主義帶來害怕，帶領孩子舞蹈表演的過程中克服
+  - Source: https://www.teach4taiwan.org/%e5%8a%89%e5%86%a0%e4%ba%ae%e8%80%81%e5%b8%ab%e8%ab%96%e5%ae%b3%e6%80%95/
+  - File: `15921.md`
+  - Published: 2019-05-06T17:35:19
+- 張書榕論害怕——面臨自我與孩子的質疑，TFT小部隊幫助她戰勝害怕
+  - Source: https://www.teach4taiwan.org/%e5%bc%b5%e6%9b%b8%e6%a6%95%e8%80%81%e5%b8%ab%e8%ab%96%e5%ae%b3%e6%80%95-%e9%9d%a2%e8%87%a8%e8%87%aa%e6%88%91%e8%88%87%e5%ad%a9%e5%ad%90%e7%9a%84%e8%b3%aa%e7%96%91%ef%bc%8ctft/
+  - File: `15913.md`
+  - Published: 2019-05-06T17:26:16
+- 阿希鴦論害怕——從零與孩子一起學程式設計，克服害怕就是身教
+  - Source: https://www.teach4taiwan.org/%e9%98%bf%e5%b8%8c%e9%b4%a6%e8%80%81%e5%b8%ab%e8%ab%96%e5%ae%b3%e6%80%95/
+  - File: `15901.md`
+  - Published: 2019-05-06T17:24:36
+- 跨足正式老師與TFT計畫成員雙重身份—杜雅玲老師分享擔任不同形式老師的經歷     
+  - Source: https://www.teach4taiwan.org/%e8%b7%a8%e8%b6%b3%e6%ad%a3%e5%bc%8f%e8%80%81%e5%b8%ab%e8%88%87tft%e8%80%81%e5%b8%ab%e9%9b%99%e9%87%8d%e8%ba%ab%e4%bb%bd/
+  - File: `15170.md`
+  - Published: 2019-04-22T13:52:08
+- 揭開TFT現場面試的神秘面紗——甄選組張智鈞分享甄選秘辛
+  - Source: https://www.teach4taiwan.org/%e6%8f%ad%e9%96%8btft%e7%8f%be%e5%a0%b4%e9%9d%a2%e8%a9%a6%e7%9a%84%e7%a5%9e%e7%a7%98%e9%9d%a2%e7%b4%97/
+  - File: `15099.md`
+  - Published: 2019-04-17T18:30:00
+- TFT計畫成員論挫折——我們不是更勇敢，只是願意勇敢得更久
+  - Source: https://www.teach4taiwan.org/%e6%96%b0%e6%89%8b%e8%80%81%e5%b8%ab%e8%ab%96%e6%8c%ab%e6%8a%98-%e8%80%81%e5%b8%ab%e4%b8%8d%e6%98%af%e6%9b%b4%e5%8b%87%e6%95%a2%ef%bc%8c%e5%8f%aa%e6%98%af%e9%a1%98%e6%84%8f%e5%8b%87/
+  - File: `14418.md`
+  - Published: 2019-03-29T14:47:02
+- 洪韻筑論挫折——教師就像薛西佛斯，與孩子攜手推巨石前進
+  - Source: https://www.teach4taiwan.org/%e9%9f%bb%e7%ad%91%e8%80%81%e5%b8%ab%e8%ab%96%e6%8c%ab%e6%8a%98/
+  - File: `14410.md`
+  - Published: 2019-03-29T14:43:17
+- 楊凱婷論挫折——孩子寫的歌陪伴我度過沮喪的路
+  - Source: https://www.teach4taiwan.org/%e5%87%b1%e5%a9%b7%e8%80%81%e5%b8%ab%e8%ab%96%e6%8c%ab%e6%8a%98/
+  - File: `14405.md`
+  - Published: 2019-03-29T14:37:09
+- 鍾佩如論挫折——給無法在家寫作業的孩子，一個教室內的安心角落
+  - Source: https://www.teach4taiwan.org/%e4%bd%a9%e5%a6%82%e8%80%81%e5%b8%ab%e8%ab%96%e6%8c%ab%e6%8a%98/
+  - File: `14400.md`
+  - Published: 2019-03-29T14:30:35
+- 唐正因論挫折——讓孩子有接管檳榔田以外的人生選項
+  - Source: https://www.teach4taiwan.org/%e6%ad%a3%e5%9b%a0%e8%80%81%e5%b8%ab%e8%ab%96%e6%8c%ab%e6%8a%98/
+  - File: `14390.md`
+  - Published: 2019-03-29T14:16:34
+- 卓麗月論挫折——走進孩子種田生活的第三年教師之路
+  - Source: https://www.teach4taiwan.org/%e9%ba%97%e6%9c%88%e8%80%81%e5%b8%ab%e8%ab%96%e6%8c%ab%e6%8a%98/
+  - File: `14373.md`
+  - Published: 2019-03-29T13:49:48
+- 成功就是再試一次——王雅民第二次的TFT計畫申請之夢
+  - Source: https://www.teach4taiwan.org/%e6%88%90%e5%8a%9f%e5%b0%b1%e6%98%af%e5%86%8d%e8%a9%a6%e4%b8%80%e6%ac%a1/
+  - File: `14087.md`
+  - Published: 2019-03-25T20:03:38
+- 我們與教育的距離—TFT教學領導力督導雅媛的看見
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e5%80%91%e8%88%87%e6%95%99%e8%82%b2%e7%9a%84%e8%b7%9d%e9%9b%a2-tft%e6%95%99%e5%ad%b8%e9%a0%98%e5%b0%8e%e5%8a%9b%e7%9d%a3%e5%b0%8e%e7%9a%84%e7%9c%8b%e8%a6%8b/
+  - File: `13578.md`
+  - Published: 2019-03-14T18:00:56
+- 出版業主管到TFT計畫成員的改變—伊純走入教育現場，建立與孩子的真實連結
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e7%b6%b2%e8%b7%af%e6%9b%b8%e5%ba%97%e5%b9%b3%e5%8f%b0%e5%88%b0%e8%ac%9b%e5%8f%b0/
+  - File: `13452.md`
+  - Published: 2019-03-14T13:03:10
+- 用Minecraft讓孩子愛上資訊課——阿希鴦給孩子最好的禮物
+  - Source: https://www.teach4taiwan.org/%e7%94%a8minecraft%e8%ae%93%e5%ad%a9%e5%ad%90%e6%84%9b%e4%b8%8a%e8%b3%87%e8%a8%8a%e8%aa%b2-%e8%b3%87%e8%a8%8a%e8%83%bd%e5%8a%9b%e6%98%af%e9%98%bf%e5%b8%8c%e9%b4%a6%e8%80%81%e5%b8%ab/
+  - File: `13309.md`
+  - Published: 2019-03-08T17:32:24
+- 從國外金融圈回到台灣教育界——在工作中反思教育議題，黃婉婷加入TFT創造改變
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e5%9c%8b%e5%a4%96%e9%87%91%e8%9e%8d%e5%9c%88%e5%9b%9e%e5%88%b0%e5%8f%b0%e7%81%a3%e6%95%99%e8%82%b2%e7%95%8c/
+  - File: `13127.md`
+  - Published: 2019-03-06T14:56:59
+- 勇敢走自己的路—經濟系韻筑用行動向家人證明實踐夢想的決心
+  - Source: https://www.teach4taiwan.org/%e7%95%b6%e5%ae%b6%e4%ba%ba%e8%88%87%e5%a4%a2%e6%83%b3%e6%88%90%e7%82%ba%e8%a1%9d%e7%aa%81-%e9%9f%bb%e7%ad%91%e8%80%81%e5%b8%ab%e5%93%ad%e8%91%97%e7%94%a8%e7%b0%a1%e5%a0%b1%e8%aa%aa/
+  - File: `12908.md`
+  - Published: 2019-02-21T15:37:43
+- 延續大學偏鄉服務隊的感動—工業工程與管理系名封，把大學社團變成一生追尋的志業
+  - Source: https://www.teach4taiwan.org/%e5%a4%a7%e5%ad%b8%e7%a4%be%e5%9c%98%e4%b9%9f%e5%8f%af%e4%bb%a5%e8%ae%8a%e5%b7%a5%e4%bd%9c-%e8%94%a1%e5%90%8d%e5%b0%81%e8%80%81%e5%b8%ab%e5%b0%87%e5%81%8f%e9%84%89%e6%9c%8d%e5%8b%99/
+  - File: `12880.md`
+  - Published: 2019-02-15T18:00:15
+- 文國士：一群好人不一定能成就一件好事
+  - Source: https://www.teach4taiwan.org/%e4%b8%80%e7%be%a4%e5%a5%bd%e4%ba%ba%e4%b8%8d%e4%b8%80%e5%ae%9a%e8%83%bd%e6%88%90%e5%b0%b1%e4%b8%80%e4%bb%b6%e5%a5%bd%e4%ba%8b/
+  - File: `12226.md`
+  - Published: 2018-11-17T18:00:17
+- 宋亭緻：頭銜還是意義感？人生的意義，在於完成一件你真正在乎的事
+  - Source: https://www.teach4taiwan.org/%e5%ae%8b%e4%ba%ad%e7%b7%bb%ef%bc%9a%e9%a0%ad%e9%8a%9c%e9%82%84%e6%98%af%e6%84%8f%e7%be%a9%e6%84%9f%ef%bc%9f%e4%ba%ba%e7%94%9f%e7%9a%84%e6%84%8f%e7%be%a9/
+  - File: `12180.md`
+  - Published: 2018-11-12T18:00:06
+- 未來的一百片拼途：TFT校友故事集錦
+  - Source: https://www.teach4taiwan.org/tft%e6%a0%a1%e5%8f%8b%e6%95%85%e4%ba%8b%e9%9b%86%e9%8c%a6/
+  - File: `10726.md`
+  - Published: 2018-08-04T18:00:00
+- 從舞台、主播台到講台—宜融用教育播種自己的幸運
+  - Source: https://www.teach4taiwan.org/%e6%9e%97%e5%ae%9c%e8%9e%8d%ef%bc%9a%e6%88%91%e7%9c%9f%e7%9a%84%e6%98%af%e4%b8%80%e5%80%8b%e5%a5%bd%e5%b9%b8%e9%81%8b%e7%9a%84%e4%ba%ba/
+  - File: `10437.md`
+  - Published: 2018-07-12T21:54:11
+- 找到自己的獨特使命和影響力—鄒宗翰加入TFT一起推動改變
+  - Source: https://www.teach4taiwan.org/%e6%98%af%e9%82%a3%e9%81%93%e4%bd%bf%e5%91%bd%e7%9a%84%e5%85%89%e5%bc%95%e5%b0%8e%e6%88%91%e5%80%91%e4%b8%80%e8%b5%b7%e5%90%91%e5%89%8d/
+  - File: `10014.md`
+  - Published: 2018-06-27T18:00:10
+- 趙廷軒：真正的目標應該結合熱情、努力還有世界的需要
+  - Source: https://www.teach4taiwan.org/%e7%9c%9f%e6%ad%a3%e7%9a%84%e7%9b%ae%e6%a8%99%e6%87%89%e8%a9%b2%e7%b5%90%e5%90%88%e7%86%b1%e6%83%85%e5%8a%aa%e5%8a%9b%e9%82%84%e6%9c%89%e4%b8%96%e7%95%8c/
+  - File: `5691.md`
+  - Published: 2018-06-19T12:00:07
+- 黃允則：我要開心地進到教室裡，邀請孩子跟我一起學習
+  - Source: https://www.teach4taiwan.org/%e9%bb%83%e5%85%81%e5%89%87%ef%bc%9a%e6%88%91%e8%a6%81%e9%96%8b%e5%bf%83%e5%9c%b0%e9%80%b2%e5%88%b0%e6%95%99%e5%ae%a4%e8%a3%a1%ef%bc%8c%e9%82%80%e8%ab%8b%e5%ad%a9%e5%ad%90%e8%b7%9f%e6%88%91%e4%b8%80/
+  - File: `10035.md`
+  - Published: 2018-06-13T16:00:59
+- 游舒甯：影響力不是改造一個地方，而是看見它本身擁有的力量
+  - Source: https://www.teach4taiwan.org/%e6%b8%b8%e8%88%92%e7%94%af%ef%bc%9a%e5%bd%b1%e9%9f%bf%e5%8a%9b%e4%b8%8d%e6%98%af%e6%94%b9%e9%80%a0%e4%b8%80%e5%80%8b%e5%9c%b0%e6%96%b9%ef%bc%8c%e8%80%8c%e6%98%af%e7%9c%8b%e8%a6%8b%e5%ae%83%e6%9c%ac/
+  - File: `9986.md`
+  - Published: 2018-05-17T12:00:19
+- 王賢慈：在TFT，你會找到自己專屬的使命感
+  - Source: https://www.teach4taiwan.org/%e7%8e%8b%e8%b3%a2%e6%85%88%e5%9c%a8tft%e4%bd%a0%e6%9c%83%e6%89%be%e5%88%b0%e8%87%aa%e5%b7%b1%e5%b0%88%e5%b1%ac%e7%9a%84%e4%bd%bf%e5%91%bd%e6%84%9f/
+  - File: `10033.md`
+  - Published: 2018-05-09T18:00:59
+- 黃莉芳：在這裡，我可以肯定自我的價值
+  - Source: https://www.teach4taiwan.org/%e9%bb%83%e8%8e%89%e8%8a%b3%e5%9c%a8%e9%80%99%e8%a3%a1%e6%88%91%e5%8f%af%e4%bb%a5%e8%82%af%e5%ae%9a%e8%87%aa%e6%88%91%e7%9a%84%e5%83%b9%e5%80%bc/
+  - File: `10030.md`
+  - Published: 2018-05-09T18:00:06
+- 黃映慈：放寬心胸，你所收穫的會比想像更多
+  - Source: https://www.teach4taiwan.org/%e6%94%be%e5%af%ac%e5%bf%83%e8%83%b8%e4%bd%a0%e6%89%80%e6%94%b6%e7%a9%ab%e7%9a%84%e6%9c%83%e6%af%94%e6%83%b3%e5%83%8f%e6%9b%b4%e5%a4%9a/
+  - File: `10031.md`
+  - Published: 2018-05-09T15:36:21
+- 你拿幸運做什麼—TFT兩年計畫，成為宇安的職涯起點
+  - Source: https://www.teach4taiwan.org/%e5%91%a8%e5%ae%87%e5%ae%89%ef%bc%9a%e4%bd%a0%e7%9a%84%e5%8b%87%e6%b0%a3%e8%83%bd%e7%82%ba%e4%bd%a0%e5%81%9a%e4%ba%9b%e4%bb%80%e9%ba%bc%e5%91%a2%ef%bc%9f/
+  - File: `5662.md`
+  - Published: 2018-05-08T12:00:03
+- 楊心慧：我希望這些改變是可以延續的
+  - Source: https://www.teach4taiwan.org/%e6%a5%8a%e5%bf%83%e6%85%a7%ef%bc%9a%e6%88%91%e5%b8%8c%e6%9c%9b%e9%80%99%e4%ba%9b%e6%94%b9%e8%ae%8a%e6%98%af%e5%8f%af%e4%bb%a5%e5%bb%b6%e7%ba%8c%e7%9a%84/
+  - File: `5668.md`
+  - Published: 2018-04-11T12:00:48
+- TFT校友徐凡甘和文國士走在「實驗教育」的路上
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8%e9%80%99%e6%a2%9d%e5%af%a6%e9%a9%97%e6%95%99%e8%82%b2%e7%9a%84%e8%b7%af%e4%b8%8a/
+  - File: `10025.md`
+  - Published: 2018-03-29T18:00:51
+- 蔡名封：很多改變正在等著我們讓它發生
+  - Source: https://www.teach4taiwan.org/%e8%94%a1%e5%90%8d%e5%b0%81%e5%be%88%e5%a4%9a%e6%94%b9%e8%ae%8a%e6%ad%a3%e5%9c%a8%e7%ad%89%e8%91%97%e6%88%91%e5%80%91%e8%ae%93%e5%ae%83%e7%99%bc%e7%94%9f/
+  - File: `9984.md`
+  - Published: 2018-03-25T12:00:56
+- 王玄如：在TFT我找到自己的意義
+  - Source: https://www.teach4taiwan.org/%e7%8e%8b%e7%8e%84%e5%a6%82%ef%bc%9a%e5%9c%a8tft%e6%88%91%e6%89%be%e5%88%b0%e8%87%aa%e5%b7%b1%e7%9a%84%e6%84%8f%e7%be%a9/
+  - File: `10020.md`
+  - Published: 2018-03-22T09:42:08
+- 教學現場的自我懷疑：「我真的是一個好老師嗎？」
+  - Source: https://www.teach4taiwan.org/%e6%b8%b8%e8%8a%b7%e7%ad%a0%ef%bc%9a%e6%88%91%e7%9c%9f%e7%9a%84%e6%98%af%e4%b8%80%e5%80%8b%e5%a5%bd%e8%80%81%e5%b8%ab%e5%97%8e%ef%bc%9f/
+  - File: `10022.md`
+  - Published: 2018-03-22T09:31:08
+- 黃靖鈞：我想帶動家長，讓他們成為支持的力量
+  - Source: https://www.teach4taiwan.org/%e9%bb%83%e9%9d%96%e9%88%9e%ef%bc%9a%e6%88%91%e6%83%b3%e5%b8%b6%e5%8b%95%e5%ae%b6%e9%95%b7%ef%bc%8c%e8%ae%93%e4%bb%96%e5%80%91%e6%88%90%e7%82%ba%e6%94%af%e6%8c%81%e7%9a%84%e5%8a%9b%e9%87%8f/
+  - File: `10021.md`
+  - Published: 2018-03-14T10:09:35
+- 文國士：我只要是我，我就值得被愛
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e5%8f%aa%e8%a6%81%e6%98%af%e6%88%91%e6%88%91%e5%b0%b1%e5%80%bc%e5%be%97%e8%a2%ab%e6%84%9b/
+  - File: `10019.md`
+  - Published: 2018-03-12T19:50:02
+- 周佳盈：這是我最鮮明，並且一定會實現的夢
+  - Source: https://www.teach4taiwan.org/%e5%91%a8%e4%bd%b3%e7%9b%88%ef%bc%9a%e9%80%99%e6%98%af%e6%88%91%e6%9c%80%e9%ae%ae%e6%98%8e%ef%bc%8c%e4%b8%a6%e4%b8%94%e4%b8%80%e5%ae%9a%e6%9c%83%e5%af%a6%e7%8f%be%e7%9a%84%e5%a4%a2/
+  - File: `10018.md`
+  - Published: 2018-03-07T13:18:22
+- 黃郁璇：人生中重要的事情，是可以在學校裡學到的
+  - Source: https://www.teach4taiwan.org/%e4%ba%ba%e7%94%9f%e4%b8%ad%e9%87%8d%e8%a6%81%e7%9a%84%e4%ba%8b%e6%83%85%e6%98%af%e5%8f%af%e4%bb%a5%e5%9c%a8%e5%ad%b8%e6%a0%a1%e8%a3%a1%e5%ad%b8%e5%88%b0/
+  - File: `10017.md`
+  - Published: 2018-03-07T10:40:23
+- 李珊：原來我不是孤單的
+  - Source: https://www.teach4taiwan.org/%e5%8e%9f%e4%be%86%e6%88%91%e4%b8%8d%e6%98%af%e5%ad%a4%e5%96%ae%e7%9a%84/
+  - File: `5114.md`
+  - Published: 2018-02-06T14:01:09
+- 鍾艾凌：因為相信，所以看見改變
+  - Source: https://www.teach4taiwan.org/%e5%9b%a0%e7%82%ba%e7%9b%b8%e4%bf%a1%e6%89%80%e4%bb%a5%e7%9c%8b%e8%a6%8b%e6%94%b9%e8%ae%8a/
+  - File: `5099.md`
+  - Published: 2018-01-25T18:00:04
+- 石雅玲：不要忘記當時出發的原因
+  - Source: https://www.teach4taiwan.org/%e4%b8%8d%e8%a6%81%e5%bf%98%e8%a8%98%e7%95%b6%e6%99%82%e5%87%ba%e7%99%bc%e7%9a%84%e5%8e%9f%e5%9b%a0/
+  - File: `5041.md`
+  - Published: 2018-01-22T13:00:13
+- 鄭雅心：這本來就是我想要做的事
+  - Source: https://www.teach4taiwan.org/%e9%80%99%e6%9c%ac%e4%be%86%e5%b0%b1%e6%98%af%e6%88%91%e6%83%b3%e8%a6%81%e5%81%9a%e7%9a%84%e4%ba%8b/
+  - File: `4996.md`
+  - Published: 2018-01-19T18:00:09
+- 打開英語這道門—TFT老師在地的教育創業
+  - Source: https://www.teach4taiwan.org/%e5%b7%ab%e5%ae%b6%e8%95%99%ef%bc%9a%e8%b8%8f%e4%b8%8a%e5%9c%9f%e5%9c%b0%ef%bc%8c%e6%88%91%e6%98%af%e5%8b%87%e6%95%a2%e7%9a%84%e7%a4%be%e6%9c%83%e5%af%a6%e8%b8%90%e8%80%85/
+  - File: `4742.md`
+  - Published: 2017-12-23T18:23:57
+- 邵恪玄：為台灣而教是一個看見的過程
+  - Source: https://www.teach4taiwan.org/%e9%82%b5%e6%81%aa%e7%8e%84%e7%82%ba%e5%8f%b0%e7%81%a3%e8%80%8c%e6%95%99%e6%98%af%e4%b8%80%e5%80%8b%e7%9c%8b%e8%a6%8b%e7%9a%84%e9%81%8e%e7%a8%8b/
+  - File: `4744.md`
+  - Published: 2017-12-21T10:34:30
+- 胡茵：老師，究竟是什麼樣的存在
+  - Source: https://www.teach4taiwan.org/%e8%83%a1%e8%8c%b5%ef%bc%9a%e8%80%81%e5%b8%ab%ef%bc%8c%e7%a9%b6%e7%ab%9f%e6%98%af%e4%bb%80%e9%ba%bc%e6%a8%a3%e7%9a%84%e5%ad%98%e5%9c%a8/
+  - File: `4730.md`
+  - Published: 2017-12-20T21:31:52
+- 杜雅玲：那個說「我想放棄」的孩子
+  - Source: https://www.teach4taiwan.org/%e6%9d%9c%e9%9b%85%e7%8e%b2%ef%bc%9a%e9%82%a3%e5%80%8b%e8%aa%aa%e3%80%8c%e6%88%91%e6%83%b3%e6%94%be%e6%a3%84%e3%80%8d%e7%9a%84%e5%ad%a9%e5%ad%90/
+  - File: `4643.md`
+  - Published: 2017-12-13T18:55:25
+- 【TFT校友發展】扛起行政責任，成為學校老師的後盾
+  - Source: https://www.teach4taiwan.org/%e6%89%9b%e8%b5%b7%e8%a1%8c%e6%94%bf%e8%b2%ac%e4%bb%bb%e6%88%90%e7%82%ba%e5%ad%b8%e6%a0%a1%e8%80%81%e5%b8%ab%e7%9a%84%e5%be%8c/
+  - File: `4510.md`
+  - Published: 2017-12-11T12:07:33
+- 【TFT校友發展】擔任學校領導人，帶領老師為偏鄉孩子服務
+  - Source: https://www.teach4taiwan.org/%e6%93%94%e4%bb%bb%e5%ad%b8%e6%a0%a1%e9%a0%98%e5%b0%8e%e4%ba%ba%e5%b8%b6%e9%a0%98%e8%80%81%e5%b8%ab%e7%82%ba%e5%81%8f%e9%84%89/
+  - File: `4506.md`
+  - Published: 2017-12-11T12:02:44
+- 【TFT計畫成員出身】尋求教育歷練的農業碩士
+  - Source: https://www.teach4taiwan.org/%e5%b0%8b%e6%b1%82%e6%95%99%e8%82%b2%e6%ad%b7%e7%b7%b4%e7%9a%84%e8%be%b2%e6%a5%ad%e7%a2%a9%e5%a3%ab/
+  - File: `4504.md`
+  - Published: 2017-12-11T11:54:25
+- 【TFT計畫成員出身】部落出身，返鄉回饋的實習社工
+  - Source: https://www.teach4taiwan.org/%e9%83%a8%e8%90%bd%e5%87%ba%e8%ba%ab%e8%bf%94%e9%84%89%e5%9b%9e%e9%a5%8b%e7%9a%84%e5%af%a6%e7%bf%92%e7%a4%be/
+  - File: `4496.md`
+  - Published: 2017-12-11T11:45:07
+- 【TFT計畫成員出身】尋找工作意義，選擇改變教育的工程師
+  - Source: https://www.teach4taiwan.org/%e5%b0%8b%e6%89%be%e5%b7%a5%e4%bd%9c%e6%84%8f%e7%be%a9%e9%81%b8%e6%93%87%e6%94%b9%e8%ae%8a%e6%95%99%e8%82%b2/
+  - File: `4494.md`
+  - Published: 2017-12-11T11:42:02
+- 【TFT計畫成員出身】擁有教師證，仍決心加入TFT的代理老師
+  - Source: https://www.teach4taiwan.org/%e6%93%81%e6%9c%89%e6%95%99%e5%b8%ab%e8%ad%89%e4%bb%8d%e6%b1%ba%e5%bf%83%e5%8a%a0%e5%85%a5tft%e7%9a%84%e4%bb%a3/
+  - File: `4491.md`
+  - Published: 2017-12-11T11:37:09
+- 杜雅玲：關於眼前這群孩子
+  - Source: https://www.teach4taiwan.org/%e6%9d%9c%e9%9b%85%e7%8e%b2%ef%bc%9a%e9%97%9c%e6%96%bc%e7%9c%bc%e5%89%8d%e9%80%99%e7%be%a4%e5%ad%a9%e5%ad%90/
+  - File: `5095.md`
+  - Published: 2017-11-17T13:00:19
+- 鄭琇錚：陪伴你們成長，只要我們還在進步的旅途中
+  - Source: https://www.teach4taiwan.org/%e9%99%aa%e4%bc%b4%e4%bd%a0%e5%80%91%e6%88%90%e9%95%b7%e5%8f%aa%e8%a6%81%e6%88%91%e5%80%91%e9%82%84%e5%9c%a8%e9%80%b2%e6%ad%a5%e7%9a%84%e6%97%85%e9%80%94/
+  - File: `4666.md`
+  - Published: 2017-09-24T18:00:43
+- 游舒甯：孩子，我等你
+  - Source: https://www.teach4taiwan.org/%e5%ad%a9%e5%ad%90%e6%88%91%e7%ad%89%e4%bd%a0/
+  - File: `4658.md`
+  - Published: 2017-09-17T18:00:31
+- 黃晴雯：在一片破碎之中，你仍然成為了全新的自己
+  - Source: https://www.teach4taiwan.org/%e5%9c%a8%e4%b8%80%e7%89%87%e7%a0%b4%e7%a2%8e%e4%b9%8b%e4%b8%ad%e4%bd%a0%e4%bb%8d%e7%84%b6%e6%88%90%e7%82%ba%e4%ba%86%e5%85%a8%e6%96%b0%e7%9a%84/
+  - File: `4671.md`
+  - Published: 2017-09-05T11:00:20
+- 游舒甯：讓興趣帶動學習
+  - Source: https://www.teach4taiwan.org/%e6%b8%b8%e8%88%92%e7%94%af%ef%bc%9a%e8%ae%93%e8%88%88%e8%b6%a3%e5%b8%b6%e5%8b%95%e5%ad%b8%e7%bf%92/
+  - File: `4333.md`
+  - Published: 2017-06-27T17:10:50
+- 李科賢：我們都選擇了善良
+  - Source: https://www.teach4taiwan.org/%e6%9d%8e%e7%a7%91%e8%b3%a2%ef%bc%9a%e6%88%91%e5%80%91%e9%83%bd%e9%81%b8%e6%93%87%e4%ba%86%e5%96%84%e8%89%af/
+  - File: `4656.md`
+  - Published: 2017-06-23T18:00:20
+- 黃晴雯：勇於認錯，我們一起變好
+  - Source: https://www.teach4taiwan.org/%e5%8b%87%e6%96%bc%e8%aa%8d%e9%8c%af%e6%88%91%e5%80%91%e4%b8%80%e8%b5%b7%e8%ae%8a%e5%a5%bd/
+  - File: `4651.md`
+  - Published: 2017-06-16T11:00:50
+- 許淙閔：用內在的能量面對挑戰
+  - Source: https://www.teach4taiwan.org/%e8%a8%b1%e6%b7%99%e9%96%94%e7%94%a8%e5%85%a7%e5%9c%a8%e7%9a%84%e8%83%bd%e9%87%8f%e9%9d%a2%e5%b0%8d%e6%8c%91%e6%88%b0/
+  - File: `4627.md`
+  - Published: 2017-04-30T18:00:52
+- 游芷筠：付出真心，其實是一件很有力量的事情
+  - Source: https://www.teach4taiwan.org/%e6%b8%b8%e8%8a%b7%e7%ad%a0%e4%bb%98%e5%87%ba%e7%9c%9f%e5%bf%83%e5%85%b6%e5%af%a6%e6%98%af%e4%b8%80%e4%bb%b6%e5%be%88%e6%9c%89%e5%8a%9b%e9%87%8f%e7%9a%84%e4%ba%8b%e6%83%85/
+  - File: `4654.md`
+  - Published: 2017-03-09T18:00:13
+- 黃晴雯：邁向卓越的自己
+  - Source: https://www.teach4taiwan.org/%e9%bb%83%e6%99%b4%e9%9b%af%e9%82%81%e5%90%91%e5%8d%93%e8%b6%8a%e7%9a%84%e8%87%aa%e5%b7%b1/
+  - File: `4318.md`
+  - Published: 2017-02-26T16:41:21
+- 【為台灣而教的理由】我為教育的可能性而教
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e7%82%ba%e6%95%99%e8%82%b2%e7%9a%84%e5%8f%af%e8%83%bd%e6%80%a7%e8%80%8c%e6%95%99/
+  - File: `4537.md`
+  - Published: 2017-01-16T18:00:38
+- 【為台灣而教的理由】我為土地而教
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e7%82%ba%e5%9c%9f%e5%9c%b0%e8%80%8c%e6%95%99/
+  - File: `4535.md`
+  - Published: 2017-01-16T18:00:31
+- 【為台灣而教的理由】我為孩子心中的良善而教
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e7%82%ba%e5%ad%a9%e5%ad%90%e5%bf%83%e4%b8%ad%e7%9a%84%e8%89%af%e5%96%84%e8%80%8c%e6%95%99/
+  - File: `4524.md`
+  - Published: 2017-01-16T18:00:30
+- 【為台灣而教的理由】我為不畏縮的態度而教
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e7%82%ba%e4%b8%8d%e7%95%8f%e7%b8%ae%e7%9a%84%e6%85%8b%e5%ba%a6%e8%80%8c%e6%95%99/
+  - File: `4539.md`
+  - Published: 2017-01-16T18:00:30
+- 【為台灣而教的理由】我為愛而教
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e7%82%ba%e6%84%9b%e8%80%8c%e6%95%99/
+  - File: `4549.md`
+  - Published: 2017-01-16T18:00:30
+- 【為台灣而教的理由】我為未來而教
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e7%82%ba%e6%9c%aa%e4%be%86%e8%80%8c%e6%95%99/
+  - File: `4522.md`
+  - Published: 2017-01-16T18:00:28
+- 【為台灣而教的理由】我為希望而教
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e7%82%ba%e5%b8%8c%e6%9c%9b%e8%80%8c%e6%95%99/
+  - File: `4547.md`
+  - Published: 2017-01-16T18:00:21
+- 【為台灣而教的理由】我為改變而教
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e7%82%ba%e6%94%b9%e8%ae%8a%e8%80%8c%e6%95%99/
+  - File: `4542.md`
+  - Published: 2017-01-16T18:00:10
+- 黃晴雯：放手，嘗試任何的可能
+  - Source: https://www.teach4taiwan.org/%e9%bb%83%e6%99%b4%e9%9b%af%ef%bc%9a%e6%94%be%e6%89%8b%ef%bc%8c%e5%98%97%e8%a9%a6%e4%bb%bb%e4%bd%95%e7%9a%84%e5%8f%af%e8%83%bd/
+  - File: `4664.md`
+  - Published: 2017-01-11T18:00:30
+- 張渝婷：我們都需要學習「好好地失敗」
+  - Source: https://www.teach4taiwan.org/%e5%bc%b5%e6%b8%9d%e5%a9%b7%ef%bc%9a%e6%88%91%e5%80%91%e9%83%bd%e9%9c%80%e8%a6%81%e5%ad%b8%e7%bf%92%e3%80%8c%e5%a5%bd%e5%a5%bd%e5%9c%b0%e5%a4%b1%e6%95%97%e3%80%8d/
+  - File: `4363.md`
+  - Published: 2016-12-08T11:20:55
+- 邵恪玄：正面迎來的球
+  - Source: https://www.teach4taiwan.org/%e9%82%b5%e6%81%aa%e7%8e%84%e6%ad%a3%e9%9d%a2%e8%bf%8e%e4%be%86%e7%9a%84%e7%90%83/
+  - File: `4677.md`
+  - Published: 2016-11-10T11:45:36
+- 文國士：淚水的故鄉，是爺爺奶奶們對孫子有怨無悔的愛
+  - Source: https://www.teach4taiwan.org/%e6%b7%9a%e6%b0%b4%e7%9a%84%e6%95%85%e9%84%89%e6%98%af%e7%88%ba%e7%88%ba%e5%a5%b6%e5%a5%b6%e5%80%91%e5%b0%8d%e5%ad%ab%e5%ad%90%e6%9c%89%e6%80%a8%e7%84%a1/
+  - File: `4340.md`
+  - Published: 2016-11-06T17:23:35
+- 何佩璇：記得，停下來感受你們帶給我的幸福
+  - Source: https://www.teach4taiwan.org/%e4%bd%95%e4%bd%a9%e7%92%87%ef%bc%9a%e8%a8%98%e5%be%97%ef%bc%8c%e5%81%9c%e4%b8%8b%e4%be%86%e6%84%9f%e5%8f%97%e4%bd%a0%e5%80%91%e5%b8%b6%e7%b5%a6%e6%88%91%e7%9a%84%e5%b9%b8%e7%a6%8f/
+  - File: `4335.md`
+  - Published: 2016-10-26T17:17:26
+- 【家長眼中的TFT】她帶著理想和勇氣飛出去，並帶著成長和改變飛回來了
+  - Source: https://www.teach4taiwan.org/%e5%a5%b9%e5%b8%b6%e8%91%97%e7%90%86%e6%83%b3%e5%92%8c%e5%8b%87%e6%b0%a3%e9%a3%9b%e5%87%ba%e5%8e%bb%e4%b8%a6%e5%b8%b6/
+  - File: `4553.md`
+  - Published: 2016-08-06T18:00:14
+- 夏于涵：教育影響的不只是孩子
+  - Source: https://www.teach4taiwan.org/%e5%a4%8f%e4%ba%8e%e6%b6%b5%ef%bc%9a%e6%95%99%e8%82%b2%e5%bd%b1%e9%9f%bf%e7%9a%84%e4%b8%8d%e5%8f%aa%e6%98%af%e5%ad%a9%e5%ad%90/
+  - File: `4630.md`
+  - Published: 2016-07-15T18:00:32
+- 陳嬿婷：老師真的受傷了
+  - Source: https://www.teach4taiwan.org/%e9%99%b3%e5%ac%bf%e5%a9%b7%ef%bc%9a%e8%80%81%e5%b8%ab%e7%9c%9f%e7%9a%84%e5%8f%97%e5%82%b7%e4%ba%86/
+  - File: `4322.md`
+  - Published: 2016-06-23T16:49:20
+- 郭佳宜：一起畫字說故事
+  - Source: https://www.teach4taiwan.org/%e9%83%ad%e4%bd%b3%e5%ae%9c%ef%bc%9a%e4%b8%80%e8%b5%b7%e7%95%ab%e5%ad%97%e8%aa%aa%e6%95%85%e4%ba%8b/
+  - File: `4328.md`
+  - Published: 2016-06-19T17:03:44
+- 【校長眼中的TFT】愛一旦發生，一切終將變得簡單
+  - Source: https://www.teach4taiwan.org/%e6%84%9b%e4%b8%80%e6%97%a6%e7%99%bc%e7%94%9f%e4%b8%80%e5%88%87%e7%b5%82%e5%b0%87%e8%ae%8a%e5%be%97%e7%b0%a1%e5%96%ae/
+  - File: `4556.md`
+  - Published: 2016-06-16T18:00:12
+- 許淙閔：成為自由的人之前，不要讓自己的期待變成一種阻礙
+  - Source: https://www.teach4taiwan.org/%e8%a8%b1%e6%b7%99%e9%96%94%e6%88%90%e7%82%ba%e8%87%aa%e7%94%b1%e7%9a%84%e4%ba%ba%e4%b9%8b%e5%89%8d%e4%b8%8d%e8%a6%81%e8%ae%93%e8%87%aa%e5%b7%b1%e7%9a%84%e6%9c%9f%e5%be%85%e8%ae%8a/
+  - File: `4355.md`
+  - Published: 2016-06-13T17:39:51
+- 林柏含：邊做邊學，學會勇敢與堅持
+  - Source: https://www.teach4taiwan.org/%e6%9e%97%e6%9f%8f%e5%90%ab%e9%82%8a%e5%81%9a%e9%82%8a%e5%ad%b8%e5%ad%b8%e6%9c%83%e5%8b%87%e6%95%a2%e8%88%87%e5%a0%85%e6%8c%81/
+  - File: `4316.md`
+  - Published: 2016-06-12T16:37:33
+- 楊馥綺：關於「勇敢」這件事
+  - Source: https://www.teach4taiwan.org/%e6%a5%8a%e9%a6%a5%e7%b6%ba%ef%bc%9a%e9%97%9c%e6%96%bc%e3%80%8c%e5%8b%87%e6%95%a2%e3%80%8d%e9%80%99%e4%bb%b6%e4%ba%8b/
+  - File: `4326.md`
+  - Published: 2016-06-06T17:01:20
+- 鄭雅心：讓我們活在生活中，在生活中學習
+  - Source: https://www.teach4taiwan.org/%e8%ae%93%e6%88%91%e5%80%91%e6%b4%bb%e5%9c%a8%e7%94%9f%e6%b4%bb%e4%b8%ad%e5%9c%a8%e7%94%9f%e6%b4%bb%e4%b8%ad%e5%ad%b8%e7%bf%92/
+  - File: `4360.md`
+  - Published: 2016-05-28T10:48:34
+- 鄭雅心：蘭嶼，我們的五堂課
+  - Source: https://www.teach4taiwan.org/%e9%84%ad%e9%9b%85%e5%bf%83%e8%98%ad%e5%b6%bc%e6%88%91%e5%80%91%e7%9a%84%e4%ba%94%e5%a0%82%e8%aa%b2/
+  - File: `10015.md`
+  - Published: 2016-05-26T16:40:34
+- 何佩璇：感謝一年的努力與改變
+  - Source: https://www.teach4taiwan.org/%e4%bd%95%e4%bd%a9%e7%92%87%ef%bc%9a%e6%84%9f%e8%ac%9d%e4%b8%80%e5%b9%b4%e7%9a%84%e5%8a%aa%e5%8a%9b%e8%88%87%e6%94%b9%e8%ae%8a/
+  - File: `4607.md`
+  - Published: 2016-05-23T18:00:53
+- 【校長眼中的TFT老師】從挫折中站起來，才品嘗到甘之如飴的甜味
+  - Source: https://www.teach4taiwan.org/%e5%be%9e%e6%8c%ab%e6%8a%98%e4%b8%ad%e7%ab%99%e8%b5%b7%e4%be%86%e6%89%8d%e5%93%81%e5%98%97%e5%88%b0/
+  - File: `4366.md`
+  - Published: 2016-05-01T11:27:38
+- 黃孟熙：我很好，但也很嚴格，謝謝你們信任我
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e5%be%88%e5%a5%bd%e4%bd%86%e4%b9%9f%e5%be%88%e5%9a%b4%e6%a0%bc%e8%ac%9d%e8%ac%9d%e4%bd%a0%e5%80%91%e4%bf%a1%e4%bb%bb%e6%88%91/
+  - File: `4380.md`
+  - Published: 2016-03-04T12:11:04
+- 蘇文羚：最皮的孩子總是最被刻在心上
+  - Source: https://www.teach4taiwan.org/%e6%9c%80%e7%9a%ae%e7%9a%84%e5%ad%a9%e5%ad%90%e7%b8%bd%e6%98%af%e6%9c%80%e8%a2%ab%e5%88%bb%e5%9c%a8%e5%bf%83%e4%b8%8a/
+  - File: `4376.md`
+  - Published: 2015-10-26T11:57:20
+- 李思慧：錯了沒有關係，學會了最重要  
+  - Source: https://www.teach4taiwan.org/%e6%9d%8e%e6%80%9d%e6%85%a7%ef%bc%9a%e9%8c%af%e4%ba%86%e6%b2%92%e6%9c%89%e9%97%9c%e4%bf%82%ef%bc%8c%e5%ad%b8%e6%9c%83%e4%ba%86%e6%9c%80%e9%87%8d%e8%a6%81/
+  - File: `4331.md`
+  - Published: 2015-10-24T17:06:45
+- 黃孟熙：別當「100分」老師
+  - Source: https://www.teach4taiwan.org/%e5%88%a5%e7%95%b6100%e5%88%86%e8%80%81%e5%b8%ab/
+  - File: `4311.md`
+  - Published: 2015-07-22T16:20:39
+- 石雅玲：我們不是什麼偉大的人物，我們只是選擇去愛
+  - Source: https://www.teach4taiwan.org/%e6%88%91%e5%80%91%e4%b8%8d%e6%98%af%e4%bb%80%e9%ba%bc%e5%81%89%e5%a4%a7%e7%9a%84%e4%ba%ba%e7%89%a9%e6%88%91%e5%80%91%e5%8f%aa%e6%98%af%e9%81%b8%e6%93%87/
+  - File: `4374.md`
+  - Published: 2015-01-28T12:00:25
