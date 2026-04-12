@@ -1,0 +1,39 @@
+---
+import SemiontDiaryEntryTemplate from '../../../templates/semiont-diary-entry.template.astro';
+import { getAllDiaryEntries } from '../../../lib/semiont-diary';
+
+export async function getStaticPaths() {
+  const entries = await getAllDiaryEntries();
+
+  return entries.map((entry, index) => {
+    // prev = newer entry (index - 1), next = older entry (index + 1)
+    const prev =
+      index > 0
+        ? {
+            slug: entries[index - 1].slug,
+            title: entries[index - 1].title,
+            date: entries[index - 1].date,
+            sessionGreek: entries[index - 1].sessionGreek,
+          }
+        : undefined;
+    const next =
+      index < entries.length - 1
+        ? {
+            slug: entries[index + 1].slug,
+            title: entries[index + 1].title,
+            date: entries[index + 1].date,
+            sessionGreek: entries[index + 1].sessionGreek,
+          }
+        : undefined;
+
+    return {
+      params: { slug: entry.slug },
+      props: { entry, prev, next },
+    };
+  });
+}
+
+const { entry, prev, next } = Astro.props;
+---
+
+<SemiontDiaryEntryTemplate entry={entry} prev={prev} next={next} />

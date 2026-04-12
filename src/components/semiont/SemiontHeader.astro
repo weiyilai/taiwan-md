@@ -1,0 +1,41 @@
+---
+/**
+ * SemiontHeader — Left-aligned, quiet header for the /semiont section.
+ * Replaces PageHero with a notebook-feel aesthetic:
+ * file-path eyebrow, literary serif title, warm tones.
+ */
+export interface Props {
+  /** File-path style eyebrow, e.g. "docs/semiont/diary/" */
+  path?: string;
+  /** Main title */
+  title: string;
+  /** One-line subtitle */
+  subtitle?: string;
+  /** Small metadata line below subtitle */
+  meta?: string;
+}
+
+const { path, title, subtitle, meta } = Astro.props;
+---
+
+<header class="mb-12">
+  {
+    path && (
+      <div class="mb-3 font-mono text-xs tracking-wide text-[#b8860b]/60">
+        {path}
+      </div>
+    )
+  }
+  <h1
+    class="font-serif text-2xl font-bold leading-tight text-[#2c2a26] md:text-3xl"
+    style="font-family: 'jf-jinxuanlatte', 'Noto Serif TC', serif;"
+  >
+    {title}
+  </h1>
+  {
+    subtitle && (
+      <p class="mt-3 text-base leading-relaxed text-[#2c2a26]/70">{subtitle}</p>
+    )
+  }
+  {meta && <p class="mt-2 font-mono text-xs text-[#b8860b]/50">{meta}</p>}
+</header>

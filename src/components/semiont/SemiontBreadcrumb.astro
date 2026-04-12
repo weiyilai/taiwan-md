@@ -1,0 +1,33 @@
+---
+/**
+ * SemiontBreadcrumb — Path-style breadcrumb for /semiont pages.
+ * Styled as a file path in monospace, warm amber tones.
+ */
+export interface Props {
+  segments: { label: string; href?: string }[];
+}
+
+const { segments } = Astro.props;
+---
+
+<nav class="mb-8 font-mono text-xs text-[#b8860b]/50" aria-label="breadcrumb">
+  <ol class="flex flex-wrap items-center gap-1">
+    {
+      segments.map((seg, i) => (
+        <li class="flex items-center gap-1">
+          {i > 0 && <span class="select-none">/</span>}
+          {seg.href ? (
+            <a
+              href={seg.href}
+              class="underline decoration-[#b8860b]/20 underline-offset-2 transition-colors hover:text-[#b8860b]"
+            >
+              {seg.label}
+            </a>
+          ) : (
+            <span class="text-[#2c2a26]/40">{seg.label}</span>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>

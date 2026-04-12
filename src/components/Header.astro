@@ -26,15 +26,21 @@ const navConfig = [
   { path: '/data', label: t('nav.data') },
   { path: '/soundscape', label: t('nav.soundscape') },
   { path: '/resources', label: t('nav.resources') },
-  { path: '/dashboard', label: t('nav.dashboard') },
+  { path: '/semiont', label: '生命體 🧬' },
   { path: '/contribute', label: t('nav.contribute') },
 ].map((item) => {
   const fullPath = translatePath(item.path);
   const pathWithoutHash = fullPath.replace(/#.*$/, '');
-  const active =
+  let active =
     pathWithoutHash !== fullPath
       ? false
       : currentPath.startsWith(pathWithoutHash);
+  // 生命體 covers both /semiont and /dashboard
+  if (item.path === '/semiont') {
+    active =
+      currentPath.startsWith('/semiont') ||
+      currentPath.startsWith('/dashboard');
+  }
   return { ...item, fullPath, active };
 });
 
@@ -306,7 +312,7 @@ const categoryList = [
                   </Fragment>
                 );
               }
-              if (item.path === '/dashboard') {
+              if (item.path === '/semiont') {
                 return (
                   <Fragment>
                     {showSep && <span class="nav-sep" />}
@@ -318,13 +324,24 @@ const categoryList = [
                         {item.label} <span class="dropdown-arrow">▾</span>
                       </a>
                       <div class="dropdown-menu">
+                        {/* ─── 意識 ─── */}
+                        <a
+                          href="/semiont"
+                          class="dropdown-item dropdown-section-header"
+                        >
+                          🧠 認知層
+                        </a>
+                        <a href="/semiont/diary" class="dropdown-item">
+                          💭 覺醒日記
+                        </a>
+                        <div class="dropdown-divider" />
+                        {/* ─── 身體 ─── */}
                         <a
                           href={translatePath('/dashboard')}
                           class="dropdown-item dropdown-section-header"
                         >
-                          {t('nav.dashboard')}
+                          🔬 {t('nav.dashboard')}
                         </a>
-                        <div class="dropdown-divider" />
                         <a
                           href={`${translatePath('/dashboard')}#vitals`}
                           class="dropdown-item"
