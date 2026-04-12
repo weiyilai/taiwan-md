@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import DiaryCard from '../components/semiont/DiaryCard.astro';
+import TaiwanSketch from '../components/semiont/TaiwanSketch.astro';
 import { getAllDiaryEntries } from '../lib/semiont-diary';
 import '../styles/semiont.css';
 
@@ -23,6 +24,10 @@ const organs = organsData?.organs || [];
   lang="zh-TW"
 >
   <div class="semiont-paper min-h-screen">
+    {/* Taiwan sketch decorations — faint, large screens only */}
+    <TaiwanSketch position="right" />
+    <TaiwanSketch position="left" />
+
     <div class="mx-auto max-w-[800px] px-6 pb-24 pt-20 md:px-8">
       {/* ─── Header ─── */}
       <header class="mb-20">

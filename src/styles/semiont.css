@@ -6,45 +6,93 @@
 
 /* ── Paper texture background ─────────────────────── */
 .semiont-paper {
-  background-color: #f7f3ee;
+  background-color: #f4efe8;
   background-image:
-    /* Visible warm stains — like aged paper */
+    /* Large warm stains — aged paper foxing */
     radial-gradient(
-      ellipse at 10% 20%,
-      rgba(180, 155, 110, 0.08) 0%,
-      transparent 45%
-    ),
-    radial-gradient(
-      ellipse at 90% 80%,
-      rgba(170, 145, 100, 0.06) 0%,
+      ellipse at 8% 15%,
+      rgba(175, 145, 95, 0.14) 0%,
       transparent 40%
     ),
     radial-gradient(
-      ellipse at 40% 60%,
-      rgba(190, 165, 120, 0.05) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      ellipse at 70% 30%,
-      rgba(175, 150, 105, 0.04) 0%,
+      ellipse at 92% 85%,
+      rgba(165, 135, 85, 0.12) 0%,
       transparent 35%
     ),
-    /* Fine speckle pattern */
     radial-gradient(
-        circle at 20% 50%,
-        rgba(160, 140, 100, 0.03) 0%,
-        transparent 20%
-      ),
-    radial-gradient(
-      circle at 60% 20%,
-      rgba(165, 145, 105, 0.03) 0%,
-      transparent 15%
+      ellipse at 35% 55%,
+      rgba(180, 150, 100, 0.1) 0%,
+      transparent 45%
     ),
     radial-gradient(
-      circle at 80% 70%,
-      rgba(155, 135, 95, 0.04) 0%,
-      transparent 25%
-    );
+      ellipse at 75% 25%,
+      rgba(170, 140, 90, 0.08) 0%,
+      transparent 30%
+    ),
+    radial-gradient(
+      ellipse at 55% 80%,
+      rgba(160, 130, 80, 0.06) 0%,
+      transparent 35%
+    ),
+    /* Medium speckles — paper fiber texture */
+    radial-gradient(
+        circle at 15% 45%,
+        rgba(150, 125, 80, 0.07) 0%,
+        transparent 15%
+      ),
+    radial-gradient(
+      circle at 65% 15%,
+      rgba(155, 130, 85, 0.06) 0%,
+      transparent 12%
+    ),
+    radial-gradient(
+      circle at 85% 65%,
+      rgba(145, 120, 75, 0.08) 0%,
+      transparent 18%
+    ),
+    radial-gradient(
+      circle at 45% 35%,
+      rgba(160, 135, 90, 0.05) 0%,
+      transparent 10%
+    ),
+    radial-gradient(
+      circle at 25% 75%,
+      rgba(150, 125, 80, 0.07) 0%,
+      transparent 14%
+    ),
+    /* Edge darkening — vignette */
+    radial-gradient(
+        ellipse at 50% 50%,
+        transparent 55%,
+        rgba(140, 115, 70, 0.06) 100%
+      );
+}
+
+/* ── Taiwan sketch decoration ─────────────────────── */
+.semiont-taiwan-sketch {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.07;
+}
+.semiont-taiwan-sketch--right {
+  right: -2%;
+  top: 20%;
+  width: 280px;
+  height: auto;
+  transform: rotate(8deg);
+}
+.semiont-taiwan-sketch--left {
+  left: -3%;
+  bottom: 15%;
+  width: 200px;
+  height: auto;
+  transform: rotate(-12deg) scaleX(-1);
+}
+@media (max-width: 1200px) {
+  .semiont-taiwan-sketch {
+    display: none;
+  }
 }
 
 /* ── Breathing EKG separator ──────────────────────── */
