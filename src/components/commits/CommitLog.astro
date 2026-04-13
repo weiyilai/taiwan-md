@@ -1,5 +1,5 @@
 ---
-import { commitIcon, timeAgo } from '../../lib/commits';
+import { commitIcon, commitType, timeAgo } from '../../lib/commits';
 import type { Commit } from '../../lib/commits';
 import type { Lang } from '../../types';
 
@@ -99,7 +99,10 @@ function formatDate(dateStr: string) {
       sortedDays.length ? (
         <div class="flex flex-col">
           {sortedDays.map((day, dayIdx) => (
-            <div class="grid grid-cols-[32px_1fr] gap-x-4 max-[768px]:grid-cols-[20px_1fr] max-[768px]:gap-x-3">
+            <div
+              id={`day-${day}`}
+              class="changelog-day-group grid grid-cols-[32px_1fr] gap-x-4 max-[768px]:grid-cols-[20px_1fr] max-[768px]:gap-x-3"
+            >
               <div class="flex flex-col items-center">
                 <div class="mt-2 h-3 w-3 flex-shrink-0 rounded-full bg-[linear-gradient(135deg,#3b82f6,#8b5cf6)]" />
                 {dayIdx < sortedDays.length - 1 && (
@@ -117,7 +120,10 @@ function formatDate(dateStr: string) {
                 </div>
                 <div class="flex flex-col gap-3">
                   {grouped[day].map((commit) => (
-                    <article class="commit-log-item grid grid-cols-[32px_1fr] gap-4 rounded-[10px] border border-[#e2e8f0] bg-white px-5 py-4 shadow-[0_1px_3px_rgba(15,23,42,0.04)] transition-all duration-200 max-[768px]:grid-cols-[24px_1fr] max-[768px]:gap-3 max-[768px]:px-4 max-[768px]:py-[0.9rem]">
+                    <article
+                      data-type={commitType(commit.message)}
+                      class="commit-log-item grid grid-cols-[32px_1fr] gap-4 rounded-[10px] border border-[#e2e8f0] bg-white px-5 py-4 shadow-[0_1px_3px_rgba(15,23,42,0.04)] transition-all duration-200 max-[768px]:grid-cols-[24px_1fr] max-[768px]:gap-3 max-[768px]:px-4 max-[768px]:py-[0.9rem]"
+                    >
                       <span class="text-center text-base leading-normal">
                         {commitIcon(commit.message)}
                       </span>

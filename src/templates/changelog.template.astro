@@ -2,12 +2,14 @@
 import CommitLog from '../components/commits/CommitLog.astro';
 import Layout from '../layouts/Layout.astro';
 import PageHero from '../components/PageHero.astro';
-import { fetchCommitFeed } from '../lib/commits';
+import { fetchCommitFeed, commitType } from '../lib/commits';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { changelogUI } from '../i18n/changelog';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const { commits, source } = await fetchCommitFeed(100);
+const cl = changelogUI[lang] || changelogUI['en'];
+const { commits, source } = await fetchCommitFeed(9999);
 
 const sourceLabel =
   lang === 'zh-TW'
@@ -25,6 +27,174 @@ const sourceLabel =
         : source === 'github'
           ? 'From the GitHub commit feed'
           : 'Updates are temporarily unavailable';
+
+// Group by day for left nav
+const grouped: Record<string, number> = {};
+for (const commit of commits) {
+  const day = commit.date.slice(0, 10);
+  grouped[day] = (grouped[day] || 0) + 1;
+}
+
+// Group days by month
+const months: Record<string, string[]> = {};
+for (const day of Object.keys(grouped)) {
+  const month = day.slice(0, 7);
+  if (!months[month]) months[month] = [];
+  months[month].push(day);
+}
+const sortedMonths = Object.keys(months).sort((a, b) => b.localeCompare(a));
+for (const m of sortedMonths) {
+  months[m].sort((a, b) => b.localeCompare(a));
+}
+
+// Count by type for filter pills
+const typeCounts: Record<string, number> = { all: commits.length };
+for (const commit of commits) {
+  const ct = commitType(commit.message);
+  typeCounts[ct] = (typeCounts[ct] || 0) + 1;
+}
+
+function formatMonth(monthStr: string): string {
+  const [y, m] = monthStr.split('-');
+  if (lang === 'zh-TW') return `${y} 年 ${parseInt(m)} 月`;
+  if (lang === 'ja') return `${y}年${parseInt(m)}月`;
+  if (lang === 'ko') return `${y}년 ${parseInt(m)}월`;
+  const names = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  return `${names[parseInt(m) - 1]} ${y}`;
+}
+
+const filterTypes = [
+  {
+    key: 'all',
+    icon: '',
+    label:
+      lang === 'zh-TW'
+        ? '全部'
+        : lang === 'ja'
+          ? 'すべて'
+          : lang === 'ko'
+            ? '전체'
+            : 'All',
+  },
+  {
+    key: 'rewrite',
+    icon: '✍️',
+    label:
+      lang === 'zh-TW'
+        ? '重寫'
+        : lang === 'ja'
+          ? '書き直し'
+          : lang === 'ko'
+            ? '재작성'
+            : 'Rewrite',
+  },
+  {
+    key: 'evolve',
+    icon: '🧬',
+    label:
+      lang === 'zh-TW'
+        ? '進化'
+        : lang === 'ja'
+          ? '進化'
+          : lang === 'ko'
+            ? '진화'
+            : 'Evolve',
+  },
+  {
+    key: 'translate',
+    icon: '🌐',
+    label:
+      lang === 'zh-TW'
+        ? '翻譯'
+        : lang === 'ja'
+          ? '翻訳'
+          : lang === 'ko'
+            ? '번역'
+            : 'Translate',
+  },
+  {
+    key: 'feat',
+    icon: '✨',
+    label:
+      lang === 'zh-TW'
+        ? '功能'
+        : lang === 'ja'
+          ? '機能'
+          : lang === 'ko'
+            ? '기능'
+            : 'Feature',
+  },
+  {
+    key: 'fix',
+    icon: '🐛',
+    label:
+      lang === 'zh-TW'
+        ? '修復'
+        : lang === 'ja'
+          ? '修正'
+          : lang === 'ko'
+            ? '수정'
+            : 'Fix',
+  },
+  {
+    key: 'merge',
+    icon: '🔀',
+    label:
+      lang === 'zh-TW'
+        ? '合併'
+        : lang === 'ja'
+          ? 'マージ'
+          : lang === 'ko'
+            ? '병합'
+            : 'Merge',
+  },
+  {
+    key: 'content',
+    icon: '📝',
+    label:
+      lang === 'zh-TW'
+        ? '內容'
+        : lang === 'ja'
+          ? 'コンテンツ'
+          : lang === 'ko'
+            ? '콘텐츠'
+            : 'Content',
+  },
+  {
+    key: 'maintenance',
+    icon: '🔧',
+    label:
+      lang === 'zh-TW'
+        ? '維護'
+        : lang === 'ja'
+          ? 'メンテ'
+          : lang === 'ko'
+            ? '유지보수'
+            : 'Maintenance',
+  },
+];
+
+const searchPlaceholder =
+  lang === 'zh-TW'
+    ? '搜尋更新紀錄...'
+    : lang === 'ja'
+      ? '更新履歴を検索...'
+      : lang === 'ko'
+        ? '업데이트 검색...'
+        : 'Search updates...';
 ---
 
 <Layout
@@ -33,9 +203,10 @@ const sourceLabel =
   lang={lang}
 >
   <div
-    class="mx-auto max-w-[800px] px-8 pb-24 pt-16 max-[768px]:px-4 max-[768px]:pb-16 max-[768px]:pt-12"
+    class="mx-auto max-w-[1100px] px-8 pb-24 pt-16 max-[768px]:max-w-full max-[768px]:px-4 max-[768px]:pb-16 max-[768px]:pt-12"
   >
-    <div class="mb-16">
+    {/* Hero */}
+    <div class="mb-10">
       <PageHero
         containerWidth="full"
         padding="compact"
@@ -62,26 +233,241 @@ const sourceLabel =
       </PageHero>
     </div>
 
-    <CommitLog
-      commits={commits}
-      lang={lang}
-      variant="timeline"
-      locale={t('changelog.locale')}
-      dayUpdatesLabel={t('changelog.day.updates')}
-      emptyTitle={lang === 'zh-TW'
-        ? '目前暫時抓不到更新紀錄'
-        : 'Update history is temporarily unavailable'}
-      emptyDescription={lang === 'zh-TW'
-        ? '這頁現在會優先讀取 git，失敗時會退回 build-time 快取與 GitHub，避免部署後整頁空白。'
-        : 'This page now prefers git, then falls back to a build-time cache and GitHub to avoid shipping an empty changelog.'}
-      emptyLinkHref="https://github.com/frank890417/taiwan-md/commits/main"
-      emptyLinkLabel="GitHub"
-      relativeTimeLabels={{
-        justNow: t('changelog.time.just-now'),
-        minutesAgo: t('changelog.time.minutes-ago'),
-        hoursAgo: t('changelog.time.hours-ago'),
-        daysAgo: t('changelog.time.days-ago'),
-      }}
-    />
+    {/* Search + Filter Controls */}
+    <div
+      id="changelog-controls"
+      class="sticky top-[64px] z-20 -mx-4 mb-6 border-b border-[#e2e8f0] bg-white/95 px-4 py-3 backdrop-blur-sm max-[768px]:top-[56px]"
+    >
+      <div class="mb-3">
+        <input
+          type="text"
+          id="changelog-search"
+          placeholder={searchPlaceholder}
+          class="w-full rounded-lg border border-[#d1d5db] bg-white px-4 py-2.5 text-sm text-[#1f2937] outline-none transition-colors placeholder:text-[#9ca3af] focus:border-[#3b82f6] focus:ring-2 focus:ring-[#3b82f6]/20"
+        />
+      </div>
+      <div
+        class="flex flex-wrap gap-2 max-[768px]:overflow-x-auto max-[768px]:flex-nowrap max-[768px]:pb-1"
+      >
+        {
+          filterTypes
+            .filter((f) => f.key === 'all' || (typeCounts[f.key] || 0) > 0)
+            .map((f) => (
+              <button
+                class:list={[
+                  'filter-pill whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-semibold transition-all',
+                  f.key === 'all'
+                    ? 'border-[#3b82f6] bg-[#3b82f6] text-white'
+                    : 'border-[#e2e8f0] bg-white text-[#64748b] hover:border-[#94a3b8] hover:bg-[#f8fafc]',
+                ]}
+                data-type={f.key}
+              >
+                {f.icon}
+                {f.icon ? ' ' : ''}
+                {f.label}
+                <span class="ml-1 opacity-60">{typeCounts[f.key] || 0}</span>
+              </button>
+            ))
+        }
+      </div>
+      <div id="filter-status" class="mt-2 hidden text-xs text-[#64748b]"></div>
+    </div>
+
+    {/* Two-column layout */}
+    <div class="grid grid-cols-[200px_1fr] gap-8 max-lg:grid-cols-1">
+      {/* Left: Date Navigation */}
+      <nav
+        id="date-nav"
+        class="sticky top-[180px] max-h-[calc(100vh-12rem)] overflow-y-auto pr-2 max-lg:hidden"
+        style="scrollbar-color: rgba(26,60,52,0.12) transparent; scrollbar-width: thin;"
+      >
+        {
+          sortedMonths.map((month) => (
+            <div class="mb-5">
+              <h3 class="mb-2 text-[0.7rem] font-bold uppercase tracking-wider text-[#94a3b8]">
+                {formatMonth(month)}
+              </h3>
+              <div class="flex flex-col gap-0.5">
+                {months[month].map((day) => (
+                  <a
+                    href={`#day-${day}`}
+                    class="date-nav-link flex items-center justify-between rounded-md px-2.5 py-1.5 text-[0.8rem] text-[#64748b] no-underline transition-colors hover:bg-[#f1f5f9] hover:text-[#1e293b]"
+                    data-day={day}
+                  >
+                    <span>{day.slice(5)}</span>
+                    <span class="text-[0.7rem] text-[#94a3b8]">
+                      {grouped[day]}
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))
+        }
+      </nav>
+
+      {/* Right: Commit Timeline */}
+      <div id="commit-list">
+        <CommitLog
+          commits={commits}
+          lang={lang}
+          variant="timeline"
+          locale={t('changelog.locale')}
+          dayUpdatesLabel={t('changelog.day.updates')}
+          emptyTitle={lang === 'zh-TW'
+            ? '目前暫時抓不到更新紀錄'
+            : 'Update history is temporarily unavailable'}
+          emptyDescription={lang === 'zh-TW'
+            ? '這頁現在會優先讀取 git，失敗時會退回 build-time 快取與 GitHub，避免部署後整頁空白。'
+            : 'This page now prefers git, then falls back to a build-time cache and GitHub to avoid shipping an empty changelog.'}
+          emptyLinkHref="https://github.com/frank890417/taiwan-md/commits/main"
+          emptyLinkLabel="GitHub"
+          relativeTimeLabels={{
+            justNow: t('changelog.time.just-now'),
+            minutesAgo: t('changelog.time.minutes-ago'),
+            hoursAgo: t('changelog.time.hours-ago'),
+            daysAgo: t('changelog.time.days-ago'),
+          }}
+        />
+      </div>
+    </div>
   </div>
 </Layout>
+
+<script is:inline>
+  // ── Search + Type Filter ─────────────────────────
+  const searchInput = document.getElementById('changelog-search');
+  const pills = document.querySelectorAll('.filter-pill');
+  const items = document.querySelectorAll('.commit-log-item');
+  const dayGroups = document.querySelectorAll('.changelog-day-group');
+  const dateNavLinks = document.querySelectorAll('.date-nav-link');
+  const filterStatus = document.getElementById('filter-status');
+
+  let activeType = 'all';
+
+  function getItemType(item) {
+    return item.getAttribute('data-type') || 'other';
+  }
+
+  function applyFilters() {
+    const query = (searchInput?.value || '').toLowerCase().trim();
+    let visibleCount = 0;
+    let totalCount = items.length;
+
+    items.forEach((item) => {
+      const msg = item.querySelector('p')?.textContent?.toLowerCase() || '';
+      const author =
+        item.querySelector('.font-semibold')?.textContent?.toLowerCase() || '';
+      const type = getItemType(item);
+
+      const matchesSearch =
+        !query || msg.includes(query) || author.includes(query);
+      const matchesType = activeType === 'all' || type === activeType;
+      const visible = matchesSearch && matchesType;
+
+      item.style.display = visible ? '' : 'none';
+      if (visible) visibleCount++;
+    });
+
+    // Hide day groups where all items are hidden
+    dayGroups.forEach((group) => {
+      const visibleItems = group.querySelectorAll(
+        '.commit-log-item:not([style*="display: none"])',
+      );
+      const dayContainer = group;
+      dayContainer.style.display = visibleItems.length ? '' : 'none';
+
+      // Update count badge
+      const badge = group.querySelector('.rounded-full.bg-\\[\\#f1f5f9\\]');
+      if (badge && visibleItems.length) {
+        const dayLabel = badge.textContent.replace(/\d+/, '');
+        badge.textContent = visibleItems.length + dayLabel;
+      }
+    });
+
+    // Update left nav visibility + counts
+    dateNavLinks.forEach((link) => {
+      const day = link.getAttribute('data-day');
+      const dayGroup = document.getElementById('day-' + day);
+      if (dayGroup) {
+        const hidden = dayGroup.style.display === 'none';
+        link.style.display = hidden ? 'none' : '';
+        if (!hidden) {
+          const countEl = link.querySelector('span:last-child');
+          const visibleItems = dayGroup.querySelectorAll(
+            '.commit-log-item:not([style*="display: none"])',
+          );
+          if (countEl) countEl.textContent = String(visibleItems.length);
+        }
+      }
+    });
+
+    // Hide empty month headers
+    document.querySelectorAll('#date-nav > div').forEach((monthSection) => {
+      const visibleLinks = monthSection.querySelectorAll(
+        '.date-nav-link:not([style*="display: none"])',
+      );
+      monthSection.style.display = visibleLinks.length ? '' : 'none';
+    });
+
+    // Status text
+    if (filterStatus) {
+      if (query || activeType !== 'all') {
+        filterStatus.textContent = `${visibleCount} / ${totalCount}`;
+        filterStatus.classList.remove('hidden');
+      } else {
+        filterStatus.classList.add('hidden');
+      }
+    }
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', applyFilters);
+  }
+
+  pills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      const type = pill.getAttribute('data-type') || 'all';
+      activeType = type;
+
+      pills.forEach((p) => {
+        const isActive = p.getAttribute('data-type') === type;
+        p.classList.toggle('border-[#3b82f6]', isActive);
+        p.classList.toggle('bg-[#3b82f6]', isActive);
+        p.classList.toggle('text-white', isActive);
+        p.classList.toggle('border-[#e2e8f0]', !isActive);
+        p.classList.toggle('bg-white', !isActive);
+        p.classList.toggle('text-[#64748b]', !isActive);
+      });
+
+      applyFilters();
+    });
+  });
+
+  // ── Active Date Tracking (IntersectionObserver) ──
+  const dayElements = document.querySelectorAll(
+    '.changelog-day-group[id^="day-"]',
+  );
+
+  if (dayElements.length && dateNavLinks.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const day = entry.target.id.replace('day-', '');
+            dateNavLinks.forEach((link) => {
+              const isActive = link.getAttribute('data-day') === day;
+              link.classList.toggle('bg-[#eff6ff]', isActive);
+              link.classList.toggle('text-[#1e40af]', isActive);
+              link.classList.toggle('font-bold', isActive);
+            });
+            break;
+          }
+        }
+      },
+      { rootMargin: '-100px 0px -70% 0px', threshold: 0 },
+    );
+
+    dayElements.forEach((el) => observer.observe(el));
+  }
+</script>

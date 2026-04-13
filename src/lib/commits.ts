@@ -179,6 +179,52 @@ export function commitIcon(message: string): string {
   return '📌';
 }
 
+export type CommitType =
+  | 'rewrite'
+  | 'evolve'
+  | 'translate'
+  | 'feat'
+  | 'fix'
+  | 'content'
+  | 'merge'
+  | 'maintenance'
+  | 'other';
+
+export function commitType(message: string): CommitType {
+  const normalized = message
+    .toLowerCase()
+    .replace(/^🧬\s*\[semiont\]\s*/i, '')
+    .trim();
+
+  if (normalized.startsWith('rewrite')) return 'rewrite';
+  if (normalized.startsWith('evolve')) return 'evolve';
+  if (
+    normalized.startsWith('translate(') ||
+    normalized.startsWith('add japanese translation') ||
+    normalized.startsWith('add korean translation') ||
+    normalized.startsWith('add english translation') ||
+    normalized.startsWith('add spanish translation')
+  )
+    return 'translate';
+  if (normalized.startsWith('feat')) return 'feat';
+  if (normalized.startsWith('fix')) return 'fix';
+  if (normalized.startsWith('content')) return 'content';
+  if (normalized.startsWith('merge')) return 'merge';
+  if (
+    normalized.startsWith('chore') ||
+    normalized.startsWith('heal') ||
+    normalized.startsWith('immune') ||
+    normalized.startsWith('memory') ||
+    normalized.startsWith('diagnose') ||
+    normalized.startsWith('docs') ||
+    normalized.startsWith('style') ||
+    normalized.startsWith('refactor') ||
+    normalized.startsWith('ingest')
+  )
+    return 'maintenance';
+  return 'other';
+}
+
 export function timeAgo(dateStr: string, lang: Lang): string {
   const now = new Date();
   const then = new Date(dateStr);
