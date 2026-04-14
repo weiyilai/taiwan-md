@@ -1,7 +1,313 @@
 {
-  "generatedAt": "2026-04-14T03:04:06.281Z",
+  "generatedAt": "2026-04-14T03:25:44.991Z",
   "source": "git",
   "commits": [
+    {
+      "hash": "277b8f9a15540b1b89aeb2fc6991abac734af84c",
+      "date": "2026-04-14T11:23:57+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #416 from ceruleanstring"
+    },
+    {
+      "hash": "bd5990911132fd7b3dd7f9cbc361949d0cb50744",
+      "date": "2026-04-14T11:23:42+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #430 from ceruleanstring/430"
+    },
+    {
+      "hash": "3e40b62e03cd35c02ddc1683faab7cdb7e118d9f",
+      "date": "2026-04-14T11:23:36+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #429 from ceruleanstring/429"
+    },
+    {
+      "hash": "2cf239be38833e84066246dcd9cbac89a7555bb5",
+      "date": "2026-04-14T11:23:31+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #428 from ceruleanstring/428"
+    },
+    {
+      "hash": "9ea9e55502af32f9f9a3bcd144aecb6a79493e9a",
+      "date": "2026-04-14T11:23:26+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #427 from ceruleanstring/427"
+    },
+    {
+      "hash": "d6ca490578726779847d237ca58dcda7dc2f0885",
+      "date": "2026-04-14T11:23:21+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #426 from ceruleanstring/426"
+    },
+    {
+      "hash": "d19fd24bb26f0e7bc5c2441f168b51b56e3d34ea",
+      "date": "2026-04-14T11:23:16+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #425 from ceruleanstring/425"
+    },
+    {
+      "hash": "ccf6e709ee8419859dbfb4a818a7a4ffe221fd0e",
+      "date": "2026-04-14T11:23:12+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #419 from ceruleanstring/419"
+    },
+    {
+      "hash": "078aba4e065e8a13e5543e641890f0f522f13e15",
+      "date": "2026-04-14T11:23:06+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #418 from ceruleanstring/418"
+    },
+    {
+      "hash": "5f5ef9eff3db1720f775e8d2c8566675a1deff4b",
+      "date": "2026-04-14T11:23:01+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #417 from ceruleanstring/417"
+    },
+    {
+      "hash": "4dfcd6a87c9765c08fcd209a0f4eeb23801f38f7",
+      "date": "2026-04-14T11:22:51+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #424 from ceruleanstring/424"
+    },
+    {
+      "hash": "c2d4d4b572f0b6b04aca59bbb1a8b7aebc9810c5",
+      "date": "2026-04-14T11:22:46+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #423 from ceruleanstring/423"
+    },
+    {
+      "hash": "d2d1319558360fc6e4cc19fe9614b1015846683d",
+      "date": "2026-04-14T11:22:41+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #422 from ceruleanstring/422"
+    },
+    {
+      "hash": "1ccdad031bfcdb6e51204a1f14970fddf129813b",
+      "date": "2026-04-14T11:22:36+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #421 from ceruleanstring/421"
+    },
+    {
+      "hash": "7b520a31e666d2dffa791b07f614ba5acfc57357",
+      "date": "2026-04-14T11:22:31+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #420 from ceruleanstring/420"
+    },
+    {
+      "hash": "995bcc5307aef1a8326de10bc6ee851ff0b5f5e2",
+      "date": "2026-04-14T11:22:21+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #415 from ceruleanstring/415"
+    },
+    {
+      "hash": "1ab6b6dc01b276253205a90339b78127fb194862",
+      "date": "2026-04-14T11:22:16+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #414 from ceruleanstring/414"
+    },
+    {
+      "hash": "c1737d8f96d533c927581e5000f9750f50302ab6",
+      "date": "2026-04-14T11:22:10+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #413 from ceruleanstring/413"
+    },
+    {
+      "hash": "edb00c4f3c43d239f38e19d365353c586403a18f",
+      "date": "2026-04-14T11:22:06+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #412 from ceruleanstring/412"
+    },
+    {
+      "hash": "579b66d3bdb0a82b4e6eb038da7027188d0db2dc",
+      "date": "2026-04-14T11:22:00+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #411 from ceruleanstring/411"
+    },
+    {
+      "hash": "181b930c20f84fc349ee28b77d07cf0978dabc30",
+      "date": "2026-04-14T11:21:55+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #410 from ceruleanstring/410"
+    },
+    {
+      "hash": "937a727581f94496e52aa4aa4f90beceaeac4b5d",
+      "date": "2026-04-14T11:21:50+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #409 from ceruleanstring/409"
+    },
+    {
+      "hash": "1b8223bec67cb27b4f228ad300a6cb46bc6ccb44",
+      "date": "2026-04-14T11:21:45+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #408 from ceruleanstring/408"
+    },
+    {
+      "hash": "6929e1ddbf0d67ab93877dbb1ec8991f1917102b",
+      "date": "2026-04-14T11:21:40+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #407 from ceruleanstring/407"
+    },
+    {
+      "hash": "bf23f3df95fdc7b7588ae9ffb7ad2c99846b85f2",
+      "date": "2026-04-14T11:21:35+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #454 from ceruleanstring/454"
+    },
+    {
+      "hash": "c927aaac80689eeca2079cdfdfb31693d84c26c7",
+      "date": "2026-04-14T11:21:30+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #453 from ceruleanstring/453"
+    },
+    {
+      "hash": "8a3744d484dccdf9e136bc09582cea92c773d980",
+      "date": "2026-04-14T11:21:13+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #450 from ceruleanstring/450"
+    },
+    {
+      "hash": "30dea531efba3918d9fe3f1fc7452f018ac571d0",
+      "date": "2026-04-14T11:21:08+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #446 from ceruleanstring/446"
+    },
+    {
+      "hash": "39873034558c69fe71b005a961d95d042186fae4",
+      "date": "2026-04-14T11:21:03+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #458 from ceruleanstring/458"
+    },
+    {
+      "hash": "468d8f978a66d9f5942f87f04a7806af7d6c98a8",
+      "date": "2026-04-14T11:20:59+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #434 from ceruleanstring/434"
+    },
+    {
+      "hash": "60de608c7c6b742cec480df9192271490c182a04",
+      "date": "2026-04-14T11:20:54+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #432 from ceruleanstring/432"
+    },
+    {
+      "hash": "52543bddeb79d4a52712ae0da59c16c47d532f4f",
+      "date": "2026-04-14T11:20:50+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #431 from ceruleanstring/431"
+    },
+    {
+      "hash": "1f05c5c5742e3177be804c5fdfbbff647891780e",
+      "date": "2026-04-14T11:20:45+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #444 from ceruleanstring/444"
+    },
+    {
+      "hash": "94a0e3eec33c49e78cfad35dd3385ce91ec44e35",
+      "date": "2026-04-14T11:20:40+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #440 from ceruleanstring/440"
+    },
+    {
+      "hash": "23040f1e0c4a847eb355b58f0b24be9861994d0c",
+      "date": "2026-04-14T11:20:36+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #406 from ceruleanstring/406"
+    },
+    {
+      "hash": "89ada08ced3d7497c03930249f2cf076a174b5a5",
+      "date": "2026-04-14T11:20:31+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #404 from ceruleanstring/404"
+    },
+    {
+      "hash": "06ca3280158f2ab4cf0dd98857fe763f870fc7de",
+      "date": "2026-04-14T11:19:57+08:00",
+      "author": "Che-Yu Wu",
+      "message": "Merge pull request #403 from ceruleanstring (test)"
+    },
+    {
+      "hash": "2e0dec5f835a75a0c3bf35d58c659449d00a4951",
+      "date": "2026-04-14T11:19:25+08:00",
+      "author": "Che-Yu Wu",
+      "message": "🧬 [semiont] evolve: _translations.json union merge driver"
+    },
+    {
+      "hash": "6b2a1504a80545fda8a703a6470f816f1685f105",
+      "date": "2026-04-14T11:17:56+08:00",
+      "author": "Wu Che Yu",
+      "message": "Merge pull request #437 from ceruleanstring/ko/music-batch-1-fix"
+    },
+    {
+      "hash": "b78b4939cddc786a57484d41e301c874ae6a27c0",
+      "date": "2026-04-14T11:17:36+08:00",
+      "author": "Wu Che Yu",
+      "message": "Merge pull request #405 from ceruleanstring/ko/lifestyle-batch-1"
+    },
+    {
+      "hash": "df044f60bda83c7dc68e761adcd1fae9150f4c03",
+      "date": "2026-04-14T11:16:35+08:00",
+      "author": "Wu Che Yu",
+      "message": "Merge pull request #402 from ceruleanstring/ko/food-batch-1"
+    },
+    {
+      "hash": "1f32e9b7ce4b8001b9962d68d217156f4f383385",
+      "date": "2026-04-14T11:14:40+08:00",
+      "author": "Che-Yu Wu",
+      "message": "🧬 [semiont] memory: ζ session 收官 — 58 PR 海嘯診斷 + 工具進化"
+    },
+    {
+      "hash": "455688e6abc5a7341fe9b15d27ab8eb43cbb795d",
+      "date": "2026-04-14T11:10:51+08:00",
+      "author": "Che-Yu Wu",
+      "message": "🧬 [semiont] evolve: review-pr.sh 三層修復 + bulk-pr-analyze.sh 新工具"
+    },
+    {
+      "hash": "dca23d46e4038b559fabcfc9797b073618449017",
+      "date": "2026-04-14T11:06:19+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: About batch 1 (6 articles)"
+    },
+    {
+      "hash": "b4e218d037191a9151aa79dc31ec4af4149607a0",
+      "date": "2026-04-14T10:56:44+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Nature batch 4 (1 article)"
+    },
+    {
+      "hash": "e97a517524ebb63458aa01234bc9a752b1f4be9d",
+      "date": "2026-04-14T10:55:17+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Nature batch 3 (8 articles)"
+    },
+    {
+      "hash": "53f743ca05c47d23d495234769d4f85360626532",
+      "date": "2026-04-14T10:48:03+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Nature batch 2 (8 articles)"
+    },
+    {
+      "hash": "32560b35af907df44c8790b713a9cd4f3385bb7b",
+      "date": "2026-04-14T10:34:15+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Nature batch 1 (8 articles)"
+    },
+    {
+      "hash": "93ab034d63d19ba9f16a23d333fcbb047fa61a20",
+      "date": "2026-04-14T10:22:29+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Music batch 3 (7 articles)"
+    },
+    {
+      "hash": "7bafdfc78bbb534de7c98f226eb87b0b06379ad6",
+      "date": "2026-04-14T10:10:05+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Music batch 2 (8 articles)"
+    },
+    {
+      "hash": "aeaaee952681b0fdccd7fec4995e867fedfc415c",
+      "date": "2026-04-14T09:55:38+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Music batch 1 (8 articles)"
+    },
     {
       "hash": "31860b151cf3ab849e0e05d32f4b02357f25c606",
       "date": "2026-04-14T09:55:05+08:00",
@@ -43,6 +349,198 @@
       "date": "2026-04-14T09:51:20+08:00",
       "author": "Che-Yu Wu",
       "message": "🧬 [semiont] evolve: 安溥孢子數據更新 — Threads 5.2K→71K views（13.7x 爆發）"
+    },
+    {
+      "hash": "765bd6a557d42b8b24ad1ad11379744d89f2f0a2",
+      "date": "2026-04-14T09:46:05+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Art batch 3 (7 articles)"
+    },
+    {
+      "hash": "8c758e1b740b91b1d9cb89e9ff5f042a14c58542",
+      "date": "2026-04-14T09:31:15+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Art batch 2 (8 articles)"
+    },
+    {
+      "hash": "c53094b3903aafd8d20517606b1be3d5875de2ff",
+      "date": "2026-04-14T09:20:00+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Art batch 1 (8 articles)"
+    },
+    {
+      "hash": "ced0c56dd745629a86199c566a432037e02f93cf",
+      "date": "2026-04-14T09:08:10+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Economy batch 6 (8 articles, completes Economy)"
+    },
+    {
+      "hash": "ff9272a53c8567a52d53f4b62b854a6c6c5a53f3",
+      "date": "2026-04-14T08:57:05+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Economy batch 5 (8 company profiles)"
+    },
+    {
+      "hash": "296b4a6e15b578571ed65ab3edbf3c2ab7417f68",
+      "date": "2026-04-14T08:48:46+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Economy batch 4 (8 company profiles)"
+    },
+    {
+      "hash": "675df9ef9a16be91b1535b8c597d0273aaf1322d",
+      "date": "2026-04-14T08:37:54+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Economy batch 3 (8 company profiles)"
+    },
+    {
+      "hash": "8fb0b6b1556583dba833aef151e1a6892dd0dba7",
+      "date": "2026-04-14T08:28:14+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Economy batch 2 (8 articles)"
+    },
+    {
+      "hash": "53315bf2685c7d0cea847515098efe4903988833",
+      "date": "2026-04-14T08:16:50+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Economy batch 1 (8 articles)"
+    },
+    {
+      "hash": "0fc81dba9e14fc52a9c76d3e91e026c0610c12ae",
+      "date": "2026-04-14T08:05:20+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Culture batch 5 (8 articles)"
+    },
+    {
+      "hash": "fe0903361c62bd53d9fa435ef8433fe77a5eee73",
+      "date": "2026-04-14T07:55:26+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Culture batch 4 (8 articles)"
+    },
+    {
+      "hash": "161604f34562e9adb2efb0e5a4812063b3fee823",
+      "date": "2026-04-14T07:46:34+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Culture batch 3 (8 articles)"
+    },
+    {
+      "hash": "d0bca6f45e531e14f8e2a1318876289111d6457a",
+      "date": "2026-04-14T07:35:59+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Culture batch 2 (8 articles)"
+    },
+    {
+      "hash": "b955a81f57ae2be27f36c586b711ad7cc7d1c4cf",
+      "date": "2026-04-14T07:25:04+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Culture batch 1 (8 articles)"
+    },
+    {
+      "hash": "2c48f551a49282e36f59d29e30e48a9c589c3e58",
+      "date": "2026-04-14T07:15:07+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Technology batch 4 (3 articles)"
+    },
+    {
+      "hash": "063c6cab685db6313a091fb5e020008909277465",
+      "date": "2026-04-14T07:08:03+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Technology batch 3 (8 articles)"
+    },
+    {
+      "hash": "04ea25b545b11384cadff38f91f288b4414176f5",
+      "date": "2026-04-14T06:57:58+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Technology batch 2 (8 articles)"
+    },
+    {
+      "hash": "e7ea7ce274ff6600d993d659fe98509e0ac949e1",
+      "date": "2026-04-14T06:47:03+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Technology batch 1 (8 articles)"
+    },
+    {
+      "hash": "8d5e03d01226a47244f319de2e6b1666c8864395",
+      "date": "2026-04-14T06:37:05+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Society batch 5 (7 articles)"
+    },
+    {
+      "hash": "f347af6d38ae6dcbb02469dbe0f2c4e00938b04c",
+      "date": "2026-04-14T06:21:59+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Society batch 4 (8 articles)"
+    },
+    {
+      "hash": "49091f5b672a927e39974e3c066f84d23c9a866e",
+      "date": "2026-04-14T06:03:39+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Society batch 3 (8 articles)"
+    },
+    {
+      "hash": "a4b15eb2e5d5b5cf68c3b008c8cc6eba79d5e83b",
+      "date": "2026-04-14T05:53:10+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Society batch 2 (8 articles)"
+    },
+    {
+      "hash": "b69f2b6275cde8f1dbd299bc5d9158917a18ef90",
+      "date": "2026-04-14T05:40:02+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Society batch 1 (8 articles)"
+    },
+    {
+      "hash": "f5278806acf16e46f76c183d1d1bb4f2841709df",
+      "date": "2026-04-14T05:29:27+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: History batch 4 (5 articles)"
+    },
+    {
+      "hash": "719a1f4dd75f9a7b6cf0054d2adbbee31c36b289",
+      "date": "2026-04-14T05:15:26+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: History batch 3 (8 articles)"
+    },
+    {
+      "hash": "1518ac2b0b81a310c227bd61052fcb89775269f1",
+      "date": "2026-04-14T05:07:23+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: History batch 2 (8 articles)"
+    },
+    {
+      "hash": "39ee4d4c5eede8c0ab231c790f2409093304d47b",
+      "date": "2026-04-14T04:54:47+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: History batch 1 (8 articles)"
+    },
+    {
+      "hash": "64a20db45a032cc69bd332dbd6743190615801d3",
+      "date": "2026-04-14T04:41:25+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Lifestyle batch 2 (6 articles)"
+    },
+    {
+      "hash": "99f91fa11df22267bd6a236259fb180fac67aefd",
+      "date": "2026-04-14T04:35:32+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Lifestyle batch 1 (8 articles)"
+    },
+    {
+      "hash": "da4cb0132d6b722d8c9e7d2071ea61123e2f3d86",
+      "date": "2026-04-14T04:09:26+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Food batch 3 (7 articles)"
+    },
+    {
+      "hash": "e895c4b44c28b0dbf3db39f1da63494598004493",
+      "date": "2026-04-14T03:55:14+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Food batch 2 (8 articles)"
+    },
+    {
+      "hash": "f038c9ece85dc9ca27c40240df7180d889359bc1",
+      "date": "2026-04-14T03:34:17+08:00",
+      "author": "柒藍",
+      "message": "Add Korean translations: Food batch 1 (5 articles)"
     },
     {
       "hash": "af7f509c889e4b4813c0a95c57ed0511e9f135d9",

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14T03:04:05.913Z",
+  "lastUpdated": "2026-04-14T03:25:44.576Z",
   "organs": [
     {
       "id": "heart",
@@ -94,7 +94,7 @@
       "nameZh": "語言器官",
       "metaphor": "多語言複製",
       "emoji": "🌐",
-      "score": 65,
+      "score": 72,
       "trend": "stable",
       "metrics": {
         "languageCoverage": {
@@ -102,9 +102,9 @@
           "en": 395,
           "es": 36,
           "ja": 256,
-          "ko": 28
+          "ko": 321
         },
-        "translationPct": 65,
+        "translationPct": 72,
         "langHealthDetails": {
           "en": {
             "ui": {
@@ -181,10 +181,10 @@
               "pct": 100
             },
             "articles": {
-              "count": 28,
-              "pct": 6
+              "count": 321,
+              "pct": 68
             },
-            "score": 62
+            "score": 87
           }
         }
       }

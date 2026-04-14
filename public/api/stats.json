@@ -1,9 +1,13 @@
 {
-  "totalArticles": 1196,
+  "totalArticles": 1489,
   "totalCategories": 20,
   "estimatedContributors": 51,
-  "totalTags": 2870,
+  "totalTags": 3910,
   "categories": [
+    {
+      "name": "ko",
+      "count": 321
+    },
     {
       "name": "Society",
       "count": 39
@@ -79,28 +83,36 @@
     {
       "name": "resources",
       "count": 2
-    },
-    {
-      "name": "ko",
-      "count": 28
     }
   ],
   "topTags": [
     {
-      "name": "企業",
-      "count": 58
+      "name": "Economy",
+      "count": 62
     },
     {
-      "name": "Economy",
-      "count": 57
+      "name": "企業",
+      "count": 58
     },
     {
       "name": "人物",
       "count": 54
     },
     {
+      "name": "기업",
+      "count": 30
+    },
+    {
+      "name": "경제",
+      "count": 27
+    },
+    {
       "name": "経済",
       "count": 25
+    },
+    {
+      "name": "AI",
+      "count": 22
     },
     {
       "name": "民主化",
@@ -109,6 +121,10 @@
     {
       "name": "原住民族",
       "count": 19
+    },
+    {
+      "name": "ODM",
+      "count": 18
     },
     {
       "name": "文化",
@@ -123,15 +139,23 @@
       "count": 15
     },
     {
+      "name": "TSMC",
+      "count": 15
+    },
+    {
       "name": "半導體",
       "count": 15
     },
     {
-      "name": "AI",
+      "name": "g0v",
       "count": 15
     },
     {
-      "name": "ODM",
+      "name": "반도체",
+      "count": 15
+    },
+    {
+      "name": "역사",
       "count": 14
     },
     {
@@ -141,40 +165,16 @@
     {
       "name": "台灣",
       "count": 14
-    },
-    {
-      "name": "政治",
-      "count": 13
-    },
-    {
-      "name": "製造業",
-      "count": 13
-    },
-    {
-      "name": "歷史",
-      "count": 12
-    },
-    {
-      "name": "金曲獎",
-      "count": 12
-    },
-    {
-      "name": "音樂",
-      "count": 12
-    },
-    {
-      "name": "Technology",
-      "count": 12
     }
   ],
   "languageDistribution": {
-    "zh-TW": 1196,
+    "zh-TW": 1489,
     "en": 0
   },
-  "lastUpdated": "2026-04-14T03:04:05.381Z",
+  "lastUpdated": "2026-04-14T03:25:44.008Z",
   "stars": 927,
   "forks": 130,
-  "zhPages": 797,
+  "zhPages": 1090,
   "enPages": 399,
-  "totalPages": 1196
+  "totalPages": 1489
 }
