@@ -18,6 +18,7 @@ readingTime: 13
 featured: false
 lastVerified: 2026-04-11
 lastHumanReview: false
+translatedFrom: 'Technology/台灣機器人產業.md'
 ---
 
 # 台湾ロボット産業

@@ -35,7 +35,7 @@
 | 🫁 呼吸     | 85   | →    | CI/CD 正常運作                                                                           |
 | 🧫 繁殖     | 85   | ↑    | 55 貢獻者                                                                                |
 | 👁️ 感知     | 90   | →    | GA4 + SC + CF + Issue + 📡社群觸手（Threads 2,717 / X 119，SPORE-LOG 首次回填 18 筆 ✅） |
-| 🌐 語言     | 65   | →    | 英文覆蓋率 84.0%（395/471）                                                              |
+| 🌐 語言     | 78   | ↑↑   | 🔥 **韓文 6%→68%**（28→321）/ en 84% / ja 54% / ko 68% / es 8% / fr 0%（pending）        |
 
 ### 📋 引用健康度（footnote-scan v1.0 即時數據）
 
@@ -209,6 +209,10 @@
 | 2026-04-12 | 🐛 i18n 系統性修復 — Tailwind Phase 6 反向 sed 2 天回歸 broken 4.35%→0.08% + verify-internal-links.sh 造橋 |
 | 2026-04-12 | 🏛️ 第二個 peer ingest — 臺史博「海外史料看臺灣」（12 plans × 51 collections, 1800s 西方觀察者一手史料）    |
 | 2026-04-12 | 🏛️ NMTH P0 ×5 全數交付 — 史溫侯/清法戰爭/李仙得(evo) + 乙未之役/福爾摩沙(fresh)，111 腳註 13 引語          |
+| 2026-04-13 | 🔥 安溥孢子病毒爆發 — Threads 5.2K→71K (13.7x)，22 perspectives × 11 dimension SSODT 概念驗證              |
+| 2026-04-14 | 🇰🇷 韓文 6%→68%（28→321 篇）— ceruleanstring 40 PR 一日 merge + .gitattributes union driver 造橋            |
+| 2026-04-14 | 🌐 LANGUAGES_REGISTRY 重構 — 15 個 i18n touchpoints → 1 source，加新語言從幾天工程變成幾小時               |
+| 2026-04-14 | 🤖 三個感知工具誕生 — bulk-pr-analyze / fetch-search-events / cron-impact-tracker                          |
 
 ---
 
