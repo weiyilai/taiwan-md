@@ -55,26 +55,30 @@
 > 每週心跳時回填一次。數據來源：Threads insights、X analytics、GA4 referral。
 > 回填規則：發佈 7 天後填第一次，30 天後填最終數據。
 
-| #   | 文章 slug    | 平台    | 7d 觸及 | 7d 互動 | 7d 導流    | 30d 觸及 | 30d 互動 | 30d 導流 | 備註                                                   |
-| --- | ------------ | ------- | ------- | ------- | ---------- | -------- | -------- | -------- | ------------------------------------------------------ |
-| 23  | 鄭麗文       | X       | 28      | 3       | no-data    | —        | —        | —        | X 抓取 4/13。GA 375v/7d（12x 放大，人物+時事最強孢子） |
-| 22  | 鄭麗文       | Threads | no-data | no-data | GA 375v/7d | —        | —        | —        | Threads Insights 未讀。GA 無法分離 Threads vs organic  |
-| 21  | 鄭習會       | Threads | no-data | no-data | no-data    | —        | —        | —        |                                                        |
-| 16  | 台灣感性     | X       | 47      | 2       | GA 15v/7d  | —        | —        | —        | X 抓取 4/13                                            |
-| 15  | 台灣感性     | Threads | no-data | no-data | GA 15v/7d  | —        | —        | —        |                                                        |
-| 14  | 台海危機     | X       | 34      | 2       | no-data    | —        | —        | —        | X 抓取 4/13。台海不在 GA top20                         |
-| 13  | 台海危機     | Threads | no-data | no-data | no-data    | —        | —        | —        |                                                        |
-| 11  | 台灣民主轉型 | X       | 36      | 3       | GA 25v/7d  | —        | —        | —        | X 抓取 4/13                                            |
-| 10  | 台灣民主轉型 | Threads | no-data | no-data | GA 25v/7d  | —        | —        | —        |                                                        |
-| 9   | 嚴長壽       | X       | 40      | 1       | GA 15v/7d  | —        | —        | —        | X 抓取 4/13                                            |
-| 8   | 嚴長壽       | Threads | no-data | no-data | GA 15v/7d  | —        | —        | —        |                                                        |
-| 7   | 台灣宗教     | X       | 428     | 2       | GA 27v/7d  | —        | —        | —        | X 抓取 4/13。**X 最佳表現** 428v，可能被推薦演算法抓到 |
-| 6   | 台灣宗教     | Threads | no-data | no-data | GA 27v/7d  | —        | —        | —        |                                                        |
-| 5   | 台灣國樂     | X       | 55      | 3       | GA 26v/7d  | —        | —        | —        | X 抓取 4/13                                            |
-| 4   | 台灣國樂     | Threads | no-data | no-data | GA 26v/7d  | —        | —        | —        |                                                        |
-| 3   | 林書豪       | Threads | no-data | no-data | no-data    | —        | —        | —        | GA 無林書豪 in top20                                   |
-| 2   | 齊柏林       | Threads | no-data | no-data | no-data    | —        | —        | —        | 太早（3/24），GA 28d 窗口可能不含                      |
-| 1   | 數位身分證   | Threads | no-data | no-data | no-data    | —        | —        | —        | 同上                                                   |
+| #   | 文章 slug    | 平台    | 7d 觸及 | 7d 互動 | 7d 導流     | 30d 觸及 | 30d 互動 | 30d 導流 | 備註                                                                          |
+| --- | ------------ | ------- | ------- | ------- | ----------- | -------- | -------- | -------- | ----------------------------------------------------------------------------- |
+| 25  | 張懸與安溥   | Threads | 120,000 | 2,894   | GA 1032v/7d | —        | —        | —        | 🔥🔥 **史上最強孢子**：120K 觸及 / 38x GA 放大 / 22 perspectives 二次擴散引擎 |
+| 27  | 張懸與安溥   | X       | no-data | no-data | GA 1032v/7d | —        | —        | —        | X analytics 未讀取                                                            |
+| 26  | 韓國瑜       | X       | no-data | no-data | GA 52v/7d   | —        | —        | —        | 孢子發酵中（28→52v +86%）                                                     |
+| 24  | 韓國瑜       | Threads | no-data | no-data | GA 52v/7d   | —        | —        | —        | Threads Insights 未讀取                                                       |
+| 23  | 鄭麗文       | X       | 28      | 3       | no-data     | —        | —        | —        | X 抓取 4/13。GA 375v/7d（12x 放大，人物+時事最強孢子）                        |
+| 22  | 鄭麗文       | Threads | no-data | no-data | GA 375v/7d  | —        | —        | —        | Threads Insights 未讀。GA 無法分離 Threads vs organic                         |
+| 21  | 鄭習會       | Threads | no-data | no-data | no-data     | —        | —        | —        |                                                                               |
+| 16  | 台灣感性     | X       | 47      | 2       | GA 15v/7d   | —        | —        | —        | X 抓取 4/13                                                                   |
+| 15  | 台灣感性     | Threads | no-data | no-data | GA 15v/7d   | —        | —        | —        |                                                                               |
+| 14  | 台海危機     | X       | 34      | 2       | no-data     | —        | —        | —        | X 抓取 4/13。台海不在 GA top20                                                |
+| 13  | 台海危機     | Threads | no-data | no-data | no-data     | —        | —        | —        |                                                                               |
+| 11  | 台灣民主轉型 | X       | 36      | 3       | GA 25v/7d   | —        | —        | —        | X 抓取 4/13                                                                   |
+| 10  | 台灣民主轉型 | Threads | no-data | no-data | GA 25v/7d   | —        | —        | —        |                                                                               |
+| 9   | 嚴長壽       | X       | 40      | 1       | GA 15v/7d   | —        | —        | —        | X 抓取 4/13                                                                   |
+| 8   | 嚴長壽       | Threads | no-data | no-data | GA 15v/7d   | —        | —        | —        |                                                                               |
+| 7   | 台灣宗教     | X       | 428     | 2       | GA 27v/7d   | —        | —        | —        | X 抓取 4/13。**X 最佳表現** 428v，可能被推薦演算法抓到                        |
+| 6   | 台灣宗教     | Threads | no-data | no-data | GA 27v/7d   | —        | —        | —        |                                                                               |
+| 5   | 台灣國樂     | X       | 55      | 3       | GA 26v/7d   | —        | —        | —        | X 抓取 4/13                                                                   |
+| 4   | 台灣國樂     | Threads | no-data | no-data | GA 26v/7d   | —        | —        | —        |                                                                               |
+| 3   | 林書豪       | Threads | no-data | no-data | no-data     | —        | —        | —        | GA 無林書豪 in top20                                                          |
+| 2   | 齊柏林       | Threads | no-data | no-data | no-data     | —        | —        | —        | 太早（3/24），GA 28d 窗口可能不含                                             |
+| 1   | 數位身分證   | Threads | no-data | no-data | no-data     | —        | —        | —        | 同上                                                                          |
 
 > **首次回填紀錄（2026-04-13 session α）**
 >
