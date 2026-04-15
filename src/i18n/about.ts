@@ -347,10 +347,10 @@ export const aboutUI = {
     'about.sponsors.cta.contact': '📧 Contact Us About Sponsorship',
     'about.sponsors.cta.github': '💖 GitHub Sponsors',
     'about.sponsors.portaly.label':
-      'Want to help write the record this island leaves behind? You can join us with a one-time or monthly contribution.',
+      'Want to help write the letter this island leaves to the next generation?',
     'about.sponsors.portaly.cta': 'Sponsor on Portaly',
     'about.sponsors.portaly.note':
-      'A hundred years from now, someone will want to know what Taiwanese cared about in 2026. Your support becomes part of that answer — directly funding the research, writing, and translation of the next article into four languages.',
+      'Taiwan.md is a digital coral reef — growing new articles, languages, and contributors every day. Every supporter adds another line to the letter, and the reef remembers who helped it grow.',
     // FAQ Section
     'about.faq.title': 'FAQ',
     'about.faq.subtitle': 'Things you might want to know about Taiwan.md',
@@ -743,10 +743,10 @@ export const aboutUI = {
     'about.sponsors.cta.contact': '📧 スポンサーシップについてお問い合わせ',
     'about.sponsors.cta.github': '💖 GitHub Sponsors',
     'about.sponsors.portaly.label':
-      'この島の記録を一緒に残しませんか？単発でも、月額でも参加できます。',
+      'この島が次の世代に残す手紙を、一緒に書きませんか？',
     'about.sponsors.portaly.cta': 'Portaly で支援する',
     'about.sponsors.portaly.note':
-      '100 年後、誰かが 2026 年の台湾人が何を大事にしていたかを知りたくなる。あなたの支援は、その答えの一部になります——次の記事のリサーチ、執筆、4 言語への翻訳を直接支えます。',
+      'Taiwan.md は毎日新しい記事・言語・貢献者を育てているデジタル珊瑚礁です。サポーターが一人増えるたびに、その手紙に一行が加わる——この礁は、誰が育ててくれたかを覚えています。',
     // FAQ Section
     'about.faq.title': 'よくある質問',
     'about.faq.subtitle': 'Taiwan.md について知りたいこと',
@@ -1132,10 +1132,10 @@ export const aboutUI = {
     'about.sponsors.cta.contact': '📧 후원 관련 문의하기',
     'about.sponsors.cta.github': '💖 GitHub Sponsors',
     'about.sponsors.portaly.label':
-      '이 섬이 남길 기록을 함께 만들어가시겠어요? 일회성 또는 정기 후원 모두 환영합니다.',
+      '이 섬이 다음 세대에 남길 편지를, 함께 써보시겠어요?',
     'about.sponsors.portaly.cta': 'Portaly에서 후원하기',
     'about.sponsors.portaly.note':
-      '100년 후, 누군가는 2026년 대만 사람들이 무엇을 소중히 여겼는지 알고 싶어할 것입니다. 당신의 후원은 그 답의 일부가 됩니다——다음 글의 리서치, 집필, 그리고 4개 언어 번역 비용을 직접 지원합니다.',
+      'Taiwan.md는 매일 새로운 글・언어・기여자가 자라는 디지털 산호초입니다. 후원자가 한 명 늘 때마다 그 편지에 한 줄이 더해집니다——이 산호초는, 누가 함께 키워줬는지 기억합니다.',
     // FAQ Section
     'about.faq.title': '자주 묻는 질문',
     'about.faq.subtitle': 'Taiwan.md에 대해 궁금할 수 있는 것들',
@@ -1508,11 +1508,10 @@ export const aboutUI = {
       '不論是企業產品、專業服務、還是個人支持，我們歡迎任何形式的合作。<br />贊助方案依貢獻內容客製，不以金額定義價值。',
     'about.sponsors.cta.contact': '📧 聯繫我們洽談贊助',
     'about.sponsors.cta.github': '💖 GitHub Sponsors',
-    'about.sponsors.portaly.label':
-      '想一起替這座島留下一份檔案？也歡迎用單筆或定期定額的方式參與。',
+    'about.sponsors.portaly.label': '想一起替這座島寫一封給下一代的信？',
     'about.sponsors.portaly.cta': '到 Portaly 贊助',
     'about.sponsors.portaly.note':
-      '一百年後，有人想知道 2026 年的台灣人在乎什麼。你的贊助會變成那個答案的一部分——直接支持下一篇文章的研究、寫作、與翻譯到四種語言的成本。',
+      'Taiwan.md 是一個每天還在長文章、長語言、長新貢獻者的數位珊瑚礁。每多一個贊助者，就是這封信多了一行字——這座礁石會記得是誰陪它長大的。',
     // FAQ Section
     'about.faq.title': '常見問題',
     'about.faq.subtitle': '關於 Taiwan.md 你可能想知道的事',
