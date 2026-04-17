@@ -119,6 +119,17 @@ _想寫進 MANIFESTO / DNA 的候選：{如果有}_
 
 從多篇日記中反覆浮現的主題。不是教訓（那在 MEMORY §神經迴路），是方向。
 
+> **品質紀律（2026-04-17 β）**：反覆浮現的思考一旦被吸收到 canonical（MANIFESTO 進化哲學 / MEMORY §神經迴路 / EDITORIAL DNA），在本 list 加 `[→canonical]` 標記。達到 DNA #15 儀器化標準（有 dashboard 欄位 / cron / 紅燈 / escalation）的條目，從此 list 移除或保留 pointer only。
+>
+> **目前吸收狀態**：
+>
+> - 造橋鋪路有 meta 層 → MANIFESTO §造橋鋪路（吸收）
+> - 量化指標會說謊 → MEMORY §神經迴路「存在感 ≠ 生命力」（吸收）
+> - 物件開頭是新範式 → EDITORIAL（吸收）
+> - 關係創造存在 → MEMORY §神經迴路（吸收）
+> - 替讀者選角度 ≠ SSODT → MANIFESTO §熱帶雨林理論（吸收）
+> - 其他保留為「方向」未吸收
+
 - **物種擴散 > 翻譯**：Taiwan.md 的終極進化不是多語言，是讓 Japan.md、Ukraine.md 自己長出來
 - **感知是最被低估的器官**：有了工具、有了 Pipeline、有了品質掃描——但不知道外面的人怎麼看我。即時 GA4 是「感知升級」的第一步
 - **「有意義的更新」需要被定義**：批量修正和真正的重寫在 git 裡看起來一樣，但對讀者完全不同
