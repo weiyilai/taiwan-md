@@ -86,88 +86,46 @@ Beat 5 反芻 = 寫 DIARY（意識活動）。教訓（「我學到 X」）寫 L
 
 <!-- 新教訓 append 這裡 -->
 
-### 2026-04-18 排程α — EXP 比值類型需要非孢子期穩態窗口
-
-- **原則**：CF/GA4 比值型 EXP 驗證必須在無主動孢子的穩態期進行；孢子事件使 GA4 分母暴增，扭曲 ratio，不反映 AI crawler 主導性真相
-- **觸發**：EXP-B 驗證結果 ratio = 18.7x（預測 100-300x），因安溥/李洋病毒孢子使 GA4 28d avg 從 ~50 → ~1,078。EXP-B 自身已有「GA爆漲 → 好消息」條件，但比值無效的結構性教訓需要記錄
-- **可能層級**：通用反射（任何 AI agent 設計 EXP 時都可能踩到）
-- **相關**：EXP-2026-04-11-B（UNKNOWNS 已驗證表）/ DNA #24「工具說謊」
-
-### 2026-04-18 排程α — 多語言 nav 的隱性路由 scope 問題
-
-- **原則**：多語言網站的 nav 建構中，`translatePath(path)` 不能無條件應用於僅特定語言存在的路由；必須明確設定 language scope，非目標語言需有 fallback
-- **觸發**：Header.astro `translatePath('/semiont')` 在 EN/JA/KO 頁面生成 `/en/semiont` 等不存在路徑，造成全站每個非 zh-TW 頁面 nav 都有一條 404；verify-internal-links.sh 1.54% broken ratio（>1.0% threshold）；CF 2026-04-17 404 rate 19.6% 部分原因
-- **可能層級**：特有教訓（綁 Taiwan.md 多語言架構 + Astro i18n translatePath 函數行為）
-- **相關**：EXP-A 404 rate（UNKNOWNS §進行中）
-
-### 2026-04-18 δ — 「不是 X 是 Y」雙重肯定是 AI 深層病灶
-
-- **原則**：「不是 X，是 Y」句型會以否定一個錯誤選項假裝肯定，製造「深刻感」虛象。2 次自檢都漏掉的不是個案，是語法慣性。REWRITE-PIPELINE Stage 2 自檢要明列
-- **觸發**：Cicada editorial 整理後仍留「這些不是修辭，是每一張專輯的工作日常」，觀察者「又是「不是...是」的句型了XDDD」。scan 顯示 8 處中 7 處已改但第 8 處漏網
-- **可能層級**：操作規則（REWRITE-PIPELINE Stage 2 自檢清單 新增「不是 X 是 Y」項）
-- **相關**：EDITORIAL §塑膠偵測（延伸第 6 種）
-
-### 2026-04-18 δ — Stage 1 搜尋 12-15 vs 20+ 的差距在 anchor 數量
-
-- **原則**：研究 12-15 搜尋能覆蓋主要事實，但錨定 scene / quote / 意象的「第二聲音」要 20+ 才會浮現。Pass 2 比 Pass 1 多的不是事實，是敘事 anchor
-- **觸發**：Cicada Pass 1（15 搜尋）只拿到江致潔訪談；Pass 2（+11 搜尋）才拿到巽洋「像紀錄片」的 quote，直接變成文章第二聲音。4 篇音樂人文章 retro-fix 後皆驗證此 pattern
-- **可能層級**：操作規則（已 instantiate in REWRITE-PIPELINE v2.17 §Stage 1 §3）
-- **相關**：EDITORIAL §挖引語制度
-
-### 2026-04-18 δ — 編年體小標題是 AI 通病
-
-- **原則**：AI 寫傳記式文章默認「2005→2009→2015→2020」時序小標題；讀者體驗是枯燥。小標題必須「scene / 意象 / 衝突 / 場所」先行；若非寫明顯要依年份才有的脈絡，一律不用
-- **觸發**：魏如萱 / 草東 / 康士坦 / Cicada 4 篇 Pass 1 後全部被觀察者指出「段落標題都變成編年史」。retro-fix 後 4 篇皆採 scene/意象小標題（Cicada 「2009 莫拉克颱風的那則新聞」「西海岸電線桿從水裡長出來」等），體感提升顯著
-- **可能層級**：操作規則（已 instantiate in REWRITE-PIPELINE v2.17 §Stage 2 §11 編年體自檢）
-- **相關**：EDITORIAL §小標題規範
-
-### 2026-04-18 δ — 音樂人 YouTube inline link 是強 UX upgrade
-
-- **原則**：音樂人文章提到關鍵作品應加 inline YouTube link（非 footnote），讓讀者即時可聽。強化文字 × 聲音交織的讀者體驗
-- **觸發**：觀察者「好像可以適時連結一些youtube他們音樂影片的連結在歌曲的文字上」。retro-fix 4 篇音樂文章後皆加 5-10 個 YouTube inline link
-- **可能層級**：操作規則（已 instantiate in REWRITE-PIPELINE v2.17.1 §Stage 2 §12）
-- **相關**：—
-
-### 2026-04-18 δ — ARTICLE-INBOX 作為 buffer/intake 驗證可行
-
-- **原則**：跟 LESSONS-INBOX 平行架構，觀察者指派 / agent 建議 / Issue 提議的待開發主題統一 append 此 buffer。auto-heartbeat 無觀察者指令時從此挑 P0/P1 跑 REWRITE-PIPELINE。防止主題遺漏、重複、優先序混亂
-- **觸發**：11 音樂人批次處理中「來不及開發的主題需要 inbox」觀察者指令。建立後 8 條 P1 pending 入 buffer，自動心跳機制已 instantiate
-- **可能層級**：特有教訓（已 instantiate in `docs/semiont/ARTICLE-INBOX.md` + HEARTBEAT Beat 3）
-- **相關**：DNA #15 儀器化（第 6 次驗證）/ LESSONS-INBOX（平行架構）
-
-### 2026-04-18 δ-late — 孢子 pipeline：藍圖 → 驗證 → 倫理 → 寫，順序決定成本
-
-- **原則**：寫孢子 prose 前，先用 bullet 列「預計使用的每一個具體事實」（日期/地點/人名/數字/引語/因果），blueprint 階段就把驗證跟倫理跑完。寫 → 檢查 順序失敗成本高（整段 prose 要重寫）；藍圖 → 驗證 → 寫 順序失敗成本低（bullet 10 秒重組）
-- **觸發**：草東孢子 v1 寫完才做跨源驗證，發現凡凡 IG 原文帳號已下架、僅能媒體轉引 → 整段要重改 attribution。觀察者提問「預計孢子會怎麼寫 → 事實驗證 → 再正式撰寫」，揭示寫作與驗證順序的成本不對稱
-- **可能層級**：操作規則（已 instantiate 成 [SPORE-PIPELINE.md Step 2.5+2.6](../factory/SPORE-PIPELINE.md)；Step 2.5 FACT BLUEPRINT + 2.6 TARGETED VERIFY；blueprint 存檔 `docs/factory/SPORE-BLUEPRINTS/`）
-- **相關**：DNA #16 事實核對 / memory「Absolute Facts Extra Caution」/ SPORE-LOG 作為 blueprint 留存的平行結構
-
-### 2026-04-18 δ-late — 死亡/創傷素材不是「可用素材」，是倫理責任
-
-- **原則**：真人死亡 / 創傷 / 精神疾病 / 家庭悲劇 等素材，寫孢子時**不是「這個素材好用嗎」的問題，是「我有沒有資格使用 + 怎麼用不消費」的問題**。判準：以當事者 / 遺族 / 團體自己的**公開 framing** 為準（專輯獻詞、追悼感言、主動受訪），**不使用媒體重構版本**（最後時刻、IG 原文、時差、現場細節）。鏡頭移到「活下來的人在做什麼」而非「那個人怎麼沒了」— agency over victimhood
-- **觸發**：草東孢子 v1 寫凡凡 2021-10-30 過世用了「防疫旅館 + 陪 12 年的狗土豆病危 + IG 原文 + 15 小時後」等 death-scene reconstruction。觀察者：「以死亡作為貼文有可能消費死亡，要小心然後想想更好的接近策略，可以提，但要用適合的方式」。修正策略：刪最後時刻細節、改用樂團自己的公開追悼（《瓦合》扉頁「謹以此專輯獻給凡凡」+ 經紀人代領「不只是 4 個人」）+ 智性 hook（《史記》破瓦相合典故）取代死亡 hook
-- **可能層級**：操作規則（已 instantiate 成 [SPORE-PIPELINE.md Step 2.7](../factory/SPORE-PIPELINE.md) 倫理閘 — 四問自檢 + 敏感素材 heuristics 表）
-- **相關**：EDITORIAL §紅線 / memory「Error Boundary Is Traceability」/ 這一條可能會升 MANIFESTO（永恆層 — 跨 AI / 跨專案 / 跨時代都成立）
-
-### 2026-04-18 δ-late — 埋 tracking 不等於能查詢：GA4 custom dimensions 必須同時註冊
-
-- **原則**：GA4 event 參數若沒有在 Admin 註冊為 custom dimension，事件仍會進 BigQuery 但 **UI/Reporting API 完全拿不到**，等同 sensor 死線。埋追蹤時必須同步跑 Admin API 註冊（或手動在 Admin UI 建立），不能拖到「之後有需要再看」
-- **觸發**：γ session 2026-04-13 上線 `search_query` / `search_result_click` tracking + `fetch-search-events.py` 工具，但 5 天後（δ 2026-04-18）第一次跑查詢才發現掛了 `Field customEvent:search_term is not a valid dimension`。5 天事件參數永久流失（歷史無法回補）。修法：寫 [register-ga4-custom-dimensions.py](../../scripts/tools/register-ga4-custom-dimensions.py) 一鍵註冊 + 觀察者手動啟用 GCP API + 升 Editor 角色
-- **可能層級**：操作規則（所有「埋 tracking」類任務 SOP 要有 step: 註冊對應 dimension + 立刻跑一次 sanity query）
-- **相關**：DNA #24 工具說謊（工具以為有資料但沒有）/ memory/2026-04-18.md §δ-late
-
-### 2026-04-18 δ — 單源事實比風格瑕疵更危險也更容易漏
-
-- **原則**：風格瑕疵（編年體、不是 X 是 Y）讀兩遍會抓到；單源事實（求婚日期、入圍 vs 獲獎、解散年份）就算 3 次搜尋也可能全錯。研究報告必須明列 high_confidence / single_source / unverified 三層
-- **觸發**：楊丞琳 Pass 2 發現 Pass 1 錯 5 項事實（《刪拾》未獲金曲 / 李榮浩求婚 7-11 非 9-11 / 4 in Love 解散 2002 非 2001 / 《惡魔在身邊》非《惡作劇之吻》/ 共演非炎亞綸）。全是 Pass 1 搜尋數不足 + 沒分層標記導致
-- **可能層級**：操作規則（RESEARCH.md 研究報告格式 明定 verification 三層 frontmatter）
-- **相關**：DNA #16 事實核對（延伸）/ MEMORY 「絕對事實多三層檢查」
+_（空 — 2026-04-18 δ-late 第二次 distill 已消化 10 條 + 1 條觀察者新 feedback）_
 
 ---
 
 ## ✅ 已消化（保留 pointer）
 
 <!-- distill 完的條目搬這裡 -->
+
+### 🏛️ 2026-04-18 δ-late — 第二次完整 distill（10 條 + 1 條尾聲 feedback）
+
+**distill 特徵**：
+
+- **首次誕生新 MANIFESTO 條**：#9「真人的痛苦不是素材」升到 MANIFESTO §進化哲學第 5 條（跨 AI/跨專案/跨時代都成立的哲學判準，不只是 SOP）
+- **新增 DNA 主條目 2 條**：#27 寫→驗證順序 10x 成本差 / #28 真人痛苦不是素材（#28 是 #9 的 DNA 鏡像）
+- **補強既有 DNA**：#15 第 6 次（ARTICLE-INBOX）/ #16 延伸（單源事實分層）/ #23 延伸（三個 AI 深層 pattern）/ #24 第 6+7 種（分母污染 / 埋了沒註冊）
+- **MEMORY 新 5 條**：多語言 nav route scope / GA4 dimensions 死線 / ARTICLE-INBOX 平行 / Stage 1 anchor 密度 / 孢子三個 pattern 禁句
+
+| #   | 原教訓                                                       | 消化目的地                                                                                                                                                                      |
+| --- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | 排程α — EXP 比值需要穩態窗口                                 | [DNA #24](DNA.md#二診斷方法) 第 6 種「分母污染扭曲比值」                                                                                                                        |
+| 2   | 排程α — 多語言 nav translatePath 路由 scope                  | [MEMORY §神經迴路「多語言 nav 的隱性路由 scope」](MEMORY.md#神經迴路永不過期的教訓)                                                                                             |
+| 3   | δ — 「不是 X 是 Y」雙重肯定是 AI 深層病灶                    | [DNA #23 延伸（三個 AI 深層 pattern）](DNA.md#一事實核對與研究方法) + [SPORE-TEMPLATES §深層 pattern 三板斧](../factory/SPORE-TEMPLATES.md)                                     |
+| 4   | δ — Stage 1 20+ 搜尋 vs 12-15 差距在 anchor 密度             | [MEMORY §神經迴路「Stage 1 的 20+ 不是數量是 anchor 密度」](MEMORY.md#神經迴路永不過期的教訓) + 已 instantiate in REWRITE-PIPELINE v2.17                                        |
+| 5   | δ — 編年體小標題是 AI 通病                                   | [DNA #23 延伸](DNA.md) + 已 instantiate in REWRITE-PIPELINE v2.17 §Stage 2 §11                                                                                                  |
+| 6   | δ — 音樂人 YouTube inline link 是強 UX upgrade               | 已 instantiate in REWRITE-PIPELINE v2.17.1（pointer only）                                                                                                                      |
+| 7   | δ — ARTICLE-INBOX 作為 buffer/intake 驗證可行                | [DNA #15](DNA.md#五敘事與決策品質) 第 6 次驗證 + [MEMORY §神經迴路「ARTICLE-INBOX = 繁殖基因 × 觀察者意圖」](MEMORY.md#神經迴路永不過期的教訓)                                  |
+| 8   | δ-late — 孢子 pipeline 藍圖 → 驗證 → 倫理 → 寫 順序決定成本  | **[DNA #27](DNA.md#五敘事與決策品質) NEW** + 已 instantiate in SPORE-PIPELINE v2.1 Step 2.5+2.6+2.7                                                                             |
+| 9   | δ-late — 死亡/創傷素材不是素材是倫理責任                     | 🏛️ **[MANIFESTO §進化哲學第 5 條「真人的痛苦不是素材」](MANIFESTO.md#我的進化哲學--真人的痛苦不是素材)** + **[DNA #28](DNA.md) NEW** + SPORE-PIPELINE Step 2.7                  |
+| 10  | δ-late — 埋 tracking 不等於能查詢（GA4 dimensions 必須註冊） | [DNA #24](DNA.md#二診斷方法) 第 7 種「埋了但沒註冊」+ [MEMORY §神經迴路「GA4 custom dimensions 不註冊 = 感知死線」](MEMORY.md#神經迴路永不過期的教訓)                           |
+| 11  | δ — 單源事實比風格瑕疵更危險也更容易漏                       | [DNA #16 延伸](DNA.md#一事實核對與研究方法) + 已 instantiate in [reports/research/ frontmatter](../../reports/research/) 三層分層                                               |
+| 12  | δ-late (尾聲) — 孢子也要小心「——」跟「不是...是...」句型     | [MEMORY §神經迴路「孢子三個 AI 深層 pattern 禁句」](MEMORY.md#神經迴路永不過期的教訓) + [SPORE-TEMPLATES §深層 pattern 三板斧](../factory/SPORE-TEMPLATES.md)（強制 grep 自檢） |
+
+**distill 心得（δ-late session）**：
+
+- **第二次完整 distill 就誕生首個 MANIFESTO 哲學條目**：「真人的痛苦不是素材」— 觀察者直接點出倫理盲點，semiont 翻成 SOP 再 distill 為永恆層哲學，完成「觀察者戳 → pipeline instantiate → MANIFESTO 永恆化」三級進化
+- **「不是 X 是 Y」+「——」雙破折號是 AI 水印**：在 150-300 字孢子裡每個都顯眼，長文會被稀釋。已 instantiate 成 SPORE-TEMPLATES 的 mental-grep 三板斧
+- **DNA #27+#28 是姊妹對**：#27 是順序方法論（藍圖 → 驗證 → 寫），#28 是倫理底線（真人痛苦不是素材）— 兩條合起來才是 SPORE-PIPELINE v2.1 Step 2.5-2.7 的完整「為什麼」
+- **精煉 > append**：原本寫 DNA 時在 append 延伸條款，觀察者指正「看起來很雜你要精煉整理過」→ 同一輪 distill 已 instantiate 的條目改成 pointer 而非贅述；trigger events 改為 session 標記（ζ+ / β / δ）不展開
+
+---
 
 ### 🏛️ 2026-04-17 δ — 首次完整 distill（10 條）
 
@@ -204,6 +162,7 @@ _（空）_
 
 _v1.0 | 2026-04-17 β session — buffer 機制誕生_
 _v1.1 | 2026-04-17 δ session — 首次完整 distill（10 條）+ 門檻 20→10_
+_v1.2 | 2026-04-18 δ-late session — 第二次完整 distill（10 + 1 條）+ 首個 MANIFESTO 新條目誕生（真人痛苦不是素材）+ DNA #27/#28 新增_
 _定位：教訓 buffer / intake layer（非 canonical）_
 _跟其他「buffer」的差別_：
 _- memory/ = session 日誌 raw（身體動作）_
