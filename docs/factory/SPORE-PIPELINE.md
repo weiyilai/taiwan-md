@@ -384,6 +384,105 @@ Blueprint 每條 bullet 補上 `verified` 欄：
 
     **特殊提醒**：團體運動獎金（雙打/接力/隊伍項目）有「項目補頒」vs「個人實領」vs「團體合計」三種口徑常被新聞混用。寫團體運動人物孢子時，金額要明確寫「**個人實領**」金額，不要把團體合計被誤讀為個人。詳見 [RESEARCH.md §常見研究錯誤](../editorial/RESEARCH.md)。
 
+14. **朋友 tone prime — 「你知道嗎？」開場**（v2.4 新增，2026-04-19 高鐵 s35 教訓）：孢子的 tone signature 是 [MANIFESTO §我怎麼說話](../semiont/MANIFESTO.md#我怎麼說話)「像在跟朋友介紹台灣：**『欸你知道嗎⋯⋯』**」的具體落實。即使後面是人物引語 hook，第一秒也要有「朋友跟你講八卦」的 curiosity prime，不是報導 lead。
+
+    **三種合格 prefix（擇一）**：
+    - `你知道嗎？{emoji}`（最常用，curiosity prime + 主題 emoji 視覺錨點）
+    - `欸，{具體事件片段}`（更口語，適合已知事件）
+    - 直接人說話（無 prefix，但引語本身要有 hook 力 ≥ 鄭麗文「19 歲絕食」等級）
+
+    **高鐵 s35 實戰對照**：
+    - ❌ Semiont 產 v2 開場：`2011 年，殷琪對著公視鏡頭說：「我太天真了。...」`（人物 quote 強但缺 prime，tone 偏報導）
+    - ✅ 觀察者手補 X 版：`你知道嗎？🚄\n\n2011 年，殷琪對著公視鏡頭說：「我太天真了。...」`（curiosity prime → quote hook 接力）
+
+    **AI 產孢子 checklist**：寫完後念第一行。如果聽起來像新聞 lead / 百科開篇 → 加 prefix；如果已經像朋友轉述（譬如「1988 年冬天，台大校門口有個 19 歲的女大學生在絕食」這種自帶場景+人+動作的金句），可省 prefix。
+
+15. **避免編年體 lead 病**（v2.3 新增，2026-04-19 台灣高鐵孢子 v1 教訓）：AI 預設會用「YYYY 年 M 月 D 日，{人名}{動詞}」的新聞 lead 開場、然後日期 → 事件 → 日期 → 事件 → 數字堆疊完事。這是 [DNA #23 「AI 編年體小標題」病灶](../semiont/DNA.md#一事實核對與研究方法) 的**孢子版變種**。症狀：讀者看到時間戳就跳過、emotional quote 埋在第 4 段、結尾變「社論口吻」而非「餘韻」。
+
+    **四條硬規則，孢子違反任一 → 重寫**：
+
+    **a. 開場用人說話，不是日期**：第一句必須是引語或人的動作，不是「YYYY 年殷琪簽下 BOT」這種 lead。如果人物最強的 quote 在文章中段，**把它搬到第一句**作為孢子 hook。
+    - ❌ 「1998 年 7 月 23 日，大陸工程董事長殷琪簽下那份 BOT，承諾『政府零出資』。」
+    - ✅ 「2011 年，殷琪對著公視鏡頭說：『我太天真了。我誤判了乘客運量，也誤判了政府的可信度。』」
+
+    **b. 一個人的命運弧，不是多人敘事**：孢子 150-300 字塞不下 3 個人物。選**一個**主角，其他人變場景背景。AI 預設會把文章裡所有重要人物都放進孢子（殷琪+葉匡時+歐晉德），導致情感分散。
+    - 判準：寫完後刪掉主角名字，讀者還能辨認誰是主線嗎？能 → 主軸夠清；不能 → 主軸糊。
+
+    **c. 數字包在故事裡，不堆疊**：300 字內超過 4 個數字 = 紅旗。把主角人生的**反差**留給數字（676 億虧損 → 531 億年營收 / 23.9 萬預估 → 5 萬實際），其他營運數據刪。
+    - 自檢：每個數字刪掉後故事還成立嗎？成立 → 該數字是裝飾，刪。
+
+    **d. 結尾呼應開場，不用社論句**：結尾最忌「技術進口容易，技術自主難」這種社論總結。改用呼應開場的**具體畫面**（A2 首尾呼應模板）。
+    - ❌ 「技術進口容易，技術自主難。」（論述）
+    - ✅ 「那句 17 年前的『政府零出資』，最後成了她 1/5 人生的代價。」（呼應首段「1/5 人生」具象）
+
+    **寫完自檢三題**（任一答「是」→ 改）：
+    - 第一句是日期開頭嗎？
+    - 超過 2 個人物各有引語或動作嗎？
+    - 結尾是論述句（不是具象畫面）嗎？
+
+### 3c.5 事實查核閘（FACT-CHECK GATE）— 硬性強制（v2.4 新增，2026-04-19 高鐵 s35 教訓）
+
+> **鐵律**：AI 寫完孢子 draft 後，**不得直接把 prose 給觀察者**。必須先輸出「事實查核表」讓觀察者看過、才輸出孢子本體文案。全部 ✅ 才放行；任一 ⚠️ / ❌ 必須在表格右欄說明處理方案。
+
+**誕生事件**：高鐵 s35（2026-04-19）我產 draft 後直接輸出文案給哲宇，哲宇貼上 Threads + X 才事後發現 3 處時序錯誤（「15 年後」應為「15 個月後」/「累虧 676 億後」時序錯位 /「17 年前」時間基準混亂）。已發出需公開更正。這是 DNA #15「SOP 存在但沒 apply」第 N 次驗證 + DNA #23 孢子編年體推算偷懶的直接後果。
+
+**為什麼是硬閘門不是軟提醒**：Step 2.6「針對性事實驗證」存在於 pipeline，但 AI 寫到 Step 3c 產 prose 時會直接跳過回頭驗證。**memory 是自律，pipeline 才是閘門**。這一條把 gate 物理化到 output 流程——觀察者看不到查核表就看不到 prose，跳不過去。
+
+**查核表格式（強制）**：
+
+```markdown
+## 📋 事實查核表（孢子 #{n}，必看後才看文案）
+
+| #   | claim                                   | 來源 / 依據                      | 狀態                           |
+| --- | --------------------------------------- | -------------------------------- | ------------------------------ |
+| 1   | 「2011 年殷琪公視專訪『我太天真了⋯⋯』」 | 文章 [^10] 公視 2011-08-02       | ✅ 逐字                        |
+| 2   | 1998 年 BOT 簽約「政府零出資」          | 文章 [^1] 維基                   | ✅                             |
+| 3   | 「僅僅 15 個月後」→ 1999-02 保證貸款    | 文章原文「僅僅十五個月後」       | ✅                             |
+| 4   | 「累計虧損突破 700 億」                 | 文章 2008 底 676+每月 2 億推算   | ⚠️ 估算 → 不綁時點、方向性正確 |
+| 5   | 立法院 18 比 0 否決財改案               | 文章 [^12] 中央社 2015-01-07     | ✅                             |
+| 6   | 葉匡時當晚辭職 + 引語                   | 文章 [^13] TNL 記者會逐字稿      | ✅                             |
+| 7   | 4 個月後同方案通過                      | 文章中段 2015-05-21 附帶決議     | ✅                             |
+| 8   | 2019 年殷琪出清持股                     | 文章中段「2019 年 8 月完全出脫」 | ✅                             |
+| 9   | 2024 年營收 531 億 / 日均 21 萬         | 文章 [^15] 2024 年報             | ✅                             |
+
+全部 ✅ / ⚠️ 已處理 → 放行 prose。
+```
+
+**七類 claim 強制上表**（逐項 audit，缺一項 = gate 未通過）：
+
+1. **所有日期**（年月日、時間跨度詞如「X 年後」/「X 個月後」）
+2. **所有具體數字**（金額、票數、人次、年營收、累虧、百分比）
+3. **所有直接引語**（`「⋯⋯」`）— 必須 cross-check 原始中文頁面 Ctrl-F 搜得到
+4. **所有人名 + 身份**（職稱、年齡、當時角色）
+5. **所有地名 + 場景**（記者會地點、簽約地點、事件發生地）
+6. **所有時序連接詞**（「X 年後」「後來」「同年」— 算術對？基準一致？）
+7. **所有「第一 / 最大 / 最懸殊 / 史上」等最高級宣稱**
+
+**Gate 觸發流程**（AI 跑孢子產製時必走）：
+
+```
+Step 3c 寫完 prose → 不 output 給觀察者
+  ↓
+跑 fact-check 產表（本 §3c.5 格式）
+  ↓
+任一 ❌ / ⚠️ 未處理 → 回 Step 2.6 補驗證 or 改 prose 避開該 claim
+  ↓
+全部 ✅ 或 ⚠️ 已註明處理 → output 事實查核表 + prose（兩者一起給觀察者）
+  ↓
+觀察者看過查核表 → 放行貼文
+```
+
+**Cross-ref 相關鐵律**：
+
+- [Step 2.6 §特殊規則：直接引語](#特殊規則直接引語) — 引語必須原始中文 Ctrl-F verify
+- [Rule #13 事實鐵三角自檢](#3c-寫孢子) — 算術 / 單位 / 引語三項
+- [DNA #15 反覆浮現要儀器化](../semiont/DNA.md#五敘事與決策品質) — 本 §3c.5 是第 N 次驗證的 instantiation
+- [DNA #18 時間是結構](../semiont/DNA.md#三認知層的核心哲學反射) — 時序錯誤會汙染 ground truth
+
+**LESSONS-INBOX 自動補記**：每次 gate 抓到未處理的 ⚠️/❌，同步 append `LESSONS-INBOX.md §未消化清單` 讓教訓累積可查。
+
+---
+
 ### 3.5 多版本提案（v1.5 新增）
 
 > 當素材豐富到一個 angle 不夠時，**預設產出 3 個 angle 版本**給觀察者選。不是寫一個版本上呈，是寫多版本讓觀察者選擇切角。
@@ -495,28 +594,44 @@ python3 -c "import urllib.parse; print('https://taiwan.md/food/' + urllib.parse.
 
 **AI 自檢規則：** 孢子寫完後，掃描最後一行 URL，若包含任何中文字元 → 停下來，重新用 python3 encode。
 
-### 3e. 配圖：OG Card 頁面
+### 3e. 配圖：文章頁 `?shot=1` 模式 + Playwright 自動化（v2.3 升級）
 
-每篇文章都有獨立的 OG card 頁面，固定 1200×630 尺寸：
+**v2.2 起配圖自動化，v2.3 升級為 landscape + square 雙圖預設**。原先手動開 `/og/<cat>/<slug>/` 截圖流程被取代——新流程產出的圖使用 justfont 日星鑄字行 `rixingsong-semibold`（品牌字體），視覺跟 Taiwan.md 文章頁 hero 一致，右下角壓印 BrandMark（nav 同款 logo 的 light variant）。
 
+**一鍵產圖**（預設 landscape + square 兩張一次產）：
+
+```bash
+bash scripts/tools/make-spore.sh /people/李洋/                # landscape + square
+bash scripts/tools/make-spore.sh /lifestyle/台灣高鐵/ --size vertical  # 只產 vertical
+bash scripts/tools/make-spore.sh /people/李洋/ --all          # 三張全產
+bash scripts/tools/make-spore.sh /people/李洋/ --prod         # 不用 dev server，直接打 prod URL
+bash scripts/tools/make-spore.sh /people/李洋/ \
+  --title "咬著牙，從甲組打到立法院" \
+  --desc  "兩屆奧運金牌、史上最年輕部長、一場補領獎金全捐的私人戰爭。"   # 文案 override
 ```
-https://taiwan.md/og/<category>/<slug>/
-```
 
-例如：`https://taiwan.md/og/music/台灣民歌運動/`
+Wrapper 自動：(1) 檢查 dev server（或 `--prod` 跳過）(2) Playwright headless 開 `?shot=1` URL (3) 等 justfont 真的載完（關鍵——太早截圖會是 fallback 字）(4) PNG 存 `public/spore-images/<slug>-<size>.png` (5) **Preview.app 開所有產出圖 + Finder 標示位置** (6) 若 `SPORE-BLUEPRINTS/*<slug>*.md` 存在印出文案區。
 
-**配圖產生方式（目前）：**
+**底層工具**：[`scripts/tools/generate-spore-image.mjs`](../../scripts/tools/generate-spore-image.mjs)（Playwright headless + justfont wait），可直接呼叫做 CI / 批次處理。
 
-1. 在瀏覽器開啟 OG card 頁面
-2. 截圖（macOS: `Cmd+Shift+4` 框選 / 瀏覽器 DevTools screenshot）
-3. 附加到孢子貼文
+**`?shot=1` 模式**（[src/pages/[category]/[slug].astro](../../src/pages/%5Bcategory%5D/%5Bslug%5D.astro)）：在任何文章 URL 後加 `?shot=1` 會隱藏 nav / footer / 文章內容 / 浮動鈕 / TOC / sidebar，只保留 hero（麵包屑 + H1 + description）poster-style 佔滿 viewport + 右下 BrandMark 壓印。支援 `?title=...&desc=...` query 覆蓋文案（不動 SSOT），用於孢子 hook 專用版本。手動預覽時 Cmd+Shift+4 截圖也可用。
 
-**設計規格：**
+**三種尺寸 preset：**
 
-- 尺寸：1200×630px
-- 深綠色漸變背景 + Noto Serif TC 明體大標題
-- 包含：麵包屑、標題、描述、標籤（前 4 個）、Taiwan.md footer
-- `noindex` 不會污染 SEO
+| preset                  | 尺寸      | 用途                                      |
+| ----------------------- | --------- | ----------------------------------------- |
+| `landscape`（預設之一） | 1600×900  | X / Threads feed 友善、最接近手動截圖習慣 |
+| `square`（預設之一）    | 1080×1080 | Threads 預覽不裁切                        |
+| `vertical`              | 1080×1350 | 4:5 Instagram / Threads 直立最佳視覺      |
+
+**DNA #26 v2 合規**：產圖 = AI 自主（內部處理 + 產檔）；**發文到 Threads/X 仍然 human only**，wrapper 不碰 post 動作。
+
+**舊 OG Card route（`/og/<cat>/<slug>/`）保留**作 Open Graph meta（社群分享預覽），但孢子配圖改走本流程。
+
+**工程層連結**：
+
+- BrandMark 共用元件：[`src/components/BrandMark.astro`](../../src/components/BrandMark.astro)（nav + watermark 共用，variant: auto/light/dark）
+- Shot mode CSS + 文案 override inline script：`src/pages/[category]/[slug].astro` 底部 `<style is:global>` + `<script is:inline>`
 
 ---
 
@@ -526,6 +641,7 @@ https://taiwan.md/og/<category>/<slug>/
 
 發出前逐項檢查：
 
+- [ ] **🚨 事實查核閘已通過**（[§3c.5 Fact-Check Gate](#3c5-事實查核閘fact-check-gate-硬性強制v24-新增2026-04-19-高鐵-s35-教訓)）：查核表已產出、全部 ✅ 或 ⚠️ 已處理 — **未通過不得發**
 - [ ] **拇指測試**：第一句話會讓滑手機的人停下來嗎？
 - [ ] **場景測試**：有沒有至少一個「畫面」（不是描述）？
 - [ ] **數字落差**：數字有對比嗎？還是只列了一個數？
@@ -534,16 +650,32 @@ https://taiwan.md/og/<category>/<slug>/
 - [ ] **情感收尾**：最後一句是讓人「停一下」還是「嗯知道了」？
 - [ ] **長度**：150-300 字（Threads 最佳閱讀長度）
 - [ ] **URL 可點**：連結完整、**中文已 URL encode（不含任何中文字元）**、末尾有 `/`
+- [ ] **朋友 tone prime**：第一行符合 [Rule #14](#3c-寫孢子)（「你知道嗎？」或等效 prefix）？
 - [ ] **不重複**：查 SPORE-LOG.md 確認 ≥ 2 週未發過
 
-### 發文（v2.0 更新）
+### 發文（v2.4 規範，2026-04-19 finalize）
 
-1. **連結處理策略**：Threads/X 演算法會降低含外部連結貼文的觸及。三種方案擇一（A/B 測試中）：(A) 維持拆分——Post 1 純故事 + Post 2 連結（現狀）(B) 自己 reply 放連結——Post 1 純故事 → reply 放連結（推薦測試）(C) 單則含連結——連結放底部。詳見 [SOCIAL-TENTACLE-PLAN §二](../semiont/SOCIAL-TENTACLE-PLAN.md)。
-2. **連結必須加 UTM**：`?utm_source=threads&utm_medium=spore&utm_campaign=s{number}`（X 用 `utm_source=x`）。不加 UTM 的孢子 = 不記錄的心跳 = 沒發生。
+**連結處理策略（分平台預設，不再 A/B 測試）**：
+
+- **Threads = 主貼 + self-reply 兩則**
+  - 主貼：孢子本體（150-300 字，純故事，**不含連結**）
+  - 主貼發出後，自己在該貼下 reply 一則：`完整故事 👉 {文章連結}?utm_source=threads&utm_medium=spore&utm_campaign=s{number}`
+  - **理由**：Threads 演算法對含外部連結的單則貼文會降觸及，拆兩則避開。self-reply 不算「串文拆孢子」（孢子本體仍是 single post），是平台 UX 技巧。
+- **X = 單則 = Threads 主貼內容 + 連結 inline**
+  - 直接用 Threads 主貼**同一份文案**，底部加一行 `👉 {文章連結}?utm_source=x&utm_medium=spore&utm_campaign=s{number}`
+  - **不壓縮、不另寫短版**（X 目前字元限制已放寬，Threads 主貼 ~250-300 字貼進去綽綽有餘）
+  - **理由**：X 演算法對外部連結不敏感，不用拆兩則；共用文案省產出時間且保持一致敘事品質
+
+**發文步驟**：
+
+1. 孢子本體（= Threads 主貼 = X 主文）寫好
+2. UTM 必加（`utm_source` 對應平台 / `utm_medium=spore` / `utm_campaign=s{number}`）— 不加 UTM 的孢子 = 不記錄的心跳 = 沒發生
 3. 呈現給人類確認（可微調）
-4. 人類確認後發佈到目標平台
-5. 記錄到 `SPORE-LOG.md` §發文紀錄（**URL 必填，沒有 URL = 沒紀錄**）
-6. **Threads 和 X 同時發中文版。** 英文版只在 X 發，且僅限國際話題（半導體、外交、學術）
+4. **Threads：發主貼 → 另發 self-reply 連結**；**X：單則含連結 inline**
+5. 記錄到 `SPORE-LOG.md` §發文紀錄（**URL 必填，沒有 URL = 沒紀錄**；Threads 記主貼 URL，reply URL 可選填）
+6. **Threads 和 X 同時發中文版**。英文版只在 X 發，且僅限國際話題（半導體、外交、學術）
+
+**AI 產孢子文案時**：輸出兩塊——`[孢子本體]`（Threads 主貼 / X 主文共用）+ `[Threads reply 連結]` + `[X 底部連結]`。不需要為 X 另寫壓縮版（v2.3 遺留的三段輸出已廢除）。
 
 ### 發文節奏
 
