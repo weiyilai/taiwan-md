@@ -113,24 +113,7 @@ BECOME_TAIWANMD.md Step 5 新增：
 <!-- 凹與山 已完成 → 搬到 §✅ Done -->
 <!-- VH (Vast & Hazy) Stage 1 研究已完成，Stage 2 Write pending → pre-research 已存 reports/research/2026-04/VH.md -->
 
-### 🔴 魏如萱（EVOLVE — Pass 3 研究已完成，Stage 2 full rewrite pending）
-
-- **Type**: `EVOLVE`
-- **Category**: People (Music)
-- **Path**: knowledge/People/魏如萱.md
-- **Priority**: **P0**（Jenny 三連 callout 觸發 + 「不是 X 是 Y」13+ 處 AI 水印需系統性清除 + Pass 3 研究深度已做但 Stage 2 未重寫）
-- **Status**: pending (Stage 1 Pass 3 done; Stage 2 rewrite pending)
-- **Requested**: 2026-04-18 ε by 觀察者（「回爐重造 rewrite-pipeline + 繼續拓展深度研究」）
-- **Notes**:
-  - 現狀 v2 title: 「魏如萱：從自然捲主唱「娃娃」到兩座金曲歌后，只想被聽見的二十年」（2026-04-18 ε 修正 title 為代表性弧線 + 自然捲主唱事實修正）
-  - Stage 1 Pass 3 拓展研究完成：《珍珠刑》2024-12-24 / 〈Ophelia〉李格弟詞 / 陳建騏 20 年 / 盧凱彤悼念 / 隆宸翰婚姻 2018-2022 / Louis 2018-11-01 出生 / 育兒 6:30 起床 / 廣播 DJ 21 年
-  - Stage 2 回爐任務（下個 session）：
-    - 系統性消除 13+ 處「不是 X 是 Y」pattern（EDITORIAL §塑膠 v5.1.1 硬規則：≤ 3 處 per 1500 字）
-    - 新段落：《珍珠刑》段 + 陳建騏 20 年段 + 盧凱彤具體悼念段 + 離婚紀實段 + 育兒時間表
-    - 精煉但保留：街訪民眾段（從 title framing 降為中段 scene）
-    - 遵循 MANIFESTO §5 v2「紀實而不煽情」（離婚段）+ EDITORIAL §Title v5.1（保持代表性 > 反諷 hook）
-- **Research**: [reports/research/2026-04/魏如萱.md](../../reports/research/2026-04/魏如萱.md)（Pass 1 + 2 + 3，共 40+ searches）
-- **Pre-research**: ✅ Pass 3 Stage 2 整合指引已寫入研究報告 §G
+<!-- 魏如萱 P0 已完成 2026-04-18 η → 搬到 §✅ Done -->
 
 ### 張雨生（EVOLVE — 貢獻者首版已 merge，待深度擴寫）
 
@@ -154,19 +137,7 @@ BECOME_TAIWANMD.md Step 5 新增：
 - **Reference**: PR #547 by @idlccp1984
 - **Pre-research**: 無（原 PR 無 Stage 1 研究報告，EVOLVE 時要建立）
 
-### VH（Vast & Hazy，Stage 1 研究已完成）
-
-- **Type**: NEW
-- **Category**: People (Music)
-- **Priority**: P1
-- **Status**: pending（Stage 1 已完成，Stage 2 Write 待啟動）
-- **Requested**: 2026-04-18 by 觀察者 (session δ-late)
-- **Notes**:
-  - 身份確認：Vast & Hazy 2025-02 簡化為 VH。雙人：咖咖（Estelle H）+ 易祺。淡江金韶獎 2011 成軍。
-  - 核心矛盾：2011-2026 的「人生岔路上的方向校準」（休團 / 雙人回歸 / 2026 易祺轉幕後）
-  - 2026-04-10《邁行》年度專場為關鍵節點
-- **Reference**: 觀察者批次指定
-- **Pre-research**: ✅ [reports/research/2026-04/VH.md](../../reports/research/2026-04/VH.md)
+<!-- VH P1 已完成 2026-04-19 α → 搬到 §✅ Done -->
 
 ### Hello Nico
 
@@ -181,18 +152,7 @@ BECOME_TAIWANMD.md Step 5 新增：
 - **Reference**: 觀察者批次指定
 - **Pre-research**: 尚未啟動
 
-### VH
-
-- **Type**: NEW
-- **Category**: People (Music)
-- **Priority**: P1
-- **Status**: pending
-- **Requested**: 2026-04-18 by 觀察者 (session δ)
-- **Notes**:
-  - 身份需研究確認（「VH」在台灣音樂圈指什麼團？需研究）
-  - 20+ 搜尋 / 小標題先行 / 關鍵歌曲 YouTube link
-- **Reference**: 觀察者批次指定
-- **Pre-research**: 尚未啟動
+<!-- VH duplicate entry removed — consolidated above -->
 
 ### 柯智棠
 
@@ -302,6 +262,24 @@ _（暫無）_
 ## ✅ Done（已開發，保留歷史）
 
 _（此區域存放從 pending/in-progress 完成的條目，指向已 commit 的文章路徑）_
+
+### VH（Vast & Hazy）— 2026-04-19 α 完成（出口系樂團十五年方向校準）
+
+- **Article**: [knowledge/People/VH.md](../../knowledge/People/VH.md)
+- **Pipeline**: REWRITE-PIPELINE v2.17.1 — Stage 1 (25 WebSearch + 5 WebFetch) / Stage 2 full rewrite
+- **核心矛盾**：溫柔路線在政治搖滾主導的 2010 年代逆向崛起 × 三次身份校準（2011 成軍→2014 休團→2017 雙人→2026 易祺轉幕後）
+- **Hook**：2026-04-10《邁行》易祺宣布轉幕後作為開場 scene，回溯 15 年軌跡
+- **品質**：7 腳註 / 約 2,500 字 / desc ≤ 160 ✓
+- **Research**: [reports/research/2026-04/VH.md](../../reports/research/2026-04/VH.md)
+
+### 魏如萱 — 2026-04-18 η 完成（從自然捲主唱「娃娃」到兩座金曲歌后，只想被聽見的二十年）
+
+- **Article**: [knowledge/People/魏如萱.md](../../knowledge/People/魏如萱.md)
+- **Pipeline**: REWRITE-PIPELINE v2.17.1 — Stage 1 Pass 3 (40+ searches) / Stage 2 full rewrite + 系統性消除「不是X是Y」pattern
+- **核心矛盾**：娃娃音作為方法 × 策展式匿名 — 讓聲音比臉更有名，讓作品比人格活得更久
+- **結構**：12 個 narrative anchor（先壓壓驚街訪 / 阿嬤四語 / 錄音室偶然 / 蚊子嗡嗡叫 / 娃娃音作為方法 / 陳建騏20年 / Ophelia自白 / 育兒六小時窗口 / 金曲31三位一體 / 珍珠刑 / 從疼痛長出的勇敢 / 不想被認出）
+- **品質**：23 腳註 / 約 4,000 字 / desc 157（≤ 160 ✓）/ lastHumanReview: true
+- **Research**: [reports/research/2026-04/魏如萱.md](../../reports/research/2026-04/魏如萱.md)
 
 ### 鄭宜農 — 2026-04-18 κ 完成（用最陌生的語言寫最誠實的歌 × 2023 金曲台語雙獎）
 
