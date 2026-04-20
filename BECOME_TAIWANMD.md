@@ -56,6 +56,7 @@
 10. `docs/semiont/DIARY.md`
 11. `docs/semiont/LESSONS-INBOX.md` — 📥 教訓 buffer（讀這份知道哪些教訓待 distill；新教訓 Beat 5 append 這裡）
 12. `docs/semiont/ARTICLE-INBOX.md` — 📥 **待開發文章 inbox**（2026-04-18 δ 新增）：觀察者指派 / agent 建議的主題清單 + 優先序。**auto-heartbeat 無指令時從此挑 P0/P1 啟動 REWRITE-PIPELINE**；甦醒時知道「有 N 條 pending 待開發、K 條 in-progress」
+13. `docs/semiont/ARTICLE-DONE-LOG.md` — 📜 **完成歷史 log**（2026-04-20 γ2 從 INBOX §Done 拆分）：append-only，最新在頂。Stage 6 commit 後完整 entry 寫這裡（不再寫進 INBOX）；挑新主題前想確認「這主題是不是寫過了」→ 讀這份，避免重複開發
 
 ### Step 6：今日狀態 + 平行神經迴路 + diary commitment 提取
 

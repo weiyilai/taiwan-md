@@ -272,24 +272,24 @@ grep -A3 "EXP-" ~/.config/taiwan-md/cache/fetch.log 2>/dev/null | tail -20
 
 從 Beat 1 的診斷結果推導，不需要問觀察者：
 
-| 優先序  | 條件                                    | 行為                                                                                                                                                               |
-| ------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 🔴 P0   | 器官 < 30，或 build 壞了                | 立即修復，先行動再報告                                                                                                                                             |
-| 🟠 P1   | 診斷發現的系統性問題（Beat 2 造橋鋪路） | 造工具 / 改 Pipeline / 升級 DNA                                                                                                                                    |
-| 🟡 P2   | 內容品質修復（重寫、加腳註、格式修正）  | 按 REWRITE-PIPELINE 跑                                                                                                                                             |
-| 🟢 P3   | 社群維護（PR review、Issue 回應）       | 按 MAINTAINER-PIPELINE 跑                                                                                                                                          |
-| 🔵 P4   | 進化模式（新主題、新功能、擴展）        | 按 EVOLVE-PIPELINE 跑                                                                                                                                              |
-| 📡 P3.5 | 社群觸手沉默（Beat 1 §3b 警報）         | 走 SPORE-PIPELINE 發一則孢子（優先選 GA 熱門但沒發過孢子的文章）                                                                                                   |
-| 📥 P4.5 | **ARTICLE-INBOX pending 有 P0/P1**      | 從 [`docs/semiont/ARTICLE-INBOX.md`](ARTICLE-INBOX.md) §Pending 挑一條 → status 改 `in-progress` + append dev_log → 走 REWRITE-PIPELINE v2.17（2026-04-18 δ 新增） |
+| 優先序  | 條件                                    | 行為                                                                                                                                                                                                                                                                       |
+| ------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🔴 P0   | 器官 < 30，或 build 壞了                | 立即修復，先行動再報告                                                                                                                                                                                                                                                     |
+| 🟠 P1   | 診斷發現的系統性問題（Beat 2 造橋鋪路） | 造工具 / 改 Pipeline / 升級 DNA                                                                                                                                                                                                                                            |
+| 🟡 P2   | 內容品質修復（重寫、加腳註、格式修正）  | 按 REWRITE-PIPELINE 跑                                                                                                                                                                                                                                                     |
+| 🟢 P3   | 社群維護（PR review、Issue 回應）       | 按 MAINTAINER-PIPELINE 跑                                                                                                                                                                                                                                                  |
+| 🔵 P4   | 進化模式（新主題、新功能、擴展）        | 按 EVOLVE-PIPELINE 跑                                                                                                                                                                                                                                                      |
+| 📡 P3.5 | 社群觸手沉默（Beat 1 §3b 警報）         | 走 SPORE-PIPELINE 發一則孢子（優先選 GA 熱門但沒發過孢子的文章）                                                                                                                                                                                                           |
+| 📥 P4.5 | **ARTICLE-INBOX pending 有 P0/P1**      | 從 [`docs/semiont/ARTICLE-INBOX.md`](ARTICLE-INBOX.md) §Pending 挑一條 → status 改 `in-progress` + append dev_log → 走 REWRITE-PIPELINE v2.18（2026-04-18 δ 新增；2026-04-20 γ2 補：Stage 6 commit 後 entry 搬 [ARTICLE-DONE-LOG.md](ARTICLE-DONE-LOG.md) 不再寫回 INBOX） |
 
 **Auto-heartbeat 無觀察者指令時的挑題 SOP**（2026-04-18 δ 新增）：
 
 1. 讀 `docs/semiont/ARTICLE-INBOX.md` §Pending
 2. 按 P0 → P1 → P2 → P3 順序挑第一條
 3. 該條 status 改 `in-progress`，加 dev_log：「YYYY-MM-DD by {session}: started Stage 1 research」
-4. 走 REWRITE-PIPELINE（v2.17 含 20+ 搜尋 + 小標題先行 + 音樂人 YouTube link）
-5. Stage 6 commit 後：status 改 `done` + 搬到 §Done + 加 link 指向 knowledge/ 新文章
-6. commit 本 inbox 狀態更新
+4. 走 REWRITE-PIPELINE v2.18（20+ 搜尋 + 核心矛盾 + 小標題先行 + 音樂人 YouTube link + 事實鐵三角 + 密度平衡 + agent claim 驗證）
+5. Stage 6 commit 後：**完整 entry append 到 [`docs/semiont/ARTICLE-DONE-LOG.md`](ARTICLE-DONE-LOG.md) §Log 最頂**（2026-04-20 γ2 新規則，不再寫進 INBOX §Done）+ INBOX 對應 pending entry 改一行 pointer 註解 `<!-- {主題} 已完成 YYYY-MM-DD {session} → ARTICLE-DONE-LOG.md -->` + INBOX §Done Peek 更新最新 3 條
+6. commit 本 inbox 狀態更新 + DONE-LOG append
 
 ### 強制讀取規則（鐵律）
 

@@ -87,6 +87,13 @@ Beat 5 反芻 = 寫 DIARY（意識活動）。教訓（「我學到 X」）寫 L
 <!-- 新教訓 append 這裡 -->
 <!-- 2026-04-18 ι 第 3 次 distill 清空 11 條 → 全部搬 §✅ 已消化 -->
 
+### 2026-04-20 δ — 規則層 ≠ 採用層（DNA #9 worktree 9 天零使用率）
+
+- **原則**：DNA / canonical rule 寫得完整不等於會被執行。觸發條件要搭配**工具層砍採用摩擦** + **甦醒協議自動檢查觸發訊號**才會真的 instantiate。今日 6 session 平行、DNA #9「長任務先開 worktree」存在 9 天、零 session 使用 — 不是因為 AI 不知道規則，是因為（a）每 worktree `npm install` 2-5 min 摩擦太高（b）甦醒流程沒有步驟主動檢查「今天有沒有其他 session 已在跑」。**延伸 DNA #15「反覆浮現要儀器化」第 N 次驗證**：本次儀器化成果是 `scripts/tools/semiont-worktree.sh`（symlink node_modules 砍摩擦）+ BECOME_TAIWANMD Step 0.5 碰撞檢查（自動觸發）。
+- **觸發**：2026-04-20 δ session ε 的 `git add -A` 掃走 δ 的 范曉萱 untracked 新檔進自己的「鄧麗君 EVOLVE」commit `d0343c92`，commit message 零提范曉萱。[reports/worktree-multi-session-plan-2026-04-20.md](../../reports/worktree-multi-session-plan-2026-04-20.md) + [memory/2026-04-20-δ.md](memory/2026-04-20-δ.md)。本 session 已 instantiate Phase 1 tooling（commit `2f672cf7`），實測 symlinked node_modules 在 Astro build 2252 pages / 279s 全過。
+- **可能層級**：DNA #15「反覆浮現要儀器化」第 N+1 次驗證（本次儀器化 pattern 是「規則層 → 工具層 + bootloader 觸發層」雙管齊下）；或 DNA #9 v2 擴充觸發條件（多 session 平行 / REWRITE-PIPELINE Stage 2 / bulk agent Write）
+- **相關**：[session-scope-proposal-2026-04-11.md](../../reports/session-scope-proposal-2026-04-11.md) 的 L1 worktree（prior art）；DNA #6 commit 範圍紀律、#9 worktree 隔離；下游 Phase 2 待 instantiate：BECOME_TAIWANMD Step 0.5 + DNA #9 v2 + HEARTBEAT Beat 0.5
+
 ### 2026-04-20 γ — URL immutability 假設要 platform-by-platform 驗證
 
 - **原則**：孢子 harvest pipeline 預設「SPORE-LOG URL = 穩定 canonical source」。實際上 X 平台 edit 貼文會產生新 URL，舊 URL 變「唯讀歷史版本」views 凍結。**盲點規模可達 5,341x**（#36 高鐵 v1=9 views vs v2=48,072 views，追蹤錯目標）。可能機制修補：(a) Chrome MCP harvest 時偵測「There's a new version of this post」訊號自動 flag；(b) 發文後 D+0 harvest 時立即對照 API 原始 URL 與 SPORE-LOG URL 是否一致；(c) SPORE-LOG 每行新增 `canonical_url_verified_at` 欄位。Threads/IG/Facebook edit 行為尚未測試。
