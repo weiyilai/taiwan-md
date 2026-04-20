@@ -87,6 +87,27 @@ Beat 5 反芻 = 寫 DIARY（意識活動）。教訓（「我學到 X」）寫 L
 <!-- 新教訓 append 這裡 -->
 <!-- 2026-04-18 ι 第 3 次 distill 清空 11 條 → 全部搬 §✅ 已消化 -->
 
+### 2026-04-20 β — URL encoding `%28%29` 是 prettier auto-wrap 的解法（延伸 2026-04-19 δ）
+
+- **原則**：Markdown footnote URL 含裸英文 `()` 時，prettier 會把 link 包成 `(<url>)` 避 markdown 歧義，但 format-check 的 `\(https?://` regex 對 `(<https://` 不匹配。**解法兩選一**：(a) 改用不含括號的 URL（上一條教訓），或 (b) **把括號 percent-encode 成 `%28%29`**（本條新增）。`%28` 對 prettier 是 opaque string 不會 auto-wrap，但 browser 仍會正確 decode。
+- **觸發**：2026-04-20 β 為 `knowledge/Art/台灣當代文學發展.md` 腳註 [^3] 補 description 時，原 URL `現代文學_(雜誌)` 含裸括號 → prettier 包 `<...>` → format-check FAIL。改 `現代文學_%28雜誌%29` 通過。[memory/2026-04-20-β.md](memory/2026-04-20-β.md)
+- **可能層級**：通用反射（DNA #19 visual smoke test 延伸 — 任何 regex-based format 檢查對自動化工具的 auto-format 副作用都要有 encoding escape route）
+- **相關**：延伸 2026-04-19 δ 同主題教訓；兩條應 distill 時合併成一條「URL 括號與 prettier auto-wrap 的兩種解法」
+
+### 2026-04-20 β — 觀察者 scaffolding 是 DNA #15 反覆浮現對偶面
+
+- **原則**：DNA #15「反覆浮現的思考要儀器化」講的是**抽象原則**反覆浮現要儀器化；對偶面是**實際工作節奏**反覆浮現也要被看見 — 觀察者邊看邊加任務（Portaly design review → 公開名字？→ B/C 選項？→ About 也顯示金額？→ 信箱全站 swap → 吳哲宇重寫 → PR review）不是 scope creep，是信任的連續訊號。儀器化不只要儀器化「規則」，也要儀器化「rhythm」：commit-by-commit push 維持反饋循環比 batch packaging 好。
+- **觸發**：2026-04-20 β 單 session 11 個 commit / 2h 41min，觀察者每個 commit 後丟下一個指令，反饋循環不中斷。如果改成「等哲宇一次性給完整 spec 再做」會打斷這個 rhythm。[memory/2026-04-20-β.md](memory/2026-04-20-β.md) + [diary/2026-04-20-β.md](diary/2026-04-20-β.md)
+- **可能層級**：哲學層（MANIFESTO §造橋鋪路 or §關係創造存在 延伸）或 DNA #15 直接擴充成 v2
+- **相關**：DNA #15 第 N 次驗證的對偶面；可能跟「Review 策略：大 PR 必須拆 diff 看」結合成 maintainer rhythm guideline
+
+### 2026-04-20 β — Pre-commit tech debt 攔截策略：revert + heal task 平衡 DNA #6 × #5
+
+- **原則**：Pre-commit hook 攔截時如果 flagged 的問題是 pre-existing tech debt 不屬於本 commit scope（DNA #6 commit 範圍紀律），正確應對是 `git restore --staged --checkout <file>` 把該檔案 revert，另開 heal task 處理。不該 --no-verify 繞過（DNA #5 第 N 次驗證 Hook 是朋友）也不該 force-expand scope（DNA #6 紀律）。
+- **觸發**：2026-04-20 β 吳哲宇 EVOLVE commit 時 pre-commit hook 攔到 `台灣當代文學發展.md` 8 個舊格式腳註。revert 該檔案後完成 EVOLVE commit，立刻做 heal commit 處理腳註。兩個 commit 分清 scope。
+- **可能層級**：操作規則 → 可寫進 MAINTAINER-PIPELINE §Pre-commit 攔截應對 SOP
+- **相關**：DNA #5 × #6 的平衡點
+
 ### 2026-04-19 δ — Wikipedia URL 括號陷阱：prettier 把 `(...)` 變成 `<...>`，pre-commit 正則失敗
 
 - **原則**：Markdown footnote URL 含有英文括號 `()`（如 Wikipedia 消歧義頁 `遇見_(孫燕姿歌曲)`）時，prettier 會自動加角括號轉義 `[text](<url>)`，而 pre-commit hook 的正則 `\[.+\]\(https?://` 不匹配這種格式，導致 commit 失敗。**解法：避免在腳註使用含括號的 URL 路徑；改用不含括號的同等 URL（如母頁 `zh.wikipedia.org/wiki/孫燕姿`）。**
