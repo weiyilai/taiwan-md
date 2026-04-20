@@ -86,3 +86,6 @@ reports/visual/current/
 reports/visual/diff/
 reports/visual/diff-report.html
 reports/visual/diff-summary.json
+
+# Semiont worktree 多 session 隔離（2026-04-20 δ）
+.worktrees/
