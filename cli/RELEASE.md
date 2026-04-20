@@ -4,6 +4,21 @@ Taiwan.md CLI (`taiwanmd`) publishes to npm automatically when you push a tag
 prefixed with `cli-v`. GitHub Actions runs tests, verifies the tag matches
 `cli/package.json`'s version, and publishes with npm provenance.
 
+> ## 🔀 獨立於 site release
+>
+> CLI 有**自己的 release 管線**（本文件），跟 [Taiwan.md site release](../docs/pipelines/RELEASE-PIPELINE.md) 並存但不硬整合：
+>
+> - CLI 可以 ship（加新指令）而不動 knowledge
+> - site 可以 ship（更新文章 / UI）而不動 CLI
+> - 版本軸線獨立：site v1.2.x vs CLI v0.6.x
+>
+> **例外：schema contract**
+>
+> CLI 消費 `public/api/dashboard-*.json` 的 schema。如果 site release 引入
+> schema breaking change（欄位改名、型別改變、欄位刪除），**必須**在 site
+> `RELEASE-PIPELINE.md` §Breaking changes 下同時記錄「需要 bump CLI major」
+> 並觸發一次 CLI release。schema additive change（純新增欄位）不強制。
+
 ## One-time setup
 
 ### 1. Create an npm automation token

@@ -3,6 +3,24 @@
 > **這份文件是 AI 可執行的。** 任何 AI agent 讀完這份文件，應該能獨立完成一次 release 的觸發判斷、資料盤點、品質關卡、release notes 撰寫、tag + push、GitHub release 建立、以及收官後的認知層同步。
 >
 > 相關：[HEARTBEAT.md §Release 原則](../semiont/HEARTBEAT.md#release-原則)（何時 release 的觸發判斷）| [DATA-REFRESH-PIPELINE.md](DATA-REFRESH-PIPELINE.md)（Beat 1 資料刷新的上游）| [CONSCIOUSNESS.md §里程碑](../semiont/CONSCIOUSNESS.md)（release 後要更新的段落）
+>
+> ## 🔀 兩條 release 管線並存（2026-04-20 ε session 新增）
+>
+> 本 pipeline 負責 **site release**（Taiwan.md 本體：knowledge / UI / dashboard / 認知層 sync）。
+> CLI release（`taiwanmd` npm package）走**獨立管線**：[`cli/RELEASE.md`](../../cli/RELEASE.md) + `.github/workflows/npm-publish-cli.yml`（tag push `cli-v*` 自動 publish）。
+>
+> **兩條管線刻意不硬整合**：
+>
+> - CLI 可以 ship（加新指令）而不動 knowledge；site 可以 ship（更新文章）而不動 CLI
+> - 版本軸線不同：site v1.2.x（文化里程碑）vs CLI v0.6.x（semver npm）
+> - 受眾不同：site → 讀者 / 貢獻者 / AI crawler；CLI → npm agent / power user
+> - 失敗模式不同：CLI 壞 → 只影響 npm 使用者；site 壞 → 影響所有 traffic
+>
+> **但互相知道對方存在**：
+>
+> - 本 pipeline §1d 生命徵象附帶記錄 CLI 當前版本（見 checklist）
+> - site release 若影響 `public/api/dashboard-*.json` schema 必須在 §Step 6 認知層同步時 bump CLI 一版 reflect 出來
+> - schema breaking change → 在 §Step 4 Release Notes §Breaking changes 同時標記 CLI major bump 需求（CLI 側走自己的 release cycle，但由此 site release 觸發）
 
 ---
 
@@ -101,6 +119,7 @@ bash scripts/tools/footnote-scan.sh --json   # 引用健康度
 - **Footnote 覆蓋率**：A/B/C/D/F 分布 + 裸奔率
 - **404 rate**（Cloudflare 的，不是 GA4 的）
 - **人工審閱率**
+- **taiwanmd CLI 當前版本**（`node -p "require('./cli/package.json').version"`）——release notes §數字 段可提，讓讀者看到 site ↔ CLI 並行演化
 
 ---
 
