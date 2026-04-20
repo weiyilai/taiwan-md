@@ -1,4 +1,6 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
 import Layout from '../layouts/Layout.astro';
 import PageHero from '../components/PageHero.astro';
 import ProticoScript from '../components/ProticoScript.astro';
@@ -6,6 +8,29 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+// Read supporter stats for social-proof line in §金流支持.
+// 讀 prebuild 派生的 dashboard-supporters.json；若檔案缺失 fallback 到 0。
+let supporterStats = {
+  total_received_twd: 0,
+  supporter_count: 0,
+  transaction_count: 0,
+};
+try {
+  const raw = JSON.parse(
+    fs.readFileSync(
+      path.join(process.cwd(), 'public/api/dashboard-supporters.json'),
+      'utf8',
+    ),
+  );
+  supporterStats = {
+    total_received_twd: raw.totals?.total_received_twd || 0,
+    supporter_count: raw.totals?.supporter_count || 0,
+    transaction_count: raw.totals?.transaction_count || 0,
+  };
+} catch {
+  /* fallback already initialised */
+}
 ---
 
 <Layout
@@ -653,6 +678,135 @@ const t = useTranslations(lang);
         </p>
         <p set:html={t('contribute.token.note.p3.html')} />
       </div>
+    </div>
+  </section>
+
+  <!-- Support Section (Portaly donation) - Position 8.5 -->
+  <section class="support-section" id="support">
+    <div class="support-inner">
+      <h2>
+        {lang === 'en' ? '💚 Support with a Donation' : '💚 金流支持'}
+      </h2>
+      <p class="support-desc">
+        {
+          lang === 'en'
+            ? 'If our writing helps you understand Taiwan a little better, consider backing the coral reef. Donations go to hosting, translation, and community events — every amount helps this digital sovereignty project breathe another day.'
+            : '如果這裡的文字讓你對台灣多理解了一點，歡迎回頭灌溉這座珊瑚礁。贊助款項用於伺服器、翻譯與社群活動——每一份支持，都讓這座數位主權計畫多呼吸一天。'
+        }
+      </p>
+
+      {
+        supporterStats.transaction_count > 0 && (
+          <p class="support-social-proof">
+            {lang === 'en' ? (
+              <>
+                <strong>
+                  NT${supporterStats.total_received_twd.toLocaleString()}
+                </strong>{' '}
+                received from <strong>{supporterStats.supporter_count}</strong>{' '}
+                supporter
+                {supporterStats.supporter_count > 1 ? 's' : ''} ·{' '}
+                <a
+                  href={
+                    lang === 'en' ? '/en/about#sponsors' : '/about#sponsors'
+                  }
+                >
+                  see who →
+                </a>
+              </>
+            ) : (
+              <>
+                目前已收到{' '}
+                <strong>
+                  NT${supporterStats.total_received_twd.toLocaleString()}
+                </strong>{' '}
+                來自 <strong>{supporterStats.supporter_count}</strong> 位支持者
+                · <a href="/about#sponsors">看看他們是誰 →</a>
+              </>
+            )}
+          </p>
+        )
+      }
+
+      <div class="support-options">
+        <div class="support-card">
+          <div class="support-card-icon">♻️</div>
+          <h3>
+            {lang === 'en' ? 'Monthly Subscription' : '每月定額'}
+          </h3>
+          <p>
+            {
+              lang === 'en'
+                ? 'A recurring commitment. Turns into a growing tree (🌱→🌿→🌳) over time on the About page.'
+                : '持續的承諾。在 About 頁面會隨著累計金額從 🌱 新芽長成 🌿 小樹、🌳 大樹。'
+            }
+          </p>
+          <a
+            href="https://portaly.cc/taiwanmd/support"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="support-cta"
+          >
+            {lang === 'en' ? 'Support Monthly →' : '每月支持 →'}
+          </a>
+        </div>
+
+        <div class="support-card">
+          <div class="support-card-icon">💝</div>
+          <h3>
+            {lang === 'en' ? 'One-time' : '一次性贊助'}
+          </h3>
+          <p>
+            {
+              lang === 'en'
+                ? 'A single gesture of support. Leave a message — we read every one.'
+                : '一次的心意。可以留言給我們，每一則我們都會讀。'
+            }
+          </p>
+          <a
+            href="https://portaly.cc/taiwanmd/support"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="support-cta"
+          >
+            {lang === 'en' ? 'Support Once →' : '單次支持 →'}
+          </a>
+        </div>
+      </div>
+
+      <p class="support-note">
+        {
+          lang === 'en' ? (
+            <>
+              Processed by{' '}
+              <a
+                href="https://portaly.cc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Portaly
+              </a>{' '}
+              · Your name and message appear on the About page (amounts never
+              shown publicly). Choose "anonymous" on the Portaly form if you
+              prefer.
+            </>
+          ) : (
+            <>
+              由{' '}
+              <a
+                href="https://portaly.cc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Portaly
+              </a>{' '}
+              處理金流 · 您的名字與留言會顯示在 About
+              頁面（金額不會公開顯示）。如需匿名，在 Portaly
+              表單上選「匿名」即可。
+            </>
+          )
+        }
+      </p>
     </div>
   </section>
 
@@ -1544,6 +1698,133 @@ const t = useTranslations(lang);
   }
 
   /* i18n Progress Section */
+  /* Support Section (Portaly donation) */
+  .support-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f3f7ed 0%, #f1f7f4 100%);
+  }
+  .support-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .support-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+    font-weight: 700;
+  }
+  .support-desc {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 1.25rem;
+    color: #334155;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  .support-social-proof {
+    text-align: center;
+    margin: 0 auto 2rem;
+    color: #475569;
+    font-size: 0.92rem;
+  }
+  .support-social-proof strong {
+    color: #0f172a;
+    font-variant-numeric: tabular-nums;
+  }
+  .support-social-proof a {
+    color: #5a8a3a;
+    text-decoration: none;
+    border-bottom: 1px dashed #a7c957;
+  }
+  .support-social-proof a:hover {
+    color: #3d6228;
+    border-bottom-style: solid;
+  }
+  .support-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .support-card {
+    background: #ffffff;
+    border: 1px solid #d9e8d0;
+    border-radius: 14px;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    text-align: center;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s,
+      border-color 0.2s;
+  }
+  .support-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(90, 138, 58, 0.08);
+    border-color: #a7c957;
+  }
+  .support-card-icon {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .support-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0f172a;
+  }
+  .support-card p {
+    margin: 0;
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    flex: 1;
+  }
+  .support-cta {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.7rem 1.25rem;
+    background: #a7c957;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition:
+      background 0.2s,
+      transform 0.1s;
+  }
+  .support-cta:hover {
+    background: #8fb85e;
+    transform: translateY(-1px);
+  }
+  .support-cta:active {
+    transform: translateY(0);
+  }
+  .support-note {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 1rem auto 0;
+  }
+  .support-note a {
+    color: #5a8a3a;
+    text-decoration: none;
+    border-bottom: 1px dotted #a7c957;
+  }
+  @media (max-width: 640px) {
+    .support-section {
+      padding: 2.5rem 1rem;
+    }
+    .support-section h2 {
+      font-size: 1.5rem;
+    }
+  }
+
   /* CLI Section */
   .cli-section {
     padding: 4rem 2rem;
