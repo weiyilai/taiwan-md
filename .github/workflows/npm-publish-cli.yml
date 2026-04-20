@@ -1,0 +1,75 @@
+name: Publish CLI to npm
+
+# Triggered by pushing a tag like `cli-v0.6.1`. The tag version MUST match
+# cli/package.json's version field, else the workflow fails fast.
+#
+# Setup required (one-time):
+#   1. Create an npm "automation" access token at
+#      https://www.npmjs.com/settings/YOUR_USER/tokens  (type: Automation)
+#   2. Add it as a repo secret named NPM_TOKEN:
+#      https://github.com/frank890417/taiwan-md/settings/secrets/actions
+#
+# Usage:
+#   cd cli && npm version patch   # bumps package.json + creates git tag 'v0.6.2' (auto)
+#   # or manually:
+#   git tag cli-v0.6.2 && git push origin cli-v0.6.2
+#
+# The workflow runs tests, verifies tag ↔ package.json agreement, then
+# publishes with npm provenance (signed attestation traceable to this workflow).
+
+on:
+  push:
+    tags:
+      - 'cli-v*'
+
+permissions:
+  contents: read
+  id-token: write # required for npm provenance attestation
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cli
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'npm'
+          cache-dependency-path: cli/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify tag matches package.json version
+        run: |
+          TAG_VERSION="${GITHUB_REF_NAME#cli-v}"
+          PKG_VERSION=$(node -p "require('./package.json').version")
+          echo "Tag version:         $TAG_VERSION"
+          echo "package.json version: $PKG_VERSION"
+          if [ "$TAG_VERSION" != "$PKG_VERSION" ]; then
+            echo "::error::Tag cli-v$TAG_VERSION does not match cli/package.json version $PKG_VERSION"
+            echo "Fix: either retag (git tag -d cli-v$TAG_VERSION && git push origin :cli-v$TAG_VERSION)"
+            echo "     or bump cli/package.json to $TAG_VERSION and re-tag."
+            exit 1
+          fi
+
+      - name: Run tests
+        run: npm test
+
+      - name: Publish to npm with provenance
+        run: npm publish --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Summary
+        run: |
+          echo "### 📦 Published \`taiwanmd@$(node -p "require('./package.json').version")\`" >> $GITHUB_STEP_SUMMARY
+          echo "- npm: https://www.npmjs.com/package/taiwanmd" >> $GITHUB_STEP_SUMMARY
+          echo "- tag: \`${GITHUB_REF_NAME}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- provenance: signed ✓" >> $GITHUB_STEP_SUMMARY
