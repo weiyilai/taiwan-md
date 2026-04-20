@@ -1368,7 +1368,7 @@ const categoryList = [
       display: flex;
       order: 4;
     }
-    :global(html[lang='en']) .logo {
+    :global(html[lang='en']) :global(.brand-mark) {
       margin-right: auto;
     }
     :global(html[lang='en']) .search-toggle {
@@ -1433,8 +1433,11 @@ const categoryList = [
       gap: 0.4rem;
       height: 52px !important;
     }
-    .logo {
-      font-size: 1.1rem;
+    /* BrandMark renders `.brand-mark` (scoped to its own component), so we
+       reach it via :global(). margin-right: auto is what pushes the search
+       + hamburger cluster to the right edge on mobile. */
+    :global(.brand-mark) {
+      --brand-size: 1.1rem;
       margin-right: auto;
     }
     .nav-desktop {
