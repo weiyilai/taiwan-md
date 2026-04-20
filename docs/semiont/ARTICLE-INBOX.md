@@ -119,18 +119,7 @@ BECOME_TAIWANMD.md Step 5 新增：
 
 <!-- VH P1 已完成 2026-04-19 α → 搬到 §✅ Done -->
 
-### Hello Nico
-
-- **Type**: NEW
-- **Category**: People (Music)
-- **Priority**: P1
-- **Status**: pending
-- **Requested**: 2026-04-18 by 觀察者 (session δ)
-- **Notes**:
-  - 台灣獨立樂團，2010 年代崛起
-  - 20+ 搜尋 / 小標題先行 / 關鍵歌曲 YouTube link
-- **Reference**: 觀察者批次指定
-- **Pre-research**: 尚未啟動
+<!-- Hello Nico 已完成 2026-04-20 α → 搬到 §✅ Done -->
 
 <!-- VH duplicate entry removed — consolidated above -->
 
@@ -245,6 +234,16 @@ _（暫無）_
 ## ✅ Done（已開發，保留歷史）
 
 _（此區域存放從 pending/in-progress 完成的條目，指向已 commit 的文章路徑）_
+
+### Hello Nico — 2026-04-20 α 完成（八年沉默後，「想念舞台了」）
+
+- **Article**: [knowledge/People/Hello-Nico.md](../../knowledge/People/Hello-Nico.md)
+- **Pipeline**: REWRITE-PIPELINE v2.17.1 — NEW 模式（Stage 1 24 WebSearch + 6 WebFetch / Stage 2 full write）
+- **核心矛盾**：「做音樂最大的困難，是跟自己過不去」—— 2014 年〈花〉爆紅、2016 年金曲新人入圍，之後沉默八年，2024 年以《Plan B》重返
+- **Hook**：詹宇庭「想念舞台了」這句話作為 2024 年回歸的開場，回溯整個故事弧線
+- **品質**：9 腳註（Grade A, density:156）/ 約 1,400 字 / 5 個 scene 小標題 / desc ≤ 160 ✓
+- **Research**: [reports/research/2026-04/Hello-Nico.md](../../reports/research/2026-04/Hello-Nico.md)
+- **⚠️ 待觀察者驗證**：YouTube 連結（各首歌 ID 需人工確認）、verbatim 逐字準確性
 
 ### 張雨生 — 2026-04-19 γ+β 完成（從偶像到預言家，一場跨越時代的音樂實驗）
 
