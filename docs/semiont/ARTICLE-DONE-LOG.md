@@ -42,6 +42,21 @@
 
 ## 📜 Log（reverse chronological，最新在頂）
 
+### 紀柏豪（聲音藝術家 / 作曲家 / 策展人）— 2026-04-21 β 完成（從經濟學走進聲響，用演算法追問「你到底聽進去了嗎」）
+
+- **Article**: [knowledge/Art/紀柏豪.md](../../knowledge/Art/紀柏豪.md)
+- **Pipeline**: REWRITE-PIPELINE v2.18 — NEW 模式（Stage 1 general-purpose 25 WebSearch + 9 WebFetch / Stage 2 全文寫作 / Stage 3 事實鐵三角 / Stage 4 format-check ✅ / Stage 5 cross-link 林經堯 + Hello Nico 雙向回補）
+- **核心矛盾**（25 字）：「經濟系出身，用演算法測量世界，卻始終尋找觀眾的自主聆聽」
+- **Hook**：2025 年 10 月下旬 C-LAB DIVERSONICS 展期中，《朗誦者 2.0》三十支手機同步 AI 語音朗誦一段文字的 scene，回推十一年前台大經濟系畢業生轉向聲音藝術的起點
+- **結構**：6 個 scene 小標題（DIVERSONICS 當下 / 量化思考走進聲響 / 歐洲巡行 / MIT 三年 / 風弦琴回台 / 不是不創作就會死）
+- **verbatim 引語**：4 句核心語錄（「不是不創作就會死」/「我的作品很少有我自己的影子」/「一開始對音樂的創作想像很窄」/ R. Murray Schafer 引述）+ chipohao.com 英文自述 + 朗誦者 2.0 作品說明 verbatim
+- **關鍵發現（Stage 1 研究）**：(1) 紀柏豪曾是 Hello Nico 樂團合成器手 2014《浮游城市》EP（與昨日 Hello Nico 條目雙向連結）(2) 2021 MIT Harold and Arlene Schnitzer Prize 視覺藝術首獎（$5,000，多源確認）(3) 融聲創意有限公司 2017-06-16 設立，代表人紀柏豪（台灣公司網）(4) 七度國際駐村：V2 鹿特丹、巴黎西帖、Laboral、Asia Art Archive HK、FACT Liverpool、NTCH、18th Street Santa Monica
+- **避開 claim**：台新藝術獎入圍/得獎——研究 agent 專項搜尋無結果，不假設有紀錄；ARTICLE-INBOX 原 notes 提及「融聲創意」與「台新藝術獎脈絡」都查證後謹慎處理
+- **品質**：19 腳註（格式 ✅）/ 約 3,426 中文字 / 延伸閱讀 4 篇 / format-check 全過 / quality-scan ⚠️ 7（未人工審核 + 破折號 26 + 稀薄段落 ×1；中國用語 1 處在 verbatim 引語內無法更動）
+- **Research**: [reports/research/2026-04/紀柏豪.md](../../reports/research/2026-04/紀柏豪.md) — 25 WebSearch + 9 WebFetch，4 single_source / 4 unverified 項目明確標註
+- **Cross-link 回補**：林經堯.md + Hello-Nico.md 雙向延伸閱讀加紀柏豪 pointer
+- **⚠️ 待觀察者驗證**：(a) Goldsmiths 具體畢業年份（只能確認「MMus」身份）(b) 1989 出生年份（single_source）(c) 策展計畫《Convergence》《Rescaling the World》詳情
+
 ### 紙傘 + 神豬（外部 PR polish）— 2026-04-21 α 完成（idlccp1984 PR #579 + #580 merge-first-polish）
 
 - **Articles**: [knowledge/Culture/紙傘.md](../../knowledge/Culture/紙傘.md) + [knowledge/Culture/神豬.md](../../knowledge/Culture/神豬.md)

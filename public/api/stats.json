@@ -1,8 +1,8 @@
 {
-  "totalArticles": 2243,
+  "totalArticles": 2251,
   "totalCategories": 21,
   "estimatedContributors": 51,
-  "totalTags": 5204,
+  "totalTags": 5208,
   "categories": [
     {
       "name": "ko",
@@ -14,7 +14,7 @@
     },
     {
       "name": "en",
-      "count": 419
+      "count": 420
     },
     {
       "name": "History",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Culture",
-      "count": 47
+      "count": 49
     },
     {
       "name": "ja",
@@ -30,7 +30,7 @@
     },
     {
       "name": "People",
-      "count": 179
+      "count": 183
     },
     {
       "name": "Music",
@@ -46,7 +46,7 @@
     },
     {
       "name": "Art",
-      "count": 28
+      "count": 29
     },
     {
       "name": "Food",
@@ -95,11 +95,11 @@
       "count": 58
     },
     {
-      "name": "人物",
-      "count": 53
+      "name": "Economy",
+      "count": 52
     },
     {
-      "name": "Economy",
+      "name": "人物",
       "count": 52
     },
     {
@@ -172,13 +172,13 @@
     }
   ],
   "languageDistribution": {
-    "zh-TW": 2243,
+    "zh-TW": 2251,
     "en": 0
   },
-  "lastUpdated": "2026-04-20T07:04:26.619Z",
-  "stars": 943,
+  "lastUpdated": "2026-04-21T01:08:25.182Z",
+  "stars": 946,
   "forks": 138,
-  "zhPages": 1824,
-  "enPages": 419,
-  "totalPages": 2243
+  "zhPages": 1831,
+  "enPages": 420,
+  "totalPages": 2251
 }

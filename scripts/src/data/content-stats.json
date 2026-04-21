@@ -1,8 +1,8 @@
 {
   "categories": {
     "About": 19,
-    "Art": 104,
-    "Culture": 173,
+    "Art": 105,
+    "Culture": 175,
     "Economy": 186,
     "Food": 105,
     "Geography": 60,
@@ -11,7 +11,7 @@
     "Lifestyle": 60,
     "Music": 88,
     "Nature": 85,
-    "People": 525,
+    "People": 529,
     "Society": 164,
     "Technology": 119,
     "resources": 4,
@@ -152,8 +152,12 @@
     },
     {
       "date": "2026-04-20",
-      "count": 8
+      "count": 13
+    },
+    {
+      "date": "2026-04-21",
+      "count": 3
     }
   ],
-  "updated": "2026-04-20"
+  "updated": "2026-04-21"
 }

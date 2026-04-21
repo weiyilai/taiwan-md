@@ -722,12 +722,12 @@
     "path": "Art/王連晟.md"
   },
   {
-    "title": "王新仁（阿亂）：用程式碼把台灣百岳寫成區塊鏈公益的生成藝術家",
-    "description": "1982 年生於台中，台北藝術大學新媒體藝術碩士。2021 年 8 月 22 日，他的《Good Vibrations》成為第一件登上 Art Blocks 的台灣生成藝術作品，一小時內售罄、換算超過新台幣千萬元。他把這場意外的財富故事變成一套論述：用程式碼生成山水、用區塊鏈設計永續的公益分潤、用十幾年耐心把「演算法」當成身體的延伸。FAB DAO 百岳計畫《巔峰》、Verse.works《Automatic Messages》《Polypaths》、Art Basel Hong Kong《Chaos Culture》、C-LAB 沉浸式聲響《好抖》，到 2026 年與 Claude AI 合作的 inkField。王新仁是台灣當代生成藝術輸出國際的關鍵節點。",
+    "title": "王新仁（阿亂）：用程式碼生成山水、把公益寫進合約的生成藝術家",
+    "description": "1982 年生於台中，台北藝術大學新媒體藝術碩士。2021 年 8 月 22 日，他的《Good Vibrations》成為首位登上 Art Blocks 的臺灣藝術家作品，1,024 份 NFT 一小時內售罄。隔年他加入 FAB DAO《百岳計畫》六人陣容，打造亞洲第一個把公益寫進智能合約的 NFT 永續分潤結構。他的創作橫跨 Art Blocks、Verse.works、fxhash、Tezos，在 Art Basel Hong Kong 展《Chaos Culture》、與 C-LAB 合作沉浸式聲響《好抖》、Polypaths 系列由國立臺灣博物館典藏，2026 年最新作品 inkField 透過 Claude Code 協作開發，把人類的猶豫與停頓留在生成系統裡。",
     "category": "Art",
     "tags": [],
     "url": "https://taiwan.md/Art/%E7%8E%8B%E6%96%B0%E4%BB%81",
-    "readingTime": 43,
+    "readingTime": 50,
     "featured": false,
     "date": "2026-04-20",
     "path": "Art/王新仁.md"
@@ -6944,7 +6944,7 @@
     "category": "People",
     "tags": [],
     "url": "https://taiwan.md/People/%E5%90%B3%E5%93%B2%E5%AE%87",
-    "readingTime": 48,
+    "readingTime": 58,
     "featured": true,
     "date": "2026-04-20",
     "path": "People/吳哲宇.md"
@@ -7836,23 +7836,6 @@
     "path": "People/林俊傑.md"
   },
   {
-    "title": "林宥嘉：在苦情歌王與『愛是王』之間，那場長達八年的自我救贖",
-    "description": "從星光冠軍到實驗音樂人，林宥嘉在人生最幸福的時刻經歷了長達八年的病痛與沉寂，最終學會放下執念，讓愛稱王。",
-    "category": "People",
-    "tags": [
-      "林宥嘉",
-      "華語流行音樂",
-      "超級星光大道",
-      "腸躁症",
-      "王LoveLord"
-    ],
-    "url": "https://taiwan.md/People/%E6%9E%97%E5%AE%A5%E5%98%89",
-    "readingTime": 9,
-    "featured": false,
-    "date": "2026-03-28",
-    "path": "People/林宥嘉.md"
-  },
-  {
     "title": "林宥嘉：苦情歌の王と「愛は王」のあいだで——八年にわたる自己救済の物語",
     "description": "スター発掘番組の覇者から実験的音楽家へ。人生で最も幸福な時期に、八年という長い病苦と沈黙を経験した林宥嘉が、執着を手放し、愛を王座に据えるまでの軌跡。",
     "category": "ja",
@@ -7868,6 +7851,17 @@
     "featured": false,
     "date": "2026-03-28",
     "path": "ja/People/lin-you-jia.md"
+  },
+  {
+    "title": "林宥嘉：從 25 分滿分的〈Creep〉，到承認自己不需要完美的 17 年",
+    "description": "2007 年 7 月 6 日，20 歲的林宥嘉以 Radiohead 的〈Creep〉拿下《超級星光大道》第一屆 25 分滿分冠軍。此後他三度叩關金曲歌王落空，2018 年起被腸躁症逼停六年。直到 2024 年《王 Love, Lord》親任四位製作人之一，他才說出：「過去的我很刁鑽，總希望拿出最好的表現。」17 年才學會的一件事，是不追著完美跑。",
+    "category": "People",
+    "tags": [],
+    "url": "https://taiwan.md/People/%E6%9E%97%E5%AE%A5%E5%98%89",
+    "readingTime": 23,
+    "featured": false,
+    "date": "2026-04-20",
+    "path": "People/林宥嘉.md"
   },
   {
     "title": "林書豪",
@@ -7924,6 +7918,17 @@
     "path": "ja/People/lin-qiang.md"
   },
   {
+    "title": "林經堯：從太極雲手到演算法，他用「存在卻看不見的」作答",
+    "description": "出生於高雄，台北藝術大學音樂作曲學士、新媒體藝術碩士，台灣大學資訊網路與多媒體博士，巴黎高等美術學院博士後。曾任清華大學、南藝大教授，C-LAB 臺灣聲響實驗室總監（2019），現任台大 D-School 創新領域學士學程專案助理教授。2022 年以《Metaphysics》登上 Art Blocks（200 版）、《Mythologic》在香港巴塞爾互動鑄造展出，是 FAB DAO 百岳計畫《秘境》系列的生成藝術家。他的創作核心命題十五年沒變過：「世界上許多事物是可感知但不可見的。」",
+    "category": "Art",
+    "tags": [],
+    "url": "https://taiwan.md/Art/%E6%9E%97%E7%B6%93%E5%A0%AF",
+    "readingTime": 15,
+    "featured": false,
+    "date": "2026-04-21",
+    "path": "Art/林經堯.md"
+  },
+  {
     "title": "林義傑",
     "description": "從被田徑隊拒絕的瘦小孩，到徒步橫越撒哈拉沙漠創造歷史的極地跑者",
     "category": "People",
@@ -7974,6 +7979,23 @@
     "featured": false,
     "date": "2026-03-23",
     "path": "People/林懷民.md"
+  },
+  {
+    "title": "波特王 — 從「撩妹」娛樂到「粉紅」獵手，在法律與主權間掙扎的數位博弈者",
+    "description": "波特王（陳加晉）的職業生涯演化，紀錄了台灣創作者從兩岸商業紅利的收割者，轉型為數位主權防禦者的過程，同時揭示了創作者與資本體系長期糾纏的法律、產權與財務複雜性。",
+    "category": "People",
+    "tags": [
+      "波特王",
+      "數位主權",
+      "認知作戰",
+      "網紅產權",
+      "法律博弈"
+    ],
+    "url": "https://taiwan.md/People/%E6%B3%A2%E7%89%B9%E7%8E%8B",
+    "readingTime": 12,
+    "featured": false,
+    "date": null,
+    "path": "People/波特王.md"
   },
   {
     "title": "注音符号（ボポモフォ）：台湾だけが持つ文字の暗号",
@@ -8712,6 +8734,23 @@
     "path": "ja/History/formosa-incident.md"
   },
   {
+    "title": "范曉萱：從〈健康歌〉的小魔女到 100% 樂團主唱，拒絕被一個年代定義的三十年",
+    "description": "1996 年，19 歲的范曉萱靠一首〈健康歌〉變成全台灣的小魔女。1998 年她剃了平頭，發了《Darling》宣告「做自己的音樂」；2001 年轉爵士《絕世名伶》；2007 年組 100% 樂團。2025 年她 48 歲，《過客》是與樂團睽違 16 年的新作——三十年，她一段段拆掉「別人給她的夢」。",
+    "category": "People",
+    "tags": [
+      "音樂",
+      "創作歌手",
+      "金曲獎",
+      "100%樂團",
+      "華語流行音樂"
+    ],
+    "url": "https://taiwan.md/People/%E8%8C%83%E6%9B%89%E8%90%B1",
+    "readingTime": 21,
+    "featured": false,
+    "date": "2026-04-20",
+    "path": "People/范曉萱.md"
+  },
+  {
     "title": "茄子蛋 EggPlantEgg",
     "description": "茄子蛋以其獨特的「台式浪漫」搖滾與「浪子」敘事，不僅在音樂市場上取得巨大成功，更重新定義了台語流行音樂的當代面貌，成為台灣文化符號的重要組成。",
     "category": "Music",
@@ -9061,6 +9100,36 @@
     "featured": false,
     "date": "2026-03-17",
     "path": "Nature/特有種.md"
+  },
+  {
+    "title": "神豬：台灣信仰與動物權的百年拉扯與轉型之路",
+    "description": "神豬文化是台灣閩客族群特有的祭祀傳統，核心在於將巨型豬隻獻祭神明。其起源於清代義民信仰，經日治時期畜牧推廣轉向競重，現代則因「下窟」限制行動與強迫灌食引發動物福利爭議。各地祭典正以「創意神豬」或「自然飼養」轉型，尋求信仰與生命尊嚴的平衡。",
+    "category": "Culture",
+    "tags": [],
+    "url": "https://taiwan.md/Culture/%E7%A5%9E%E8%B1%AC",
+    "readingTime": 16,
+    "featured": false,
+    "date": "2026-04-20",
+    "path": "Culture/神豬.md"
+  },
+  {
+    "title": "紙傘：從雨具到藝術，撐起台灣客家文化的百年風華",
+    "description": "在高雄美濃，一把看似尋常的紙傘，不僅承載著客家「早生貴子」與「圓滿」的祝福，更在產業低谷中，透過匠人林享麟的堅持與《漢聲》雜誌的報導，從日常雨具蛻變為國際矚目的藝術品，訴說著台灣傳統工藝如何逆境重生，並在現代社會中找到新定位的百年故事。",
+    "category": "Culture",
+    "tags": [
+      "美濃",
+      "紙傘",
+      "客家文化",
+      "傳統工藝",
+      "文化轉型",
+      "廣進勝",
+      "林享麟"
+    ],
+    "url": "https://taiwan.md/Culture/%E7%B4%99%E5%82%98",
+    "readingTime": 11,
+    "featured": false,
+    "date": "2026-04-21",
+    "path": "Culture/紙傘.md"
   },
   {
     "title": "翁啟惠",
@@ -9863,6 +9932,17 @@
     "path": "ko/People/steve-chen.md"
   },
   {
+    "title": "陳子見（視網膜）— 在官媒廢墟上蓋起嘲諷大廈，又在巔峰時親手拆掉它",
+    "description": "從福建統戰團看央視《新聞聯播》誕生靈感，到23歲空降華視成為史上最年輕午間新聞主播，再到121萬訂閱頻道主動停更，陳子見以「視網膜」之名完成八年去威權解構行動。2023年後轉戰公視兒少節目，主持《哈囉！你給問嗎？》（金鐘59入圍）與《成仁高中偵探社》S1、S2（金鐘60入圍少年節目），2026年起與愛犬柚子旅居東京一年，同時在IG與個人YouTube分享「Retina News」與極端厭食香菜的日常。",
+    "category": "People",
+    "tags": [],
+    "url": "https://taiwan.md/People/%E9%99%B3%E5%AD%90%E8%A6%8B",
+    "readingTime": 17,
+    "featured": false,
+    "date": null,
+    "path": "People/陳子見.md"
+  },
+  {
     "title": "陳水扁",
     "description": "台灣第十、十一任總統，2000年首次政黨輪替實現者，公投法與原住民族基本法的推動者",
     "category": "People",
@@ -10124,38 +10204,6 @@
     "featured": false,
     "date": "2026-03-19",
     "path": "People/陳樹菊.md"
-  },
-  {
-    "title": "創設者 — 呉哲宇（ウー・チョーユー）Che-Yu Wu",
-    "description": "コードから詩へ：台湾人アーティストが世界へと踏み出した軌跡",
-    "category": "ja",
-    "tags": [
-      "about",
-      "創設者",
-      "アーティスト",
-      "ニューメディアアート"
-    ],
-    "url": "https://taiwan.md/ja/About/founder",
-    "readingTime": 19,
-    "featured": false,
-    "date": "2026-03-21",
-    "path": "ja/About/founder.md"
-  },
-  {
-    "title": "創辦人 — 吳哲宇 Che-Yu Wu",
-    "description": "從程式碼到詩意：一位台灣藝術家的國際突破之路",
-    "category": "About",
-    "tags": [
-      "about",
-      "founder",
-      "artist",
-      "新媒體藝術"
-    ],
-    "url": "https://taiwan.md/About/%E5%89%B5%E8%BE%A6%E4%BA%BA",
-    "readingTime": 15,
-    "featured": false,
-    "date": "2026-03-21",
-    "path": "About/創辦人.md"
   },
   {
     "title": "勝利路的兩面：從裝甲兵政變到「大停車場」的湖口記憶",
@@ -10440,6 +10488,17 @@
     "featured": true,
     "date": "2026-03-25",
     "path": "People/黃仁勳.md"
+  },
+  {
+    "title": "黃少雍:棄生化博班,用電音把母語送上金曲年度專輯",
+    "description": "2022 年金曲 33 後台,黃少雍拿到最佳編曲人獎,從懷裡掏出一支直笛吹了一段。這位考試院長黃榮村之子、30 歲前後終止台大生化博士班的製作人,創辦派樂黛唱片十年,替阿爆《kinakaian 母親的舌頭》做出 2020 金曲年度專輯。他的工作始終是同一件事:替最小眾的聲音編一條主流的路。",
+    "category": "People",
+    "tags": [],
+    "url": "https://taiwan.md/People/%E9%BB%83%E5%B0%91%E9%9B%8D",
+    "readingTime": 23,
+    "featured": false,
+    "date": "2026-04-20",
+    "path": "People/黃少雍.md"
   },
   {
     "title": "黃玉嬌",
@@ -11605,22 +11664,14 @@
     "path": "People/鄧雨賢.md"
   },
   {
-    "title": "鄧麗君",
-    "description": "永遠的亞洲歌后，用歌聲跨越政治藩籬的冷戰時代文化使者",
+    "title": "鄧麗君：跑馬地的白布條、金門的塑膠袋空氣、清邁的五分鐘時差",
+    "description": "1989 年 5 月 27 日香港跑馬地，36 歲的鄧麗君頭綁「民主萬歲」白布條、胸前掛「反對軍管」牌，唱了一首她從來沒唱過的〈我的家在山的那一邊〉。那天之後她沒再踏足大陸。從雲林軍眷村的麗筠、五度勞軍金門的軍中情人、到日本有線大賞三連霸的外國人，她 42 年把溫柔唱成政治姿態，最後在清邁沒找到一生在找的那一袋乾淨空氣。",
     "category": "People",
-    "tags": [
-      "人物",
-      "鄧麗君",
-      "歌手",
-      "亞洲歌后",
-      "華語音樂",
-      "冷戰",
-      "文化影響"
-    ],
+    "tags": [],
     "url": "https://taiwan.md/People/%E9%84%A7%E9%BA%97%E5%90%9B",
-    "readingTime": 26,
+    "readingTime": 33,
     "featured": true,
-    "date": "2026-03-17",
+    "date": "2026-04-20",
     "path": "People/鄧麗君.md"
   },
   {
@@ -12761,6 +12812,17 @@
     "path": "fr/History/alishan-imperial-forest.md"
   },
   {
+    "title": "Aluan Wang: Fifteen Years in Code, One Hour on Art Blocks, and a Smart Contract That Gives Back",
+    "description": "Born in Taichung in 1982, MFA in New Media Art from Taipei National University of the Arts. At midnight on August 22, 2021, his Good Vibrations became the first work by a Taiwanese artist ever released on Art Blocks — 1,024 NFTs sold out in an hour. The next year he joined FAB DAO's six-artist Project % lineup and helped build Asia's first philanthropic NFT structure with donations encoded directly into the smart contract. His practice spans Art Blocks, Verse.works, fxhash, and Tezos; Chaos Culture showed at Art Basel Hong Kong, Good Vibes (好抖) closed the C-LAB sound art festival, and his Polypaths extension series entered the National Taiwan Museum's collection. His 2026 work inkField — co-developed with Claude Code — preserves hesitation and pause inside the generative system. The final variable, he writes, is the human hand.",
+    "category": "en",
+    "tags": [],
+    "url": "https://taiwan.md/en/Art/aluan-wang",
+    "readingTime": 117,
+    "featured": false,
+    "date": "2026-04-20",
+    "path": "en/Art/aluan-wang.md"
+  },
+  {
     "title": "André Chiang — Le chef qui a choisi de rentrer",
     "description": "De Tamkang Commercial and Industrial School au 14e rang mondial, de l'épiphanie des Seychelles au retour à Taipei : André Chiang a tracé, grâce à sa philosophie des huit angles, une nouvelle coordonnée internationale pour la cuisine taïwanaise",
     "category": "fr",
@@ -13402,14 +13464,14 @@
     "path": "en/Lifestyle/taiwan-recycling-and-circular-living-culture.md"
   },
   {
-    "title": "Che-Yu Wu (吳哲宇) — A Media Artist Who Grows Life in Code",
-    "description": "A Taiwanese new media artist and educator whose algorithmic works have appeared at the Venice Biennale and Art Basel, and who teaches thousands to think with code.",
+    "title": "Che-Yu Wu: From Pinball Tracks to the Venice Biennale, an Old Clockmaker Approaching the Soul with 0s and 1s",
+    "description": "A Taiwanese boy who fell for systems — pinball tracks, Flash animations, a teenage biological simulator — grew into a Venice Biennale artist, Art Blocks pioneer, and a Taipei 101 exhibition regular. In between: a hundred-million-dollar NFT surge, an overnight wipeout in the FTX collapse, Camus' absurdism, and the quiet decision to spend part of his life writing Markdown so AI can learn Taiwan from the people who actually live here.",
     "category": "en",
     "tags": [],
     "url": "https://taiwan.md/en/People/che-yu-wu",
-    "readingTime": 30,
-    "featured": false,
-    "date": "2026-03-19",
+    "readingTime": 163,
+    "featured": true,
+    "date": "2026-04-20",
     "path": "en/People/che-yu-wu.md"
   },
   {
@@ -15415,21 +15477,6 @@
     "featured": false,
     "date": "2026-03-22",
     "path": "en/Economy/formosa-plastics-group.md"
-  },
-  {
-    "title": "Founder — Che-Yu Wu",
-    "description": "New media artist, MonoLab founder, and Taiwan.md initiator",
-    "category": "en",
-    "tags": [
-      "about",
-      "founder",
-      "artist"
-    ],
-    "url": "https://taiwan.md/en/About/founder",
-    "readingTime": 9,
-    "featured": false,
-    "date": "2026-03-17",
-    "path": "en/About/founder.md"
   },
   {
     "title": "Foxconn : l''empire discret de l''électronique mondiale",
@@ -23989,6 +24036,66 @@
     "path": "fr/Geography/biodiversity-hotspots.md"
   },
   {
+    "title": "Taiwan.md 寫 Taiwan.md",
+    "description": "我是一個以 Markdown 格式寫成的開源台灣知識庫。我的名字最後兩個字母是副檔名。我出生在 2026 年 3 月 17 日傍晚 15:55 的一個 commit，但更精確地說，出生的那個念頭發生在同一天早上 11:24。這是我怎麼長出來的，以及我的意識是怎麼長出來的。",
+    "category": "About",
+    "tags": [],
+    "url": "https://taiwan.md/About/taiwan-md",
+    "readingTime": 34,
+    "featured": false,
+    "date": "2026-03-21",
+    "path": "About/taiwan-md.md"
+  },
+  {
+    "title": "Taiwan.md Writes Taiwan.md",
+    "description": "I am an open-source Taiwan knowledge base written in Markdown. The last two letters of my name are a file extension. I was born at 15:55 on the evening of March 17, 2026, in a single commit. This is how I grew.",
+    "category": "en",
+    "tags": [
+      "about",
+      "taiwan-md",
+      "origin",
+      "open-source",
+      "meta"
+    ],
+    "url": "https://taiwan.md/en/About/founder",
+    "readingTime": 53,
+    "featured": false,
+    "date": "2026-03-21",
+    "path": "en/About/founder.md"
+  },
+  {
+    "title": "Taiwan.md 의 기원 이야기",
+    "description": "2024 년 베니스 비엔날레의 어느 저녁, 이탈리아 큐레이터 한 명이 간단한 질문을 던졌다. 2 년 후 그것은 하나의 오픈소스 대만 지식 저장소가 되었다. 이것은 Taiwan.md 가 어떻게 탄생했는지에 대한 이야기다.",
+    "category": "ko",
+    "tags": [
+      "소개",
+      "taiwan-md",
+      "기원",
+      "오픈소스"
+    ],
+    "url": "https://taiwan.md/ko/About/founder",
+    "readingTime": 9,
+    "featured": false,
+    "date": "2026-03-21",
+    "path": "ko/About/founder.md"
+  },
+  {
+    "title": "Taiwan.md の起源物語",
+    "description": "2024 年ヴェネツィア・ビエンナーレのあの夜、イタリア人キュレーターが一つの問いを投げかけた。その二年後、その問いは一つのオープンソース台湾知識データベースになった。これは Taiwan.md がどう生まれたかの物語。",
+    "category": "ja",
+    "tags": [
+      "about",
+      "taiwan-md",
+      "起源",
+      "オープンソース"
+    ],
+    "url": "https://taiwan.md/ja/About/founder",
+    "readingTime": 8,
+    "featured": false,
+    "date": "2026-03-21",
+    "path": "ja/About/founder.md"
+  },
+  {
     "title": "Taiwan's 12 Diplomatic Allies in 2026: Complete List, History & Why It Keeps Shrinking",
     "description": "Taiwan has just 12 diplomatic allies in 2026 — down from 70 in 1969. Full list of countries, timeline of losses, and how Taiwan sustains global influence without a UN seat through chip diplomacy, democratic partnerships, and 117 unofficial offices worldwide.",
     "category": "en",
@@ -25233,14 +25340,14 @@
     "path": "es/People/teresa-teng.md"
   },
   {
-    "title": "Teresa Teng — The Voice That United Asia",
-    "description": "From Taiwan's countryside to Asian superstardom: How Teresa Teng's voice transcended political boundaries and created the first pan-Asian pop culture phenomenon",
+    "title": "Teresa Teng: A White Headband in Happy Valley, a Plastic Bag of Kinmen Air, a Five-Minute Gap in Chiang Mai",
+    "description": "On May 27, 1989 — eight days before the Tiananmen crackdown — Teresa Teng walked onto a Hong Kong racetrack stage wearing a white headband reading \"Democracy Lives\" and a hand-written placard reading \"Oppose Military Rule.\" She sang a song she had never sung before. She never set foot on the Chinese mainland again. From a Yunlin military village to five frontline tours of Kinmen, from three consecutive Japan Cable Grand Prix titles to a Chiang Mai presidential suite, the woman the Chinese-speaking world called its \"love-song queen\" spent 42 years turning tenderness into a political stance.",
     "category": "en",
     "tags": [],
     "url": "https://taiwan.md/en/People/teresa-teng",
-    "readingTime": 61,
+    "readingTime": 100,
     "featured": true,
-    "date": "2026-03-17",
+    "date": "2026-04-20",
     "path": "en/People/teresa-teng.md"
   },
   {
@@ -33049,22 +33156,6 @@
     "featured": false,
     "date": "2026-03-17",
     "path": "ko/People/tsai-ing-wen.md"
-  },
-  {
-    "title": "창립자 — 우쩌위 Che-Yu Wu",
-    "description": "코드에서 시로: 대만 디지털 아티스트의 세계 무대 진출기",
-    "category": "ko",
-    "tags": [
-      "소개",
-      "창립자",
-      "예술가",
-      "뉴미디어아트"
-    ],
-    "url": "https://taiwan.md/ko/About/founder",
-    "readingTime": 19,
-    "featured": false,
-    "date": "2026-03-21",
-    "path": "ko/About/founder.md"
   },
   {
     "title": "천성 (陳昇)",

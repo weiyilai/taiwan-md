@@ -191,25 +191,7 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 觀察者批次指定
 - **Pre-research**: 尚未啟動
 
-### 紀柏豪（Pohao Chi）
-
-- **Type**: `NEW`
-- **Category**: Art
-- **Priority**: `P1`
-- **Status**: `pending`
-- **Requested**: 2026-04-20 by 觀察者 (session β)
-- **Notes**:
-  - 聲音藝術家／作曲家／策展人，倫敦大學金匠學院（Goldsmiths）聲音藝術碩士背景
-  - 跨界聲音裝置、生成音樂、Web Audio、演算法作曲、駐村計畫
-  - 涉及 C-LAB 聲響實驗室、國藝會、台新藝術獎脈絡（需查獎項紀錄）
-  - 可能關聯：失聲祭、超響、2020 聲音裝置個展（需驗證年份與作品）
-  - 與王連晟、王新仁、林經堯屬相近聲音藝術脈絡但風格更偏聲響實驗與學術研究
-  - 必驗事實：Goldsmiths 學歷年份、台新藝術獎入圍／得獎、駐村紀錄、個人工作室（「融聲創意」？）身份確認
-- **Reference**:
-  - 個人網站 <https://www.pohaochi.com/>（待驗證）
-  - 國藝會補助藝術家資料庫
-  - 台新藝術獎官網 <https://www.taishinart.org.tw/>
-- **Pre-research**: 尚未啟動
+<!-- 紀柏豪 已完成 2026-04-21 β → ARTICLE-DONE-LOG.md -->
 
 <!-- 林經堯 已完成 2026-04-21 α → ARTICLE-DONE-LOG.md -->
 
@@ -229,9 +211,9 @@ _（暫無主動顯示的條目。實際 in-progress 狀態在 §Pending 的 ent
 
 ### 📌 Peek（最新 3 條 summary）
 
+- **紀柏豪 — 2026-04-21 β** — [knowledge/Art/紀柏豪.md](../../knowledge/Art/紀柏豪.md) / 核心矛盾「經濟系出身，用演算法測量世界，卻始終尋找觀眾的自主聆聽」
 - **林經堯 — 2026-04-21 α** — [knowledge/Art/林經堯.md](../../knowledge/Art/林經堯.md) / 核心矛盾「台灣聲響長期缺席的診斷者，以行政者建設機構，同時是 NFT 市場秒殺的藍籌藝術家」
 - **黃少雍 — 2026-04-20 γ**（製作人 subgenre 第二例）— [knowledge/People/黃少雍.md](../../knowledge/People/黃少雍.md) / 核心矛盾「生化博士班逃兵，用電音把母語送上金曲年度專輯」
-- **林宥嘉 — 2026-04-20 ε**（EVOLVE）— [knowledge/People/林宥嘉.md](../../knowledge/People/林宥嘉.md) / 核心矛盾「20 歲贏了整個台灣，花 17 年才敢不做完美歌手」
 
 👉 更早完成的條目（柯智棠 / Hello Nico / 孫燕姿 / 張雨生 / VH / 魏如萱 / 鄭宜農 / 阿爆 / 陳建騏 / 楊丞琳 / 凹與山 等 11+ 篇）全部在 [ARTICLE-DONE-LOG.md](ARTICLE-DONE-LOG.md)。
 
