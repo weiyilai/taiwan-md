@@ -1,10 +1,10 @@
 ---
 /**
  * ArticleSidebar — Right sidebar with reading time, tags, share buttons.
- * Fully i18n-aware: date formatting, reading time label, share labels.
+ * Meta strings and dates follow `lang` via ui.ts + Intl.
  */
 import { useTranslatedPath, useTranslations } from '../i18n/utils';
-import type { Locale } from '../i18n/ui';
+import { languages, type Locale } from '../i18n/ui';
 
 type Contributor = string | { name: string; login: string };
 
@@ -46,8 +46,22 @@ const articleUrl = `https://taiwan.md${langPrefix}/${category}/${slug}`;
 const encodedUrl = encodeURIComponent(articleUrl);
 const encodedTitle = encodeURIComponent(title);
 
-// Locale-aware date formatting
-const dateLocale = lang === 'zh-TW' ? 'zh-TW' : 'en-US';
+function intlDateLocaleFor(locale: Locale): string {
+  switch (locale) {
+    case 'zh-TW':
+      return 'zh-TW';
+    case 'en':
+      return 'en-US';
+    case 'ja':
+      return 'ja';
+    case 'ko':
+      return 'ko';
+    default:
+      return 'en-US';
+  }
+}
+
+const dateLocale = intlDateLocaleFor(lang);
 const dateOpts: Intl.DateTimeFormatOptions = {
   year: 'numeric',
   month: 'long',
@@ -61,26 +75,39 @@ const displayModified = lastModified
   ? new Date(lastModified).toLocaleDateString(dateLocale, dateOpts)
   : null;
 
-// i18n labels
 const readingTimeLabel =
-  lang === 'zh-TW' ? `${readingTime} 分鐘閱讀` : `${readingTime} min read`;
+  readingTime != null
+    ? t('article.sidebar.readingTimeTemplate').replace(
+        '{n}',
+        String(readingTime),
+      )
+    : '';
 
-const updatedLabel = lang === 'zh-TW' ? '更新於' : 'Updated';
-const keywordsLabel = lang === 'zh-TW' ? '關鍵詞' : 'Tags';
+const updatedLabel = t('article.sidebar.updatedLabel');
+const keywordsLabel = t('article.sidebar.keywordsLabel');
 const shareLabel = t('article.share');
 const copyLinkLabel = t('article.copyLink');
 const copiedLabel = t('article.copied');
+const contributorsHeading = t('article.contributors');
 
 const revisionLabel =
-  lang === 'zh-TW' ? `修訂 ${revisionCount} 次` : `${revisionCount} Revisions`;
-const hashLabel =
-  lang === 'zh-TW'
-    ? `版本 ${commitHash.substring(0, 7)}`
-    : `Commit ${commitHash.substring(0, 7)}`;
+  revisionCount === 1
+    ? t('article.sidebar.revisionOne')
+    : t('article.sidebar.revisionMany').replace(
+        '{n}',
+        String(revisionCount),
+      );
 
-const shareXLabel = lang === 'zh-TW' ? '分享到 X' : 'Share on X';
-const shareFBLabel = lang === 'zh-TW' ? '分享到 Facebook' : 'Share on Facebook';
-const shareLINELabel = lang === 'zh-TW' ? '分享到 LINE' : 'Share on LINE';
+const shortHash = commitHash ? commitHash.substring(0, 7) : '';
+const hashLabel = commitHash
+  ? t('article.sidebar.commitTemplate').replace('{hash}', shortHash)
+  : '';
+
+const shareXLabel = t('article.sidebar.shareX');
+const shareFBLabel = t('article.sidebar.shareFacebook');
+const shareLINELabel = t('article.sidebar.shareLine');
+
+const contentLanguageName = languages[lang] ?? String(lang);
 
 const normalizedContributors = contributors.map((contributor) =>
   typeof contributor === 'string'
@@ -240,7 +267,7 @@ const normalizedContributors = contributors.map((contributor) =>
           d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"
         ></path>
       </svg>
-      <span>{lang === 'zh-TW' ? '繁體中文' : 'English'}</span>
+      <span>{contentLanguageName}</span>
     </div>
   </div>
 
@@ -336,7 +363,8 @@ const normalizedContributors = contributors.map((contributor) =>
         class="share-row copy-link-btn"
         type="button"
         aria-label={copyLinkLabel}
-        data-copied-text={copiedLabel}
+        data-copy-default={copyLinkLabel}
+        data-copy-copied={copiedLabel}
       >
         <svg
           width="15"
@@ -361,7 +389,7 @@ const normalizedContributors = contributors.map((contributor) =>
     normalizedContributors.length > 0 && (
       <div class="border-b border-[rgba(26,60,52,0.08)] py-5 last:border-b-0">
         <p class="mb-[0.85rem] font-['Inter',system-ui,sans-serif] text-[0.67rem] font-bold uppercase tracking-[0.2em] text-[#9aa89e]">
-          貢獻者
+          {contributorsHeading}
         </p>
         <div class="flex flex-wrap gap-[0.4rem]">
           {normalizedContributors.map((contributor) => (
@@ -385,14 +413,16 @@ const normalizedContributors = contributors.map((contributor) =>
     const btn = document.querySelector<HTMLButtonElement>('.copy-link-btn');
     if (!btn) return;
     const textEl = btn.querySelector<HTMLSpanElement>('.copy-link-text');
+    const defaultLabel = btn.dataset.copyDefault ?? 'Copy link';
+    const copiedLabel = btn.dataset.copyCopied ?? 'Copied!';
     btn.addEventListener('click', () => {
       navigator.clipboard
         .writeText(window.location.href)
         .then(() => {
-          if (textEl) textEl.textContent = '已複製';
+          if (textEl) textEl.textContent = copiedLabel;
           btn.style.color = '#006D77';
           setTimeout(() => {
-            if (textEl) textEl.textContent = '複製連結';
+            if (textEl) textEl.textContent = defaultLabel;
             btn.style.color = '';
           }, 2200);
         })
@@ -403,9 +433,9 @@ const normalizedContributors = contributors.map((contributor) =>
           ta.select();
           document.execCommand('copy');
           document.body.removeChild(ta);
-          if (textEl) textEl.textContent = '已複製';
+          if (textEl) textEl.textContent = copiedLabel;
           setTimeout(() => {
-            if (textEl) textEl.textContent = '複製連結';
+            if (textEl) textEl.textContent = defaultLabel;
           }, 2200);
         });
     });
