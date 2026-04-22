@@ -17,6 +17,12 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # 2026-04-22 β post-mortem: run 24782448133 `npx playwright install --with-deps`
+    # silent hang 6 小時才被 default 360 min timeout 殺掉。加 30 分上限避免重演。
+    timeout-minutes: 35
+    env:
+      # 防 apt-get 互動 prompt（Playwright --with-deps 會呼叫 sudo apt-get）
+      DEBIAN_FRONTEND: noninteractive
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -64,21 +70,26 @@ jobs:
             og-images-
 
       # ── Tier 1-1: Playwright chromium binary cache ─────────────────────
-      # `npx playwright install` 每次會下載 ~130 MB chromium（~90-120s）。
+      # `npx playwright install chromium` 每次會下載 ~130 MB（~90-120s）。
       # Cache 依 playwright 版本決定 key，版本沒變就直接用。
-      # Cache miss（例如 playwright 升版）→ 正常下載 + 更新 cache
+      #
+      # 2026-04-22 β post-mortem（run 24782448133 silent hang）:
+      # 原本 `--with-deps` 把 apt-get install 塞在同一步 → 偶發 silent hang。
+      # 拆成 install-deps（系統套件、always run、短）+ install chromium
+      # （binary、conditional），觀察 log 時能更精確定位問題。
       - name: Restore Playwright cache
         uses: actions/cache@v4
         id: playwright-cache
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
-      - name: Install Playwright Chromium
+      - name: Install Playwright system deps (always)
+        timeout-minutes: 5
+        run: npx --no-install playwright install-deps chromium
+      - name: Install Playwright Chromium binary
         if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: npx playwright install --with-deps chromium
-      - name: Install Playwright system deps (cache hit)
-        if: steps.playwright-cache.outputs.cache-hit == 'true'
-        run: npx playwright install-deps chromium
+        timeout-minutes: 5
+        run: npx --no-install playwright install chromium
       - name: Generate OG images (incremental via ?shot=1)
         run: |
           set -o pipefail
