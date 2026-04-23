@@ -166,6 +166,75 @@ raw_images: # 若留言含圖
 - **逐字抓取，禁止翻譯 / 摘要 / 改寫**（對應 EDITORIAL §挖引語制度 + MANIFESTO §第 5 條紀實原則）
 - 時間戳用留言頁面顯示的絕對時間，不用「3 小時前」這類相對時間
 
+### Step 1 同時收的指標（metrics snapshot）
+
+a11y tree 同一次讀取裡會帶出貼文自身的 `views / likes / reposts / comments / shares`（X 的 bookmarks 寫入 `shares` 欄）。**留言跟指標必須同一次 snapshot 抓完**，不要分兩次（時間不一致會導致雙寫失真）。
+
+Step 1 輸出除了留言 schema，還要留一份：
+
+```yaml
+post_metrics:
+  platform: threads # 或 x
+  url: '<canonical URL>'
+  snapshot_at: '2026-04-DD HH:MM +0800 (session)'
+  views: 0
+  likes: 0
+  reposts: 0
+  comments: 0
+  shares: 0
+```
+
+這份 snapshot **直接餵 Step 1.5 雙寫**。
+
+---
+
+## Step 1.5: 雙寫（DUAL WRITE — v1.3 新增，2026-04-23 δ 觀察者指正）
+
+> 每次 harvest（無論 D+0 / D+1 / D+7 / D+30）**都要雙寫兩處**，不是只寫 SPORE-LOG。
+
+### 為什麼
+
+SPORE-LOG.md 是**工廠層**（累積曲線、session 備註、診斷文字），讀者不會讀。讀者看到的是文章頁底「這篇文章去過的地方」section，**那個 section 讀的是文章 frontmatter `sporeLinks`**（由 `src/components/SporeFootprint.astro` 渲染）。
+
+只寫 SPORE-LOG = 工廠內部數據 up-to-date，但讀者看到的是過期（或不存在）的快照。必須雙寫，數字才跨層一致。
+
+### 寫什麼
+
+| 目標                                                                 | 結構                                                                                           | 內容                                                                          |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **SPORE-LOG.md 成效追蹤表**                                          | 自由文字 row（包含 D+0 / D+1 / D+7 切片、engagement rate、session 時間戳、跨筆比較、留言質性） | 累積（每次 harvest 追加到「最後 harvest」欄，不覆寫歷史切片）                 |
+| **src/content/{lang}/{category}/{slug}.md frontmatter `sporeLinks`** | 純 YAML 物件（platform / date / url / views / likes / reposts / comments / shares）            | **覆寫最新快照**（只保留當下數字，不累積 D+0/D+1/D+7 歷史，讀者不需要看切片） |
+
+### 源文章定位規則
+
+1. 從 SPORE-LOG row 看 slug（例 `認知作戰`）
+2. `src/content/zh-TW/{category}/{slug}.md`（category 從文章 frontmatter `category` 小寫得，例 Society → society）
+3. 若該文章沒 `sporeLinks` key → 新建 array
+4. 若有同 `platform` + 同 `date` row → **覆寫**（不新增）；若是不同日期（罕見，例如重發）→ 新增 row
+
+### Schema（canonical）
+
+```yaml
+sporeLinks:
+  - platform: 'threads' # 'threads' | 'x'
+    date: '2026-04-DD' # 發佈日（非 harvest 日）
+    url: '<乾淨化 canonical URL，已剝 query>'
+    views: 0
+    likes: 0
+    reposts: 0
+    comments: 0
+    shares: 0 # X 為 bookmarks 數、Threads 為 shares 數
+```
+
+canonical 由 `src/components/SporeFootprint.astro` interface `SporeLink` 定義。範例 article：`src/content/zh-TW/music/張懸與安溥.md`、`src/content/zh-TW/people/李洋.md`。
+
+### 鐵律
+
+- **每次 harvest 都要雙寫**。不是可選、不是 milestone 才寫
+- **數字要一致**：SPORE-LOG 的 D+N 切片裡最新那個 = 文章 frontmatter 當下快照
+- 英文 / 日文 / 韓文翻譯若存在，**每個翻譯檔案都要雙寫**（每個語言版本 frontmatter 各自獨立）
+- 初次發佈（Step 0 尚未 harvest）→ 數字全部 0，但 row 必須存在，等 D+0 首 harvest 回填（對應 SPORE-PIPELINE Step 4 §發文步驟 step 6）
+
 ---
 
 ## Step 2: CATEGORIZE 分類（8 類 dimension）

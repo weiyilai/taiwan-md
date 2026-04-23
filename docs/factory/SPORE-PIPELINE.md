@@ -799,7 +799,23 @@ Wrapper 自動：(1) 檢查 dev server（或 `--prod` 跳過）(2) Playwright he
      - ✅ 正確：`https://www.threads.com/@taiwandotmd/post/DXVpBlLk4oE`
      - ❌ 錯誤：`https://www.threads.com/@taiwandotmd/post/DXVpBlLk4oE?xmt=AQF09xBInx7lyaCFsCiuandW-1naGkF_o-Rf2bCxrjfMSLkFxr5XF8_0TlGC0qjLeoEVKwQi&slof=1`
      - 規則：切掉 `?` 以後全部。X 單則 URL 通常沒 query 直接用；Threads app share URL 幾乎一定帶 `?xmt=...`，統一剝掉。
-6. **Threads 和 X 同時發中文版**。英文版只在 X 發，且僅限國際話題（半導體、外交、學術）
+6. **寫回源文章 frontmatter `sporeLinks`**（v2.6 新增，2026-04-23 δ 觀察者指正後正式文件化）— SPORE-LOG 只是工廠紀錄，**讀者看到的「這篇文章去過的地方」是由文章 frontmatter `sporeLinks` 渲染**（`SporeFootprint.astro` 負責）。發佈後立即在 `src/content/{lang}/{category}/{slug}.md` frontmatter 加入：
+   ```yaml
+   sporeLinks:
+     - platform: 'threads' # 或 'x'
+       date: '2026-04-DD'
+       url: '<乾淨化 URL>'
+       views: 0 # 初次發佈用 0，等 Step 4.5 harvest 回填
+       likes: 0
+       reposts: 0
+       comments: 0
+       shares: 0 # X 為 bookmarks 數、Threads 為 shares 數
+   ```
+
+   - **schema canonical**：`src/components/SporeFootprint.astro` interface `SporeLink`（platform/date/url/views/likes/reposts/comments/shares）
+   - **範例已採用**：`src/content/zh-TW/music/張懸與安溥.md`、`src/content/zh-TW/people/李洋.md`
+   - **不寫入 = 讀者看不到這篇孢子的存在**。SPORE-LOG 只給工廠內部看，讀者讀的是文章。
+7. **Threads 和 X 同時發中文版**。英文版只在 X 發，且僅限國際話題（半導體、外交、學術）
 
 **AI 產孢子文案時**：輸出兩塊——`[孢子本體]`（Threads 主貼 / X 主文共用）+ `[Threads reply 連結]` + `[X 底部連結]`。不需要為 X 另寫壓縮版（v2.3 遺留的三段輸出已廢除）。
 
@@ -877,10 +893,13 @@ Wrapper 自動：(1) 檢查 dev server（或 `--prod` 跳過）(2) Playwright he
 ```
 Chrome MCP harvest
   → SPORE-LOG.md 成效追蹤表（7d 觸及 / 互動 / 最後 harvest timestamp）
+  → 源文章 frontmatter sporeLinks（每次 harvest 同步最新 views/likes/reposts/comments/shares）← v2.6 新增
   → dashboard-spores.json （refresh-data 觸發 generate-dashboard-spores.py）
   → Dashboard 成效排行 / GA 放大倍數 section
   → 新洞察 → LESSONS-INBOX
 ```
+
+**雙寫原則（v2.6）**：每次 harvest 都要**雙寫**——SPORE-LOG 是工廠層（累積曲線、D+0/D+1/D+7 切片、diagnostic 文字）；文章 frontmatter `sporeLinks` 是讀者層（當下快照、純數字）。工廠紀錄可以很長，讀者層永遠只保留最新快照。兩邊結構不同但數字必須一致。
 
 **canonical 時間戳格式**：`YYYY-MM-DD HH:MM +0800 (session)`，對應 MANIFESTO §時間是結構 per-record provenance。
 
