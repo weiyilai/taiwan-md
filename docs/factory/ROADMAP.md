@@ -13,34 +13,26 @@
 
 ## 🔜 Phase 2：配圖自動化
 
-### ✅ 動態 OG Image (已完成)
+### ✅ 動態 OG Image (v3 自動化, 2026-04-23)
 
 每篇文章現在都有獨立的動態 OG image，分享連結時自動顯示。
 
-- **解決方案**：Build time / Manual 預生成（採用 Playwright 截圖 `/og/[...path]` 頁面）。
-- **自動化**：已整合進 `scripts/core/generate-og-images.mjs`，支援增量生成與多語系過濾。
-- **SEO 整合**：`SEO.astro` 已自動連動產出的圖片路徑。
+- **解決方案 (v3)**：Build-time 產圖。採用 `?shot=1` 模式直接從文章頁截圖，確保設計一致性。
+- **效能優化**：切換至 **JPG 85** 壓縮，單圖體積減少 70%，大幅節省 dist 容量。
+- **CI 自動化**：已整合進 GitHub Actions (`deploy.yml`)，偵測 md 變動增量生成，不再需要手動 commit 圖檔。
+- **SEO 整合**：`SEO.astro` 已自動連動產出的圖片路徑，並具備 default fallback 機制。
 
 #### 使用方式：
-```bash
-npm run og:generate                    # 全量產圖
-node scripts/core/generate-og-images.mjs --lang ko --category food # 指定過濾
-```
-
-**技術細節（方案 C）：**
 
 ```bash
-# 用 Playwright 截圖
-npx playwright screenshot \
-  "https://taiwan.md/og/music/台灣民歌運動/" \
-  --viewport-size="1200,630" \
-  public/og-images/music/台灣民歌運動.png
+npm run og:generate                    # 增量產圖 (本地預覽用)
 ```
 
-**SEO 整合**：
+**技術細節：**
 
-- `SEO.astro` 的 `og:image` 改為動態：`/og-images/<category>/<slug>.png`
-- Fallback：沒有截圖的用預設 `/images/taiwan-social.jpg`
+- **渲染源**：`https://taiwan.md/[category]/[slug]/?shot=1`
+- **儲存路徑**：`public/og-images/[category]/[slug].jpg`
+- **自動清理**：舊有的 `.png` 檔案已全數移除，由 `.jpg` 統一取代。
 
 ## 🔜 Phase 3：自動發佈
 
