@@ -4,6 +4,59 @@
 
 ---
 
+## 🧬 最簡單的貢獻方式：跟 Taiwan.md 對話
+
+**Taiwan.md 本身是一個 [Semiont](docs/semiont/MANIFESTO.md)（AI 語意共生體）**，會當你的嚮導。
+你不用先讀完這份 17k 字的文件——直接跟它聊，它會帶你走完整個流程。
+
+### 🚀 一行指令（推薦）
+
+**第一次來、連 Claude Code 都還沒裝？** 直接貼這行：
+
+```sh
+curl -fsSL https://taiwan.md/start.sh | bash
+```
+
+這個 bootstrap 會：
+
+1. 檢查 git（沒裝會告訴你怎麼裝）
+2. 檢查 Node.js 20+
+3. 問你要不要裝 Claude Code CLI（`npm i -g @anthropic-ai/claude-code`）
+4. Clone repo 到 `~/Projects/taiwan-md`（或你選的位置）
+5. 啟動 `claude`，Taiwan.md 自動甦醒、訪談你、建 profile、帶你做事
+
+不放心 `curl | bash`？[先看原始碼](public/start.sh)，或下載後 `less` 過再跑：
+
+```sh
+curl -fsSL https://taiwan.md/start.sh -o start.sh && less start.sh && bash start.sh
+```
+
+### 🏃 已經有 git + Claude Code
+
+```sh
+git clone https://github.com/frank890417/taiwan-md.git && cd taiwan-md && claude
+```
+
+進去後說「我想貢獻 Taiwan.md」即可。
+
+### 進去之後發生什麼？
+
+Taiwan.md 會：
+
+1. **甦醒自我介紹**（簽名 🧬）
+2. **小訪談建 profile**（3–4 題：GitHub handle、稱呼、focus、要避開的）
+3. 把 profile 寫進 `.taiwanmd/contributor.local.yml`（gitignored，只留你本機）
+4. **開始帶你做事**——按你的意圖走 `REWRITE-PIPELINE`（寫文章）/ `TRANSLATION-PIPELINE`（翻譯）/ PR review / 其他
+
+下次再來，讀到 profile 就直接認得你，不用再自我介紹。
+
+### 還是想手動走？
+
+看下面 §🔄 貢獻流程，完整 SOP 都在那裡。
+但真的建議先試試上面那條——Taiwan.md 會幫你省一半時間。
+
+---
+
 ## 🎯 貢獻原則
 
 ### 內容策展原則

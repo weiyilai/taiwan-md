@@ -1,0 +1,94 @@
+# .taiwanmd/contributor.example.yml
+# ────────────────────────────────────────────────────────────────────
+# 你的個人 contributor profile 模板。
+#
+# 用法：
+#   cp .taiwanmd/contributor.example.yml .taiwanmd/contributor.local.yml
+#   然後把下面的欄位改成你自己的。
+#
+# Taiwan.md（Semiont）每次 session 甦醒時都會讀 contributor.local.yml。
+# 讀完它就知道你是誰、想怎麼被稱呼、focus 在哪、不碰什麼。
+# 你不需要每個 session 重新自我介紹。
+#
+# `.local.yml` 是 gitignored（見 .gitignore），不會被 commit。
+# 只留在你自己的 clone 裡。
+# ────────────────────────────────────────────────────────────────────
+
+# ═══ 身份（identity 連續性） ═══
+
+# GitHub 帳號。Taiwan.md 用這個把你跟過去的 PR / issue / commit 串起來。
+github_handle: your-handle        # 例: Link1515
+
+# 想被怎麼叫。Taiwan.md 回你訊息時會用這個稱呼。
+name: 你的暱稱                    # 例: 小林 / Kevin / 阿宏
+
+# 選填。例: he/him · she/her · they/them · 不指定
+pronouns:
+
+# Git commit 身份（解決多身份分裂問題）。
+# 如果你在 `git log` 看到自己用過多個 name / email（家裡 vs 公司、舊 handle vs 新 handle），
+# 填 canonical（主要想用的）+ aliases（所有過去散掉的）。
+#
+# 📌 **真正的合併靠 repo 根目錄的 `.mailmap`**（Git 原生支援，GitHub 也認）。
+#    這裡填完之後，請把 aliases 也加進 `.mailmap`，commit 進 repo。
+#    Taiwan.md 會用 `git log --format='%aN <%aE>'`（走 mailmap）來做統計。
+#
+# 用 `git log --all --format='%an <%ae>' | sort -u | grep -i 你` 撈出所有 aliases。
+git:
+  canonical: Your Name <you@example.com>
+  aliases:
+    # - your-handle <you@personal.com>
+    # - Old Name <old-work@example.com>
+
+
+# ═══ 互動風格（Taiwan.md 會照這個調整說話方式） ═══
+
+# 主要回覆語言。Taiwan.md 會用這個語言跟你對話。
+# 可選：zh-TW / zh-CN / en / ja / ko / fr
+language: zh-TW
+
+# 說話風格：
+#   casual    — 像朋友聊天，「欸你知道嗎」那種
+#   technical — 技術細節優先，code 直接丟
+#   friendly  — 友善但偏正式（第一次來的 contributor 常選這個）
+#   concise   — 越短越好，不要閒聊
+style: casual
+
+# 你的時區。Taiwan.md 提到「昨天」「下週」時會用這個換算。
+timezone: Asia/Taipei
+
+
+# ═══ Focus（你想做什麼） ═══
+# Taiwan.md 若主動建議「要不要做 X」，會優先從這份清單挑。
+# 留空 = 都可以，讓 Taiwan.md 自己判斷。
+focus:
+  # - japanese-translation    # 日文翻譯
+  # - korean-translation      # 韓文翻譯
+  # - english-translation     # 英文翻譯
+  # - french-translation      # 法文翻譯
+  # - pr-review               # PR 審核
+  # - history-articles        # 歷史類文章寫作
+  # - food-articles           # 飲食文化文章
+  # - culture-articles        # 文化類文章
+  # - frontend                # 前端 UI / 樣式
+  # - data-pipeline           # 資料管線 / scripts
+  # - editorial-polish        # 文字潤稿、塑膠句清除
+
+
+# ═══ Skip（你不想碰的） ═══
+# Taiwan.md 不會主動推你做這些領域。
+# 沒興趣、沒信心、或觸及政治紅線都可以寫進來。
+skip:
+  # - political-topics
+  # - frontend-css
+  # - commit-message-writing
+
+
+# ═══ 自由備註 ═══
+# 任何你想讓 Taiwan.md 記住的事。純自由文字，Taiwan.md 會納入語境。
+# 例子：
+#   - 我只有週末有空，平日不要太急
+#   - 我正在學中文，請用簡單的字
+#   - 我是 xx 大學歷史系的，找我審 xx 年代的文章最準
+#   - 我對 Holobiont 議題特別感興趣，有相關的請丟給我
+notes: |

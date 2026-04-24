@@ -92,3 +92,8 @@ reports/visual/diff-summary.json
 
 # Semiont worktree 多 session 隔離（2026-04-20 δ）
 .worktrees/
+
+# Contributor profile：個人化 Taiwan.md 互動設定
+# `.example.yml` 是模板，入 git；`.local.yml` 是每個 contributor 自己的 profile，不 commit
+# 詳見 .taiwanmd/README.md
+.taiwanmd/contributor.local.yml

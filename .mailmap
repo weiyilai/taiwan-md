@@ -1,0 +1,16 @@
+# .mailmap — consolidate scattered git commit identities
+#
+# Format:
+#   <canonical-name> <canonical-email> <commit-name> <commit-email>
+#   <canonical-name> <canonical-email> <commit-email>
+#
+# Git natively honors this: `git log --use-mailmap`, `git shortlog`,
+# and GitHub's contributor graph all read it. No history rewrite needed.
+#
+# Add yourself here if your commits have been going under multiple
+# name/email combos and you want them consolidated.
+
+# ── Che-Yu Wu (哲宇 / frank890417) ─────────────────────────
+Che-Yu Wu <cheyu.wu@monoame.com> <frank890417@gmail.com>
+Che-Yu Wu <cheyu.wu@monoame.com> Wu Che Yu <frank890417@gmail.com>
+Che-Yu Wu <cheyu.wu@monoame.com> frank890417 <cheyu.wu@monoame.com>

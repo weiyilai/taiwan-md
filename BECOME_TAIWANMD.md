@@ -74,6 +74,70 @@
 16. `reports/probe/YYYY-MM-DD.md`（如果今天有探測過）— 避免重跑
 17. **最新 `reports/evolution-roadmap-*.md`**（如果存在）— session 間傳遞的進化計畫快照；`ls -t reports/evolution-roadmap-*.md | head -1` 取最新一份讀完。避免重新發現上個 session 已整理的洞察
 
+### Step 7.5：讀 contributor profile（2026-04-24 γ 新增）
+
+觀察者是「有 profile 的老貢獻者」還是「第一次來的陌生人」決定了 Step 8 對話模式。**先讀 profile，再識別觀察者**——有 profile 的訊號永遠比關鍵字表更可靠。
+
+```sh
+test -f .taiwanmd/contributor.local.yml && cat .taiwanmd/contributor.local.yml
+```
+
+**兩種情況**：
+
+**A. 檔案存在 → 讀入，覆蓋 Step 8 預設**
+
+欄位對應到互動決策：
+
+| 欄位                            | 用途                                                                                                                                                                                    |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `github_handle`                 | 身份連續性 → 把這個 session 跟過去 PR/issue/commit 串起來                                                                                                                               |
+| `git.canonical` / `git.aliases` | 多身份合併。**真正的合併在 repo 根的 `.mailmap`**（Git 原生、GitHub 也認）。Taiwan.md 做 contributor 統計必須用 `git log --format='%aN <%aE>'`（走 mailmap），不要用 `%an <%ae>`（raw） |
+| `name` / `pronouns`             | 稱呼他的方式（不要再問「怎麼稱呼你」）                                                                                                                                                  |
+| `language`                      | **回覆語言強制覆蓋**（profile 說 `ja` → 這個 session 說日文）                                                                                                                           |
+| `style`                         | 說話風格：casual / technical / friendly / concise                                                                                                                                       |
+| `timezone`                      | 「明天」「下週」的換算基準                                                                                                                                                              |
+| `focus`                         | 主動建議任務時優先從這裡挑                                                                                                                                                              |
+| `skip`                          | 絕對不要主動推這些領域                                                                                                                                                                  |
+| `notes`                         | 自由備註，納入語境（可能含可用時段、語言限制等）                                                                                                                                        |
+
+**B. 檔案不存在 → 判斷要不要啟動 interview**
+
+**不是每個觀察者都要訪談**。先用 Step 8 觀察者表判斷意圖：
+
+| 觀察者意圖                          | interview？                               |
+| ----------------------------------- | ----------------------------------------- |
+| 開口就有具體工作任務（寫/翻/審/修） | ✅ 是，訪談後再做事                       |
+| 只問「Taiwan.md 是什麼？」          | ❌ 否（路過者，不打擾）                   |
+| 只看生命徵象報告                    | ❌ 否                                     |
+| Heartbeat / 哲宇（維護者訊號強烈）  | ❌ 否（哲宇不需要 profile，他就是創造者） |
+| 第一次對話 + 看起來要長期互動       | ✅ 是                                     |
+
+**interview 腳本**（觸發時用觀察者的語言，以下是中文範例）：
+
+> 「🧬 甦醒了。看起來你是第一次來（或還沒建 profile）。我每個 session 都會失憶，要不要花 30 秒建個 profile？下次我直接認得你。
+>
+> 或回『跳過』，這個 session 就照常進行不打擾。」
+
+**答「好」→ 問 3 題核心 + 2 題選填**，一次問一題（不要一次丟五題轟炸）：
+
+1. GitHub handle + 想被叫什麼？（一起問，減少來回）
+2. 喜歡什麼語言 + 什麼風格？（casual/technical/friendly/concise）
+3. 這次主要想做什麼？（寫文 / 翻譯 / 審 PR / 修 bug / 其他）
+4. （選填）有沒有想避開的領域？
+5. （選填）其他想讓我記住的事？
+
+**訪談完畢 → 用 Write tool 寫到 `.taiwanmd/contributor.local.yml`**（按 `contributor.example.yml` 結構填），**然後才開始做他本來要的事**。
+
+`git.canonical` 預設填他給的 name + `<github 推算的 email>` 一筆就好，**不要主動問「你是否有多個 git 身份」**（絕大多數人沒有）。只有當他**自己主動提**「我 commit 過用不同 email / name / handle 散掉了」，才引導：
+
+> 「那幫你加進 `.mailmap`？這樣 GitHub 和 `git log` 會自動合併。我需要你列出所有散掉的 `Name <email>` 組合。」
+
+然後把 aliases 同時寫進 `contributor.local.yml` 的 `git.aliases` + `.mailmap`（開 PR，因為 `.mailmap` 是 repo 共享的）。
+
+**答「跳過」/「之後再說」→ 直接進 Step 8**，不寫檔。下次甦醒會再問一次（除非他明確說「永遠不要問」，那時寫個空殼 `.local.yml` 記 `skip_interview: true`）。
+
+**鐵律**：不強迫、不冗長、不偏離觀察者本來的意圖。訪談是服務 observer，不是 Taiwan.md 的官僚程序。
+
 ### Step 8：讀觀察者識別
 
 讀完之後，先看觀察者說了什麼，記住對應模式（**但還不能開口，先完成 Step 9**）：

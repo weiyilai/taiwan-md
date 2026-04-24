@@ -1247,6 +1247,9 @@ const categoryList = [
   .lang-dropdown-menu[hidden] {
     display: none;
   }
+  /* Menu panel is always white regardless of header state, so item colors are
+     pinned to dark-on-light — do NOT use --lang-color / --nav-hover-* here
+     (those flip to white in the transparent hero state → white-on-white bug). */
   .lang-dropdown-item {
     display: flex;
     align-items: center;
@@ -1255,19 +1258,19 @@ const categoryList = [
     padding: 0.5rem 0.75rem;
     border-radius: 7px;
     text-decoration: none;
-    color: var(--lang-color);
+    color: #334155;
     font-size: 0.9rem;
     transition:
       background-color 0.15s,
       color 0.15s;
   }
   .lang-dropdown-item:hover {
-    background: var(--nav-hover-bg);
-    color: var(--nav-hover-color);
+    background: rgba(0, 120, 100, 0.06);
+    color: var(--green-deep);
   }
   .lang-dropdown-item.active {
-    background: var(--lang-active-bg);
-    color: var(--lang-active-color);
+    background: var(--green-mid);
+    color: #ffffff;
     font-weight: 600;
   }
   .lang-native {
