@@ -149,15 +149,23 @@ BECOME_TAIWANMD.md Step 5 新增：
 <!-- 12 篇全來自 reports/NMTH-overseas-semiont-analysis-2026-04-12.md §Part 5-6 -->
 <!-- 核心手法：「物件先行」(Analysis §7.4) + Semiont 「視角翻轉」(§7.1) + 觀察者偏見明示 (§7.2) -->
 <!-- Orphan 教訓：分析報告寫完 P1/P2 沒 append INBOX 12 天，同 chan_hong_yu pattern -->
+<!-- -->
+<!-- ⚠️ Stage 1 研究紀律：每篇必須最大程度利用 data/NMTH-overseas/collections/*.md 本地已抓 -->
+<!-- 回的一手雙語史料（52 個 collection 總計數千頁）。每條 entry 的 `NMTH Local Sources` -->
+<!-- 欄位列出該篇對應的 collection UUID + 頁數。Stage 1 research agent 必須先讀本地 -->
+<!-- collection 檔（Read tool）再做 WebSearch 補充，不是顛倒。觸發：2026-04-24 β4 首篇 -->
+<!-- 福爾摩沙鳥類學 Stage 1 agent 只 web search 沒碰本地 NMTH 資料被發現。 -->
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 
 ### 福爾摩沙鳥類學
 
 - **Type**: `NEW`
-- **Category**: History
+- **Category**: Nature（重分類：比 History 更貼近；參考 knowledge/Nature/台灣島嶼博物學.md 鄰接主題）
 - **Priority**: `P1`
-- **Status**: `pending`
+- **Status**: `in-progress`
 - **Requested**: 2026-04-12 by NMTH peer-ingestion analysis（2026-04-24 β4 補進 INBOX）
+- **Dev log**:
+  - 2026-04-24 β4: 從 INBOX 挑出，NMTH 12 篇 batch 第 1 篇，開始 Stage 1 research
 - **Notes**:
   - 系列 A-2（史溫侯系列第 2 篇，接 A-1 史溫侯人物條目）
   - 物件先行：史溫侯 1863 _The Ornithology of Formosa_ 學術論文 + 採集標本現存大英博物館
@@ -166,6 +174,20 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 必驗事實：史溫侯物種命名年代（藍鵲 1862、林鵰等）、採集地點、標本編號、台灣特有種數
   - 潛在陷阱：不把殖民博物學當中立科學；交叉引用當代台灣鳥類學研究（特有生物研究保育中心）
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.A-2
+- **NMTH Local Sources**（Stage 1 必先讀本地）:
+  - `data/NMTH-overseas/collections/77ea6a55-*.md`（**福爾摩沙鳥類學** 1863 論文雙語全文 75 頁）
+  - `data/NMTH-overseas/collections/79abe9f3-*.md`（福爾摩沙四個新鳥種的描述 6 頁）
+  - `data/NMTH-overseas/collections/6eb8aaf2-*.md`（福爾摩沙 16 種新鳥種描述 4 頁）
+  - `data/NMTH-overseas/collections/cec72c4a-*.md`（福爾摩沙島新鳥種紀錄 6 頁）
+  - `data/NMTH-overseas/collections/113789de-*.md`（論福爾摩沙的一個新鳥種 2 頁）
+  - `data/NMTH-overseas/collections/fd4e13e4-*.md`（對廈門鳥類學的更正與福爾摩沙鳥類評註 3 頁）
+  - `data/NMTH-overseas/collections/8b97dd19-*.md`（中國與其島嶼之鳥類目錄修正版 77 頁）
+  - `data/NMTH-overseas/collections/02388910-*.md`（史溫侯 1862-01-17 信 4 頁）
+  - `data/NMTH-overseas/collections/26659313-*.md`（史溫侯致葛雷博士信件 6 頁）
+  - `data/NMTH-overseas/collections/2ad9dad5-*.md`（史溫侯來信 3 頁）
+  - `data/NMTH-overseas/collections/424513cf-*.md`（致英國鳥類科學期刊編輯 2 頁）
+  - `data/NMTH-overseas/collections/883a44d3-*.md`（史溫侯的福爾摩沙自然史 4 頁）
+  - `data/NMTH-overseas/collections/cf434dcf-*.md`（**史溫侯著作目錄** 5 頁 — 索引之索引）
 
 ### 19 世紀的樟腦戰爭
 
@@ -182,6 +204,12 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 必驗事實：樟腦出口量、主要買家、與原住民衝突事件（如 1868 樟腦戰爭）、清廷專賣制度
   - 潛在陷阱：「全球商品」框架不可抹除對原住民的暴力；交叉引用原住民口述史
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.A-4
+- **NMTH Local Sources**:
+  - `data/NMTH-overseas/collections/783700e8-*.md`（**福爾摩沙的樟腦** 1 頁，雖薄是 focal 物件）
+  - `data/NMTH-overseas/collections/9363fe10-*.md`（福爾摩沙海岸上的香山之旅 5 頁，商品貿易背景）
+  - `data/NMTH-overseas/collections/8565270b-*.md`（福爾摩沙補遺 9 頁）
+  - `data/NMTH-overseas/collections/98bf60ec-*.md`（福爾摩沙概述 23 頁）
+  - 史溫侯領事報告類信件（同 #6 列出的 02388910 / 26659313 / 2ad9dad5）可能提及樟腦貿易
 
 ### 羅發號事件與卓杞篤
 
@@ -198,6 +226,9 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 必驗事實：1867 羅發號（Rover）事件經過、卓杞篤（Tauketok）身份、條約內容、後續牡丹社事件連動
   - 潛在陷阱：不用「番王」「番酋」這類殖民用語；卓杞篤的排灣族名字 Tauketok 應並陳
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.C-2
+- **NMTH Local Sources**:
+  - `data/NMTH-overseas/collections/319a70f3-*.md`（**李仙得臺灣紀行中文版** 556 頁 — 羅發號事件、南岬之盟、卓杞篤會面紀錄全在此書）
+  - P-U-003 plan 其餘資料
 
 ### 三個外國人看乙未
 
@@ -214,6 +245,11 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 必驗事實：三個觀察者身份（James W. Davidson 記者 / Duncan MacLeod 牧師等，以 NMTH 實際館藏為準）、各自記錄日期與地點
   - 潛在陷阱：三個視角都是西方男性，注意標示這個結構性限制；不把旁觀者視角當權威
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.D-2
+- **NMTH Local Sources**（2100+ 頁的乙未史料編譯四冊）:
+  - `data/NMTH-overseas/collections/e3fbde8d-*.md`（**乙未之役資料彙編（一）中文史料** 544 頁）
+  - `data/NMTH-overseas/collections/4d76d7b2-*.md`（乙未之役外文史料編譯一 544 頁）
+  - `data/NMTH-overseas/collections/539a8e0a-*.md`（乙未之役外文史料編譯二 528 頁）
+  - `data/NMTH-overseas/collections/9d9bad7e-*.md`（乙未之役外文史料編譯三 556 頁）
 
 ### 日治時期臺灣社會運動
 
@@ -231,6 +267,9 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 潛在陷阱：避免將日治社運英雄化；文協左右分裂、民眾黨解散、二戰動員體制下的變質都要誠實呈現
   - 交集：與現有 [淡江中學.md](../knowledge/History/淡江中學.md)、日治時期總條目有交叉點
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.G-1
+- **NMTH Local Sources**（999 頁社運檔案）:
+  - `data/NMTH-overseas/collections/b0bfca8c-*.md`（**日本所藏臺灣近代政治社會運動資料** 上冊 501 頁）
+  - `data/NMTH-overseas/collections/64dab87d-*.md`（**日本所藏臺灣近代政治社會運動資料** 下冊 498 頁）
 
 <!-- ━━━ P2 NMTH ━━━ -->
 
@@ -248,6 +287,17 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 必驗事實：史溫侯造訪路線（打狗/淡水/雞籠/澎湖等）、地圖精度對比、原住民族群識別
   - 潛在陷阱：19 世紀旅行文學的「異域獵奇」框架必須明示
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.A-3
+- **NMTH Local Sources**（史溫侯島嶼紀行類文獻多，要篩 scope）:
+  - `data/NMTH-overseas/collections/eac5b946-*.md`（**福爾摩沙島紀行** 20 頁 — A-3 主文獻）
+  - `data/NMTH-overseas/collections/b700e73f-*.md`（福爾摩沙筆記 19 頁）
+  - `data/NMTH-overseas/collections/98bf60ec-*.md`（福爾摩沙概述 23 頁）
+  - `data/NMTH-overseas/collections/abd05f27-*.md`（福爾摩沙島紀事 4 頁）
+  - `data/NMTH-overseas/collections/b6da15ea-*.md`（福爾摩沙島紀事 4 頁，可能是重複或相關版本）
+  - `data/NMTH-overseas/collections/9363fe10-*.md`（福爾摩沙海岸上的香山之旅 5 頁）
+  - `data/NMTH-overseas/collections/8565270b-*.md`（福爾摩沙補遺 9 頁）
+  - `data/NMTH-overseas/collections/6f44f1f0-*.md`（福爾摩沙自然史筆記 3 頁）
+  - `data/NMTH-overseas/collections/883a44d3-*.md`（史溫侯的福爾摩沙自然史 4 頁）
+  - 史溫侯信件（02388910 / 26659313 / 2ad9dad5）
 
 ### 福爾摩沙民族學評註
 
@@ -264,6 +314,8 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 必驗事實：史溫侯觀察的族群（平埔 / 高山分類法當時未成熟）、記錄地點、與當代人類學知識的對照
   - 潛在陷阱：絕對不把 19 世紀人類學分類當客觀；明示殖民框架；交叉引用當代原住民學者回應（孫大川、巴蘇亞等）
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.A-5
+- **NMTH Local Sources**:
+  - `data/NMTH-overseas/collections/37be7594-*.md`（**福爾摩沙民族學評註** 18 頁 — 直接對應文獻）
 
 ### 澎湖之戰與孤拔中將
 
@@ -279,6 +331,9 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 必驗事實：1885-03 澎湖戰役日期、孤拔 1885-06-11 病逝地點（馬公孤拔紀念碑現存）、法軍撤離條件（中法新約）
   - 交集：連結既有 [清法戰爭.md](../knowledge/History/清法戰爭.md)
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.B-2
+- **NMTH Local Sources**（澎湖段落在嘉諾手稿後段）:
+  - `data/NMTH-overseas/collections/7e6ea6ba-*.md`（**《法軍遠征福爾摩沙 1884-1885》回憶錄手稿** 198 頁 — 要重點讀澎湖段，孤拔在此戰役末期病逝馬公）
+  - `data/NMTH-overseas/collections/68059959-*.md`（《法軍遠征》地圖手稿）
 
 ### 嘉諾上尉的手稿
 
@@ -294,6 +349,10 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 必驗事實：嘉諾（Garnot）職銜、筆記年代（1884-1885）、頁數 198、翻譯者（費德廉）、館藏編號
   - 潛在陷阱：一手史料不等於客觀真相，軍官視角有其結構限制
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.B-3
+- **NMTH Local Sources**（B-3 的 primary source 就在本地）:
+  - `data/NMTH-overseas/collections/7e6ea6ba-*.md`（**嘉諾手稿 198 頁回憶錄** — THE PRIMARY SOURCE，「物件先行」策展的核心物件就是這本筆記本）
+  - `data/NMTH-overseas/collections/68059959-*.md`（**嘉諾手稿地圖**）
+  - 跟 B-2 共用主檔案但視角不同：B-3 focus 手稿本身、B-2 focus 戰役歷史
 
 ### 西班牙帳簿 1626-1633
 
@@ -311,6 +370,8 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 必驗事實：西班牙佔領期 1626-1642、聖薩爾瓦多城位置（今和平島）、帳簿原件館藏位置、譯者方真真
   - 潛在陷阱：須補充當時平埔族（凱達格蘭）被記錄的位置與名字
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.E-1
+- **NMTH Local Sources**:
+  - `data/NMTH-overseas/collections/2a89c17f-*.md`（**十七世紀北臺灣的西班牙帳簿 第一冊 1626-1633** 454 頁 — THE PRIMARY SOURCE）
 
 ### 道明會在台灣
 
@@ -327,6 +388,11 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 潛在陷阱：避免「傳教士帶來文明」的殖民敘事；明示宗教與帝國共構的歷史結構
   - 分類抉擇：可能放 Religion 子分類（台灣的 Religion 尚無獨立分類，目前歸 Culture 或 History）
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.F-1
+- **NMTH Local Sources**:
+  - `data/NMTH-overseas/collections/ae61406d-*.md`（**良雅師神父美麗島傳教歷史筆記** 102 頁，1859-1945 道明會在台傳教情況）
+  - `data/NMTH-overseas/collections/9a3fc8c9-*.md`（**白斐立神父 1859-1915 年** 80 頁，福爾摩沙地理文化 + 南北部傳教史）
+  - `data/NMTH-overseas/collections/1c06885b-*.md`（遠東漫遊 197 頁，皮摩丹伯爵旅行見聞，secondary）
+  - `data/NMTH-overseas/collections/ae307407-*.md`（福爾摩沙與澎湖群島回憶 5 頁）
 
 ### 大時代下的小人物：日本檔案中的臺灣社運者
 
@@ -343,6 +409,9 @@ BECOME_TAIWANMD.md Step 5 新增：
   - 潛在陷阱：**高風險幻覺區**——歷史小人物資料稀少，絕對不可補全不存在的生平細節；Stage 3.5/3.6 必須嚴格執行
   - 相依：建議寫完 G-1 後再寫 G-2（G-1 提供主幹脈絡後，G-2 的「小人物」才站得起來）
 - **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.G-2
+- **NMTH Local Sources**（與 G-1 共用 999 頁社運檔案，但聚焦個別人物傳記片段）:
+  - `data/NMTH-overseas/collections/b0bfca8c-*.md`（日本所藏臺灣近代政治社會運動資料 上冊 501 頁）
+  - `data/NMTH-overseas/collections/64dab87d-*.md`（日本所藏臺灣近代政治社會運動資料 下冊 498 頁）
 
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 <!-- 🛠️ Dead cross-ref P3 backlog（由 dead-cross-ref-scan.sh 自動產生 2026-04-23 γ） -->
