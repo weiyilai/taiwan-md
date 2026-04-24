@@ -14,8 +14,83 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 
-const { zhLink, enLink, jaLink, koLink, hasZh, hasEn, hasJa, hasKo } =
-  await getLangSwitchPath(currentPath);
+const {
+  zhLink,
+  enLink,
+  jaLink,
+  koLink,
+  frLink,
+  hasZh,
+  hasEn,
+  hasJa,
+  hasKo,
+  hasFr,
+} = await getLangSwitchPath(currentPath);
+
+// 2026-04-24 β3: Dynamic language list for dropdown UI.
+// As more languages are added (es coming next), iterate this array instead of
+// hardcoding more <a> tags. Currently: 中文 / English / 日本語 / 한국어 / Français.
+// nativeName uses each language's own self-name (so non-fluent visitors can
+// recognize their own language regardless of what locale they landed on).
+type LangOption = {
+  code: 'zh-TW' | 'en' | 'ja' | 'ko' | 'fr';
+  nativeName: string;
+  short: string;
+  link: string;
+  has: boolean;
+  isActive: boolean;
+};
+const isLangActive = (prefix: string) => currentPath.startsWith(`/${prefix}`);
+const isZhActive =
+  !isLangActive('en') &&
+  !isLangActive('ja') &&
+  !isLangActive('ko') &&
+  !isLangActive('fr');
+const langOptions: LangOption[] = [
+  {
+    code: 'zh-TW',
+    nativeName: '中文',
+    short: '中',
+    link: zhLink,
+    has: hasZh,
+    isActive: isZhActive,
+  },
+  {
+    code: 'en',
+    nativeName: 'English',
+    short: 'EN',
+    link: enLink,
+    has: hasEn,
+    isActive: isLangActive('en'),
+  },
+  {
+    code: 'ja',
+    nativeName: '日本語',
+    short: 'JA',
+    link: jaLink,
+    has: hasJa,
+    isActive: isLangActive('ja'),
+  },
+  {
+    code: 'ko',
+    nativeName: '한국어',
+    short: 'KO',
+    link: koLink,
+    has: hasKo,
+    isActive: isLangActive('ko'),
+  },
+  {
+    code: 'fr',
+    nativeName: 'Français',
+    short: 'FR',
+    link: frLink,
+    has: hasFr,
+    isActive: isLangActive('fr'),
+  },
+];
+const visibleLangOptions = langOptions.filter((l) => l.has);
+const currentLangOption =
+  visibleLangOptions.find((l) => l.isActive) || visibleLangOptions[0];
 
 const normalizedPath = currentPath.replace(/\/$/, '') || '/';
 const isHome = normalizedPath === '/' || normalizedPath === '/en';
@@ -454,73 +529,45 @@ const categoryList = [
           >☰</button
         >
 
-        <!-- Lang toggle -->
+        <!-- Lang dropdown (2026-04-24 β3: replaces 4-button row to scale to 5+ langs)
+             native names + globe icon let any reader recognize their language. -->
         <div
-          class="lang-toggle"
+          class="lang-dropdown"
           role="group"
           aria-label={t('nav.aria-language-selection')}
         >
-          {
-            hasZh && (
-              <a
-                href={zhLink}
-                class:list={[
-                  'lang-btn',
-                  {
-                    active:
-                      !currentPath.startsWith('/en') &&
-                      !currentPath.startsWith('/ja') &&
-                      !currentPath.startsWith('/ko'),
-                  },
-                ]}
-                aria-label={t('nav.aria-switch-to-zh-tw')}
-              >
-                中文
-              </a>
-            )
-          }
-          {
-            hasEn && (
-              <a
-                href={enLink}
-                class:list={[
-                  'lang-btn',
-                  { active: currentPath.startsWith('/en') },
-                ]}
-                aria-label={t('nav.aria-switch-to-en')}
-              >
-                EN
-              </a>
-            )
-          }
-          {
-            hasJa && (
-              <a
-                href={jaLink}
-                class:list={[
-                  'lang-btn',
-                  { active: currentPath.startsWith('/ja') },
-                ]}
-                aria-label="日本語に切替"
-              >
-                JA
-              </a>
-            )
-          }
-          {
-            hasKo && (
-              <a
-                href={koLink}
-                class:list={[
-                  'lang-btn',
-                  { active: currentPath.startsWith('/ko') },
-                ]}
-                aria-label="한국어로 전환"
-              >
-                KO
-              </a>
-            )
-          }
+          <button
+            class="lang-dropdown-toggle"
+            type="button"
+            aria-haspopup="menu"
+            aria-expanded="false"
+            aria-label={t('nav.aria-language-selection')}
+            data-lang-toggle
+          >
+            <span class="lang-globe" aria-hidden="true">🌐</span>
+            <span class="lang-current">{currentLangOption?.short ?? '中'}</span>
+            <span class="lang-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="lang-dropdown-menu" role="menu" data-lang-menu hidden>
+            {
+              visibleLangOptions.map((opt) => (
+                <a
+                  href={opt.link}
+                  class:list={['lang-dropdown-item', { active: opt.isActive }]}
+                  role="menuitem"
+                  aria-current={opt.isActive ? 'page' : undefined}
+                  lang={opt.code}
+                >
+                  <span class="lang-native">{opt.nativeName}</span>
+                  {opt.isActive && (
+                    <span class="lang-check" aria-hidden="true">
+                      ✓
+                    </span>
+                  )}
+                </a>
+              ))
+            }
+          </div>
         </div>
       </div>
 
@@ -614,65 +661,16 @@ const categoryList = [
           >
           <div class="mobile-lang-buttons">
             {
-              hasZh && (
+              visibleLangOptions.map((opt) => (
                 <a
-                  href={zhLink}
-                  class:list={[
-                    'mobile-lang-btn',
-                    {
-                      active:
-                        !currentPath.startsWith('/en') &&
-                        !currentPath.startsWith('/ja') &&
-                        !currentPath.startsWith('/ko'),
-                    },
-                  ]}
+                  href={opt.link}
+                  class:list={['mobile-lang-btn', { active: opt.isActive }]}
+                  lang={opt.code}
                   onclick="document.querySelector('.nav-mobile').classList.remove('open')"
                 >
-                  中文
+                  {opt.nativeName}
                 </a>
-              )
-            }
-            {
-              hasEn && (
-                <a
-                  href={enLink}
-                  class:list={[
-                    'mobile-lang-btn',
-                    { active: currentPath.startsWith('/en') },
-                  ]}
-                  onclick="document.querySelector('.nav-mobile').classList.remove('open')"
-                >
-                  English
-                </a>
-              )
-            }
-            {
-              hasJa && (
-                <a
-                  href={jaLink}
-                  class:list={[
-                    'mobile-lang-btn',
-                    { active: currentPath.startsWith('/ja') },
-                  ]}
-                  onclick="document.querySelector('.nav-mobile').classList.remove('open')"
-                >
-                  日本語
-                </a>
-              )
-            }
-            {
-              hasKo && (
-                <a
-                  href={koLink}
-                  class:list={[
-                    'mobile-lang-btn',
-                    { active: currentPath.startsWith('/ko') },
-                  ]}
-                  onclick="document.querySelector('.nav-mobile').classList.remove('open')"
-                >
-                  한국어
-                </a>
-              )
+              ))
             }
           </div>
         </div>
@@ -1187,6 +1185,99 @@ const categoryList = [
     box-shadow: 0 2px 8px rgba(79, 209, 176, 0.3);
   }
 
+  /* 2026-04-24 β3: Lang dropdown — replaces button row to scale to 5+ langs.
+     Native names + globe icon let any reader recognize their language. */
+  .lang-dropdown {
+    position: relative;
+    flex-shrink: 0;
+  }
+  .lang-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 10px;
+    background: var(--lang-bg);
+    border: 1px solid var(--lang-border);
+    color: var(--lang-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+      background-color 0.25s,
+      border-color 0.25s,
+      color 0.25s;
+  }
+  .lang-dropdown-toggle:hover,
+  .lang-dropdown-toggle[aria-expanded='true'] {
+    background: var(--nav-hover-bg);
+    color: var(--nav-hover-color);
+  }
+  .lang-globe {
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+  .lang-current {
+    min-width: 1.5rem;
+    text-align: center;
+  }
+  .lang-caret {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    transition: transform 0.2s;
+  }
+  .lang-dropdown-toggle[aria-expanded='true'] .lang-caret {
+    transform: rotate(180deg);
+  }
+  .lang-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 11rem;
+    background: var(--card-bg, #fff);
+    border: 1px solid var(--lang-border);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    padding: 0.35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    z-index: 100;
+  }
+  .lang-dropdown-menu[hidden] {
+    display: none;
+  }
+  .lang-dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 7px;
+    text-decoration: none;
+    color: var(--lang-color);
+    font-size: 0.9rem;
+    transition:
+      background-color 0.15s,
+      color 0.15s;
+  }
+  .lang-dropdown-item:hover {
+    background: var(--nav-hover-bg);
+    color: var(--nav-hover-color);
+  }
+  .lang-dropdown-item.active {
+    background: var(--lang-active-bg);
+    color: var(--lang-active-color);
+    font-weight: 600;
+  }
+  .lang-native {
+    flex: 1 1 auto;
+  }
+  .lang-check {
+    font-size: 0.85rem;
+    opacity: 0.9;
+  }
+
   /* Hamburger */
   .menu-toggle {
     display: none;
@@ -1604,6 +1695,51 @@ const categoryList = [
       if (subLinks?.classList.contains('mobile-sub-links')) {
         subLinks.classList.toggle('open');
       }
+    });
+  });
+
+  // 2026-04-24 β3: Lang dropdown toggle (desktop dropdown UI)
+  document.querySelectorAll('[data-lang-toggle]').forEach((toggle) => {
+    const wrapper = toggle.closest('.lang-dropdown');
+    const menu = wrapper?.querySelector('[data-lang-menu]');
+    if (!menu) return;
+
+    const close = () => {
+      menu.setAttribute('hidden', '');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+    const open = () => {
+      menu.removeAttribute('hidden');
+      toggle.setAttribute('aria-expanded', 'true');
+    };
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      // Close other dropdowns first
+      document
+        .querySelectorAll('[data-lang-toggle][aria-expanded="true"]')
+        .forEach((other) => {
+          if (other !== toggle) {
+            other.setAttribute('aria-expanded', 'false');
+            other
+              .closest('.lang-dropdown')
+              ?.querySelector('[data-lang-menu]')
+              ?.setAttribute('hidden', '');
+          }
+        });
+      if (isOpen) close();
+      else open();
+    });
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!wrapper?.contains(e.target as Node)) close();
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') close();
     });
   });
 </script>

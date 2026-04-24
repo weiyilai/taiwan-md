@@ -53,8 +53,9 @@ export const LANGUAGES = [
     code: 'fr',
     displayName: 'Français',
     hreflang: 'fr',
-    enabled: false,
-    notes: 'Pending: 18 ceruleanstring PRs ready to merge after activation',
+    enabled: true,
+    notes:
+      '2026-04-24 β3 enabled. 484 articles from ceruleanstring + community. UI fallback chain: fr → en → zh-TW until fr i18n keys are translated.',
   },
 ];
 

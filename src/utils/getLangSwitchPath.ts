@@ -59,6 +59,10 @@ export async function getLangSwitchPath(currentPath: string) {
   let enLink = '/en';
   let jaLink = '/ja';
   let koLink = '/ko';
+  // 2026-04-24 β3: fr added with basePath fallback only (UI strings fall
+  // back to en via FALLBACK_CHAIN in utils.ts). Precise article mapping for
+  // fr will be added when fr entries are populated in knowledge/_translations.json.
+  let frLink = '/fr';
 
   const normalizePath = (path: string) => {
     if (!path) return '/';
@@ -225,6 +229,7 @@ export async function getLangSwitchPath(currentPath: string) {
   enLink = basePath === '/' ? '/en' : `/en${basePath}`;
   jaLink = basePath === '/' ? '/ja' : `/ja${basePath}`;
   koLink = basePath === '/' ? '/ko' : `/ko${basePath}`;
+  frLink = basePath === '/' ? '/fr' : `/fr${basePath}`;
 
   // Availability flags — true = the translation was explicitly found in the
   // map (confident link), false = using basePath fallback (may 404).
@@ -253,6 +258,11 @@ export async function getLangSwitchPath(currentPath: string) {
   let hasEn = true;
   let hasJa = true;
   let hasKo = true;
+  // 2026-04-24 β3: fr availability — for article pages, mark unavailable
+  // until fr translation mapping exists in knowledge/_translations.json.
+  // Non-article pages always show fr (basePath fallback always works for
+  // hub pages like /fr/about/, /fr/, etc.).
+  let hasFr = !isArticlePage;
 
   // Try to resolve through translation maps for more precise linking
   if (currentLang === 'zh-TW') {
@@ -342,9 +352,11 @@ export async function getLangSwitchPath(currentPath: string) {
     zhLink,
     jaLink,
     koLink,
+    frLink,
     hasEn,
     hasZh,
     hasJa,
     hasKo,
+    hasFr,
   };
 }
