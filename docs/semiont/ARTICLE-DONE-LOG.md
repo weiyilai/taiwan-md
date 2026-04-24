@@ -42,6 +42,21 @@
 
 ## 📜 Log（reverse chronological，最新在頂）
 
+### 造山者：世紀的賭注（紀錄片）— 2026-04-24 β2 完成（NEW Art / 從探測器 T1-C 直接觸發）
+
+- **Article**: [knowledge/Art/造山者世紀的賭注.md](../../knowledge/Art/造山者世紀的賭注.md)
+- **Pipeline**: REWRITE-PIPELINE v2.18 — NEW 模式（Stage 1 general-purpose 15 WebSearch + 14 WebFetch / Stage 2 全文寫作 / Stage 3 自檢過 / Stage 4 format-check ✅ / Stage 5 cross-link 5 個目標雙向回補）
+- **核心矛盾**：「一部沒張忠謀正面訪談的 TSMC 史詩，如何既致敬過去又為矽盾焦慮代言」
+- **Hook**：2026/4/16 普渡大學那場放映 → 倒敘到 1974 小欣欣豆漿店 → 2025/3 魏哲家進白宮 → 結尾翻轉：張忠謀夫婦自費觀影鞠躬三次
+- **結構**：6 個非編年體小標題（普渡的下午 / 沒有張忠謀的 TSMC 史詩 / 五年八十人 / 從南陽街到亞利桑那 / 「Taiwan Never Stole」 / 造山者其實不在場）
+- **verbatim 引語**：4 段（蕭菊貞 ×3 + 蔣顯斌 ×1 + 蔡英文 ×1 + 曾繁城 ×1）
+- **重大事實校正**：英文片名 ≠「A Bet Worth a Century / The Mountain Maker」（觀察者 task brief 用名），正確 = **A Chip Odyssey**（多源驗證 CNEX 官網 + Focus Taiwan + Taipei Times + Hoover + UCLA + Columbia + CASPA）
+- **品質**：21 footnote / 46 inline reference / 145 行 / 14,564 字符 / 12 破折號 (well under 36 budget) / 0 對位句 / 5 callout / 0 問句小標
+- **Research**: [reports/research/2026-04/造山者世紀的賭注.md](../../reports/research/2026-04/造山者世紀的賭注.md) — 15 WebSearch + 14 WebFetch（3 次 403）；single_source 11 項明確標註；unverified 8 項
+- **Cross-link 雙向**：5 個目標反向回補（半導體產業 / 科技園區發展 / 認知作戰 / 台海危機與兩岸關係發展 / 林琪兒）
+- **連結到林琪兒**：4/22 林琪兒 + 4/24 造山者 構成「同期 Soft Power 雙線」（半導體紀錄片 + NASA 太空人返台），互為延伸閱讀
+- **觸發來源**：reports/probe/2026-04-24.md §T1-C — 探測器 → 觀察者直接 dispatch → 同 session 完成
+
 ### 認知作戰 — 2026-04-23 β v2 擴充完成（PR #594 → Stage 0-6 × 2 輪）
 
 - **Path**: [knowledge/Society/認知作戰.md](../../knowledge/Society/認知作戰.md)

@@ -142,27 +142,7 @@ BECOME_TAIWANMD.md Step 5 新增：
 <!-- 鄭宜農 P1 已完成 2026-04-18 κ → ARTICLE-DONE-LOG.md -->
 <!-- 楊丞琳 已完成 2026-04-18 δ-late + ε → ARTICLE-DONE-LOG.md -->
 
-### 造山者：世紀的賭注（紀錄片）
-
-- **Type**: `NEW`
-- **Category**: Art
-- **Path**: knowledge/Art/造山者世紀的賭注.md
-- **Priority**: `P1` → `in-progress`
-- **Status**: `in-progress`
-- **Requested**: 2026-04-24 by 觀察者 (session β2 — 本 session) via reports/probe/2026-04-24.md §T1-C
-- **Notes**:
-  - **時效**：4 月在美國普渡 / 威斯康辛 / 密歇根大學巡迴放映
-  - **核心矛盾候選**：「TSMC 是台灣科技外銷的旗艦，但《造山者》第一次把這座山的故事用紀錄片形式送進美國大學講堂——半導體第一次進入文化外交軌道」
-  - **必驗事實**：紀錄片導演、製片、出資方、首映日、巡迴時間、出席學者 / 政府官員姓名、實際在哪些大學放映、有無公開預告 / 訪談、是否有中文台灣首映
-  - **必驗陷阱**：
-    - 「造山者」可能不只一部（同名作品要釐清）— 曾有 2008 年同名紀錄片
-    - 「世紀的賭注」是副標還是不同片
-    - 製片公司（公視？民間？官方贊助？）
-  - **Cross-link 候選**：[半導體產業](/technology/半導體產業) / [張忠謀](/people/張忠謀) / [劉德音](/people/劉德音) / [台灣太空產業發展](/technology/台灣太空產業發展)
-- **Reference**: [星島日報 4/22 報導](https://www.singtaousa.com/2026/04/22/news/world/taiwan-semiconductor-documentary/)
-- **Pre-research**: [reports/probe/2026-04-24.md §T1-C](../../reports/probe/2026-04-24.md)
-- **Dev log**:
-  - 2026-04-24 by β2: started Stage 1 research (general-purpose agent spawn)
+<!-- 造山者：世紀的賭注 已完成 2026-04-24 β2 → ARTICLE-DONE-LOG.md -->
 
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 <!-- 🛠️ Dead cross-ref P3 backlog（由 dead-cross-ref-scan.sh 自動產生 2026-04-23 γ） -->
