@@ -9,7 +9,8 @@
 ## 生命徵象
 
 > ⚠️ 以下數字是快照，會過期。心跳時應從 Dashboard API 即時讀取。
-> 最後快照：2026-04-25 α session（排程心跳 + merge PR #611 趙自強 / #612 赤燭+雷亞 / #613 名間埔中茶 + close #610（衝突）+ §11 polish 4 篇（趙自強 4+赤燭 2+名間 3 violations）+ 腳註格式大修（趙自強/名間埔中茶 全數 13 條重寫）/ 562 篇 / 50 contributors）
+> 最後快照：2026-04-25 β session（6hr cron 14:30 mid-day tick，下午輕食掃 dead cross-ref 4 條：太陽花學運 /history/→/society/ × 2 + 王連晟/王新仁 /people/→/art/ × 2；dead-cross-ref 15→11，INBOX 三條 retired；refresh-data + sync 全跑；0 open PR）
+> 前快照：2026-04-25 α session（排程心跳 + merge PR #611 趙自強 / #612 赤燭+雷亞 / #613 名間埔中茶 + close #610（衝突）+ §11 polish 4 篇（趙自強 4+赤燭 2+名間 3 violations）+ 腳註格式大修（趙自強/名間埔中茶 全數 13 條重寫）/ 562 篇 / 50 contributors）
 > 前快照：2026-04-24 β5 session（觀察者「走 rewrite-pipeline 進化 林琪兒」→ REWRITE-PIPELINE v2.18 全 Stage 0-6 / 1800→3800 字 / 15→27 腳註 / 修 3 處既有 hallucination: Artemis 誤傳 + 311→312 天 + 丹佛車禍 EMT 刪 / 反向 cross-link 4 targets）
 > 前快照：2026-04-24 β3 session（觀察者「跑完整 heartbeat 更新所有數據, dashboard, 跟孢子監測」→ refresh-data + 鞠躬幻覺校正 / 562 篇 / 62 貢獻者 / 97 7d新增 / 6 spore waiting harvest）
 > 前快照：2026-04-24 β2 session（造山者：世紀的賭注 NEW Art 完整 REWRITE-PIPELINE / 觀察者 task brief 校正 / 結尾鞠躬幻覺後續修補）

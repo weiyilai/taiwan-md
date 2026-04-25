@@ -1,8 +1,8 @@
 {
-  "totalArticles": 2245,
+  "totalArticles": 2253,
   "totalCategories": 21,
-  "estimatedContributors": 150,
-  "totalTags": 5249,
+  "estimatedContributors": 57,
+  "totalTags": 5254,
   "categories": [
     {
       "name": "ko",
@@ -10,7 +10,7 @@
     },
     {
       "name": "Society",
-      "count": 44
+      "count": 50
     },
     {
       "name": "en",
@@ -30,7 +30,7 @@
     },
     {
       "name": "People",
-      "count": 180
+      "count": 182
     },
     {
       "name": "Music",
@@ -172,8 +172,13 @@
     }
   ],
   "languageDistribution": {
-    "zh-TW": 2245,
+    "zh-TW": 2253,
     "en": 0
   },
-  "lastUpdated": "2026-04-25T01:20:11.964Z"
+  "lastUpdated": "2026-04-25T06:38:12.860Z",
+  "stars": 954,
+  "forks": 141,
+  "zhPages": 1842,
+  "enPages": 411,
+  "totalPages": 2253
 }
