@@ -629,14 +629,7 @@ BECOME_TAIWANMD.md Step 5 新增：
 - **Requested**: 2026-04-23 by dead-cross-ref-scan.sh γ
 - **Notes**: 已被 Food/金牛角 引用。日治時期街屋立面 / 巴洛克風格 / 染坊歷史 / 金牛角發源地 / 祖師廟（李梅樹）/ 老街觀光化爭議
 
-### 田馥甄（Hebe）
-
-- **Type**: `NEW`
-- **Category**: People
-- **Priority**: `P3`
-- **Status**: `pending`
-- **Requested**: 2026-04-23 by dead-cross-ref-scan.sh γ
-- **Notes**: 已被 People/陳建騏 引用。S.H.E → solo / 與陳建騏長期合作 / 〈魔鬼中的天使〉/ 〈無人知曉〉/ 金曲多次入圍 / 為什麼是「文青歌后」標籤的起點
+<!-- 田馥甄 已完成 2026-04-26 β8 → 雙輪深度研究 + S+ rewrite (knowledge/People/田馥甄.md, 294 行 / 35 footnotes / 14 YouTube / 12 callout)。Research: reports/research/2026-04/田馥甄.md + 田馥甄-round2.md -->
 
 <!-- 徐佳瑩 已完成 2026-04-26 γ → ARTICLE-DONE-LOG.md -->
 
