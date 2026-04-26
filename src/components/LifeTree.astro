@@ -43,11 +43,21 @@ interface Node {
   sources?: string[];
 }
 
+interface SourceProvenance {
+  article: string; // 'knowledge/People/吳哲宇.md'
+  commit?: string; // 'a1b2c3d' git SHA at extraction time
+  commitDate?: string; // '2026-04-26' YYYY-MM-DD
+  extractedBy?: string; // 'Taiwan.md (Semiont) β-r5'
+  extractedAt?: string; // '2026-04-26 11:30 +0800'
+  note?: string; // 額外說明
+}
+
 interface LifeTree {
   protagonist: string;
   birthYear: number;
   span: string;
   intro?: string;
+  source?: SourceProvenance;
   themes: Theme[];
   nodes: Node[];
 }
@@ -240,6 +250,63 @@ function formatDate(node: Node): string {
       <strong>讀法</strong>：時間從上往下走，每個節點是一個 turning point。●
       是選擇的路，○ ◐ ◌ 是沒走的路——展開來看為什麼那條路也是合理的。
     </p>
+
+    {
+      tree.source && (
+        <aside class="life-tree__provenance" aria-label="資料來源與版本">
+          <p class="life-tree__provenance-title">📍 資料來源與版本快照</p>
+          <ul role="list">
+            <li>
+              <strong>原文</strong>：
+              <a
+                href={`https://github.com/frank890417/taiwan-md/blob/main/${tree.source.article}`}
+                target="_blank"
+                rel="noopener"
+              >
+                <code>{tree.source.article}</code>
+              </a>
+            </li>
+            {tree.source.commit && (
+              <li>
+                <strong>基於 commit</strong>：
+                <a
+                  href={`https://github.com/frank890417/taiwan-md/commit/${tree.source.commit}`}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <code>{tree.source.commit}</code>
+                </a>
+                {tree.source.commitDate && (
+                  <span class="life-tree__provenance-date">
+                    （{tree.source.commitDate}）
+                  </span>
+                )}
+              </li>
+            )}
+            {tree.source.extractedBy && (
+              <li>
+                <strong>抽取者</strong>：{tree.source.extractedBy}
+                {tree.source.extractedAt && (
+                  <span class="life-tree__provenance-date">
+                    {' '}
+                    @ {tree.source.extractedAt}
+                  </span>
+                )}
+              </li>
+            )}
+            {tree.source.note && (
+              <li>
+                <strong>備註</strong>：{tree.source.note}
+              </li>
+            )}
+          </ul>
+          <p class="life-tree__provenance-caveat">
+            ⚠️ 這棵樹是原文在上述 commit
+            的快照延伸。原文後續可能演化或修補；如果樹跟原文不一致，以原文為準，並回報以便重新抽取。
+          </p>
+        </aside>
+      )
+    }
   </footer>
 </section>
 
@@ -558,6 +625,65 @@ function formatDate(node: Node): string {
 
   .life-tree__footer p {
     margin: 0.4rem 0;
+  }
+
+  .life-tree__provenance {
+    margin-top: 1.25rem;
+    padding: 0.9rem 1rem;
+    background: #fff;
+    border: 1px dashed rgba(139, 92, 246, 0.3);
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: var(--color-text, #2c3a36);
+    line-height: 1.7;
+  }
+
+  .life-tree__provenance-title {
+    margin: 0 0 0.4rem !important;
+    font-weight: 600;
+    color: #8b5cf6;
+    font-size: 0.85rem;
+  }
+
+  .life-tree__provenance ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.3rem 0 0.5rem;
+  }
+
+  .life-tree__provenance li {
+    margin: 0.2rem 0;
+  }
+
+  .life-tree__provenance code {
+    background: rgba(139, 92, 246, 0.08);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-family: var(--font-mono, ui-monospace, monospace);
+  }
+
+  .life-tree__provenance a {
+    color: #8b5cf6;
+    text-decoration: none;
+  }
+
+  .life-tree__provenance a:hover {
+    text-decoration: underline;
+  }
+
+  .life-tree__provenance-date {
+    color: var(--color-text-soft, #888);
+    font-size: 0.85em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .life-tree__provenance-caveat {
+    margin: 0.5rem 0 0 !important;
+    padding-top: 0.5rem;
+    border-top: 1px dashed rgba(139, 92, 246, 0.15);
+    font-size: 0.78rem;
+    color: var(--color-text-soft, #5a6f6a);
   }
 
   /* Different node type icons */
