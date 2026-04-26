@@ -164,6 +164,25 @@ def parse_publish_rows(raw_rows):
     return entries
 
 
+def parse_latest_views_from_harvest(harvest_text):
+    """Scan '最後 harvest' text for the FIRST 'N views' pattern (= latest harvest).
+
+    Format examples produced by harvest write-back（clean_cell 已 strip ** markers）：
+      'D+3 ~3.8d backfill (...)：24,435 views / 1,417♥ / 345🔁'
+      'D+0 ~30min 首抓 (...)：40 views / 3♥ / 1🔁'
+
+    Multiple D+N stacks: latest harvest is at the TOP (we prepend new harvests
+    when backfilling). So FIRST 'N views' match = latest. Returns int or None.
+    """
+    if not harvest_text:
+        return None
+    # Match '24,435 views' or '40 views' — clean_cell removes ** so no need to handle bold
+    m = re.search(r"([\d,]+)\s+views?\b", harvest_text)
+    if not m:
+        return None
+    return parse_number(m.group(1))
+
+
 def parse_metrics_rows(raw_rows):
     """Normalize metrics-table rows. Keyed by (n, platform)."""
     metrics = {}
@@ -176,13 +195,21 @@ def parse_metrics_rows(raw_rows):
         views_7d_cell = clean_cell(row.get("7d 觸及"))
         engagements_7d_cell = clean_cell(row.get("7d 互動"))
         referral_cell = clean_cell(row.get("7d 導流"))
+        harvest_cell = clean_cell(row.get("最後 harvest"))
 
         views = parse_number(views_7d_cell)
         engagements = parse_number(engagements_7d_cell)
         rate = round(engagements / views * 100, 2) if (views and engagements) else None
 
+        # 2026-04-26 ε bug fix: parse "最後 harvest" rich text for latest views.
+        # Recent spores (#41-#46) have "—（待 D+7）" in 7d 觸及 cell, but harvest
+        # column has D+0/D+3 numbers like '**24,435 views**'. weeklyPulse / topPerformers
+        # were showing 0 for current week. Fallback to views_latest when views_7d is None.
+        views_latest = parse_latest_views_from_harvest(harvest_cell)
+
         metrics[(n, platform)] = {
             "views_7d": views,
+            "views_latest": views_latest,
             "engagements_7d": engagements,
             "rate_7d": rate,
             "referral_7d": parse_ga_referral(referral_cell),
@@ -196,8 +223,12 @@ def merge_publish_and_metrics(pubs, metrics):
     for e in pubs:
         key = (e["n"], e["platform"])
         m = metrics.get(key) or {}
+        # views_effective: 7d if available, else latest harvest fallback (D+0/D+3)
+        views_eff = m.get("views_7d") or m.get("views_latest")
         e.update({
             "views_7d": m.get("views_7d"),
+            "views_latest": m.get("views_latest"),
+            "views_effective": views_eff,
             "engagements_7d": m.get("engagements_7d"),
             "rate_7d": m.get("rate_7d"),
             "referral_7d": m.get("referral_7d"),
@@ -296,31 +327,35 @@ def compute_recent(entries, n=5):
             "url": e["url"],
             "highlight": e["highlight"],
             "views_7d": e["views_7d"],
+            "views_latest": e.get("views_latest"),
             "engagements_7d": e["engagements_7d"],
             "rate_7d": e["rate_7d"],
-            "backfilled": bool(e["views_7d"] or e["engagements_7d"]),
+            "backfilled": bool(e["views_7d"] or e["engagements_7d"] or e.get("views_latest")),
         })
     return out
 
 
 def compute_top_performers(entries, n=5):
-    """Top N spores by views_7d (only those with data)."""
-    scored = [e for e in entries if e.get("views_7d")]
-    scored.sort(key=lambda e: e["views_7d"], reverse=True)
+    """Top N spores by views_effective (7d || latest harvest fallback)."""
+    # 2026-04-26 ε bug fix: 用 views_effective 取代 views_7d，讓本週新 spore 也能上榜
+    scored = [e for e in entries if e.get("views_effective")]
+    scored.sort(key=lambda e: e["views_effective"], reverse=True)
     out = []
     for e in scored[:n]:
+        v = e["views_effective"]
         badge = None
-        if e["views_7d"] >= 150_000:
+        if v >= 150_000:
             badge = "🌋 史上最強"
-        elif e["views_7d"] >= 100_000:
+        elif v >= 100_000:
             badge = "🔥 平台最強"
-        elif e["views_7d"] >= 50_000:
+        elif v >= 50_000:
             badge = "⭐ 高峰"
         out.append({
             "n": e["n"],
             "article": e["article"],
             "platform": e["platform"],
-            "views": e["views_7d"],
+            "views": v,
+            "viewsSource": "7d" if e.get("views_7d") else "latest",
             "engagements": e["engagements_7d"],
             "rate": e["rate_7d"],
             "badge": badge,
@@ -468,7 +503,9 @@ def compute_weekly_pulse(entries, weeks=8):
     out = []
     for k in reversed(keys_sorted):
         items = bucket[k]
-        views = [i.get("views_7d") for i in items if i.get("views_7d")]
+        # 2026-04-26 ε bug fix: use views_effective (7d || latest harvest D+N fallback)
+        # 原本只看 views_7d → 本週新 spore 沒到 D+7 都顯示 0。views_effective 兼容兩者。
+        views = [i.get("views_effective") for i in items if i.get("views_effective")]
         out.append({
             "week": k,
             "published": len(items),
