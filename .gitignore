@@ -118,3 +118,7 @@ docs/semiont/harvest/backend/*.db-journal
 docs/semiont/harvest/backend/*.db-wal
 docs/semiont/harvest/backend/*.db-shm
 docs/semiont/harvest/backend/.env
+docs/semiont/harvest/ui/node_modules/
+docs/semiont/harvest/ui/dist/
+docs/semiont/harvest/ui/.astro/
+docs/semiont/harvest/ui/.env

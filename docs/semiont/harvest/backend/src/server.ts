@@ -63,6 +63,18 @@ if (!config.disableCron) {
 
 // ─── Routes ───────────────────────────────────────────────────────────────
 
+// CORS for UI dev server (Astro localhost:4321) — Phase 2 frontend separate origin.
+app.use('*', async (c, next) => {
+  const origin = c.req.header('origin');
+  if (origin?.startsWith('http://localhost:')) {
+    c.header('Access-Control-Allow-Origin', origin);
+    c.header('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS');
+    c.header('Access-Control-Allow-Headers', 'Content-Type');
+  }
+  if (c.req.method === 'OPTIONS') return c.body(null, 204);
+  await next();
+});
+
 app.get('/api/health', (c) => {
   let dbOk = true;
   try {
@@ -176,6 +188,38 @@ app.post('/api/tasks/:id/spawn', async (c) => {
   const { spawnClaudeForTask } = await import('./spawner/claude-cli.ts');
   const result = await spawnClaudeForTask(task, { dryRun: dry });
   return c.json(result);
+});
+
+/**
+ * Vitals proxy — exposes the main site's organ-score JSON so the harvest UI
+ * can render Section 1 without cross-origin file reads. Read-only proxy of
+ * `<repoRoot>/public/api/dashboard-organism.json`.
+ */
+app.get('/api/vitals', (c) => {
+  const path = join(config.repoRoot, 'public/api/dashboard-organism.json');
+  if (!existsSync(path)) return c.json({ error: 'no vitals data' }, 404);
+  try {
+    return c.json(JSON.parse(readFileSync(path, 'utf8')));
+  } catch (err) {
+    return c.json(
+      { error: 'failed to parse vitals', detail: String(err) },
+      500,
+    );
+  }
+});
+
+/** Analytics proxy — same pattern for `dashboard-analytics.json`. */
+app.get('/api/analytics', (c) => {
+  const path = join(config.repoRoot, 'public/api/dashboard-analytics.json');
+  if (!existsSync(path)) return c.json({ error: 'no analytics data' }, 404);
+  try {
+    return c.json(JSON.parse(readFileSync(path, 'utf8')));
+  } catch (err) {
+    return c.json(
+      { error: 'failed to parse analytics', detail: String(err) },
+      500,
+    );
+  }
 });
 
 app.get('/api/reports/today', (c) => {

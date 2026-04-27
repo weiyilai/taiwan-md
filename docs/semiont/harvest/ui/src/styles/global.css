@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  html,
+  body {
+    @apply bg-bg-base text-text-primary;
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC',
+      'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    min-height: 100vh;
+  }
+  ::selection {
+    background: rgba(16, 185, 129, 0.35);
+    color: #fff;
+  }
+  /* Subtle scrollbar in dark theme */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1a1a1f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2f2f38;
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a3a44;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-bg-surface border border-line rounded-lg shadow-card;
+  }
+  .card-header {
+    @apply px-4 py-3 border-b border-line flex items-center justify-between;
+  }
+  .card-body {
+    @apply p-4;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium
+           border border-line bg-bg-raised hover:bg-bg-input
+           transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply border-accent-green/40 bg-accent-green/15 text-accent-green-soft
+           hover:bg-accent-green/25;
+  }
+  .btn-danger {
+    @apply border-accent-red/40 bg-accent-red/15 text-accent-red
+           hover:bg-accent-red/25;
+  }
+  .input,
+  .select,
+  .textarea {
+    @apply w-full bg-bg-input border border-line rounded-md px-3 py-2
+           text-sm text-text-primary placeholder:text-text-muted
+           focus:outline-none focus:border-accent-green/60
+           focus:ring-1 focus:ring-accent-green/40;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .skeleton {
+    @apply bg-bg-raised animate-pulse rounded;
+  }
+  .section-title {
+    @apply text-sm font-semibold uppercase tracking-wider text-text-secondary;
+  }
+}
