@@ -1,16 +1,20 @@
 /**
  * Claude CLI spawner.
  *
- * Spawns the `claude` CLI as a child process with the prompt piped on stdin.
- * Streams stdout/stderr to a per-session log file under
+ * Spawns the `claude` CLI as a detached child process with the prompt piped
+ * on stdin. Streams stdout/stderr to a per-session log file under
  * `.harvest/tasks/{id}/sessions/{session-id}.log` and to pino.
  *
  * Hard timeout per session: config.sessionTimeoutMs (default 90 min).
  *
- * NOTE for MVP: we do NOT actually run `claude` from automated cron yet
- * (cheyu's verification doesn't require it). The prompt-building path is
- * tested via `bun run build-prompt`; this file is the runtime path that
- * cheyu can wire up once he's ready to live-fire.
+ * Bug 1 fix (2026-04-27): commit attribution uses `git log --since=<spawn_iso>
+ * --author=<git user.name>` instead of HEAD-diff so external `git pull` during
+ * the spawn window doesn't get falsely attributed to the spawn.
+ *
+ * Bug 2 fix (2026-04-27): child is `detached: true` so it's its own process
+ * group leader — SIGINT to the backend (via tmux/zsh) does NOT cascade to
+ * claude. The backend's shutdown handler explicitly marks active sessions as
+ * `awaiting-cheyu` and lets the child keep running.
  */
 
 import { spawn } from 'node:child_process';
@@ -37,7 +41,7 @@ export interface SpawnResult {
   durationMs: number;
   logPath: string;
   promptPath: string;
-  /** Commits this session produced (best-effort, parsed from git log diff). */
+  /** Commits this session produced (best-effort, parsed via session-scoped git log). */
   commits: string[];
   /** True when the hard timeout fired and we killed the process. */
   timedOut: boolean;
@@ -50,8 +54,7 @@ export interface SpawnOptions {
 
 /**
  * Spawn a `claude` process for a given Task. Returns once the child exits or
- * the hard timeout fires. The Task is updated in-place: a new entry is
- * appended to `task.sessions` regardless of success/failure.
+ * the hard timeout fires.
  */
 export async function spawnClaudeForTask(
   task: Task,
@@ -67,9 +70,10 @@ export async function spawnClaudeForTask(
   writeFileSync(promptPath, prompt, 'utf8');
 
   const spawnedAt = new Date();
+  const spawnStartIso = spawnedAt.toISOString();
   const sessionRecord: TaskSession = {
     id: sessionId,
-    spawned_at: spawnedAt.toISOString(),
+    spawned_at: spawnStartIso,
     log_path: logPath,
     prompt_path: promptPath,
   };
@@ -78,8 +82,6 @@ export async function spawnClaudeForTask(
   task.status = 'spawning';
   saveTask(task, `spawn attempt ${task.attempts} session=${sessionId}`);
 
-  // Register in concurrency manager — picks up immediately so /api/sessions/active
-  // shows the spawning row even before the child process is up.
   registerActive({
     sessionId,
     taskId: task.id,
@@ -87,16 +89,15 @@ export async function spawnClaudeForTask(
     taskType: task.type,
     bootProfile: task.boot_profile,
     pid: undefined,
-    spawnedAt: sessionRecord.spawned_at,
+    spawnedAt: spawnStartIso,
     phase: 'spawning',
   });
 
-  // Pre-record session in DB.
   const db = getDb();
   db.run(
-    `INSERT INTO sessions (id, task_id, pid, spawned_at, log_path, prompt_path)
-     VALUES (?, ?, NULL, ?, ?, ?)`,
-    [sessionId, task.id, sessionRecord.spawned_at, logPath, promptPath],
+    `INSERT INTO sessions (id, task_id, pid, spawned_at, spawn_start_iso, log_path, prompt_path)
+     VALUES (?, ?, NULL, ?, ?, ?, ?)`,
+    [sessionId, task.id, spawnStartIso, spawnStartIso, logPath, promptPath],
   );
 
   if (options.dryRun) {
@@ -106,7 +107,7 @@ export async function spawnClaudeForTask(
     );
     sessionRecord.completed_at = new Date().toISOString();
     sessionRecord.exit_code = 0;
-    task.status = 'pending'; // dry-run doesn't change real status
+    task.status = 'pending';
     saveTask(task, 'dry-run complete (no claude exec)');
     unregisterActive(sessionId);
     return {
@@ -120,31 +121,30 @@ export async function spawnClaudeForTask(
     };
   }
 
-  // Capture HEAD before spawn so we can diff afterwards to find new commits.
-  const headBefore = await currentHead();
-
   task.status = 'in-progress';
   saveTask(task, `claude session ${sessionId} starting`);
 
   const logStream = createWriteStream(logPath, { flags: 'a' });
   logStream.write(
-    `# session ${sessionId}\n# task ${task.id}\n# started ${sessionRecord.spawned_at}\n# claude bin: ${config.claudeBin}\n\n`,
+    `# session ${sessionId}\n# task ${task.id}\n# started ${spawnStartIso}\n# claude bin: ${config.claudeBin}\n\n`,
   );
 
-  // Pass the prompt via stdin so it's not visible in `ps` output.
-  // If ANTHROPIC_API_KEY is set, use --bare so claude STRICTLY uses the env
-  // var (skips OAuth/keychain reads — needed because launchd has no keychain
-  // access). Otherwise let claude find the long-lived token in
-  // ~/.claude/.credentials.json (requires HOME env to be set in the plist).
   const cliArgs = ['--print', '--dangerously-skip-permissions'];
   if (process.env.ANTHROPIC_API_KEY) cliArgs.unshift('--bare');
+  // Bug 2 fix: detached:true makes the child its own process-group leader.
+  // SIGINT to the backend (Ctrl+C in tmux) won't cascade through the group.
+  // We still want stdin piped (prompt) and stdout/stderr piped (capture log),
+  // so we cannot fully `unref()` — but the detached flag is what matters for
+  // signal isolation on POSIX.
   const child = spawn(config.claudeBin, cliArgs, {
     cwd: config.repoRoot,
     stdio: ['pipe', 'pipe', 'pipe'],
+    detached: true,
     env: {
       ...process.env,
       HARVEST_TASK_ID: task.id,
       HARVEST_SESSION_ID: sessionId,
+      HARVEST_SESSION_SHORT: sessionId.slice(0, 8),
     },
   });
 
@@ -153,7 +153,10 @@ export async function spawnClaudeForTask(
     sessionId,
   ]);
   setActivePhase(sessionId, 'in-progress', child.pid);
-  log.info({ taskId: task.id, sessionId, pid: child.pid }, 'spawned claude');
+  log.info(
+    { taskId: task.id, sessionId, pid: child.pid, detached: true },
+    'spawned claude (detached)',
+  );
 
   child.stdin.write(prompt);
   child.stdin.end();
@@ -167,8 +170,20 @@ export async function spawnClaudeForTask(
       { taskId: task.id, sessionId, timeoutMs: config.sessionTimeoutMs },
       'hard timeout — killing claude',
     );
-    child.kill('SIGTERM');
-    setTimeout(() => child.kill('SIGKILL'), 5_000);
+    try {
+      if (child.pid !== undefined) process.kill(-child.pid, 'SIGTERM');
+      else child.kill('SIGTERM');
+    } catch {
+      child.kill('SIGTERM');
+    }
+    setTimeout(() => {
+      try {
+        if (child.pid !== undefined) process.kill(-child.pid, 'SIGKILL');
+        else child.kill('SIGKILL');
+      } catch {
+        child.kill('SIGKILL');
+      }
+    }, 5_000);
   }, config.sessionTimeoutMs);
 
   const exitCode: number = await new Promise((resolve) => {
@@ -184,8 +199,8 @@ export async function spawnClaudeForTask(
   const completedAt = new Date();
   sessionRecord.completed_at = completedAt.toISOString();
   sessionRecord.exit_code = exitCode;
-  const headAfter = await currentHead();
-  const commits = await commitsBetween(headBefore, headAfter);
+  // Bug 1 fix: session-scoped commit query.
+  const commits = await commitsInWindow(spawnStartIso, completedAt);
   if (commits.length) sessionRecord.commits = commits;
 
   db.run('UPDATE sessions SET completed_at = ?, exit_code = ? WHERE id = ?', [
@@ -200,8 +215,6 @@ export async function spawnClaudeForTask(
     for (const c of commits) stmt.run(sessionId, c);
   }
 
-  // Decide final task status. The spawned session is supposed to write its
-  // own status to status.log; we read it back here. If absent, we infer.
   task.status = inferStatusFromExit(exitCode, timedOut);
   saveTask(
     task,
@@ -235,14 +248,31 @@ function inferStatusFromExit(
   return 'failed';
 }
 
-async function currentHead(): Promise<string> {
-  return runGit(['rev-parse', 'HEAD']).catch(() => '');
-}
-
-async function commitsBetween(from: string, to: string): Promise<string[]> {
-  if (!from || !to || from === to) return [];
+/**
+ * Find commits authored by the local git user inside the spawn window.
+ *
+ * Pragmatic v1 caveat: this still attributes ALL local-author commits in the
+ * window to this session, including unrelated manual commits cheyu typed in
+ * another terminal during the spawn. A v2 follow-up should require the spawned
+ * claude to embed `[sid:<short>]` in commit messages and grep for that marker
+ * (HARVEST_SESSION_SHORT is already passed via env for that future change).
+ */
+async function commitsInWindow(
+  fromIso: string,
+  toDate: Date,
+): Promise<string[]> {
   try {
-    const out = await runGit(['log', '--pretty=%H', `${from}..${to}`]);
+    const author = (
+      await runGit(['config', 'user.name']).catch(() => '')
+    ).trim();
+    const args = [
+      'log',
+      '--pretty=%H',
+      `--since=${fromIso}`,
+      `--until=${toDate.toISOString()}`,
+    ];
+    if (author) args.push(`--author=${author}`);
+    const out = await runGit(args);
     return out
       .split('\n')
       .map((l) => l.trim())

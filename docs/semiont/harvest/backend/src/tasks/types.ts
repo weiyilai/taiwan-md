@@ -33,6 +33,7 @@ export const TASK_TYPES = [
   'status-report',
   'self-diagnose',
   'heartbeat',
+  'contributor-thank-you',
 ] as const;
 
 export type TaskType = (typeof TASK_TYPES)[number];

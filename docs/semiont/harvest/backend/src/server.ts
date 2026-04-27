@@ -3,15 +3,6 @@
  *
  * Run: `bun run dev`  (watch mode via package.json)
  *      `bun run src/server.ts`  (no watch)
- *
- * Boots up:
- *   - SQLite (auto-migrate)
- *   - Boot profiles (load + validate MANIFESTO presence)
- *   - ARTICLE-INBOX file watch
- *   - Cron (daily 08:00 +0800 report)
- *   - Hono HTTP API
- *
- * Graceful shutdown on SIGINT/SIGTERM.
  */
 
 import { Hono } from 'hono';
@@ -25,6 +16,7 @@ import {
   createTask,
   updateTaskStatus,
   reindexFromDisk,
+  saveTask,
 } from './tasks/manager.ts';
 import { isTaskPriority } from './tasks/types.ts';
 import { ArticleInboxAdapter } from './intake/article-inbox.ts';
@@ -36,20 +28,37 @@ import {
   startScheduler,
   stopScheduler,
 } from './scheduler/cron.ts';
+import { startAutoSpawn, stopAutoSpawn } from './scheduler/auto-spawn.ts';
+import { startHealthMonitor, stopHealthMonitor } from './health/monitor.ts';
 import { loadProfiles } from './spawner/boot-profiles.ts';
 import { join } from 'node:path';
+import {
+  markActiveSessionsForReview,
+  reconcileOrphanSessions,
+} from './lifecycle/shutdown.ts';
+import { handleGithubWebhook } from './webhook/github.ts';
+import {
+  logPathForSession,
+  pollLogSince,
+  streamLog,
+} from './spawner/log-stream.ts';
+import {
+  killSession,
+  activeForTask,
+  unregister,
+} from './spawner/concurrency.ts';
 
 const app = new Hono();
 const startTs = Date.now();
 
-// ─── Bootstrap ────────────────────────────────────────────────────────────
 mkdirSync(config.paths.harvestRoot, { recursive: true });
 mkdirSync(config.paths.tasksRoot, { recursive: true });
 mkdirSync(config.paths.reportsRoot, { recursive: true });
 
 const db = getDb();
-loadProfiles(); // throws on missing MANIFESTO etc. — fail fast.
+loadProfiles();
 reindexFromDisk();
+reconcileOrphanSessions();
 
 const inbox = new ArticleInboxAdapter();
 if (!config.disableWatch) {
@@ -59,11 +68,10 @@ if (!config.disableWatch) {
 }
 if (!config.disableCron) {
   startScheduler();
+  startAutoSpawn();
 }
+startHealthMonitor();
 
-// ─── Routes ───────────────────────────────────────────────────────────────
-
-// CORS for UI dev server (Astro localhost:4321) — Phase 2 frontend separate origin.
 app.use('*', async (c, next) => {
   const origin = c.req.header('origin');
   if (origin?.startsWith('http://localhost:')) {
@@ -174,19 +182,6 @@ app.post('/api/tasks/:id/cancel', (c) => {
   return c.json(updated);
 });
 
-/**
- * Manual spawn trigger.
- *
- * Behaviour:
- * - dry=true: synchronous, returns the built prompt without invoking claude.
- * - dry=false (default): **fire-and-forget**. Returns 202 Accepted immediately
- *   with the session metadata. The actual claude run continues in the
- *   background; the UI sees status transitions via /api/tasks polling and
- *   /api/sessions/active. Multiple concurrent spawns are allowed up to
- *   HARVEST_MAX_CONCURRENT (default 3).
- * - 409 Conflict if (a) task is already in `spawning` or `in-progress` state
- *   for one of its sessions, or (b) max concurrent reached.
- */
 app.post('/api/tasks/:id/spawn', async (c) => {
   const id = c.req.param('id');
   const task = getTask(id);
@@ -194,15 +189,19 @@ app.post('/api/tasks/:id/spawn', async (c) => {
   const dry = c.req.query('dry') === 'true';
 
   const { spawnClaudeForTask } = await import('./spawner/claude-cli.ts');
-  const { canSpawn, activeForTask, activeCount, maxConcurrent } =
-    await import('./spawner/concurrency.ts');
+  const {
+    canSpawn,
+    activeForTask: activeForTaskImport,
+    activeCount,
+    maxConcurrent,
+  } = await import('./spawner/concurrency.ts');
 
   if (dry) {
     const result = await spawnClaudeForTask(task, { dryRun: true });
     return c.json(result);
   }
 
-  const existing = activeForTask(id);
+  const existing = activeForTaskImport(id);
   if (existing) {
     return c.json(
       {
@@ -239,7 +238,6 @@ app.post('/api/tasks/:id/spawn', async (c) => {
     );
   }
 
-  // Fire-and-forget. We don't await — return 202 immediately.
   spawnClaudeForTask(task, { dryRun: false }).catch((err) => {
     logger.error(
       { err: String(err), taskId: id },
@@ -259,10 +257,6 @@ app.post('/api/tasks/:id/spawn', async (c) => {
   );
 });
 
-/**
- * Live snapshot of currently-running claude sessions (in-memory).
- * Polled by the UI header badge + Sections that need real-time runs.
- */
 app.get('/api/sessions/active', async (c) => {
   const { listActive, activeCount, maxConcurrent } =
     await import('./spawner/concurrency.ts');
@@ -273,11 +267,111 @@ app.get('/api/sessions/active', async (c) => {
   });
 });
 
-/**
- * Vitals proxy — exposes the main site's organ-score JSON so the harvest UI
- * can render Section 1 without cross-origin file reads. Read-only proxy of
- * `<repoRoot>/public/api/dashboard-organism.json`.
- */
+/** Bug 3 — polling endpoint. */
+app.get('/api/sessions/:sid/log', (c) => {
+  const sid = c.req.param('sid');
+  const sinceQ = c.req.query('since');
+  const since = sinceQ ? Number(sinceQ) : 0;
+  if (!Number.isFinite(since) || since < 0) {
+    return c.json({ error: 'since must be a non-negative number' }, 400);
+  }
+  const meta = logPathForSession(sid);
+  if (!meta.path) return c.json({ error: 'session not found' }, 404);
+  const result = pollLogSince(sid, since);
+  return c.json(result);
+});
+
+/** Bug 3 — SSE log stream. */
+app.get('/api/sessions/:sid/log/stream', (c) => {
+  const sid = c.req.param('sid');
+  const meta = logPathForSession(sid);
+  if (!meta.path) return c.json({ error: 'session not found' }, 404);
+
+  const stream = new ReadableStream<Uint8Array>({
+    start(controller) {
+      const encoder = new TextEncoder();
+      const write = (chunk: string): void => {
+        try {
+          controller.enqueue(encoder.encode(chunk));
+        } catch {
+          // Stream already closed by client — ignore.
+        }
+      };
+      const cleanup = streamLog(sid, write, () => {
+        try {
+          controller.close();
+        } catch {
+          // Already closed.
+        }
+      });
+      // Hono passes through AbortSignal; we hook it for cleanup on disconnect.
+      const signal = c.req.raw.signal;
+      signal.addEventListener('abort', () => cleanup());
+    },
+  });
+
+  return new Response(stream, {
+    headers: {
+      'Content-Type': 'text/event-stream',
+      'Cache-Control': 'no-cache, no-transform',
+      Connection: 'keep-alive',
+      'X-Accel-Buffering': 'no',
+    },
+  });
+});
+
+/** Phase 3.4 — cancel an active session for a task. */
+app.post('/api/sessions/:sid/cancel', (c) => {
+  const sid = c.req.param('sid');
+  const result = killSession(sid, 'SIGTERM');
+  if (!result.ok) {
+    return c.json({ error: result.reason, sid }, 404);
+  }
+  // Mark DB + task.
+  db.run(
+    `UPDATE sessions SET cancelled = 1, killed_reason = ?, completed_at = COALESCE(completed_at, ?) WHERE id = ?`,
+    ['cancelled via API', new Date().toISOString(), sid],
+  );
+  const row = db
+    .query<
+      { task_id: string },
+      [string]
+    >('SELECT task_id FROM sessions WHERE id = ?')
+    .get(sid);
+  if (row) {
+    const task = getTask(row.task_id);
+    if (task) {
+      task.status = 'awaiting-cheyu';
+      saveTask(task, `session ${sid} cancelled via API`);
+    }
+  }
+  setTimeout(() => unregister(sid), 5_000);
+  return c.json({ ok: true, sid, pid: result.pid });
+});
+
+/** Convenience: cancel by task id (cancels its active session). */
+app.post('/api/tasks/:id/cancel-spawn', (c) => {
+  const id = c.req.param('id');
+  const active = activeForTask(id);
+  if (!active)
+    return c.json({ error: 'no active session for task', task_id: id }, 404);
+  const result = killSession(active.sessionId, 'SIGTERM');
+  if (!result.ok) {
+    return c.json({ error: result.reason, sid: active.sessionId }, 500);
+  }
+  db.run(
+    `UPDATE sessions SET cancelled = 1, killed_reason = ?, completed_at = COALESCE(completed_at, ?) WHERE id = ?`,
+    ['cancelled via API', new Date().toISOString(), active.sessionId],
+  );
+  const task = getTask(id);
+  if (task) {
+    task.status = 'awaiting-cheyu';
+    saveTask(task, `session ${active.sessionId} cancelled via API`);
+  }
+  setTimeout(() => unregister(active.sessionId), 5_000);
+  return c.json({ ok: true, sid: active.sessionId, pid: result.pid });
+});
+
 app.get('/api/vitals', (c) => {
   const path = join(config.repoRoot, 'public/api/dashboard-organism.json');
   if (!existsSync(path)) return c.json({ error: 'no vitals data' }, 404);
@@ -291,7 +385,6 @@ app.get('/api/vitals', (c) => {
   }
 });
 
-/** Analytics proxy — same pattern for `dashboard-analytics.json`. */
 app.get('/api/analytics', (c) => {
   const path = join(config.repoRoot, 'public/api/dashboard-analytics.json');
   if (!existsSync(path)) return c.json({ error: 'no analytics data' }, 404);
@@ -331,21 +424,32 @@ app.post('/api/reports/generate', async (c) => {
 
 app.post('/api/control/pause', (c) => {
   pauseScheduler();
+  stopAutoSpawn();
+  stopHealthMonitor();
   return c.json({ paused: true });
 });
 
 app.post('/api/control/resume', (c) => {
   resumeScheduler();
+  startAutoSpawn();
+  startHealthMonitor();
   return c.json({ paused: false });
 });
 
-/** Manual one-shot inbox scan (triggers the same logic as the file watcher). */
 app.post('/api/intake/scan', async (c) => {
   const detected = await inbox.scanOnce();
   return c.json({ detected: detected.length, entries: detected });
 });
 
-// ─── Boot HTTP listener ───────────────────────────────────────────────────
+/** Phase 4 — GitHub webhook receiver. */
+app.post('/api/webhook/github', async (c) => {
+  const raw = await c.req.text();
+  const result = await handleGithubWebhook(raw, {
+    signature: c.req.header('x-hub-signature-256') ?? null,
+    event: c.req.header('x-github-event') ?? null,
+  });
+  return c.json(result.body, result.status as never);
+});
 
 const server = Bun.serve({
   port: config.port,
@@ -359,6 +463,8 @@ logger.info(
     dbPath: config.dbPath,
     cron: !config.disableCron,
     watch: !config.disableWatch,
+    autoSpawn: !config.disableAutoSpawn,
+    healthMonitor: !config.disableHealthMonitor,
     reportsRoot: config.paths.reportsRoot,
     inbox: config.paths.articleInbox,
     inboxExists: existsSync(config.paths.articleInbox),
@@ -366,14 +472,17 @@ logger.info(
   '🧬 harvest backend up',
 );
 
-// ─── Graceful shutdown ────────────────────────────────────────────────────
-
 let shuttingDown = false;
 async function shutdown(signal: string): Promise<void> {
   if (shuttingDown) return;
   shuttingDown = true;
   logger.info({ signal }, 'shutting down');
+  // Bug 2: tag active sessions awaiting-cheyu before we go (children survive
+  // because they're detached).
+  markActiveSessionsForReview(signal);
   await inbox.stop().catch(() => {});
+  stopAutoSpawn();
+  stopHealthMonitor();
   stopScheduler();
   closeDb();
   server.stop();
@@ -381,8 +490,6 @@ async function shutdown(signal: string): Promise<void> {
 }
 process.on('SIGINT', () => shutdown('SIGINT'));
 process.on('SIGTERM', () => shutdown('SIGTERM'));
-
-// ─── Helpers ──────────────────────────────────────────────────────────────
 
 function formatLocalDate(d: Date): string {
   const y = d.getFullYear();

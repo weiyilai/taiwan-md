@@ -62,6 +62,24 @@ export const config = {
   autoCommitReport: bool(process.env.HARVEST_AUTO_COMMIT_REPORT, true),
   /** Max concurrent claude sessions. Above this → spawn 409s with queued advice. */
   maxConcurrentSessions: num(process.env.HARVEST_MAX_CONCURRENT, 3),
+  /** Health monitor: idle minutes before a session is declared stuck. */
+  stuckThresholdMin: num(process.env.HARVEST_STUCK_MIN, 30),
+  /** Health monitor poll interval (seconds). */
+  healthPollSec: num(process.env.HARVEST_HEALTH_POLL_SEC, 60),
+  /** Auto-spawn loop poll interval (seconds). */
+  autoSpawnPollSec: num(process.env.HARVEST_AUTO_SPAWN_POLL_SEC, 300),
+  /** Auto-spawn: minimum priority that auto-fires (P0/P1 default). P2/P3 manual. */
+  autoSpawnMinPriority: process.env.HARVEST_AUTO_SPAWN_MIN_PRIORITY ?? 'P1',
+  /** Auto-spawn: cooldown after retryable network error before requeue (seconds). */
+  retryCooldownSec: num(process.env.HARVEST_RETRY_COOLDOWN_SEC, 30),
+  /** GitHub webhook shared secret. Optional — if unset the endpoint 503s. */
+  githubWebhookSecret: process.env.GITHUB_WEBHOOK_SECRET ?? '',
+  /** GitHub repo `owner/name` for maintainer-pipeline polling. Auto-detected from `git remote` when empty. */
+  githubRepo: process.env.HARVEST_GITHUB_REPO ?? '',
+  /** Disable health monitor (test/CI). */
+  disableHealthMonitor: bool(process.env.HARVEST_DISABLE_HEALTH, false),
+  /** Disable auto-spawn loop (test/CI). */
+  disableAutoSpawn: bool(process.env.HARVEST_DISABLE_AUTO_SPAWN, false),
   // Derived paths (always relative to repoRoot).
   paths: {
     articleInbox: join(repoRoot, 'docs', 'semiont', 'ARTICLE-INBOX.md'),

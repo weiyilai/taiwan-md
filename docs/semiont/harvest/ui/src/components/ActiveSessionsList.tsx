@@ -1,16 +1,22 @@
 /**
- * Phase 2.5 — Session deep-dive list. Each item expandable to show full
- * UUID / pid / phase / elapsed / boot profile / task type / task title.
- * Phase 3 will stream log content here.
+ * Phase 2.5 + Bug 3 + Phase 3.4 — active sessions list with live log drawer
+ * and a working cancel button.
  */
-import { QueryClientProvider, useQuery } from '@tanstack/solid-query';
+import {
+  QueryClientProvider,
+  useMutation,
+  useQuery,
+  useQueryClient,
+} from '@tanstack/solid-query';
 import { For, Show, createSignal } from 'solid-js';
-import { api } from '~/lib/api';
+import { api, ApiError } from '~/lib/api';
 import { getQueryClient } from '~/lib/query-client';
 import { elapsedSince, formatDateTime, typeEmoji } from '~/lib/format';
 import type { ActiveSession } from '~/lib/types';
+import SessionLogDrawer from './SessionLogDrawer';
 
 function Inner() {
+  const qc = useQueryClient();
   const q = useQuery(() => ({
     queryKey: ['sessions', 'active'],
     queryFn: () => api.activeSessions(),
@@ -19,12 +25,30 @@ function Inner() {
   }));
 
   const [expanded, setExpanded] = createSignal<Set<string>>(new Set());
+  const [openLog, setOpenLog] = createSignal<{
+    sid: string;
+    title: string;
+  } | null>(null);
   const toggle = (id: string): void => {
     const next = new Set(expanded());
     if (next.has(id)) next.delete(id);
     else next.add(id);
     setExpanded(next);
   };
+
+  const cancelMut = useMutation(() => ({
+    mutationFn: (sid: string) => api.cancelSession(sid),
+    onSettled: () => {
+      void qc.invalidateQueries({ queryKey: ['sessions', 'active'] });
+      void qc.invalidateQueries({ queryKey: ['tasks'] });
+    },
+    onError: (err) => {
+      if (err instanceof ApiError) {
+        // eslint-disable-next-line no-console
+        console.warn('cancel failed', err.status);
+      }
+    },
+  }));
 
   const sessions = (): ActiveSession[] => q.data?.sessions ?? [];
 
@@ -66,47 +90,82 @@ function Inner() {
                 : 'bg-accent-green/15 text-accent-green-soft border-accent-green/40';
             return (
               <li class="card">
-                <button
-                  type="button"
-                  class="w-full text-left card-body hover:bg-bg-raised/60 transition-colors"
-                  onClick={() => toggle(s.sessionId)}
-                >
+                <div class="card-body hover:bg-bg-raised/60 transition-colors">
                   <div class="flex items-center gap-3">
-                    <span
-                      class={`inline-block w-2 h-2 rounded-full animate-pulse ${
-                        s.phase === 'spawning'
-                          ? 'bg-accent-amber'
-                          : 'bg-accent-green'
-                      }`}
-                    />
-                    <span class="text-xl">{typeEmoji(s.taskType)}</span>
-                    <div class="min-w-0 flex-1">
-                      <div class="flex items-center gap-2">
-                        <span class={`pill border ${phaseColor}`}>
-                          {s.phase}
-                        </span>
-                        <span class="text-xs text-text-muted">
-                          {s.taskType}
-                        </span>
-                        <span class="text-xs text-text-muted">
-                          · boot {s.bootProfile}
-                        </span>
+                    <button
+                      type="button"
+                      class="flex items-center gap-3 min-w-0 flex-1 text-left"
+                      onClick={() => toggle(s.sessionId)}
+                    >
+                      <span
+                        class={`inline-block w-2 h-2 rounded-full animate-pulse ${
+                          s.phase === 'spawning'
+                            ? 'bg-accent-amber'
+                            : 'bg-accent-green'
+                        }`}
+                      />
+                      <span class="text-xl">{typeEmoji(s.taskType)}</span>
+                      <div class="min-w-0 flex-1">
+                        <div class="flex items-center gap-2">
+                          <span class={`pill border ${phaseColor}`}>
+                            {s.phase}
+                          </span>
+                          <span class="text-xs text-text-muted">
+                            {s.taskType}
+                          </span>
+                          <span class="text-xs text-text-muted">
+                            · boot {s.bootProfile}
+                          </span>
+                        </div>
+                        <div class="text-sm text-text-primary truncate mt-0.5">
+                          {s.taskTitle}
+                        </div>
                       </div>
-                      <div class="text-sm text-text-primary truncate mt-0.5">
-                        {s.taskTitle}
+                      <div class="text-right text-xs text-text-muted whitespace-nowrap">
+                        <div>{elapsedSince(s.spawnedAt)}</div>
+                        <Show when={s.pid}>
+                          <div>pid {s.pid}</div>
+                        </Show>
                       </div>
+                      <span class="text-text-muted text-xs ml-1">
+                        {isOpen() ? '▾' : '▸'}
+                      </span>
+                    </button>
+                    <div class="flex flex-col items-end gap-1 ml-2">
+                      <button
+                        type="button"
+                        class="text-xs px-2 py-1 rounded border border-line text-text-secondary hover:border-accent-amber hover:text-accent-amber"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setOpenLog({
+                            sid: s.sessionId,
+                            title: s.taskTitle,
+                          });
+                        }}
+                      >
+                        📜 log
+                      </button>
+                      <button
+                        type="button"
+                        class="text-xs px-2 py-1 rounded border border-line text-text-muted hover:border-accent-red hover:text-accent-red disabled:opacity-50"
+                        disabled={cancelMut.isPending}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          if (
+                            // eslint-disable-next-line no-alert
+                            confirm(
+                              `Cancel session ${s.sessionId.slice(0, 8)}?`,
+                            )
+                          ) {
+                            cancelMut.mutate(s.sessionId);
+                          }
+                        }}
+                      >
+                        ✕ cancel
+                      </button>
                     </div>
-                    <div class="text-right text-xs text-text-muted whitespace-nowrap">
-                      <div>{elapsedSince(s.spawnedAt)}</div>
-                      <Show when={s.pid}>
-                        <div>pid {s.pid}</div>
-                      </Show>
-                    </div>
-                    <span class="text-text-muted text-xs ml-1">
-                      {isOpen() ? '▾' : '▸'}
-                    </span>
                   </div>
-                </button>
+                </div>
 
                 <Show when={isOpen()}>
                   <div class="border-t border-line px-4 py-3 text-xs space-y-1.5">
@@ -126,9 +185,6 @@ function Inner() {
                         <code>{s.pid}</code>
                       </Field>
                     </Show>
-                    <div class="text-text-muted pt-2 italic">
-                      log streaming · Phase 3 (TODO)
-                    </div>
                   </div>
                 </Show>
               </li>
@@ -136,15 +192,23 @@ function Inner() {
           }}
         </For>
       </ul>
+
+      <SessionLogDrawer
+        sessionId={openLog()?.sid ?? null}
+        taskTitle={openLog()?.title}
+        onClose={() => setOpenLog(null)}
+      />
     </div>
   );
 }
 
-function Field(props: { label: string; children: any }) {
+function Field(props: { label: string; children: unknown }) {
   return (
     <div class="flex gap-2">
       <span class="text-text-muted w-28 shrink-0">{props.label}</span>
-      <span class="text-text-primary min-w-0 flex-1">{props.children}</span>
+      <span class="text-text-primary min-w-0 flex-1">
+        {props.children as never}
+      </span>
     </div>
   );
 }

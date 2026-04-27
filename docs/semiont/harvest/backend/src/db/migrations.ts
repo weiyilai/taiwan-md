@@ -1,10 +1,10 @@
 /**
  * Schema migrations.
  *
- * MVP strategy: the schema.sql file is idempotent (CREATE TABLE IF NOT EXISTS
- * everywhere). On startup we run schema.sql, then bump schema_version. Future
- * structural changes will append numbered .sql files in this folder and the
- * runner will apply only those above the current version.
+ * Strategy: schema.sql is idempotent (CREATE TABLE IF NOT EXISTS) for fresh
+ * databases. For pre-existing databases that need new columns on existing
+ * tables, we run additive ALTER statements gated by `PRAGMA table_info`
+ * checks so they're safe to re-run.
  */
 
 import type { Database } from 'bun:sqlite';
@@ -15,12 +15,18 @@ import { dirname } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const CURRENT_SCHEMA_VERSION = 1;
+const CURRENT_SCHEMA_VERSION = 2;
 
 export function applyMigrations(db: Database): void {
   const schemaPath = join(__dirname, 'schema.sql');
   const ddl = readFileSync(schemaPath, 'utf8');
   db.exec(ddl);
+
+  // Additive column migrations for the `sessions` table — needed for
+  // pre-2026-04-27 DBs that already exist on cheyu's box.
+  ensureColumn(db, 'sessions', 'spawn_start_iso', 'TEXT');
+  ensureColumn(db, 'sessions', 'cancelled', 'INTEGER NOT NULL DEFAULT 0');
+  ensureColumn(db, 'sessions', 'killed_reason', 'TEXT');
 
   const row = db
     .query<
@@ -35,4 +41,17 @@ export function applyMigrations(db: Database): void {
       new Date().toISOString(),
     ]);
   }
+}
+
+function ensureColumn(
+  db: Database,
+  table: string,
+  column: string,
+  type: string,
+): void {
+  const cols = db
+    .query<{ name: string }, []>(`PRAGMA table_info(${table})`)
+    .all();
+  if (cols.some((c) => c.name === column)) return;
+  db.exec(`ALTER TABLE ${table} ADD COLUMN ${column} ${type}`);
 }

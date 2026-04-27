@@ -36,6 +36,32 @@ backend/
 └── .env.example
 ```
 
+## GitHub webhook (Phase 4)
+
+`POST /api/webhook/github` accepts `pull_request` and `issues` events and
+auto-creates harvest tasks for them (deduped by PR/issue number).
+
+Setup:
+
+1. Generate a secret: `openssl rand -hex 32`. Save it as
+   `GITHUB_WEBHOOK_SECRET=<hex>` in `backend/.env`.
+2. Expose the backend through a tunnel (Cloudflare Tunnel / ngrok / Tailscale
+   funnel) — GitHub needs an HTTPS URL it can reach.
+3. In the repo Settings → Webhooks → Add webhook:
+   - Payload URL: `https://<tunnel>/api/webhook/github`
+   - Content type: `application/json`
+   - Secret: same hex string
+   - Events: pull_request, issues
+4. The endpoint returns 503 while no secret is configured — by design, we
+   refuse to accept anything we can't verify.
+
+## Auto-spawn loop (Phase 4)
+
+Every `HARVEST_AUTO_SPAWN_POLL_SEC` seconds (default 300) the backend pulls
+pending tasks ordered by priority and spawns up to `HARVEST_MAX_CONCURRENT`
+of them in parallel, respecting `HARVEST_AUTO_SPAWN_MIN_PRIORITY` (default
+P1 — P2/P3 still need manual ▶️). Pause via `POST /api/control/pause`.
+
 ## Run
 
 ```bash

@@ -130,6 +130,29 @@ export const api = {
     request<{ detected: number; entries: unknown[] }>('/api/intake/scan', {
       method: 'POST',
     }),
+
+  /** Bug 3 — polling fallback for SSE log stream. */
+  pollSessionLog: (sid: string, since: number) =>
+    request<{ lines: string[]; nextOffset: number; done: boolean }>(
+      `/api/sessions/${encodeURIComponent(sid)}/log?since=${since}`,
+    ),
+
+  /** Phase 3.4 — cancel an active session. */
+  cancelSession: (sid: string) =>
+    request<{ ok: boolean; sid: string; pid?: number }>(
+      `/api/sessions/${encodeURIComponent(sid)}/cancel`,
+      { method: 'POST' },
+    ),
+
+  cancelTaskSpawn: (id: string) =>
+    request<{ ok: boolean; sid: string; pid?: number }>(
+      `/api/tasks/${encodeURIComponent(id)}/cancel-spawn`,
+      { method: 'POST' },
+    ),
+
+  /** Bug 3 — SSE URL builder (consumed by EventSource directly). */
+  sessionLogStreamUrl: (sid: string): string =>
+    `${API_BASE}/api/sessions/${encodeURIComponent(sid)}/log/stream`,
 };
 
 export { ApiError };

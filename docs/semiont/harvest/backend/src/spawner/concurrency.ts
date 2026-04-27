@@ -82,3 +82,35 @@ export function unregister(sessionId: string): void {
     log.info({ sessionId, activeCount: active.size }, 'session unregistered');
   }
 }
+
+export interface CancelResult {
+  ok: boolean;
+  reason: string;
+  pid?: number;
+}
+
+/**
+ * SIGTERM the child PID for a session. Caller is responsible for marking the
+ * session row in DB. Returns ok=false if the session isn't in the active map
+ * or has no pid recorded.
+ */
+export function killSession(
+  sessionId: string,
+  signal: NodeJS.Signals = 'SIGTERM',
+): CancelResult {
+  const s = active.get(sessionId);
+  if (!s) return { ok: false, reason: 'session not active' };
+  if (s.pid === undefined) return { ok: false, reason: 'no pid recorded' };
+  try {
+    // Negative pid = process group (we spawn detached → child is its own
+    // group leader; this kills any subprocesses too).
+    try {
+      process.kill(-s.pid, signal);
+    } catch {
+      process.kill(s.pid, signal);
+    }
+    return { ok: true, reason: `${signal} sent`, pid: s.pid };
+  } catch (err) {
+    return { ok: false, reason: String(err), pid: s.pid };
+  }
+}
