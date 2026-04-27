@@ -185,6 +185,16 @@ export default defineConfig({
       '/ko/lifestyle/transportation-system/',
     '/fr/geography/transportation-network':
       '/fr/lifestyle/transportation-system/',
+    // 2026-04-27: issue #635 (@idlccp1984) — Art/台灣當代文學發展.md
+    // 與 戰後/解嚴後/當代台灣文學 三篇時代分期合併後，此寬泛總覽篇退場。
+    // 重定向至 台灣文學史（四百年完整史觀，比原篇範圍更廣且更精確）。
+    // 6 lang redirects: zh-TW + en/ja/ko/fr translation slugs
+    '/art/台灣當代文學發展': '/art/台灣文學史/',
+    '/en/art/development-of-contemporary-taiwanese-literature':
+      '/en/art/history-of-taiwanese-literature/',
+    '/ja/art/contemporary-literature': '/ja/art/taiwan-literature-history/',
+    '/ko/art/taiwan-contemporary-literature': '/ko/art/literary-history/',
+    '/fr/art/contemporary-literature-development': '/fr/art/literary-history/',
   },
   markdown: {
     shikiConfig: {
