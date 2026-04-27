@@ -1,7 +1,25 @@
 {
-  "generatedAt": "2026-04-27T11:38:13.492Z",
+  "generatedAt": "2026-04-27T12:39:03.476Z",
   "source": "git",
   "commits": [
+    {
+      "hash": "5756deba337c90ed5982f36c44445a02bffec119",
+      "date": "2026-04-27T20:35:06+08:00",
+      "author": "Che-Yu Wu",
+      "message": "🧬 [semiont] evolve: Harvest Phase 3 + Phase 4 + 4 bug fixes"
+    },
+    {
+      "hash": "a98d745f36a3659ced9ca940b8638a8adba0990d",
+      "date": "2026-04-27T19:58:14+08:00",
+      "author": "Che-Yu Wu",
+      "message": "🧬 [semiont] rewrite: 三個外國人看乙未"
+    },
+    {
+      "hash": "8413cde6618f11fa1ec4e5deb38fbf8727c82e4f",
+      "date": "2026-04-27T19:44:15+08:00",
+      "author": "Che-Yu Wu",
+      "message": "🧬 [semiont] rewrite: 羅發號事件與卓杞篤 — History C-2，南岬之盟卓杞篤視角"
+    },
     {
       "hash": "32e53d5bfdaace4e281b56cf494f2755d70673d0",
       "date": "2026-04-27T19:12:52+08:00",

@@ -42,6 +42,41 @@
 
 ## 📜 Log（reverse chronological，最新在頂）
 
+### 日治時期臺灣社會運動 — 2026-04-27 harvest-005 完成（NEW History / NMTH 999 頁監控檔案逆讀）
+
+- **Article**: [knowledge/History/日治時期臺灣社會運動.md](../../knowledge/History/日治時期臺灣社會運動.md)
+- **Pipeline**: REWRITE-PIPELINE — NEW 模式，由 Harvest 引擎自動 spawn（spawn 嘗試 2 次，第 1 次 SIGINT 打斷）
+- **核心矛盾**：「日本殖民政府其實沒能消滅 1920 年代台灣社會運動——999 頁監控文件揭示殖民當局始終緊張；但真正終結這場運動的，是各派系自己的互相點名」
+- **Hook**：蔣渭水（1890–1931）40 歲因傷寒去世，1931 年 8 月 23 日大眾葬逾 5,000 人送行 → 從帝國凝視的視角「逆讀」台灣抵抗地圖
+- **品質**：12 footnote / 180+ 行 / 2 callout / 時代座標表 / 破折號 3 個 / quality-scan ✅
+- **Commit**: `8413cde6`（同 commit 含 羅發號事件與卓杞篤）
+
+### 三個外國人看乙未 — 2026-04-27 harvest-004 完成（NEW History / 多視角史料解讀）
+
+- **Article**: [knowledge/History/三個外國人看乙未.md](../../knowledge/History/三個外國人看乙未.md)
+- **Pipeline**: REWRITE-PIPELINE — NEW 模式，Harvest 引擎自動 spawn
+- **系列**: D-2（乙未之役系列第 2 篇）
+- **Semiont 角度**：同一場戰爭，三個不在場當事人的視角差異揭示「歷史是誰寫的」
+- **Commit**: `a98d745f`
+
+### 羅發號事件與卓杞篤 — 2026-04-27 harvest-003 完成（NEW History / 南岬之盟卓杞篤視角）
+
+- **Article**: [knowledge/History/羅發號事件與卓杞篤.md](../../knowledge/History/羅發號事件與卓杞篤.md)
+- **Pipeline**: REWRITE-PIPELINE — NEW 模式，Harvest 引擎自動 spawn（系列 C-2，李仙得系列第 2 篇）
+- **Semiont 角度**「視角翻轉」：原住民酋長直接跟美國領事簽約，清廷缺席
+- **Commit**: `8413cde6`（同 commit 含 日治時期臺灣社會運動）
+
+### 蕭上農（INSIDE 創辦人）— 2026-04-27 harvest spawn 首次產出 + observer polish（NEW People）
+
+- **Article**: knowledge/People/蕭上農.md
+- **Pipeline**: REWRITE-PIPELINE — NEW，Harvest 引擎首次 spawn 產出（plus observer polish）
+- **Commit**: `32e53d5b`
+
+### 沈伯洋（NEW + EN translation）— 2026-04-27 γ 完成
+
+- **Article**: knowledge/People/沈伯洋.md (NEW Stage 0-6) + en translation Stage 6
+- **Commits**: `3e1e177a` (NEW) / `5a0848a9` (heal inline link) / `4227c1a7` (EN translation)
+
 ### 徐佳瑩 — 2026-04-26 γ 完成（NEW People / 陳建騏 dead cross-ref）
 
 - **Article**: [knowledge/People/徐佳瑩.md](../../knowledge/People/徐佳瑩.md)

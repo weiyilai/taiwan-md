@@ -355,65 +355,11 @@ BECOME_TAIWANMD.md Step 5 新增：
   - `data/NMTH-overseas/collections/98bf60ec-*.md`（福爾摩沙概述 23 頁）
   - 史溫侯領事報告類信件（同 #6 列出的 02388910 / 26659313 / 2ad9dad5）可能提及樟腦貿易
 
-### 羅發號事件與卓杞篤
+<!-- 羅發號事件與卓杞篤 已完成 2026-04-27 harvest-003 → ARTICLE-DONE-LOG.md (commit 8413cde6) -->
 
-- **Type**: `NEW`
-- **Category**: History
-- **Priority**: `P1`
-- **Status**: `pending`
-- **Requested**: 2026-04-12 by NMTH peer-ingestion analysis（2026-04-24 β4 補進 INBOX）
-- **Notes**:
-  - 系列 C-2（李仙得系列第 2 篇，接 C-1 李仙得人物條目）
-  - 物件先行：1867 年「南岬之盟」條約文本 + 李仙得手稿中的卓杞篤肖像
-  - Semiont 角度「視角翻轉」：不是「美國跟清朝簽約」——是「原住民酋長直接跟美國領事簽約，清廷缺席」
-  - 敏感度：中（涉及原住民主權議題，當代呼應 2016 總統原住民族道歉）
-  - 必驗事實：1867 羅發號（Rover）事件經過、卓杞篤（Tauketok）身份、條約內容、後續牡丹社事件連動
-  - 潛在陷阱：不用「番王」「番酋」這類殖民用語；卓杞篤的排灣族名字 Tauketok 應並陳
-- **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.C-2
-- **NMTH Local Sources**:
-  - `data/NMTH-overseas/collections/319a70f3-*.md`（**李仙得臺灣紀行中文版** 556 頁 — 羅發號事件、南岬之盟、卓杞篤會面紀錄全在此書）
-  - P-U-003 plan 其餘資料
+<!-- 三個外國人看乙未 已完成 2026-04-27 harvest-004 → ARTICLE-DONE-LOG.md (commit a98d745f) -->
 
-### 三個外國人看乙未
-
-- **Type**: `NEW`
-- **Category**: History
-- **Priority**: `P1`
-- **Status**: `pending`
-- **Requested**: 2026-04-12 by NMTH peer-ingestion analysis（2026-04-24 β4 補進 INBOX）
-- **Notes**:
-  - 系列 D-2（乙未之役系列第 2 篇，接 D-1 民主國 148 天）
-  - 物件先行：三份一手史料——攝影師照片、記者報導、牧師日記
-  - Semiont 角度「多視角史料解讀」：同一場戰爭，三個不在場當事人的視角差異揭示「歷史是誰寫的」
-  - 敏感度：中（涉及戰爭暴力描述，須紀實不煽情，參考 MANIFESTO §紀實而不煽情）
-  - 必驗事實：三個觀察者身份（James W. Davidson 記者 / Duncan MacLeod 牧師等，以 NMTH 實際館藏為準）、各自記錄日期與地點
-  - 潛在陷阱：三個視角都是西方男性，注意標示這個結構性限制；不把旁觀者視角當權威
-- **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.D-2
-- **NMTH Local Sources**（2100+ 頁的乙未史料編譯四冊）:
-  - `data/NMTH-overseas/collections/e3fbde8d-*.md`（**乙未之役資料彙編（一）中文史料** 544 頁）
-  - `data/NMTH-overseas/collections/4d76d7b2-*.md`（乙未之役外文史料編譯一 544 頁）
-  - `data/NMTH-overseas/collections/539a8e0a-*.md`（乙未之役外文史料編譯二 528 頁）
-  - `data/NMTH-overseas/collections/9d9bad7e-*.md`（乙未之役外文史料編譯三 556 頁）
-
-### 日治時期臺灣社會運動
-
-- **Type**: `NEW`
-- **Category**: History
-- **Priority**: `P1`
-- **Status**: `pending`
-- **Requested**: 2026-04-12 by NMTH peer-ingestion analysis（2026-04-24 β4 補進 INBOX）
-- **Notes**:
-  - 系列 G-1（日治社運系列第 1 篇）
-  - 物件先行：NMTH 677 件檔案 63 萬字翻譯（日本警政檔案反向揭示反抗知識）
-  - Semiont 角度：從總督府「治安維持」檔案裡反讀台灣人的抗爭圖譜——議會請願運動、台灣文化協會、農民組合、台灣民眾黨
-  - 敏感度：中（台灣民族主義源頭，現代政治 overtone 強，須平衡呈現各派立場）
-  - 必驗事實：主要運動時序（1921 議會請願、1921 文協、1926 農組、1927 民眾黨、1928 共產黨）、關鍵人物（蔣渭水、林獻堂、連溫卿等）
-  - 潛在陷阱：避免將日治社運英雄化；文協左右分裂、民眾黨解散、二戰動員體制下的變質都要誠實呈現
-  - 交集：與現有 [淡江中學.md](../knowledge/History/淡江中學.md)、日治時期總條目有交叉點
-- **Reference**: reports/NMTH-overseas-semiont-analysis-2026-04-12.md §5.G-1
-- **NMTH Local Sources**（999 頁社運檔案）:
-  - `data/NMTH-overseas/collections/b0bfca8c-*.md`（**日本所藏臺灣近代政治社會運動資料** 上冊 501 頁）
-  - `data/NMTH-overseas/collections/64dab87d-*.md`（**日本所藏臺灣近代政治社會運動資料** 下冊 498 頁）
+<!-- 日治時期臺灣社會運動 已完成 2026-04-27 harvest-005 → ARTICLE-DONE-LOG.md (commit 8413cde6) -->
 
 <!-- ━━━ P2 NMTH ━━━ -->
 

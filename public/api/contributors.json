@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T03:03:48.754Z",
+  "lastUpdated": "2026-04-27T12:39:04.490Z",
   "totals": {
     "contributors": 50,
     "activeWindow": "last 30d"
@@ -7,16 +7,16 @@
   "leaderboard": [
     {
       "login": "frank890417",
-      "commits": 2263,
+      "commits": 2285,
       "avatarUrl": "https://avatars.githubusercontent.com/u/4727572?v=4",
       "profileUrl": "https://github.com/frank890417",
       "firstCommitAt": "2026-03-17 16:05:41 +0800",
-      "lastCommitAt": "2026-04-27 11:03:00 +0800",
+      "lastCommitAt": "2026-04-27 20:35:06 +0800",
       "primaryArea": "system",
       "breakdown": {
-        "content": 479,
-        "system": 1428,
-        "translation": 531
+        "content": 485,
+        "system": 1447,
+        "translation": 534
       }
     },
     {
@@ -63,16 +63,16 @@
     },
     {
       "login": "dreamline2",
-      "commits": 27,
+      "commits": 29,
       "avatarUrl": "https://avatars.githubusercontent.com/u/4657845?v=4",
       "profileUrl": "https://github.com/dreamline2",
       "firstCommitAt": "2026-04-03 17:23:59 +0900",
-      "lastCommitAt": "2026-04-23 15:53:26 +0900",
+      "lastCommitAt": "2026-04-27 13:20:34 +0900",
       "primaryArea": "translation",
       "breakdown": {
         "content": 3,
-        "system": 14,
-        "translation": 14
+        "system": 16,
+        "translation": 16
       }
     },
     {
@@ -361,16 +361,16 @@
   "topSystem": [
     {
       "login": "frank890417",
-      "commits": 2263,
+      "commits": 2285,
       "avatarUrl": "https://avatars.githubusercontent.com/u/4727572?v=4",
       "profileUrl": "https://github.com/frank890417",
       "firstCommitAt": "2026-03-17 16:05:41 +0800",
-      "lastCommitAt": "2026-04-27 11:03:00 +0800",
+      "lastCommitAt": "2026-04-27 20:35:06 +0800",
       "primaryArea": "system",
       "breakdown": {
-        "content": 479,
-        "system": 1428,
-        "translation": 531
+        "content": 485,
+        "system": 1447,
+        "translation": 534
       }
     },
     {
@@ -461,16 +461,16 @@
     },
     {
       "login": "dreamline2",
-      "commits": 27,
+      "commits": 29,
       "avatarUrl": "https://avatars.githubusercontent.com/u/4657845?v=4",
       "profileUrl": "https://github.com/dreamline2",
       "firstCommitAt": "2026-04-03 17:23:59 +0900",
-      "lastCommitAt": "2026-04-23 15:53:26 +0900",
+      "lastCommitAt": "2026-04-27 13:20:34 +0900",
       "primaryArea": "translation",
       "breakdown": {
         "content": 3,
-        "system": 14,
-        "translation": 14
+        "system": 16,
+        "translation": 16
       }
     },
     {
@@ -502,8 +502,8 @@
       }
     }
   ],
-  "weeklyActive": 8,
-  "monthlyActive": 13,
+  "weeklyActive": 7,
+  "monthlyActive": 12,
   "recentlyJoined": [
     {
       "login": "p3nchan",
@@ -535,16 +535,16 @@
     },
     {
       "login": "dreamline2",
-      "commits": 27,
+      "commits": 29,
       "avatarUrl": "https://avatars.githubusercontent.com/u/4657845?v=4",
       "profileUrl": "https://github.com/dreamline2",
       "firstCommitAt": "2026-04-03 17:23:59 +0900",
-      "lastCommitAt": "2026-04-23 15:53:26 +0900",
+      "lastCommitAt": "2026-04-27 13:20:34 +0900",
       "primaryArea": "translation",
       "breakdown": {
         "content": 3,
-        "system": 14,
-        "translation": 14
+        "system": 16,
+        "translation": 16
       }
     },
     {
