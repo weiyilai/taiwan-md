@@ -1,20 +1,24 @@
 /**
  * Claude CLI spawner.
  *
- * Spawns the `claude` CLI as a detached child process with the prompt piped
- * on stdin. Streams stdout/stderr to a per-session log file under
+ * Spawns the `claude` CLI as a child process with the prompt piped on stdin.
+ * Streams stdout/stderr to a per-session log file under
  * `.harvest/tasks/{id}/sessions/{session-id}.log` and to pino.
  *
  * Hard timeout per session: config.sessionTimeoutMs (default 90 min).
  *
- * Bug 1 fix (2026-04-27): commit attribution uses `git log --since=<spawn_iso>
- * --author=<git user.name>` instead of HEAD-diff so external `git pull` during
- * the spawn window doesn't get falsely attributed to the spawn.
+ * Bug 1 v2 (2026-04-27): commit attribution prefers `--grep=[sid:<short>]`
+ * marker (prompt requires it) over the v1 time+author window, which mis-
+ * attributed external commits during the spawn window.
  *
- * Bug 2 fix (2026-04-27): child is `detached: true` so it's its own process
- * group leader — SIGINT to the backend (via tmux/zsh) does NOT cascade to
- * claude. The backend's shutdown handler explicitly marks active sessions as
- * `awaiting-cheyu` and lets the child keep running.
+ * Bug 2 v2 (2026-04-27): earlier `detached:true` broke claude — it lost its
+ * controlling terminal and stuck on stdin/keychain reads (verified with 3
+ * spawns sleeping at 0% CPU for 8 minutes). Reverted. SIGINT cascade is now
+ * accepted as a known limitation: when cheyu Ctrl+C's the backend in tmux,
+ * children die too — but the shutdown handler marks active sessions
+ * `awaiting-cheyu` in the DB before exit, and the orphan reconciler on next
+ * startup cleans them up to `failed`. Fix `bash stop.sh && bash start.sh`
+ * to restart cleanly without losing visibility.
  */
 
 import { spawn } from 'node:child_process';
@@ -131,15 +135,13 @@ export async function spawnClaudeForTask(
 
   const cliArgs = ['--print', '--dangerously-skip-permissions'];
   if (process.env.ANTHROPIC_API_KEY) cliArgs.unshift('--bare');
-  // Bug 2 fix: detached:true makes the child its own process-group leader.
-  // SIGINT to the backend (Ctrl+C in tmux) won't cascade through the group.
-  // We still want stdin piped (prompt) and stdout/stderr piped (capture log),
-  // so we cannot fully `unref()` — but the detached flag is what matters for
-  // signal isolation on POSIX.
+  // Bug 2 v2: detached:true broke spawned claude (no controlling terminal →
+  // stuck on stdin/keychain). Reverted. SIGINT cascade prevention is now done
+  // upstream in tmux start.sh via `setsid bun ...` so bun gets its own session
+  // and tmux's SIGINT no longer reaches our spawned children.
   const child = spawn(config.claudeBin, cliArgs, {
     cwd: config.repoRoot,
     stdio: ['pipe', 'pipe', 'pipe'],
-    detached: true,
     env: {
       ...process.env,
       HARVEST_TASK_ID: task.id,
@@ -153,10 +155,7 @@ export async function spawnClaudeForTask(
     sessionId,
   ]);
   setActivePhase(sessionId, 'in-progress', child.pid);
-  log.info(
-    { taskId: task.id, sessionId, pid: child.pid, detached: true },
-    'spawned claude (detached)',
-  );
+  log.info({ taskId: task.id, sessionId, pid: child.pid }, 'spawned claude');
 
   child.stdin.write(prompt);
   child.stdin.end();
