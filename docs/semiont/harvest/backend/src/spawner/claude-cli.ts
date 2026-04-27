@@ -132,7 +132,12 @@ export async function spawnClaudeForTask(
   );
 
   // Pass the prompt via stdin so it's not visible in `ps` output.
+  // If ANTHROPIC_API_KEY is set, use --bare so claude STRICTLY uses the env
+  // var (skips OAuth/keychain reads — needed because launchd has no keychain
+  // access). Otherwise let claude find the long-lived token in
+  // ~/.claude/.credentials.json (requires HOME env to be set in the plist).
   const cliArgs = ['--print', '--dangerously-skip-permissions'];
+  if (process.env.ANTHROPIC_API_KEY) cliArgs.unshift('--bare');
   const child = spawn(config.claudeBin, cliArgs, {
     cwd: config.repoRoot,
     stdio: ['pipe', 'pipe', 'pipe'],

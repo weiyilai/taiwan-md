@@ -138,6 +138,38 @@ To add a new task type:
             └── <uuid>.log        # combined stdout+stderr
 ```
 
+## Auth setup for spawned `claude` (CRITICAL)
+
+The harvest backend spawns `claude` CLI under launchd. **launchd processes can't read the user keychain** (macOS security boundary), so the OAuth token used by interactive `claude` sessions is invisible to harvest. Symptom: every spawn ends in 12 seconds with `401 authentication_error`.
+
+**Fix — long-lived token (recommended)**:
+
+```bash
+# Run ONCE interactively as cheyu (browser flow opens). Writes long-lived
+# token to ~/.claude/.credentials.json (file-based, not keychain).
+~/.bun/bin/claude setup-token
+```
+
+Then ensure the launchd plist exposes `HOME`/`USER`/`LOGNAME` so the spawned
+`claude` can find the file. The shipped `launchd/md.taiwan.harvest.plist`
+already has these env vars from Phase 2.5.
+
+After running `setup-token` once, restart the harvest agent:
+
+```bash
+launchctl kickstart -k gui/$UID/md.taiwan.harvest
+```
+
+Verify by spawning a small task — session log should NOT contain `401`.
+
+**Alt — API key**:
+
+If you have an `ANTHROPIC_API_KEY` and prefer API billing over subscription:
+
+1. Uncomment `ANTHROPIC_API_KEY` block in plist with your key
+2. The spawner already passes `--bare` so the CLI strictly uses the env var
+3. Restart agent
+
 ## Deploy as a launchd service
 
 ```xml

@@ -31,6 +31,23 @@
   <dict>
     <key>PATH</key>
     <string>/Users/cheyuwu/.bun/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    <!-- HOME + USER required so spawned `claude` CLI can find ~/.claude/.credentials.json
+         (Phase 2.5 fix — launchd agents don't inherit user keychain access; cheyu must
+         have run `claude setup-token` once interactively to write the long-lived token
+         to the file. See backend/README.md §「Auth setup for spawned claude」). -->
+    <key>HOME</key>
+    <string>/Users/cheyuwu</string>
+    <key>USER</key>
+    <string>cheyuwu</string>
+    <key>LOGNAME</key>
+    <string>cheyuwu</string>
+    <!-- Optional: if you have an ANTHROPIC_API_KEY and prefer API-key auth over the
+         long-lived OAuth token, uncomment + set it. The spawner adds --bare so the
+         CLI strictly uses ANTHROPIC_API_KEY when set. -->
+    <!--
+    <key>ANTHROPIC_API_KEY</key>
+    <string>sk-ant-…</string>
+    -->
     <key>HARVEST_REPO_ROOT</key>
     <string>/Users/cheyuwu/Projects/taiwan-md</string>
     <key>HARVEST_LOG_PRETTY</key>
